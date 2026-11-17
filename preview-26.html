@@ -1,0 +1,942 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kenya Day Trips &amp; Excursions | Fleypat Adventures</title>
+
+    <meta name="description" content="Discover exciting Kenya day trips and excursions with Fleypat Adventures. Explore Nairobi National Park, Tsavo, Wasini Island, Mombasa, Shimba Hills and the Kenyan coast.">
+
+    <meta name="theme-color" content="#a8d832">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* DAY TRIPS PAGE */
+
+        .daytrips-hero {
+            min-height: 440px;
+            display: flex;
+            align-items: center;
+            color: white;
+            background:
+                linear-gradient(90deg,rgba(20,43,29,.88),rgba(20,43,29,.30)),
+                url('day-trips-hero.jpg') center/cover no-repeat;
+            padding: 75px 0;
+        }
+
+        .daytrips-hero-content {
+            max-width: 760px;
+        }
+
+        .daytrips-hero .eyebrow {
+            color: var(--lime);
+        }
+
+        .daytrips-hero h1 {
+            font: 800 clamp(38px,5.5vw,64px)/1.08 'Playfair Display',serif;
+            margin: 15px 0;
+            color: white;
+        }
+
+        .daytrips-hero p {
+            max-width: 650px;
+            color: #f4f0df;
+            font-size: 17px;
+        }
+
+        .daytrips-hero .actions {
+            margin-top: 28px;
+        }
+
+        .daytrips-hero .btn-outline {
+            border-color: white;
+        }
+
+        .daytrips-section {
+            padding: 70px 0;
+        }
+
+        .daytrips-section.alt {
+            background: var(--cream2);
+        }
+
+        .daytrips-intro {
+            max-width: 760px;
+            margin: 0 auto 35px;
+            text-align: center;
+        }
+
+        .daytrips-intro h2 {
+            font: 700 clamp(28px,3.5vw,42px)/1.2 'Playfair Display',serif;
+            color: var(--green);
+            margin: 10px 0 14px;
+        }
+
+        .daytrips-intro p {
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .trip-categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 25px 0 35px;
+        }
+
+        .trip-categories a {
+            display: inline-block;
+            padding: 10px 17px;
+            background: #fffdf6;
+            border: 1px solid #e5dcc6;
+            color: var(--green);
+            font-size: 12px;
+            font-weight: 800;
+            transition: .2s ease;
+        }
+
+        .trip-categories a:hover {
+            background: var(--lime);
+            border-color: var(--lime);
+        }
+
+        .daytrips-grid {
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 25px;
+        }
+
+        .daytrip-card {
+            background: #fffdf6;
+            border: 1px solid #e8dfca;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform .25s ease,box-shadow .25s ease;
+        }
+
+        .daytrip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px #263b2517;
+        }
+
+        .daytrip-image {
+            height: 235px;
+            overflow: hidden;
+            background: #e6dfc9;
+        }
+
+        .daytrip-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .4s ease;
+        }
+
+        .daytrip-card:hover .daytrip-image img {
+            transform: scale(1.04);
+        }
+
+        .daytrip-content {
+            padding: 23px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .daytrip-location {
+            color: var(--gold);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .daytrip-content h3 {
+            color: var(--green);
+            font: 700 22px/1.25 'Playfair Display',serif;
+            margin: 10px 0;
+        }
+
+        .daytrip-content p {
+            color: var(--muted);
+            font-size: 13px;
+            margin: 0 0 18px;
+        }
+
+        .daytrip-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px solid #eee6d5;
+        }
+
+        .daytrip-bottom span {
+            font-size: 11px;
+            color: var(--muted);
+            font-weight: 700;
+        }
+
+        .daytrip-bottom a {
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--lime-dark);
+        }
+
+        .daytrip-bottom a:hover {
+            color: var(--gold);
+        }
+
+        .daytrips-note {
+            margin-top: 30px;
+            padding: 17px 20px;
+            background: #f2ecd8;
+            border-left: 4px solid var(--gold);
+            color: #5c604e;
+            font-size: 12px;
+        }
+
+        .why-daytrips-grid {
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 22px;
+        }
+
+        .why-daytrip-card {
+            padding: 28px;
+            background: #fffdf6;
+            border: 1px solid #e8dfca;
+        }
+
+        .why-daytrip-card .number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--lime);
+            color: var(--green);
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .why-daytrip-card h3 {
+            font: 700 21px 'Playfair Display',serif;
+            color: var(--green);
+            margin: 5px 0 10px;
+        }
+
+        .why-daytrip-card p {
+            color: var(--muted);
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .daytrips-booking {
+            background: var(--green);
+            color: white;
+            padding: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .daytrips-booking h2 {
+            color: white;
+            font: 700 clamp(27px,3vw,38px)/1.2 'Playfair Display',serif;
+            margin: 0 0 12px;
+        }
+
+        .daytrips-booking p {
+            color: #e5e9d9;
+            margin: 0;
+            max-width: 650px;
+            font-size: 14px;
+        }
+
+        .daytrips-booking .actions {
+            flex-shrink: 0;
+            margin: 0;
+        }
+
+        @media(max-width:950px) {
+            .daytrips-grid {
+                grid-template-columns: repeat(2,minmax(0,1fr));
+            }
+
+            .why-daytrips-grid {
+                grid-template-columns: repeat(2,minmax(0,1fr));
+            }
+
+            .daytrips-booking {
+                display: block;
+            }
+
+            .daytrips-booking .actions {
+                margin-top: 22px;
+            }
+        }
+
+        @media(max-width:600px) {
+            .daytrips-hero {
+                min-height: 390px;
+                padding: 55px 0;
+            }
+
+            .daytrips-hero p {
+                font-size: 15px;
+            }
+
+            .daytrips-section {
+                padding: 50px 0;
+            }
+
+            .daytrips-grid,
+            .why-daytrips-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .daytrip-image {
+                height: 225px;
+            }
+
+            .daytrips-booking {
+                padding: 28px 22px;
+            }
+
+            .daytrips-booking .actions {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .daytrips-booking .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="wrap nav">
+
+            <a href="index.html" class="brand" aria-label="Fleypat Adventures Home">
+                <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+            </a>
+
+            <button class="nav-toggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="safaris.html">Safaris</a>
+                <a href="day-trips.html" class="active">Excursions</a>
+                <a href="packages.html">Packages</a>
+                <a href="transfers.html">Transfers</a>
+                <a href="beach-holidays.html">Stays</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="nav-book">Book Now</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="daytrips-page">
+
+        <!-- HERO -->
+        <section class="daytrips-hero">
+            <div class="wrap daytrips-hero-content">
+
+                <span class="eyebrow">Explore Kenya in a Day</span>
+
+                <h1>Kenya Day Trips &amp; Excursions</h1>
+
+                <p>
+                    Discover Kenya's incredible wildlife, beautiful coastlines,
+                    historic towns and unforgettable natural attractions.
+                    Whether you are staying in Nairobi, Mombasa or Diani,
+                    we have exciting day experiences waiting for you.
+                </p>
+
+                <div class="actions">
+                    <a href="#day-trips" class="btn">Explore Day Trips</a>
+                    <a href="https://wa.me/254704261626"
+                       class="btn btn-outline"
+                       target="_blank"
+                       rel="noopener">
+                        Enquire on WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DAY TRIP COLLECTION -->
+        <section class="daytrips-section" id="day-trips">
+
+            <div class="wrap">
+
+                <div class="daytrips-intro">
+                    <span class="eyebrow">Discover More, Every Day</span>
+
+                    <h2>Choose Your Day Adventure</h2>
+
+                    <p>
+                        From wildlife encounters and marine adventures to
+                        cultural discoveries and coastal escapes, explore
+                        our selected day trips across Kenya.
+                    </p>
+                </div>
+
+
+                <!-- CATEGORY LINKS -->
+                <div class="trip-categories">
+                    <a href="#nairobi-trips">Nairobi Experiences</a>
+                    <a href="#mombasa-trips">Mombasa Experiences</a>
+                    <a href="#diani-trips">Diani Experiences</a>
+                </div>
+
+
+                <div class="daytrips-grid">
+
+                    <!-- 1. NAIROBI NATIONAL PARK -->
+                    <article class="daytrip-card" id="nairobi-trips">
+
+                        <div class="daytrip-image">
+                            <img
+                                src="nairobi-national-park-day-trip.jpg"
+                                alt="Wildlife and open grasslands at Nairobi National Park"
+                                loading="lazy">
+                        </div>
+
+                        <div class="daytrip-content">
+                            <span class="daytrip-location">Nairobi · Wildlife</span>
+
+                            <h3>Nairobi National Park &amp; Giraffe Centre</h3>
+
+                            <p>
+                                Enjoy an exciting wildlife experience just
+                                outside Nairobi. Explore Nairobi National Park
+                                in search of lions, giraffes, zebras, rhinos
+                                and other wildlife before visiting the famous
+                                Giraffe Centre.
+                            </p>
+
+                            <div class="daytrip-bottom">
+                                <span>Full-day experience</span>
+                                <a href="daytrip-nairobi-national-park-giraffe-centre.html">
+                                    Explore Trip →
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- 2. TSAVO EAST -->
+                    <article class="daytrip-card" id="mombasa-trips">
+
+                        <div class="daytrip-image">
+                            <img
+                                src="tsavo-east-day-trip.jpg"
+                                alt="Elephants and savannah landscape in Tsavo East National Park"
+                                loading="lazy">
+                        </div>
+
+                        <div class="daytrip-content">
+                            <span class="daytrip-location">From Mombasa · Safari</span>
+
+                            <h3>1-Day Tsavo East Safari</h3>
+
+                            <p>
+                                Experience an unforgettable safari in Tsavo
+                                East National Park. Discover its famous red
+                                elephants, diverse wildlife and beautiful
+                                savannah landscapes during a thrilling day
+                                in the African wilderness.
+                            </p>
+
+                            <div class="daytrip-bottom">
+                                <span>Full-day safari</span>
+                                <a href="daytrip-tsavo-east-from-mombasa.html">
+                                    Explore Trip →
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- 3. WASINI DOLPHIN TOUR -->
+                    <article class="daytrip-card">
+
+                        <div class="daytrip-image">
+                            <img
+                                src="wasini-dolphin-tour.jpg"
+                                alt="Dolphins swimming in the Indian Ocean near Wasini Island"
+                                loading="lazy">
+                        </div>
+
+                        <div class="daytrip-content">
+                            <span class="daytrip-location">South Coast · Marine</span>
+
+                            <h3>Wasini Dolphin Tour</h3>
+
+                            <p>
+                                Discover the beautiful waters of the Indian
+                                Ocean on a marine adventure. Enjoy a boat
+                                excursion, look out for dolphins and experience
+                                the coastal beauty around Wasini Island.
+                            </p>
+
+                            <div class="daytrip-bottom">
+                                <span>Marine experience</span>
+                                <a href="daytrip-wasini-dolphin.html">
+                                    Explore Trip →
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- 4. MAMBRUI SAND DUNES -->
+                    <article class="daytrip-card">
+
+                        <div class="daytrip-image">
+                            <img
+                                src="mambrui-sand-dunes.jpg"
+                                alt="Golden sand dunes at Mambrui near Malindi"
+                                loading="lazy">
+                        </div>
+
+                        <div class="daytrip-content">
+                            <span class="daytrip-location">Malindi · Nature</span>
+
+                            <h3>Mambrui Sand Dunes Day Tour</h3>
+
+                            <p>
+                                Escape to the spectacular sand dunes of
+                                Mambrui. Discover a unique coastal landscape,
+                                enjoy scenic views and capture beautiful
+                                photographs in one of the Kenyan coast's
+                                fascinating natural attractions.
+                            </p>
+
+                            <div class="daytrip-bottom">
+                                <span>Scenic day tour</span>
+                                <a href="daytrip-mambrui-sand-dunes.html">
+                                    Explore Trip →
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- 5. SHIMBA HILLS -->
+                    <article class="daytrip-card">
+
+                        <div class="daytrip-image">
+                            <img
+                                src="shimba-hills-waterfall.jpg"
+                                alt="Waterfall and lush forest scenery in Shimba Hills"
+                                loading="lazy">
+                        </div>
+
+                        <div class="daytrip-content">
+                            <span class="daytrip-location">Kwale · Nature &amp; Wildlife</span>
+
+                            <h3>Shimba Hills &amp; Sheldrick Waterfalls</h3>
+
+                            <p>
+                                Explore the lush forests and scenic landscapes
+                                of Shimba Hills National Reserve. Enjoy a
+                                nature-filled adventure, discover local
+                                wildlife and experience the beautiful
+                                Sheldrick Falls.
+                            </p>
+
+                            <div class="daytrip-bottom">
+                                <span>Nature adventure</span>
+                                <a href="daytrip-shimba-hills-sheldrick-falls.html">
+                                    Explore Trip →
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- 6. MOMBASA CITY TOUR -->
+                    <article class="daytrip-card">
+
+                        <div class="daytrip-image">
+                            <img
+                                src="mombasa-city-tour.jpg"
+                                alt="Historic architecture and streets of Mombasa Old Town"
+                                loading="lazy">
+                        </div>
+
+                        <div class="daytrip-content">
+                            <span class="daytrip-location">Mombasa · Culture</span>
+
+                            <h3>Mombasa City Tour</h3>
+
+                            <p>
+                                Discover the history and culture of Mombasa.
+                                Visit famous landmarks, explore the historic
+                                Old Town, admire the architecture and learn
+                                about the city's fascinating Swahili heritage.
+                            </p>
+
+                            <div class="daytrip-bottom">
+                                <span>City &amp; cultural tour</span>
+                                <a href="daytrip-mombasa-city-tour.html">
+                                    Explore Trip →
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- 7. MOMBASA MARINE PARK -->
+                    <article class="daytrip-card">
+
+                        <div class="daytrip-image">
+                            <img
+                                src="mombasa-marine-park.jpg"
+                                alt="Clear blue waters and marine life at Mombasa Marine National Park"
+                                loading="lazy">
+                        </div>
+
+                        <div class="daytrip-content">
+                            <span class="daytrip-location">Mombasa · Ocean</span>
+
+                            <h3>Mombasa Marine Park Tour</h3>
+
+                            <p>
+                                Experience the beauty of the Indian Ocean
+                                with a marine excursion. Enjoy opportunities
+                                for snorkelling, boat rides and discovering
+                                colourful marine life in the coastal waters.
+                            </p>
+
+                            <div class="daytrip-bottom">
+                                <span>Marine adventure</span>
+                                <a href="daytrip-mombasa-marine-park.html">
+                                    Explore Trip →
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- 8. ROBINSON ISLAND -->
+                    <article class="daytrip-card" id="diani-trips">
+
+                        <div class="daytrip-image">
+                            <img
+                                src="robinson-island-diani.jpg"
+                                alt="Beautiful ocean scenery around Robinson Island near Diani"
+                                loading="lazy">
+                        </div>
+
+                        <div class="daytrip-content">
+                            <span class="daytrip-location">Diani · Island Escape</span>
+
+                            <h3>Robinson Island Tour – Diani</h3>
+
+                            <p>
+                                Enjoy a relaxing coastal escape around
+                                Robinson Island. Discover beautiful ocean
+                                scenery, enjoy the natural surroundings
+                                and experience a memorable day along
+                                Kenya's south coast.
+                            </p>
+
+                            <div class="daytrip-bottom">
+                                <span>Coastal experience</span>
+                                <a href="daytrip-robinson-island-diani.html">
+                                    Explore Trip →
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="daytrips-note">
+                    <strong>Travel note:</strong>
+                    Activities, departure times and itineraries may vary
+                    depending on your pickup location, park regulations,
+                    weather, tides and sea conditions. Contact our team
+                    for the latest details before booking.
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- WHY BOOK WITH US -->
+        <section class="daytrips-section alt">
+
+            <div class="wrap">
+
+                <div class="daytrips-intro">
+                    <span class="eyebrow">The Fleypat Experience</span>
+
+                    <h2>Why Book Your Day Trip With Us?</h2>
+
+                    <p>
+                        We make discovering Kenya easier, more enjoyable
+                        and memorable through thoughtfully arranged
+                        travel experiences.
+                    </p>
+                </div>
+
+
+                <div class="why-daytrips-grid">
+
+                    <article class="why-daytrip-card">
+                        <span class="number">01</span>
+
+                        <h3>Personalised Experiences</h3>
+
+                        <p>
+                            We help you choose experiences that match
+                            your interests, travel plans and available time.
+                        </p>
+                    </article>
+
+
+                    <article class="why-daytrip-card">
+                        <span class="number">02</span>
+
+                        <h3>Local Knowledge</h3>
+
+                        <p>
+                            Discover Kenya with a team that understands
+                            its destinations, attractions and unique
+                            travel experiences.
+                        </p>
+                    </article>
+
+
+                    <article class="why-daytrip-card">
+                        <span class="number">03</span>
+
+                        <h3>Easy Enquiries</h3>
+
+                        <p>
+                            Reach our team directly for assistance with
+                            trip information, availability and booking
+                            arrangements.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- BOOKING CTA -->
+        <section class="wrap">
+
+            <div class="daytrips-booking">
+
+                <div>
+                    <h2>Ready for Your Next Adventure?</h2>
+
+                    <p>
+                        Let us help you plan your next day trip in Kenya.
+                        Contact Fleypat Adventures and start exploring.
+                    </p>
+                </div>
+
+                <div class="actions">
+
+                    <a href="https://wa.me/254704261626"
+                       class="btn"
+                       target="_blank"
+                       rel="noopener">
+                        WhatsApp Us
+                    </a>
+
+                    <a href="contact.html" class="btn btn-outline">
+                        Contact Our Team
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="wrap footer-grid">
+
+            <div>
+                <a href="index.html" class="footer-brand">
+                    <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+                </a>
+
+                <p>
+                    Fleypat Adventures is a Mombasa-based tour and travel
+                    company dedicated to creating memorable experiences
+                    across Kenya and beyond.
+                </p>
+
+                <p><strong>Your Adventure Begins Here!</strong></p>
+            </div>
+
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="safaris.html">Kenya Safaris</a>
+                <a href="day-trips.html">Day Trips &amp; Excursions</a>
+                <a href="packages.html">Holiday Packages</a>
+                <a href="beach-holidays.html">Beach Holidays</a>
+                <a href="about.html">About Us</a>
+            </div>
+
+
+            <div>
+                <h3>Get in Touch</h3>
+
+                <a href="tel:+254704261626">+254 704 261 626</a>
+
+                <a href="mailto:info@fleypatadventures.com">
+                    info@fleypatadventures.com
+                </a>
+
+                <span>Mombasa, Kenya</span>
+
+                <a href="https://www.instagram.com/fleypat_adventures/"
+                   target="_blank"
+                   rel="noopener">
+                    Instagram
+                </a>
+            </div>
+
+
+            <div>
+                <h3>Plan Your Trip</h3>
+
+                <p>
+                    Have a destination in mind? Let us help you
+                    create an experience worth remembering.
+                </p>
+
+                <a href="contact.html">Make an Enquiry</a>
+
+                <a href="https://wa.me/254704261626"
+                   target="_blank"
+                   rel="noopener">
+                    Chat With Us on WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="wrap foot-bottom">
+
+            <span>
+                &copy; <span id="current-year"></span>
+                Fleypat Adventures. All rights reserved.
+            </span>
+
+            <span>Explore. Experience. Enjoy.</span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/254704261626"
+       class="float-wa"
+       target="_blank"
+       rel="noopener"
+       aria-label="Contact Fleypat Adventures on WhatsApp">
+        WhatsApp Us
+    </a>
+
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+
+    <script>
+        // Automatic copyright year
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+
+        // Mobile navigation
+        const navToggle = document.querySelector(".nav-toggle");
+        const mainNav = document.querySelector(".nav nav");
+
+        if (navToggle && mainNav) {
+            navToggle.addEventListener("click", function () {
+                const isOpen = mainNav.classList.toggle("open");
+
+                navToggle.setAttribute(
+                    "aria-expanded",
+                    isOpen ? "true" : "false"
+                );
+
+                navToggle.setAttribute(
+                    "aria-label",
+                    isOpen ? "Close navigation" : "Open navigation"
+                );
+
+                navToggle.textContent = isOpen ? "✕" : "☰";
+            });
+
+            mainNav.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    mainNav.classList.remove("open");
+                    navToggle.setAttribute("aria-expanded", "false");
+                    navToggle.setAttribute("aria-label", "Open navigation");
+                    navToggle.textContent = "☰";
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>
