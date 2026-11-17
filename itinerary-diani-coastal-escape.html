@@ -112,8 +112,8 @@ nav a:hover,nav a.active{color:var(--gold)}
   position:relative;
   color:#fff;
   background:
-    linear-gradient(90deg,rgba(9,39,41,.74),rgba(9,39,41,.18)),
-    url("https://commons.wikimedia.org/wiki/Special:FilePath/Diani_Beach_Kenya.jpg?width=2000") center/cover no-repeat;
+    linear-gradient(90deg,rgba(9,39,41,.76),rgba(9,39,41,.20)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Diani_beaches.jpg?width=2000") center/cover no-repeat;
 }
 .hero-content{
   padding:90px 0;
@@ -213,8 +213,15 @@ nav a:hover,nav a.active{color:var(--gold)}
   align-items:center;
   gap:55px;
 }
-.feature-image{height:450px;overflow:hidden}
-.feature-image img{height:100%;transition:.5s}
+.feature-image{
+  height:450px;
+  overflow:hidden;
+  background:#e8eee9;
+}
+.feature-image img{
+  height:100%;
+  transition:.5s;
+}
 .feature-image:hover img{transform:scale(1.04)}
 .intro-copy h2{
   color:var(--deep);
@@ -274,9 +281,17 @@ nav a:hover,nav a.active{color:var(--gold)}
   border:1px solid var(--border);
   margin-bottom:25px;
   box-shadow:var(--shadow);
+  overflow:hidden;
 }
-.day-image{min-height:300px}
-.day-image img{height:100%}
+.day-image{
+  min-height:300px;
+  background:#e8eee9;
+}
+.day-image img{
+  height:100%;
+  min-height:300px;
+  object-fit:cover;
+}
 .day-content{padding:30px 35px}
 .day-label{
   font-size:11px;
@@ -321,8 +336,12 @@ nav a:hover,nav a.active{color:var(--gold)}
 .stay-card{
   background:#fff;
   border:1px solid var(--border);
+  overflow:hidden;
 }
-.stay-card img{height:275px}
+.stay-card img{
+  height:275px;
+  object-fit:cover;
+}
 .stay-copy{padding:25px}
 .stay-copy h3{
   color:var(--deep);
@@ -381,7 +400,11 @@ nav a:hover,nav a.active{color:var(--gold)}
   font-size:35px;
   margin:10px 0;
 }
-.price-box p{color:var(--muted);font-size:12px;margin-bottom:18px}
+.price-box p{
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:18px;
+}
 
 /* INCLUSIONS */
 .include-grid{
@@ -462,19 +485,6 @@ nav a:hover,nav a.active{color:var(--gold)}
   gap:12px;
 }
 
-/* PHOTO CREDITS */
-.photo-credits{
-  padding:32px 0;
-  background:#f3f0e7;
-}
-.photo-credits h3{
-  font-size:20px;
-  color:var(--deep);
-  margin-bottom:12px;
-}
-.photo-credits p{font-size:11px;margin-bottom:7px}
-.photo-credits a{color:var(--ocean);text-decoration:underline}
-
 /* FOOTER */
 .footer{
   background:#123338;
@@ -500,7 +510,10 @@ nav a:hover,nav a.active{color:var(--gold)}
   font-size:12px;
   color:#d0dfd8;
 }
-.footer a{display:block;margin-bottom:9px}
+.footer a{
+  display:block;
+  margin-bottom:9px;
+}
 .footer a:hover{color:var(--turquoise)}
 .foot-bottom{
   border-top:1px solid rgba(255,255,255,.15);
@@ -537,10 +550,8 @@ nav a:hover,nav a.active{color:var(--gold)}
 }
 @media(max-width:850px){
   .nav-toggle{display:block}
-  .nav nav, .nav>nav{
+  .nav nav{
     display:none;
-  }
-  .header .nav nav{
     position:absolute;
     top:100%;
     left:0;
@@ -553,13 +564,13 @@ nav a:hover,nav a.active{color:var(--gold)}
     overflow-y:auto;
     box-shadow:0 10px 20px rgba(0,0,0,.08);
   }
-  .header .nav nav.open{display:flex}
-  .header .nav nav a{
+  .nav nav.open{display:flex}
+  .nav nav a{
     padding:11px 0;
     border-bottom:1px solid var(--border);
     font-size:13px;
   }
-  .header .nav nav .nav-book{
+  .nav nav .nav-book{
     padding:12px;
     text-align:center;
     margin-top:10px;
@@ -574,17 +585,25 @@ nav a:hover,nav a.active{color:var(--gold)}
   .topbar-inner{justify-content:center;text-align:center}
   .nav{min-height:75px}
   .brand img{width:125px;height:55px}
-  .hero{min-height:520px;background-position:55% center}
+  .hero{
+    min-height:520px;
+    background-position:55% center;
+  }
   .hero-content{padding:70px 0}
   .hero h1{font-size:43px}
   .hero p{font-size:14px}
   .quick-grid{grid-template-columns:1fr 1fr}
-  .quick-item{padding:16px 11px;border-bottom:1px solid #e2d5c0}
+  .quick-item{
+    padding:16px 11px;
+    border-bottom:1px solid #e2d5c0;
+  }
   .quick-item:nth-child(2){border-right:0}
   .quick-item strong{font-size:12px}
-  .highlight-grid,.stay-grid,.activity-grid,.include-grid,.info-grid{grid-template-columns:1fr}
+  .highlight-grid,.stay-grid,.activity-grid,
+  .include-grid,.info-grid{grid-template-columns:1fr}
   .day-card{grid-template-columns:1fr}
   .day-image{height:220px;min-height:0}
+  .day-image img{height:220px;min-height:0}
   .day-content{padding:23px}
   .day-content h3{font-size:24px}
   .feature-image{height:280px}
@@ -615,13 +634,17 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- HEADER -->
 <header class="header">
   <div class="container nav">
+
     <a class="brand" href="index.html">
       <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
     </a>
 
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <button class="nav-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            type="button">☰</button>
 
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="safaris.html">Safaris</a>
@@ -638,6 +661,7 @@ nav a:hover,nav a.active{color:var(--gold)}
       <a href="contact.html">Contact</a>
       <a href="contact.html" class="nav-book">Book Now</a>
     </nav>
+
   </div>
 </header>
 
@@ -646,54 +670,75 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- HERO -->
 <section class="hero">
   <div class="container hero-content">
+
     <div class="eyebrow">Kenyan Coast · Beach Holiday</div>
+
     <h1>Diani Beach Coastal Escape</h1>
+
     <p>
       Escape to the beautiful Kenyan coast. Discover powder-white
       beaches, turquoise ocean waters, tropical palm trees and the
       relaxed atmosphere of Diani Beach.
     </p>
+
     <div class="hero-buttons">
-      <a href="#itinerary" class="btn btn-primary">Explore the Itinerary</a>
-      <a href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20the%20Diani%20Beach%20Coastal%20Escape." class="btn btn-outline">Enquire on WhatsApp</a>
+      <a href="#itinerary" class="btn btn-primary">
+        Explore the Itinerary
+      </a>
+
+      <a href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20the%20Diani%20Beach%20Coastal%20Escape."
+         class="btn btn-outline"
+         target="_blank"
+         rel="noopener">
+        Enquire on WhatsApp
+      </a>
     </div>
+
   </div>
 </section>
 
 <!-- QUICK DETAILS -->
 <div class="quick-details">
   <div class="container quick-grid">
+
     <div class="quick-item">
       <span>Duration</span>
       <strong>4 Days / 3 Nights</strong>
     </div>
+
     <div class="quick-item">
       <span>Starting Point</span>
       <strong>Diani Beach</strong>
     </div>
+
     <div class="quick-item">
       <span>Holiday Type</span>
       <strong>Coastal Escape</strong>
     </div>
+
     <div class="quick-item">
       <span>Travel Style</span>
       <strong>Leisure / Tailor-made</strong>
     </div>
+
   </div>
 </div>
 
 <!-- OVERVIEW -->
 <section>
   <div class="container two-col">
+
     <div class="feature-image">
       <img
         src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani_Beach_Kenya.jpg?width=1200"
-        alt="Beautiful white sandy Diani Beach in Kenya"
+        alt="Diani Beach coastline in Kenya"
         loading="lazy">
     </div>
 
     <div class="intro-copy">
+
       <div class="eyebrow">Welcome to the Kenyan Coast</div>
+
       <h2>Discover the beauty of Diani Beach</h2>
 
       <p>
@@ -722,6 +767,7 @@ nav a:hover,nav a.active{color:var(--gold)}
         <li>Flexible leisure time and tailor-made activities</li>
         <li>Choice of accommodation categories</li>
       </ul>
+
     </div>
   </div>
 </section>
@@ -729,9 +775,12 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- HIGHLIGHTS -->
 <section class="highlights">
   <div class="container">
+
     <div class="section-heading center">
       <div class="eyebrow">Coastal Experiences</div>
+
       <h2>Highlights of Your Diani Escape</h2>
+
       <p>
         Enjoy a blend of relaxation, tropical scenery and optional
         experiences along Kenya's south coast.
@@ -739,6 +788,7 @@ nav a:hover,nav a.active{color:var(--gold)}
     </div>
 
     <div class="highlight-grid">
+
       <article class="highlight-card">
         <div class="highlight-number">01</div>
         <h3>White Sandy Beaches</h3>
@@ -765,6 +815,7 @@ nav a:hover,nav a.active{color:var(--gold)}
           attractions through optional excursions.
         </p>
       </article>
+
     </div>
   </div>
 </section>
@@ -772,9 +823,12 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- ITINERARY -->
 <section id="itinerary">
   <div class="container">
+
     <div class="section-heading">
       <div class="eyebrow">Your Coastal Journey</div>
+
       <h2>Detailed 4-Day Itinerary</h2>
+
       <p>
         This is a suggested programme that can be adjusted according
         to your arrival arrangements, selected hotel and preferred
@@ -784,15 +838,18 @@ nav a:hover,nav a.active{color:var(--gold)}
 
     <!-- DAY 1 -->
     <article class="day-card">
+
       <div class="day-image">
         <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani_Beach_Kenya.jpg?width=1000"
-          alt="Diani Beach coastline"
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani_Beach_Ukunda.jpg?width=1200"
+          alt="Diani Beach in Ukunda, Kenya"
           loading="lazy">
       </div>
 
       <div class="day-content">
+
         <div class="day-label">Day 01 · Arrival in Diani</div>
+
         <h3>Arrival, Hotel Check-in and Beach Relaxation</h3>
 
         <p>
@@ -828,20 +885,24 @@ nav a:hover,nav a.active{color:var(--gold)}
           <span>Beach relaxation</span>
           <span>Overnight stay</span>
         </div>
+
       </div>
     </article>
 
     <!-- DAY 2 -->
     <article class="day-card">
+
       <div class="day-image">
         <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani_Beach.jpg?width=1000"
-          alt="Turquoise Indian Ocean waters at Diani"
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Boat_at_Diani_Beach%2C_Kenya.jpg?width=1200"
+          alt="Boat along the Diani Beach coastline"
           loading="lazy">
       </div>
 
       <div class="day-content">
+
         <div class="day-label">Day 02 · Beach and Ocean Experiences</div>
+
         <h3>A Day of Coastal Leisure and Optional Water Activities</h3>
 
         <p>
@@ -876,20 +937,24 @@ nav a:hover,nav a.active{color:var(--gold)}
           <span>Optional water activities</span>
           <span>Overnight stay</span>
         </div>
+
       </div>
     </article>
 
     <!-- DAY 3 -->
     <article class="day-card">
+
       <div class="day-image">
         <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Wasini_Island_Kenya.jpg?width=1000"
-          alt="Wasini Island coastal scenery"
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Wasini_coast.JPG?width=1200"
+          alt="Coastline and coral landscape of Wasini Island"
           loading="lazy">
       </div>
 
       <div class="day-content">
+
         <div class="day-label">Day 03 · Coastal Discovery</div>
+
         <h3>Optional Coastal Excursion or a Free Leisure Day</h3>
 
         <p>
@@ -924,20 +989,24 @@ nav a:hover,nav a.active{color:var(--gold)}
           <span>Free leisure time</span>
           <span>Overnight stay</span>
         </div>
+
       </div>
     </article>
 
     <!-- DAY 4 -->
     <article class="day-card">
+
       <div class="day-image">
         <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani_Beach_Kenya.jpg?width=1000"
-          alt="Diani Beach coastline in the morning"
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani_Beach_Sunrise_Kenya.jpg?width=1200"
+          alt="Sunrise over Diani Beach and the Indian Ocean"
           loading="lazy">
       </div>
 
       <div class="day-content">
+
         <div class="day-label">Day 04 · Departure</div>
+
         <h3>Breakfast, Check-out and Departure</h3>
 
         <p>
@@ -969,17 +1038,22 @@ nav a:hover,nav a.active{color:var(--gold)}
           <span>Hotel check-out</span>
           <span>Departure transfer</span>
         </div>
+
       </div>
     </article>
+
   </div>
 </section>
 
 <!-- ACCOMMODATION -->
 <section class="accommodation">
   <div class="container">
+
     <div class="section-heading center">
       <div class="eyebrow">Your Stay</div>
+
       <h2>Accommodation Options</h2>
+
       <p>
         Select a property and accommodation category according to
         your budget and preferred holiday experience. The actual hotel
@@ -988,13 +1062,17 @@ nav a:hover,nav a.active{color:var(--gold)}
     </div>
 
     <div class="stay-grid">
+
       <article class="stay-card">
+
         <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani_Beach_Hotel.jpg?width=1200"
-          alt="Beach hotel accommodation in Diani"
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani_Beach_towards_the_south_next_to_the_Indian_Ocean_Beach_Club_hotel_near_Mombasa%2C_Coast_Province%2C_Kenya.jpg?width=1200"
+          alt="Coastal beach setting in the Diani area"
           loading="lazy">
+
         <div class="stay-copy">
           <h3>Comfort and Mid-range Stay</h3>
+
           <p>
             Enjoy a comfortable coastal stay with convenient access
             to the beach and the surrounding Diani area. The final
@@ -1002,23 +1080,29 @@ nav a:hover,nav a.active{color:var(--gold)}
             your preferred budget.
           </p>
         </div>
+
       </article>
 
       <article class="stay-card">
+
         <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Leopard_Beach_Resort.jpg?width=1200"
-          alt="Leopard Beach Resort in Diani"
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Southern_Palms_-_pl%C3%A1%C5%BE_-_panoramio.jpg?width=1200"
+          alt="Southern Palms coastal resort setting in Diani"
           loading="lazy">
+
         <div class="stay-copy">
           <h3>Premium Beach Resort</h3>
+
           <p>
             Upgrade to a premium coastal experience with enhanced
-            comfort and resort facilities. Leopard Beach Resort is
-            shown as an illustrative property, not a guaranteed
-            inclusion in the package.
+            comfort and resort facilities. The photograph illustrates
+            a Diani resort setting and does not guarantee a particular
+            property or its inclusion in the package.
           </p>
         </div>
+
       </article>
+
     </div>
   </div>
 </section>
@@ -1026,9 +1110,12 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- ACTIVITIES -->
 <section>
   <div class="container">
+
     <div class="section-heading center">
       <div class="eyebrow">Optional Experiences</div>
+
       <h2>Things to Do in Diani</h2>
+
       <p>
         Enhance your coastal holiday with activities available
         around Diani Beach and the south coast.
@@ -1036,6 +1123,7 @@ nav a:hover,nav a.active{color:var(--gold)}
     </div>
 
     <div class="activity-grid">
+
       <article class="activity">
         <h3>Snorkelling</h3>
         <p>
@@ -1083,6 +1171,7 @@ nav a:hover,nav a.active{color:var(--gold)}
           around Diani and the surrounding south coast.
         </p>
       </article>
+
     </div>
   </div>
 </section>
@@ -1090,9 +1179,12 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- PRICE -->
 <section class="price-section">
   <div class="container price-inner">
+
     <div>
       <div class="eyebrow">Your Coastal Holiday</div>
+
       <h2>Make Diani Your Next Escape</h2>
+
       <p>
         The indicative package price is based on the initial
         holiday proposal. The final quotation depends on travel
@@ -1102,13 +1194,23 @@ nav a:hover,nav a.active{color:var(--gold)}
     </div>
 
     <div class="price-box">
+
       <small>Indicative starting price</small>
+
       <div class="price">USD 350</div>
-      <p>Approximately KES 45,000 per person. The KES equivalent is indicative and subject to exchange-rate changes.</p>
+
+      <p>
+        Approximately KES 45,000 per person. The KES equivalent
+        is indicative and subject to exchange-rate changes.
+      </p>
+
       <a class="btn btn-gold"
-         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20please%20send%20me%20a%20quotation%20for%20the%204-Day%20Diani%20Beach%20Coastal%20Escape.">
+         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20please%20send%20me%20a%20quotation%20for%20the%204-Day%20Diani%20Beach%20Coastal%20Escape."
+         target="_blank"
+         rel="noopener">
         Request Your Quotation
       </a>
+
     </div>
   </div>
 </section>
@@ -1116,9 +1218,12 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- INCLUSIONS -->
 <section>
   <div class="container">
+
     <div class="section-heading">
       <div class="eyebrow">Package Details</div>
+
       <h2>Inclusions and Exclusions</h2>
+
       <p>
         The final written quotation will specify all confirmed
         services, accommodation and activities.
@@ -1126,8 +1231,10 @@ nav a:hover,nav a.active{color:var(--gold)}
     </div>
 
     <div class="include-grid">
+
       <div class="include-box included">
         <h3>Potential Inclusions</h3>
+
         <ul>
           <li>Three nights' accommodation at the selected hotel</li>
           <li>Meals according to the confirmed meal plan</li>
@@ -1140,6 +1247,7 @@ nav a:hover,nav a.active{color:var(--gold)}
 
       <div class="include-box excluded">
         <h3>Potential Exclusions</h3>
+
         <ul>
           <li>Flights and railway tickets unless specified</li>
           <li>Optional marine and water activities</li>
@@ -1149,6 +1257,7 @@ nav a:hover,nav a.active{color:var(--gold)}
           <li>Services not listed in the final quotation</li>
         </ul>
       </div>
+
     </div>
   </div>
 </section>
@@ -1156,12 +1265,14 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- TRAVEL INFORMATION -->
 <section class="info-section">
   <div class="container">
+
     <div class="section-heading">
       <div class="eyebrow">Before You Travel</div>
       <h2>Important Travel Information</h2>
     </div>
 
     <div class="info-grid">
+
       <article class="info-card">
         <h3>Starting Point</h3>
         <p>
@@ -1196,6 +1307,7 @@ nav a:hover,nav a.active{color:var(--gold)}
           holiday.
         </p>
       </article>
+
     </div>
   </div>
 </section>
@@ -1203,8 +1315,13 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- BOOKING CTA -->
 <section class="cta">
   <div class="container">
-    <div class="eyebrow" style="color:#d9edb5">Your Adventure Begins Here</div>
+
+    <div class="eyebrow" style="color:#d9edb5">
+      Your Adventure Begins Here
+    </div>
+
     <h2>Ready for a Diani Beach Escape?</h2>
+
     <p>
       Let us plan your coastal holiday. Share your preferred dates,
       number of travellers and accommodation preferences, and our
@@ -1212,8 +1329,11 @@ nav a:hover,nav a.active{color:var(--gold)}
     </p>
 
     <div class="cta-actions">
+
       <a class="btn btn-primary"
-         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20book%20the%20Diani%20Beach%20Coastal%20Escape.">
+         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20book%20the%20Diani%20Beach%20Coastal%20Escape."
+         target="_blank"
+         rel="noopener">
         Enquire on WhatsApp
       </a>
 
@@ -1221,31 +1341,8 @@ nav a:hover,nav a.active{color:var(--gold)}
          href="mailto:info@fleypatadventures.com?subject=Diani%20Beach%20Coastal%20Escape%20Enquiry">
         Email Our Team
       </a>
-    </div>
-  </div>
-</section>
 
-<!-- PHOTO CREDITS -->
-<section class="photo-credits">
-  <div class="container">
-    <h3>Photography and Image Credits</h3>
-    <p>
-      Diani Beach photographs:
-      <a href="https://commons.wikimedia.org/wiki/Category:Diani_Beach" target="_blank" rel="noopener">Wikimedia Commons – Diani Beach</a>.
-    </p>
-    <p>
-      Wasini Island photograph:
-      <a href="https://commons.wikimedia.org/wiki/Category:Wasini_Island" target="_blank" rel="noopener">Wikimedia Commons – Wasini Island</a>.
-    </p>
-    <p>
-      Accommodation photographs:
-      <a href="https://commons.wikimedia.org/wiki/Category:Hotels_in_Diani_Beach" target="_blank" rel="noopener">Wikimedia Commons – Diani Beach hotels</a>.
-    </p>
-    <p>
-      Images are illustrative. Each original file page should be checked
-      for the photographer, licence and attribution requirements before
-      commercial publication.
-    </p>
+    </div>
   </div>
 </section>
 
@@ -1254,17 +1351,22 @@ nav a:hover,nav a.active{color:var(--gold)}
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
+
     <div class="footer-grid">
 
       <div>
         <a class="footer-brand" href="index.html">
           <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
         </a>
+
         <p>
           Explore more. Experience more. Travel beyond expectations.
           Your journey starts with us.
         </p>
-        <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">
+
+        <a href="https://www.instagram.com/fleypat_adventures/"
+           target="_blank"
+           rel="noopener">
           Instagram @fleypat_adventures
         </a>
       </div>
@@ -1291,23 +1393,37 @@ nav a:hover,nav a.active{color:var(--gold)}
       <div>
         <h3>Contact</h3>
         <a href="tel:+254704261626">+254 704 261 626</a>
-        <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-        <a href="https://wa.me/254704261626">WhatsApp our team</a>
+        <a href="mailto:info@fleypatadventures.com">
+          info@fleypatadventures.com
+        </a>
+        <a href="https://wa.me/254704261626"
+           target="_blank"
+           rel="noopener">
+          WhatsApp our team
+        </a>
         <span>Mombasa, Kenya</span>
       </div>
 
     </div>
 
     <div class="container foot-bottom">
-      <span>© <span id="year"></span> Fleypat Adventures. All rights reserved.</span>
-      <span>Explore More. Experience More. Travel Beyond Expectations.</span>
+      <span>
+        © <span id="year"></span> Fleypat Adventures. All rights reserved.
+      </span>
+
+      <span>
+        Explore More. Experience More. Travel Beyond Expectations.
+      </span>
     </div>
+
   </div>
 </footer>
 
+<!-- FLOATING WHATSAPP -->
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
-   target="_blank" rel="noopener">
+   target="_blank"
+   rel="noopener">
   WhatsApp Us
 </a>
 
@@ -1318,6 +1434,10 @@ const nav = document.querySelector('.header .nav nav');
 toggle.addEventListener('click', function(){
   const open = nav.classList.toggle('open');
   toggle.setAttribute('aria-expanded', open);
+  toggle.setAttribute(
+    'aria-label',
+    open ? 'Close menu' : 'Open menu'
+  );
   toggle.textContent = open ? '×' : '☰';
 });
 
@@ -1325,11 +1445,13 @@ nav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
     toggle.textContent = '☰';
   });
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year').textContent =
+  new Date().getFullYear();
 </script>
 
 </body>
