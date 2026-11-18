@@ -15,42 +15,144 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
-/* FLEYPAT BLOG VIDEO GALLERY */
+/* BLOG HERO - MATCH OTHER FLEYPAT PAGES */
+
+.blog-hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(15,31,20,.82), rgba(15,31,20,.48)),
+        url("travel-blog.jpg") center 50% / cover no-repeat;
+    color: #fff;
+}
+
+.blog-hero-content {
+    max-width: 760px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.blog-hero .eyebrow {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #a8d832;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.blog-hero h1 {
+    max-width: 720px;
+    margin: 0 0 22px;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(44px, 6vw, 72px);
+    line-height: 1.08;
+}
+
+.blog-hero p {
+    max-width: 620px;
+    margin: 0;
+    color: rgba(255,255,255,.9);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* CENTRED YOUTUBE VIDEO */
+
 .blog-video-section {
-  background: #FBF7E9;
+    padding: 85px 0;
+    background: #FBF7E9;
+}
+
+.blog-video-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 .blog-video-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .blog-video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 10px;
-  background: #172018;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #101810;
+    border-radius: 3px;
+    box-shadow: 0 18px 45px rgba(0,0,0,.16);
 }
 
-.blog-video iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
+.blog-video iframe,
+.blog-video #fleypat-youtube-player {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
+
+/* LAPTOP AND LARGE SCREENS */
+
+@media (min-width: 1200px) {
+    .blog-video-container {
+        max-width: 1160px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .blog-video-container {
+        max-width: 1220px;
+    }
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+    .blog-video-section {
+        padding: 65px 0;
+    }
+
+    .blog-video-container {
+        max-width: 100%;
+    }
+}
+
+/* PHONES */
 
 @media (max-width: 650px) {
-  .blog-video-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
+    .blog-hero {
+        min-height: 510px;
+        background-position: 58% center;
+    }
 
-  .blog-video {
-    border-radius: 7px;
-  }
+    .blog-hero-content {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .blog-hero h1 {
+        font-size: clamp(39px, 10vw, 52px);
+    }
+
+    .blog-hero p {
+        font-size: 14px;
+    }
+
+    .blog-video-section {
+        padding: 45px 0;
+    }
+
+    .blog-video {
+        border-radius: 2px;
+    }
 }
 </style>
 </head>
@@ -100,13 +202,25 @@
 
 <main>
 
-<section class="page-hero" style="--hero-image:url('travel-blog.jpg')">
+<!-- LARGER BLOG HERO -->
+
+<section class="blog-hero">
   <div class="wrap">
-    <span class="eyebrow">Explore with Fleypat</span>
-    <h1>Travel Tips &amp; Inspiration</h1>
-    <p>Helpful ideas for planning safaris, coastal holidays and journeys across East Africa.</p>
+    <div class="blog-hero-content">
+      <span class="eyebrow">Explore with Fleypat</span>
+
+      <h1>Travel Tips &amp; Inspiration</h1>
+
+      <p>
+        Helpful ideas for planning safaris, coastal holidays and
+        journeys across East Africa. Discover new destinations,
+        prepare for your next adventure and get inspired to explore.
+      </p>
+    </div>
   </div>
 </section>
+
+<!-- BLOG ARTICLES -->
 
 <section class="section">
   <div class="wrap">
@@ -172,20 +286,27 @@
   </div>
 </section>
 
-<!-- YOUTUBE VIDEOS: NO HEADINGS OR CAPTIONS -->
+<!-- LARGE CENTRED YOUTUBE PLAYER -->
+
 <section class="section blog-video-section">
   <div class="wrap">
 
-    <div class="blog-video-grid">
+    <div class="blog-video-container">
 
-      <div class="blog-video">
-        <div id="fleypat-youtube-player"></div>
+      <div class="blog-video-grid">
+
+        <div class="blog-video">
+          <div id="fleypat-youtube-player"></div>
+        </div>
+
       </div>
 
     </div>
 
   </div>
 </section>
+
+<!-- CALL TO ACTION -->
 
 <section class="cta wrap">
   <div>
@@ -196,6 +317,8 @@
 </section>
 
 </main>
+
+<!-- FOOTER -->
 
 <footer class="footer">
   <div class="wrap footer-grid">
@@ -256,6 +379,7 @@
 <script src="script.js"></script>
 
 <!-- YOUTUBE VIDEO SEQUENCE -->
+
 <script>
 const fleypatVideos = [
   "G757UAtbTWQ",
@@ -266,6 +390,7 @@ const fleypatVideos = [
 
 let fleypatVideoIndex = 0;
 let fleypatPlayer;
+let fleypatAdvanceTimer;
 
 function onYouTubeIframeAPIReady() {
 
@@ -291,9 +416,11 @@ function onYouTubeIframeAPIReady() {
       },
 
       onStateChange: function(event) {
+
         if (event.data === YT.PlayerState.ENDED) {
           playNextFleypatVideo();
         }
+
       },
 
       onError: function() {
@@ -308,14 +435,16 @@ function onYouTubeIframeAPIReady() {
 
 function playNextFleypatVideo() {
 
+  if (!fleypatPlayer) return;
+
+  clearTimeout(fleypatAdvanceTimer);
+
   fleypatVideoIndex =
     (fleypatVideoIndex + 1) % fleypatVideos.length;
 
-  if (fleypatPlayer) {
-    fleypatPlayer.loadVideoById(
-      fleypatVideos[fleypatVideoIndex]
-    );
-  }
+  fleypatPlayer.loadVideoById(
+    fleypatVideos[fleypatVideoIndex]
+  );
 
 }
 
