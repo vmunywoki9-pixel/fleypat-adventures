@@ -1,0 +1,1444 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nairobi National Park &amp; Giraffe Centre Day Trip | Fleypat Adventures</title>
+
+<meta name="description" content="Enjoy a full-day Nairobi wildlife experience with Fleypat Adventures. Explore Nairobi National Park on a game drive and visit the famous Giraffe Centre in Karen.">
+
+<meta name="theme-color" content="#a8d832">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+:root{
+  --lime:#a8d832;
+  --green:#243c28;
+  --deep:#172b20;
+  --gold:#a97832;
+  --cream:#fbf7e9;
+  --muted:#747c72;
+  --text:#354036;
+  --white:#fff;
+  --shadow:0 15px 40px rgba(25,48,30,.09);
+}
+
+*{box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:105px;
+}
+
+body{
+  margin:0;
+  font-family:'DM Sans',sans-serif;
+  color:var(--text);
+  line-height:1.75;
+  background:#fff;
+}
+
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(1160px,91%);margin:auto}
+
+/* TOP BAR */
+
+.topline{
+  background:var(--deep);
+  color:#fff;
+  padding:8px 0;
+  font-size:12px;
+}
+
+.top-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.topline a{color:#e2edcf}
+
+/* HEADER */
+
+.header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  box-shadow:0 4px 20px rgba(0,0,0,.06);
+}
+
+.nav{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+}
+
+.brand img{
+  width:190px;
+  max-height:65px;
+  object-fit:contain;
+}
+
+.nav nav{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.nav nav a{
+  font-size:12px;
+  font-weight:700;
+  color:#354337;
+  transition:.2s;
+}
+
+.nav nav a:hover,
+.nav nav a.active{color:#789f22}
+
+.nav nav .nav-book{
+  background:var(--lime);
+  color:var(--deep);
+  padding:11px 17px;
+  border-radius:3px;
+}
+
+.nav-toggle{
+  display:none;
+  border:0;
+  background:var(--green);
+  color:#fff;
+  padding:9px 13px;
+  font-size:21px;
+  border-radius:3px;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+  min-height:590px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  color:#fff;
+  background:
+    linear-gradient(90deg,rgba(12,29,22,.86),rgba(12,29,22,.25)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Buffalo_Nairobi_Skyline_Savannah_Kenya_May19_R1600769.jpg?width=2000") center/cover no-repeat;
+}
+
+.hero-content{
+  max-width:760px;
+  padding:95px 0;
+}
+
+.eyebrow{
+  display:inline-block;
+  color:var(--lime);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(40px,6vw,72px);
+  line-height:1.08;
+  color:#fff;
+  margin:0 0 20px;
+}
+
+.hero p{
+  max-width:650px;
+  color:#f1f2e9;
+  font-size:16px;
+  margin:0 0 28px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:13px;
+  flex-wrap:wrap;
+}
+
+/* BUTTONS */
+
+.btn{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  padding:14px 22px;
+  background:var(--lime);
+  color:var(--deep);
+  font-size:12px;
+  font-weight:800;
+  border-radius:3px;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  filter:brightness(.96);
+}
+
+.btn-outline{
+  background:transparent;
+  color:#fff;
+  border:1px solid rgba(255,255,255,.8);
+}
+
+.btn-gold{
+  background:var(--gold);
+  color:#fff;
+}
+
+/* QUICK FACTS */
+
+.quick-facts{
+  position:relative;
+  z-index:2;
+  margin-top:-42px;
+}
+
+.facts-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+
+.fact{
+  padding:23px 20px;
+  border-right:1px solid #eee9dc;
+}
+
+.fact:last-child{border:0}
+
+.fact strong{
+  display:block;
+  color:var(--green);
+  font-size:14px;
+}
+
+.fact span{
+  font-size:11px;
+  color:var(--muted);
+}
+
+/* SECTIONS */
+
+.section{padding:82px 0}
+.section-soft{background:var(--cream)}
+
+.section-heading{
+  max-width:720px;
+  margin-bottom:35px;
+}
+
+.section-heading.center{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.kicker{
+  display:block;
+  color:var(--gold);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+h2,h3{
+  font-family:'Playfair Display',serif;
+  color:var(--green);
+  line-height:1.2;
+}
+
+h2{
+  font-size:clamp(30px,4vw,43px);
+  margin:0 0 17px;
+}
+
+h3{
+  font-size:23px;
+  margin:0 0 13px;
+}
+
+.section-heading p{
+  color:var(--muted);
+  margin:0;
+}
+
+/* INTRODUCTION */
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:55px;
+}
+
+.intro-image{
+  width:100%;
+  height:440px;
+  object-fit:cover;
+  box-shadow:var(--shadow);
+  border-radius:3px;
+}
+
+.intro-copy p{color:#687168}
+
+.intro-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+  margin-top:25px;
+}
+
+.intro-point{
+  padding:14px;
+  background:var(--cream);
+  color:var(--green);
+  font-size:12px;
+  font-weight:800;
+  border-left:3px solid var(--lime);
+}
+
+/* HIGHLIGHTS */
+
+.highlights{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.highlight{
+  padding:27px;
+  background:#fff;
+  box-shadow:0 8px 30px rgba(0,0,0,.05);
+  border-bottom:3px solid var(--lime);
+}
+
+.highlight .number{
+  display:block;
+  color:var(--gold);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:2px;
+  margin-bottom:13px;
+}
+
+.highlight p{
+  font-size:13px;
+  color:var(--muted);
+  margin:0;
+}
+
+/* ITINERARY */
+
+.itinerary-list{
+  display:grid;
+  gap:25px;
+}
+
+.day-card{
+  display:grid;
+  grid-template-columns:310px 1fr;
+  background:#fff;
+  box-shadow:0 8px 32px rgba(0,0,0,.06);
+  overflow:hidden;
+}
+
+.day-card img{
+  width:100%;
+  height:100%;
+  min-height:290px;
+  object-fit:cover;
+}
+
+.day-content{padding:30px 34px}
+
+.day-label{
+  display:inline-block;
+  color:#6f941e;
+  background:#f0f7df;
+  padding:5px 11px;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.day-content h3{font-size:25px}
+.day-content p{font-size:13px;color:#687168}
+
+.day-content ul{
+  padding-left:19px;
+  color:#687168;
+  font-size:13px;
+}
+
+.day-content li{margin:6px 0}
+
+/* EXPERIENCE DETAILS */
+
+.detail-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+
+.detail-card{
+  padding:27px;
+  background:#fff;
+  border:1px solid #eee9dc;
+}
+
+.detail-card p,
+.detail-card li{
+  color:#697168;
+  font-size:13px;
+}
+
+.detail-card ul{padding-left:19px}
+
+/* GIRAFFE CENTRE */
+
+.centre-feature{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:40px;
+  margin-top:55px;
+}
+
+.centre-feature img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  box-shadow:var(--shadow);
+}
+
+.centre-feature p{color:var(--muted);font-size:14px}
+
+/* PRICE */
+
+.price-panel{
+  background:var(--green);
+  color:#fff;
+  padding:40px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  gap:25px;
+}
+
+.price-panel h2{color:#fff;font-size:32px}
+.price-panel p{color:#e0e9d9;margin-bottom:0}
+
+.price{
+  color:var(--lime);
+  font-family:'Playfair Display',serif;
+  font-size:29px;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+/* NOTES */
+
+.notes{
+  background:var(--cream);
+  padding:26px;
+  border-left:4px solid var(--gold);
+}
+
+.notes p{
+  font-size:13px;
+  color:#687168;
+  margin-bottom:0;
+}
+
+/* CTA */
+
+.cta{
+  padding:55px;
+  background:var(--deep);
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+  margin-top:75px;
+  margin-bottom:75px;
+}
+
+.cta h2{color:#fff;margin-bottom:10px}
+.cta p{color:#d7dfd3;margin:0}
+
+/* FOOTER */
+
+.footer{
+  background:#172b20;
+  color:#e5e9df;
+  padding:65px 0 20px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1.2fr;
+  gap:35px;
+}
+
+.footer-brand img{
+  width:190px;
+  max-height:70px;
+  object-fit:contain;
+  margin-bottom:17px;
+}
+
+.footer p,
+.footer a,
+.footer span{
+  color:#c6d0c3;
+  font-size:12px;
+}
+
+.footer a{
+  display:block;
+  margin:9px 0;
+}
+
+.footer a:hover{color:var(--lime)}
+
+.footer h3{
+  color:var(--lime);
+  font-family:'DM Sans',sans-serif;
+  font-size:14px;
+}
+
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.14);
+  margin-top:40px;
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+  font-size:11px;
+  color:#aeb9aa;
+}
+
+/* WHATSAPP */
+
+.float-wa{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:999;
+  background:#25d366;
+  color:#fff;
+  font-size:12px;
+  font-weight:800;
+  padding:14px 20px;
+  border-radius:30px;
+  box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1050px){
+  .nav nav{gap:10px}
+  .nav nav a{font-size:11px}
+  .brand img{width:160px}
+}
+
+@media(max-width:850px){
+  .nav{min-height:72px}
+  .nav-toggle{display:block}
+
+  .nav nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    padding:20px 5%;
+    background:#fff;
+    box-shadow:0 12px 20px rgba(0,0,0,.08);
+    align-items:stretch;
+    flex-direction:column;
+    gap:0;
+  }
+
+  .nav nav.open{display:flex}
+  .nav nav a{padding:11px 4px;font-size:13px}
+  .nav nav .nav-book{text-align:center;margin-top:8px}
+
+  .intro-grid,
+  .centre-feature{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .intro-image{height:350px}
+  .day-card{grid-template-columns:240px 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:600px){
+  .top-inner{justify-content:center;text-align:center}
+
+  .hero{min-height:510px}
+  .hero-content{padding:70px 0}
+  .hero p{font-size:14px}
+
+  .facts-grid{grid-template-columns:1fr 1fr}
+  .fact:nth-child(2){border-right:0}
+  .fact:nth-child(-n+2){border-bottom:1px solid #eee9dc}
+
+  .section{padding:62px 0}
+
+  .intro-points{grid-template-columns:1fr 1fr}
+  .highlights,
+  .detail-grid{grid-template-columns:1fr}
+
+  .day-card{grid-template-columns:1fr}
+  .day-card img{height:230px;min-height:0}
+  .day-content{padding:24px}
+
+  .centre-feature img{height:270px}
+
+  .price-panel{
+    grid-template-columns:1fr;
+    padding:28px;
+  }
+
+  .price{font-size:26px}
+
+  .cta{
+    padding:30px;
+    display:block;
+  }
+
+  .cta .btn{margin-top:20px}
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+  }
+}
+
+@media(max-width:390px){
+  .footer-grid{grid-template-columns:1fr}
+  .intro-points{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topline">
+  <div class="wrap top-inner">
+    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+    <span>
+      <a href="tel:+254704261626">+254 704 261 626</a>
+      ·
+      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+    </span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wrap nav">
+
+    <a class="brand" href="index.html" aria-label="Fleypat Adventures Home">
+      <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+    </a>
+
+    <button class="nav-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false">
+      ☰
+    </button>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="safaris.html">Safaris</a>
+      <a href="day-trips.html" class="active">Excursions</a>
+      <a href="packages.html">Packages</a>
+      <a href="transfers.html">Transfers</a>
+      <a href="beach-holidays.html">Stays</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-book">Book Now</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-content">
+
+    <span class="eyebrow">Nairobi Wildlife Experience</span>
+
+    <h1>Nairobi National Park &amp; Giraffe Centre</h1>
+
+    <p>
+      Discover Kenya's wildlife without travelling far from the city.
+      Enjoy an early-morning game drive through Nairobi National Park,
+      followed by an unforgettable visit to the famous Giraffe Centre.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn" href="contact.html?tour=nairobi-national-park-giraffe-centre">
+        Plan This Day Trip
+      </a>
+
+      <a class="btn btn-outline" href="#itinerary">
+        Explore the Itinerary
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- QUICK FACTS -->
+<div class="wrap quick-facts">
+  <div class="facts-grid">
+
+    <div class="fact">
+      <strong>Full Day</strong>
+      <span>Approximately 8–10 hours</span>
+    </div>
+
+    <div class="fact">
+      <strong>Nairobi, Kenya</strong>
+      <span>City-based wildlife experience</span>
+    </div>
+
+    <div class="fact">
+      <strong>Request a Quote</strong>
+      <span>Pricing based on your group</span>
+    </div>
+
+    <div class="fact">
+      <strong>Private Experience</strong>
+      <span>Arrangements on request</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- INTRODUCTION -->
+<section class="section">
+  <div class="wrap intro-grid">
+
+    <div>
+      <img
+        class="intro-image"
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Black_rhino_female_nairobi.jpg?width=1400"
+        alt="Black rhinoceros in Nairobi National Park"
+        loading="lazy">
+    </div>
+
+    <div class="intro-copy">
+
+      <span class="kicker">The Experience</span>
+
+      <h2>A Wildlife Adventure Just Outside Nairobi</h2>
+
+      <p>
+        Nairobi National Park offers a remarkable opportunity to experience
+        Kenya's wildlife against the backdrop of a modern city. Its open
+        grasslands, wooded areas and seasonal wetlands support a variety
+        of wildlife, including rhinos, lions, giraffes, zebras, buffaloes
+        and numerous bird species.
+      </p>
+
+      <p>
+        This day trip combines a guided game drive in the national park
+        with a visit to the Giraffe Centre in Lang'ata. It is a convenient
+        experience for visitors with limited time in Nairobi, families,
+        business travellers and anyone looking for a memorable wildlife day.
+      </p>
+
+      <div class="intro-points">
+        <div class="intro-point">Nairobi National Park</div>
+        <div class="intro-point">Wildlife Game Drive</div>
+        <div class="intro-point">Giraffe Centre Visit</div>
+        <div class="intro-point">Nairobi City Experience</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="section section-soft">
+  <div class="wrap">
+
+    <div class="section-heading center">
+      <span class="kicker">Experience Highlights</span>
+      <h2>What to Look Forward To</h2>
+      <p>
+        Enjoy two distinctive wildlife experiences in one carefully
+        arranged Nairobi day trip.
+      </p>
+    </div>
+
+    <div class="highlights">
+
+      <article class="highlight">
+        <span class="number">01 / SAFARI</span>
+        <h3>Nairobi National Park</h3>
+        <p>
+          Explore the park's landscapes on a game drive and look out
+          for its diverse wildlife, including rhinos, lions, giraffes,
+          zebras and buffaloes.
+        </p>
+      </article>
+
+      <article class="highlight">
+        <span class="number">02 / CONSERVATION</span>
+        <h3>Giraffe Centre</h3>
+        <p>
+          Learn about the conservation of endangered Rothschild's
+          giraffes and enjoy an educational visit at this well-known
+          wildlife conservation centre.
+        </p>
+      </article>
+
+      <article class="highlight">
+        <span class="number">03 / PHOTOGRAPHY</span>
+        <h3>Scenic Wildlife Photography</h3>
+        <p>
+          Capture memorable photographs of Kenya's wildlife and
+          landscapes. Sightings depend on animal movements and
+          natural conditions.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ITINERARY -->
+<section class="section" id="itinerary">
+  <div class="wrap">
+
+    <div class="section-heading">
+      <span class="kicker">Your Day in Nairobi</span>
+      <h2>Suggested Full-Day Itinerary</h2>
+      <p>
+        The following is an indicative schedule. Actual departure,
+        activity and return times will be adjusted according to your
+        pickup location, traffic, park conditions and visitor arrangements.
+      </p>
+    </div>
+
+    <div class="itinerary-list">
+
+      <!-- EARLY MORNING -->
+      <article class="day-card">
+
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Lion_at_Nairobi_National_Park,_Kenya.jpg?width=1200"
+          alt="Lion in Nairobi National Park"
+          loading="lazy">
+
+        <div class="day-content">
+
+          <span class="day-label">Early Morning · Approximately 5:30–6:00 AM</span>
+
+          <h3>Pickup &amp; Departure for Nairobi National Park</h3>
+
+          <p>
+            Your day begins with pickup from your Nairobi hotel,
+            residence or another agreed meeting point. Meet your
+            driver-guide and travel towards Nairobi National Park
+            for an early start.
+          </p>
+
+          <p>
+            The park opens at 6:00 AM. After completing the entry
+            arrangements, begin your game drive through the park's
+            different habitats.
+          </p>
+
+          <ul>
+            <li>Pickup from the agreed Nairobi location</li>
+            <li>Meet your driver-guide and receive a trip briefing</li>
+            <li>Transfer to the national park</li>
+            <li>Complete park entry procedures</li>
+            <li>Begin the morning game drive</li>
+          </ul>
+
+        </div>
+      </article>
+
+      <!-- GAME DRIVE -->
+      <article class="day-card">
+
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Giraffe,_Nairobi_National_Park.jpg?width=1200"
+          alt="Giraffe in Nairobi National Park"
+          loading="lazy">
+
+        <div class="day-content">
+
+          <span class="day-label">Morning · Approximately 6:30–10:30 AM</span>
+
+          <h3>Wildlife Game Drive in Nairobi National Park</h3>
+
+          <p>
+            Spend the morning exploring Nairobi National Park in search
+            of its wildlife. Your guide will help identify animals,
+            explain their behaviour and share information about the
+            park's habitats and conservation efforts.
+          </p>
+
+          <p>
+            Depending on the day and wildlife movements, you may have
+            opportunities to see giraffes, zebras, buffaloes, antelopes,
+            rhinos and other animals. Lions and other predators may
+            also be encountered, but sightings are never guaranteed.
+          </p>
+
+          <ul>
+            <li>Explore selected park tracks and viewing areas</li>
+            <li>Look out for large mammals and birdlife</li>
+            <li>Enjoy wildlife photography opportunities</li>
+            <li>Learn about the park's ecosystems and conservation</li>
+            <li>Follow park rules and remain in the vehicle unless in designated areas</li>
+          </ul>
+
+          <p>
+            The duration of the game drive will depend on the selected
+            package, park conditions and your preferred schedule.
+          </p>
+
+        </div>
+      </article>
+
+      <!-- LUNCH AND TRANSFER -->
+      <article class="day-card">
+
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Nairobi_National_Park,_Kenya_(47031).jpg?width=1200"
+          alt="Landscape in Nairobi National Park"
+          loading="lazy">
+
+        <div class="day-content">
+
+          <span class="day-label">Late Morning · Approximately 10:30 AM–12:30 PM</span>
+
+          <h3>Exit the Park &amp; Lunch Break</h3>
+
+          <p>
+            After the game drive, exit the park and proceed towards
+            the next part of your experience. Depending on your package
+            and schedule, enjoy lunch at an agreed restaurant or
+            arrange a convenient meal stop.
+          </p>
+
+          <p>
+            This is also an opportunity to relax before continuing
+            to the Giraffe Centre in Lang'ata.
+          </p>
+
+          <ul>
+            <li>Complete the game drive and exit the park</li>
+            <li>Proceed towards the agreed lunch location</li>
+            <li>Enjoy lunch if included in your selected package</li>
+            <li>Continue to the Giraffe Centre</li>
+          </ul>
+
+        </div>
+      </article>
+
+      <!-- GIRAFFE CENTRE -->
+      <article class="day-card">
+
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Rothschild_giraffe_(31640700173).jpg?width=1200"
+          alt="Rothschild giraffe at the Giraffe Centre in Nairobi"
+          loading="lazy">
+
+        <div class="day-content">
+
+          <span class="day-label">Afternoon · Approximately 1:00–3:00 PM</span>
+
+          <h3>Visit the Giraffe Centre</h3>
+
+          <p>
+            Continue to the Giraffe Centre in Lang'ata for an
+            educational wildlife experience focused on the endangered
+            Rothschild's giraffe.
+          </p>
+
+          <p>
+            Learn about giraffe conservation, observe the animals
+            at close range and participate in the visitor experience
+            permitted by the centre. The visit may also include
+            educational information about giraffes and their habitat.
+          </p>
+
+          <ul>
+            <li>Arrive at the Giraffe Centre</li>
+            <li>Complete visitor entry arrangements</li>
+            <li>Learn about Rothschild's giraffe conservation</li>
+            <li>Enjoy the visitor experience and photography</li>
+            <li>Allow approximately 1.5–2 hours for the visit</li>
+          </ul>
+
+          <p>
+            The centre's visitor activities and access arrangements
+            are subject to its current rules and operating conditions.
+          </p>
+
+        </div>
+      </article>
+
+      <!-- RETURN -->
+      <article class="day-card">
+
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Giraffe_at_Giraffe_Centre_Nairobi,_Kenya.jpg?width=1200"
+          alt="Giraffe at the Giraffe Centre in Nairobi"
+          loading="lazy">
+
+        <div class="day-content">
+
+          <span class="day-label">Afternoon · Approximately 3:00–4:30 PM</span>
+
+          <h3>End of Experience &amp; Return Transfer</h3>
+
+          <p>
+            After your visit to the Giraffe Centre, meet your driver
+            for the return transfer to your hotel, residence or
+            another agreed drop-off point in Nairobi.
+          </p>
+
+          <p>
+            Your day concludes with memories of Nairobi's wildlife
+            and conservation experiences.
+          </p>
+
+          <ul>
+            <li>Depart the Giraffe Centre</li>
+            <li>Return transfer to the agreed drop-off point</li>
+            <li>End of the day trip</li>
+          </ul>
+
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- GIRAFFE CENTRE FEATURE -->
+<section class="section section-soft">
+  <div class="wrap">
+
+    <div class="centre-feature">
+
+      <div>
+        <span class="kicker">Wildlife Conservation</span>
+
+        <h2>Discover the Giraffe Centre</h2>
+
+        <p>
+          The Giraffe Centre is located in Nairobi's Lang'ata area
+          and is dedicated to the conservation of the endangered
+          Rothschild's giraffe.
+        </p>
+
+        <p>
+          Visitors can learn about giraffe conservation, enjoy an
+          educational experience and discover more about the work
+          being undertaken to protect this distinctive species.
+        </p>
+
+        <p>
+          The centre recommends allowing approximately 1.5 to 2 hours
+          for a fulfilling visit. Its published visitor hours are
+          9:00 AM to 5:00 PM, subject to any changes announced by
+          the centre.
+        </p>
+
+        <a class="btn btn-gold"
+           href="https://www.giraffecentre.org/"
+           target="_blank"
+           rel="noopener">
+          Visit Official Website
+        </a>
+      </div>
+
+      <div>
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Giraffe_in_Giraffe_Centre.JPG?width=1400"
+          alt="Rothschild giraffe at the Giraffe Centre"
+          loading="lazy">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- INCLUSIONS -->
+<section class="section">
+  <div class="wrap">
+
+    <div class="section-heading">
+      <span class="kicker">Your Booking Details</span>
+      <h2>Inclusions &amp; Exclusions</h2>
+      <p>
+        The exact package inclusions will be confirmed in your
+        personalised quotation before booking.
+      </p>
+    </div>
+
+    <div class="detail-grid">
+
+      <div class="detail-card">
+        <h3>Possible Inclusions</h3>
+        <ul>
+          <li>Pickup and drop-off within the agreed Nairobi area</li>
+          <li>Private transport in an appropriate safari vehicle, if selected</li>
+          <li>Driver-guide services</li>
+          <li>Nairobi National Park game drive</li>
+          <li>Giraffe Centre visit, if included in the quotation</li>
+          <li>Activities specifically listed in the confirmed package</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Possible Exclusions</h3>
+        <ul>
+          <li>National park entry fees unless expressly included</li>
+          <li>Giraffe Centre admission unless expressly included</li>
+          <li>Lunch, drinks and personal refreshments unless specified</li>
+          <li>Personal expenses and shopping</li>
+          <li>Tips and gratuities</li>
+          <li>Travel insurance</li>
+          <li>Activities not included in the final quotation</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="section section-soft">
+  <div class="wrap">
+
+    <div class="price-panel">
+
+      <div>
+        <span class="eyebrow">Explore Nairobi with Fleypat</span>
+
+        <h2>Make Your Nairobi Day Memorable</h2>
+
+        <p>
+          Whether you are travelling alone, with family or in a group,
+          we can help arrange a wildlife experience around your
+          preferred schedule.
+        </p>
+      </div>
+
+      <div>
+        <div class="price">Request a Quote</div>
+        <p>Personalised pricing based on your group size and requirements.</p>
+
+        <a class="btn" href="contact.html?tour=nairobi-national-park-giraffe-centre">
+          Get Your Quote
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TRAVEL INFORMATION -->
+<section class="section">
+  <div class="wrap">
+
+    <div class="section-heading">
+      <span class="kicker">Before You Travel</span>
+      <h2>Important Travel Information</h2>
+    </div>
+
+    <div class="detail-grid">
+
+      <div class="detail-card">
+        <h3>Starting Point</h3>
+        <p>
+          The trip starts in Nairobi. Pickup is arranged from your
+          hotel, residence, airport-area accommodation or another
+          agreed location. Confirm your exact pickup point when booking.
+        </p>
+      </div>
+
+      <div class="detail-card">
+        <h3>Park Opening Hours</h3>
+        <p>
+          Nairobi National Park's published entry hours are
+          6:00 AM to 6:00 PM. Visitors should follow the park's
+          entry and exit requirements and all ranger instructions.
+        </p>
+      </div>
+
+      <div class="detail-card">
+        <h3>What to Bring</h3>
+        <ul>
+          <li>Comfortable clothing and walking shoes</li>
+          <li>Sun protection, sunglasses and a hat</li>
+          <li>Camera or smartphone</li>
+          <li>Drinking water</li>
+          <li>Valid identification and booking details</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Wildlife Viewing</h3>
+        <p>
+          Wildlife sightings depend on natural animal movements,
+          weather and the time spent in the park. No particular
+          animal sighting can be guaranteed.
+        </p>
+      </div>
+
+      <div class="detail-card">
+        <h3>Park Safety Rules</h3>
+        <p>
+          Remain inside the vehicle except in designated areas,
+          follow the speed limit, avoid disturbing animals and
+          follow instructions from your guide and park authorities.
+        </p>
+      </div>
+
+      <div class="detail-card">
+        <h3>Admission and Payments</h3>
+        <p>
+          Park and Giraffe Centre admission charges may vary according
+          to visitor category and current rates. Confirm the applicable
+          fees and payment arrangements before travel.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="notes" style="margin-top:25px">
+      <strong>Important booking note</strong>
+      <p>
+        Your final written quotation will confirm the transport,
+        vehicle arrangement, driver-guide services, park entry fees,
+        Giraffe Centre admission, meals, applicable taxes, payment
+        arrangements and cancellation terms. The itinerary may be
+        adjusted according to traffic, visitor arrangements, park
+        conditions and the centre's operating requirements.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="wrap cta">
+
+  <div>
+    <span class="eyebrow">Your Adventure Begins Here</span>
+
+    <h2>Ready to Explore Nairobi's Wildlife?</h2>
+
+    <p>
+      Contact Fleypat Adventures to arrange your Nairobi National Park
+      and Giraffe Centre day trip.
+    </p>
+  </div>
+
+  <a class="btn btn-gold"
+     href="contact.html?tour=nairobi-national-park-giraffe-centre">
+    Enquire Now
+  </a>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="wrap footer-grid">
+
+    <div>
+      <a class="footer-brand" href="index.html">
+        <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+      </a>
+
+      <p>
+        Fleypat Adventures is a Mombasa-based tour and travel
+        company dedicated to creating memorable experiences
+        across Kenya and beyond.
+      </p>
+
+      <p><strong>Your Adventure Begins Here!</strong></p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="safaris.html">Kenya Safaris</a>
+      <a href="day-trips.html">Day Trips &amp; Excursions</a>
+      <a href="packages.html">Holiday Packages</a>
+      <a href="beach-holidays.html">Beach Holidays</a>
+      <a href="about.html">About Us</a>
+    </div>
+
+    <div>
+      <h3>Get in Touch</h3>
+      <a href="tel:+254704261626">+254 704 261 626</a>
+      <a href="mailto:info@fleypatadventures.com">
+        info@fleypatadventures.com
+      </a>
+      <span>Mombasa, Kenya</span>
+      <a href="https://www.instagram.com/fleypat_adventures/"
+         target="_blank"
+         rel="noopener">
+        Instagram
+      </a>
+    </div>
+
+    <div>
+      <h3>Plan Your Trip</h3>
+
+      <p>
+        Have a destination in mind? Let us help you create
+        an experience worth remembering.
+      </p>
+
+      <a href="contact.html">Make an Enquiry</a>
+
+      <a href="https://wa.me/254704261626"
+         target="_blank"
+         rel="noopener">
+        Chat With Us on WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+  <div class="wrap foot-bottom">
+    <span>
+      &copy; <span id="current-year"></span>
+      Fleypat Adventures. All rights reserved.
+    </span>
+
+    <span>Explore. Experience. Enjoy.</span>
+  </div>
+
+</footer>
+
+<!-- WHATSAPP -->
+<a
+  href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20the%20Nairobi%20National%20Park%20and%20Giraffe%20Centre%20day%20trip."
+  class="float-wa"
+  target="_blank"
+  rel="noopener"
+  aria-label="Contact Fleypat Adventures on WhatsApp">
+  WhatsApp Us
+</a>
+
+<!-- SCRIPTS -->
+<script src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+
+  const year=document.getElementById("current-year");
+  if(year){
+    year.textContent=new Date().getFullYear();
+  }
+
+  const navToggle=document.querySelector(".nav-toggle");
+  const mainNav=document.querySelector(".nav nav");
+
+  if(navToggle && mainNav){
+
+    navToggle.addEventListener("click",function(){
+
+      const isOpen=mainNav.classList.toggle("open");
+
+      navToggle.setAttribute(
+        "aria-expanded",
+        isOpen ? "true" : "false"
+      );
+
+      navToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+
+      navToggle.textContent=isOpen ? "✕" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach(function(link){
+
+      link.addEventListener("click",function(){
+
+        mainNav.classList.remove("open");
+
+        navToggle.setAttribute("aria-expanded","false");
+        navToggle.setAttribute("aria-label","Open navigation");
+        navToggle.textContent="☰";
+
+      });
+
+    });
+
+  }
+
+});
+</script>
+
+</body>
+</html>
