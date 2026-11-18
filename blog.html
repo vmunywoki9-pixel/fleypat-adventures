@@ -59,6 +59,63 @@
     line-height: 1.8;
 }
 
+/* BLOG ARTICLE IMAGES */
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 26px;
+}
+
+.blog-grid .card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.blog-grid .photo {
+    width: 100%;
+    height: 255px;
+    overflow: hidden;
+    background: #e9ece3;
+}
+
+.blog-grid .photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.blog-grid .card:hover .photo img {
+    transform: scale(1.045);
+}
+
+.blog-grid .card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-grid .card-content .link {
+    margin-top: auto;
+}
+
+.photo-credit {
+    display: block;
+    padding: 7px 0 0;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #777f72;
+}
+
+.photo-credit a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 /* CENTRED YOUTUBE VIDEO */
 
 .blog-video-section {
@@ -123,6 +180,10 @@
     .blog-video-container {
         max-width: 100%;
     }
+
+    .blog-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
 }
 
 /* MOBILE */
@@ -146,6 +207,14 @@
         font-size: 14px;
     }
 
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid .photo {
+        height: 240px;
+    }
+
     .blog-video-section {
         padding: 45px 0;
     }
@@ -159,45 +228,49 @@
 
 <body>
 
+<!-- TOP BAR -->
+
 <div class="topline">
-  <div class="wrap top-inner">
-    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-    <span>
-      <a href="tel:+254704261626">+254 704 261 626</a> ·
-      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-    </span>
-  </div>
+<div class="wrap top-inner">
+<span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+<span>
+<a href="tel:+254704261626">+254 704 261 626</a> ·
+<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+</span>
+</div>
 </div>
 
+<!-- HEADER -->
+
 <header class="header">
-  <div class="wrap nav">
+<div class="wrap nav">
 
-    <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-      <span>FLEYPAT<small>ADVENTURES</small></span>
-    </a>
+<a class="brand" href="index.html">
+<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+<span>FLEYPAT<small>ADVENTURES</small></span>
+</a>
 
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+<button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="safaris.html">Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="honeymoon.html">Honeymoons</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html">Itineraries</a>
-      <a href="services.html">Services</a>
-      <a href="transfers.html">Transfers</a>
-      <a href="blog.html" class="active">Blog</a>
-      <a href="partnerships.html">Partnerships</a>
-      <a href="contact.html">Contact</a>
-      <a class="nav-book" href="contact.html">Book Now</a>
-    </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="safaris.html">Safaris</a>
+<a href="marine-tours.html">Marine Tours</a>
+<a href="day-trips.html">Day Trips</a>
+<a href="beach-holidays.html">Beach Holidays</a>
+<a href="honeymoon.html">Honeymoons</a>
+<a href="destinations.html">Destinations</a>
+<a href="itineraries.html">Itineraries</a>
+<a href="services.html">Services</a>
+<a href="transfers.html">Transfers</a>
+<a href="blog.html" class="active">Blog</a>
+<a href="partnerships.html">Partnerships</a>
+<a href="contact.html">Contact</a>
+<a class="nav-book" href="contact.html">Book Now</a>
+</nav>
 
-  </div>
+</div>
 </header>
 
 <main>
@@ -205,115 +278,183 @@
 <!-- BLOG HERO -->
 
 <section class="blog-hero">
-  <div class="wrap">
-    <div class="blog-hero-content">
+<div class="wrap">
+<div class="blog-hero-content">
 
-      <span class="eyebrow">Explore with Fleypat</span>
+<span class="eyebrow">Explore with Fleypat</span>
 
-      <h1>Travel Tips &amp; Inspiration</h1>
+<h1>Travel Tips &amp; Inspiration</h1>
 
-      <p>
-        Helpful ideas for planning safaris, coastal holidays and
-        journeys across East Africa. Discover new destinations,
-        prepare for your next adventure and get inspired to explore.
-      </p>
+<p>
+Helpful ideas for planning safaris, coastal holidays and
+journeys across East Africa. Discover new destinations,
+prepare for your next adventure and get inspired to explore.
+</p>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <!-- BLOG ARTICLES -->
 
 <section class="section">
-  <div class="wrap">
+<div class="wrap">
 
-    <div class="section-head">
-      <span class="kicker">Travel with us</span>
-      <h2>Explore Your Options</h2>
-      <p>Choose an experience below or contact us for a custom proposal.</p>
-    </div>
+<div class="section-head">
+<span class="kicker">Travel with us</span>
+<h2>Explore Your Options</h2>
+<p>Choose an experience below or contact us for a custom proposal.</p>
+</div>
 
-    <div class="grid cols-3">
+<div class="blog-grid">
 
-      <article class="card">
-        <div class="photo">
-          <img src="what-to-pack-for-a-kenyan-safari.jpg" alt="What to Pack for a Kenyan Safari" loading="lazy">
-        </div>
-        <div class="card-content">
-          <span class="mini-tag">Explore</span>
-          <h3>What to Pack for a Kenyan Safari</h3>
-          <p>Pack for changing weather, outdoor activities and comfortable game viewing.</p>
-          <a class="link" href="safaris.html">Discover more →</a>
-        </div>
-      </article>
+<!-- SAFARI PACKING -->
 
-      <article class="card">
-        <div class="photo">
-          <img src="planning-a-kenya-coast-holiday.jpg" alt="Planning a Kenya Coast Holiday" loading="lazy">
-        </div>
-        <div class="card-content">
-          <span class="mini-tag">Explore</span>
-          <h3>Planning a Kenya Coast Holiday</h3>
-          <p>Compare coastal destinations, travel time and activities before choosing a base.</p>
-          <a class="link" href="beach-holidays.html">Discover more →</a>
-        </div>
-      </article>
+<article class="card">
 
-      <article class="card">
-        <div class="photo">
-          <img src="a-first-visit-to-tsavo.jpg" alt="A First Visit to Tsavo" loading="lazy">
-        </div>
-        <div class="card-content">
-          <span class="mini-tag">Explore</span>
-          <h3>A First Visit to Tsavo</h3>
-          <p>Understand the route, park experience and what to confirm before travelling.</p>
-          <a class="link" href="destination-tsavo.html">Discover more →</a>
-        </div>
-      </article>
+<div class="photo">
+<img
+src="https://images.unsplash.com/photo-1414408718521-f6f6198e9917?auto=format&fit=crop&w=1200&q=85"
+alt="Travel essentials including a camera, sun hat, sandals and travel accessories arranged for holiday packing"
+loading="lazy">
+</div>
 
-      <article class="card">
-        <div class="photo">
-          <img src="responsible-wildlife-viewing.jpg" alt="Responsible Wildlife Viewing" loading="lazy">
-        </div>
-        <div class="card-content">
-          <span class="mini-tag">Explore</span>
-          <h3>Responsible Wildlife Viewing</h3>
-          <p>Keep a respectful distance and follow your guide and park rules.</p>
-          <a class="link" href="safaris.html">Discover more →</a>
-        </div>
-      </article>
+<div class="card-content">
 
-    </div>
+<span class="mini-tag">Safari preparation</span>
 
-  </div>
+<h3>What to Pack for a Kenyan Safari</h3>
+
+<p>
+Prepare for your safari with practical travel essentials,
+comfortable clothing, sun protection and useful accessories
+for outdoor game viewing.
+</p>
+
+<a class="link" href="safaris.html">Discover more →</a>
+
+</div>
+</article>
+
+<!-- KENYA COAST -->
+
+<article class="card">
+
+<div class="photo">
+<img
+src="https://images.unsplash.com/photo-1651860282131-e3257674ccd1?auto=format&fit=crop&w=1200&q=85"
+alt="Sandy tropical shoreline and coastal vegetation at Diani Beach in Kenya"
+loading="lazy">
+</div>
+
+<div class="card-content">
+
+<span class="mini-tag">Coastal holidays</span>
+
+<h3>Planning a Kenya Coast Holiday</h3>
+
+<p>
+Discover Kenya's beautiful coastline, compare beach
+destinations and consider the activities, accommodation
+and travel arrangements for your holiday.
+</p>
+
+<a class="link" href="beach-holidays.html">Discover more →</a>
+
+</div>
+</article>
+
+<!-- TSAVO -->
+
+<article class="card">
+
+<div class="photo">
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Majestic_red_elephant_of_Tsavo_East_%285232098119%29.jpg"
+alt="Wild African elephant photographed in Tsavo East National Park, Kenya"
+loading="lazy">
+</div>
+
+<div class="card-content">
+
+<span class="mini-tag">Destination guide</span>
+
+<h3>A First Visit to Tsavo</h3>
+
+<p>
+Discover Tsavo's distinctive red elephants, expansive
+landscapes and wildlife experiences. Learn what to consider
+when planning your first safari.
+</p>
+
+<a class="link" href="destination-tsavo.html">Discover more →</a>
+
+<small class="photo-credit">
+Photo: McKay Savage / Wikimedia Commons ·
+<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>
+</small>
+
+</div>
+</article>
+
+<!-- RESPONSIBLE WILDLIFE VIEWING -->
+
+<article class="card">
+
+<div class="photo">
+<img
+src="https://images.unsplash.com/photo-1774281701720-fa161a58157a?auto=format&fit=crop&w=1200&q=85"
+alt="Safari tourists observing wild elephants from a safari vehicle"
+loading="lazy">
+</div>
+
+<div class="card-content">
+
+<span class="mini-tag">Responsible tourism</span>
+
+<h3>Responsible Wildlife Viewing</h3>
+
+<p>
+Enjoy wildlife responsibly by respecting animal space,
+following park regulations and listening to your professional
+safari guide during every game drive.
+</p>
+
+<a class="link" href="safaris.html">Discover more →</a>
+
+</div>
+</article>
+
+</div>
+</div>
 </section>
 
-<!-- CENTRED, SHORTER YOUTUBE VIDEO -->
+<!-- YOUTUBE VIDEO -->
 
 <section class="section blog-video-section">
-  <div class="wrap">
+<div class="wrap">
 
-    <div class="blog-video-container">
-      <div class="blog-video-grid">
+<div class="blog-video-container">
+<div class="blog-video-grid">
 
-        <div class="blog-video">
-          <div id="fleypat-youtube-player"></div>
-        </div>
+<div class="blog-video">
+<div id="fleypat-youtube-player"></div>
+</div>
 
-      </div>
-    </div>
+</div>
+</div>
 
-  </div>
+</div>
 </section>
 
 <!-- CALL TO ACTION -->
 
 <section class="cta wrap">
-  <div>
-    <h2>Ready to plan your next adventure?</h2>
-    <p>Tell us what you have in mind and we will prepare a tailored travel proposal.</p>
-  </div>
-  <a class="btn btn-gold" href="contact.html">Make an Enquiry</a>
+<div>
+<h2>Ready to plan your next adventure?</h2>
+<p>Tell us what you have in mind and we will prepare a tailored travel proposal.</p>
+</div>
+<a class="btn btn-gold" href="contact.html">Make an Enquiry</a>
 </section>
 
 </main>
@@ -321,59 +462,61 @@
 <!-- FOOTER -->
 
 <footer class="footer">
-  <div class="wrap footer-grid">
+<div class="wrap footer-grid">
 
-    <div>
-      <a class="brand footer-brand" href="index.html">
-        <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-        <span>FLEYPAT<small>ADVENTURES</small></span>
-      </a>
+<div>
+<a class="brand footer-brand" href="index.html">
+<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+<span>FLEYPAT<small>ADVENTURES</small></span>
+</a>
 
-      <p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
+<p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
 
-      <a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
-    </div>
+<a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+</div>
 
-    <div>
-      <h3>Explore</h3>
-      <a href="safaris.html">Wildlife Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html">Itineraries</a>
-    </div>
+<div>
+<h3>Explore</h3>
+<a href="safaris.html">Wildlife Safaris</a>
+<a href="marine-tours.html">Marine Tours</a>
+<a href="day-trips.html">Day Trips</a>
+<a href="beach-holidays.html">Beach Holidays</a>
+<a href="destinations.html">Destinations</a>
+<a href="itineraries.html">Itineraries</a>
+</div>
 
-    <div>
-      <h3>Company</h3>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Our Services</a>
-      <a href="transfers.html">Transfers</a>
-      <a href="partnerships.html">Partnerships</a>
-      <a href="blog.html">Travel Guides</a>
-    </div>
+<div>
+<h3>Company</h3>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Services</a>
+<a href="transfers.html">Transfers</a>
+<a href="partnerships.html">Partnerships</a>
+<a href="blog.html">Travel Guides</a>
+</div>
 
-    <div>
-      <h3>Contact</h3>
-      <a href="tel:+254704261626">+254 704 261 626</a>
-      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-      <a href="https://wa.me/254704261626">WhatsApp our team</a>
-      <span>Mombasa, Kenya</span>
-    </div>
+<div>
+<h3>Contact</h3>
+<a href="tel:+254704261626">+254 704 261 626</a>
+<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+<a href="https://wa.me/254704261626">WhatsApp our team</a>
+<span>Mombasa, Kenya</span>
+</div>
 
-  </div>
+</div>
 
-  <div class="wrap foot-bottom">
-    © <span data-year></span> Fleypat Adventures. All rights reserved.
-    <span>Explore More. Experience More. Travel Beyond Expectations.</span>
-  </div>
+<div class="wrap foot-bottom">
+© <span data-year></span> Fleypat Adventures. All rights reserved.
+<span>Explore More. Experience More. Travel Beyond Expectations.</span>
+</div>
 </footer>
 
+<!-- WHATSAPP -->
+
 <a class="float-wa"
-   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
-   target="_blank"
-   rel="noopener">
-  WhatsApp Us
+href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
+target="_blank"
+rel="noopener">
+WhatsApp Us
 </a>
 
 <script src="script.js"></script>
@@ -382,10 +525,10 @@
 
 <script>
 const fleypatVideos = [
-  "G757UAtbTWQ",
-  "M_yU7-8ztdA",
-  "nBHBOuEGFiA",
-  "isabbl5GOpA"
+"G757UAtbTWQ",
+"M_yU7-8ztdA",
+"nBHBOuEGFiA",
+"isabbl5GOpA"
 ];
 
 let fleypatVideoIndex = 0;
@@ -393,53 +536,53 @@ let fleypatPlayer;
 
 function onYouTubeIframeAPIReady() {
 
-  fleypatPlayer = new YT.Player("fleypat-youtube-player", {
+fleypatPlayer = new YT.Player("fleypat-youtube-player", {
 
-    width: "100%",
-    height: "100%",
-    videoId: fleypatVideos[fleypatVideoIndex],
+width: "100%",
+height: "100%",
+videoId: fleypatVideos[fleypatVideoIndex],
 
-    playerVars: {
-      autoplay: 1,
-      controls: 1,
-      mute: 1,
-      playsinline: 1,
-      rel: 0
-    },
+playerVars: {
+autoplay: 1,
+controls: 1,
+mute: 1,
+playsinline: 1,
+rel: 0
+},
 
-    events: {
+events: {
 
-      onReady: function(event) {
-        event.target.mute();
-        event.target.playVideo();
-      },
+onReady: function(event) {
+event.target.mute();
+event.target.playVideo();
+},
 
-      onStateChange: function(event) {
-        if (event.data === YT.PlayerState.ENDED) {
-          playNextFleypatVideo();
-        }
-      },
+onStateChange: function(event) {
+if (event.data === YT.PlayerState.ENDED) {
+playNextFleypatVideo();
+}
+},
 
-      onError: function() {
-        playNextFleypatVideo();
-      }
+onError: function() {
+playNextFleypatVideo();
+}
 
-    }
+}
 
-  });
+});
 
 }
 
 function playNextFleypatVideo() {
 
-  fleypatVideoIndex =
-    (fleypatVideoIndex + 1) % fleypatVideos.length;
+fleypatVideoIndex =
+(fleypatVideoIndex + 1) % fleypatVideos.length;
 
-  if (fleypatPlayer) {
-    fleypatPlayer.loadVideoById(
-      fleypatVideos[fleypatVideoIndex]
-    );
-  }
+if (fleypatPlayer) {
+fleypatPlayer.loadVideoById(
+fleypatVideos[fleypatVideoIndex]
+);
+}
 
 }
 
