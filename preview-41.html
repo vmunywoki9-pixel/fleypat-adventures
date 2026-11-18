@@ -1,0 +1,851 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>SGR Transfers in Mombasa & Kenya | Fleypat Adventures</title>
+<meta name="description" content="Arrange convenient transfers to and from Mombasa SGR Terminus and other agreed railway stations with Fleypat Adventures.">
+<meta name="theme-color" content="#a8d832">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.sgr-page {
+    --sgr-green: #243c28;
+    --sgr-lime: #a8d832;
+    --sgr-gold: #a97832;
+    --sgr-cream: #fbf7e9;
+    color: #30352f;
+}
+
+.sgr-page * {
+    box-sizing: border-box;
+}
+
+.sgr-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sgr-hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background:
+        linear-gradient(90deg, rgba(15,30,20,.84), rgba(15,30,20,.25)),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Mombasa_Terminus.jpg")
+        center/cover no-repeat;
+}
+
+.sgr-hero-content {
+    max-width: 760px;
+    padding: 85px 0;
+}
+
+.sgr-eyebrow,
+.sgr-kicker {
+    display: inline-block;
+    color: var(--sgr-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.sgr-hero .sgr-eyebrow {
+    color: var(--sgr-lime);
+}
+
+.sgr-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.08;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.sgr-hero p {
+    max-width: 640px;
+    color: #f1f3ed;
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+.sgr-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.sgr-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .25s ease;
+}
+
+.sgr-btn-primary {
+    background: var(--sgr-lime);
+    color: var(--sgr-green);
+}
+
+.sgr-btn-primary:hover {
+    background: #c0eb5b;
+    transform: translateY(-2px);
+}
+
+.sgr-btn-outline {
+    border: 1px solid rgba(255,255,255,.8);
+    color: #fff;
+}
+
+.sgr-btn-outline:hover {
+    background: #fff;
+    color: var(--sgr-green);
+}
+
+.sgr-intro {
+    padding: 85px 0;
+    background: var(--sgr-cream);
+}
+
+.sgr-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.sgr-intro h2,
+.sgr-heading h2,
+.sgr-process h2,
+.sgr-route h2,
+.sgr-cta h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--sgr-green);
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.2;
+    margin: 15px 0 20px;
+}
+
+.sgr-intro p,
+.sgr-heading p,
+.sgr-process p,
+.sgr-route p {
+    color: #666d63;
+    line-height: 1.85;
+}
+
+.sgr-main-photo {
+    height: 390px;
+    overflow: hidden;
+}
+
+.sgr-credit {
+    display: block;
+    margin-top: 8px;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #74796f;
+}
+
+.sgr-credit a {
+    color: inherit;
+}
+
+.sgr-check-list {
+    display: grid;
+    gap: 17px;
+    margin-top: 25px;
+}
+
+.sgr-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.sgr-check-mark {
+    width: 27px;
+    height: 27px;
+    flex: 0 0 27px;
+    display: grid;
+    place-items: center;
+    background: var(--sgr-lime);
+    color: var(--sgr-green);
+    font-weight: 800;
+}
+
+.sgr-check strong {
+    display: block;
+    color: var(--sgr-green);
+    margin-bottom: 4px;
+}
+
+.sgr-check span {
+    color: #72776f;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.sgr-options {
+    padding: 85px 0;
+    background: #fff;
+}
+
+.sgr-heading {
+    max-width: 740px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.sgr-options-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.sgr-card {
+    border: 1px solid #e8e9e2;
+    background: #fff;
+}
+
+.sgr-card-image {
+    height: 235px;
+    overflow: hidden;
+}
+
+.sgr-card-content {
+    padding: 25px;
+}
+
+.sgr-card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    color: var(--sgr-green);
+    margin: 0 0 12px;
+}
+
+.sgr-card-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #6b7168;
+}
+
+.sgr-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #55751c;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.sgr-link:hover {
+    text-decoration: underline;
+}
+
+.sgr-process {
+    padding: 85px 0;
+    background: var(--sgr-cream);
+}
+
+.sgr-process-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sgr-process-list {
+    display: grid;
+    gap: 25px;
+}
+
+.sgr-step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 17px;
+}
+
+.sgr-number {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    background: var(--sgr-green);
+    color: var(--sgr-lime);
+    font-weight: 800;
+}
+
+.sgr-step h3 {
+    color: var(--sgr-green);
+    font-size: 18px;
+    margin: 0 0 7px;
+}
+
+.sgr-step p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.sgr-note {
+    padding: 25px;
+    background: #fff;
+    border-left: 4px solid var(--sgr-lime);
+    margin-top: 28px;
+}
+
+.sgr-note strong {
+    color: var(--sgr-green);
+}
+
+.sgr-note p {
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+.sgr-route {
+    padding: 85px 0;
+    background: #fff;
+}
+
+.sgr-route-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.sgr-route-photo {
+    height: 390px;
+    overflow: hidden;
+}
+
+.sgr-route-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.sgr-route-item {
+    padding: 13px 15px;
+    background: var(--sgr-cream);
+    color: var(--sgr-green);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sgr-cta {
+    background: var(--sgr-green);
+    color: #fff;
+    padding: 60px 35px;
+    margin-top: 10px;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.sgr-cta h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.sgr-cta p {
+    color: #e2e8dc;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.sgr-cta .sgr-btn {
+    flex-shrink: 0;
+}
+
+@media(max-width: 850px) {
+    .sgr-intro-grid,
+    .sgr-process-grid,
+    .sgr-route-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sgr-options-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sgr-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width: 560px) {
+    .sgr-hero {
+        min-height: 500px;
+    }
+
+    .sgr-options-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sgr-intro,
+    .sgr-options,
+    .sgr-process,
+    .sgr-route {
+        padding: 60px 0;
+    }
+
+    .sgr-main-photo,
+    .sgr-route-photo {
+        height: 280px;
+    }
+
+    .sgr-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sgr-btn {
+        width: 100%;
+    }
+
+    .sgr-route-list {
+        grid-template-columns: 1fr;
+    }
+
+    .sgr-cta {
+        padding: 45px 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topline">
+<div class="wrap top-inner">
+<span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+<span>
+<a href="tel:+254704261626">+254 704 261 626</a> ·
+<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+</span>
+</div>
+</div>
+
+<header class="header">
+<div class="wrap nav">
+
+<a class="brand" href="index.html">
+<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+<span>FLEYPAT<small>ADVENTURES</small></span>
+</a>
+
+<button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="safaris.html">Safaris</a>
+<a href="marine-tours.html">Marine Tours</a>
+<a href="day-trips.html">Day Trips</a>
+<a href="beach-holidays.html">Beach Holidays</a>
+<a href="honeymoon.html">Honeymoons</a>
+<a href="destinations.html">Destinations</a>
+<a href="itineraries.html">Itineraries</a>
+<a href="services.html">Services</a>
+<a href="transfers.html" class="active">Transfers</a>
+<a href="blog.html">Blog</a>
+<a href="partnerships.html">Partnerships</a>
+<a href="contact.html">Contact</a>
+<a class="nav-book" href="contact.html">Book Now</a>
+</nav>
+
+</div>
+</header>
+
+<main class="sgr-page">
+
+<!-- HERO -->
+<section class="sgr-hero">
+<div class="wrap">
+<div class="sgr-hero-content">
+
+<span class="sgr-eyebrow">Your journey continues beyond the station</span>
+
+<h1>SGR Transfers in Mombasa</h1>
+
+<p>
+Arriving at or departing from Mombasa SGR Terminus?
+Arrange ground transport to your hotel, beach resort, residence
+or another agreed destination with Fleypat Adventures.
+</p>
+
+<div class="sgr-actions">
+<a class="sgr-btn sgr-btn-primary"
+href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20SGR%20transfers."
+target="_blank" rel="noopener">Enquire on WhatsApp</a>
+
+<a class="sgr-btn sgr-btn-outline"
+href="contact.html?service=SGR%20Transfers">Request a Transfer</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="sgr-intro">
+<div class="wrap sgr-intro-grid">
+
+<div>
+<span class="sgr-kicker">Mombasa SGR Terminus</span>
+
+<h2>Continue your journey with a planned transfer</h2>
+
+<p>
+The Madaraka Express connects Mombasa and Nairobi through
+Kenya's Standard Gauge Railway. Mombasa Terminus is located
+at Miritini, outside Mombasa Island.
+</p>
+
+<p>
+After your train journey, you may need onward transport to
+your accommodation, a meeting point, a beach destination or
+another location. Fleypat Adventures can help you arrange
+a transfer according to your travel plans.
+</p>
+
+<div class="sgr-check-list">
+
+<div class="sgr-check">
+<div class="sgr-check-mark">✓</div>
+<div>
+<strong>Station pickups</strong>
+<span>Request collection from Mombasa SGR Terminus after your train arrives.</span>
+</div>
+</div>
+
+<div class="sgr-check">
+<div class="sgr-check-mark">✓</div>
+<div>
+<strong>Station drop-offs</strong>
+<span>Arrange transport from your accommodation or agreed location to the terminus.</span>
+</div>
+</div>
+
+<div class="sgr-check">
+<div class="sgr-check-mark">✓</div>
+<div>
+<strong>Private group arrangements</strong>
+<span>Ask about transport options for individuals, couples, families and groups.</span>
+</div>
+</div>
+
+</div>
+</div>
+
+<div>
+<div class="sgr-main-photo">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Mombasa_SGR_Terminus_platform.jpg"
+alt="Passenger platform at Mombasa SGR Terminus"
+loading="lazy">
+</div>
+<small class="sgr-credit">
+Photograph: Ravi Dwivedi / Wikimedia Commons ·
+<a href="https://commons.wikimedia.org/wiki/File:Mombasa_SGR_Terminus_platform.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>
+</small>
+</div>
+
+</div>
+</section>
+
+<!-- TRANSFER OPTIONS -->
+<section class="sgr-options">
+<div class="wrap">
+
+<div class="sgr-heading">
+<span class="sgr-kicker">Travel arrangements</span>
+<h2>Explore SGR transfer options</h2>
+<p>
+Whether you are arriving in Mombasa or preparing to travel by train,
+tell us your route and we will discuss a suitable ground transport arrangement.
+</p>
+</div>
+
+<div class="sgr-options-grid">
+
+<article class="sgr-card">
+<div class="sgr-card-image">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Mombasa_SGR_Terminal,_Kenya.jpg"
+alt="Entrance to Mombasa Standard Gauge Railway terminal"
+loading="lazy">
+</div>
+
+<div class="sgr-card-content">
+<h3>Mombasa SGR Pickups</h3>
+<p>
+Arriving at Mombasa Terminus? Request a pickup to your hotel,
+resort, residence or another agreed location.
+</p>
+<a class="sgr-link" href="contact.html?service=Mombasa%20SGR%20Pickup">Arrange a pickup →</a>
+</div>
+</article>
+
+<article class="sgr-card">
+<div class="sgr-card-image">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Express_passenger_train_on_the_Mombasa_-_Nairobi_Standard_Gauge_Railway_%28SGR%29.jpg"
+alt="Madaraka Express passenger train on the Mombasa to Nairobi SGR railway"
+loading="lazy">
+</div>
+
+<div class="sgr-card-content">
+<h3>SGR Departure Transfers</h3>
+<p>
+Travelling from Mombasa by train? Enquire about transport
+from your accommodation to the railway terminus.
+</p>
+<a class="sgr-link" href="contact.html?service=SGR%20Departure%20Transfer">Arrange a drop-off →</a>
+</div>
+</article>
+
+<article class="sgr-card">
+<div class="sgr-card-image">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Interior_of_Mombasa%E2%80%93Nairobi_Standard_Gauge_Railway.jpg"
+alt="Interior seating inside a Kenya Standard Gauge Railway passenger train"
+loading="lazy">
+</div>
+
+<div class="sgr-card-content">
+<h3>Other Station Transfers</h3>
+<p>
+Need a transfer at another railway station? Share your
+station, destination and travel details for a quotation.
+</p>
+<a class="sgr-link" href="contact.html?service=Other%20SGR%20Station%20Transfer">Discuss your route →</a>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- BOOKING PROCESS -->
+<section class="sgr-process">
+<div class="wrap sgr-process-grid">
+
+<div>
+<span class="sgr-kicker">Plan ahead</span>
+<h2>How to arrange your SGR transfer</h2>
+
+<p>
+A few travel details will help us understand your requirements
+and prepare an appropriate quotation.
+</p>
+
+<div class="sgr-note">
+<strong>What to send us</strong>
+<p>
+Your train travel date, expected arrival or departure time,
+number of passengers, luggage requirements, pickup point
+and final destination.
+</p>
+</div>
+</div>
+
+<div class="sgr-process-list">
+
+<div class="sgr-step">
+<div class="sgr-number">01</div>
+<div>
+<h3>Share your train details</h3>
+<p>
+Tell us your travel date, train arrival or departure time
+and the railway station involved.
+</p>
+</div>
+</div>
+
+<div class="sgr-step">
+<div class="sgr-number">02</div>
+<div>
+<h3>Provide your destination</h3>
+<p>
+Let us know whether you need transport to a hotel, beach
+resort, residence or another agreed location.
+</p>
+</div>
+</div>
+
+<div class="sgr-step">
+<div class="sgr-number">03</div>
+<div>
+<h3>Receive your quotation</h3>
+<p>
+We will discuss the available transport arrangement
+and applicable quotation for your journey.
+</p>
+</div>
+</div>
+
+<div class="sgr-step">
+<div class="sgr-number">04</div>
+<div>
+<h3>Confirm the arrangement</h3>
+<p>
+Once the details and quotation are agreed, our team
+will communicate the next steps.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="sgr-route">
+<div class="wrap sgr-route-grid">
+
+<div>
+<div class="sgr-route-photo">
+<img
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Mombasa_SGR_railway_station.jpg"
+alt="Mombasa SGR railway station and public transport area"
+loading="lazy">
+</div>
+<small class="sgr-credit">
+Photograph: Wikimedia Commons ·
+<a href="https://commons.wikimedia.org/wiki/File:Mombasa_SGR_railway_station.jpg" target="_blank" rel="noopener">Mombasa SGR railway station</a>
+</small>
+</div>
+
+<div>
+<span class="sgr-kicker">Explore Mombasa and the coast</span>
+
+<h2>Where can your SGR transfer take you?</h2>
+
+<p>
+Mombasa Terminus provides access to different parts of the
+coastal region. Depending on your destination and transport
+requirements, you can request a quotation for onward travel.
+</p>
+
+<div class="sgr-route-list">
+<div class="sgr-route-item">Mombasa Island</div>
+<div class="sgr-route-item">Nyali</div>
+<div class="sgr-route-item">Bamburi</div>
+<div class="sgr-route-item">Shanzu</div>
+<div class="sgr-route-item">Mtwapa</div>
+<div class="sgr-route-item">Diani Beach</div>
+</div>
+
+<p>
+Other destinations can also be discussed. Please provide
+your exact destination when making your enquiry.
+</p>
+
+<a class="sgr-btn sgr-btn-primary"
+href="contact.html?service=SGR%20Coastal%20Transfer">
+Enquire About Your Route
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="wrap">
+<div class="sgr-cta">
+
+<div>
+<h2>Arriving or departing by SGR?</h2>
+<p>
+Contact Fleypat Adventures with your train details and
+destination to request a personalised transfer quotation.
+</p>
+</div>
+
+<a class="sgr-btn sgr-btn-primary"
+href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20need%20an%20SGR%20transfer%20quotation."
+target="_blank" rel="noopener">
+Request a Transfer
+</a>
+
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="wrap footer-grid">
+
+<div>
+<a class="brand footer-brand" href="index.html">
+<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+<span>FLEYPAT<small>ADVENTURES</small></span>
+</a>
+<p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
+<a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+</div>
+
+<div>
+<h3>Explore</h3>
+<a href="safaris.html">Wildlife Safaris</a>
+<a href="marine-tours.html">Marine Tours</a>
+<a href="day-trips.html">Day Trips</a>
+<a href="beach-holidays.html">Beach Holidays</a>
+<a href="destinations.html">Destinations</a>
+<a href="itineraries.html">Itineraries</a>
+</div>
+
+<div>
+<h3>Company</h3>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Services</a>
+<a href="transfers.html">Transfers</a>
+<a href="partnerships.html">Partnerships</a>
+<a href="blog.html">Travel Guides</a>
+</div>
+
+<div>
+<h3>Contact</h3>
+<a href="tel:+254704261626">+254 704 261 626</a>
+<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+<a href="https://wa.me/254704261626">WhatsApp our team</a>
+<span>Mombasa, Kenya</span>
+</div>
+
+</div>
+
+<div class="wrap foot-bottom">
+© <span data-year></span> Fleypat Adventures. All rights reserved.
+<span>Explore More. Experience More. Travel Beyond Expectations.</span>
+</div>
+</footer>
+
+<a class="float-wa"
+href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
+target="_blank" rel="noopener">WhatsApp Us</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
