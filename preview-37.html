@@ -1,0 +1,400 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Corporate & Group Travel | Fleypat Adventures</title>
+<meta name="description" content="Organised corporate travel, business trips, conferences, team retreats and group holidays with Fleypat Adventures in Kenya and beyond.">
+<meta name="theme-color" content="#a8d832">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.service-hero {
+min-height: 540px;
+display: flex;
+align-items: center;
+position: relative;
+background:
+linear-gradient(90deg,rgba(16,35,23,.83),rgba(16,35,23,.35)),
+url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=2000&q=85") center/cover;
+color: #fff;
+}
+.service-hero .wrap {padding-top:85px;padding-bottom:85px}
+.service-hero .eyebrow {color:#c5ed70;text-transform:uppercase;letter-spacing:2px;font-weight:700;font-size:13px}
+.service-hero h1 {font-family:"Playfair Display",serif;font-size:clamp(42px,6vw,70px);line-height:1.08;max-width:800px;margin:18px 0}
+.service-hero p {font-size:18px;line-height:1.8;max-width:650px;color:#f2f2e9}
+.service-hero .hero-actions {display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.service-hero .hero-actions a {text-decoration:none}
+.service-section {padding:75px 0}
+.service-section.alt {background:#fbf7e9}
+.service-heading {max-width:760px;margin:0 auto 42px;text-align:center}
+.service-heading .kicker {color:#789d25;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.service-heading h2 {font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,43px);color:#243c28;margin:12px 0}
+.service-heading p {color:#687168;line-height:1.8}
+.service-intro {display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.service-intro img {width:100%;height:430px;object-fit:cover;border-radius:4px}
+.service-copy h2 {font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,42px);color:#243c28;line-height:1.2}
+.service-copy p {line-height:1.9;color:#626c62}
+.service-copy ul {padding-left:20px;color:#626c62;line-height:2}
+.service-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card {background:#fff;border:1px solid #e8e6d9;overflow:hidden}
+.service-card img {width:100%;height:225px;object-fit:cover;display:block}
+.service-card-content {padding:25px}
+.service-card h3 {font-family:"Playfair Display",serif;font-size:23px;color:#243c28;margin:0 0 12px}
+.service-card p {color:#687168;line-height:1.8;margin:0}
+.service-number {display:inline-block;color:#789d25;font-weight:700;font-size:12px;letter-spacing:1px;margin-bottom:12px}
+.service-process {display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.process-item {padding:25px;background:#fff;border:1px solid #e8e6d9}
+.process-item span {font-family:"Playfair Display",serif;font-size:34px;color:#a8d832}
+.process-item h3 {font-size:18px;color:#243c28;margin:10px 0}
+.process-item p {font-size:14px;line-height:1.8;color:#687168}
+.service-note {background:#243c28;color:#fff;padding:42px;border-radius:4px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.service-note h2 {font-family:"Playfair Display",serif;font-size:30px;margin:0 0 10px}
+.service-note p {color:#e4e9df;line-height:1.8;margin:0;max-width:680px}
+.service-note .btn {white-space:nowrap}
+.service-faq {max-width:900px;margin:auto}
+.service-faq details {padding:20px 0;border-bottom:1px solid #ddd}
+.service-faq summary {font-weight:700;color:#243c28;cursor:pointer}
+.service-faq details p {color:#687168;line-height:1.8;margin-bottom:0}
+@media(max-width:850px) {
+.service-intro {grid-template-columns:1fr;gap:28px}
+.service-grid {grid-template-columns:repeat(2,1fr)}
+.service-process {grid-template-columns:repeat(2,1fr)}
+.service-note {display:block}
+.service-note .btn {display:inline-block;margin-top:22px}
+}
+@media(max-width:560px) {
+.service-hero {min-height:490px}
+.service-hero .wrap {padding-top:65px;padding-bottom:65px}
+.service-grid,.service-process {grid-template-columns:1fr}
+.service-intro img {height:300px}
+.service-note {padding:28px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topline">
+<div class="wrap top-inner">
+<span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+<span>
+<a href="tel:+254704261626">+254 704 261 626</a> ·
+<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+</span>
+</div>
+</div>
+
+<header class="header">
+<div class="wrap nav">
+<a class="brand" href="index.html">
+<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+<span>FLEYPAT<small>ADVENTURES</small></span>
+</a>
+
+<button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="safaris.html">Safaris</a>
+<a href="marine-tours.html">Marine Tours</a>
+<a href="day-trips.html">Day Trips</a>
+<a href="beach-holidays.html">Beach Holidays</a>
+<a href="honeymoon.html">Honeymoons</a>
+<a href="destinations.html">Destinations</a>
+<a href="itineraries.html">Itineraries</a>
+<a href="services.html" class="active">Services</a>
+<a href="transfers.html">Transfers</a>
+<a href="blog.html">Blog</a>
+<a href="partnerships.html">Partnerships</a>
+<a href="contact.html">Contact</a>
+<a class="nav-book" href="contact.html">Book Now</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="service-hero">
+<div class="wrap">
+<span class="eyebrow">Travel together. Achieve more.</span>
+<h1>Corporate &amp; Group Travel</h1>
+<p>Thoughtfully coordinated travel arrangements for businesses, organisations, teams and groups. From business journeys and conferences to team retreats and shared holidays, we help bring your travel plans together.</p>
+<div class="hero-actions">
+<a class="btn btn-gold" href="contact.html?service=corporate-group-travel">Plan Group Travel</a>
+<a class="btn" href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20corporate%20or%20group%20travel." target="_blank" rel="noopener">WhatsApp Us</a>
+</div>
+</div>
+</section>
+
+<section class="service-section">
+<div class="wrap service-intro">
+
+<div class="service-copy">
+<span class="kicker">Travel coordination</span>
+<h2>One travel partner for your group</h2>
+<p>Organising travel for several people can involve many moving parts. Fleypat Adventures helps coordinate the key arrangements, making it easier for your organisation or group to plan a smooth journey.</p>
+<p>Whether you are arranging a company trip, a conference visit, a team-building experience or a group holiday, we can help you explore suitable travel options based on your schedule, destination and group requirements.</p>
+<ul>
+<li>Group travel planning and coordination</li>
+<li>Flight search and ticketing assistance</li>
+<li>Hotel and accommodation arrangements</li>
+<li>Airport transfers and ground transport</li>
+<li>Safari, excursion and leisure experiences</li>
+</ul>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1100&q=85" alt="Business team collaborating around a meeting table" loading="lazy">
+</div>
+
+</div>
+</section>
+
+<section class="service-section alt">
+<div class="wrap">
+
+<div class="service-heading">
+<span class="kicker">Our group travel services</span>
+<h2>Travel solutions for different needs</h2>
+<p>We assist with different types of organised travel, from professional business journeys to shared leisure experiences.</p>
+</div>
+
+<div class="service-grid">
+
+<article class="service-card">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Modern corporate office meeting space" loading="lazy">
+<div class="service-card-content">
+<span class="service-number">01 · BUSINESS</span>
+<h3>Corporate Travel</h3>
+<p>Travel coordination for employees, executives and business representatives attending meetings, appointments and professional engagements.</p>
+</div>
+</article>
+
+<article class="service-card">
+<img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=900&q=85" alt="Professional conference and event audience" loading="lazy">
+<div class="service-card-content">
+<span class="service-number">02 · EVENTS</span>
+<h3>Conferences &amp; Events</h3>
+<p>Assistance with accommodation, transport and travel arrangements for conference delegates, event attendees and visiting teams.</p>
+</div>
+</article>
+
+<article class="service-card">
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85" alt="Friends enjoying an outdoor group experience" loading="lazy">
+<div class="service-card-content">
+<span class="service-number">03 · GROUPS</span>
+<h3>Group Holidays</h3>
+<p>Shared travel experiences for friends, associations, clubs and other groups looking to explore Kenya and selected destinations.</p>
+</div>
+</article>
+
+<article class="service-card">
+<img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85" alt="Group spending time together outdoors" loading="lazy">
+<div class="service-card-content">
+<span class="service-number">04 · TEAM EXPERIENCES</span>
+<h3>Team Retreats</h3>
+<p>Explore options for team getaways, recreational activities and group experiences that bring colleagues together outside the workplace.</p>
+</div>
+</article>
+
+<article class="service-card">
+<img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=900&q=85" alt="People attending a planned group event" loading="lazy">
+<div class="service-card-content">
+<span class="service-number">05 · ORGANISATIONS</span>
+<h3>Organisational Travel</h3>
+<p>Travel planning support for associations, institutions, non-profit organisations and professional groups travelling together.</p>
+</div>
+</article>
+
+<article class="service-card">
+<img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=85" alt="African wildlife in a natural safari landscape" loading="lazy">
+<div class="service-card-content">
+<span class="service-number">06 · LEISURE</span>
+<h3>Group Safaris &amp; Excursions</h3>
+<p>Combine group travel with wildlife safaris, coastal excursions, cultural experiences and visits to selected destinations.</p>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="service-section">
+<div class="wrap">
+
+<div class="service-heading">
+<span class="kicker">How it works</span>
+<h2>Planning your group journey</h2>
+<p>We begin by understanding your group's needs and then help coordinate the arrangements for your proposed trip.</p>
+</div>
+
+<div class="service-process">
+
+<div class="process-item">
+<span>01</span>
+<h3>Share Your Plans</h3>
+<p>Tell us your destination, travel dates, group size and the purpose of your journey.</p>
+</div>
+
+<div class="process-item">
+<span>02</span>
+<h3>Discuss Requirements</h3>
+<p>We review your needs, preferred arrangements, accommodation expectations and transport requirements.</p>
+</div>
+
+<div class="process-item">
+<span>03</span>
+<h3>Receive a Proposal</h3>
+<p>We prepare a suggested travel arrangement for your review, subject to supplier availability and confirmation.</p>
+</div>
+
+<div class="process-item">
+<span>04</span>
+<h3>Confirm Arrangements</h3>
+<p>Once you approve the proposal, we guide you through the booking and confirmation process.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="service-section alt">
+<div class="wrap service-intro">
+
+<div>
+<img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1100&q=85" alt="People gathering for a shared group occasion" loading="lazy">
+</div>
+
+<div class="service-copy">
+<span class="kicker">Designed around your group</span>
+<h2>Travel arrangements that fit your plans</h2>
+<p>Every group has different priorities. Some need efficient business travel, while others want a relaxed group holiday or a combination of meetings and leisure activities.</p>
+<p>When you contact us, sharing the following information helps us understand your requirements:</p>
+<ul>
+<li>Organisation or group name</li>
+<li>Number of travellers</li>
+<li>Destination or preferred destinations</li>
+<li>Proposed departure and return dates</li>
+<li>Accommodation preferences</li>
+<li>Transport and activity requirements</li>
+<li>Estimated budget per person or for the group</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section class="service-section">
+<div class="wrap">
+
+<div class="service-heading">
+<span class="kicker">Frequently asked questions</span>
+<h2>Corporate &amp; Group Travel FAQs</h2>
+<p>Some useful information before you start planning.</p>
+</div>
+
+<div class="service-faq">
+
+<details>
+<summary>Can you organise travel for large groups?</summary>
+<p>Yes. Share your estimated group size, destination and dates so we can discuss the arrangements and supplier options available for your group.</p>
+</details>
+
+<details>
+<summary>Can you arrange flights and accommodation together?</summary>
+<p>We can assist with flight search and ticketing enquiries as well as hotel and accommodation arrangements, subject to availability and confirmation.</p>
+</details>
+
+<details>
+<summary>Do you organise corporate retreats and team-building trips?</summary>
+<p>We can help explore suitable destinations, accommodation, transport and leisure experiences for corporate retreats and team outings.</p>
+</details>
+
+<details>
+<summary>Can we request a customised group itinerary?</summary>
+<p>Yes. Tell us your preferred destinations, travel dates, group interests and budget expectations so we can prepare a proposed itinerary for consideration.</p>
+</details>
+
+<details>
+<summary>How early should we make an enquiry?</summary>
+<p>We recommend enquiring as early as possible, especially for larger groups, peak travel periods and events with fixed dates. This gives more time to explore suitable options.</p>
+</details>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="service-note">
+<div>
+<h2>Planning a trip for your team or organisation?</h2>
+<p>Tell us about your group, destination and travel dates. Our team will be happy to discuss your requirements and help you explore suitable arrangements.</p>
+</div>
+<a class="btn btn-gold" href="contact.html?service=corporate-group-travel">Make an Enquiry</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="wrap footer-grid">
+
+<div>
+<a class="brand footer-brand" href="index.html">
+<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+<span>FLEYPAT<small>ADVENTURES</small></span>
+</a>
+<p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
+<a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+</div>
+
+<div>
+<h3>Explore</h3>
+<a href="safaris.html">Wildlife Safaris</a>
+<a href="marine-tours.html">Marine Tours</a>
+<a href="day-trips.html">Day Trips</a>
+<a href="beach-holidays.html">Beach Holidays</a>
+<a href="destinations.html">Destinations</a>
+<a href="itineraries.html">Itineraries</a>
+</div>
+
+<div>
+<h3>Company</h3>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Services</a>
+<a href="transfers.html">Transfers</a>
+<a href="partnerships.html">Partnerships</a>
+<a href="blog.html">Travel Guides</a>
+</div>
+
+<div>
+<h3>Contact</h3>
+<a href="tel:+254704261626">+254 704 261 626</a>
+<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+<a href="https://wa.me/254704261626">WhatsApp our team</a>
+<span>Mombasa, Kenya</span>
+</div>
+
+</div>
+
+<div class="wrap foot-bottom">
+© <span data-year></span> Fleypat Adventures. All rights reserved.
+<span>Explore More. Experience More. Travel Beyond Expectations.</span>
+</div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20corporate%20or%20group%20travel." target="_blank" rel="noopener">WhatsApp Us</a>
+
+<script src="script.js"></script>
+</body>
+</html>
