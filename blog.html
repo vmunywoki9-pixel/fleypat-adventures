@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
-/* BLOG HERO - MATCH OTHER FLEYPAT PAGES */
+/* BLOG HERO */
 
 .blog-hero {
     min-height: 570px;
@@ -62,7 +62,7 @@
 /* CENTRED YOUTUBE VIDEO */
 
 .blog-video-section {
-    padding: 85px 0;
+    padding: 75px 0;
     background: #FBF7E9;
 }
 
@@ -82,7 +82,7 @@
 .blog-video {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 7;
     overflow: hidden;
     background: #101810;
     border-radius: 3px;
@@ -99,7 +99,7 @@
     border: 0;
 }
 
-/* LAPTOP AND LARGE SCREENS */
+/* LARGE LAPTOP SCREENS */
 
 @media (min-width: 1200px) {
     .blog-video-container {
@@ -117,7 +117,7 @@
 
 @media (max-width: 900px) {
     .blog-video-section {
-        padding: 65px 0;
+        padding: 60px 0;
     }
 
     .blog-video-container {
@@ -125,7 +125,7 @@
     }
 }
 
-/* PHONES */
+/* MOBILE */
 
 @media (max-width: 650px) {
     .blog-hero {
@@ -202,11 +202,12 @@
 
 <main>
 
-<!-- LARGER BLOG HERO -->
+<!-- BLOG HERO -->
 
 <section class="blog-hero">
   <div class="wrap">
     <div class="blog-hero-content">
+
       <span class="eyebrow">Explore with Fleypat</span>
 
       <h1>Travel Tips &amp; Inspiration</h1>
@@ -216,6 +217,7 @@
         journeys across East Africa. Discover new destinations,
         prepare for your next adventure and get inspired to explore.
       </p>
+
     </div>
   </div>
 </section>
@@ -286,13 +288,12 @@
   </div>
 </section>
 
-<!-- LARGE CENTRED YOUTUBE PLAYER -->
+<!-- CENTRED, SHORTER YOUTUBE VIDEO -->
 
 <section class="section blog-video-section">
   <div class="wrap">
 
     <div class="blog-video-container">
-
       <div class="blog-video-grid">
 
         <div class="blog-video">
@@ -300,7 +301,6 @@
         </div>
 
       </div>
-
     </div>
 
   </div>
@@ -390,7 +390,6 @@ const fleypatVideos = [
 
 let fleypatVideoIndex = 0;
 let fleypatPlayer;
-let fleypatAdvanceTimer;
 
 function onYouTubeIframeAPIReady() {
 
@@ -416,11 +415,9 @@ function onYouTubeIframeAPIReady() {
       },
 
       onStateChange: function(event) {
-
         if (event.data === YT.PlayerState.ENDED) {
           playNextFleypatVideo();
         }
-
       },
 
       onError: function() {
@@ -435,16 +432,14 @@ function onYouTubeIframeAPIReady() {
 
 function playNextFleypatVideo() {
 
-  if (!fleypatPlayer) return;
-
-  clearTimeout(fleypatAdvanceTimer);
-
   fleypatVideoIndex =
     (fleypatVideoIndex + 1) % fleypatVideos.length;
 
-  fleypatPlayer.loadVideoById(
-    fleypatVideos[fleypatVideoIndex]
-  );
+  if (fleypatPlayer) {
+    fleypatPlayer.loadVideoById(
+      fleypatVideos[fleypatVideoIndex]
+    );
+  }
 
 }
 
