@@ -1,0 +1,275 @@
+/*
+  FLEYPAT ADVENTURES — CENTRAL COLOUR THEME
+  Link this file AFTER each page's existing stylesheets and <style> block.
+  COLOURS ONLY: no layout, sizing, spacing, typography, positioning,
+  image dimensions, breakpoints or animation rules are changed.
+
+  Palette:
+  Light safari brown  #A66A42
+  Medium brown        #8B5635
+  Burnt orange        #E8752A
+  Dark orange         #B85B20
+  Light orange        #F09A58
+  Warm cream          #FFF4E8
+  Soft cream          #F5E6D6
+  Brown text          #6B4935
+  Muted brown         #897264
+*/
+
+/* Shared theme variables */
+:root {
+    --lime: #E8752A !important;
+    --lime-dark: #B85B20 !important;
+    --cream: #FFF4E8 !important;
+    --cream2: #F5E6D6 !important;
+    --gold: #E8752A !important;
+    --gold2: #F09A58 !important;
+    --ink: #6B4935 !important;
+    --muted: #897264 !important;
+    --green: #A66A42 !important;
+    --brown-dark: #8B5635 !important;
+    --brown: #A66A42 !important;
+    --orange: #E8752A !important;
+    --orange-light: #F09A58 !important;
+    --ivory: #FFF4E8 !important;
+    --white: #FFFFFF !important;
+
+    /* Common alternative variable names */
+    --primary: #A66A42 !important;
+    --primary-color: #A66A42 !important;
+    --secondary: #E8752A !important;
+    --secondary-color: #E8752A !important;
+    --accent: #E8752A !important;
+    --accent-color: #E8752A !important;
+    --text: #6B4935 !important;
+    --text-color: #6B4935 !important;
+    --background: #FFF4E8 !important;
+    --background-color: #FFF4E8 !important;
+}
+
+/* General page colours */
+html,
+body {
+    background-color: #FFF4E8 !important;
+    color: #6B4935 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.heading,
+.section-title,
+.title,
+.brand,
+.brand strong {
+    color: #8B5635 !important;
+}
+
+/* Preserve light text on dark/image-backed areas */
+.page-hero,
+.page-hero h1, .page-hero h2, .page-hero h3, .page-hero p,
+.hero-home,
+.hero-home h1, .hero-home h2, .hero-home h3, .hero-home p,
+.cta,
+.cta h1, .cta h2, .cta h3, .cta p,
+.feature,
+.feature h1, .feature h2, .feature h3, .feature p,
+.footer,
+.footer h1, .footer h2, .footer h3, .footer h4,
+.footer p, .footer a, .footer li {
+    color: #FFF4E8 !important;
+}
+
+/* Accent text */
+.eyebrow,
+.kicker,
+.mini-tag,
+.badge,
+.tag,
+.highlight,
+.text-orange,
+.text-lime,
+.text-green {
+    color: #E8752A !important;
+}
+
+/* Links and navigation */
+a,
+.nav nav > a,
+.nav a,
+nav a {
+    color: #8B5635;
+}
+a:hover,
+.nav nav > a:hover,
+.nav nav > a.active,
+.nav a:hover,
+nav a:hover {
+    color: #E8752A !important;
+}
+
+/* Common surface colours */
+.topline {
+    background-color: #8B5635 !important;
+}
+.header,
+.nav,
+.nav nav,
+.mobile-menu {
+    background-color: #FFF4E8 !important;
+}
+.section,
+main,
+.page-content {
+    background-color: #FFF4E8;
+}
+.section.alt,
+.alt-section,
+.soft-section,
+.side-panel,
+.notice {
+    background-color: #F5E6D6 !important;
+}
+.card,
+.finder,
+.itinerary,
+.form-card,
+.booking-card {
+    background-color: #FFFCF8 !important;
+}
+
+/* Buttons */
+.btn,
+.btn-gold,
+.nav-book,
+.nav-toggle,
+button.primary,
+.button-primary,
+.btn-primary,
+input[type="submit"],
+button[type="submit"] {
+    background-color: #E8752A !important;
+    border-color: #E8752A !important;
+    color: #FFFFFF !important;
+}
+.btn:hover,
+.btn-gold:hover,
+.nav-book:hover,
+.nav-toggle:hover,
+button.primary:hover,
+.button-primary:hover,
+.btn-primary:hover,
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #B85B20 !important;
+    border-color: #B85B20 !important;
+    color: #FFFFFF !important;
+}
+.btn-outline,
+.button-outline,
+.btn-secondary {
+    background-color: transparent !important;
+    border-color: #E8752A !important;
+    color: #A66A42 !important;
+}
+.btn-outline:hover,
+.button-outline:hover,
+.btn-secondary:hover {
+    background-color: #E8752A !important;
+    border-color: #E8752A !important;
+    color: #FFFFFF !important;
+}
+
+/* Common colour utility classes */
+.bg-green, .bg-lime, .green-bg, .lime-bg, .bg-primary, .primary-bg {
+    background-color: #A66A42 !important;
+    color: #FFFFFF !important;
+}
+.bg-orange, .orange-bg, .bg-accent, .accent-bg {
+    background-color: #E8752A !important;
+    color: #FFFFFF !important;
+}
+.bg-cream, .cream-bg, .bg-light, .light-bg {
+    background-color: #FFF4E8 !important;
+}
+.text-green, .text-lime, .text-primary {
+    color: #A66A42 !important;
+}
+.text-orange, .text-accent, .text-secondary {
+    color: #E8752A !important;
+}
+
+/* Border colours only; widths and styles remain untouched */
+.card,
+.finder,
+.itinerary,
+.side-panel,
+.form-field input,
+.form-field select,
+.form-field textarea,
+.field input,
+.field select,
+input,
+select,
+textarea,
+.faq details,
+.faq,
+hr,
+.foot-bottom,
+table,
+th,
+td {
+    border-color: #EAD8C7;
+}
+.notice,
+.accent-border {
+    border-left-color: #E8752A !important;
+}
+
+/* Tables */
+th,
+.table thead,
+thead {
+    background-color: #A66A42 !important;
+    color: #FFFFFF !important;
+}
+tr:nth-child(even),
+.table-striped tbody tr:nth-child(even) {
+    background-color: #F5E6D6 !important;
+}
+
+/* Footer accents */
+.footer h3,
+.footer h4,
+.footer .footer-title,
+.footer a:hover,
+.footer-grid a:hover {
+    color: #F09A58 !important;
+}
+
+/* Legacy inline text colours from the old lime theme */
+[style*="#a8d832" i],
+[style*="#719d1c" i],
+[style*="#8fbf24" i] {
+    color: #E8752A !important;
+    border-color: #E8752A !important;
+}
+
+/* Preserve WhatsApp green */
+.float-wa,
+.whatsapp,
+.whatsapp-button,
+.whatsapp-float {
+    background-color: #20B85A !important;
+    border-color: #20B85A !important;
+    color: #FFFFFF !important;
+}
+.float-wa:hover,
+.whatsapp:hover,
+.whatsapp-button:hover,
+.whatsapp-float:hover {
+    background-color: #159447 !important;
+    border-color: #159447 !important;
+    color: #FFFFFF !important;
+}
+
+/* End of central colour theme */
