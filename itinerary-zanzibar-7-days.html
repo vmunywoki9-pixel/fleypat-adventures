@@ -8,1203 +8,1444 @@
 <title>7 Days Zanzibar Private Holiday | Fleypat Adventures</title>
 
 <meta name="description" content="Enjoy a 7-day Zanzibar holiday featuring Stone Town, Prison Island, spice farms, Jozani Forest, Kendwa Beach, Mnemba snorkeling and Safari Blue.">
-
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root {
-  --itinerary-green: #243C28;
-  --itinerary-lime: #A8D832;
-  --itinerary-cream: #FBF7E9;
-  --itinerary-gold: #A97832;
+/* ZANZIBAR ITINERARY PAGE */
+
+.zanzibar-hero {
+    min-height: 540px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(90deg, rgba(45,29,18,.76), rgba(45,29,18,.20)),
+        linear-gradient(0deg, rgba(0,0,0,.38), transparent 75%),
+        url("zanzibar-holiday-hero.jpg") center/cover no-repeat;
+    color: var(--white);
 }
 
-.itinerary-hero {
-  min-height: 540px;
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  background:
-    linear-gradient(90deg, rgba(12,25,16,.78), rgba(12,25,16,.16)),
-    linear-gradient(0deg, rgba(0,0,0,.4), transparent),
-    url("zanzibar-holiday-hero.jpg") center/cover no-repeat;
-  color: #fff;
-  padding: 90px 0;
+.zanzibar-hero-content {
+    max-width: 850px;
+    padding-top: 90px;
+    padding-bottom: 75px;
 }
 
-.itinerary-hero-content {
-  max-width: 850px;
+.zanzibar-hero .eyebrow {
+    color: var(--orange-light);
+    letter-spacing: 2.5px;
+    font-weight: 800;
 }
 
-.itinerary-hero .eyebrow {
-  color: var(--itinerary-lime);
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.zanzibar-hero h1 {
+    color: var(--white);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 5.5vw, 68px);
+    line-height: 1.1;
+    margin: 18px 0;
+    max-width: 800px;
 }
 
-.itinerary-hero h1 {
-  color: #fff;
-  font-family: "Playfair Display", serif;
-  font-size: clamp(36px, 5vw, 64px);
-  line-height: 1.1;
-  margin: 18px 0;
+.zanzibar-hero p {
+    max-width: 700px;
+    color: rgba(255,255,255,.93);
+    font-size: 16px;
+    line-height: 1.85;
 }
 
-.itinerary-hero p {
-  color: #fff;
-  max-width: 700px;
-  font-size: 17px;
-  line-height: 1.8;
+.zanzibar-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 26px 0;
 }
 
-.itinerary-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 28px 0;
+.zanzibar-meta span {
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.35);
+    padding: 10px 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
 }
 
-.itinerary-meta span {
-  background: rgba(255,255,255,.14);
-  border: 1px solid rgba(255,255,255,.35);
-  padding: 11px 17px;
-  border-radius: 4px;
-  font-size: 14px;
+.zanzibar-price {
+    margin: 24px 0;
 }
 
-.itinerary-price {
-  margin: 25px 0;
-}
-
-.itinerary-price small {
-  display: block;
-  color: #eee;
-  margin-bottom: 5px;
-}
-
-.itinerary-price strong {
-  color: var(--itinerary-lime);
-  font-size: 29px;
-}
-
-.itinerary-tabs {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: #fff;
-  border-bottom: 1px solid #e8e5dc;
-  box-shadow: 0 4px 14px rgba(0,0,0,.05);
-}
-
-.itinerary-tabs .wrap {
-  display: flex;
-  gap: 28px;
-  overflow-x: auto;
-  scrollbar-width: thin;
-}
-
-.itinerary-tabs a {
-  flex-shrink: 0;
-  padding: 19px 0;
-  color: var(--itinerary-green);
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.itinerary-tabs a:hover {
-  color: var(--itinerary-gold);
-}
-
-.itinerary-section {
-  padding: 75px 0;
-  scroll-margin-top: 75px;
-}
-
-.itinerary-section.alt {
-  background: var(--itinerary-cream);
-}
-
-.itinerary-section h2 {
-  color: var(--itinerary-green);
-  font-family: "Playfair Display", serif;
-  font-size: clamp(28px, 3vw, 40px);
-  margin-bottom: 20px;
-}
-
-.itinerary-section h3 {
-  color: var(--itinerary-green);
-}
-
-.itinerary-intro {
-  max-width: 850px;
-  line-height: 1.9;
-  color: #555;
-}
-
-.itinerary-highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 35px;
-}
-
-.highlight-item {
-  background: #fff;
-  padding: 24px;
-  border: 1px solid #eee9dc;
-}
-
-.highlight-item h3 {
-  margin-bottom: 9px;
-  font-size: 17px;
-}
-
-.highlight-item p {
-  color: #666;
-  line-height: 1.7;
-  font-size: 14px;
-  margin: 0;
-}
-
-.day-list {
-  max-width: 950px;
-  margin-top: 40px;
-}
-
-.day-card {
-  display: grid;
-  grid-template-columns: 115px 1fr;
-  gap: 25px;
-  padding: 30px 0;
-  border-bottom: 1px solid #e7e3d9;
-}
-
-.day-number {
-  background: var(--itinerary-green);
-  color: #fff;
-  padding: 18px 12px;
-  text-align: center;
-  height: fit-content;
-}
-
-.day-number strong {
-  display: block;
-  color: var(--itinerary-lime);
-  font-size: 25px;
-}
-
-.day-number span {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.day-content h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 23px;
-  margin: 0 0 12px;
-}
-
-.day-content p {
-  color: #555;
-  line-height: 1.85;
-}
-
-.day-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.day-details span {
-  background: #f2f0e8;
-  padding: 8px 12px;
-  font-size: 12px;
-  color: #42513d;
-  border-radius: 3px;
-}
-
-.accommodation-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.accommodation-card {
-  padding: 25px;
-  background: #fff;
-  border: 1px solid #e9e5d9;
-}
-
-.accommodation-card h3 {
-  font-size: 19px;
-}
-
-.accommodation-card p {
-  color: #666;
-  line-height: 1.7;
-  font-size: 14px;
-}
-
-.accommodation-card ul {
-  padding-left: 18px;
-  line-height: 1.9;
-  color: #555;
-  font-size: 14px;
-}
-
-.price-panel {
-  background: #fff;
-  border: 1px solid #e9e5d9;
-  padding: 30px;
-  max-width: 750px;
-  margin-top: 25px;
-}
-
-.price-panel strong {
-  display: block;
-  font-family: "Playfair Display", serif;
-  font-size: 32px;
-  color: var(--itinerary-green);
-  margin: 10px 0;
-}
-
-.inclusion-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.inclusion-card {
-  padding: 25px;
-  background: #fff;
-  border: 1px solid #e9e5d9;
-}
-
-.inclusion-card ul {
-  padding-left: 20px;
-  line-height: 2;
-  color: #555;
-}
-
-.practical-list {
-  max-width: 850px;
-}
-
-.practical-list li {
-  margin-bottom: 14px;
-  line-height: 1.8;
-  color: #555;
-}
-
-.quote-panel {
-  background: var(--itinerary-green);
-  color: #fff;
-  padding: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-}
-
-.quote-panel h2 {
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.quote-panel p {
-  color: #e5eadf;
-  line-height: 1.7;
-}
-
-.quote-panel .btn {
-  flex-shrink: 0;
-}
-
-@media(max-width:750px) {
-  .itinerary-hero {
-    min-height: 490px;
-    padding: 65px 0;
-  }
-
-  .itinerary-highlights,
-  .accommodation-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .day-card {
-    grid-template-columns: 75px 1fr;
-    gap: 15px;
-  }
-
-  .day-number {
-    padding: 13px 7px;
-  }
-
-  .inclusion-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .quote-panel {
+.zanzibar-price small {
     display: block;
-    padding: 30px;
-  }
-
-  .quote-panel .btn {
-    display: inline-block;
-    margin-top: 15px;
-  }
+    color: rgba(255,255,255,.8);
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
-@media(max-width:480px) {
-  .itinerary-highlights,
-  .accommodation-grid {
-    grid-template-columns: 1fr;
-  }
+.zanzibar-price strong {
+    display: block;
+    color: var(--orange-light);
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+}
 
-  .day-card {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
+.zanzibar-hero .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 
-  .day-number {
-    width: 85px;
-  }
+.zanzibar-hero .btn-outline {
+    color: white;
+    border-color: white;
+}
 
-  .itinerary-section {
-    padding: 55px 0;
-  }
+.zanzibar-hero .btn-outline:hover {
+    background: white;
+    color: var(--brown-dark);
+}
 
-  .itinerary-hero h1 {
-    font-size: 36px;
-  }
+/* SECTION NAVIGATION */
+
+.zanzibar-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: var(--white);
+    border-bottom: 1px solid var(--cream2);
+    box-shadow: 0 4px 12px rgba(107,73,53,.05);
+}
+
+.zanzibar-tabs .wrap {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.zanzibar-tabs a {
+    flex: 0 0 auto;
+    display: inline-block;
+    padding: 16px 0;
+    color: var(--brown-dark);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+}
+
+.zanzibar-tabs a:hover {
+    color: var(--orange);
+    border-bottom-color: var(--orange);
+}
+
+/* CONTENT SECTIONS */
+
+.zanzibar-section {
+    padding: 75px 0;
+    scroll-margin-top: 75px;
+}
+
+.zanzibar-section.alt {
+    background: var(--cream);
+}
+
+.zanzibar-section h2 {
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(29px, 4vw, 43px);
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.zanzibar-intro {
+    max-width: 850px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.zanzibar-intro p {
+    margin: 0 0 15px;
+}
+
+.zanzibar-kicker {
+    display: block;
+    color: var(--orange);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* HIGHLIGHTS */
+
+.zanzibar-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.zanzibar-highlight {
+    background: var(--white);
+    border: 1px solid var(--cream2);
+    padding: 25px;
+}
+
+.zanzibar-highlight h3 {
+    color: var(--brown-dark);
+    font-size: 17px;
+    margin: 0 0 10px;
+}
+
+.zanzibar-highlight p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* DAY-BY-DAY ITINERARY */
+
+.zanzibar-day-list {
+    max-width: 1000px;
+    margin: 38px auto 0;
+}
+
+.zanzibar-day {
+    display: grid;
+    grid-template-columns: 100px minmax(0,1fr);
+    gap: 25px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--cream2);
+}
+
+.zanzibar-day-number {
+    background: var(--brown-dark);
+    color: var(--white);
+    padding: 17px 12px;
+    text-align: center;
+    height: fit-content;
+}
+
+.zanzibar-day-number span {
+    display: block;
+    color: var(--cream2);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.zanzibar-day-number strong {
+    display: block;
+    color: var(--orange-light);
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.zanzibar-day-content {
+    min-width: 0;
+}
+
+.zanzibar-day-content h3 {
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    line-height: 1.3;
+    margin: 0 0 13px;
+}
+
+.zanzibar-day-content p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0 0 13px;
+}
+
+.zanzibar-day-content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.zanzibar-day-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 17px;
+}
+
+.zanzibar-day-details span {
+    background: var(--cream2);
+    color: var(--brown-dark);
+    padding: 8px 11px;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+/* ACCOMMODATION */
+
+.zanzibar-accommodation {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.zanzibar-hotel {
+    background: var(--white);
+    border: 1px solid var(--cream2);
+    padding: 26px;
+}
+
+.zanzibar-hotel h3 {
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    margin: 0 0 12px;
+}
+
+.zanzibar-hotel p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.zanzibar-hotel ul {
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+.zanzibar-note {
+    margin-top: 24px;
+    padding: 20px 24px;
+    background: var(--cream2);
+    border-left: 3px solid var(--orange);
+    color: var(--brown-dark);
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+/* PRICING */
+
+.zanzibar-price-panel {
+    background: var(--white);
+    border: 1px solid var(--cream2);
+    padding: 32px;
+    max-width: 800px;
+    margin-top: 25px;
+}
+
+.zanzibar-price-panel strong {
+    display: block;
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.zanzibar-price-panel p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.zanzibar-inclusions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.zanzibar-inclusion {
+    background: var(--white);
+    border: 1px solid var(--cream2);
+    padding: 27px;
+}
+
+.zanzibar-inclusion h3 {
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin: 0 0 17px;
+}
+
+.zanzibar-inclusion ul {
+    padding-left: 19px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.zanzibar-inclusion li {
+    margin-bottom: 7px;
+}
+
+/* PRACTICAL INFORMATION */
+
+.zanzibar-practical {
+    max-width: 900px;
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.zanzibar-practical li {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--cream2);
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.zanzibar-practical strong {
+    color: var(--brown-dark);
+}
+
+/* CTA */
+
+.zanzibar-quote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    background: var(--brown-dark);
+    color: white;
+}
+
+.zanzibar-quote-copy {
+    max-width: 750px;
+}
+
+.zanzibar-quote .zanzibar-kicker {
+    color: var(--orange-light);
+}
+
+.zanzibar-quote h2 {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 0 0 15px;
+}
+
+.zanzibar-quote p {
+    color: var(--cream2);
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.zanzibar-quote-action {
+    flex-shrink: 0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px) {
+    .zanzibar-highlights,
+    .zanzibar-accommodation {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .zanzibar-quote {
+        display: block;
+    }
+
+    .zanzibar-quote-action {
+        margin-top: 25px;
+    }
+}
+
+@media(max-width:700px) {
+    .zanzibar-hero {
+        min-height: 500px;
+        background-position: 60% center;
+    }
+
+    .zanzibar-hero-content {
+        padding-top: 65px;
+        padding-bottom: 55px;
+    }
+
+    .zanzibar-hero h1 {
+        font-size: 40px;
+    }
+
+    .zanzibar-hero p {
+        font-size: 14px;
+    }
+
+    .zanzibar-meta {
+        gap: 8px;
+    }
+
+    .zanzibar-meta span {
+        padding: 9px 11px;
+        font-size: 10px;
+    }
+
+    .zanzibar-hero .actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .zanzibar-section {
+        padding: 55px 0;
+    }
+
+    .zanzibar-highlights,
+    .zanzibar-accommodation,
+    .zanzibar-inclusions {
+        grid-template-columns: 1fr;
+    }
+
+    .zanzibar-day {
+        grid-template-columns: 70px minmax(0,1fr);
+        gap: 14px;
+        padding: 23px 0;
+    }
+
+    .zanzibar-day-number {
+        padding: 13px 8px;
+    }
+
+    .zanzibar-day-number strong {
+        font-size: 23px;
+    }
+
+    .zanzibar-day-content h3 {
+        font-size: 20px;
+    }
+
+    .zanzibar-day-content p {
+        font-size: 13px;
+    }
+
+    .zanzibar-price-panel,
+    .zanzibar-inclusion {
+        padding: 23px;
+    }
+
+    .zanzibar-price-panel strong {
+        font-size: 29px;
+    }
+
+    .zanzibar-quote {
+        padding: 28px 22px;
+    }
+
+    .zanzibar-tabs .wrap {
+        gap: 20px;
+    }
+
+    .zanzibar-tabs a {
+        padding: 14px 0;
+    }
+}
+
+@media(max-width:420px) {
+    .zanzibar-day {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .zanzibar-day-number {
+        width: 80px;
+    }
 }
 </style>
 </head>
 
-  <link rel="stylesheet" href="theme-colors.css">
-  
 <body>
 
+<!-- TOP CONTACT BAR -->
+
 <div class="topline">
-  <div class="wrap top-inner">
-    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-    <span>
-      <a href="tel:+254704261626">+254 704 261 626</a> ·
-      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-    </span>
-  </div>
+    <div class="wrap top-inner">
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+        <span>
+            <a href="tel:+254704261626">+254 704 261 626</a> ·
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+        </span>
+    </div>
 </div>
 
+<!-- HEADER -->
+
 <header class="header">
-  <div class="wrap nav">
+    <div class="wrap nav">
 
-    <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-      <span>FLEYPAT<small>ADVENTURES</small></span>
-    </a>
+        <a class="brand" href="index.html">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+        </a>
 
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+            ☰
+        </button>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="safaris.html">Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="honeymoon.html">Honeymoons</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html" class="active">Itineraries</a>
-      <a href="services.html">Services</a>
-      <a href="transfers.html">Transfers</a>
-      <a href="blog.html">Blog</a>
-      <a href="partnerships.html">Partnerships</a>
-      <a href="contact.html">Contact</a>
-      <a class="nav-book" href="contact.html">Book Now</a>
-    </nav>
+        <nav id="mainNav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="honeymoon.html">Honeymoons</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html" class="active">Itineraries</a>
+            <a href="services.html">Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="blog.html">Blog</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-book" href="contact.html">Book Now</a>
+        </nav>
 
-  </div>
+    </div>
 </header>
 
 <main>
 
 <!-- HERO -->
-<section class="itinerary-hero">
-  <div class="wrap itinerary-hero-content">
 
-    <span class="eyebrow">Zanzibar Island Escape</span>
+<section class="zanzibar-hero">
+    <div class="wrap zanzibar-hero-content">
 
-    <h1>7 Days / 6 Nights Zanzibar Private Holiday</h1>
+        <span class="eyebrow">Zanzibar Island Escape</span>
 
-    <p>
-      Discover the charm of Zanzibar through historic Stone Town,
-      spice plantations, tropical forests, white-sand beaches and
-      unforgettable Indian Ocean excursions.
-    </p>
+        <h1>7 Days / 6 Nights Zanzibar Private Holiday</h1>
 
-    <div class="itinerary-meta">
-      <span>7 Days / 6 Nights</span>
-      <span>Private Holiday</span>
-      <span>Stone Town & Kendwa Beach</span>
+        <p>
+            Discover the charm of Zanzibar through historic Stone Town,
+            spice plantations, tropical forests, white-sand beaches and
+            unforgettable Indian Ocean excursions.
+        </p>
+
+        <div class="zanzibar-meta">
+            <span>7 Days / 6 Nights</span>
+            <span>Private Holiday</span>
+            <span>Stone Town & Kendwa Beach</span>
+        </div>
+
+        <div class="zanzibar-price">
+            <small>Starting price per person</small>
+            <strong>USD 2,115</strong>
+        </div>
+
+        <div class="actions">
+            <a class="btn btn-gold" href="#quote">Request a Quote</a>
+            <a class="btn btn-outline" href="#itinerary">View Itinerary</a>
+        </div>
+
     </div>
-
-    <div class="itinerary-price">
-      <small>Starting price per person</small>
-      <strong>USD 2,115</strong>
-    </div>
-
-    <div class="actions">
-      <a class="btn" href="#quote">Request a Quote</a>
-      <a class="btn btn-outline" href="#itinerary">View Itinerary</a>
-    </div>
-
-  </div>
 </section>
 
-<!-- TABS -->
-<div class="itinerary-tabs">
-  <div class="wrap">
-    <a href="#general">General</a>
-    <a href="#prices">Prices</a>
-    <a href="#itinerary">Itinerary</a>
-    <a href="#accommodation">Tailor Your Stay</a>
-    <a href="#practical">Practical Information</a>
-    <a href="#activities">Activities</a>
-    <a href="#quote">Request a Quote</a>
-  </div>
+<!-- SECTION NAVIGATION -->
+
+<div class="zanzibar-tabs">
+    <div class="wrap">
+        <a href="#general">Overview</a>
+        <a href="#activities">Activities</a>
+        <a href="#prices">Prices</a>
+        <a href="#itinerary">Itinerary</a>
+        <a href="#accommodation">Accommodation</a>
+        <a href="#practical">Travel Information</a>
+        <a href="#quote">Enquire</a>
+    </div>
 </div>
 
 <!-- GENERAL -->
-<section class="itinerary-section" id="general">
-  <div class="wrap">
 
-    <span class="kicker">Discover Zanzibar</span>
-    <h2>About This Holiday</h2>
+<section class="zanzibar-section" id="general">
+    <div class="wrap">
 
-    <div class="itinerary-intro">
+        <span class="zanzibar-kicker">Discover Zanzibar</span>
+        <h2>About This Holiday</h2>
 
-      <p>
-        This seven-day private holiday brings together Zanzibar's
-        cultural heritage, tropical nature and beautiful coastline.
-        Begin in historic Stone Town, where narrow streets, historic
-        buildings and lively markets tell the story of the island's
-        diverse influences.
-      </p>
+        <div class="zanzibar-intro">
 
-      <p>
-        Explore Prison Island and its giant Aldabra tortoises, discover
-        the island's spice-growing traditions, and visit Jozani Forest
-        to look for the rare Zanzibar red colobus monkey.
-      </p>
+            <p>
+                This seven-day private holiday brings together Zanzibar's
+                cultural heritage, tropical nature and beautiful coastline.
+                Begin in historic Stone Town, where narrow streets, historic
+                buildings and lively markets tell the story of the island's
+                diverse influences.
+            </p>
 
-      <p>
-        Continue to Kendwa Beach for a relaxing coastal stay, with
-        opportunities for snorkeling around Mnemba, responsible
-        dolphin viewing and the full-day Safari Blue experience.
-      </p>
+            <p>
+                Explore Prison Island and its giant Aldabra tortoises, discover
+                the island's spice-growing traditions, and visit Jozani Forest
+                to look for the rare Zanzibar red colobus monkey.
+            </p>
+
+            <p>
+                Continue to Kendwa Beach for a relaxing coastal stay, with
+                opportunities for snorkeling around Mnemba, responsible
+                dolphin viewing and the full-day Safari Blue experience.
+            </p>
+
+        </div>
+
+        <div class="zanzibar-highlights">
+
+            <article class="zanzibar-highlight">
+                <h3>Stone Town</h3>
+                <p>Discover historic streets, traditional architecture, markets and Zanzibar's cultural heritage.</p>
+            </article>
+
+            <article class="zanzibar-highlight">
+                <h3>Prison Island</h3>
+                <p>Visit the island's famous giant Aldabra tortoises and enjoy a scenic boat excursion.</p>
+            </article>
+
+            <article class="zanzibar-highlight">
+                <h3>Spice Farm</h3>
+                <p>Discover the scents and flavours of cloves, cinnamon, vanilla and tropical spices.</p>
+            </article>
+
+            <article class="zanzibar-highlight">
+                <h3>Jozani Forest</h3>
+                <p>Explore forest and mangrove habitats associated with the Zanzibar red colobus monkey.</p>
+            </article>
+
+            <article class="zanzibar-highlight">
+                <h3>Kendwa Beach</h3>
+                <p>Enjoy white sand, turquoise water and time to relax on the northern coast.</p>
+            </article>
+
+            <article class="zanzibar-highlight">
+                <h3>Safari Blue</h3>
+                <p>Enjoy a traditional dhow excursion, snorkeling opportunities and a seafood lunch.</p>
+            </article>
+
+        </div>
 
     </div>
-
-    <div class="itinerary-highlights">
-
-      <div class="highlight-item">
-        <h3>Stone Town</h3>
-        <p>Discover historic streets, traditional architecture, markets and Zanzibar's cultural heritage.</p>
-      </div>
-
-      <div class="highlight-item">
-        <h3>Prison Island</h3>
-        <p>Visit the island's famous giant Aldabra tortoises.</p>
-      </div>
-
-      <div class="highlight-item">
-        <h3>Spice Farm</h3>
-        <p>Discover the scents and flavours of cloves, cinnamon, vanilla and tropical spices.</p>
-      </div>
-
-      <div class="highlight-item">
-        <h3>Jozani Forest</h3>
-        <p>Explore forest and mangrove habitats associated with the Zanzibar red colobus monkey.</p>
-      </div>
-
-      <div class="highlight-item">
-        <h3>Kendwa Beach</h3>
-        <p>Enjoy white sand, turquoise water and time to relax on the northern coast.</p>
-      </div>
-
-      <div class="highlight-item">
-        <h3>Safari Blue</h3>
-        <p>Enjoy a traditional dhow excursion, snorkeling opportunities and a seafood lunch.</p>
-      </div>
-
-    </div>
-
-  </div>
 </section>
 
 <!-- ACTIVITIES -->
-<section class="itinerary-section alt" id="activities">
-  <div class="wrap">
 
-    <span class="kicker">Island experiences</span>
-    <h2>Experiences Included in the Journey</h2>
+<section class="zanzibar-section alt" id="activities">
+    <div class="wrap">
 
-    <div class="itinerary-highlights">
+        <span class="zanzibar-kicker">Island experiences</span>
+        <h2>Experiences Included in the Journey</h2>
 
-      <div class="highlight-item">
-        <h3>Guided Stone Town Tour</h3>
-        <p>Explore Zanzibar's historic centre and important cultural landmarks.</p>
-      </div>
+        <div class="zanzibar-highlights">
 
-      <div class="highlight-item">
-        <h3>Prison Island Excursion</h3>
-        <p>Travel by boat to see the island's giant Aldabra tortoises.</p>
-      </div>
+            <article class="zanzibar-highlight">
+                <h3>Guided Stone Town Tour</h3>
+                <p>Explore Zanzibar's historic centre and important cultural landmarks.</p>
+            </article>
 
-      <div class="highlight-item">
-        <h3>Spice Farm Experience</h3>
-        <p>Learn about locally grown spices and tropical fruits.</p>
-      </div>
+            <article class="zanzibar-highlight">
+                <h3>Prison Island Excursion</h3>
+                <p>Travel by boat to see the island's giant Aldabra tortoises.</p>
+            </article>
 
-      <div class="highlight-item">
-        <h3>Jozani Forest</h3>
-        <p>Look for red colobus monkeys and walk along the mangrove boardwalk.</p>
-      </div>
+            <article class="zanzibar-highlight">
+                <h3>Spice Farm Experience</h3>
+                <p>Learn about locally grown spices and tropical fruits.</p>
+            </article>
 
-      <div class="highlight-item">
-        <h3>Mnemba Marine Excursion</h3>
-        <p>Enjoy snorkeling and responsible dolphin-viewing opportunities, subject to sea conditions.</p>
-      </div>
+            <article class="zanzibar-highlight">
+                <h3>Jozani Forest</h3>
+                <p>Look for red colobus monkeys and walk along the mangrove boardwalk.</p>
+            </article>
 
-      <div class="highlight-item">
-        <h3>Safari Blue</h3>
-        <p>Explore the Menai Bay area by traditional dhow with snorkeling and a seafood BBQ.</p>
-      </div>
+            <article class="zanzibar-highlight">
+                <h3>Mnemba Marine Excursion</h3>
+                <p>Enjoy snorkeling and responsible dolphin-viewing opportunities, subject to sea conditions.</p>
+            </article>
+
+            <article class="zanzibar-highlight">
+                <h3>Safari Blue</h3>
+                <p>Explore the Menai Bay area by traditional dhow with snorkeling and a seafood BBQ.</p>
+            </article>
+
+        </div>
 
     </div>
-
-  </div>
 </section>
 
 <!-- PRICES -->
-<section class="itinerary-section" id="prices">
-  <div class="wrap">
 
-    <span class="kicker">Holiday investment</span>
-    <h2>Prices & Package Details</h2>
+<section class="zanzibar-section" id="prices">
+    <div class="wrap">
 
-    <p class="itinerary-intro">
-      The package starts from USD 2,115 per person. The final quotation
-      depends on your travel dates, chosen accommodation category,
-      room arrangement, departure country and flight requirements.
-    </p>
+        <span class="zanzibar-kicker">Holiday investment</span>
+        <h2>Prices & Package Details</h2>
 
-    <div class="price-panel">
-      <span class="kicker">7 days / 6 nights</span>
-      <strong>From USD 2,115 per person</strong>
+        <div class="zanzibar-intro">
+            <p>
+                The package starts from USD 2,115 per person. The final quotation
+                depends on your travel dates, chosen accommodation category,
+                room arrangement, departure country and flight requirements.
+            </p>
+        </div>
 
-      <p>
-        Flights are quoted separately according to your departure
-        country and preferred travel arrangements. Hotel selection
-        and room availability are subject to confirmation.
-      </p>
+        <div class="zanzibar-price-panel">
+            <span class="zanzibar-kicker">7 Days / 6 Nights</span>
 
-      <a class="btn" href="#quote">Request Final Quotation</a>
+            <strong>From USD 2,115 per person</strong>
+
+            <p>
+                Flights are quoted separately according to your departure
+                country and preferred travel arrangements. Hotel selection
+                and room availability are subject to confirmation.
+            </p>
+
+            <a class="btn btn-gold" href="#quote">Request Final Quotation</a>
+        </div>
+
+        <div class="zanzibar-inclusions">
+
+            <div class="zanzibar-inclusion">
+                <h3>Package Inclusions</h3>
+                <ul>
+                    <li>Six nights' accommodation in the selected hotel category</li>
+                    <li>Daily breakfast</li>
+                    <li>Private airport transfers</li>
+                    <li>Private ground transfers for scheduled excursions</li>
+                    <li>Local guides for the scheduled experiences</li>
+                    <li>Guided Stone Town tour</li>
+                    <li>Prison Island excursion and applicable entrance fees</li>
+                    <li>Spice farm and Jozani Forest excursions</li>
+                    <li>Mnemba snorkeling excursion and snorkeling equipment</li>
+                    <li>Safari Blue excursion</li>
+                    <li>Lunch during the Mnemba excursion</li>
+                    <li>Seafood BBQ lunch during Safari Blue</li>
+                    <li>Applicable excursion entrance fees</li>
+                    <li>Mandatory Zanzibar inbound travel insurance</li>
+                </ul>
+            </div>
+
+            <div class="zanzibar-inclusion">
+                <h3>Package Exclusions</h3>
+                <ul>
+                    <li>International and domestic flights</li>
+                    <li>Visa fees, where applicable</li>
+                    <li>Lunches and dinners not specified in the inclusions</li>
+                    <li>Personal expenses and shopping</li>
+                    <li>Tips and gratuities</li>
+                    <li>Optional activities during leisure time</li>
+                    <li>Additional hotel services not listed</li>
+                    <li>Services not expressly included in the final quotation</li>
+                </ul>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="inclusion-grid">
-
-      <div class="inclusion-card">
-        <h3>Package Inclusions</h3>
-        <ul>
-          <li>Six nights' accommodation in the selected hotel category</li>
-          <li>Daily breakfast</li>
-          <li>Private airport transfers</li>
-          <li>Private ground transfers for scheduled excursions</li>
-          <li>Local guides for the scheduled experiences</li>
-          <li>Guided Stone Town tour</li>
-          <li>Prison Island excursion and applicable entrance fees</li>
-          <li>Spice farm and Jozani Forest excursions</li>
-          <li>Mnemba snorkeling excursion and snorkeling equipment</li>
-          <li>Safari Blue excursion</li>
-          <li>Lunch during the Mnemba excursion</li>
-          <li>Seafood BBQ lunch during Safari Blue</li>
-          <li>Applicable excursion entrance fees</li>
-          <li>Mandatory Zanzibar inbound travel insurance</li>
-        </ul>
-      </div>
-
-      <div class="inclusion-card">
-        <h3>Package Exclusions</h3>
-        <ul>
-          <li>International and domestic flights</li>
-          <li>Visa fees, where applicable</li>
-          <li>Lunches and dinners not specified in the inclusions</li>
-          <li>Personal expenses and shopping</li>
-          <li>Tips and gratuities</li>
-          <li>Optional activities during leisure time</li>
-          <li>Additional hotel services not listed</li>
-          <li>Services not expressly included in the final quotation</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
 </section>
 
 <!-- DETAILED ITINERARY -->
-<section class="itinerary-section alt" id="itinerary">
-  <div class="wrap">
 
-    <span class="kicker">Your island journey</span>
-    <h2>Detailed 7-Day Itinerary</h2>
+<section class="zanzibar-section alt" id="itinerary">
+    <div class="wrap">
 
-    <p class="itinerary-intro">
-      Enjoy a combination of culture, nature, marine adventures and
-      beach relaxation across seven days in Zanzibar.
-    </p>
+        <span class="zanzibar-kicker">Your island journey</span>
+        <h2>Detailed 7-Day Itinerary</h2>
 
-    <div class="day-list">
-
-      <!-- DAY 1 -->
-      <article class="day-card">
-        <div class="day-number">
-          <span>Day</span>
-          <strong>01</strong>
+        <div class="zanzibar-intro">
+            <p>
+                Enjoy a combination of culture, nature, marine adventures and
+                beach relaxation across seven days in Zanzibar.
+            </p>
         </div>
 
-        <div class="day-content">
-          <h3>Arrival in Zanzibar – Transfer to Stone Town</h3>
+        <div class="zanzibar-day-list">
 
-          <p>
-            Upon arrival at Abeid Amani Karume International Airport,
-            you will be welcomed by your local representative and
-            transferred to your selected accommodation in Stone Town.
-          </p>
+            <!-- DAY 1 -->
 
-          <p>
-            After check-in, take time to settle in and enjoy the
-            atmosphere of Zanzibar's historic centre. Depending on
-            your arrival time, you may explore the nearby streets
-            independently or visit Forodhani Gardens in the evening.
-          </p>
+            <article class="zanzibar-day">
+                <div class="zanzibar-day-number">
+                    <span>Day</span>
+                    <strong>01</strong>
+                </div>
 
-          <p>
-            Overnight in Stone Town.
-          </p>
+                <div class="zanzibar-day-content">
+                    <h3>Arrival in Zanzibar – Transfer to Stone Town</h3>
 
-          <div class="day-details">
-            <span>Destination: Stone Town</span>
-            <span>Activity: Arrival & Leisure</span>
-            <span>Meal Plan: Breakfast</span>
-          </div>
+                    <p>
+                        Upon arrival at Abeid Amani Karume International Airport,
+                        you will be welcomed by your local representative and
+                        transferred to your selected accommodation in Stone Town.
+                    </p>
+
+                    <p>
+                        After check-in, take time to settle in and enjoy the
+                        atmosphere of Zanzibar's historic centre. Depending on
+                        your arrival time, you may explore the nearby streets
+                        independently or visit Forodhani Gardens in the evening.
+                    </p>
+
+                    <p>Overnight in Stone Town.</p>
+
+                    <div class="zanzibar-day-details">
+                        <span>Destination: Stone Town</span>
+                        <span>Activity: Arrival & Leisure</span>
+                        <span>Meal Plan: Breakfast</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 2 -->
+
+            <article class="zanzibar-day">
+                <div class="zanzibar-day-number">
+                    <span>Day</span>
+                    <strong>02</strong>
+                </div>
+
+                <div class="zanzibar-day-content">
+                    <h3>Stone Town Heritage Tour & Prison Island</h3>
+
+                    <p>
+                        After breakfast, meet your local guide for a walking tour
+                        of Stone Town. Explore its narrow streets and discover
+                        important landmarks that reflect the island's rich history.
+                    </p>
+
+                    <p>
+                        Depending on access and the tour route, visit Freddie
+                        Mercury House, the Old Fort, the Sultan's Palace area,
+                        the former Slave Market and local markets.
+                    </p>
+
+                    <p>
+                        Later, take a boat excursion to Prison Island. Explore the
+                        island and see its famous giant Aldabra tortoises. Enjoy
+                        time around the island before returning to Stone Town.
+                    </p>
+
+                    <p>Return to your hotel for the evening.</p>
+
+                    <div class="zanzibar-day-details">
+                        <span>Activities: Stone Town & Prison Island</span>
+                        <span>Accommodation: Stone Town</span>
+                        <span>Meal Plan: Breakfast</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 3 -->
+
+            <article class="zanzibar-day">
+                <div class="zanzibar-day-number">
+                    <span>Day</span>
+                    <strong>03</strong>
+                </div>
+
+                <div class="zanzibar-day-content">
+                    <h3>Spice Farm, Jozani Forest & Transfer to Kendwa</h3>
+
+                    <p>
+                        After breakfast, check out and begin your island exploration
+                        with a visit to a traditional spice farm. Discover how
+                        Zanzibar's famous spices are grown and used, including
+                        cloves, cinnamon, vanilla and nutmeg.
+                    </p>
+
+                    <p>
+                        Enjoy the opportunity to see and learn about tropical
+                        fruits and aromatic plants during the guided experience.
+                    </p>
+
+                    <p>
+                        Continue to Jozani Forest, the best-known forest reserve
+                        on the island. Explore its forest trails and look out for
+                        the Zanzibar red colobus monkey. Continue along the
+                        mangrove boardwalk to learn about this coastal ecosystem.
+                    </p>
+
+                    <p>
+                        Later, transfer to Kendwa on the northern coast and check
+                        in at your selected beach accommodation.
+                    </p>
+
+                    <div class="zanzibar-day-details">
+                        <span>Activities: Spice Farm & Jozani</span>
+                        <span>Route: Stone Town – Kendwa</span>
+                        <span>Accommodation: Kendwa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 4 -->
+
+            <article class="zanzibar-day">
+                <div class="zanzibar-day-number">
+                    <span>Day</span>
+                    <strong>04</strong>
+                </div>
+
+                <div class="zanzibar-day-content">
+                    <h3>Leisure Day at Kendwa Beach</h3>
+
+                    <p>
+                        Enjoy a relaxed day at Kendwa Beach. After breakfast,
+                        spend time on the white-sand shoreline, enjoy the ocean
+                        views or relax at your hotel.
+                    </p>
+
+                    <p>
+                        Kendwa is a popular destination for swimming and beach
+                        relaxation. You may also choose to arrange optional
+                        experiences such as a sunset dhow cruise, additional
+                        snorkeling or a spa treatment.
+                    </p>
+
+                    <p>
+                        Optional activities are not included unless specifically
+                        stated in your confirmed quotation.
+                    </p>
+
+                    <p>Overnight in Kendwa.</p>
+
+                    <div class="zanzibar-day-details">
+                        <span>Destination: Kendwa Beach</span>
+                        <span>Activity: Leisure</span>
+                        <span>Accommodation: Kendwa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 5 -->
+
+            <article class="zanzibar-day">
+                <div class="zanzibar-day-number">
+                    <span>Day</span>
+                    <strong>05</strong>
+                </div>
+
+                <div class="zanzibar-day-content">
+                    <h3>Mnemba Snorkeling & Dolphin-Viewing Excursion</h3>
+
+                    <p>
+                        After breakfast, depart for your scheduled marine excursion
+                        around the Mnemba area. Enjoy a boat trip to the marine
+                        environment around Mnemba Island, where conditions may
+                        provide opportunities for snorkeling.
+                    </p>
+
+                    <p>
+                        Explore the underwater world with your snorkeling
+                        equipment and look out for colourful marine life.
+                        The excursion may also include opportunities to observe
+                        dolphins in their natural environment.
+                    </p>
+
+                    <p>
+                        Dolphin sightings are not guaranteed. Viewing should
+                        follow responsible wildlife practices, with no chasing,
+                        crowding or disturbing the animals.
+                    </p>
+
+                    <p>
+                        Enjoy the included lunch during the excursion before
+                        returning to Kendwa.
+                    </p>
+
+                    <div class="zanzibar-day-details">
+                        <span>Activity: Mnemba Marine Excursion</span>
+                        <span>Snorkeling Equipment Included</span>
+                        <span>Lunch Included</span>
+                        <span>Accommodation: Kendwa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 6 -->
+
+            <article class="zanzibar-day">
+                <div class="zanzibar-day-number">
+                    <span>Day</span>
+                    <strong>06</strong>
+                </div>
+
+                <div class="zanzibar-day-content">
+                    <h3>Safari Blue – Dhow Cruise & Marine Adventure</h3>
+
+                    <p>
+                        After breakfast, transfer to Fumba for the Safari Blue
+                        experience in the Menai Bay area. Board a traditional
+                        dhow and set out to explore the beautiful coastal waters.
+                    </p>
+
+                    <p>
+                        Depending on tides and sea conditions, enjoy opportunities
+                        for snorkeling, visiting sandbanks and exploring selected
+                        islands or coastal locations.
+                    </p>
+
+                    <p>
+                        A seafood BBQ lunch is served as part of the experience.
+                        Enjoy the island atmosphere and time on the water before
+                        returning to the departure point.
+                    </p>
+
+                    <p>
+                        Transfer back to your Kendwa accommodation for your
+                        final night in Zanzibar.
+                    </p>
+
+                    <div class="zanzibar-day-details">
+                        <span>Activity: Safari Blue</span>
+                        <span>Traditional Dhow Excursion</span>
+                        <span>Seafood BBQ Lunch Included</span>
+                        <span>Accommodation: Kendwa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 7 -->
+
+            <article class="zanzibar-day">
+                <div class="zanzibar-day-number">
+                    <span>Day</span>
+                    <strong>07</strong>
+                </div>
+
+                <div class="zanzibar-day-content">
+                    <h3>Departure from Zanzibar</h3>
+
+                    <p>
+                        Enjoy breakfast at your hotel before checking out.
+                        At the scheduled time, meet your driver for a private
+                        transfer to Abeid Amani Karume International Airport.
+                    </p>
+
+                    <p>
+                        Arrive at the airport in good time for your departure
+                        arrangements and onward flight.
+                    </p>
+
+                    <p>
+                        Your Zanzibar holiday comes to an end, leaving you with
+                        memories of the island's culture, beaches and marine
+                        experiences.
+                    </p>
+
+                    <div class="zanzibar-day-details">
+                        <span>Activity: Airport Transfer</span>
+                        <span>Meal Plan: Breakfast</span>
+                        <span>End of Package</span>
+                    </div>
+                </div>
+            </article>
+
         </div>
-      </article>
-
-      <!-- DAY 2 -->
-      <article class="day-card">
-        <div class="day-number">
-          <span>Day</span>
-          <strong>02</strong>
-        </div>
-
-        <div class="day-content">
-          <h3>Stone Town Heritage Tour & Prison Island</h3>
-
-          <p>
-            After breakfast, meet your local guide for a walking tour
-            of Stone Town. Explore its narrow streets and discover
-            important landmarks that reflect the island's rich history.
-          </p>
-
-          <p>
-            Depending on access and the tour route, visit Freddie
-            Mercury House, the Old Fort, the Sultan's Palace area,
-            the former Slave Market and local markets.
-          </p>
-
-          <p>
-            Later, take a boat excursion to Prison Island. Explore the
-            island and see its famous giant Aldabra tortoises. Enjoy
-            time around the island before returning to Stone Town.
-          </p>
-
-          <p>
-            Return to your hotel for the evening.
-          </p>
-
-          <div class="day-details">
-            <span>Activities: Stone Town & Prison Island</span>
-            <span>Accommodation: Stone Town</span>
-            <span>Meal Plan: Breakfast</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- DAY 3 -->
-      <article class="day-card">
-        <div class="day-number">
-          <span>Day</span>
-          <strong>03</strong>
-        </div>
-
-        <div class="day-content">
-          <h3>Spice Farm, Jozani Forest & Transfer to Kendwa</h3>
-
-          <p>
-            After breakfast, check out and begin your island exploration
-            with a visit to a traditional spice farm. Discover how
-            Zanzibar's famous spices are grown and used, including
-            cloves, cinnamon, vanilla and nutmeg.
-          </p>
-
-          <p>
-            Enjoy the opportunity to see and learn about tropical
-            fruits and aromatic plants during the guided experience.
-          </p>
-
-          <p>
-            Continue to Jozani Forest, the best-known forest reserve
-            on the island. Explore its forest trails and look out for
-            the Zanzibar red colobus monkey. Continue along the
-            mangrove boardwalk to learn about this coastal ecosystem.
-          </p>
-
-          <p>
-            Later, transfer to Kendwa on the northern coast and check
-            in at your selected beach accommodation.
-          </p>
-
-          <div class="day-details">
-            <span>Activities: Spice Farm & Jozani</span>
-            <span>Route: Stone Town – Kendwa</span>
-            <span>Accommodation: Kendwa</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- DAY 4 -->
-      <article class="day-card">
-        <div class="day-number">
-          <span>Day</span>
-          <strong>04</strong>
-        </div>
-
-        <div class="day-content">
-          <h3>Leisure Day at Kendwa Beach</h3>
-
-          <p>
-            Enjoy a relaxed day at Kendwa Beach. After breakfast,
-            spend time on the white-sand shoreline, enjoy the ocean
-            views or relax at your hotel.
-          </p>
-
-          <p>
-            Kendwa is a popular destination for swimming and beach
-            relaxation. You may also choose to arrange optional
-            experiences such as a sunset dhow cruise, additional
-            snorkeling or a spa treatment.
-          </p>
-
-          <p>
-            Optional activities are not included unless specifically
-            stated in your confirmed quotation.
-          </p>
-
-          <p>
-            Overnight in Kendwa.
-          </p>
-
-          <div class="day-details">
-            <span>Destination: Kendwa Beach</span>
-            <span>Activity: Leisure</span>
-            <span>Accommodation: Kendwa</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- DAY 5 -->
-      <article class="day-card">
-        <div class="day-number">
-          <span>Day</span>
-          <strong>05</strong>
-        </div>
-
-        <div class="day-content">
-          <h3>Mnemba Snorkeling & Dolphin-Viewing Excursion</h3>
-
-          <p>
-            After breakfast, depart for your scheduled marine excursion
-            around the Mnemba area. Enjoy a boat trip to the marine
-            environment around Mnemba Island, where conditions may
-            provide opportunities for snorkeling.
-          </p>
-
-          <p>
-            Explore the underwater world with your snorkeling
-            equipment and look out for colourful marine life.
-            The excursion may also include opportunities to observe
-            dolphins in their natural environment.
-          </p>
-
-          <p>
-            Dolphin sightings are not guaranteed. Viewing should
-            follow responsible wildlife practices, with no chasing,
-            crowding or disturbing the animals.
-          </p>
-
-          <p>
-            Enjoy the included lunch during the excursion before
-            returning to Kendwa.
-          </p>
-
-          <div class="day-details">
-            <span>Activity: Mnemba Marine Excursion</span>
-            <span>Snorkeling Equipment Included</span>
-            <span>Lunch Included</span>
-            <span>Accommodation: Kendwa</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- DAY 6 -->
-      <article class="day-card">
-        <div class="day-number">
-          <span>Day</span>
-          <strong>06</strong>
-        </div>
-
-        <div class="day-content">
-          <h3>Safari Blue – Dhow Cruise & Marine Adventure</h3>
-
-          <p>
-            After breakfast, transfer to Fumba for the Safari Blue
-            experience in the Menai Bay area. Board a traditional
-            dhow and set out to explore the beautiful coastal waters.
-          </p>
-
-          <p>
-            Depending on tides and sea conditions, enjoy opportunities
-            for snorkeling, visiting sandbanks and exploring selected
-            islands or coastal locations.
-          </p>
-
-          <p>
-            A seafood BBQ lunch is served as part of the experience.
-            Enjoy the island atmosphere and time on the water before
-            returning to the departure point.
-          </p>
-
-          <p>
-            Transfer back to your Kendwa accommodation for your
-            final night in Zanzibar.
-          </p>
-
-          <div class="day-details">
-            <span>Activity: Safari Blue</span>
-            <span>Traditional Dhow Excursion</span>
-            <span>Seafood BBQ Lunch Included</span>
-            <span>Accommodation: Kendwa</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- DAY 7 -->
-      <article class="day-card">
-        <div class="day-number">
-          <span>Day</span>
-          <strong>07</strong>
-        </div>
-
-        <div class="day-content">
-          <h3>Departure from Zanzibar</h3>
-
-          <p>
-            Enjoy breakfast at your hotel before checking out.
-            At the scheduled time, meet your driver for a private
-            transfer to Abeid Amani Karume International Airport.
-          </p>
-
-          <p>
-            Arrive at the airport in good time for your departure
-            arrangements and onward flight.
-          </p>
-
-          <p>
-            Your Zanzibar holiday comes to an end, leaving you with
-            memories of the island's culture, beaches and marine
-            experiences.
-          </p>
-
-          <div class="day-details">
-            <span>Activity: Airport Transfer</span>
-            <span>Meal Plan: Breakfast</span>
-            <span>End of Package</span>
-          </div>
-        </div>
-      </article>
 
     </div>
-
-  </div>
 </section>
 
 <!-- ACCOMMODATION -->
-<section class="itinerary-section" id="accommodation">
-  <div class="wrap">
 
-    <span class="kicker">Choose your comfort level</span>
-    <h2>Tailor Your Stay – Accommodation Options</h2>
+<section class="zanzibar-section" id="accommodation">
+    <div class="wrap">
 
-    <p class="itinerary-intro">
-      Select the accommodation category that best suits your holiday.
-      Hotel selection depends on availability, room category and
-      travel dates. The final quotation will confirm the selected
-      properties and applicable rates.
-    </p>
+        <span class="zanzibar-kicker">Choose your comfort level</span>
+        <h2>Tailor Your Stay – Accommodation Options</h2>
 
-    <div class="accommodation-grid">
+        <div class="zanzibar-intro">
+            <p>
+                Select the accommodation category that best suits your holiday.
+                Hotel selection depends on availability, room category and
+                travel dates. The final quotation will confirm the selected
+                properties and applicable rates.
+            </p>
+        </div>
 
-      <div class="accommodation-card">
-        <h3>Budget Accommodation</h3>
+        <div class="zanzibar-accommodation">
 
-        <p>
-          Comfortable accommodation choices for travellers who want
-          to explore Zanzibar while keeping accommodation costs
-          manageable.
-        </p>
+            <article class="zanzibar-hotel">
+                <h3>Budget Accommodation</h3>
 
-        <ul>
-          <li>Jambo Guest House</li>
-          <li>Treasures of Zanzibar House</li>
-          <li>Kendwa Breeze Bungalows</li>
-        </ul>
-      </div>
+                <p>
+                    Comfortable accommodation choices for travellers who want
+                    to explore Zanzibar while keeping accommodation costs
+                    manageable.
+                </p>
 
-      <div class="accommodation-card">
-        <h3>Mid-Range Accommodation</h3>
+                <ul>
+                    <li>Jambo Guest House</li>
+                    <li>Treasures of Zanzibar House</li>
+                    <li>Kendwa Breeze Bungalows</li>
+                </ul>
+            </article>
 
-        <p>
-          A balance of comfort, location and facilities for couples,
-          families and leisure travellers.
-        </p>
+            <article class="zanzibar-hotel">
+                <h3>Mid-Range Accommodation</h3>
 
-        <ul>
-          <li>Tembo House Hotel</li>
-          <li>Golden Tulip Stonetown Boutique</li>
-          <li>Sunset Kendwa Beach Hotel</li>
-          <li>Canary Kendwa Beach Resort</li>
-        </ul>
-      </div>
+                <p>
+                    A balance of comfort, location and facilities for couples,
+                    families and leisure travellers.
+                </p>
 
-      <div class="accommodation-card">
-        <h3>Luxury Accommodation</h3>
+                <ul>
+                    <li>Tembo House Hotel</li>
+                    <li>Golden Tulip Stonetown Boutique</li>
+                    <li>Sunset Kendwa Beach Hotel</li>
+                    <li>Canary Kendwa Beach Resort</li>
+                </ul>
+            </article>
 
-        <p>
-          Premium stays for travellers looking for elevated comfort,
-          exceptional locations and refined island experiences.
-        </p>
+            <article class="zanzibar-hotel">
+                <h3>Luxury Accommodation</h3>
 
-        <ul>
-          <li>Zanzibar Serena Hotel</li>
-          <li>Park Hyatt Zanzibar</li>
-          <li>Gold Zanzibar Beach House & Spa</li>
-          <li>Zuri Zanzibar</li>
-        </ul>
-      </div>
+                <p>
+                    Premium stays for travellers looking for elevated comfort,
+                    exceptional locations and refined island experiences.
+                </p>
+
+                <ul>
+                    <li>Zanzibar Serena Hotel</li>
+                    <li>Park Hyatt Zanzibar</li>
+                    <li>Gold Zanzibar Beach House & Spa</li>
+                    <li>Zuri Zanzibar</li>
+                </ul>
+            </article>
+
+        </div>
+
+        <div class="zanzibar-note">
+            Hotel availability and the final package price depend on the
+            selected property, room category, travel dates, season and
+            occupancy. Not all listed properties are interchangeable
+            or located in the same area. Your confirmed itinerary will
+            specify the selected hotel for each stay.
+        </div>
 
     </div>
-
-    <div class="route-note">
-      Hotel availability and the final package price depend on the
-      selected property, room category, travel dates, season and
-      occupancy. Not all listed properties are interchangeable
-      or located in the same area. Your confirmed itinerary will
-      specify the selected hotel for each stay.
-    </div>
-
-  </div>
 </section>
 
 <!-- PRACTICAL INFORMATION -->
-<section class="itinerary-section alt" id="practical">
-  <div class="wrap">
 
-    <span class="kicker">Prepare for your island holiday</span>
-    <h2>Practical Information</h2>
+<section class="zanzibar-section alt" id="practical">
+    <div class="wrap">
 
-    <ul class="practical-list">
+        <span class="zanzibar-kicker">Prepare for your island holiday</span>
+        <h2>Practical Information</h2>
 
-      <li>
-        <strong>Passport and entry requirements:</strong>
-        Ensure that your passport is valid and check the entry
-        requirements applicable to your nationality before travelling.
-      </li>
+        <ul class="zanzibar-practical">
 
-      <li>
-        <strong>Zanzibar inbound travel insurance:</strong>
-        Visitors are subject to Zanzibar's mandatory inbound travel
-        insurance requirements. The applicable policy and arrangements
-        will be confirmed before travel.
-      </li>
+            <li>
+                <strong>Passport and entry requirements:</strong>
+                Ensure that your passport is valid and check the entry
+                requirements applicable to your nationality before travelling.
+            </li>
 
-      <li>
-        <strong>Flights:</strong>
-        International and domestic flights are not included in the
-        stated package price. Flight options can be quoted according
-        to your departure country and preferred travel dates.
-      </li>
+            <li>
+                <strong>Zanzibar inbound travel insurance:</strong>
+                Visitors are subject to Zanzibar's mandatory inbound travel
+                insurance requirements. The applicable policy and arrangements
+                will be confirmed before travel.
+            </li>
 
-      <li>
-        <strong>Clothing:</strong>
-        Pack light tropical clothing, swimwear, comfortable walking
-        shoes, sun protection and suitable clothing for cultural visits.
-        Dress respectfully when visiting religious and local community
-        sites.
-      </li>
+            <li>
+                <strong>Flights:</strong>
+                International and domestic flights are not included in the
+                stated package price. Flight options can be quoted according
+                to your departure country and preferred travel dates.
+            </li>
 
-      <li>
-        <strong>Marine activities:</strong>
-        Snorkeling and boat excursions depend on weather, tides and
-        sea conditions. Operators may adjust schedules when necessary.
-      </li>
+            <li>
+                <strong>Clothing:</strong>
+                Pack light tropical clothing, swimwear, comfortable walking
+                shoes, sun protection and suitable clothing for cultural visits.
+                Dress respectfully when visiting religious and local community
+                sites.
+            </li>
 
-      <li>
-        <strong>Dolphin viewing:</strong>
-        Dolphins are wild animals. Sightings are not guaranteed and
-        responsible viewing practices should always be followed.
-      </li>
+            <li>
+                <strong>Marine activities:</strong>
+                Snorkeling and boat excursions depend on weather, tides and
+                sea conditions. Operators may adjust schedules when necessary.
+            </li>
 
-      <li>
-        <strong>Accommodation:</strong>
-        Hotels are subject to availability. Your chosen properties
-        and room arrangements will be confirmed before payment.
-      </li>
+            <li>
+                <strong>Dolphin viewing:</strong>
+                Dolphins are wild animals. Sightings are not guaranteed and
+                responsible viewing practices should always be followed.
+            </li>
 
-      <li>
-        <strong>Itinerary flexibility:</strong>
-        The sequence of activities may change due to weather,
-        operational arrangements or marine conditions while
-        maintaining the main experiences wherever possible.
-      </li>
+            <li>
+                <strong>Accommodation:</strong>
+                Hotels are subject to availability. Your chosen properties
+                and room arrangements will be confirmed before payment.
+            </li>
 
-      <li>
-        <strong>Meals:</strong>
-        Daily breakfast is included. Lunches are included during
-        the specified Mnemba and Safari Blue excursions. Other
-        meals are at your own expense unless otherwise stated.
-      </li>
+            <li>
+                <strong>Itinerary flexibility:</strong>
+                The sequence of activities may change due to weather,
+                operational arrangements or marine conditions while
+                maintaining the main experiences wherever possible.
+            </li>
 
-    </ul>
+            <li>
+                <strong>Meals:</strong>
+                Daily breakfast is included. Lunches are included during
+                the specified Mnemba and Safari Blue excursions. Other
+                meals are at your own expense unless otherwise stated.
+            </li>
 
-  </div>
+        </ul>
+
+    </div>
 </section>
 
 <!-- REQUEST A QUOTE -->
-<section class="itinerary-section" id="quote">
-  <div class="wrap">
 
-    <div class="quote-panel">
+<section class="zanzibar-section" id="quote">
+    <div class="wrap">
 
-      <div>
-        <span class="kicker" style="color:#A8D832">Plan your Zanzibar escape</span>
+        <div class="zanzibar-quote">
 
-        <h2>Ready to Experience Zanzibar?</h2>
+            <div class="zanzibar-quote-copy">
+                <span class="zanzibar-kicker">Plan your Zanzibar escape</span>
 
-        <p>
-          Tell us your preferred travel dates, departure country,
-          number of travellers and accommodation category. Fleypat
-          Adventures will prepare a personalized quotation for your
-          private island holiday.
-        </p>
-      </div>
+                <h2>Ready to Experience Zanzibar?</h2>
 
-      <a class="btn btn-gold"
-         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20the%207-day%20Zanzibar%20Private%20Holiday.%20Please%20send%20me%20a%20quotation.">
-        Request a Quote
-      </a>
+                <p>
+                    Tell us your preferred travel dates, departure country,
+                    number of travellers and accommodation category. Fleypat
+                    Adventures will prepare a personalized quotation for your
+                    private island holiday.
+                </p>
+            </div>
+
+            <div class="zanzibar-quote-action">
+                <a class="btn btn-gold"
+                   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20the%207-day%20Zanzibar%20Private%20Holiday.%20Please%20send%20me%20a%20quotation."
+                   target="_blank"
+                   rel="noopener">
+                    Request a Quote
+                </a>
+            </div>
+
+        </div>
 
     </div>
-
-  </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
+
 <footer class="footer">
-  <div class="wrap footer-grid">
+    <div class="wrap footer-grid">
 
-    <div>
-      <a class="brand footer-brand" href="index.html">
-        <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-        <span>FLEYPAT<small>ADVENTURES</small></span>
-      </a>
+        <div>
+            <a class="brand footer-brand" href="index.html">
+                <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+            </a>
 
-      <p>
-        Explore more. Experience more. Travel beyond expectations.
-        Your journey starts with us.
-      </p>
+            <p>
+                Explore more. Experience more. Travel beyond expectations.
+                Your journey starts with us.
+            </p>
 
-      <a href="https://www.instagram.com/fleypat_adventures/">
-        Instagram @fleypat_adventures
-      </a>
+            <a href="https://www.instagram.com/fleypat_adventures/"
+               target="_blank"
+               rel="noopener">
+                Instagram @fleypat_adventures
+            </a>
+        </div>
+
+        <div>
+            <h3>Explore</h3>
+            <a href="safaris.html">Wildlife Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+        </div>
+
+        <div>
+            <h3>Company</h3>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="blog.html">Travel Guides</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+            <a href="https://wa.me/254704261626">WhatsApp our team</a>
+            <span>Mombasa, Kenya</span>
+        </div>
+
     </div>
 
-    <div>
-      <h3>Explore</h3>
-      <a href="safaris.html">Wildlife Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html">Itineraries</a>
+    <div class="wrap foot-bottom">
+        © <span id="currentYear"></span> Fleypat Adventures. All rights reserved.
+        <span>Explore. Experience. Enjoy.</span>
     </div>
-
-    <div>
-      <h3>Company</h3>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Our Services</a>
-      <a href="transfers.html">Transfers</a>
-      <a href="partnerships.html">Partnerships</a>
-      <a href="blog.html">Travel Guides</a>
-    </div>
-
-    <div>
-      <h3>Contact</h3>
-      <a href="tel:+254704261626">+254 704 261 626</a>
-      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-      <a href="https://wa.me/254704261626">WhatsApp our team</a>
-      <span>Mombasa, Kenya</span>
-    </div>
-
-  </div>
-
-  <div class="wrap foot-bottom">
-    © <span data-year></span> Fleypat Adventures. All rights reserved.
-    <span>Explore More. Experience More. Travel Beyond Expectations.</span>
-  </div>
 </footer>
+
+<!-- FLOATING WHATSAPP -->
 
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
    target="_blank"
-   rel="noopener">
-  WhatsApp Us
+   rel="noopener"
+   aria-label="Chat with Fleypat Adventures on WhatsApp">
+    WhatsApp Us
 </a>
+
+<script>
+/* MOBILE NAVIGATION */
+
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+if (menuToggle && mainNav) {
+    menuToggle.addEventListener("click", function () {
+        const isOpen = mainNav.classList.toggle("open");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close menu" : "Open menu"
+        );
+
+        menuToggle.innerHTML = isOpen ? "✕" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            mainNav.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open menu");
+            menuToggle.innerHTML = "☰";
+        });
+    });
+}
+
+/* CURRENT YEAR */
+
+const yearElement = document.getElementById("currentYear");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+</script>
 
 <script src="script.js"></script>
 
