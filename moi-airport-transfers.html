@@ -6,26 +6,32 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>Moi International Airport Transfers | Fleypat Adventures</title>
-
-<meta name="description" content="Arrange convenient private airport pickups and drop-offs at Moi International Airport in Mombasa with Fleypat Adventures.">
-<meta name="theme-color" content="#a8d832">
+<meta name="description" content="Arrange convenient airport pickups and drop-offs at Moi International Airport in Mombasa with Fleypat Adventures. Request a private transfer quotation.">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 
 <style>
 .moi-page {
-    --moi-green: #243c28;
-    --moi-lime: #a8d832;
-    --moi-gold: #a97832;
-    --moi-cream: #fbf7e9;
-    color: #30352f;
+    --m-orange: #E8752A;
+    --m-orange-dark: #B85B20;
+    --m-brown: #A66A42;
+    --m-cream: #FFF4E8;
+    --m-cream-light: #FFFCF8;
+    --m-ink: #6B4935;
+    --m-muted: #897264;
+    --m-border: #EAD8C7;
+    --m-shadow: 0 12px 35px rgba(107,73,53,.09);
+    color: var(--m-ink);
 }
 
-.moi-page * {
+.moi-page *,
+.moi-page *::before,
+.moi-page *::after {
     box-sizing: border-box;
 }
 
@@ -36,87 +42,139 @@
     object-fit: cover;
 }
 
+.moi-page h1,
+.moi-page h2,
+.moi-page h3,
+.moi-page h4 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+}
+
+.moi-page p {
+    color: var(--m-muted);
+    line-height: 1.8;
+}
+
+.moi-page .wrap {
+    width: min(1160px, 91%);
+    margin-inline: auto;
+}
+
+.moi-page .eyebrow,
+.moi-page .moi-kicker {
+    display: inline-block;
+    color: var(--m-orange-dark);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.moi-page .section {
+    padding: 85px 0;
+}
+
+.moi-page .section-heading {
+    max-width: 720px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.moi-page .section-heading h2,
+.moi-page .moi-intro h2,
+.moi-page .moi-steps h2,
+.moi-page .moi-destination h2 {
+    font-size: clamp(30px, 4vw, 43px);
+    color: var(--m-ink);
+    margin: 0 0 18px;
+}
+
+.moi-page .section-heading p,
+.moi-page .moi-steps p,
+.moi-page .moi-intro p,
+.moi-page .moi-destination p {
+    font-size: 14px;
+}
+
+.moi-page .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 23px;
+    font-size: 13px;
+    font-weight: 800;
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.moi-page .btn-primary {
+    background: var(--m-orange);
+    color: #fff;
+}
+
+.moi-page .btn-primary:hover {
+    background: var(--m-orange-dark);
+}
+
+.moi-page .btn-outline {
+    border-color: #fff;
+    color: #fff;
+}
+
+.moi-page .btn-outline:hover {
+    background: #fff;
+    color: var(--m-ink);
+}
+
+/* HERO */
 .moi-hero {
     min-height: 570px;
     display: flex;
     align-items: center;
     position: relative;
     background:
-        linear-gradient(90deg, rgba(15,30,20,.82), rgba(15,30,20,.30)),
-        url("https://commons.wikimedia.org/wiki/Special:FilePath/Moi_International_Airport_terminal_building,_2025_(01).jpg")
+        linear-gradient(90deg, rgba(35,23,15,.84), rgba(35,23,15,.30)),
+        url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=85")
         center/cover no-repeat;
     color: #fff;
 }
 
 .moi-hero-content {
     max-width: 760px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 95px 0;
 }
 
 .moi-hero .eyebrow {
-    color: var(--moi-lime);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
-    font-weight: 700;
+    color: #FFD0A5;
 }
 
 .moi-hero h1 {
-    font-family: 'Playfair Display', serif;
     font-size: clamp(42px, 6vw, 68px);
     line-height: 1.08;
-    margin: 20px 0;
+    margin: 15px 0 20px;
     color: #fff;
 }
 
 .moi-hero p {
-    max-width: 620px;
-    font-size: 17px;
+    max-width: 650px;
+    font-size: 16px;
     line-height: 1.8;
-    color: #f5f5ed;
+    color: #fff5ed;
 }
 
 .moi-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 13px;
     margin-top: 30px;
 }
 
-.moi-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: .25s ease;
-}
-
-.moi-btn-primary {
-    background: var(--moi-lime);
-    color: var(--moi-green);
-}
-
-.moi-btn-primary:hover {
-    background: #c0eb5b;
-    transform: translateY(-2px);
-}
-
-.moi-btn-outline {
-    border: 1px solid rgba(255,255,255,.75);
-    color: #fff;
-}
-
-.moi-btn-outline:hover {
-    background: #fff;
-    color: var(--moi-green);
-}
-
+/* INTRODUCTION */
 .moi-intro {
     padding: 85px 0;
-    background: var(--moi-cream);
+    background: var(--m-cream);
 }
 
 .moi-intro-grid {
@@ -126,54 +184,34 @@
     align-items: center;
 }
 
-.moi-kicker {
-    display: inline-block;
-    color: var(--moi-gold);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 14px;
-}
-
-.moi-intro h2,
-.moi-section-heading h2,
-.moi-steps h2,
-.moi-final-cta h2 {
-    font-family: 'Playfair Display', serif;
-    color: var(--moi-green);
-    font-size: clamp(30px, 4vw, 43px);
-    line-height: 1.2;
-    margin: 0 0 20px;
-}
-
-.moi-intro p,
-.moi-section-heading p,
-.moi-steps p {
-    line-height: 1.85;
-    color: #646a61;
-}
-
 .moi-intro-photo {
-    height: 390px;
+    height: 400px;
     overflow: hidden;
+}
+
+.moi-intro-photo img {
+    transition: transform .6s;
+}
+
+.moi-intro-photo:hover img {
+    transform: scale(1.04);
 }
 
 .moi-photo-credit {
     display: block;
-    margin-top: 7px;
-    color: #777;
+    margin-top: 8px;
+    color: var(--m-muted);
     font-size: 10px;
     line-height: 1.5;
 }
 
 .moi-photo-credit a {
-    color: inherit;
+    color: var(--m-orange-dark);
 }
 
 .moi-feature-list {
     display: grid;
-    gap: 15px;
+    gap: 17px;
     margin-top: 25px;
 }
 
@@ -189,43 +227,44 @@
     flex: 0 0 27px;
     display: grid;
     place-items: center;
-    background: var(--moi-lime);
-    color: var(--moi-green);
-    font-weight: 800;
+    background: #FBE1CE;
+    color: var(--m-orange-dark);
+    font-weight: 900;
 }
 
 .moi-feature strong {
     display: block;
-    color: var(--moi-green);
+    color: var(--m-ink);
     margin-bottom: 4px;
 }
 
 .moi-feature span {
-    color: #73776f;
-    font-size: 14px;
-    line-height: 1.6;
+    color: var(--m-muted);
+    font-size: 13px;
+    line-height: 1.7;
 }
 
+/* TRANSFER OPTIONS */
 .moi-options {
     padding: 85px 0;
     background: #fff;
 }
 
-.moi-section-heading {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto 45px;
-}
-
 .moi-options-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 23px;
 }
 
 .moi-option {
-    border: 1px solid #e8e9e2;
+    border: 1px solid var(--m-border);
     background: #fff;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.moi-option:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--m-shadow);
 }
 
 .moi-option-image {
@@ -233,27 +272,33 @@
     overflow: hidden;
 }
 
+.moi-option-image img {
+    transition: transform .6s;
+}
+
+.moi-option:hover .moi-option-image img {
+    transform: scale(1.04);
+}
+
 .moi-option-content {
     padding: 25px;
 }
 
 .moi-option-content h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--moi-green);
+    color: var(--m-ink);
     font-size: 23px;
     margin: 0 0 12px;
 }
 
 .moi-option-content p {
-    color: #6d7269;
-    line-height: 1.75;
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 18px;
 }
 
 .moi-text-link {
-    color: #55751c;
-    font-weight: 700;
+    color: var(--m-orange-dark);
+    font-size: 13px;
+    font-weight: 800;
     text-decoration: none;
 }
 
@@ -261,9 +306,10 @@
     text-decoration: underline;
 }
 
+/* BOOKING PROCESS */
 .moi-steps {
     padding: 85px 0;
-    background: var(--moi-cream);
+    background: var(--m-cream);
 }
 
 .moi-steps-grid {
@@ -289,38 +335,39 @@
     height: 45px;
     display: grid;
     place-items: center;
-    background: var(--moi-green);
-    color: var(--moi-lime);
+    background: var(--m-brown);
+    color: #fff;
     font-weight: 800;
 }
 
 .moi-step h3 {
     margin: 0 0 7px;
-    color: var(--moi-green);
+    color: var(--m-ink);
     font-size: 18px;
 }
 
 .moi-step p {
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .moi-note {
     padding: 27px;
     background: #fff;
-    border-left: 4px solid var(--moi-lime);
+    border-left: 4px solid var(--m-orange);
     margin-top: 30px;
 }
 
 .moi-note strong {
-    color: var(--moi-green);
+    color: var(--m-ink);
 }
 
 .moi-note p {
     margin: 8px 0 0;
-    font-size: 14px;
+    font-size: 13px;
 }
 
+/* DESTINATIONS */
 .moi-destination {
     padding: 85px 0;
     background: #fff;
@@ -338,22 +385,23 @@
     overflow: hidden;
 }
 
-.moi-destination h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(30px, 4vw, 42px);
-    line-height: 1.2;
-    color: var(--moi-green);
+.moi-destination-photo img {
+    transition: transform .6s;
 }
 
-.moi-destination p {
-    line-height: 1.85;
-    color: #686e65;
+.moi-destination-photo:hover img {
+    transform: scale(1.04);
 }
 
+.moi-destination .btn {
+    margin-top: 12px;
+}
+
+/* CTA */
 .moi-final-cta {
-    background: var(--moi-green);
+    background: var(--m-brown);
     color: #fff;
-    padding: 65px 35px;
+    padding: 60px 55px;
     margin-top: 15px;
     margin-bottom: 65px;
     display: flex;
@@ -364,24 +412,30 @@
 
 .moi-final-cta h2 {
     color: #fff;
-    margin-bottom: 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 4vw, 40px);
+    margin: 0 0 12px;
 }
 
 .moi-final-cta p {
-    color: #e2e8dc;
+    color: #fff3e8;
     line-height: 1.7;
     margin: 0;
+    max-width: 650px;
+    font-size: 14px;
 }
 
-.moi-final-cta .moi-btn {
+.moi-final-cta .btn {
     flex-shrink: 0;
 }
 
-@media(max-width: 850px) {
+/* RESPONSIVE */
+@media(max-width: 900px) {
     .moi-intro-grid,
     .moi-steps-grid,
     .moi-destination-grid {
         grid-template-columns: 1fr;
+        gap: 35px;
     }
 
     .moi-options-grid {
@@ -394,20 +448,34 @@
     }
 }
 
-@media(max-width: 560px) {
-    .moi-hero {
-        min-height: 500px;
-    }
-
-    .moi-options-grid {
-        grid-template-columns: 1fr;
-    }
-
+@media(max-width: 650px) {
+    .moi-page .section,
     .moi-intro,
     .moi-options,
     .moi-steps,
     .moi-destination {
         padding: 60px 0;
+    }
+
+    .moi-hero {
+        min-height: 510px;
+        background-position: 58% center;
+    }
+
+    .moi-hero-content {
+        padding: 75px 0;
+    }
+
+    .moi-hero h1 {
+        font-size: 43px;
+    }
+
+    .moi-hero p {
+        font-size: 14px;
+    }
+
+    .moi-options-grid {
+        grid-template-columns: 1fr;
     }
 
     .moi-intro-photo,
@@ -420,12 +488,17 @@
         align-items: stretch;
     }
 
-    .moi-btn {
+    .moi-actions .btn {
         width: 100%;
     }
 
     .moi-final-cta {
-        padding: 45px 24px;
+        padding: 42px 24px;
+        margin-bottom: 45px;
+    }
+
+    .moi-final-cta .btn {
+        width: 100%;
     }
 }
 </style>
@@ -434,395 +507,455 @@
 <body>
 
 <div class="topline">
-<div class="wrap top-inner">
-<span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-<span>
-<a href="tel:+254704261626">+254 704 261 626</a> ·
-<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-</span>
-</div>
+    <div class="wrap top-inner">
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+        <span>
+            <a href="tel:+254704261626">+254 704 261 626</a> ·
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+        </span>
+    </div>
 </div>
 
 <header class="header">
-<div class="wrap nav">
+    <div class="wrap nav">
 
-<a class="brand" href="index.html">
-<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-<span>FLEYPAT<small>ADVENTURES</small></span>
-</a>
+        <a class="brand" href="index.html">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures">
+        </a>
 
-<button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button class="nav-toggle" id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="mainNav">☰</button>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="safaris.html">Safaris</a>
-<a href="marine-tours.html">Marine Tours</a>
-<a href="day-trips.html">Day Trips</a>
-<a href="beach-holidays.html">Beach Holidays</a>
-<a href="honeymoon.html">Honeymoons</a>
-<a href="destinations.html">Destinations</a>
-<a href="itineraries.html">Itineraries</a>
-<a href="services.html">Services</a>
-<a href="transfers.html" class="active">Transfers</a>
-<a href="blog.html">Blog</a>
-<a href="partnerships.html">Partnerships</a>
-<a href="contact.html">Contact</a>
-<a class="nav-book" href="contact.html">Book Now</a>
-</nav>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="honeymoon.html">Honeymoons</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+            <a href="services.html">Services</a>
+            <a href="transfers.html" class="active">Transfers</a>
+            <a href="blog.html">Blog</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn btn-gold">Book Now</a>
+        </nav>
 
-</div>
+    </div>
 </header>
 
 <main class="moi-page">
 
-<!-- HERO -->
-<section class="moi-hero">
-<div class="wrap">
-<div class="moi-hero-content">
-<span class="eyebrow">Arrive in Mombasa with ease</span>
-<h1>Moi International Airport Transfers</h1>
-<p>
-Start your Mombasa visit with a convenient airport pickup or arrange
-a comfortable drop-off for your departing flight. Fleypat Adventures
-can help organise ground transport around your travel schedule.
-</p>
+    <!-- HERO -->
+    <section class="moi-hero">
+        <div class="wrap">
+            <div class="moi-hero-content">
+                <span class="eyebrow">Arrive in Mombasa with ease</span>
+                <h1>Moi International Airport Transfers</h1>
+                <p>
+                    Start your Mombasa visit with a convenient airport
+                    pickup or arrange a comfortable drop-off for your
+                    departing flight. Fleypat Adventures can help
+                    organise ground transport around your travel schedule.
+                </p>
 
-<div class="moi-actions">
-<a class="moi-btn moi-btn-primary"
-href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20Moi%20International%20Airport%20transfers."
-target="_blank" rel="noopener">Enquire on WhatsApp</a>
+                <div class="moi-actions">
+                    <a class="btn btn-primary"
+                       href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20Moi%20International%20Airport%20transfers."
+                       target="_blank" rel="noopener">
+                        Enquire on WhatsApp
+                    </a>
 
-<a class="moi-btn moi-btn-outline" href="contact.html?service=Moi%20Airport%20Transfers">
-Request a Transfer
-</a>
-</div>
-</div>
-</div>
-</section>
+                    <a class="btn btn-outline"
+                       href="contact.html?service=Moi%20Airport%20Transfers">
+                        Request a Transfer
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- INTRODUCTION -->
-<section class="moi-intro">
-<div class="wrap moi-intro-grid">
+    <!-- INTRODUCTION -->
+    <section class="moi-intro">
+        <div class="wrap moi-intro-grid">
 
-<div>
-<span class="moi-kicker">Your Mombasa arrival</span>
-<h2>Airport pickups made easier</h2>
+            <div>
+                <span class="moi-kicker">Your Mombasa arrival</span>
+                <h2>Airport pickups made easier</h2>
 
-<p>
-Moi International Airport serves Mombasa and Kenya's coastal region.
-Whether you are visiting for a beach holiday, a business trip, a family
-visit or a safari connection, arranging your transfer in advance can
-make your arrival more straightforward.
-</p>
+                <p>
+                    Moi International Airport serves Mombasa and Kenya's
+                    coastal region. Whether you are visiting for a beach
+                    holiday, a business trip, a family visit or a safari
+                    connection, arranging your transfer in advance can
+                    make your arrival more straightforward.
+                </p>
 
-<p>
-Share your flight details, destination and number of passengers with
-our team. We will discuss suitable transport arrangements and provide
-a quotation based on your journey.
-</p>
+                <p>
+                    Share your flight details, destination and number
+                    of passengers with our team. We will discuss suitable
+                    transport arrangements and provide a quotation
+                    based on your journey.
+                </p>
 
-<div class="moi-feature-list">
+                <div class="moi-feature-list">
 
-<div class="moi-feature">
-<div class="moi-feature-mark">✓</div>
-<div>
-<strong>Airport pickups</strong>
-<span>Arrange collection after your arrival at Moi International Airport.</span>
-</div>
-</div>
+                    <div class="moi-feature">
+                        <div class="moi-feature-mark">✓</div>
+                        <div>
+                            <strong>Airport pickups</strong>
+                            <span>Arrange collection after your arrival at Moi International Airport.</span>
+                        </div>
+                    </div>
 
-<div class="moi-feature">
-<div class="moi-feature-mark">✓</div>
-<div>
-<strong>Airport drop-offs</strong>
-<span>Plan transport from your hotel, residence or agreed meeting point to the airport.</span>
-</div>
-</div>
+                    <div class="moi-feature">
+                        <div class="moi-feature-mark">✓</div>
+                        <div>
+                            <strong>Airport drop-offs</strong>
+                            <span>Plan transport from your hotel, residence or agreed meeting point to the airport.</span>
+                        </div>
+                    </div>
 
-<div class="moi-feature">
-<div class="moi-feature-mark">✓</div>
-<div>
-<strong>Private journey requests</strong>
-<span>Ask about transport for individuals, couples, families and small groups.</span>
-</div>
-</div>
+                    <div class="moi-feature">
+                        <div class="moi-feature-mark">✓</div>
+                        <div>
+                            <strong>Private journey requests</strong>
+                            <span>Ask about transport for individuals, couples, families and small groups.</span>
+                        </div>
+                    </div>
 
-</div>
-</div>
+                </div>
+            </div>
 
-<div>
-<div class="moi-intro-photo">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/Moi_International_Airport_terminal_building,_2025_(02).jpg"
-alt="Moi International Airport terminal building in Mombasa, Kenya"
-loading="lazy">
-</div>
-<small class="moi-photo-credit">
-Photograph: Bahnfrend / Wikimedia Commons ·
-<a href="https://commons.wikimedia.org/wiki/File:Moi_International_Airport_terminal_building,_2025_(02).jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>
-</small>
-</div>
+            <div>
+                <div class="moi-intro-photo">
+                    <img
+                        src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=85"
+                        alt="Airport terminal and passenger aircraft"
+                        loading="lazy">
+                </div>
+            </div>
 
-</div>
-</section>
+        </div>
+    </section>
 
-<!-- TRANSFER OPTIONS -->
-<section class="moi-options">
-<div class="wrap">
+    <!-- TRANSFER OPTIONS -->
+    <section class="moi-options">
+        <div class="wrap">
 
-<div class="moi-section-heading">
-<span class="moi-kicker">Transfer arrangements</span>
-<h2>Choose your airport transfer</h2>
-<p>
-Tell us where you are travelling to or from. We can discuss the
-appropriate transport arrangement for your route and group size.
-</p>
-</div>
+            <div class="section-heading">
+                <span class="moi-kicker">Transfer arrangements</span>
+                <h2>Choose your airport transfer</h2>
+                <p>
+                    Tell us where you are travelling to or from.
+                    We can discuss the appropriate transport
+                    arrangement for your route and group size.
+                </p>
+            </div>
 
-<div class="moi-options-grid">
+            <div class="moi-options-grid">
 
-<article class="moi-option">
-<div class="moi-option-image">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/Moi_International_Airport_Mombasa.jpg"
-alt="Photograph of Moi International Airport in Mombasa"
-loading="lazy">
-</div>
-<div class="moi-option-content">
-<h3>Airport Pickups</h3>
-<p>
-Arriving at Moi International Airport? Request a pickup to your
-hotel, beach resort, residence or another agreed destination.
-</p>
-<a class="moi-text-link" href="contact.html?service=Airport%20Pickup">Arrange a pickup →</a>
-</div>
-</article>
+                <article class="moi-option">
+                    <div class="moi-option-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=85"
+                            alt="City buildings and roads"
+                            loading="lazy">
+                    </div>
+                    <div class="moi-option-content">
+                        <h3>Airport Pickups</h3>
+                        <p>
+                            Arriving at Moi International Airport?
+                            Request a pickup to your hotel, beach resort,
+                            residence or another agreed destination.
+                        </p>
+                        <a class="moi-text-link"
+                           href="contact.html?service=Moi%20Airport%20Pickup">
+                            Arrange a pickup →
+                        </a>
+                    </div>
+                </article>
 
-<article class="moi-option">
-<div class="moi-option-image">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/Moi_Airport_Mombasa_2010.jpg"
-alt="Exterior view of Moi International Airport in Mombasa"
-loading="lazy">
-</div>
-<div class="moi-option-content">
-<h3>Airport Drop-offs</h3>
-<p>
-Need to catch a departing flight? Enquire about transport from
-your accommodation or agreed collection point to the airport.
-</p>
-<a class="moi-text-link" href="contact.html?service=Airport%20Dropoff">Arrange a drop-off →</a>
-</div>
-</article>
+                <article class="moi-option">
+                    <div class="moi-option-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=85"
+                            alt="Passenger transport vehicle on the road"
+                            loading="lazy">
+                    </div>
+                    <div class="moi-option-content">
+                        <h3>Airport Drop-offs</h3>
+                        <p>
+                            Need to catch a departing flight?
+                            Enquire about transport from your
+                            accommodation or agreed collection point
+                            to the airport.
+                        </p>
+                        <a class="moi-text-link"
+                           href="contact.html?service=Moi%20Airport%20Dropoff">
+                            Arrange a drop-off →
+                        </a>
+                    </div>
+                </article>
 
-<article class="moi-option">
-<div class="moi-option-image">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/Airport_road.jpg"
-alt="Road access near Moi International Airport in Mombasa"
-loading="lazy">
-</div>
-<div class="moi-option-content">
-<h3>Hotel &amp; Coastal Transfers</h3>
-<p>
-Ask about airport transport to Mombasa hotels, Nyali, Bamburi,
-Shanzu, Diani and other coastal destinations.
-</p>
-<a class="moi-text-link" href="contact.html?service=Hotel%20and%20Coastal%20Transfers">Enquire about routes →</a>
-</div>
-</article>
+                <article class="moi-option">
+                    <div class="moi-option-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=85"
+                            alt="Kenyan coastal beach destination"
+                            loading="lazy">
+                    </div>
+                    <div class="moi-option-content">
+                        <h3>Hotel &amp; Coastal Transfers</h3>
+                        <p>
+                            Ask about airport transport to Mombasa
+                            hotels, Nyali, Bamburi, Shanzu, Diani
+                            and other coastal destinations.
+                        </p>
+                        <a class="moi-text-link"
+                           href="contact.html?service=Hotel%20and%20Coastal%20Transfers">
+                            Enquire about routes →
+                        </a>
+                    </div>
+                </article>
 
-</div>
-</div>
-</section>
+            </div>
+        </div>
+    </section>
 
-<!-- HOW IT WORKS -->
-<section class="moi-steps">
-<div class="wrap moi-steps-grid">
+    <!-- HOW IT WORKS -->
+    <section class="moi-steps">
+        <div class="wrap moi-steps-grid">
 
-<div>
-<span class="moi-kicker">Simple planning</span>
-<h2>How to arrange your transfer</h2>
+            <div>
+                <span class="moi-kicker">Simple planning</span>
+                <h2>How to arrange your transfer</h2>
 
-<p>
-Send us your travel information and our team will help you discuss
-the transfer details before confirming the arrangement.
-</p>
+                <p>
+                    Send us your travel information and our team
+                    will help you discuss the transfer details
+                    before confirming the arrangement.
+                </p>
 
-<div class="moi-note">
-<strong>Helpful information to share</strong>
-<p>
-Your arrival or departure date, flight number, arrival time,
-number of passengers, luggage requirements and destination.
-</p>
-</div>
-</div>
+                <div class="moi-note">
+                    <strong>Helpful information to share</strong>
+                    <p>
+                        Your arrival or departure date, flight number,
+                        arrival time, number of passengers, luggage
+                        requirements and destination.
+                    </p>
+                </div>
+            </div>
 
-<div class="moi-step-list">
+            <div class="moi-step-list">
 
-<div class="moi-step">
-<div class="moi-step-number">01</div>
-<div>
-<h3>Send your travel details</h3>
-<p>
-Tell us your flight information, travel date, passenger numbers
-and where you need to be collected or dropped off.
-</p>
-</div>
-</div>
+                <div class="moi-step">
+                    <div class="moi-step-number">01</div>
+                    <div>
+                        <h3>Send your travel details</h3>
+                        <p>
+                            Tell us your flight information, travel date,
+                            passenger numbers and where you need to be
+                            collected or dropped off.
+                        </p>
+                    </div>
+                </div>
 
-<div class="moi-step">
-<div class="moi-step-number">02</div>
-<div>
-<h3>Receive a quotation</h3>
-<p>
-We will review your request and discuss suitable transport
-options and the applicable price.
-</p>
-</div>
-</div>
+                <div class="moi-step">
+                    <div class="moi-step-number">02</div>
+                    <div>
+                        <h3>Receive a quotation</h3>
+                        <p>
+                            We will review your request and discuss
+                            suitable transport options and the
+                            applicable price.
+                        </p>
+                    </div>
+                </div>
 
-<div class="moi-step">
-<div class="moi-step-number">03</div>
-<div>
-<h3>Confirm your arrangement</h3>
-<p>
-Once you agree to the quotation and arrangements, our team
-will communicate the next steps.
-</p>
-</div>
-</div>
+                <div class="moi-step">
+                    <div class="moi-step-number">03</div>
+                    <div>
+                        <h3>Confirm your arrangement</h3>
+                        <p>
+                            Once you agree to the quotation and
+                            arrangements, our team will communicate
+                            the next steps.
+                        </p>
+                    </div>
+                </div>
 
-<div class="moi-step">
-<div class="moi-step-number">04</div>
-<div>
-<h3>Travel to your destination</h3>
-<p>
-Follow the agreed pickup instructions and enjoy your journey
-to your destination.
-</p>
-</div>
-</div>
+                <div class="moi-step">
+                    <div class="moi-step-number">04</div>
+                    <div>
+                        <h3>Travel to your destination</h3>
+                        <p>
+                            Follow the agreed pickup instructions
+                            and enjoy your journey to your destination.
+                        </p>
+                    </div>
+                </div>
 
-</div>
-</div>
-</section>
+            </div>
+        </div>
+    </section>
 
-<!-- DESTINATIONS -->
-<section class="moi-destination">
-<div class="wrap moi-destination-grid">
+    <!-- DESTINATIONS -->
+    <section class="moi-destination">
+        <div class="wrap moi-destination-grid">
 
-<div>
-<div class="moi-destination-photo">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/200301-F-VS255-0540.jpg"
-alt="Aircraft and airport activity at Moi International Airport"
-loading="lazy">
-</div>
-<small class="moi-photo-credit">
-Photograph: Wikimedia Commons ·
-<a href="https://commons.wikimedia.org/wiki/Category:Moi_International_Airport" target="_blank" rel="noopener">Moi International Airport photo collection</a>
-</small>
-</div>
+            <div>
+                <div class="moi-destination-photo">
+                    <img
+                        src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85"
+                        alt="Beautiful tropical coastline in Kenya"
+                        loading="lazy">
+                </div>
+            </div>
 
-<div>
-<span class="moi-kicker">Explore the Kenyan coast</span>
-<h2>From the airport to your coastal escape</h2>
+            <div>
+                <span class="moi-kicker">Explore the Kenyan coast</span>
+                <h2>From the airport to your coastal escape</h2>
 
-<p>
-Mombasa is a gateway to a variety of coastal experiences. Depending
-on your destination, you can request a transfer to accommodation
-and attractions around the region.
-</p>
+                <p>
+                    Mombasa is a gateway to a variety of coastal
+                    experiences. Depending on your destination,
+                    you can request a transfer to accommodation
+                    and attractions around the region.
+                </p>
 
-<p>
-Popular destination requests include Mombasa Island, Nyali,
-Bamburi, Shanzu, Mtwapa, Diani and other locations along the coast.
-Longer journeys can also be discussed with our team.
-</p>
+                <p>
+                    Popular destination requests include Mombasa
+                    Island, Nyali, Bamburi, Shanzu, Mtwapa, Diani
+                    and other locations along the coast. Longer
+                    journeys can also be discussed with our team.
+                </p>
 
-<a class="moi-btn moi-btn-primary" href="contact.html?service=Coastal%20Airport%20Transfer">
-Plan Your Journey
-</a>
-</div>
+                <a class="btn btn-primary"
+                   href="contact.html?service=Coastal%20Airport%20Transfer">
+                    Plan Your Journey
+                </a>
+            </div>
 
-</div>
-</section>
+        </div>
+    </section>
 
-<!-- FINAL CTA -->
-<section class="wrap">
-<div class="moi-final-cta">
-<div>
-<h2>Arriving at Moi International Airport?</h2>
-<p>
-Share your flight details and destination with Fleypat Adventures
-to request a personalised airport transfer quotation.
-</p>
-</div>
+    <!-- FINAL CTA -->
+    <section class="wrap">
+        <div class="moi-final-cta">
+            <div>
+                <h2>Arriving at Moi International Airport?</h2>
+                <p>
+                    Share your flight details and destination
+                    with Fleypat Adventures to request a
+                    personalised airport transfer quotation.
+                </p>
+            </div>
 
-<a class="moi-btn moi-btn-primary"
-href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20need%20a%20Moi%20International%20Airport%20transfer%20quotation."
-target="_blank" rel="noopener">
-Request a Transfer
-</a>
-</div>
-</section>
+            <a class="btn btn-primary"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20need%20a%20Moi%20International%20Airport%20transfer%20quotation."
+               target="_blank" rel="noopener">
+                Request a Transfer
+            </a>
+        </div>
+    </section>
 
 </main>
 
 <footer class="footer">
-<div class="wrap footer-grid">
+    <div class="wrap footer-grid">
 
-<div>
-<a class="brand footer-brand" href="index.html">
-<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-<span>FLEYPAT<small>ADVENTURES</small></span>
-</a>
-<p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-<a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
-</div>
+        <div>
+            <a class="brand" href="index.html">
+                <img src="fleypat-logo.png" alt="Fleypat Adventures">
+            </a>
+            <p>
+                Your Adventure Begins Here! Discover Kenya and beyond
+                with memorable safaris, beach holidays and travel experiences.
+            </p>
+        </div>
 
-<div>
-<h3>Explore</h3>
-<a href="safaris.html">Wildlife Safaris</a>
-<a href="marine-tours.html">Marine Tours</a>
-<a href="day-trips.html">Day Trips</a>
-<a href="beach-holidays.html">Beach Holidays</a>
-<a href="destinations.html">Destinations</a>
-<a href="itineraries.html">Itineraries</a>
-</div>
+        <div>
+            <h3>Explore</h3>
+            <a href="safaris.html">Wildlife Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+        </div>
 
-<div>
-<h3>Company</h3>
-<a href="about.html">About Us</a>
-<a href="services.html">Our Services</a>
-<a href="transfers.html">Transfers</a>
-<a href="partnerships.html">Partnerships</a>
-<a href="blog.html">Travel Guides</a>
-</div>
+        <div>
+            <h3>Company</h3>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="blog.html">Travel Guides</a>
+        </div>
 
-<div>
-<h3>Contact</h3>
-<a href="tel:+254704261626">+254 704 261 626</a>
-<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-<a href="https://wa.me/254704261626">WhatsApp our team</a>
-<span>Mombasa, Kenya</span>
-</div>
+        <div>
+            <h3>Contact</h3>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+            <a href="https://wa.me/254704261626" target="_blank" rel="noopener">WhatsApp our team</a>
+            <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram</a>
+            <span>Mombasa, Kenya</span>
+        </div>
 
-</div>
+    </div>
 
-<div class="wrap foot-bottom">
-© <span data-year></span> Fleypat Adventures. All rights reserved.
-<span>Explore More. Experience More. Travel Beyond Expectations.</span>
-</div>
+    <div class="wrap foot-bottom">
+        © <span id="year"></span> Fleypat Adventures. All rights reserved.
+        Explore. Experience. Enjoy!
+    </div>
 </footer>
 
 <a class="float-wa"
-href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
-target="_blank" rel="noopener">WhatsApp Us</a>
+   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with Fleypat Adventures on WhatsApp">
+    WhatsApp Us
+</a>
 
 <script src="script.js"></script>
+
+<script>
+const menuButton = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+
+if (menuButton && nav) {
+    menuButton.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute(
+            'aria-label',
+            isOpen ? 'Close navigation' : 'Open navigation'
+        );
+        menuButton.textContent = isOpen ? '×' : '☰';
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Open navigation');
+            menuButton.textContent = '☰';
+        });
+    });
+}
+
+const yearElement = document.getElementById('year');
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+</script>
 
 </body>
 </html>
