@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,933 +7,939 @@
 
 <title>Shimba Hills & Sheldrick Falls Day Trip | Fleypat Adventures</title>
 <meta name="description" content="Explore Shimba Hills National Reserve on a day trip featuring wildlife viewing, coastal rainforest scenery and a guided walk to beautiful Sheldrick Falls.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
-  --lime:#a8d832;
-  --cream:#fbf7e9;
-  --green:#243c28;
-  --gold:#a97832;
-  --ink:#263027;
-  --muted:#687268;
-  --line:#e9e6da;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:'DM Sans',sans-serif;
-  color:var(--ink);
-  background:#fff;
-  line-height:1.7;
-}
-a{color:inherit;text-decoration:none}
-img{display:block;width:100%;object-fit:cover}
-.container{width:min(1160px,92%);margin:auto}
+/* SHIMBA HILLS PAGE-SPECIFIC STYLES */
 
-/* HEADER */
-header{
-  position:sticky;
-  top:0;
-  z-index:50;
-  background:rgba(255,255,255,.97);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line);
-}
-.nav{
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
-}
-.brand img{
-  width:180px;
-  height:62px;
-  object-fit:contain;
-}
-nav{
-  display:flex;
-  align-items:center;
-  gap:18px;
-  flex-wrap:wrap;
-  font-size:13px;
-  font-weight:700;
-}
-nav a:hover{color:#729b1d}
-nav .book{
-  background:var(--lime);
-  padding:11px 17px;
-  border-radius:3px;
-  color:var(--green);
-}
-.menu{
-  display:none;
-  background:none;
-  border:0;
-  font-size:26px;
-  color:var(--green);
-  cursor:pointer;
+.shimba-quick {
+    background: #A66A42;
+    color: #fff;
 }
 
-/* HERO */
-.hero{
-  min-height:600px;
-  position:relative;
-  display:flex;
-  align-items:end;
-  background:
-    linear-gradient(90deg,rgba(12,29,18,.78),rgba(12,29,18,.12)),
-    url('https://commons.wikimedia.org/wiki/Special:FilePath/Shimba%20Hills%2C%20Kenya%20%2853350921179%29.jpg')
-    center/cover;
-}
-.hero-content{
-  color:white;
-  padding:90px 0 80px;
-  max-width:760px;
-}
-.eyebrow{
-  color:var(--lime);
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-h1,h2,h3{
-  font-family:'Playfair Display',serif;
-  line-height:1.2;
-}
-h1{
-  font-size:clamp(42px,6vw,70px);
-  margin:15px 0;
-}
-.hero p{
-  font-size:17px;
-  max-width:650px;
-  color:#f2f3ec;
-}
-.actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:27px;
-}
-.btn{
-  display:inline-block;
-  padding:13px 21px;
-  border-radius:3px;
-  font-weight:800;
-  font-size:13px;
-}
-.btn.primary{background:var(--lime);color:var(--green)}
-.btn.outline{
-  border:1px solid rgba(255,255,255,.8);
-  color:white;
+.shimba-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 23px 0;
 }
 
-/* QUICK DETAILS */
-.quick{background:var(--green);color:white}
-.quick-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-  padding:22px 0;
-}
-.quick-item{
-  border-right:1px solid rgba(255,255,255,.2);
-  padding-left:18px;
-}
-.quick-item:first-child{padding-left:0}
-.quick-item:last-child{border:0}
-.quick small{
-  display:block;
-  color:#cbd6c5;
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-.quick strong{font-size:14px}
-
-/* SECTIONS */
-section{padding:78px 0}
-.section-tag{
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  color:#789d27;
-  font-weight:800;
-}
-h2{
-  font-size:clamp(30px,4vw,43px);
-  color:var(--green);
-  margin:10px 0 18px;
-}
-.lead{
-  font-size:16px;
-  color:var(--muted);
-  max-width:780px;
-}
-.intro-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  align-items:center;
-}
-.intro-image{
-  height:430px;
-  border-radius:4px;
-}
-.note{
-  background:var(--cream);
-  padding:20px 22px;
-  border-left:4px solid var(--lime);
-  margin-top:22px;
-  font-size:14px;
+.shimba-quick-item {
+    padding: 5px 20px;
+    border-right: 1px solid rgba(255,255,255,.25);
 }
 
-/* HIGHLIGHTS */
-.highlights{background:var(--cream)}
-.cards{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-  margin-top:32px;
-}
-.card{
-  background:white;
-  padding:26px;
-  border:1px solid var(--line);
-}
-.card .number{
-  font-family:'Playfair Display',serif;
-  font-size:34px;
-  color:var(--gold);
-}
-.card h3{
-  font-size:21px;
-  color:var(--green);
-  margin:8px 0;
-}
-.card p{
-  font-size:14px;
-  color:var(--muted);
-  margin:0;
+.shimba-quick-item:first-child {
+    padding-left: 0;
 }
 
-/* ITINERARY */
-.itinerary{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:32px;
-  align-items:center;
-  margin-top:38px;
-}
-.itinerary:nth-child(even) .day-image{order:2}
-.day-image{
-  height:330px;
-  border-radius:4px;
-}
-.day-copy{padding:10px 0}
-.day-label{
-  color:#789d27;
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-}
-.day-copy h3{
-  font-size:27px;
-  color:var(--green);
-  margin:9px 0;
-}
-.day-copy p,.day-copy li{
-  color:var(--muted);
-  font-size:14px;
-}
-.day-copy ul{padding-left:20px}
-
-/* DETAILS */
-.details{background:var(--cream)}
-.detail-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:24px;
-  margin-top:28px;
-}
-.detail-box{
-  background:white;
-  padding:28px;
-  border:1px solid var(--line);
-}
-.detail-box h3{
-  color:var(--green);
-  font-size:23px;
-  margin-top:0;
-}
-.detail-box li{
-  font-size:14px;
-  color:var(--muted);
-  margin:8px 0;
-}
-.price-panel{
-  background:var(--green);
-  color:white;
-  padding:42px;
-  border-radius:4px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
-  margin-top:35px;
-}
-.price-panel h2{color:white;margin:5px 0}
-.price-panel p{color:#d6dfd1;margin:0}
-
-/* CTA */
-.cta{
-  background:var(--lime);
-  text-align:center;
-}
-.cta h2{color:var(--green)}
-.cta p{
-  max-width:680px;
-  margin:0 auto 22px;
-  color:#3c4d2a;
-}
-.cta .btn{
-  background:var(--green);
-  color:white;
+.shimba-quick-item:last-child {
+    border-right: 0;
 }
 
-/* FOOTER */
-footer{
-  background:#17291c;
-  color:#dce4d9;
-  padding:55px 0 25px;
-}
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.3fr 1fr 1fr 1fr;
-  gap:30px;
-}
-footer h3{color:white;font-size:19px}
-footer p,footer a{
-  font-size:13px;
-  color:#c1cdbf;
-}
-footer a{display:block;margin:8px 0}
-.copyright{
-  border-top:1px solid #3c4c3e;
-  margin-top:35px;
-  padding-top:20px;
-  font-size:12px;
-  color:#aebbad;
-}
-.whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:60;
-  background:#1fa855;
-  color:white;
-  padding:13px 18px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:800;
-  box-shadow:0 5px 18px #0003;
+.shimba-quick-item small {
+    display: block;
+    color: rgba(255,255,255,.75);
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
 }
 
-/* RESPONSIVE */
-@media(max-width:900px){
-  nav{
-    display:none;
-    position:absolute;
-    top:82px;
-    left:0;
-    right:0;
-    background:white;
-    padding:20px 5%;
-    box-shadow:0 10px 20px #0001;
-    flex-direction:column;
-    align-items:flex-start;
-  }
-  nav.open{display:flex}
-  .menu{display:block}
-  .quick-grid{grid-template-columns:repeat(2,1fr)}
-  .intro-grid,.itinerary{grid-template-columns:1fr}
-  .itinerary:nth-child(even) .day-image{order:0}
-  .cards{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
+.shimba-quick-item strong {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
 }
-@media(max-width:560px){
-  .hero{min-height:520px}
-  .hero-content{padding:70px 0 55px}
-  .quick-grid{grid-template-columns:1fr 1fr}
-  .quick-item{padding-left:8px}
-  .detail-grid{grid-template-columns:1fr}
-  .price-panel{
-    display:block;
-    padding:28px;
-  }
-  .price-panel .btn{margin-top:20px}
-  .footer-grid{grid-template-columns:1fr}
+
+.shimba-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.shimba-intro-image {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+.shimba-intro-copy h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6B4935;
+    font-size: clamp(32px, 4vw, 43px);
+    line-height: 1.2;
+    margin: 12px 0 18px;
+}
+
+.shimba-intro-copy p {
+    color: #897264;
+}
+
+.shimba-note {
+    background: #FFF4E8;
+    border-left: 4px solid #E8752A;
+    padding: 20px 22px;
+    margin-top: 22px;
+    color: #6B4935;
+    font-size: 13px;
+}
+
+.shimba-highlight-card {
+    height: 100%;
+    padding: 27px;
+    background: #fff;
+    border: 1px solid #EAD8C7;
+}
+
+.shimba-highlight-number {
+    font-family: 'Playfair Display', serif;
+    color: #D96A25;
+    font-size: 35px;
+}
+
+.shimba-highlight-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B4935;
+    font-size: 22px;
+    margin: 8px 0;
+}
+
+.shimba-highlight-card p {
+    color: #897264;
+    font-size: 13px;
+    margin: 0;
+}
+
+.shimba-itinerary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.shimba-itinerary:nth-of-type(even) .shimba-day-image {
+    order: 2;
+}
+
+.shimba-day-image {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.shimba-day-copy {
+    padding: 10px 0;
+}
+
+.shimba-day-label {
+    color: #D96A25;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.shimba-day-copy h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B4935;
+    font-size: 27px;
+    line-height: 1.25;
+    margin: 9px 0 13px;
+}
+
+.shimba-day-copy p,
+.shimba-day-copy li {
+    color: #897264;
+    font-size: 13px;
+}
+
+.shimba-day-copy ul {
+    padding-left: 20px;
+}
+
+.shimba-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.shimba-detail-box {
+    background: #fff;
+    padding: 28px;
+    border: 1px solid #EAD8C7;
+}
+
+.shimba-detail-box h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B4935;
+    font-size: 23px;
+    margin: 0 0 16px;
+}
+
+.shimba-detail-box ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.shimba-detail-box li {
+    font-size: 13px;
+    color: #897264;
+    margin: 9px 0;
+}
+
+.shimba-price-panel {
+    background: #A66A42;
+    color: #fff;
+    padding: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.shimba-price-panel h2 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    margin: 8px 0;
+    font-size: 32px;
+}
+
+.shimba-price-panel p {
+    color: rgba(255,255,255,.85);
+    margin: 0;
+    font-size: 14px;
+    max-width: 650px;
+}
+
+.shimba-price-panel .btn {
+    flex-shrink: 0;
+}
+
+.shimba-cta {
+    text-align: center;
+}
+
+.shimba-cta .eyebrow {
+    color: #F09A58;
+}
+
+.shimba-cta p {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shimba-cta .actions {
+    justify-content: center;
+}
+
+@media(max-width: 1000px) {
+    .shimba-quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shimba-quick-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .shimba-quick-item:nth-child(1),
+    .shimba-quick-item:nth-child(2) {
+        border-bottom: 1px solid rgba(255,255,255,.25);
+        padding-bottom: 15px;
+    }
+
+    .shimba-quick-item:nth-child(3),
+    .shimba-quick-item:nth-child(4) {
+        padding-top: 12px;
+    }
+
+    .shimba-intro {
+        gap: 30px;
+    }
+}
+
+@media(max-width: 760px) {
+    .shimba-intro,
+    .shimba-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shimba-intro-image {
+        height: 320px;
+    }
+
+    .shimba-itinerary {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .shimba-itinerary:nth-of-type(even) .shimba-day-image {
+        order: 0;
+    }
+
+    .shimba-day-image {
+        height: 260px;
+    }
+
+    .shimba-price-panel {
+        display: block;
+        padding: 28px;
+    }
+
+    .shimba-price-panel .btn {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    .shimba-quick-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .shimba-quick-item strong {
+        font-size: 12px;
+    }
+
+    .shimba-detail-box {
+        padding: 23px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="container nav">
+<!-- TOP BAR -->
+<div class="topline">
+    <div class="wrap top-inner">
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy.</span>
+        <span>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            &nbsp; | &nbsp;
+            <a href="mailto:info@fleypatadventures.com">Email Us</a>
+        </span>
+    </div>
+</div>
 
-    <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures">
-    </a>
+<!-- HEADER -->
+<header class="header">
+    <div class="wrap nav">
 
-    <button class="menu" aria-label="Open navigation"
-      onclick="document.querySelector('nav').classList.toggle('open')">
-      ☰
-    </button>
+        <a class="brand" href="index.html" aria-label="Fleypat Adventures home">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+        </a>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="safaris.html">Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="contact.html">Contact</a>
-      <a class="book" href="contact.html">Book Now</a>
-    </nav>
+        <button class="nav-toggle" id="menuToggle" type="button"
+                aria-label="Open navigation" aria-expanded="false"
+                aria-controls="mainNav">☰</button>
 
-  </div>
+        <nav id="mainNav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html" class="active">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="honeymoons.html">Honeymoons</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+            <a href="services.html">Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-book" href="contact.html">Book Now</a>
+        </nav>
+
+    </div>
 </header>
 
 <main>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="container hero-content">
+<section class="page-hero"
+    style="--hero-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Shimba%20Hills%2C%20Kenya%20%2853350921179%29.jpg');">
 
-    <div class="eyebrow">Kenya Coastal Wildlife Experiences</div>
+    <div class="wrap">
+        <span class="eyebrow">Kenya Coastal Wildlife Experiences</span>
 
-    <h1>Shimba Hills &amp; Sheldrick Falls</h1>
+        <h1>Shimba Hills &amp; Sheldrick Falls</h1>
 
-    <p>
-      Discover the green landscapes of Shimba Hills National Reserve,
-      look out for wildlife and enjoy a guided nature walk to the
-      beautiful Sheldrick Falls.
-    </p>
+        <p>
+            Discover the green landscapes of Shimba Hills National Reserve,
+            look out for wildlife and enjoy a guided nature walk to the
+            beautiful Sheldrick Falls.
+        </p>
 
-    <div class="actions">
-      <a class="btn primary"
-         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20the%20Shimba%20Hills%20and%20Sheldrick%20Falls%20day%20trip.">
-        Enquire on WhatsApp
-      </a>
+        <div class="actions">
+            <a class="btn btn-gold"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20the%20Shimba%20Hills%20and%20Sheldrick%20Falls%20day%20trip."
+               target="_blank" rel="noopener">
+                Enquire on WhatsApp
+            </a>
 
-      <a class="btn outline" href="#itinerary">View Itinerary</a>
+            <a class="btn btn-outline" href="#itinerary">View Itinerary</a>
+        </div>
     </div>
-
-  </div>
 </section>
 
 <!-- QUICK INFORMATION -->
-<div class="quick">
-  <div class="container quick-grid">
+<div class="shimba-quick">
+    <div class="wrap shimba-quick-grid">
 
-    <div class="quick-item">
-      <small>Duration</small>
-      <strong>1 Full Day</strong>
+        <div class="shimba-quick-item">
+            <small>Duration</small>
+            <strong>1 Full Day</strong>
+        </div>
+
+        <div class="shimba-quick-item">
+            <small>Starting Point</small>
+            <strong>Diani / Mombasa</strong>
+        </div>
+
+        <div class="shimba-quick-item">
+            <small>Experience</small>
+            <strong>Wildlife &amp; Nature Walk</strong>
+        </div>
+
+        <div class="shimba-quick-item">
+            <small>Price</small>
+            <strong>Request a Quote</strong>
+        </div>
+
     </div>
-
-    <div class="quick-item">
-      <small>Starting Point</small>
-      <strong>Diani / Mombasa</strong>
-    </div>
-
-    <div class="quick-item">
-      <small>Experience</small>
-      <strong>Wildlife & Nature Walk</strong>
-    </div>
-
-    <div class="quick-item">
-      <small>Price</small>
-      <strong>Request a Quote</strong>
-    </div>
-
-  </div>
 </div>
 
 <!-- INTRODUCTION -->
-<section>
-  <div class="container intro-grid">
+<section class="section">
+    <div class="wrap shimba-intro">
 
-    <div>
-      <div class="section-tag">Discover Shimba Hills</div>
+        <div class="shimba-intro-copy">
+            <span class="eyebrow">Discover Shimba Hills</span>
 
-      <h2>A Coastal Rainforest and Wildlife Escape</h2>
+            <h2>A Coastal Rainforest and Wildlife Escape</h2>
 
-      <p class="lead">
-        Located in Kwale County, Shimba Hills National Reserve
-        offers a different kind of wildlife experience, combining
-        green hills, forest habitats, open grassland and scenic views.
-      </p>
+            <p>
+                Located in Kwale County, Shimba Hills National Reserve
+                offers a different kind of wildlife experience, combining
+                green hills, forest habitats, open grassland and scenic views.
+            </p>
 
-      <p>
-        The reserve is especially known for its rare sable antelope,
-        forest elephants and rich birdlife. Its landscape is a
-        refreshing contrast to the open savannah parks found elsewhere
-        in Kenya.
-      </p>
+            <p>
+                The reserve is especially known for its rare sable antelope,
+                forest elephants and rich birdlife. Its landscape is a
+                refreshing contrast to the open savannah parks found elsewhere
+                in Kenya.
+            </p>
 
-      <p>
-        One of the area's best-known attractions is Sheldrick Falls,
-        reached by a nature walk through the reserve's forested
-        environment.
-      </p>
+            <p>
+                One of the area's best-known attractions is Sheldrick Falls,
+                reached by a nature walk through the reserve's forested
+                environment.
+            </p>
 
-      <div class="note">
-        <strong>Important:</strong>
-        Wildlife sightings are not guaranteed. Access to Sheldrick
-        Falls, walking routes and swimming opportunities depends
-        on park rules, guide instructions and current conditions.
-      </div>
+            <div class="shimba-note">
+                <strong>Important:</strong>
+                Wildlife sightings are not guaranteed. Access to Sheldrick
+                Falls, walking routes and swimming opportunities depends
+                on park rules, guide instructions and current conditions.
+            </div>
+        </div>
+
+        <img class="shimba-intro-image"
+             src="https://commons.wikimedia.org/wiki/Special:FilePath/Shimba%20Hill%2001.JPG"
+             alt="Green hills and forest landscape of Shimba Hills National Reserve"
+             loading="lazy">
+
     </div>
-
-    <img class="intro-image"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Shimba%20Hill%2001.JPG"
-      alt="Green hills and forest landscape of Shimba Hills National Reserve"
-      loading="lazy">
-
-  </div>
 </section>
 
 <!-- HIGHLIGHTS -->
-<section class="highlights">
-  <div class="container">
+<section class="section alt">
+    <div class="wrap">
 
-    <div class="section-tag">Tour Highlights</div>
+        <div class="section-head">
+            <span class="eyebrow">Tour Highlights</span>
+            <h2>What Makes Shimba Hills Special</h2>
 
-    <h2>What Makes Shimba Hills Special</h2>
+            <p>
+                Enjoy a combination of wildlife viewing, forest scenery
+                and a guided walk to one of Kenya's beautiful coastal waterfalls.
+            </p>
+        </div>
 
-    <p class="lead">
-      Enjoy a combination of wildlife viewing, forest scenery
-      and a guided walk to one of Kenya's beautiful coastal waterfalls.
-    </p>
+        <div class="grid cols-3">
 
-    <div class="cards">
+            <article class="shimba-highlight-card">
+                <div class="shimba-highlight-number">01</div>
+                <h3>Wildlife Viewing</h3>
+                <p>
+                    Explore the reserve in search of elephants, sable antelope,
+                    buffalo, giraffes, monkeys and a variety of bird species.
+                </p>
+            </article>
 
-      <article class="card">
-        <div class="number">01</div>
-        <h3>Wildlife Viewing</h3>
-        <p>
-          Explore the reserve in search of elephants, sable antelope,
-          buffalo, giraffes, monkeys and a variety of bird species.
-        </p>
-      </article>
+            <article class="shimba-highlight-card">
+                <div class="shimba-highlight-number">02</div>
+                <h3>Sheldrick Falls</h3>
+                <p>
+                    Walk through the forest to reach a scenic waterfall
+                    surrounded by rocks, vegetation and a natural pool.
+                </p>
+            </article>
 
-      <article class="card">
-        <div class="number">02</div>
-        <h3>Sheldrick Falls</h3>
-        <p>
-          Walk through the forest to reach a scenic waterfall
-          surrounded by rocks, vegetation and a natural pool.
-        </p>
-      </article>
+            <article class="shimba-highlight-card">
+                <div class="shimba-highlight-number">03</div>
+                <h3>Coastal Forest Scenery</h3>
+                <p>
+                    Experience the reserve's green hills, forest trails,
+                    viewpoints and peaceful natural surroundings.
+                </p>
+            </article>
 
-      <article class="card">
-        <div class="number">03</div>
-        <h3>Coastal Forest Scenery</h3>
-        <p>
-          Experience the reserve's green hills, forest trails,
-          viewpoints and peaceful natural surroundings.
-        </p>
-      </article>
-
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ITINERARY -->
-<section id="itinerary">
-  <div class="container">
+<section class="section" id="itinerary">
+    <div class="wrap">
 
-    <div class="section-tag">Your Day Experience</div>
+        <div class="section-head">
+            <span class="eyebrow">Your Day Experience</span>
+            <h2>Shimba Hills &amp; Sheldrick Falls Itinerary</h2>
 
-    <h2>Shimba Hills &amp; Sheldrick Falls Itinerary</h2>
+            <p>
+                The programme below is a suggested full-day experience.
+                The order of activities may be adjusted according to
+                park access, road conditions, weather and the waterfall
+                walking arrangements.
+            </p>
+        </div>
 
-    <p class="lead">
-      The programme below is a suggested full-day experience.
-      The order of activities may be adjusted according to
-      park access, road conditions, weather and the waterfall
-      walking arrangements.
-    </p>
+        <!-- STOP 1 -->
+        <article class="shimba-itinerary">
+            <img class="shimba-day-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Shimba%20Hills%2C%20Kenya%20%2853350921179%29.jpg"
+                 alt="Shimba Hills forest landscape"
+                 loading="lazy">
 
-    <!-- STOP 1 -->
-    <div class="itinerary">
+            <div class="shimba-day-copy">
+                <span class="shimba-day-label">Morning · Departure</span>
 
-      <img class="day-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Shimba%20Hills%2C%20Kenya%20%2853350921179%29.jpg"
-        alt="Sheldrick Falls and the forested Shimba Hills landscape"
-        loading="lazy">
+                <h3>Hotel Pickup and Journey to Shimba Hills</h3>
 
-      <div class="day-copy">
+                <p>
+                    Your day begins with pickup from your agreed hotel
+                    or meeting point in Diani, Mombasa or another
+                    confirmed coastal location.
+                </p>
 
-        <div class="day-label">Morning · Departure</div>
+                <p>
+                    Travel inland towards Shimba Hills National Reserve.
+                    On arrival, complete the required entry arrangements
+                    and meet your guide for an introduction to the reserve.
+                </p>
 
-        <h3>Hotel Pickup and Journey to Shimba Hills</h3>
+                <ul>
+                    <li>Pickup from your agreed location.</li>
+                    <li>Scenic road transfer to Shimba Hills.</li>
+                    <li>Park entry and safari briefing.</li>
+                </ul>
+            </div>
+        </article>
 
-        <p>
-          Your day begins with pickup from your agreed hotel
-          or meeting point in Diani, Mombasa or another
-          confirmed coastal location.
-        </p>
+        <!-- STOP 2 -->
+        <article class="shimba-itinerary">
+            <img class="shimba-day-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Shimbahills%20national%20reserve%20Antelope.jpg"
+                 alt="Antelope in the natural habitat of Shimba Hills"
+                 loading="lazy">
 
-        <p>
-          Travel inland towards Shimba Hills National Reserve.
-          On arrival, complete the required entry arrangements
-          and meet your guide for an introduction to the reserve.
-        </p>
+            <div class="shimba-day-copy">
+                <span class="shimba-day-label">Morning · Wildlife Exploration</span>
 
-        <ul>
-          <li>Pickup from your agreed location.</li>
-          <li>Scenic road transfer to Shimba Hills.</li>
-          <li>Park entry and safari briefing.</li>
-        </ul>
+                <h3>Game Drive Through the Reserve</h3>
 
-      </div>
+                <p>
+                    Enjoy a game drive through the reserve's open grassland,
+                    forest edges and scenic tracks. Keep an eye out for
+                    elephants, sable antelope, buffalo, giraffes and other
+                    wildlife that may be present.
+                </p>
+
+                <p>
+                    Your guide will help identify animals, birds and
+                    interesting features of the reserve while choosing
+                    suitable routes for the day's conditions.
+                </p>
+
+                <p>
+                    Shimba Hills is particularly recognised for its
+                    sable antelope population, although sightings
+                    cannot be guaranteed.
+                </p>
+            </div>
+        </article>
+
+        <!-- STOP 3 -->
+        <article class="shimba-itinerary">
+            <img class="shimba-day-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Sheldrick%20Falls%2001.jpg"
+                 alt="Sheldrick Falls surrounded by green forest"
+                 loading="lazy">
+
+            <div class="shimba-day-copy">
+                <span class="shimba-day-label">Midday · Guided Nature Walk</span>
+
+                <h3>Walk to Sheldrick Falls</h3>
+
+                <p>
+                    Continue to the designated starting point for the
+                    Sheldrick Falls walk. Accompanied by the appropriate
+                    guide or ranger, follow the approved trail through
+                    the forest towards the waterfall.
+                </p>
+
+                <p>
+                    Enjoy the changing vegetation, forest atmosphere
+                    and sound of flowing water as you approach the falls.
+                    Take time to appreciate the natural surroundings
+                    and capture photographs.
+                </p>
+
+                <p>
+                    The walk includes uneven and potentially steep sections.
+                    Allow enough time and follow the guide's advice
+                    throughout the experience.
+                </p>
+            </div>
+        </article>
+
+        <!-- STOP 4 -->
+        <article class="shimba-itinerary">
+            <img class="shimba-day-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Sheldrick%20Falls%2002.jpg"
+                 alt="Water cascading over the rocks at Sheldrick Falls"
+                 loading="lazy">
+
+            <div class="shimba-day-copy">
+                <span class="shimba-day-label">Afternoon · Waterfall Experience</span>
+
+                <h3>Enjoy the Waterfall and Surrounding Forest</h3>
+
+                <p>
+                    Spend time enjoying the waterfall and its natural
+                    surroundings. Depending on water conditions, safety
+                    advice and current park rules, your guide will advise
+                    whether visitors may approach the pool or enter the water.
+                </p>
+
+                <p>
+                    Relax, take photographs and enjoy the peaceful
+                    environment before beginning the return walk.
+                </p>
+
+                <p>
+                    Swimming is not guaranteed and should only take place
+                    when expressly permitted and considered safe.
+                </p>
+            </div>
+        </article>
+
+        <!-- STOP 5 -->
+        <article class="shimba-itinerary">
+            <img class="shimba-day-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Sheldrick%20Falls%2003.jpg"
+                 alt="Another view of the forest waterfall at Sheldrick Falls"
+                 loading="lazy">
+
+            <div class="shimba-day-copy">
+                <span class="shimba-day-label">Afternoon · Return Journey</span>
+
+                <h3>Return to the Main Reserve and Coastal Hotel</h3>
+
+                <p>
+                    After the waterfall visit, follow your guide back
+                    along the approved trail. Depending on the agreed
+                    schedule and remaining time, enjoy a final scenic
+                    stop or refreshments.
+                </p>
+
+                <p>
+                    Exit the reserve and return to your hotel or agreed
+                    drop-off point, bringing your Shimba Hills day trip
+                    to an end.
+                </p>
+            </div>
+        </article>
+
+        <div class="shimba-note">
+            <strong>Itinerary reminder:</strong>
+            Walking access, waterfall conditions and the timing of the
+            activities are subject to park management, weather and
+            safety instructions. Your guide will confirm the day's
+            arrangements.
+        </div>
+
     </div>
-
-    <!-- STOP 2 -->
-    <div class="itinerary">
-
-      <img class="day-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Shimbahills%20national%20reserve%20Antelope.jpg"
-        alt="Antelope in the natural habitat of Shimba Hills"
-        loading="lazy">
-
-      <div class="day-copy">
-
-        <div class="day-label">Morning · Wildlife exploration</div>
-
-        <h3>Game Drive Through the Reserve</h3>
-
-        <p>
-          Enjoy a game drive through the reserve's open grassland,
-          forest edges and scenic tracks. Keep an eye out for
-          elephants, sable antelope, buffalo, giraffes and other
-          wildlife that may be present.
-        </p>
-
-        <p>
-          Your guide will help identify animals, birds and
-          interesting features of the reserve while choosing
-          suitable routes for the day's conditions.
-        </p>
-
-        <p>
-          Shimba Hills is particularly recognised for its
-          sable antelope population, although sightings
-          cannot be guaranteed.
-        </p>
-
-      </div>
-    </div>
-
-    <!-- STOP 3 -->
-    <div class="itinerary">
-
-      <img class="day-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Sheldrick%20Falls%2001.jpg"
-        alt="Sheldrick Falls surrounded by green forest"
-        loading="lazy">
-
-      <div class="day-copy">
-
-        <div class="day-label">Midday · Guided nature walk</div>
-
-        <h3>Walk to Sheldrick Falls</h3>
-
-        <p>
-          Continue to the designated starting point for the
-          Sheldrick Falls walk. Accompanied by the appropriate
-          guide or ranger, follow the approved trail through
-          the forest towards the waterfall.
-        </p>
-
-        <p>
-          Enjoy the changing vegetation, forest atmosphere
-          and sound of flowing water as you approach the falls.
-          Take time to appreciate the natural surroundings
-          and capture photographs.
-        </p>
-
-        <p>
-          The walk includes uneven and potentially steep sections.
-          Allow enough time and follow the guide's advice
-          throughout the experience.
-        </p>
-
-      </div>
-    </div>
-
-    <!-- STOP 4 -->
-    <div class="itinerary">
-
-      <img class="day-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Sheldrick%20Falls%2002.jpg"
-        alt="Water cascading over the rocks at Sheldrick Falls"
-        loading="lazy">
-
-      <div class="day-copy">
-
-        <div class="day-label">Afternoon · Waterfall experience</div>
-
-        <h3>Enjoy the Waterfall and Surrounding Forest</h3>
-
-        <p>
-          Spend time enjoying the waterfall and its natural
-          surroundings. Depending on water conditions, safety
-          advice and current park rules, your guide will advise
-          whether visitors may approach the pool or enter the water.
-        </p>
-
-        <p>
-          Relax, take photographs and enjoy the peaceful
-          environment before beginning the return walk.
-        </p>
-
-        <p>
-          Swimming is not guaranteed and should only take place
-          when expressly permitted and considered safe.
-        </p>
-
-      </div>
-    </div>
-
-    <!-- STOP 5 -->
-    <div class="itinerary">
-
-      <img class="day-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Sheldrick%20Falls%2003.jpg"
-        alt="A different view of the forest waterfall at Sheldrick Falls"
-        loading="lazy">
-
-      <div class="day-copy">
-
-        <div class="day-label">Afternoon · Return journey</div>
-
-        <h3>Return to the Main Reserve and Coastal Hotel</h3>
-
-        <p>
-          After the waterfall visit, follow your guide back
-          along the approved trail. Depending on the agreed
-          schedule and remaining time, enjoy a final scenic
-          stop or refreshments.
-        </p>
-
-        <p>
-          Exit the reserve and return to your hotel or agreed
-          drop-off point, bringing your Shimba Hills day trip
-          to an end.
-        </p>
-
-      </div>
-    </div>
-
-  </div>
 </section>
 
 <!-- TOUR DETAILS -->
-<section class="details">
-  <div class="container">
+<section class="section alt">
+    <div class="wrap">
 
-    <div class="section-tag">Plan Your Visit</div>
+        <div class="section-head">
+            <span class="eyebrow">Plan Your Visit</span>
+            <h2>What's Included in Your Quote?</h2>
 
-    <h2>What's Included in Your Quote?</h2>
+            <p>
+                Your final quotation will depend on the number of guests,
+                pickup location and the services selected.
+            </p>
+        </div>
 
-    <p class="lead">
-      Your final quotation will depend on the number of guests,
-      pickup location and the services selected.
-    </p>
+        <div class="shimba-detail-grid">
 
-    <div class="detail-grid">
+            <div class="shimba-detail-box">
+                <h3>Possible Inclusions</h3>
 
-      <div class="detail-box">
-        <h3>Possible Inclusions</h3>
+                <ul>
+                    <li>Transport from the agreed pickup location.</li>
+                    <li>Safari vehicle and driver-guide.</li>
+                    <li>Shimba Hills National Reserve entry fees, where quoted.</li>
+                    <li>Game drive within the reserve.</li>
+                    <li>Guided access to Sheldrick Falls, where arranged.</li>
+                    <li>Meals or refreshments, if selected and confirmed.</li>
+                </ul>
+            </div>
 
-        <ul>
-          <li>Transport from the agreed pickup location.</li>
-          <li>Safari vehicle and driver-guide.</li>
-          <li>Shimba Hills National Reserve entry fees, where quoted.</li>
-          <li>Game drive within the reserve.</li>
-          <li>Guided access to Sheldrick Falls, where arranged.</li>
-          <li>Meals or refreshments, if selected and confirmed.</li>
-        </ul>
-      </div>
+            <div class="shimba-detail-box">
+                <h3>Not Automatically Included</h3>
 
-      <div class="detail-box">
-        <h3>Not Automatically Included</h3>
+                <ul>
+                    <li>Fees not listed in the final quotation.</li>
+                    <li>Personal expenses and gratuities.</li>
+                    <li>Meals and drinks not specified.</li>
+                    <li>Additional transfers outside the agreed route.</li>
+                    <li>Optional activities or services requested during the trip.</li>
+                </ul>
+            </div>
 
-        <ul>
-          <li>Fees not listed in the final quotation.</li>
-          <li>Personal expenses and gratuities.</li>
-          <li>Meals and drinks not specified.</li>
-          <li>Additional transfers outside the agreed route.</li>
-          <li>Optional activities or services requested during the trip.</li>
-        </ul>
-      </div>
+        </div>
+
+        <div class="shimba-price-panel">
+            <div>
+                <span class="eyebrow">Your Coastal Nature Escape</span>
+
+                <h2>Request Your Shimba Hills Tour Quote</h2>
+
+                <p>
+                    Tell us your preferred travel date, number of guests
+                    and pickup location for a personalised quotation.
+                </p>
+            </div>
+
+            <a class="btn btn-gold"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20please%20send%20me%20a%20quote%20for%20the%20Shimba%20Hills%20and%20Sheldrick%20Falls%20day%20trip."
+               target="_blank" rel="noopener">
+                Get a Quote
+            </a>
+        </div>
 
     </div>
-
-    <div class="price-panel">
-
-      <div>
-        <div class="eyebrow">Your Coastal Nature Escape</div>
-
-        <h2>Request Your Shimba Hills Tour Quote</h2>
-
-        <p>
-          Tell us your preferred travel date, number of guests
-          and pickup location for a personalised quotation.
-        </p>
-      </div>
-
-      <a class="btn primary"
-         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20please%20send%20me%20a%20quote%20for%20the%20Shimba%20Hills%20and%20Sheldrick%20Falls%20day%20trip.">
-        Get a Quote
-      </a>
-
-    </div>
-
-  </div>
 </section>
 
 <!-- TRAVEL INFORMATION -->
-<section>
-  <div class="container">
+<section class="section">
+    <div class="wrap">
 
-    <div class="section-tag">Before You Travel</div>
+        <div class="section-head">
+            <span class="eyebrow">Before You Travel</span>
+            <h2>Useful Tour Information</h2>
+            <p>
+                Prepare for the nature walk and wildlife experience
+                with these practical travel tips.
+            </p>
+        </div>
 
-    <h2>Useful Tour Information</h2>
+        <div class="shimba-detail-grid">
 
-    <div class="detail-grid">
+            <div class="shimba-detail-box">
+                <h3>What to Bring</h3>
 
-      <div class="detail-box">
-        <h3>What to Bring</h3>
+                <ul>
+                    <li>Comfortable walking or hiking shoes.</li>
+                    <li>Light, breathable clothing.</li>
+                    <li>Hat and sunscreen.</li>
+                    <li>Drinking water.</li>
+                    <li>Camera or phone for photography.</li>
+                    <li>Small backpack for personal items.</li>
+                    <li>Light rain protection when necessary.</li>
+                </ul>
+            </div>
 
-        <ul>
-          <li>Comfortable walking or hiking shoes.</li>
-          <li>Light, breathable clothing.</li>
-          <li>Hat and sunscreen.</li>
-          <li>Drinking water.</li>
-          <li>Camera or phone for photography.</li>
-          <li>Small backpack for personal items.</li>
-          <li>Light rain protection when necessary.</li>
-        </ul>
-      </div>
+            <div class="shimba-detail-box">
+                <h3>Good to Know</h3>
 
-      <div class="detail-box">
-        <h3>Good to Know</h3>
+                <ul>
+                    <li>The waterfall walk may be steep and physically demanding.</li>
+                    <li>Use approved trails and follow guide instructions.</li>
+                    <li>Trail access depends on weather and park conditions.</li>
+                    <li>Wildlife sightings are not guaranteed.</li>
+                    <li>Swimming is subject to permission and safety conditions.</li>
+                    <li>Confirm park fees and guide arrangements before travel.</li>
+                </ul>
+            </div>
 
-        <ul>
-          <li>The waterfall walk may be steep and physically demanding.</li>
-          <li>Use approved trails and follow guide instructions.</li>
-          <li>Trail access depends on weather and park conditions.</li>
-          <li>Wildlife sightings are not guaranteed.</li>
-          <li>Swimming is subject to permission and safety conditions.</li>
-          <li>Confirm park fees and guide arrangements before travel.</li>
-        </ul>
-      </div>
+        </div>
 
     </div>
-
-  </div>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-  <div class="container">
+<!-- FINAL CTA -->
+<section class="cta shimba-cta">
+    <div class="wrap">
 
-    <div class="section-tag">Explore. Experience. Enjoy.</div>
+        <span class="eyebrow">Explore. Experience. Enjoy.</span>
 
-    <h2>Discover Shimba Hills with Fleypat Adventures</h2>
+        <h2>Discover Shimba Hills with Fleypat Adventures</h2>
 
-    <p>
-      Experience the beauty of Kenya's coastal rainforest,
-      discover its wildlife and explore the famous Sheldrick Falls.
-    </p>
+        <p>
+            Experience the beauty of Kenya's coastal rainforest,
+            discover its wildlife and explore the famous Sheldrick Falls.
+        </p>
 
-    <a class="btn"
-       href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Shimba%20Hills%20and%20Sheldrick%20Falls%20day%20trip.">
-      Plan My Tour
-    </a>
+        <div class="actions">
+            <a class="btn btn-gold"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Shimba%20Hills%20and%20Sheldrick%20Falls%20day%20trip."
+               target="_blank" rel="noopener">
+                Plan My Tour
+            </a>
 
-  </div>
+            <a class="btn btn-outline" href="contact.html">Contact Us</a>
+        </div>
+
+    </div>
 </section>
 
 </main>
 
 <!-- FOOTER -->
-<footer>
-  <div class="container">
+<footer class="footer">
+    <div class="wrap">
 
-    <div class="footer-grid">
+        <div class="footer-grid">
 
-      <div>
-        <h3>Fleypat Adventures</h3>
-        <p>
-          Your adventure begins here. Discover Kenya through
-          memorable safaris, coastal escapes and authentic
-          travel experiences.
-        </p>
-      </div>
+            <div>
+                <a href="index.html">
+                    <img src="fleypat-logo.png"
+                         alt="Fleypat Adventures"
+                         style="width:170px;height:auto;object-fit:contain;margin-bottom:15px;">
+                </a>
 
-      <div>
-        <h3>Explore</h3>
-        <a href="safaris.html">Kenya Safaris</a>
-        <a href="day-trips.html">Day Trips</a>
-        <a href="marine-tours.html">Marine Tours</a>
-        <a href="beach-holidays.html">Beach Holidays</a>
-      </div>
+                <p>
+                    Your adventure begins here. Discover Kenya through
+                    memorable safaris, coastal escapes and authentic
+                    travel experiences.
+                </p>
 
-      <div>
-        <h3>Company</h3>
-        <a href="about.html">About Us</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="blog.html">Travel Blog</a>
-        <a href="contact.html">Contact</a>
-      </div>
+                <p>Explore. Experience. Enjoy.</p>
+            </div>
 
-      <div>
-        <h3>Contact</h3>
-        <p>Mombasa, Kenya</p>
-        <a href="tel:+254704261626">+254 704 261 626</a>
-        <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-        <a href="https://instagram.com/fleypat_adventures">Instagram</a>
-      </div>
+            <div>
+                <h4>Explore</h4>
+                <a href="safaris.html">Kenya Safaris</a>
+                <a href="day-trips.html">Day Trips</a>
+                <a href="marine-tours.html">Marine Tours</a>
+                <a href="beach-holidays.html">Beach Holidays</a>
+                <a href="destinations.html">Destinations</a>
+            </div>
+
+            <div>
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="itineraries.html">Tour Itineraries</a>
+                <a href="services.html">Our Services</a>
+                <a href="blog.html">Travel Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h4>Get in Touch</h4>
+                <p>Mombasa, Kenya</p>
+                <a href="tel:+254704261626">+254 704 261 626</a>
+                <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+                <a href="https://instagram.com/fleypat_adventures"
+                   target="_blank" rel="noopener">Instagram</a>
+                <a href="https://wa.me/254704261626"
+                   target="_blank" rel="noopener">WhatsApp Us</a>
+            </div>
+
+        </div>
+
+        <div class="foot-bottom">
+            <p>
+                © <span id="year"></span> Fleypat Adventures.
+                All Rights Reserved.
+            </p>
+            <p>Explore. Experience. Enjoy.</p>
+        </div>
 
     </div>
-
-    <div class="copyright">
-      © 2026 Fleypat Adventures. All rights reserved.
-    </div>
-
-  </div>
 </footer>
 
-<a class="whatsapp"
-   href="https://wa.me/254704261626"
-   target="_blank"
-   rel="noopener">
-  WhatsApp Us
-</a>
+<!-- FLOATING WHATSAPP -->
+<a class="float-wa"
+   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures"
+   target="_blank" rel="noopener"
+   aria-label="Chat with Fleypat Adventures on WhatsApp">✆</a>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", function () {
+            const isOpen = mainNav.classList.toggle("open");
+
+            menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation" : "Open navigation"
+            );
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        mainNav.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                mainNav.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Open navigation");
+                menuToggle.textContent = "☰";
+            });
+        });
+    }
+
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});
+</script>
 
 </body>
 </html>
