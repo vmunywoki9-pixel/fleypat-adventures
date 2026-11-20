@@ -7,7 +7,7 @@
 
 <title>Wasini Island Dolphin &amp; Snorkeling Tour | Fleypat Adventures</title>
 <meta name="description" content="Enjoy a Wasini Island day trip from Mombasa or Diani. Discover dolphin watching, snorkeling at Kisite-Mpunguti Marine Park, Swahili seafood and the island's coral gardens.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,1424 +16,1235 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
-  --green:#243c28;
-  --lime:#a8d832;
-  --cream:#fbf7e9;
-  --gold:#a97832;
-  --ocean:#176b70;
-  --deep:#123e43;
-  --text:#30372e;
-  --muted:#73796f;
-  --line:#e9e6da;
-}
-
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:'DM Sans',sans-serif;
-  color:var(--text);
-  background:#fff;
-  line-height:1.7;
-}
-
-a{text-decoration:none}
-.wrap{width:min(1160px,92%);margin:auto}
-
-/* TOP BAR */
-
-.topline{
-  background:var(--green);
-  color:#fff;
-  font-size:12px;
-  padding:9px 0;
-}
-
-.top-inner{
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-.topline a{color:#fff}
-
-/* HEADER */
-
-.header{
-  background:#fff;
-  position:sticky;
-  top:0;
-  z-index:100;
-  box-shadow:0 5px 22px rgba(0,0,0,.06);
-}
-
-.nav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  min-height:86px;
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  color:var(--green);
-  font-weight:800;
-  font-size:22px;
-  line-height:1.05;
-  letter-spacing:1px;
-  flex-shrink:0;
-}
-
-.brand img{
-  width:65px;
-  height:65px;
-  object-fit:contain;
-}
-
-.brand small{
-  display:block;
-  font-size:10px;
-  letter-spacing:4px;
-  font-weight:700;
-  margin-top:5px;
-}
-
-.nav nav{
-  display:flex;
-  align-items:center;
-  justify-content:flex-end;
-  flex-wrap:wrap;
-  gap:5px;
-}
-
-.nav nav a{
-  color:#354234;
-  font-size:11px;
-  font-weight:700;
-  padding:9px 8px;
-  border-radius:4px;
-}
-
-.nav nav a:hover,
-.nav nav a.active{
-  color:var(--green);
-  background:#f1f6e7;
-}
-
-.nav nav .nav-book{
-  background:var(--lime);
-  color:var(--green);
-  padding:11px 17px;
-  margin-left:5px;
-}
-
-.nav-toggle{
-  display:none;
-  border:0;
-  background:var(--green);
-  color:#fff;
-  border-radius:5px;
-  padding:9px 13px;
-  font-size:20px;
-  cursor:pointer;
-}
-
-/* HERO */
-
-.page-hero{
-  min-height:590px;
-  display:flex;
-  align-items:center;
-  position:relative;
-  isolation:isolate;
-  color:#fff;
-  background:
-    linear-gradient(90deg,rgba(8,34,39,.83),rgba(8,34,39,.47) 58%,rgba(8,34,39,.12)),
-    url('wasini-boat.jpg') center/cover no-repeat;
-}
-
-.hero-content{
-  max-width:790px;
-  padding:90px 0;
-}
-
-.eyebrow{
-  display:inline-block;
-  color:var(--lime);
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:12px;
-  font-weight:800;
-  margin-bottom:17px;
-}
-
-.page-hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(42px,6vw,70px);
-  line-height:1.08;
-  margin:0 0 22px;
-}
-
-.page-hero p{
-  font-size:17px;
-  max-width:680px;
-  color:#f3f3ed;
-  margin:0 0 30px;
-}
-
-.hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-}
-
-.btn{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  background:var(--lime);
-  color:var(--green);
-  padding:14px 23px;
-  border-radius:4px;
-  font-size:13px;
-  font-weight:800;
-  transition:.2s ease;
-}
-
-.btn:hover{
-  transform:translateY(-2px);
-  filter:brightness(.96);
-}
-
-.btn-outline{
-  background:transparent;
-  border:1px solid rgba(255,255,255,.75);
-  color:#fff;
-}
-
-.btn-gold{
-  background:var(--gold);
-  color:#fff;
-}
-
-/* QUICK STRIP */
-
-.quick-strip{
-  background:var(--deep);
-  color:#fff;
-}
-
-.quick-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-}
-
-.quick-item{
-  padding:22px 20px;
-  border-right:1px solid rgba(255,255,255,.15);
-}
-
-.quick-item:last-child{border-right:0}
-
-.quick-item span{
-  display:block;
-  color:#b9d9d5;
-  font-size:10px;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-weight:700;
-  margin-bottom:5px;
-}
-
-.quick-item strong{
-  font-size:14px;
-  font-weight:700;
-}
-
-/* SECTIONS */
-
-.section{padding:85px 0}
-.section-soft{background:var(--cream)}
-
-.section-heading{
-  max-width:760px;
-  margin-bottom:42px;
-}
-
-.section-heading.center{
-  text-align:center;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.section-kicker{
-  display:block;
-  color:var(--ocean);
-  text-transform:uppercase;
-  letter-spacing:2.5px;
-  font-size:11px;
-  font-weight:800;
-  margin-bottom:12px;
-}
-
-h2,h3{color:var(--green)}
-
-h2{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(29px,4vw,42px);
-  line-height:1.2;
-  margin:0 0 18px;
-}
-
-h3{
-  font-family:'Playfair Display',serif;
-  font-size:23px;
-  margin:0 0 12px;
-}
-
-p{margin:0 0 17px}
-
-.lead{
-  font-size:16px;
-  color:#626b5f;
-}
-
-/* INTRO */
-
-.intro-grid{
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:55px;
-  align-items:center;
-}
-
-.intro-image{
-  height:440px;
-  overflow:hidden;
-  border-radius:5px;
-  box-shadow:0 18px 45px rgba(31,49,31,.10);
-}
-
-.intro-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-.feature-list{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
-  margin-top:25px;
-}
-
-.feature{
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-  font-size:13px;
-  font-weight:700;
-}
-
-.feature-mark{
-  width:25px;
-  height:25px;
-  flex:0 0 25px;
-  display:grid;
-  place-items:center;
-  background:#e6f2ee;
-  color:var(--ocean);
-  border-radius:50%;
-  font-size:13px;
-}
-
-/* EXPERIENCE CARDS */
-
-.experience-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-
-.experience-card{
-  background:#fff;
-  border:1px solid var(--line);
-  padding:28px;
-  border-radius:5px;
-}
-
-.experience-card .number{
-  display:block;
-  color:var(--gold);
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:2px;
-  margin-bottom:12px;
-}
-
-.experience-card p{
-  color:#626b5f;
-  font-size:14px;
-  margin:0;
-}
-
-/* ITINERARY */
-
-.itinerary-list{
-  display:grid;
-  gap:26px;
-}
-
-.day-card{
-  display:grid;
-  grid-template-columns:300px 1fr;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:5px;
-  overflow:hidden;
-  box-shadow:0 10px 30px rgba(0,0,0,.045);
-}
-
-.day-image{
-  min-height:300px;
-  position:relative;
-}
-
-.day-image img{
-  width:100%;
-  height:100%;
-  position:absolute;
-  inset:0;
-  object-fit:cover;
-}
-
-.day-content{padding:30px 34px}
-
-.day-label{
-  display:inline-block;
-  color:var(--ocean);
-  font-size:11px;
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  margin-bottom:9px;
-}
-
-.day-content h3{
-  font-size:25px;
-  margin-bottom:12px;
-}
-
-.day-content p{
-  color:#626b5f;
-  font-size:14px;
-}
-
-.day-details{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px 20px;
-  margin-top:18px;
-  color:var(--green);
-  font-size:12px;
-  font-weight:700;
-}
-
-/* NOTES */
-
-.note{
-  margin-top:25px;
-  padding:20px 23px;
-  background:#eaf3ee;
-  border-left:4px solid var(--ocean);
-  font-size:13px;
-  color:#53604c;
-}
-
-/* INFORMATION */
+/* WASINI PAGE-SPECIFIC STYLES */
 
-.info-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:25px;
+.wasini-hero{
+    background-image:
+        linear-gradient(90deg,
+        rgba(65,39,22,.83),
+        rgba(65,39,22,.48) 58%,
+        rgba(65,39,22,.12)),
+        url('wasini-boat.jpg');
+    background-position:center;
+    background-size:cover;
 }
 
-.info-card{
-  padding:30px;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:5px;
+.wasini-hero .hero-content{
+    max-width:850px;
 }
 
-.info-card ul{
-  padding-left:20px;
-  margin:10px 0 0;
+.wasini-hero h1{
+    max-width:850px;
 }
 
-.info-card li{
-  padding:5px 0;
-  font-size:14px;
-  color:#626b5f;
+.wasini-quick{
+    background:var(--brown-dark);
+    color:#fff;
 }
 
-/* OVERVIEW */
-
-.detail-layout{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) 340px;
-  gap:45px;
-  align-items:start;
-}
-
-.side-panel{
-  background:var(--cream);
-  border:1px solid #eee7d6;
-  padding:30px;
-  border-radius:5px;
-  position:sticky;
-  top:110px;
-}
-
-.side-panel h3{
-  font-size:25px;
-  margin-bottom:23px;
-}
-
-.overview-row{
-  padding:14px 0;
-  border-bottom:1px solid #e5dfcf;
-}
-
-.overview-row span{
-  display:block;
-  font-size:10px;
-  text-transform:uppercase;
-  letter-spacing:1.5px;
-  color:#7d806e;
-  font-weight:800;
-}
-
-.overview-row strong{
-  display:block;
-  color:var(--green);
-  font-size:14px;
-  margin-top:4px;
-}
-
-.side-panel .btn{
-  width:100%;
-  margin-top:22px;
-}
-
-.side-panel .muted{
-  font-size:12px;
-  color:var(--muted);
-  margin:15px 0 0;
-}
-
-/* RESPONSIBLE TOURISM */
-
-.responsible{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.responsible article{
-  padding:25px;
-  border:1px solid var(--line);
-  background:#fff;
-  border-radius:5px;
-}
-
-.responsible h3{font-size:20px}
-.responsible p{
-  color:#626b5f;
-  font-size:13px;
-  margin:0;
-}
-
-/* CTA */
-
-.cta{
-  margin-top:75px;
-  margin-bottom:75px;
-  padding:48px;
-  background:var(--deep);
-  color:#fff;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:25px;
-  border-radius:5px;
-}
-
-.cta h2{color:#fff;margin-bottom:10px}
-.cta p{color:#d6e5e0;margin:0}
-.cta .btn{flex-shrink:0}
-
-/* FOOTER */
-
-.footer{
-  background:#17291c;
-  color:#dce4d8;
-  padding:65px 0 20px;
-}
-
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.4fr 1fr 1fr 1.2fr;
-  gap:40px;
+.wasini-quick-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
 }
 
-.footer-brand{color:#fff;margin-bottom:20px}
-
-.footer-brand img{
-  width:65px;
-  height:65px;
+.wasini-quick-item{
+    padding:22px 20px;
+    border-right:1px solid rgba(255,255,255,.16);
 }
 
-.footer p{
-  font-size:13px;
-  color:#bdc9ba;
-  max-width:300px;
+.wasini-quick-item:last-child{
+    border-right:0;
 }
 
-.footer h3{
-  color:var(--lime);
-  font-family:'DM Sans',sans-serif;
-  font-size:13px;
-  text-transform:uppercase;
-  letter-spacing:1.5px;
-  margin-bottom:20px;
+.wasini-quick-item span{
+    display:block;
+    color:#F5D7BD;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:700;
+    margin-bottom:6px;
 }
 
-.footer-grid>div>a:not(.brand),
-.footer-grid>div>span{
-  display:block;
-  color:#dce4d8;
-  font-size:13px;
-  margin:10px 0;
+.wasini-quick-item strong{
+    display:block;
+    color:#fff;
+    font-size:15px;
 }
-
-.footer a:hover{color:var(--lime)}
 
-.foot-bottom{
-  border-top:1px solid rgba(255,255,255,.13);
-  margin-top:45px;
-  padding-top:20px;
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-  font-size:11px;
-  color:#aebbaa;
+.wasini-intro-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:55px;
+    align-items:center;
 }
 
-.float-wa{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:90;
-  background:#25d366;
-  color:#fff;
-  padding:13px 19px;
-  border-radius:40px;
-  font-weight:800;
-  font-size:13px;
-  box-shadow:0 8px 25px rgba(0,0,0,.2);
+.wasini-intro-photo{
+    height:440px;
+    overflow:hidden;
 }
-
-/* RESPONSIVE */
-
-@media(max-width:1050px){
-  .nav{min-height:76px}
-  .nav-toggle{display:block}
-
-  .nav nav{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    right:0;
-    background:#fff;
-    padding:15px 4%;
-    box-shadow:0 15px 25px rgba(0,0,0,.1);
-    max-height:75vh;
-    overflow:auto;
-    align-items:stretch;
-  }
 
-  .nav nav.open{display:flex}
-  .nav nav a{width:100%;padding:11px}
-  .nav nav .nav-book{margin:5px 0}
+.wasini-intro-photo img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-@media(max-width:800px){
-  .intro-grid,.detail-layout{grid-template-columns:1fr}
-  .intro-image{height:340px}
-  .day-card{grid-template-columns:230px 1fr}
-  .side-panel{position:static}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .experience-grid{grid-template-columns:1fr 1fr}
-  .responsible{grid-template-columns:1fr}
+.wasini-feature-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:25px;
 }
-
-@media(max-width:580px){
-  .top-inner{justify-content:center;text-align:center}
-  .brand{font-size:19px}
-  .brand img{width:54px;height:54px}
-
-  .page-hero{min-height:520px}
-  .hero-content{padding:75px 0}
-  .page-hero h1{font-size:43px}
-  .page-hero p{font-size:15px}
-
-  .quick-grid{grid-template-columns:1fr 1fr}
-  .quick-item{
-    border-right:1px solid rgba(255,255,255,.15);
-    border-bottom:1px solid rgba(255,255,255,.15);
-    padding:16px;
-  }
-
-  .section{padding:65px 0}
-  .feature-list{grid-template-columns:1fr}
-  .experience-grid{grid-template-columns:1fr}
-
-  .day-card{grid-template-columns:1fr}
-  .day-image{height:230px;min-height:230px}
-  .day-content{padding:24px}
-
-  .info-grid{grid-template-columns:1fr}
-  .info-card{padding:23px}
 
-  .cta{
-    padding:30px 24px;
-    margin-top:55px;
-    margin-bottom:55px;
+.wasini-feature{
+    display:flex;
     align-items:flex-start;
-    flex-direction:column;
-  }
+    gap:10px;
+    font-size:13px;
+    font-weight:700;
+    color:var(--ink);
+}
 
-  .footer-grid{grid-template-columns:1fr}
-  .foot-bottom{flex-direction:column}
+.wasini-feature-mark{
+    width:25px;
+    height:25px;
+    flex:0 0 25px;
+    display:grid;
+    place-items:center;
+    background:var(--cream2);
+    color:var(--orange);
+    font-weight:800;
+}
+
+.wasini-experience-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.wasini-experience-card{
+    background:var(--white);
+    border:1px solid var(--cream2);
+    padding:28px;
+}
+
+.wasini-experience-card .number{
+    display:block;
+    color:var(--orange);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.wasini-experience-card p{
+    color:var(--muted);
+    font-size:14px;
+    margin:0;
+}
+
+.wasini-itinerary{
+    display:grid;
+    gap:24px;
+}
+
+.wasini-day{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    background:var(--white);
+    border:1px solid var(--cream2);
+    overflow:hidden;
+}
+
+.wasini-day-image{
+    min-height:300px;
+    position:relative;
+}
+
+.wasini-day-image img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    inset:0;
+    object-fit:cover;
+}
+
+.wasini-day-content{
+    padding:30px;
+}
+
+.wasini-day-label{
+    display:inline-block;
+    color:var(--orange-dark);
+    font-size:11px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:9px;
+}
+
+.wasini-day-content h3{
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.wasini-day-content p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+.wasini-day-details{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 20px;
+    margin-top:18px;
+    color:var(--brown-dark);
+    font-size:12px;
+    font-weight:700;
+}
+
+.wasini-info-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.wasini-info-card{
+    padding:30px;
+    background:var(--white);
+    border:1px solid var(--cream2);
+}
+
+.wasini-info-card h3{
+    font-size:23px;
+}
+
+.wasini-info-card ul{
+    padding-left:20px;
+    margin:10px 0 0;
+}
+
+.wasini-info-card li{
+    padding:6px 0;
+    font-size:14px;
+    color:var(--muted);
+}
+
+.wasini-note{
+    margin-top:25px;
+    padding:20px 23px;
+    background:var(--cream2);
+    border-left:4px solid var(--orange);
+    font-size:13px;
+    color:var(--ink);
+}
+
+.wasini-responsible-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.wasini-responsible-card{
+    padding:25px;
+    background:var(--white);
+    border:1px solid var(--cream2);
+}
+
+.wasini-responsible-card h3{
+    font-size:20px;
+}
+
+.wasini-responsible-card p{
+    color:var(--muted);
+    font-size:13px;
+    margin:0;
+}
+
+.wasini-detail-layout{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 340px;
+    gap:45px;
+    align-items:start;
+}
+
+.wasini-side-panel{
+    background:var(--cream);
+    border:1px solid var(--cream2);
+    padding:30px;
+    position:sticky;
+    top:110px;
+}
+
+.wasini-side-panel h3{
+    font-size:25px;
+    margin-bottom:23px;
+}
+
+.wasini-overview-row{
+    padding:14px 0;
+    border-bottom:1px solid var(--cream2);
+}
+
+.wasini-overview-row span{
+    display:block;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    color:var(--muted);
+    font-weight:800;
+}
+
+.wasini-overview-row strong{
+    display:block;
+    color:var(--brown-dark);
+    font-size:14px;
+    margin-top:4px;
+}
+
+.wasini-side-panel .btn{
+    width:100%;
+    margin-top:22px;
+}
+
+.wasini-side-panel .muted{
+    font-size:12px;
+    color:var(--muted);
+    margin:15px 0 0;
+}
+
+.wasini-cta{
+    margin-top:75px;
+    margin-bottom:75px;
+    padding:48px;
+    background:var(--brown-dark);
+    color:var(--white);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+
+.wasini-cta h2{
+    color:var(--white);
+    margin-bottom:10px;
+}
+
+.wasini-cta p{
+    color:var(--cream2);
+    margin:0;
+}
+
+.wasini-cta .btn{
+    flex-shrink:0;
+}
+
+.wasini-tabs{
+    position:sticky;
+    top:86px;
+    z-index:50;
+    background:var(--cream);
+    border-bottom:1px solid var(--cream2);
+}
+
+.wasini-tabs-inner{
+    display:flex;
+    gap:6px;
+    overflow-x:auto;
+    padding:12px 0;
+    scrollbar-width:thin;
+}
+
+.wasini-tabs a{
+    flex-shrink:0;
+    padding:9px 15px;
+    background:var(--white);
+    color:var(--brown-dark);
+    font-size:12px;
+    font-weight:700;
+    border:1px solid var(--cream2);
+    white-space:nowrap;
+}
+
+.wasini-tabs a:hover{
+    background:var(--orange);
+    color:#fff;
+    border-color:var(--orange);
+}
+
+.wasini-section-heading{
+    max-width:760px;
+    margin-bottom:42px;
+}
+
+.wasini-section-heading.center{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.wasini-section-heading .lead{
+    color:var(--muted);
+}
+
+@media(max-width:1000px){
+    .wasini-quick-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .wasini-quick-item{
+        border-bottom:1px solid rgba(255,255,255,.16);
+    }
+
+    .wasini-intro-grid,
+    .wasini-detail-layout{
+        grid-template-columns:1fr;
+    }
+
+    .wasini-side-panel{
+        position:static;
+    }
+
+    .wasini-day{
+        grid-template-columns:230px 1fr;
+    }
+
+    .wasini-experience-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .wasini-responsible-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:760px){
+    .wasini-tabs{
+        top:76px;
+    }
+
+    .wasini-intro-photo{
+        height:340px;
+    }
+
+    .wasini-feature-list{
+        grid-template-columns:1fr;
+    }
+
+    .wasini-experience-grid{
+        grid-template-columns:1fr;
+    }
+
+    .wasini-day{
+        grid-template-columns:1fr;
+    }
+
+    .wasini-day-image{
+        height:230px;
+        min-height:230px;
+    }
+
+    .wasini-day-content{
+        padding:24px;
+    }
+
+    .wasini-info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .wasini-info-card{
+        padding:23px;
+    }
+
+    .wasini-cta{
+        padding:30px 24px;
+        margin-top:55px;
+        margin-bottom:55px;
+        align-items:flex-start;
+        flex-direction:column;
+    }
+}
+
+@media(max-width:480px){
+    .wasini-quick-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .wasini-quick-item{
+        padding:16px;
+    }
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+
 <div class="topline">
-  <div class="wrap top-inner">
-    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-    <span>
-      <a href="tel:+254704261626">+254 704 261 626</a>
-      ·
-      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-    </span>
-  </div>
+    <div class="wrap top-inner">
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy.</span>
+        <span>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            ·
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+        </span>
+    </div>
 </div>
 
+<!-- HEADER -->
+
 <header class="header">
-  <div class="wrap nav">
+    <div class="wrap nav">
 
-    <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
-      <span>FLEYPAT<small>ADVENTURES</small></span>
-    </a>
+        <a class="brand" href="index.html">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures">
+        </a>
 
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button class="nav-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+                aria-expanded="false">
+            ☰
+        </button>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="safaris.html">Safaris</a>
-      <a href="marine-tours.html" class="active">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="honeymoon.html">Honeymoons</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html">Itineraries</a>
-      <a href="services.html">Services</a>
-      <a href="transfers.html">Transfers</a>
-      <a href="blog.html">Blog</a>
-      <a href="partnerships.html">Partnerships</a>
-      <a href="contact.html">Contact</a>
-      <a class="nav-book" href="contact.html">Book Now</a>
-    </nav>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html" class="active">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="honeymoon.html">Honeymoons</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+            <a href="services.html">Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="blog.html">Blog</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-book" href="contact.html">Book Now</a>
+        </nav>
 
-  </div>
+    </div>
 </header>
 
 <main>
 
 <!-- HERO -->
 
-<section class="page-hero">
-  <div class="wrap hero-content">
+<section class="page-hero wasini-hero">
+    <div class="wrap hero-content">
 
-    <span class="eyebrow">Full-Day Marine Experience · South Coast Kenya</span>
+        <span class="eyebrow">Full-Day Marine Experience · South Coast Kenya</span>
 
-    <h1>Wasini Island Dolphin &amp; Snorkeling Tour</h1>
+        <h1>Wasini Island Dolphin &amp; Snorkeling Tour</h1>
 
-    <p>
-      Set out from the mainland for a memorable marine adventure.
-      Cruise through the waters around Kisite-Mpunguti, look out
-      for wild dolphins, explore the coral reef when conditions
-      permit and enjoy a Swahili-style lunch on Wasini Island.
-    </p>
+        <p>
+            Set out from the mainland for a memorable marine adventure.
+            Cruise through the waters around Kisite-Mpunguti, look out
+            for wild dolphins, explore the coral reef when conditions
+            permit and enjoy a Swahili-style lunch on Wasini Island.
+        </p>
 
-    <div class="hero-actions">
-      <a class="btn" href="contact.html?tour=wasini-dolphin-snorkeling">
-        Plan This Experience
-      </a>
+        <div class="actions">
+            <a class="btn btn-gold" href="contact.html?tour=wasini-dolphin-snorkeling">
+                Plan This Experience
+            </a>
 
-      <a class="btn btn-outline"
-         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20the%20Wasini%20Island%20Dolphin%20and%20Snorkeling%20Tour."
-         target="_blank" rel="noopener">
-        WhatsApp Us
-      </a>
+            <a class="btn btn-outline"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20the%20Wasini%20Island%20Dolphin%20and%20Snorkeling%20Tour."
+               target="_blank" rel="noopener">
+                WhatsApp Us
+            </a>
+        </div>
+
     </div>
-
-  </div>
 </section>
 
 <!-- QUICK DETAILS -->
 
-<section class="quick-strip">
-  <div class="wrap quick-grid">
+<section class="wasini-quick">
+    <div class="wrap wasini-quick-grid">
 
-    <div class="quick-item">
-      <span>Duration</span>
-      <strong>Full Day</strong>
+        <div class="wasini-quick-item">
+            <span>Duration</span>
+            <strong>Full Day</strong>
+        </div>
+
+        <div class="wasini-quick-item">
+            <span>Departure Area</span>
+            <strong>Mombasa / Diani</strong>
+        </div>
+
+        <div class="wasini-quick-item">
+            <span>Main Destination</span>
+            <strong>Kisite &amp; Wasini</strong>
+        </div>
+
+        <div class="wasini-quick-item">
+            <span>Indicative Price</span>
+            <strong>From USD 85</strong>
+        </div>
+
     </div>
-
-    <div class="quick-item">
-      <span>Departure Area</span>
-      <strong>Mombasa / Diani</strong>
-    </div>
-
-    <div class="quick-item">
-      <span>Main Destination</span>
-      <strong>Kisite &amp; Wasini</strong>
-    </div>
-
-    <div class="quick-item">
-      <span>Indicative Price</span>
-      <strong>From USD 85</strong>
-    </div>
-
-  </div>
 </section>
+
+<!-- STICKY PAGE NAVIGATION -->
+
+<div class="wasini-tabs">
+    <div class="wrap wasini-tabs-inner">
+        <a href="#overview">Overview</a>
+        <a href="#experience">Highlights</a>
+        <a href="#itinerary">Itinerary</a>
+        <a href="#inclusions">Inclusions</a>
+        <a href="#responsible">Responsible Travel</a>
+        <a href="#information">Travel Information</a>
+        <a href="#booking">Book Tour</a>
+    </div>
+</div>
 
 <!-- INTRODUCTION -->
 
-<section class="section">
-  <div class="wrap intro-grid">
+<section class="section" id="overview">
+    <div class="wrap wasini-intro-grid">
 
-    <div>
-      <span class="section-kicker">Discover the Kenyan Coast</span>
+        <div>
+            <span class="kicker">Discover the Kenyan Coast</span>
 
-      <h2>A Day of Ocean Discovery and Island Culture</h2>
+            <h2>A Day of Ocean Discovery and Island Culture</h2>
 
-      <p class="lead">
-        The Wasini Island excursion combines a boat journey,
-        marine wildlife watching, a snorkeling opportunity and
-        a visit to one of the Kenyan coast's distinctive coral islands.
-      </p>
+            <p class="lead">
+                The Wasini Island excursion combines a boat journey,
+                marine wildlife watching, a snorkeling opportunity and
+                a visit to one of the Kenyan coast's distinctive coral islands.
+            </p>
 
-      <p>
-        The marine adventure takes place around Kisite-Mpunguti
-        Marine Park and Reserve, reached by boat from the Shimoni
-        area in Kwale County. The protected marine environment
-        is known for coral reefs, tropical fish, sea turtles and
-        dolphins.
-      </p>
+            <p>
+                The marine adventure takes place around Kisite-Mpunguti
+                Marine Park and Reserve, reached by boat from the Shimoni
+                area in Kwale County. The protected marine environment
+                is known for coral reefs, tropical fish, sea turtles and
+                dolphins.
+            </p>
 
-      <p>
-        After the marine activities, the excursion continues to
-        Wasini Island. Visitors can enjoy a Swahili-style meal
-        and, where included in the arrangements, explore the
-        island's coral garden and community boardwalk.
-      </p>
+            <p>
+                After the marine activities, the excursion continues to
+                Wasini Island. Visitors can enjoy a Swahili-style meal
+                and, where included in the arrangements, explore the
+                island's coral garden and community boardwalk.
+            </p>
 
-      <p>
-        This experience is suitable for visitors who want to
-        combine coastal scenery, marine activities and local
-        island culture in one day.
-      </p>
+            <p>
+                This experience is suitable for visitors who want to
+                combine coastal scenery, marine activities and local
+                island culture in one day.
+            </p>
 
-      <div class="feature-list">
-        <div class="feature"><span class="feature-mark">✓</span> Boat excursion</div>
-        <div class="feature"><span class="feature-mark">✓</span> Dolphin watching opportunity</div>
-        <div class="feature"><span class="feature-mark">✓</span> Snorkeling when conditions allow</div>
-        <div class="feature"><span class="feature-mark">✓</span> Swahili-style lunch</div>
-      </div>
+            <div class="wasini-feature-list">
+
+                <div class="wasini-feature">
+                    <span class="wasini-feature-mark">✓</span>
+                    Boat excursion
+                </div>
+
+                <div class="wasini-feature">
+                    <span class="wasini-feature-mark">✓</span>
+                    Dolphin watching opportunity
+                </div>
+
+                <div class="wasini-feature">
+                    <span class="wasini-feature-mark">✓</span>
+                    Snorkeling when conditions allow
+                </div>
+
+                <div class="wasini-feature">
+                    <span class="wasini-feature-mark">✓</span>
+                    Swahili-style lunch
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wasini-intro-photo">
+            <img
+                src="https://images.myguide-cdn.com/kenya/companies/wasini-island-dolphin-spot-snorkel-at-kisite-marine-park/large/wasini-island-dolphin-spot-snorkel-at-kisite-marine-park-1497384.jpg"
+                alt="Boat arriving near Wasini Island's coastal waters"
+                loading="lazy">
+        </div>
+
     </div>
-
-    <div class="intro-image">
-      <img
-        src="https://images.myguide-cdn.com/kenya/companies/wasini-island-dolphin-spot-snorkel-at-kisite-marine-park/large/wasini-island-dolphin-spot-snorkel-at-kisite-marine-park-1497384.jpg"
-        alt="Visitors arriving by boat at the mangrove-lined coast near Wasini Island"
-        loading="lazy">
-    </div>
-
-  </div>
 </section>
 
 <!-- EXPERIENCE HIGHLIGHTS -->
 
-<section class="section section-soft">
-  <div class="wrap">
+<section class="section alt" id="experience">
+    <div class="wrap">
 
-    <div class="section-heading center">
-      <span class="section-kicker">The Experience</span>
-      <h2>Four Highlights of Your Wasini Island Tour</h2>
-      <p class="lead">
-        Enjoy the marine environment and island hospitality
-        through a combination of activities arranged around
-        the day's sea and weather conditions.
-      </p>
+        <div class="wasini-section-heading center">
+            <span class="kicker">The Experience</span>
+
+            <h2>Highlights of Your Wasini Island Tour</h2>
+
+            <p class="lead">
+                Enjoy the marine environment and island hospitality
+                through a combination of activities arranged around
+                the day's sea and weather conditions.
+            </p>
+        </div>
+
+        <div class="wasini-experience-grid">
+
+            <article class="wasini-experience-card">
+                <span class="number">01 · Marine Wildlife</span>
+                <h3>Dolphin Watching</h3>
+                <p>
+                    Look out for dolphins as the boat travels through the
+                    marine area. These are wild animals, so sightings,
+                    distance and viewing time cannot be guaranteed.
+                </p>
+            </article>
+
+            <article class="wasini-experience-card">
+                <span class="number">02 · Underwater Discovery</span>
+                <h3>Snorkeling at Kisite</h3>
+                <p>
+                    Where conditions and park arrangements permit, explore
+                    the reef environment and look for colourful reef fish
+                    and coral formations. Follow your guide's safety advice.
+                </p>
+            </article>
+
+            <article class="wasini-experience-card">
+                <span class="number">03 · Island Hospitality</span>
+                <h3>Swahili-Style Lunch</h3>
+                <p>
+                    Enjoy a coastal meal on Wasini Island. Menu details,
+                    seafood options and alternatives for dietary needs
+                    should be confirmed when making your booking.
+                </p>
+            </article>
+
+        </div>
+
     </div>
-
-    <div class="experience-grid">
-
-      <article class="experience-card">
-        <span class="number">01 · Marine Wildlife</span>
-        <h3>Dolphin Watching</h3>
-        <p>
-          Look out for dolphins as the boat travels through the
-          marine area. These are wild animals, so sightings,
-          distance and viewing time cannot be guaranteed.
-        </p>
-      </article>
-
-      <article class="experience-card">
-        <span class="number">02 · Underwater Discovery</span>
-        <h3>Snorkeling at Kisite</h3>
-        <p>
-          Where conditions and park arrangements permit, explore
-          the reef environment and look for colourful reef fish
-          and coral formations. Follow your guide's safety advice.
-        </p>
-      </article>
-
-      <article class="experience-card">
-        <span class="number">03 · Island Hospitality</span>
-        <h3>Swahili-Style Lunch</h3>
-        <p>
-          Enjoy a coastal meal on Wasini Island. Menu details,
-          seafood options and alternatives for dietary needs
-          should be confirmed when making your booking.
-        </p>
-      </article>
-
-    </div>
-
-  </div>
 </section>
 
 <!-- ITINERARY -->
 
-<section class="section">
-  <div class="wrap">
+<section class="section" id="itinerary">
+    <div class="wrap">
 
-    <div class="section-heading">
-      <span class="section-kicker">Your Day by the Ocean</span>
-      <h2>Suggested Wasini Island Itinerary</h2>
-      <p class="lead">
-        The schedule below is indicative. The order and timing
-        of activities may change depending on tides, sea conditions,
-        marine park procedures and the boat operator's arrangements.
-      </p>
+        <div class="wasini-section-heading">
+            <span class="kicker">Your Day by the Ocean</span>
+
+            <h2>Suggested Wasini Island Itinerary</h2>
+
+            <p class="lead">
+                The schedule below is indicative. The order and timing
+                of activities may change depending on tides, sea conditions,
+                marine park procedures and the boat operator's arrangements.
+            </p>
+        </div>
+
+        <div class="wasini-itinerary">
+
+            <!-- DEPARTURE -->
+
+            <article class="wasini-day">
+
+                <div class="wasini-day-image">
+                    <img
+                        src="https://static.wixstatic.com/media/511763_988b13cabde84cd88edfb24a319d4f19~mv2.jpg/v1/fill/w_1000%2Ch_667%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_auto/511763_988b13cabde84cd88edfb24a319d4f19~mv2.jpg"
+                        alt="Visitors preparing for a snorkeling excursion beside a traditional dhow"
+                        loading="lazy">
+                </div>
+
+                <div class="wasini-day-content">
+
+                    <span class="wasini-day-label">Morning · Mainland to the Marine Park</span>
+
+                    <h3>Departure and Boat Excursion</h3>
+
+                    <p>
+                        Your day begins with pickup from your agreed location
+                        in Mombasa or the Diani area, depending on the package
+                        booked. Travel south towards Shimoni, the mainland
+                        departure point for many Wasini and Kisite excursions.
+                    </p>
+
+                    <p>
+                        On arrival, meet the local boat crew and receive
+                        instructions about the day's excursion, safety
+                        procedures and marine environment. Board the
+                        arranged boat and begin the journey towards
+                        Kisite-Mpunguti.
+                    </p>
+
+                    <p>
+                        Enjoy the coastal scenery and open-water views as
+                        the boat travels through the marine area.
+                    </p>
+
+                    <div class="wasini-day-details">
+                        <span>✓ Agreed pickup</span>
+                        <span>✓ Road transfer to Shimoni</span>
+                        <span>✓ Boat departure</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- DOLPHINS -->
+
+            <article class="wasini-day">
+
+                <div class="wasini-day-image">
+                    <img
+                        src="https://static.wixstatic.com/media/c9786b_266d8a4b43a74f0abc68d19281f64e3b~mv2.png/v1/fill/w_980%2Ch_489%2Cal_c%2Cq_95%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/ChatGPT%20Image%20Apr%2021%2C%202026%2C%2001_57_35%20PM.png"
+                        alt="Dolphins swimming in the sea near a tour boat at Kisite Marine Park"
+                        loading="lazy">
+                </div>
+
+                <div class="wasini-day-content">
+
+                    <span class="wasini-day-label">Morning · Marine Wildlife Watching</span>
+
+                    <h3>Look Out for Wild Dolphins</h3>
+
+                    <p>
+                        During the boat excursion, keep watch for dolphins
+                        moving through the surrounding waters. The area is
+                        known for marine wildlife, and seeing dolphins in
+                        their natural environment can be a memorable part
+                        of the trip.
+                    </p>
+
+                    <p>
+                        Your crew will guide the boat according to local
+                        marine-watching practices. Dolphins should be
+                        observed responsibly without chasing, touching,
+                        feeding or attempting to surround them.
+                    </p>
+
+                    <p>
+                        Please remember that dolphins are wild animals.
+                        Their movements are unpredictable, and sightings
+                        are never guaranteed.
+                    </p>
+
+                    <div class="wasini-day-details">
+                        <span>✓ Marine wildlife observation</span>
+                        <span>✓ Responsible viewing</span>
+                        <span>✓ Scenic boat cruise</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- SNORKELING -->
+
+            <article class="wasini-day">
+
+                <div class="wasini-day-image">
+                    <img
+                        src="https://oceantribe.co/wp-content/uploads/2024/12/crystal-clear-waters.jpg"
+                        alt="Snorkeler exploring the underwater reef beside a traditional dhow"
+                        loading="lazy">
+                </div>
+
+                <div class="wasini-day-content">
+
+                    <span class="wasini-day-label">Late Morning · Kisite-Mpunguti</span>
+
+                    <h3>Snorkeling and Coral Reef Exploration</h3>
+
+                    <p>
+                        If weather, tides, visibility and park conditions
+                        permit, enjoy a snorkeling session at the designated
+                        marine area. Discover the underwater environment
+                        and look for colourful reef fish and coral formations.
+                    </p>
+
+                    <p>
+                        Snorkeling equipment and guidance should be confirmed
+                        with the operator before departure. Follow all safety
+                        instructions and use a flotation aid if recommended.
+                    </p>
+
+                    <p>
+                        Visitors who are not comfortable swimming in open
+                        water should discuss suitable alternatives with
+                        the tour team before booking.
+                    </p>
+
+                    <div class="wasini-day-details">
+                        <span>✓ Snorkeling opportunity</span>
+                        <span>✓ Reef and fish observation</span>
+                        <span>✓ Subject to sea conditions</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- WASINI ISLAND -->
+
+            <article class="wasini-day">
+
+                <div class="wasini-day-image">
+                    <img
+                        src="https://d29bhihuvvyjsm.cloudfront.net/uploads/coral-boardwalk-1755223796.jpg"
+                        alt="Raised wooden boardwalk crossing the fossil coral garden on Wasini Island"
+                        loading="lazy">
+                </div>
+
+                <div class="wasini-day-content">
+
+                    <span class="wasini-day-label">Afternoon · Wasini Island</span>
+
+                    <h3>Island Visit and Coral Garden Boardwalk</h3>
+
+                    <p>
+                        Continue to Wasini Island for a land-based experience.
+                        The island is known for its coral formations, coastal
+                        vegetation, mangroves and traditional Swahili community.
+                    </p>
+
+                    <p>
+                        Depending on the package and available time, visit
+                        the community-managed coral garden boardwalk.
+                        This provides an opportunity to learn about the
+                        island's fossil coral landscape and mangrove environment.
+                    </p>
+
+                    <p>
+                        A local guide may explain the area's natural features
+                        and the role of community initiatives in welcoming
+                        visitors and supporting conservation.
+                    </p>
+
+                    <div class="wasini-day-details">
+                        <span>✓ Wasini Island visit</span>
+                        <span>✓ Coral garden experience</span>
+                        <span>✓ Community-guided option</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- LUNCH -->
+
+            <article class="wasini-day">
+
+                <div class="wasini-day-image">
+                    <img
+                        src="https://cdn.getyourguide.com/img/tour/64742e4780bf5.jpeg/145.jpg"
+                        alt="Visitors enjoying a seafood lunch at a traditional Wasini Island restaurant"
+                        loading="lazy">
+                </div>
+
+                <div class="wasini-day-content">
+
+                    <span class="wasini-day-label">Lunch · Island Cuisine</span>
+
+                    <h3>Enjoy a Swahili-Style Coastal Meal</h3>
+
+                    <p>
+                        Sit down for a relaxed coastal lunch on Wasini Island.
+                        Depending on the restaurant and meal arrangement,
+                        the menu may feature seafood, fish, coconut rice,
+                        chapati and other Swahili-inspired dishes.
+                    </p>
+
+                    <p>
+                        Vegetarian options and special dietary requirements
+                        should be communicated in advance so that suitable
+                        arrangements can be checked with the restaurant.
+                    </p>
+
+                    <p>
+                        After lunch, begin the return boat journey to the
+                        mainland and continue to your agreed drop-off point
+                        in Mombasa or Diani.
+                    </p>
+
+                    <div class="wasini-day-details">
+                        <span>✓ Island lunch</span>
+                        <span>✓ Return boat transfer</span>
+                        <span>✓ Agreed drop-off</span>
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
     </div>
-
-    <div class="itinerary-list">
-
-      <!-- DEPARTURE -->
-
-      <article class="day-card">
-
-        <div class="day-image">
-          <img
-            src="https://static.wixstatic.com/media/511763_988b13cabde84cd88edfb24a319d4f19~mv2.jpg/v1/fill/w_1000%2Ch_667%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_auto/511763_988b13cabde84cd88edfb24a319d4f19~mv2.jpg"
-            alt="Visitors preparing for a snorkeling excursion beside a traditional dhow"
-            loading="lazy">
-        </div>
-
-        <div class="day-content">
-
-          <span class="day-label">Morning · Mainland to the Marine Park</span>
-
-          <h3>Departure and Boat Excursion</h3>
-
-          <p>
-            Your day begins with pickup from your agreed location
-            in Mombasa or the Diani area, depending on the package
-            booked. Travel south towards Shimoni, the mainland
-            departure point for many Wasini and Kisite excursions.
-          </p>
-
-          <p>
-            On arrival, meet the local boat crew and receive
-            instructions about the day's excursion, safety
-            procedures and marine environment. Board the
-            arranged boat and begin the journey towards
-            Kisite-Mpunguti.
-          </p>
-
-          <p>
-            Enjoy the coastal scenery and open-water views as
-            the boat travels through the marine area.
-          </p>
-
-          <div class="day-details">
-            <span>✓ Agreed pickup</span>
-            <span>✓ Road transfer to Shimoni</span>
-            <span>✓ Boat departure</span>
-          </div>
-
-        </div>
-      </article>
-
-      <!-- DOLPHINS -->
-
-      <article class="day-card">
-
-        <div class="day-image">
-          <img
-            src="https://static.wixstatic.com/media/c9786b_266d8a4b43a74f0abc68d19281f64e3b~mv2.png/v1/fill/w_980%2Ch_489%2Cal_c%2Cq_95%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/ChatGPT%20Image%20Apr%2021%2C%202026%2C%2001_57_35%20PM.png"
-            alt="Dolphins swimming in the sea near a tour boat at Kisite Marine Park"
-            loading="lazy">
-        </div>
-
-        <div class="day-content">
-
-          <span class="day-label">Morning · Marine Wildlife Watching</span>
-
-          <h3>Look Out for Wild Dolphins</h3>
-
-          <p>
-            During the boat excursion, keep watch for dolphins
-            moving through the surrounding waters. The area is
-            known for marine wildlife, and seeing dolphins in
-            their natural environment can be a memorable part
-            of the trip.
-          </p>
-
-          <p>
-            Your crew will guide the boat according to local
-            marine-watching practices. Dolphins should be
-            observed responsibly without chasing, touching,
-            feeding or attempting to surround them.
-          </p>
-
-          <p>
-            Please remember that dolphins are wild animals.
-            Their movements are unpredictable, and sightings
-            are never guaranteed.
-          </p>
-
-          <div class="day-details">
-            <span>✓ Marine wildlife observation</span>
-            <span>✓ Responsible viewing</span>
-            <span>✓ Scenic boat cruise</span>
-          </div>
-
-        </div>
-      </article>
-
-      <!-- SNORKELING -->
-
-      <article class="day-card">
-
-        <div class="day-image">
-          <img
-            src="https://oceantribe.co/wp-content/uploads/2024/12/crystal-clear-waters.jpg"
-            alt="Snorkeler exploring the underwater reef beside a traditional dhow"
-            loading="lazy">
-        </div>
-
-        <div class="day-content">
-
-          <span class="day-label">Late Morning · Kisite-Mpunguti</span>
-
-          <h3>Snorkeling and Coral Reef Exploration</h3>
-
-          <p>
-            If weather, tides, visibility and park conditions
-            permit, enjoy a snorkeling session at the designated
-            marine area. Discover the underwater environment
-            and look for colourful reef fish and coral formations.
-          </p>
-
-          <p>
-            Snorkeling equipment and guidance should be confirmed
-            with the operator before departure. Follow all safety
-            instructions and use a flotation aid if recommended.
-          </p>
-
-          <p>
-            Visitors who are not comfortable swimming in open
-            water should discuss suitable alternatives with
-            the tour team before booking.
-          </p>
-
-          <div class="day-details">
-            <span>✓ Snorkeling opportunity</span>
-            <span>✓ Reef and fish observation</span>
-            <span>✓ Subject to sea conditions</span>
-          </div>
-
-        </div>
-      </article>
-
-      <!-- WASINI ISLAND -->
-
-      <article class="day-card">
-
-        <div class="day-image">
-          <img
-            src="https://d29bhihuvvyjsm.cloudfront.net/uploads/coral-boardwalk-1755223796.jpg"
-            alt="Raised wooden boardwalk crossing the fossil coral garden on Wasini Island"
-            loading="lazy">
-        </div>
-
-        <div class="day-content">
-
-          <span class="day-label">Afternoon · Wasini Island</span>
-
-          <h3>Island Visit and Coral Garden Boardwalk</h3>
-
-          <p>
-            Continue to Wasini Island for a land-based experience.
-            The island is known for its coral formations, coastal
-            vegetation, mangroves and traditional Swahili community.
-          </p>
-
-          <p>
-            Depending on the package and available time, visit
-            the community-managed coral garden boardwalk.
-            This provides an opportunity to learn about the
-            island's fossil coral landscape and mangrove environment.
-          </p>
-
-          <p>
-            A local guide may explain the area's natural features
-            and the role of community initiatives in welcoming
-            visitors and supporting conservation.
-          </p>
-
-          <div class="day-details">
-            <span>✓ Wasini Island visit</span>
-            <span>✓ Coral garden experience</span>
-            <span>✓ Community-guided option</span>
-          </div>
-
-        </div>
-      </article>
-
-      <!-- LUNCH -->
-
-      <article class="day-card">
-
-        <div class="day-image">
-          <img
-            src="https://cdn.getyourguide.com/img/tour/64742e4780bf5.jpeg/145.jpg"
-            alt="Visitors enjoying a seafood lunch at a traditional Wasini Island restaurant"
-            loading="lazy">
-        </div>
-
-        <div class="day-content">
-
-          <span class="day-label">Lunch · Island Cuisine</span>
-
-          <h3>Enjoy a Swahili-Style Coastal Meal</h3>
-
-          <p>
-            Sit down for a relaxed coastal lunch on Wasini Island.
-            Depending on the restaurant and meal arrangement,
-            the menu may feature seafood, fish, coconut rice,
-            chapati and other Swahili-inspired dishes.
-          </p>
-
-          <p>
-            Vegetarian options and special dietary requirements
-            should be communicated in advance so that suitable
-            arrangements can be checked with the restaurant.
-          </p>
-
-          <p>
-            After lunch, begin the return boat journey to the
-            mainland and continue to your agreed drop-off point
-            in Mombasa or Diani.
-          </p>
-
-          <div class="day-details">
-            <span>✓ Island lunch</span>
-            <span>✓ Return boat transfer</span>
-            <span>✓ Agreed drop-off</span>
-          </div>
-
-        </div>
-      </article>
-
-    </div>
-  </div>
 </section>
 
 <!-- INCLUSIONS -->
 
-<section class="section section-soft">
-  <div class="wrap">
+<section class="section alt" id="inclusions">
+    <div class="wrap">
 
-    <div class="section-heading">
-      <span class="section-kicker">Your Tour Arrangements</span>
-      <h2>What's Included and Excluded?</h2>
-      <p class="lead">
-        The exact package depends on your departure location,
-        group size and selected boat operator. Confirm all
-        services in your written quotation before payment.
-      </p>
+        <div class="wasini-section-heading">
+            <span class="kicker">Your Tour Arrangements</span>
+
+            <h2>What's Included and Excluded?</h2>
+
+            <p class="lead">
+                The exact package depends on your departure location,
+                group size and selected boat operator. Confirm all
+                services in your written quotation before payment.
+            </p>
+        </div>
+
+        <div class="wasini-info-grid">
+
+            <div class="wasini-info-card">
+                <h3>Possible Inclusions</h3>
+
+                <ul>
+                    <li>Boat excursion from the agreed departure point</li>
+                    <li>Dolphin-watching opportunity</li>
+                    <li>Snorkeling activity when conditions permit</li>
+                    <li>Snorkeling equipment if confirmed by the operator</li>
+                    <li>Swahili-style lunch if included in the selected package</li>
+                    <li>Road transfers if included in the quotation</li>
+                    <li>Marine park fees if specifically included</li>
+                </ul>
+            </div>
+
+            <div class="wasini-info-card">
+                <h3>Possible Exclusions</h3>
+
+                <ul>
+                    <li>Personal purchases and souvenirs</li>
+                    <li>Additional drinks or special beverages</li>
+                    <li>Optional activities not listed in the quotation</li>
+                    <li>Personal travel insurance</li>
+                    <li>Tips and gratuities</li>
+                    <li>Additional community activities or entry charges not included</li>
+                    <li>Any service not specifically confirmed as included</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="wasini-note">
+            <strong>Important:</strong>
+            Marine park fees, boat arrangements, snorkeling equipment,
+            lunch, transfers and community activity charges must be
+            itemized in your final quotation. Do not assume that an
+            optional activity or fee is included unless it is stated
+            in your booking confirmation.
+        </div>
+
     </div>
-
-    <div class="info-grid">
-
-      <div class="info-card">
-        <h3>Possible Inclusions</h3>
-        <ul>
-          <li>Boat excursion from the agreed departure point</li>
-          <li>Dolphin-watching opportunity</li>
-          <li>Snorkeling activity when conditions permit</li>
-          <li>Snorkeling equipment if confirmed by the operator</li>
-          <li>Swahili-style lunch if included in the selected package</li>
-          <li>Road transfers if included in the quotation</li>
-          <li>Marine park fees if specifically included</li>
-        </ul>
-      </div>
-
-      <div class="info-card">
-        <h3>Possible Exclusions</h3>
-        <ul>
-          <li>Personal purchases and souvenirs</li>
-          <li>Additional drinks or special beverages</li>
-          <li>Optional activities not listed in the quotation</li>
-          <li>Personal travel insurance</li>
-          <li>Tips and gratuities</li>
-          <li>Additional community activities or entry charges not included</li>
-          <li>Any service not specifically confirmed as included</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="note">
-      <strong>Important:</strong>
-      Marine park fees, boat arrangements, snorkeling equipment,
-      lunch, transfers and community activity charges must be
-      itemized in your final quotation. Do not assume that an
-      optional activity or fee is included unless it is stated
-      in your booking confirmation.
-    </div>
-
-  </div>
 </section>
 
 <!-- RESPONSIBLE TOURISM -->
 
-<section class="section">
-  <div class="wrap">
+<section class="section" id="responsible">
+    <div class="wrap">
 
-    <div class="section-heading">
-      <span class="section-kicker">Travel with Care</span>
-      <h2>Responsible Marine Tourism</h2>
-      <p class="lead">
-        Help protect the marine environment and support
-        responsible tourism practices throughout your visit.
-      </p>
+        <div class="wasini-section-heading">
+            <span class="kicker">Travel with Care</span>
+
+            <h2>Responsible Marine Tourism</h2>
+
+            <p class="lead">
+                Help protect the marine environment and support
+                responsible tourism practices throughout your visit.
+            </p>
+        </div>
+
+        <div class="wasini-responsible-grid">
+
+            <article class="wasini-responsible-card">
+                <h3>Respect Marine Wildlife</h3>
+
+                <p>
+                    Observe dolphins and other marine animals from a
+                    respectful distance. Never chase, touch or feed
+                    wild marine wildlife.
+                </p>
+            </article>
+
+            <article class="wasini-responsible-card">
+                <h3>Protect the Coral Reef</h3>
+
+                <p>
+                    Avoid standing on, touching or removing coral.
+                    Use care when snorkeling and follow your guide's
+                    instructions around the reef.
+                </p>
+            </article>
+
+            <article class="wasini-responsible-card">
+                <h3>Support the Island Community</h3>
+
+                <p>
+                    Respect local customs, ask before photographing
+                    residents and consider supporting community-run
+                    activities during your visit.
+                </p>
+            </article>
+
+        </div>
+
     </div>
-
-    <div class="responsible">
-
-      <article>
-        <h3>Respect Marine Wildlife</h3>
-        <p>
-          Observe dolphins and other marine animals from a
-          respectful distance. Never chase, touch or feed
-          wild marine wildlife.
-        </p>
-      </article>
-
-      <article>
-        <h3>Protect the Coral Reef</h3>
-        <p>
-          Avoid standing on, touching or removing coral.
-          Use care when snorkeling and follow your guide's
-          instructions around the reef.
-        </p>
-      </article>
-
-      <article>
-        <h3>Support the Island Community</h3>
-        <p>
-          Respect local customs, ask before photographing
-          residents and consider supporting community-run
-          activities during your visit.
-        </p>
-      </article>
-
-    </div>
-
-  </div>
 </section>
 
 <!-- TRAVEL INFORMATION -->
 
-<section class="section section-soft">
-  <div class="wrap">
+<section class="section alt" id="information">
+    <div class="wrap">
 
-    <div class="section-heading">
-      <span class="section-kicker">Before You Go</span>
-      <h2>Useful Information for Your Trip</h2>
+        <div class="wasini-section-heading">
+            <span class="kicker">Before You Go</span>
+
+            <h2>Useful Information for Your Trip</h2>
+        </div>
+
+        <div class="wasini-info-grid">
+
+            <div class="wasini-info-card">
+                <h3>What to Bring</h3>
+
+                <ul>
+                    <li>Swimwear and a change of clothes</li>
+                    <li>Light, comfortable clothing</li>
+                    <li>Sun hat and sunglasses</li>
+                    <li>Reef-conscious sun protection</li>
+                    <li>Waterproof bag for personal belongings</li>
+                    <li>Towel and personal toiletries</li>
+                    <li>Personal medication where required</li>
+                    <li>Cash for personal purchases or optional charges</li>
+                </ul>
+            </div>
+
+            <div class="wasini-info-card">
+                <h3>Sea and Safety Conditions</h3>
+
+                <ul>
+                    <li>Boat schedules may change with tides and weather.</li>
+                    <li>Snorkeling depends on sea conditions and visibility.</li>
+                    <li>Dolphin sightings cannot be guaranteed.</li>
+                    <li>Follow the boat crew's safety instructions.</li>
+                    <li>Tell the team about swimming concerns before booking.</li>
+                    <li>Confirm pickup time and location in advance.</li>
+                </ul>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="info-grid">
-
-      <div class="info-card">
-        <h3>What to Bring</h3>
-        <ul>
-          <li>Swimwear and a change of clothes</li>
-          <li>Light, comfortable clothing</li>
-          <li>Sun hat and sunglasses</li>
-          <li>Reef-conscious sun protection</li>
-          <li>Waterproof bag for personal belongings</li>
-          <li>Towel and personal toiletries</li>
-          <li>Personal medication where required</li>
-          <li>Cash for personal purchases or optional charges</li>
-        </ul>
-      </div>
-
-      <div class="info-card">
-        <h3>Sea and Safety Conditions</h3>
-        <ul>
-          <li>Boat schedules may change with tides and weather.</li>
-          <li>Snorkeling depends on sea conditions and visibility.</li>
-          <li>Dolphin sightings cannot be guaranteed.</li>
-          <li>Follow the boat crew's safety instructions.</li>
-          <li>Tell the team about swimming concerns before booking.</li>
-          <li>Confirm pickup time and location in advance.</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
 </section>
 
 <!-- BOOKING -->
 
-<section class="section">
-  <div class="wrap detail-layout">
+<section class="section" id="booking">
+    <div class="wrap wasini-detail-layout">
 
-    <div>
-      <span class="section-kicker">Make This Experience Yours</span>
+        <div>
+            <span class="kicker">Make This Experience Yours</span>
 
-      <h2>Book Your Wasini Island Adventure</h2>
+            <h2>Book Your Wasini Island Adventure</h2>
 
-      <p class="lead">
-        Spend a memorable day discovering the marine environment
-        around Kisite-Mpunguti and experiencing the culture
-        and hospitality of Wasini Island.
-      </p>
+            <p class="lead">
+                Spend a memorable day discovering the marine environment
+                around Kisite-Mpunguti and experiencing the culture
+                and hospitality of Wasini Island.
+            </p>
 
-      <p>
-        Fleypat Adventures can help arrange your excursion
-        from Mombasa or Diani, subject to the selected operator,
-        boat availability and your preferred travel date.
-      </p>
+            <p>
+                Fleypat Adventures can help arrange your excursion
+                from Mombasa or Diani, subject to the selected operator,
+                boat availability and your preferred travel date.
+            </p>
 
-      <p>
-        When making an enquiry, share your travel date, number
-        of adults and children, departure location and whether
-        you would like snorkeling included.
-      </p>
+            <p>
+                When making an enquiry, share your travel date, number
+                of adults and children, departure location and whether
+                you would like snorkeling included.
+            </p>
 
-      <p>
-        The indicative starting price is USD 85 / KES 11,000
-        per person. Your final quotation will confirm the
-        applicable price and exactly what is included.
-      </p>
+            <p>
+                The indicative starting price is USD 85 / KES 11,000
+                per person. Your final quotation will confirm the
+                applicable price and exactly what is included.
+            </p>
 
-      <a class="btn" href="contact.html?tour=wasini-dolphin-snorkeling">
-        Enquire About This Tour
-      </a>
+            <a class="btn btn-gold" href="contact.html?tour=wasini-dolphin-snorkeling">
+                Enquire About This Tour
+            </a>
+        </div>
+
+        <aside class="wasini-side-panel">
+
+            <h3>Tour Overview</h3>
+
+            <div class="wasini-overview-row">
+                <span>Duration</span>
+                <strong>Full Day</strong>
+            </div>
+
+            <div class="wasini-overview-row">
+                <span>Departure Area</span>
+                <strong>Mombasa or Diani</strong>
+            </div>
+
+            <div class="wasini-overview-row">
+                <span>Main Destination</span>
+                <strong>Kisite-Mpunguti and Wasini Island</strong>
+            </div>
+
+            <div class="wasini-overview-row">
+                <span>Experience</span>
+                <strong>Dolphin watching, snorkeling and island visit</strong>
+            </div>
+
+            <div class="wasini-overview-row">
+                <span>Indicative Price</span>
+                <strong>From USD 85 / KES 11,000 per person</strong>
+            </div>
+
+            <a class="btn btn-gold"
+               href="contact.html?tour=wasini-dolphin-snorkeling">
+                Request Availability
+            </a>
+
+            <p class="muted">
+                Final pricing depends on group size, departure location,
+                marine park charges and confirmed inclusions.
+            </p>
+
+        </aside>
+
     </div>
-
-    <aside class="side-panel">
-
-      <h3>Tour Overview</h3>
-
-      <div class="overview-row">
-        <span>Duration</span>
-        <strong>Full Day</strong>
-      </div>
-
-      <div class="overview-row">
-        <span>Departure Area</span>
-        <strong>Mombasa or Diani</strong>
-      </div>
-
-      <div class="overview-row">
-        <span>Main Destination</span>
-        <strong>Kisite-Mpunguti and Wasini Island</strong>
-      </div>
-
-      <div class="overview-row">
-        <span>Experience</span>
-        <strong>Dolphin watching, snorkeling and island visit</strong>
-      </div>
-
-      <div class="overview-row">
-        <span>Indicative Price</span>
-        <strong>From USD 85 / KES 11,000 per person</strong>
-      </div>
-
-      <a class="btn btn-gold" href="contact.html?tour=wasini-dolphin-snorkeling">
-        Request Availability
-      </a>
-
-      <p class="muted">
-        Final pricing depends on group size, departure location,
-        marine park charges and confirmed inclusions.
-      </p>
-
-    </aside>
-
-  </div>
 </section>
 
 <!-- FINAL CTA -->
 
-<section class="wrap cta">
-  <div>
-    <h2>Ready for a Day on the Ocean?</h2>
-    <p>
-      Contact Fleypat Adventures and let us help you arrange
-      your Wasini Island and Kisite-Mpunguti excursion.
-    </p>
-  </div>
+<section class="wrap wasini-cta">
+    <div>
+        <span class="eyebrow">Your Coastal Adventure Awaits</span>
 
-  <a class="btn btn-gold"
-     href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20a%20quotation%20for%20the%20Wasini%20Island%20Dolphin%20and%20Snorkeling%20Tour."
-     target="_blank" rel="noopener">
-    Chat With Our Team
-  </a>
+        <h2>Ready for a Day on the Ocean?</h2>
+
+        <p>
+            Contact Fleypat Adventures and let us help you arrange
+            your Wasini Island and Kisite-Mpunguti excursion.
+        </p>
+    </div>
+
+    <a class="btn btn-gold"
+       href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20a%20quotation%20for%20the%20Wasini%20Island%20Dolphin%20and%20Snorkeling%20Tour."
+       target="_blank" rel="noopener">
+        Chat With Our Team
+    </a>
 </section>
 
 </main>
@@ -1441,82 +1252,103 @@ p{margin:0 0 17px}
 <!-- FOOTER -->
 
 <footer class="footer">
-  <div class="wrap footer-grid">
+    <div class="wrap footer-grid">
 
-    <div>
-      <a class="brand footer-brand" href="index.html">
-        <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
-        <span>FLEYPAT<small>ADVENTURES</small></span>
-      </a>
+        <div>
+            <a class="brand footer-brand" href="index.html">
+                <img src="fleypat-logo.png" alt="Fleypat Adventures">
+            </a>
 
-      <p>
-        Explore more. Experience more. Travel beyond expectations.
-        Your journey starts with us.
-      </p>
+            <p>
+                Explore more. Experience more. Travel beyond expectations.
+                Your journey starts with us.
+            </p>
 
-      <a href="https://www.instagram.com/fleypat_adventures/"
-         target="_blank" rel="noopener">
-        Instagram @fleypat_adventures
-      </a>
+            <a href="https://www.instagram.com/fleypat_adventures/"
+               target="_blank" rel="noopener">
+                Instagram @fleypat_adventures
+            </a>
+        </div>
+
+        <div>
+            <h3>Explore</h3>
+            <a href="safaris.html">Wildlife Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+        </div>
+
+        <div>
+            <h3>Company</h3>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="blog.html">Travel Guides</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+            <a href="https://wa.me/254704261626">WhatsApp our team</a>
+            <span>Mombasa, Kenya</span>
+        </div>
+
     </div>
 
-    <div>
-      <h3>Explore</h3>
-      <a href="safaris.html">Wildlife Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html">Itineraries</a>
+    <div class="wrap foot-bottom">
+        <span>© <span id="year"></span> Fleypat Adventures. All rights reserved.</span>
+        <span>Explore More. Experience More. Travel Beyond Expectations.</span>
     </div>
-
-    <div>
-      <h3>Company</h3>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Our Services</a>
-      <a href="transfers.html">Transfers</a>
-      <a href="partnerships.html">Partnerships</a>
-      <a href="blog.html">Travel Guides</a>
-    </div>
-
-    <div>
-      <h3>Contact</h3>
-      <a href="tel:+254704261626">+254 704 261 626</a>
-      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-      <a href="https://wa.me/254704261626">WhatsApp our team</a>
-      <span>Mombasa, Kenya</span>
-    </div>
-
-  </div>
-
-  <div class="wrap foot-bottom">
-    <span>© <span id="year"></span> Fleypat Adventures. All rights reserved.</span>
-    <span>Explore More. Experience More. Travel Beyond Expectations.</span>
-  </div>
 </footer>
+
+<!-- FLOATING WHATSAPP -->
 
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
    target="_blank"
    rel="noopener">
-  WhatsApp Us
+    WhatsApp Us
 </a>
 
-<script src="script.js"></script>
-
 <script>
+/* FOOTER YEAR */
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const navToggle = document.querySelector('.nav-toggle');
-const navigation = document.querySelector('.nav nav');
+/* MOBILE NAVIGATION */
 
-if (navToggle && navigation) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = navigation.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', isOpen);
-    navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-    navToggle.textContent = isOpen ? '✕' : '☰';
-  });
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+
+if(menuToggle && mainNav){
+
+    menuToggle.addEventListener('click',function(){
+
+        const isOpen = mainNav.classList.toggle('open');
+
+        menuToggle.setAttribute('aria-expanded',isOpen);
+        menuToggle.setAttribute('aria-label',isOpen ? 'Close menu' : 'Open menu');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+
+    });
+
+    mainNav.querySelectorAll('a').forEach(function(link){
+
+        link.addEventListener('click',function(){
+
+            mainNav.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded','false');
+            menuToggle.setAttribute('aria-label','Open menu');
+            menuToggle.textContent = '☰';
+
+        });
+
+    });
+
 }
 </script>
 
