@@ -4,165 +4,534 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Tsavo East &amp; West Safari Guide | Fleypat Adventures</title>
 <meta name="description" content="Explore Tsavo East and Tsavo West National Parks in Kenya. Discover red elephants, Mzima Springs, Shetani Lava Flow, Lugard Falls and unforgettable wildlife safaris with Fleypat Adventures.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#FFF4E8">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
- --tsavo-green:#243c28;
- --tsavo-lime:#a8d832;
- --tsavo-gold:#a97832;
- --tsavo-cream:#fbf7e9;
- --tsavo-text:#39443b;
+/* TSAVO DESTINATION PAGE */
+
+body{
+  font-family:'DM Sans',sans-serif;
 }
-body{font-family:'DM Sans',sans-serif;color:var(--tsavo-text)}
-h1,h2,h3,h4{font-family:'Playfair Display',serif}
+
+h1,h2,h3,h4{
+  font-family:'Playfair Display',serif;
+}
 
 .tsavo-hero{
- min-height:680px;display:flex;align-items:center;position:relative;
- background:linear-gradient(90deg,rgba(20,25,15,.78),rgba(20,25,15,.25)),
- url('https://commons.wikimedia.org/wiki/Special:FilePath/Tsavo%20east%20panorama.jpg?width=2000') center/cover;
- color:white;padding:100px 0 90px;
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  background:
+    linear-gradient(90deg,rgba(45,29,19,.82),rgba(45,29,19,.25)),
+    url('https://commons.wikimedia.org/wiki/Special:FilePath/Tsavo%20east%20panorama.jpg?width=2000') center/cover;
+  color:white;
+  padding:100px 0 90px;
 }
-.tsavo-hero-content{max-width:760px}
-.tsavo-eyebrow,.tsavo-section-label{
- text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:700;
+
+.tsavo-hero-content{
+  max-width:760px;
 }
-.tsavo-hero h1{font-size:clamp(3.2rem,8vw,6.2rem);line-height:1.02;margin:18px 0}
-.tsavo-hero p{font-size:1.12rem;line-height:1.8;max-width:650px}
-.tsavo-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+
+.tsavo-eyebrow,
+.tsavo-section-label{
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:.78rem;
+  font-weight:700;
+}
+
+.tsavo-hero .tsavo-eyebrow{
+  color:#FFD0A5;
+}
+
+.tsavo-hero h1{
+  font-size:clamp(3.2rem,8vw,6.2rem);
+  line-height:1.02;
+  margin:18px 0;
+  color:white;
+}
+
+.tsavo-hero p{
+  font-size:1.12rem;
+  line-height:1.8;
+  max-width:650px;
+  color:rgba(255,255,255,.94);
+}
+
+.tsavo-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.tsavo-actions .btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
 .tsavo-outline-btn{
- display:inline-flex;align-items:center;justify-content:center;
- border:1px solid rgba(255,255,255,.85);color:white;padding:13px 23px;
- border-radius:4px;text-decoration:none;font-weight:700;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.85);
+  color:white;
+  padding:13px 23px;
+  text-decoration:none;
+  font-weight:700;
+  transition:.25s ease;
 }
-.tsavo-intro{padding:90px 0}
+
+.tsavo-outline-btn:hover{
+  background:white;
+  color:#6B4935;
+}
+
+.tsavo-intro{
+  padding:90px 0;
+}
+
 .tsavo-intro-grid{
- display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:55px;
+  align-items:center;
 }
-.tsavo-intro-image{height:470px;overflow:hidden;border-radius:5px}
-.tsavo-intro-image img,.tsavo-card-image img,.tsavo-feature-image img,
-.tsavo-landscape-image img,.tsavo-east-west-image img{
- width:100%;height:100%;object-fit:cover;display:block;
+
+.tsavo-intro-image{
+  height:470px;
+  overflow:hidden;
 }
-.tsavo-intro h2,.tsavo-section-heading h2{
- font-size:clamp(2.1rem,4vw,3.2rem);line-height:1.15;color:var(--tsavo-green);margin:12px 0 20px;
+
+.tsavo-intro-image img,
+.tsavo-card-image img,
+.tsavo-feature-image img,
+.tsavo-landscape-image img,
+.tsavo-east-west-image img,
+.tsavo-park-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
-.tsavo-intro p,.tsavo-section-heading p{line-height:1.85}
-.tsavo-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+
+.tsavo-section-label{
+  color:#B85B20;
+}
+
+.tsavo-intro h2,
+.tsavo-section-heading h2{
+  font-size:clamp(2.1rem,4vw,3.2rem);
+  line-height:1.15;
+  color:#6B4935;
+  margin:12px 0 20px;
+}
+
+.tsavo-intro p,
+.tsavo-section-heading p{
+  line-height:1.85;
+  color:#756052;
+}
+
+.tsavo-tags{
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-top:22px;
+}
+
 .tsavo-tags span{
- background:#f0f3e7;color:var(--tsavo-green);padding:9px 13px;
- border-radius:30px;font-size:.85rem;font-weight:600;
+  background:#F5E6D6;
+  color:#805438;
+  padding:9px 13px;
+  font-size:.85rem;
+  font-weight:600;
 }
-.tsavo-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
-.tsavo-stat{border-left:3px solid var(--tsavo-lime);padding:7px 12px}
-.tsavo-stat strong{display:block;color:var(--tsavo-green);font-size:1rem}
-.tsavo-stat span{font-size:.78rem;color:#6d776d}
 
-.tsavo-experiences{background:var(--tsavo-cream);padding:85px 0}
-.tsavo-section-heading{text-align:center;max-width:760px;margin:0 auto 42px}
-.tsavo-section-heading .tsavo-section-label{color:var(--tsavo-gold)}
-.tsavo-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tsavo-stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:30px;
+}
+
+.tsavo-stat{
+  border-left:3px solid #E8752A;
+  padding:7px 12px;
+}
+
+.tsavo-stat strong{
+  display:block;
+  color:#6B4935;
+  font-size:1rem;
+}
+
+.tsavo-stat span{
+  font-size:.78rem;
+  color:#897264;
+  line-height:1.5;
+}
+
+.tsavo-experiences{
+  background:#FFF4E8;
+  padding:85px 0;
+}
+
+.tsavo-section-heading{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 42px;
+}
+
+.tsavo-section-heading .tsavo-section-label{
+  color:#B85B20;
+}
+
+.tsavo-card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
 .tsavo-card{
- background:white;border-radius:5px;overflow:hidden;
- box-shadow:0 8px 28px rgba(30,50,30,.07);
+  background:white;
+  overflow:hidden;
+  border:1px solid #EAD8C7;
+  box-shadow:0 8px 28px rgba(80,49,29,.07);
 }
-.tsavo-card-image{height:245px;overflow:hidden}
-.tsavo-card-copy{padding:24px}
-.tsavo-card h3{color:var(--tsavo-green);font-size:1.4rem;margin:0 0 10px}
-.tsavo-card p{font-size:.94rem;line-height:1.75;margin:0}
 
-.tsavo-compare{padding:90px 0}
+.tsavo-card-image{
+  height:245px;
+  overflow:hidden;
+}
+
+.tsavo-card-image img{
+  transition:transform .5s ease;
+}
+
+.tsavo-card:hover .tsavo-card-image img{
+  transform:scale(1.04);
+}
+
+.tsavo-card-copy{
+  padding:24px;
+}
+
+.tsavo-card h3{
+  color:#6B4935;
+  font-size:1.4rem;
+  margin:0 0 10px;
+}
+
+.tsavo-card p{
+  font-size:.94rem;
+  line-height:1.75;
+  margin:0;
+  color:#756052;
+}
+
+.tsavo-compare{
+  padding:90px 0;
+}
+
 .tsavo-compare-grid{
- display:grid;grid-template-columns:1fr 1fr;gap:28px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
 }
-.tsavo-park-card{border:1px solid #e8e8df;border-radius:5px;overflow:hidden}
-.tsavo-park-image{height:300px;overflow:hidden}
-.tsavo-park-copy{padding:28px}
-.tsavo-park-copy h3{font-size:1.7rem;color:var(--tsavo-green);margin:0 0 12px}
-.tsavo-park-copy p{line-height:1.8}
-.tsavo-park-copy ul{padding-left:20px;line-height:2}
+
+.tsavo-park-card{
+  border:1px solid #EAD8C7;
+  overflow:hidden;
+  background:white;
+}
+
+.tsavo-park-image{
+  height:300px;
+  overflow:hidden;
+}
+
+.tsavo-park-copy{
+  padding:28px;
+}
+
+.tsavo-park-copy h3{
+  font-size:1.7rem;
+  color:#6B4935;
+  margin:0 0 12px;
+}
+
+.tsavo-park-copy p{
+  line-height:1.8;
+  color:#756052;
+}
+
+.tsavo-park-copy ul{
+  padding-left:20px;
+  line-height:2;
+  color:#756052;
+}
+
+.tsavo-park-copy li::marker{
+  color:#E8752A;
+}
+
 .tsavo-park-label{
- display:inline-block;background:#f0f3e7;color:var(--tsavo-green);
- padding:7px 12px;border-radius:30px;font-size:.78rem;font-weight:700;
- margin-bottom:13px;
+  display:inline-block;
+  background:#F5E6D6;
+  color:#805438;
+  padding:7px 12px;
+  font-size:.78rem;
+  font-weight:700;
+  margin-bottom:13px;
 }
 
-.tsavo-feature{padding:85px 0;background:#f5f3e9}
+.tsavo-feature{
+  padding:85px 0;
+  background:#F5E6D6;
+}
+
 .tsavo-feature-grid{
- display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center;
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:48px;
+  align-items:center;
 }
-.tsavo-feature-image{height:450px;overflow:hidden;border-radius:5px}
-.tsavo-feature-copy h2,.tsavo-landscape-copy h2,.tsavo-route-copy h2{
- font-size:clamp(2rem,4vw,3rem);line-height:1.15;color:var(--tsavo-green);
-}
-.tsavo-feature-copy p,.tsavo-landscape-copy p,.tsavo-route-copy p{line-height:1.85}
-.tsavo-feature-list{padding-left:20px;line-height:2}
 
-.tsavo-landscape{padding:85px 0}
+.tsavo-feature-image{
+  height:450px;
+  overflow:hidden;
+}
+
+.tsavo-feature-copy h2,
+.tsavo-landscape-copy h2,
+.tsavo-route-copy h2{
+  font-size:clamp(2rem,4vw,3rem);
+  line-height:1.15;
+  color:#6B4935;
+}
+
+.tsavo-feature-copy p,
+.tsavo-landscape-copy p,
+.tsavo-route-copy p{
+  line-height:1.85;
+  color:#756052;
+}
+
+.tsavo-feature-list{
+  padding-left:20px;
+  line-height:2;
+  color:#756052;
+}
+
+.tsavo-feature-list li::marker{
+  color:#E8752A;
+}
+
+.tsavo-landscape{
+  padding:85px 0;
+}
+
 .tsavo-landscape-grid{
- display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
 }
-.tsavo-landscape-image{height:430px;overflow:hidden;border-radius:5px}
 
-.tsavo-route{background:var(--tsavo-cream);padding:85px 0}
+.tsavo-landscape-image{
+  height:430px;
+  overflow:hidden;
+}
+
+.tsavo-route{
+  background:#FFF4E8;
+  padding:85px 0;
+}
+
 .tsavo-route-grid{
- display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;
-}
-.tsavo-east-west-image{height:420px;overflow:hidden;border-radius:5px}
-.tsavo-route-note{
- background:white;padding:22px;border-left:4px solid var(--tsavo-gold);
- margin-top:22px;line-height:1.7;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
 }
 
-.tsavo-planning{background:var(--tsavo-green);color:white;padding:85px 0}
-.tsavo-planning h2{font-size:clamp(2rem,4vw,3rem);color:white}
-.tsavo-planning .tsavo-section-label{color:var(--tsavo-lime)}
-.tsavo-planning-intro{max-width:760px;line-height:1.8}
+.tsavo-east-west-image{
+  height:420px;
+  overflow:hidden;
+}
+
+.tsavo-route-note{
+  background:white;
+  padding:22px;
+  border-left:4px solid #B85B20;
+  margin-top:22px;
+  line-height:1.7;
+  color:#6B4935;
+}
+
+.tsavo-planning{
+  background:#6B4935;
+  color:white;
+  padding:85px 0;
+}
+
+.tsavo-planning h2{
+  font-size:clamp(2rem,4vw,3rem);
+  color:white;
+}
+
+.tsavo-planning .tsavo-section-label{
+  color:#F5B27C;
+}
+
+.tsavo-planning-intro{
+  max-width:760px;
+  line-height:1.8;
+  color:rgba(255,255,255,.85);
+}
+
 .tsavo-planning-grid{
- display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:35px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:35px;
 }
+
 .tsavo-planning-card{
- background:rgba(255,255,255,.08);padding:25px;border-radius:5px;
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.15);
+  padding:25px;
 }
-.tsavo-planning-card h3{color:var(--tsavo-lime);font-size:1.25rem}
-.tsavo-planning-card p{line-height:1.75;color:rgba(255,255,255,.87);font-size:.93rem}
+
+.tsavo-planning-card h3{
+  color:#F5B27C;
+  font-size:1.25rem;
+}
+
+.tsavo-planning-card p{
+  line-height:1.75;
+  color:rgba(255,255,255,.87);
+  font-size:.93rem;
+  margin-bottom:0;
+}
 
 .tsavo-cta{
- margin:75px auto;background:var(--tsavo-cream);padding:45px;border-radius:5px;
- display:flex;align-items:center;justify-content:space-between;gap:25px;
+  margin:75px auto;
+  background:#FFF4E8;
+  border-left:5px solid #E8752A;
+  padding:45px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
 }
-.tsavo-cta h2{font-size:2rem;color:var(--tsavo-green);margin:0 0 10px}
-.tsavo-cta p{margin:0;line-height:1.7}
-.tsavo-cta .btn{flex-shrink:0}
+
+.tsavo-cta h2{
+  font-size:2rem;
+  color:#6B4935;
+  margin:0 0 10px;
+}
+
+.tsavo-cta p{
+  margin:0;
+  line-height:1.7;
+  color:#756052;
+}
+
+.tsavo-cta .btn{
+  flex-shrink:0;
+}
 
 @media(max-width:900px){
- .tsavo-hero{min-height:570px}
- .tsavo-intro-grid,.tsavo-feature-grid,.tsavo-landscape-grid,
- .tsavo-route-grid{grid-template-columns:1fr;gap:30px}
- .tsavo-card-grid{grid-template-columns:repeat(2,1fr)}
- .tsavo-planning-grid{grid-template-columns:1fr 1fr}
- .tsavo-intro-image,.tsavo-feature-image,.tsavo-landscape-image,
- .tsavo-east-west-image{height:380px}
+  .tsavo-hero{
+    min-height:570px;
+  }
+
+  .tsavo-intro-grid,
+  .tsavo-feature-grid,
+  .tsavo-landscape-grid,
+  .tsavo-route-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .tsavo-card-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .tsavo-planning-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .tsavo-intro-image,
+  .tsavo-feature-image,
+  .tsavo-landscape-image,
+  .tsavo-east-west-image{
+    height:380px;
+  }
 }
+
 @media(max-width:600px){
- .tsavo-hero{min-height:530px;padding:80px 0}
- .tsavo-hero h1{font-size:3.2rem}
- .tsavo-card-grid,.tsavo-compare-grid,.tsavo-planning-grid{grid-template-columns:1fr}
- .tsavo-stats{grid-template-columns:1fr}
- .tsavo-intro,.tsavo-experiences,.tsavo-compare,.tsavo-feature,
- .tsavo-landscape,.tsavo-route,.tsavo-planning{padding:60px 0}
- .tsavo-intro-image,.tsavo-feature-image,.tsavo-landscape-image,
- .tsavo-east-west-image{height:290px}
- .tsavo-park-image{height:240px}
- .tsavo-cta{padding:28px;display:block}
- .tsavo-cta .btn{margin-top:22px;display:inline-block}
+  .tsavo-hero{
+    min-height:530px;
+    padding:80px 0;
+  }
+
+  .tsavo-hero h1{
+    font-size:3.2rem;
+  }
+
+  .tsavo-card-grid,
+  .tsavo-compare-grid,
+  .tsavo-planning-grid{
+    grid-template-columns:1fr;
+  }
+
+  .tsavo-stats{
+    grid-template-columns:1fr;
+  }
+
+  .tsavo-intro,
+  .tsavo-experiences,
+  .tsavo-compare,
+  .tsavo-feature,
+  .tsavo-landscape,
+  .tsavo-route,
+  .tsavo-planning{
+    padding:60px 0;
+  }
+
+  .tsavo-intro-image,
+  .tsavo-feature-image,
+  .tsavo-landscape-image,
+  .tsavo-east-west-image{
+    height:290px;
+  }
+
+  .tsavo-park-image{
+    height:240px;
+  }
+
+  .tsavo-cta{
+    padding:28px;
+    display:block;
+  }
+
+  .tsavo-cta .btn{
+    margin-top:22px;
+    display:inline-block;
+  }
 }
 </style>
 </head>
@@ -170,320 +539,573 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif}
 <body>
 
 <div class="topline">
- <div class="wrap top-inner">
-  <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-  <span><a href="tel:+254704261626">+254 704 261 626</a> · <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a></span>
- </div>
+  <div class="wrap top-inner">
+    <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+    <span>
+      <a href="tel:+254704261626">+254 704 261 626</a> ·
+      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+    </span>
+  </div>
 </div>
 
 <header class="header">
- <div class="wrap nav">
-  <a class="brand" href="index.html">
-   <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-   <span>FLEYPAT<small>ADVENTURES</small></span>
-  </a>
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-  <nav>
-   <a href="index.html">Home</a>
-   <a href="about.html">About</a>
-   <a href="safaris.html">Safaris</a>
-   <a href="marine-tours.html">Marine Tours</a>
-   <a href="day-trips.html">Day Trips</a>
-   <a href="beach-holidays.html">Beach Holidays</a>
-   <a href="honeymoon.html">Honeymoons</a>
-   <a href="destinations.html" class="active">Destinations</a>
-   <a href="itineraries.html">Itineraries</a>
-   <a href="services.html">Services</a>
-   <a href="transfers.html">Transfers</a>
-   <a href="blog.html">Blog</a>
-   <a href="partnerships.html">Partnerships</a>
-   <a href="contact.html">Contact</a>
-   <a class="nav-book" href="contact.html">Book Now</a>
-  </nav>
- </div>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+      <span>FLEYPAT<small>ADVENTURES</small></span>
+    </a>
+
+    <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="safaris.html">Safaris</a>
+      <a href="marine-tours.html">Marine Tours</a>
+      <a href="day-trips.html">Day Trips</a>
+      <a href="beach-holidays.html">Beach Holidays</a>
+      <a href="honeymoon.html">Honeymoons</a>
+      <a href="destinations.html" class="active">Destinations</a>
+      <a href="itineraries.html">Itineraries</a>
+      <a href="services.html">Services</a>
+      <a href="transfers.html">Transfers</a>
+      <a href="blog.html">Blog</a>
+      <a href="partnerships.html">Partnerships</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-book" href="contact.html">Book Now</a>
+    </nav>
+  </div>
 </header>
 
 <main>
 
 <section class="tsavo-hero">
- <div class="wrap tsavo-hero-content">
-  <span class="tsavo-eyebrow">Kenya's vast wilderness</span>
-  <h1>Discover<br>Tsavo East &amp; West</h1>
-  <p>Explore sweeping savannahs, red-earth landscapes, remarkable wildlife and the natural wonders of two of Kenya's most iconic national parks.</p>
-  <div class="tsavo-actions">
-   <a class="btn" href="contact.html?destination=tsavo">Plan Your Tsavo Safari</a>
-   <a class="tsavo-outline-btn" href="#experiences">Explore Experiences</a>
+  <div class="wrap tsavo-hero-content">
+    <span class="tsavo-eyebrow">Kenya's vast wilderness</span>
+    <h1>Discover<br>Tsavo East &amp; West</h1>
+    <p>
+      Explore sweeping savannahs, red-earth landscapes, remarkable
+      wildlife and the natural wonders of two of Kenya's most iconic
+      national parks.
+    </p>
+
+    <div class="tsavo-actions">
+      <a class="btn" href="contact.html?destination=tsavo">Plan Your Tsavo Safari</a>
+      <a class="tsavo-outline-btn" href="#experiences">Explore Experiences</a>
+    </div>
   </div>
- </div>
 </section>
 
 <section class="tsavo-intro">
- <div class="wrap tsavo-intro-grid">
-  <div class="tsavo-intro-image">
-   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Majestic%20red%20elephant%20of%20Tsavo%20East%20%285232098119%29.jpg?width=1400" alt="Red-dusted elephant in Tsavo East National Park" loading="lazy">
+  <div class="wrap tsavo-intro-grid">
+
+    <div class="tsavo-intro-image">
+      <img
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Majestic%20red%20elephant%20of%20Tsavo%20East%20%285232098119%29.jpg?width=1400"
+        alt="Red-dusted elephant in Tsavo East National Park"
+        loading="lazy">
+    </div>
+
+    <div>
+      <span class="tsavo-section-label">Welcome to Tsavo</span>
+      <h2>Two parks. One extraordinary wilderness.</h2>
+
+      <p>
+        Tsavo East and Tsavo West form part of one of Kenya's largest
+        protected wilderness landscapes. Together, they offer varied
+        scenery, diverse habitats and rewarding wildlife experiences.
+      </p>
+
+      <p>
+        Tsavo East is known for its open plains, red soil and elephants
+        that often appear dusted in the park's distinctive red earth.
+        Tsavo West has a more varied landscape, with rocky outcrops,
+        volcanic features, springs and wooded areas.
+      </p>
+
+      <p>
+        Whether you are travelling from Nairobi or the Kenyan coast,
+        Tsavo can be explored as a short safari or as part of a longer
+        journey through Kenya.
+      </p>
+
+      <div class="tsavo-tags">
+        <span>Red elephants</span>
+        <span>Wildlife safaris</span>
+        <span>Scenic landscapes</span>
+        <span>Multi-day journeys</span>
+      </div>
+
+      <div class="tsavo-stats">
+        <div class="tsavo-stat">
+          <strong>Tsavo East</strong>
+          <span>Open plains and red earth</span>
+        </div>
+
+        <div class="tsavo-stat">
+          <strong>Tsavo West</strong>
+          <span>Springs and volcanic scenery</span>
+        </div>
+
+        <div class="tsavo-stat">
+          <strong>Wildlife</strong>
+          <span>Rich and varied habitats</span>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div>
-   <span class="tsavo-section-label">Welcome to Tsavo</span>
-   <h2>Two parks. One extraordinary wilderness.</h2>
-   <p>Tsavo East and Tsavo West form part of one of Kenya's largest protected wilderness landscapes. Together, they offer varied scenery, diverse habitats and rewarding wildlife experiences.</p>
-   <p>Tsavo East is known for its open plains, red soil and elephants that often appear dusted in the park's distinctive red earth. Tsavo West has a more varied landscape, with rocky outcrops, volcanic features, springs and wooded areas.</p>
-   <p>Whether you are travelling from Nairobi or the Kenyan coast, Tsavo can be explored as a short safari or as part of a longer journey through Kenya.</p>
-   <div class="tsavo-tags">
-    <span>Red elephants</span>
-    <span>Wildlife safaris</span>
-    <span>Scenic landscapes</span>
-    <span>Multi-day journeys</span>
-   </div>
-   <div class="tsavo-stats">
-    <div class="tsavo-stat"><strong>Tsavo East</strong><span>Open plains and red earth</span></div>
-    <div class="tsavo-stat"><strong>Tsavo West</strong><span>Springs and volcanic scenery</span></div>
-    <div class="tsavo-stat"><strong>Wildlife</strong><span>Rich and varied habitats</span></div>
-   </div>
-  </div>
- </div>
 </section>
 
 <section class="tsavo-experiences" id="experiences">
- <div class="wrap">
-  <div class="tsavo-section-heading">
-   <span class="tsavo-section-label">Discover the wilderness</span>
-   <h2>Experiences that make Tsavo special</h2>
-   <p>From large elephant herds to unusual geological features, Tsavo offers a different safari atmosphere from Kenya's other wildlife destinations.</p>
+  <div class="wrap">
+
+    <div class="tsavo-section-heading">
+      <span class="tsavo-section-label">Discover the wilderness</span>
+      <h2>Experiences that make Tsavo special</h2>
+      <p>
+        From large elephant herds to unusual geological features,
+        Tsavo offers a different safari atmosphere from Kenya's
+        other wildlife destinations.
+      </p>
+    </div>
+
+    <div class="tsavo-card-grid">
+
+      <article class="tsavo-card">
+        <div class="tsavo-card-image">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Tsavo%20West%20NP.%20Elephants.jpg?width=1000"
+            alt="Elephants in Tsavo West National Park"
+            loading="lazy">
+        </div>
+
+        <div class="tsavo-card-copy">
+          <h3>Elephant Encounters</h3>
+          <p>
+            Tsavo is famous for its elephant populations. During
+            game drives, you may see family groups and large bulls
+            moving through the bush, feeding or gathering around
+            water sources.
+          </p>
+        </div>
+      </article>
+
+      <article class="tsavo-card">
+        <div class="tsavo-card-image">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Mzima%20Springs%20in%20Kenya%2001.jpg?width=1000"
+            alt="Clear water and lush vegetation at Mzima Springs in Tsavo West"
+            loading="lazy">
+        </div>
+
+        <div class="tsavo-card-copy">
+          <h3>Mzima Springs</h3>
+          <p>
+            Discover one of Tsavo West's best-known natural
+            attractions. Mzima Springs is a freshwater oasis fed
+            by underground water, with clear pools and lush
+            vegetation.
+          </p>
+        </div>
+      </article>
+
+      <article class="tsavo-card">
+        <div class="tsavo-card-image">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Shetani%20Lava%20Flow%20in%20Tsavo%20West%20National%20Park%20in%20Kenya.jpg?width=1000"
+            alt="Dark volcanic rock formations at Shetani Lava Flow in Tsavo West"
+            loading="lazy">
+        </div>
+
+        <div class="tsavo-card-copy">
+          <h3>Shetani Lava Flow</h3>
+          <p>
+            Explore an unusual volcanic landscape formed by ancient
+            lava flows. The dark rock formations create a striking
+            contrast with the surrounding bush and open scenery.
+          </p>
+        </div>
+      </article>
+
+    </div>
   </div>
-
-  <div class="tsavo-card-grid">
-   <article class="tsavo-card">
-    <div class="tsavo-card-image">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tsavo%20West%20NP.%20Elephants.jpg?width=1000" alt="Elephants in Tsavo West National Park" loading="lazy">
-    </div>
-    <div class="tsavo-card-copy">
-     <h3>Elephant Encounters</h3>
-     <p>Tsavo is famous for its elephant populations. During game drives, you may see family groups and large bulls moving through the bush, feeding or gathering around water sources.</p>
-    </div>
-   </article>
-
-   <article class="tsavo-card">
-    <div class="tsavo-card-image">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mzima%20Springs%20in%20Kenya%2001.jpg?width=1000" alt="Clear water and lush vegetation at Mzima Springs in Tsavo West" loading="lazy">
-    </div>
-    <div class="tsavo-card-copy">
-     <h3>Mzima Springs</h3>
-     <p>Discover one of Tsavo West's best-known natural attractions. Mzima Springs is a freshwater oasis fed by underground water, with clear pools and lush vegetation.</p>
-    </div>
-   </article>
-
-   <article class="tsavo-card">
-    <div class="tsavo-card-image">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shetani%20Lava%20Flow%20in%20Tsavo%20West%20National%20Park%20in%20Kenya.jpg?width=1000" alt="Dark volcanic rock formations at Shetani Lava Flow in Tsavo West" loading="lazy">
-    </div>
-    <div class="tsavo-card-copy">
-     <h3>Shetani Lava Flow</h3>
-     <p>Explore an unusual volcanic landscape formed by ancient lava flows. The dark rock formations create a striking contrast with the surrounding bush and open scenery.</p>
-    </div>
-   </article>
-  </div>
- </div>
 </section>
 
 <section class="tsavo-compare">
- <div class="wrap">
-  <div class="tsavo-section-heading">
-   <span class="tsavo-section-label">Choose your safari experience</span>
-   <h2>Tsavo East or Tsavo West?</h2>
-   <p>Both parks offer rewarding wildlife experiences, but their landscapes and signature attractions are different.</p>
-  </div>
+  <div class="wrap">
 
-  <div class="tsavo-compare-grid">
-   <article class="tsavo-park-card">
-    <div class="tsavo-park-image">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Red%20roads%20of%20Tsavo%20East.jpeg?width=1200" alt="Red-earth road and open landscape in Tsavo East" loading="lazy">
+    <div class="tsavo-section-heading">
+      <span class="tsavo-section-label">Choose your safari experience</span>
+      <h2>Tsavo East or Tsavo West?</h2>
+      <p>
+        Both parks offer rewarding wildlife experiences, but their
+        landscapes and signature attractions are different.
+      </p>
     </div>
-    <div class="tsavo-park-copy">
-     <span class="tsavo-park-label">The open wilderness</span>
-     <h3>Tsavo East National Park</h3>
-     <p>Tsavo East is recognised for its broad open spaces, semi-arid bushland, red soil and large elephant herds. Its expansive scenery creates a classic safari atmosphere.</p>
-     <ul>
-      <li>Red-dusted elephants</li>
-      <li>Open savannah and bushland</li>
-      <li>Galana River and Aruba Dam area</li>
-      <li>Lugard Falls and Mudanda Rock</li>
-     </ul>
-    </div>
-   </article>
 
-   <article class="tsavo-park-card">
-    <div class="tsavo-park-image">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tsavo%20West%20National%20Park%20sunset.jpg?width=1200" alt="Sunset landscape in Tsavo West National Park" loading="lazy">
+    <div class="tsavo-compare-grid">
+
+      <article class="tsavo-park-card">
+        <div class="tsavo-park-image">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Red%20roads%20of%20Tsavo%20East.jpeg?width=1200"
+            alt="Red-earth road and open landscape in Tsavo East"
+            loading="lazy">
+        </div>
+
+        <div class="tsavo-park-copy">
+          <span class="tsavo-park-label">The open wilderness</span>
+          <h3>Tsavo East National Park</h3>
+
+          <p>
+            Tsavo East is recognised for its broad open spaces,
+            semi-arid bushland, red soil and large elephant herds.
+            Its expansive scenery creates a classic safari atmosphere.
+          </p>
+
+          <ul>
+            <li>Red-dusted elephants</li>
+            <li>Open savannah and bushland</li>
+            <li>Galana River and Aruba Dam area</li>
+            <li>Lugard Falls and Mudanda Rock</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tsavo-park-card">
+        <div class="tsavo-park-image">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Tsavo%20West%20National%20Park%20sunset.jpg?width=1200"
+            alt="Sunset landscape in Tsavo West National Park"
+            loading="lazy">
+        </div>
+
+        <div class="tsavo-park-copy">
+          <span class="tsavo-park-label">The scenic wilderness</span>
+          <h3>Tsavo West National Park</h3>
+
+          <p>
+            Tsavo West has a more varied landscape, with rocky
+            hills, volcanic formations, natural springs and patches
+            of lush vegetation. It is especially known for
+            Mzima Springs.
+          </p>
+
+          <ul>
+            <li>Mzima Springs</li>
+            <li>Shetani Lava Flow</li>
+            <li>Rocky hills and volcanic scenery</li>
+            <li>Ngulia area and scenic viewpoints</li>
+          </ul>
+        </div>
+      </article>
+
     </div>
-    <div class="tsavo-park-copy">
-     <span class="tsavo-park-label">The scenic wilderness</span>
-     <h3>Tsavo West National Park</h3>
-     <p>Tsavo West has a more varied landscape, with rocky hills, volcanic formations, natural springs and patches of lush vegetation. It is especially known for Mzima Springs.</p>
-     <ul>
-      <li>Mzima Springs</li>
-      <li>Shetani Lava Flow</li>
-      <li>Rocky hills and volcanic scenery</li>
-      <li>Ngulia area and scenic viewpoints</li>
-     </ul>
-    </div>
-   </article>
   </div>
- </div>
 </section>
 
 <section class="tsavo-feature">
- <div class="wrap tsavo-feature-grid">
-  <div class="tsavo-feature-copy">
-   <span class="tsavo-section-label">A natural landmark</span>
-   <h2>Explore Mudanda Rock</h2>
-   <p>Mudanda Rock is a distinctive natural rock formation in Tsavo East. Its elevated position provides a view across the surrounding landscape and a perspective on the park's vast wilderness.</p>
-   <p>The natural dam below the rock can attract wildlife, particularly when water is scarce. Depending on the season and conditions, visitors may have opportunities to observe animals gathering in the area.</p>
-   <ul class="tsavo-feature-list">
-    <li>Distinctive rock formations</li>
-    <li>Views across the surrounding bushland</li>
-    <li>Potential wildlife viewing near the water</li>
-    <li>A memorable stop during a Tsavo East safari</li>
-   </ul>
+  <div class="wrap tsavo-feature-grid">
+
+    <div class="tsavo-feature-copy">
+      <span class="tsavo-section-label">A natural landmark</span>
+      <h2>Explore Mudanda Rock</h2>
+
+      <p>
+        Mudanda Rock is a distinctive natural rock formation in
+        Tsavo East. Its elevated position provides a view across
+        the surrounding landscape and a perspective on the park's
+        vast wilderness.
+      </p>
+
+      <p>
+        The natural dam below the rock can attract wildlife,
+        particularly when water is scarce. Depending on the season
+        and conditions, visitors may have opportunities to observe
+        animals gathering in the area.
+      </p>
+
+      <ul class="tsavo-feature-list">
+        <li>Distinctive rock formations</li>
+        <li>Views across the surrounding bushland</li>
+        <li>Potential wildlife viewing near the water</li>
+        <li>A memorable stop during a Tsavo East safari</li>
+      </ul>
+    </div>
+
+    <div class="tsavo-feature-image">
+      <img
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Mudanda%20Rock%20in%20Tsavo%20East%20National%20Park.jpg?width=1200"
+        alt="Mudanda Rock in Tsavo East National Park"
+        loading="lazy">
+    </div>
+
   </div>
-  <div class="tsavo-feature-image">
-   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mudanda%20Rock%20in%20Tsavo%20East%20National%20Park.jpg?width=1200" alt="Mudanda Rock in Tsavo East National Park" loading="lazy">
-  </div>
- </div>
 </section>
 
 <section class="tsavo-landscape">
- <div class="wrap tsavo-landscape-grid">
-  <div class="tsavo-landscape-image">
-   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Voi%20River%20towards%20the%20east%20and%20the%20Aruba%20Dam%20in%20the%20Tsavo%20East%20National%20Park%2C%20Kenya.jpg?width=1200" alt="Voi River and Aruba Dam landscape in Tsavo East" loading="lazy">
+  <div class="wrap tsavo-landscape-grid">
+
+    <div class="tsavo-landscape-image">
+      <img
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Voi%20River%20towards%20the%20east%20and%20the%20Aruba%20Dam%20in%20the%20Tsavo%20East%20National%20Park%2C%20Kenya.jpg?width=1200"
+        alt="Voi River and Aruba Dam landscape in Tsavo East"
+        loading="lazy">
+    </div>
+
+    <div class="tsavo-landscape-copy">
+      <span class="tsavo-section-label">Water and wilderness</span>
+      <h2>Discover the Galana River and Aruba Dam</h2>
+
+      <p>
+        The Galana River is a major feature of Tsavo East, cutting
+        through the dry landscape and supporting wildlife along
+        its course. Its surrounding scenery offers a different
+        perspective on the park's ecosystems.
+      </p>
+
+      <p>
+        Aruba Dam is another recognised water feature in Tsavo East.
+        Water sources can attract wildlife, making the surrounding
+        areas interesting places to explore during a game drive.
+      </p>
+
+      <p>
+        Wildlife activity changes with rainfall, water availability
+        and season, so sightings are never guaranteed.
+      </p>
+    </div>
+
   </div>
-  <div class="tsavo-landscape-copy">
-   <span class="tsavo-section-label">Water and wilderness</span>
-   <h2>Discover the Galana River and Aruba Dam</h2>
-   <p>The Galana River is a major feature of Tsavo East, cutting through the dry landscape and supporting wildlife along its course. Its surrounding scenery offers a different perspective on the park's ecosystems.</p>
-   <p>Aruba Dam is another recognised water feature in Tsavo East. Water sources can attract wildlife, making the surrounding areas interesting places to explore during a game drive.</p>
-   <p>Wildlife activity changes with rainfall, water availability and season, so sightings are never guaranteed.</p>
-  </div>
- </div>
 </section>
 
 <section class="tsavo-route">
- <div class="wrap tsavo-route-grid">
-  <div class="tsavo-route-copy">
-   <span class="tsavo-section-label">Combine the parks</span>
-   <h2>Experience both Tsavo East and Tsavo West</h2>
-   <p>A combined safari can give you a broader appreciation of Tsavo's landscapes. You can experience the open plains and red-earth scenery of Tsavo East before exploring the springs, volcanic features and varied terrain of Tsavo West.</p>
-   <p>The best route depends on your starting point, available days, accommodation choices and the current road and park access arrangements. A multi-day itinerary can also connect Tsavo with Amboseli or the Kenyan coast.</p>
-   <div class="tsavo-route-note">
-    <strong>Planning tip:</strong> Tsavo East and Tsavo West are separate national parks. A combined itinerary needs to account for road transfers, park entry arrangements and the time required to move between them.
-   </div>
+  <div class="wrap tsavo-route-grid">
+
+    <div class="tsavo-route-copy">
+      <span class="tsavo-section-label">Combine the parks</span>
+      <h2>Experience both Tsavo East and Tsavo West</h2>
+
+      <p>
+        A combined safari can give you a broader appreciation of
+        Tsavo's landscapes. You can experience the open plains and
+        red-earth scenery of Tsavo East before exploring the springs,
+        volcanic features and varied terrain of Tsavo West.
+      </p>
+
+      <p>
+        The best route depends on your starting point, available
+        days, accommodation choices and the current road and park
+        access arrangements. A multi-day itinerary can also connect
+        Tsavo with Amboseli or the Kenyan coast.
+      </p>
+
+      <div class="tsavo-route-note">
+        <strong>Planning tip:</strong> Tsavo East and Tsavo West are
+        separate national parks. A combined itinerary needs to
+        account for road transfers, park entry arrangements and
+        the time required to move between them.
+      </div>
+    </div>
+
+    <div class="tsavo-east-west-image">
+      <img
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Chyulu%20Hills%20and%20Shetani%20Lava%20Flow%20in%20Kenya%2001.jpg?width=1200"
+        alt="Chyulu Hills and volcanic landscape near Tsavo West"
+        loading="lazy">
+    </div>
+
   </div>
-  <div class="tsavo-east-west-image">
-   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chyulu%20Hills%20and%20Shetani%20Lava%20Flow%20in%20Kenya%2001.jpg?width=1200" alt="Chyulu Hills and volcanic landscape near Tsavo West" loading="lazy">
-  </div>
- </div>
 </section>
 
 <section class="tsavo-planning">
- <div class="wrap">
-  <span class="tsavo-section-label">Prepare for your journey</span>
-  <h2>Planning your Tsavo safari</h2>
-  <p class="tsavo-planning-intro">Your preferred park, travel dates, starting point and accommodation style will help determine the best safari route. Fleypat Adventures can help you plan a private or group journey based on your interests.</p>
+  <div class="wrap">
 
-  <div class="tsavo-planning-grid">
-   <article class="tsavo-planning-card">
-    <h3>When to Visit</h3>
-    <p>Tsavo can be visited throughout the year. Dry periods may make wildlife easier to spot around water sources, while wetter months can bring greener landscapes. Conditions and wildlife activity vary.</p>
-   </article>
+    <span class="tsavo-section-label">Prepare for your journey</span>
+    <h2>Planning your Tsavo safari</h2>
 
-   <article class="tsavo-planning-card">
-    <h3>Getting There</h3>
-    <p>Tsavo is accessible by road from Nairobi and the Kenyan coast. The most suitable entry gate and route depend on whether you are visiting East, West or both parks.</p>
-   </article>
+    <p class="tsavo-planning-intro">
+      Your preferred park, travel dates, starting point and
+      accommodation style will help determine the best safari route.
+      Fleypat Adventures can help you plan a private or group journey
+      based on your interests.
+    </p>
 
-   <article class="tsavo-planning-card">
-    <h3>Where to Stay</h3>
-    <p>Accommodation options include safari lodges, tented camps and other properties in and around the parks. Location matters when planning game drives and transfers.</p>
-   </article>
+    <div class="tsavo-planning-grid">
 
-   <article class="tsavo-planning-card">
-    <h3>How Long to Stay</h3>
-    <p>A short safari can focus on one park. A combined East and West experience usually needs more time to allow for transfers, game drives and visits to key attractions.</p>
-   </article>
+      <article class="tsavo-planning-card">
+        <h3>When to Visit</h3>
+        <p>
+          Tsavo can be visited throughout the year. Dry periods may
+          make wildlife easier to spot around water sources, while
+          wetter months can bring greener landscapes. Conditions
+          and wildlife activity vary.
+        </p>
+      </article>
 
-   <article class="tsavo-planning-card">
-    <h3>What to Pack</h3>
-    <p>Bring comfortable neutral-coloured clothing, a hat, sunscreen, comfortable shoes, binoculars and a camera. A light jacket can be useful during early-morning drives.</p>
-   </article>
+      <article class="tsavo-planning-card">
+        <h3>Getting There</h3>
+        <p>
+          Tsavo is accessible by road from Nairobi and the Kenyan
+          coast. The most suitable entry gate and route depend on
+          whether you are visiting East, West or both parks.
+        </p>
+      </article>
 
-   <article class="tsavo-planning-card">
-    <h3>Park Fees and Rules</h3>
-    <p>Entry fees, conservation charges and access arrangements can change. Confirm applicable fees for your travel dates and follow all park rules and guide instructions.</p>
-   </article>
+      <article class="tsavo-planning-card">
+        <h3>Where to Stay</h3>
+        <p>
+          Accommodation options include safari lodges, tented camps
+          and other properties in and around the parks. Location
+          matters when planning game drives and transfers.
+        </p>
+      </article>
+
+      <article class="tsavo-planning-card">
+        <h3>How Long to Stay</h3>
+        <p>
+          A short safari can focus on one park. A combined East and
+          West experience usually needs more time to allow for
+          transfers, game drives and visits to key attractions.
+        </p>
+      </article>
+
+      <article class="tsavo-planning-card">
+        <h3>What to Pack</h3>
+        <p>
+          Bring comfortable neutral-coloured clothing, a hat,
+          sunscreen, comfortable shoes, binoculars and a camera.
+          A light jacket can be useful during early-morning drives.
+        </p>
+      </article>
+
+      <article class="tsavo-planning-card">
+        <h3>Park Fees and Rules</h3>
+        <p>
+          Entry fees, conservation charges and access arrangements
+          can change. Confirm applicable fees for your travel dates
+          and follow all park rules and guide instructions.
+        </p>
+      </article>
+
+    </div>
   </div>
- </div>
 </section>
 
 <section class="section">
- <div class="wrap">
-  <div class="tsavo-cta">
-   <div>
-    <h2>Ready to explore Tsavo?</h2>
-    <p>Share your preferred travel dates, group size, starting point and accommodation preference. We will help you plan a Tsavo safari that suits your journey.</p>
-   </div>
-   <a class="btn btn-gold" href="contact.html?destination=tsavo">Enquire About Tsavo</a>
+  <div class="wrap">
+    <div class="tsavo-cta">
+      <div>
+        <h2>Ready to explore Tsavo?</h2>
+        <p>
+          Share your preferred travel dates, group size, starting
+          point and accommodation preference. We will help you plan
+          a Tsavo safari that suits your journey.
+        </p>
+      </div>
+
+      <a class="btn btn-gold" href="contact.html?destination=tsavo">
+        Enquire About Tsavo
+      </a>
+    </div>
   </div>
- </div>
 </section>
 
 </main>
 
 <footer class="footer">
- <div class="wrap footer-grid">
-  <div>
-   <a class="brand footer-brand" href="index.html">
-    <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-    <span>FLEYPAT<small>ADVENTURES</small></span>
-   </a>
-   <p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-   <a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+  <div class="wrap footer-grid">
+
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+        <span>FLEYPAT<small>ADVENTURES</small></span>
+      </a>
+
+      <p>
+        Explore more. Experience more. Travel beyond expectations.
+        Your journey starts with us.
+      </p>
+
+      <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">
+        Instagram @fleypat_adventures
+      </a>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <a href="safaris.html">Wildlife Safaris</a>
+      <a href="marine-tours.html">Marine Tours</a>
+      <a href="day-trips.html">Day Trips</a>
+      <a href="beach-holidays.html">Beach Holidays</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="itineraries.html">Itineraries</a>
+    </div>
+
+    <div>
+      <h3>Company</h3>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Our Services</a>
+      <a href="transfers.html">Transfers</a>
+      <a href="partnerships.html">Partnerships</a>
+      <a href="blog.html">Travel Guides</a>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <a href="tel:+254704261626">+254 704 261 626</a>
+      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+      <a href="https://wa.me/254704261626">WhatsApp our team</a>
+      <span>Mombasa, Kenya</span>
+    </div>
+
   </div>
 
-  <div>
-   <h3>Explore</h3>
-   <a href="safaris.html">Wildlife Safaris</a>
-   <a href="marine-tours.html">Marine Tours</a>
-   <a href="day-trips.html">Day Trips</a>
-   <a href="beach-holidays.html">Beach Holidays</a>
-   <a href="destinations.html">Destinations</a>
-   <a href="itineraries.html">Itineraries</a>
+  <div class="wrap foot-bottom">
+    © <span data-year></span> Fleypat Adventures. All rights reserved.
+    <span>Explore More. Experience More. Travel Beyond Expectations.</span>
   </div>
-
-  <div>
-   <h3>Company</h3>
-   <a href="about.html">About Us</a>
-   <a href="services.html">Our Services</a>
-   <a href="transfers.html">Transfers</a>
-   <a href="partnerships.html">Partnerships</a>
-   <a href="blog.html">Travel Guides</a>
-  </div>
-
-  <div>
-   <h3>Contact</h3>
-   <a href="tel:+254704261626">+254 704 261 626</a>
-   <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-   <a href="https://wa.me/254704261626">WhatsApp our team</a>
-   <span>Mombasa, Kenya</span>
-  </div>
- </div>
-
- <div class="wrap foot-bottom">
-  © <span data-year></span> Fleypat Adventures. All rights reserved.
-  <span>Explore More. Experience More. Travel Beyond Expectations.</span>
- </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Tsavo%20safari." target="_blank" rel="noopener">WhatsApp Us</a>
+<a
+  class="float-wa"
+  href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Tsavo%20safari."
+  target="_blank"
+  rel="noopener">
+  WhatsApp Us
+</a>
 
 <script src="script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const menuToggle=document.getElementById('menuToggle');
+  const mainNav=document.getElementById('mainNav');
+
+  if(menuToggle && mainNav){
+    menuToggle.addEventListener('click',function(){
+      const isOpen=mainNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded',String(isOpen));
+      menuToggle.setAttribute('aria-label',isOpen?'Close menu':'Open menu');
+      menuToggle.textContent=isOpen?'✕':'☰';
+    });
+
+    mainNav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click',function(){
+        mainNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+        menuToggle.setAttribute('aria-label','Open menu');
+        menuToggle.textContent='☰';
+      });
+    });
+  }
+
+  document.querySelectorAll('[data-year]').forEach(function(el){
+    el.textContent=new Date().getFullYear();
+  });
+});
+</script>
+
 </body>
 </html>
