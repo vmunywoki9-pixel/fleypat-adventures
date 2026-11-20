@@ -4,40 +4,43 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Malindi Destination Guide | Fleypat Adventures</title>
 <meta name="description" content="Discover Malindi, Kenya: beautiful Indian Ocean beaches, Malindi Marine National Park, the historic Vasco da Gama Pillar and Swahili coastal heritage.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#FFF4E8">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
-  --malindi-green:#243c28;
-  --malindi-lime:#a8d832;
-  --malindi-gold:#a97832;
-  --malindi-cream:#fbf7e9;
-  --malindi-ink:#263329;
-  --malindi-muted:#69736a;
-}
-*{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:var(--malindi-ink)}
+body{font-family:'DM Sans',sans-serif}
 h1,h2,h3,h4{font-family:'Playfair Display',serif}
 img{max-width:100%;display:block}
 a{text-decoration:none}
-.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+
+:root{
+  --malindi-orange:#E8752A;
+  --malindi-orange-dark:#B85B20;
+  --malindi-brown:#A66A42;
+  --malindi-cream:#FFF4E8;
+  --malindi-cream2:#F5E6D6;
+  --malindi-ink:#6B4935;
+  --malindi-muted:#897264;
+  --malindi-border:#E7CDBB;
+}
 
 /* Hero */
 .malindi-hero{
-  min-height:690px;
+  min-height:680px;
   display:flex;
   align-items:flex-end;
   position:relative;
   isolation:isolate;
   overflow:hidden;
-  background:#243c28;
+  background:#6B4935;
   color:#fff;
 }
 .malindi-hero:before{
@@ -45,9 +48,7 @@ a{text-decoration:none}
   position:absolute;
   inset:0;
   z-index:-2;
-  background:
-    url("https://commons.wikimedia.org/wiki/Special:FilePath/Malindi%20-%20Spiaggia%20-%20panoramio.jpg?width=2200")
-    center 48%/cover no-repeat;
+  background:url("https://commons.wikimedia.org/wiki/Special:FilePath/Malindi%20-%20Spiaggia%20-%20panoramio.jpg?width=2200") center 48%/cover no-repeat;
   transform:scale(1.015);
 }
 .malindi-hero:after{
@@ -55,68 +56,114 @@ a{text-decoration:none}
   position:absolute;
   inset:0;
   z-index:-1;
-  background:linear-gradient(90deg,rgba(12,28,19,.76),rgba(12,28,19,.26) 70%),linear-gradient(0deg,rgba(10,25,16,.72),transparent 72%);
+  background:linear-gradient(90deg,rgba(42,25,15,.78),rgba(42,25,15,.24) 75%),linear-gradient(0deg,rgba(42,25,15,.72),transparent 75%);
 }
-.malindi-hero-content{padding:100px 0 88px;max-width:760px}
+.malindi-hero-content{
+  padding:100px 0 85px;
+  max-width:760px;
+}
 .malindi-eyebrow{
   display:inline-flex;
   align-items:center;
   gap:10px;
-  color:var(--malindi-lime);
+  color:#FFD0A5;
   text-transform:uppercase;
   letter-spacing:2px;
   font-size:12px;
   font-weight:800;
   margin-bottom:18px;
 }
-.malindi-eyebrow:before{content:"";width:34px;height:2px;background:var(--malindi-lime)}
+.malindi-eyebrow:before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:var(--malindi-orange);
+}
 .malindi-hero h1{
   font-size:clamp(54px,8vw,100px);
   line-height:.98;
   margin:0 0 22px;
   color:#fff;
 }
-.malindi-hero p{font-size:clamp(17px,2vw,21px);line-height:1.75;max-width:620px;color:#f3f2e9;margin:0 0 30px}
-.malindi-actions{display:flex;flex-wrap:wrap;gap:13px}
+.malindi-hero p{
+  font-size:clamp(17px,2vw,21px);
+  line-height:1.75;
+  max-width:620px;
+  color:#FFF4E8;
+  margin:0 0 30px;
+}
+.malindi-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
 .malindi-btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   padding:15px 24px;
-  background:var(--malindi-lime);
-  color:#203321;
+  background:var(--malindi-orange);
+  color:#fff;
   font-weight:800;
-  border-radius:3px;
+  border:1px solid var(--malindi-orange);
   transition:.25s ease;
 }
-.malindi-btn:hover{background:#c2ec5b;transform:translateY(-2px)}
-.malindi-btn-outline{background:transparent;border:1px solid rgba(255,255,255,.7);color:#fff}
-.malindi-btn-outline:hover{background:#fff;color:var(--malindi-green)}
+.malindi-btn:hover{
+  background:var(--malindi-orange-dark);
+  border-color:var(--malindi-orange-dark);
+  transform:translateY(-2px);
+}
+.malindi-btn-outline{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.75);
+  color:#fff;
+}
+.malindi-btn-outline:hover{
+  background:#fff;
+  border-color:#fff;
+  color:var(--malindi-ink);
+}
 
 /* Intro */
-.malindi-intro{padding:100px 0;background:var(--malindi-cream)}
-.malindi-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.malindi-intro{
+  padding:100px 0;
+  background:var(--malindi-cream);
+}
+.malindi-intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
 .malindi-intro-image{position:relative}
 .malindi-intro-image img{
   width:100%;
   height:510px;
   object-fit:cover;
-  border-radius:3px;
 }
 .malindi-image-note{
   position:absolute;
   right:-18px;
   bottom:25px;
-  background:var(--malindi-green);
+  background:var(--malindi-brown);
   color:#fff;
   padding:20px 24px;
   max-width:220px;
   box-shadow:0 12px 35px #0002;
 }
-.malindi-image-note strong{display:block;font-family:'Playfair Display',serif;font-size:22px;margin-bottom:5px}
-.malindi-image-note span{font-size:12px;color:#e2eadc;line-height:1.5}
+.malindi-image-note strong{
+  display:block;
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  margin-bottom:5px;
+}
+.malindi-image-note span{
+  font-size:12px;
+  color:#FFF4E8;
+  line-height:1.5;
+}
 .malindi-section-label{
-  color:var(--malindi-gold);
+  color:var(--malindi-orange-dark);
   text-transform:uppercase;
   letter-spacing:2px;
   font-size:12px;
@@ -124,90 +171,252 @@ a{text-decoration:none}
   display:block;
   margin-bottom:14px;
 }
-.malindi-intro h2,.malindi-section-heading h2,.malindi-planning h2{
-  color:var(--malindi-green);
+.malindi-intro h2,
+.malindi-section-heading h2,
+.malindi-planning h2{
+  color:var(--malindi-ink);
   font-size:clamp(34px,4vw,49px);
   line-height:1.15;
   margin:0 0 22px;
 }
-.malindi-intro p{font-size:16px;line-height:1.9;color:#5d695f;margin:0 0 16px}
-.malindi-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}
+.malindi-intro p{
+  font-size:16px;
+  line-height:1.9;
+  color:var(--malindi-muted);
+  margin:0 0 16px;
+}
+.malindi-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:25px;
+}
 .malindi-tags span{
-  border:1px solid #d9dfcd;
-  color:var(--malindi-green);
+  border:1px solid var(--malindi-border);
+  color:var(--malindi-ink);
   background:#fff;
   padding:9px 13px;
   font-size:12px;
   font-weight:700;
 }
 
-/* Highlights */
-.malindi-experiences{padding:100px 0;background:#fff}
-.malindi-section-heading{text-align:center;max-width:720px;margin:0 auto 48px}
-.malindi-section-heading p{color:var(--malindi-muted);line-height:1.8;margin:0}
-.malindi-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.malindi-card{background:var(--malindi-cream);overflow:hidden}
-.malindi-card img{height:245px;width:100%;object-fit:cover;transition:transform .5s ease}
+/* Experiences */
+.malindi-experiences{
+  padding:100px 0;
+  background:#fff;
+}
+.malindi-section-heading{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 48px;
+}
+.malindi-section-heading p{
+  color:var(--malindi-muted);
+  line-height:1.8;
+  margin:0;
+}
+.malindi-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+.malindi-card{
+  background:var(--malindi-cream);
+  overflow:hidden;
+  border:1px solid #F0E3D8;
+}
+.malindi-card img{
+  height:245px;
+  width:100%;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
 .malindi-card:hover img{transform:scale(1.045)}
 .malindi-card-body{padding:25px 25px 29px}
 .malindi-card-body span{
-  color:var(--malindi-gold);
+  color:var(--malindi-orange-dark);
   text-transform:uppercase;
   letter-spacing:1.4px;
   font-size:10px;
   font-weight:800;
 }
-.malindi-card h3{font-size:25px;color:var(--malindi-green);margin:9px 0 12px}
-.malindi-card p{font-size:14px;line-height:1.8;color:#657066;margin:0}
+.malindi-card h3{
+  font-size:25px;
+  color:var(--malindi-ink);
+  margin:9px 0 12px;
+}
+.malindi-card p{
+  font-size:14px;
+  line-height:1.8;
+  color:var(--malindi-muted);
+  margin:0;
+}
 
-/* Heritage feature */
-.malindi-heritage{background:var(--malindi-green);color:#fff;padding:100px 0}
-.malindi-heritage-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
-.malindi-heritage-image img{height:490px;width:100%;object-fit:cover}
-.malindi-heritage .malindi-section-label{color:var(--malindi-lime)}
-.malindi-heritage h2{font-size:clamp(34px,4vw,48px);line-height:1.15;margin:0 0 22px;color:#fff}
-.malindi-heritage p{color:#d9e2d8;line-height:1.9;font-size:15px;margin:0 0 17px}
-.malindi-heritage-list{display:grid;gap:13px;margin-top:27px}
-.malindi-heritage-list div{display:flex;gap:12px;align-items:flex-start;color:#edf2e9;font-size:14px;line-height:1.6}
-.malindi-heritage-list b{color:var(--malindi-lime);font-size:17px}
+/* Heritage */
+.malindi-heritage{
+  background:#6B4935;
+  color:#fff;
+  padding:100px 0;
+}
+.malindi-heritage-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:65px;
+  align-items:center;
+}
+.malindi-heritage-image img{
+  height:490px;
+  width:100%;
+  object-fit:cover;
+}
+.malindi-heritage .malindi-section-label{color:#FFD0A5}
+.malindi-heritage h2{
+  font-size:clamp(34px,4vw,48px);
+  line-height:1.15;
+  margin:0 0 22px;
+  color:#fff;
+}
+.malindi-heritage p{
+  color:#F5E6D6;
+  line-height:1.9;
+  font-size:15px;
+  margin:0 0 17px;
+}
+.malindi-heritage-list{
+  display:grid;
+  gap:13px;
+  margin-top:27px;
+}
+.malindi-heritage-list div{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  color:#FFF4E8;
+  font-size:14px;
+  line-height:1.6;
+}
+.malindi-heritage-list b{
+  color:#F09A58;
+  font-size:17px;
+}
 
-/* Beyond the beach */
-.malindi-discover{padding:100px 0;background:var(--malindi-cream)}
-.malindi-discover-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.malindi-discover-image img{height:470px;width:100%;object-fit:cover}
-.malindi-discover h2{font-size:clamp(34px,4vw,46px);color:var(--malindi-green);line-height:1.15;margin:0 0 20px}
-.malindi-discover p{color:#657066;line-height:1.9;margin:0 0 17px}
-.malindi-discover-points{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
-.malindi-discover-point{border-left:3px solid var(--malindi-lime);padding:4px 0 4px 14px}
-.malindi-discover-point strong{display:block;color:var(--malindi-green);font-size:14px;margin-bottom:5px}
-.malindi-discover-point span{font-size:12px;line-height:1.6;color:#737d72}
+/* Nearby discoveries */
+.malindi-discover{
+  padding:100px 0;
+  background:var(--malindi-cream);
+}
+.malindi-discover-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.malindi-discover-image img{
+  height:470px;
+  width:100%;
+  object-fit:cover;
+}
+.malindi-discover h2{
+  font-size:clamp(34px,4vw,46px);
+  color:var(--malindi-ink);
+  line-height:1.15;
+  margin:0 0 20px;
+}
+.malindi-discover p{
+  color:var(--malindi-muted);
+  line-height:1.9;
+  margin:0 0 17px;
+}
+.malindi-discover-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:28px;
+}
+.malindi-discover-point{
+  border-left:3px solid var(--malindi-orange);
+  padding:4px 0 4px 14px;
+}
+.malindi-discover-point strong{
+  display:block;
+  color:var(--malindi-ink);
+  font-size:14px;
+  margin-bottom:5px;
+}
+.malindi-discover-point span{
+  font-size:12px;
+  line-height:1.6;
+  color:var(--malindi-muted);
+}
 
-/* Travel style strip */
-.malindi-styles{padding:85px 0;background:#fff}
-.malindi-styles-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.malindi-style{padding:27px 22px;border:1px solid #e7e9df;background:#fff}
-.malindi-style .number{font-family:'Playfair Display',serif;color:var(--malindi-gold);font-size:29px}
-.malindi-style h3{font-size:20px;color:var(--malindi-green);margin:11px 0 9px}
-.malindi-style p{font-size:13px;line-height:1.75;color:#6b756b;margin:0}
+/* Travel styles */
+.malindi-styles{
+  padding:85px 0;
+  background:#fff;
+}
+.malindi-styles-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.malindi-style{
+  padding:27px 22px;
+  border:1px solid var(--malindi-border);
+  background:#FFFCF8;
+}
+.malindi-style .number{
+  font-family:'Playfair Display',serif;
+  color:var(--malindi-orange-dark);
+  font-size:29px;
+}
+.malindi-style h3{
+  font-size:20px;
+  color:var(--malindi-ink);
+  margin:11px 0 9px;
+}
+.malindi-style p{
+  font-size:13px;
+  line-height:1.75;
+  color:var(--malindi-muted);
+  margin:0;
+}
 
-/* Practical information */
-.malindi-planning{padding:100px 0;background:#f2f3eb}
-.malindi-planning-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:start}
-.malindi-planning-intro p{line-height:1.9;color:#687268}
+/* Planning */
+.malindi-planning{
+  padding:100px 0;
+  background:var(--malindi-cream2);
+}
+.malindi-planning-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:65px;
+  align-items:start;
+}
+.malindi-planning-intro p{
+  line-height:1.9;
+  color:var(--malindi-muted);
+}
 .malindi-info-list{display:grid;gap:0}
 .malindi-info{
   display:grid;
   grid-template-columns:150px 1fr;
   gap:20px;
   padding:19px 0;
-  border-bottom:1px solid #dce1d5;
+  border-bottom:1px solid var(--malindi-border);
 }
-.malindi-info strong{font-size:13px;color:var(--malindi-green)}
-.malindi-info span{font-size:13px;line-height:1.75;color:#687268}
+.malindi-info strong{
+  font-size:13px;
+  color:var(--malindi-ink);
+}
+.malindi-info span{
+  font-size:13px;
+  line-height:1.75;
+  color:var(--malindi-muted);
+}
 
 /* CTA */
 .malindi-cta{
-  background:var(--malindi-green);
+  background:#6B4935;
   color:#fff;
   padding:65px;
   margin-top:90px;
@@ -217,26 +426,45 @@ a{text-decoration:none}
   align-items:center;
   gap:30px;
 }
-.malindi-cta h2{font-size:clamp(30px,4vw,42px);margin:0 0 12px;color:#fff}
-.malindi-cta p{color:#dce6d8;line-height:1.7;margin:0;max-width:600px}
+.malindi-cta h2{
+  font-size:clamp(30px,4vw,42px);
+  margin:0 0 12px;
+  color:#fff;
+}
+.malindi-cta p{
+  color:#F5E6D6;
+  line-height:1.7;
+  margin:0;
+  max-width:600px;
+}
 .malindi-cta .malindi-btn{flex-shrink:0}
 
-/* Mobile */
+/* Responsive */
 @media(max-width:900px){
   .malindi-hero{min-height:600px}
-  .malindi-intro-grid,.malindi-heritage-grid,.malindi-discover-grid,.malindi-planning-grid{grid-template-columns:1fr;gap:38px}
+  .malindi-intro-grid,
+  .malindi-heritage-grid,
+  .malindi-discover-grid,
+  .malindi-planning-grid{
+    grid-template-columns:1fr;
+    gap:38px;
+  }
   .malindi-intro-image img{height:420px}
   .malindi-image-note{right:12px}
   .malindi-cards{grid-template-columns:repeat(2,1fr)}
   .malindi-styles-grid{grid-template-columns:repeat(2,1fr)}
-  .malindi-heritage-image img,.malindi-discover-image img{height:400px}
+  .malindi-heritage-image img,
+  .malindi-discover-image img{height:400px}
 }
 @media(max-width:600px){
-  .wrap{width:min(100% - 30px,1160px)}
   .malindi-hero{min-height:560px}
   .malindi-hero-content{padding:85px 0 65px}
   .malindi-hero h1{font-size:58px}
-  .malindi-intro,.malindi-experiences,.malindi-heritage,.malindi-discover,.malindi-planning{padding:70px 0}
+  .malindi-intro,
+  .malindi-experiences,
+  .malindi-heritage,
+  .malindi-discover,
+  .malindi-planning{padding:70px 0}
   .malindi-intro-image img{height:340px}
   .malindi-cards{grid-template-columns:1fr}
   .malindi-card img{height:235px}
@@ -244,8 +472,15 @@ a{text-decoration:none}
   .malindi-styles-grid{grid-template-columns:1fr 1fr;gap:10px}
   .malindi-style{padding:20px 15px}
   .malindi-info{grid-template-columns:1fr;gap:6px}
-  .malindi-cta{padding:35px 25px;margin-top:65px;margin-bottom:65px;align-items:flex-start;flex-direction:column}
-  .malindi-heritage-image img,.malindi-discover-image img{height:330px}
+  .malindi-cta{
+    padding:35px 25px;
+    margin-top:65px;
+    margin-bottom:65px;
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .malindi-heritage-image img,
+  .malindi-discover-image img{height:330px}
 }
 </style>
 </head>
@@ -254,19 +489,24 @@ a{text-decoration:none}
 
 <div class="topline">
   <div class="wrap top-inner">
-    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-    <span><a href="tel:+254704261626">+254 704 261 626</a> · <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a></span>
+    <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+    <span>
+      <a href="tel:+254704261626">+254 704 261 626</a> ·
+      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+    </span>
   </div>
 </div>
 
 <header class="header">
   <div class="wrap nav">
     <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+      <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
       <span>FLEYPAT<small>ADVENTURES</small></span>
     </a>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav>
+
+    <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="safaris.html">Safaris</a>
@@ -304,6 +544,7 @@ a{text-decoration:none}
 <!-- INTRODUCTION -->
 <section class="malindi-intro">
   <div class="wrap malindi-intro-grid">
+
     <div class="malindi-intro-image">
       <img
         src="https://commons.wikimedia.org/wiki/Special:FilePath/Malindi%20town%20view.jpg?width=1400"
@@ -321,6 +562,7 @@ a{text-decoration:none}
       <p>Malindi is one of Kenya's best-known coastal destinations, offering a blend of sandy beaches, marine experiences, historic landmarks and vibrant local life. Its Indian Ocean setting makes it an inviting place to slow down and enjoy the coast.</p>
       <p>Beyond the beach, visitors can explore the town's Swahili and Portuguese-influenced heritage, discover the protected marine environment and enjoy the food, markets and welcoming atmosphere of the north coast.</p>
       <p>Whether you are planning a relaxed beach holiday, a cultural escape or a coastal journey combining several destinations, Malindi offers plenty of ways to shape your stay.</p>
+
       <div class="malindi-tags">
         <span>Indian Ocean beaches</span>
         <span>Marine experiences</span>
@@ -328,12 +570,14 @@ a{text-decoration:none}
         <span>Local culture</span>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- EXPERIENCES -->
 <section class="malindi-experiences" id="experiences">
   <div class="wrap">
+
     <div class="malindi-section-heading">
       <span class="malindi-section-label">Make the most of your stay</span>
       <h2>Experiences to enjoy in Malindi</h2>
@@ -421,6 +665,7 @@ a{text-decoration:none}
 <!-- HERITAGE -->
 <section class="malindi-heritage">
   <div class="wrap malindi-heritage-grid">
+
     <div class="malindi-heritage-image">
       <img
         src="https://commons.wikimedia.org/wiki/Special:FilePath/Portuguese%20Chapel%20Malindi.jpg?width=1400"
@@ -435,17 +680,28 @@ a{text-decoration:none}
       <p>The town's historic sites offer an opportunity to understand its role in maritime trade and the cultural connections that shaped this part of the Kenyan coast.</p>
 
       <div class="malindi-heritage-list">
-        <div><b>01</b><span><strong>Vasco da Gama Pillar</strong><br>A landmark associated with the Portuguese voyages along the East African coast.</span></div>
-        <div><b>02</b><span><strong>Portuguese Chapel</strong><br>A historic site connected to Malindi's early Portuguese presence.</span></div>
-        <div><b>03</b><span><strong>Swahili Coastal Culture</strong><br>Discover local architecture, traditions, food and the town's distinctive coastal character.</span></div>
+        <div>
+          <b>01</b>
+          <span><strong>Vasco da Gama Pillar</strong><br>A landmark associated with the Portuguese voyages along the East African coast.</span>
+        </div>
+        <div>
+          <b>02</b>
+          <span><strong>Portuguese Chapel</strong><br>A historic site connected to Malindi's early Portuguese presence.</span>
+        </div>
+        <div>
+          <b>03</b>
+          <span><strong>Swahili Coastal Culture</strong><br>Discover local architecture, traditions, food and the town's distinctive coastal character.</span>
+        </div>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- NEARBY DISCOVERIES -->
 <section class="malindi-discover">
   <div class="wrap malindi-discover-grid">
+
     <div>
       <span class="malindi-section-label">Explore beyond the town</span>
       <h2>Make Malindi part of a wider coastal journey</h2>
@@ -478,12 +734,14 @@ a{text-decoration:none}
         alt="Historic Gede archaeological site near Malindi"
         loading="lazy">
     </div>
+
   </div>
 </section>
 
 <!-- TRAVEL STYLES -->
 <section class="malindi-styles">
   <div class="wrap">
+
     <div class="malindi-section-heading">
       <span class="malindi-section-label">Find your coastal escape</span>
       <h2>Ways to experience Malindi</h2>
@@ -491,6 +749,7 @@ a{text-decoration:none}
     </div>
 
     <div class="malindi-styles-grid">
+
       <article class="malindi-style">
         <span class="number">01</span>
         <h3>Beach Holidays</h3>
@@ -514,6 +773,7 @@ a{text-decoration:none}
         <h3>Coastal Getaways</h3>
         <p>Combine Malindi with nearby destinations for a longer north-coast journey.</p>
       </article>
+
     </div>
   </div>
 </section>
@@ -521,6 +781,7 @@ a{text-decoration:none}
 <!-- PRACTICAL INFORMATION -->
 <section class="malindi-planning">
   <div class="wrap malindi-planning-grid">
+
     <div class="malindi-planning-intro">
       <span class="malindi-section-label">Before you travel</span>
       <h2>Plan your Malindi visit</h2>
@@ -529,26 +790,32 @@ a{text-decoration:none}
     </div>
 
     <div class="malindi-info-list">
+
       <div class="malindi-info">
         <strong>Getting There</strong>
         <span>Malindi can be reached by road from Mombasa and other coastal towns. Air connections may also be available depending on your route and travel date.</span>
       </div>
+
       <div class="malindi-info">
         <strong>Best Activities</strong>
         <span>Beach relaxation, marine excursions, heritage visits and coastal sightseeing. Outdoor and ocean activities are subject to conditions.</span>
       </div>
+
       <div class="malindi-info">
         <strong>Accommodation</strong>
         <span>Options range from hotels and beach resorts to boutique stays and private accommodation. Your preferred category can guide the quotation.</span>
       </div>
+
       <div class="malindi-info">
         <strong>What to Pack</strong>
         <span>Light clothing, comfortable footwear, sun protection, swimwear and any personal essentials for your planned activities.</span>
       </div>
+
       <div class="malindi-info">
         <strong>Travel Planning</strong>
         <span>Confirm transport, accommodation, activity availability, applicable entry fees and any special requirements before departure.</span>
       </div>
+
     </div>
   </div>
 </section>
@@ -566,15 +833,17 @@ a{text-decoration:none}
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="wrap footer-grid">
+
     <div>
       <a class="brand footer-brand" href="index.html">
-        <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+        <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
         <span>FLEYPAT<small>ADVENTURES</small></span>
       </a>
       <p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-      <a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+      <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram @fleypat_adventures</a>
     </div>
 
     <div>
@@ -600,9 +869,10 @@ a{text-decoration:none}
       <h3>Contact</h3>
       <a href="tel:+254704261626">+254 704 261 626</a>
       <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-      <a href="https://wa.me/254704261626">WhatsApp our team</a>
+      <a href="https://wa.me/254704261626" target="_blank" rel="noopener">WhatsApp our team</a>
       <span>Mombasa, Kenya</span>
     </div>
+
   </div>
 
   <div class="wrap foot-bottom">
@@ -614,8 +884,39 @@ a{text-decoration:none}
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip%20to%20Malindi."
    target="_blank"
-   rel="noopener">WhatsApp Us</a>
+   rel="noopener"
+   aria-label="Contact Fleypat Adventures on WhatsApp">WhatsApp Us</a>
 
 <script src="script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const menuToggle=document.getElementById('menuToggle');
+  const mainNav=document.getElementById('mainNav');
+
+  if(menuToggle && mainNav){
+    menuToggle.addEventListener('click',function(){
+      const isOpen=mainNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded',String(isOpen));
+      menuToggle.setAttribute('aria-label',isOpen?'Close menu':'Open menu');
+      menuToggle.textContent=isOpen?'✕':'☰';
+    });
+
+    mainNav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click',function(){
+        mainNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+        menuToggle.setAttribute('aria-label','Open menu');
+        menuToggle.textContent='☰';
+      });
+    });
+  }
+
+  document.querySelectorAll('[data-year]').forEach(function(el){
+    el.textContent=new Date().getFullYear();
+  });
+});
+</script>
+
 </body>
 </html>
