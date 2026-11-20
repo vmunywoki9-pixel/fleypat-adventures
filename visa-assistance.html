@@ -4,450 +4,955 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Visa Assistance & Travel Documentation | Fleypat Adventures</title>
+
+<title>Visa Assistance &amp; Travel Documentation | Fleypat Adventures</title>
 <meta name="description" content="Get guidance on visa application preparation, travel documentation and entry requirements for your next journey with Fleypat Adventures.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 
 <style>
-.visa-hero{
-min-height:530px;
-display:flex;
-align-items:center;
-color:#fff;
-background:linear-gradient(90deg,rgba(17,39,27,.86),rgba(17,39,27,.28)),url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=85") center/cover;
+/* VISA ASSISTANCE PAGE STYLES */
+
+.visa-page .visa-hero {
+  min-height:540px;
+  display:flex;
+  align-items:center;
+  color:#fff;
+  background:
+    linear-gradient(90deg,rgba(43,28,19,.86),rgba(43,28,19,.28)),
+    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=85')
+    center/cover no-repeat;
 }
-.visa-hero .wrap{padding-top:85px;padding-bottom:85px}
-.visa-hero .eyebrow{color:#c5ed70;text-transform:uppercase;letter-spacing:2px;font-weight:700;font-size:13px}
-.visa-hero h1{font-family:"Playfair Display",serif;font-size:clamp(42px,6vw,70px);line-height:1.08;max-width:780px;margin:18px 0}
-.visa-hero p{font-size:18px;line-height:1.8;max-width:650px;color:#f2f2e9}
-.visa-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
-.visa-actions a{text-decoration:none}
-.visa-section{padding:75px 0}
-.visa-section.alt{background:#fbf7e9}
-.visa-heading{max-width:760px;margin:0 auto 42px;text-align:center}
-.visa-heading .kicker{color:#789d25;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
-.visa-heading h2{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,43px);color:#243c28;margin:12px 0}
-.visa-heading p{color:#687168;line-height:1.8}
-.visa-intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.visa-intro img{width:100%;height:430px;object-fit:cover}
-.visa-copy h2{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,42px);color:#243c28;line-height:1.2}
-.visa-copy p{line-height:1.9;color:#626c62}
-.visa-copy ul{padding-left:20px;color:#626c62;line-height:2}
-.visa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.visa-card{background:#fff;border:1px solid #e8e6d9;overflow:hidden}
-.visa-card img{width:100%;height:220px;object-fit:cover;display:block}
-.visa-card-content{padding:24px}
-.visa-card h3{font-family:"Playfair Display",serif;font-size:22px;color:#243c28;margin:0 0 12px}
-.visa-card p{color:#687168;line-height:1.8;margin:0}
-.visa-number{display:inline-block;color:#789d25;font-weight:700;font-size:12px;letter-spacing:1px;margin-bottom:12px}
-.visa-process{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.visa-step{padding:25px;background:#fff;border:1px solid #e8e6d9}
-.visa-step span{font-family:"Playfair Display",serif;font-size:34px;color:#a8d832}
-.visa-step h3{font-size:18px;color:#243c28;margin:10px 0}
-.visa-step p{font-size:14px;line-height:1.8;color:#687168}
-.visa-checklist{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.visa-check{padding:20px;background:#fff;border-left:3px solid #a8d832}
-.visa-check h3{color:#243c28;font-size:17px;margin:0 0 8px}
-.visa-check p{color:#687168;line-height:1.7;margin:0;font-size:14px}
-.visa-notice{padding:24px;background:#f3efdf;border:1px solid #e5dec7;color:#4f594d;line-height:1.8}
-.visa-notice strong{color:#243c28}
-.visa-cta{background:#243c28;color:#fff;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.visa-cta h2{font-family:"Playfair Display",serif;font-size:30px;margin:0 0 10px}
-.visa-cta p{color:#e4e9df;line-height:1.8;margin:0;max-width:680px}
-.visa-cta .btn{white-space:nowrap}
-.visa-faq{max-width:900px;margin:auto}
-.visa-faq details{padding:20px 0;border-bottom:1px solid #ddd}
-.visa-faq summary{font-weight:700;color:#243c28;cursor:pointer}
-.visa-faq details p{color:#687168;line-height:1.8;margin-bottom:0}
-@media(max-width:850px){
-.visa-intro{grid-template-columns:1fr;gap:28px}
-.visa-grid{grid-template-columns:repeat(2,1fr)}
-.visa-process{grid-template-columns:repeat(2,1fr)}
-.visa-cta{display:block}
-.visa-cta .btn{display:inline-block;margin-top:22px}
+
+.visa-page .visa-hero-content {
+  padding:100px 0;
+  max-width:780px;
 }
-@media(max-width:560px){
-.visa-hero{min-height:480px}
-.visa-hero .wrap{padding-top:65px;padding-bottom:65px}
-.visa-grid,.visa-process,.visa-checklist{grid-template-columns:1fr}
-.visa-intro img{height:300px}
-.visa-cta{padding:28px}
+
+.visa-page .eyebrow {
+  display:inline-block;
+  color:#F09A58;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:800;
+  font-size:11px;
+  margin-bottom:15px;
+}
+
+.visa-page .visa-hero h1 {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(40px,6vw,70px);
+  line-height:1.08;
+  margin:0 0 20px;
+  color:#fff;
+}
+
+.visa-page .visa-hero p {
+  font-size:17px;
+  line-height:1.85;
+  max-width:660px;
+  color:#F9EDE3;
+}
+
+.visa-page .visa-actions {
+  display:flex;
+  gap:13px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.visa-page .visa-intro {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.visa-page .visa-intro img {
+  width:100%;
+  height:430px;
+  object-fit:cover;
+  box-shadow:15px 15px 0 #E8752A;
+}
+
+.visa-page .visa-copy h2 {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(30px,4vw,42px);
+  color:#A66A42;
+  line-height:1.2;
+  margin:12px 0 18px;
+}
+
+.visa-page .visa-copy p {
+  line-height:1.9;
+  color:#897264;
+  margin:0 0 15px;
+}
+
+.visa-page .visa-copy ul {
+  padding-left:20px;
+  color:#806D5E;
+  line-height:2.1;
+  margin:18px 0 25px;
+}
+
+.visa-page .visa-heading {
+  max-width:760px;
+  margin:0 auto 42px;
+  text-align:center;
+}
+
+.visa-page .visa-heading h2 {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(29px,4vw,43px);
+  color:#A66A42;
+  line-height:1.2;
+  margin:12px 0;
+}
+
+.visa-page .visa-heading p {
+  color:#897264;
+  line-height:1.85;
+  margin:0;
+}
+
+.visa-page .visa-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+
+.visa-page .visa-card {
+  background:#fff;
+  border:1px solid #EAD8C7;
+  overflow:hidden;
+}
+
+.visa-page .visa-card img {
+  display:block;
+  width:100%;
+  height:225px;
+  object-fit:cover;
+}
+
+.visa-page .visa-card-content {
+  padding:24px;
+}
+
+.visa-page .visa-number {
+  display:inline-block;
+  color:#D96A25;
+  font-weight:800;
+  font-size:10px;
+  letter-spacing:1.4px;
+  margin-bottom:12px;
+}
+
+.visa-page .visa-card h3 {
+  font-family:'Playfair Display',serif;
+  font-size:21px;
+  color:#A66A42;
+  margin:0 0 12px;
+}
+
+.visa-page .visa-card p {
+  color:#897264;
+  line-height:1.85;
+  font-size:13px;
+  margin:0;
+}
+
+.visa-page .visa-checklist {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:17px;
+}
+
+.visa-page .visa-check {
+  padding:22px;
+  background:#FFFCF8;
+  border:1px solid #EAD8C7;
+  border-left:4px solid #E8752A;
+}
+
+.visa-page .visa-check h3 {
+  color:#A66A42;
+  font-size:18px;
+  margin:0 0 9px;
+}
+
+.visa-page .visa-check p {
+  color:#897264;
+  line-height:1.8;
+  font-size:13px;
+  margin:0;
+}
+
+.visa-page .visa-process {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:19px;
+}
+
+.visa-page .visa-step {
+  padding:25px;
+  background:#fff;
+  border:1px solid #EAD8C7;
+}
+
+.visa-page .visa-step span {
+  display:block;
+  font-family:'Playfair Display',serif;
+  font-size:35px;
+  color:#D96A25;
+  margin-bottom:12px;
+}
+
+.visa-page .visa-step h3 {
+  font-size:18px;
+  color:#A66A42;
+  margin:0 0 10px;
+}
+
+.visa-page .visa-step p {
+  font-size:13px;
+  line-height:1.85;
+  color:#897264;
+  margin:0;
+}
+
+.visa-page .visa-notice {
+  padding:25px;
+  background:#F5E5D8;
+  border:1px solid #E7CDBB;
+  border-left:4px solid #D96A25;
+  color:#74543E;
+  line-height:1.9;
+  font-size:13px;
+}
+
+.visa-page .visa-notice strong {
+  color:#A66A42;
+}
+
+.visa-page .visa-faq {
+  max-width:900px;
+  margin:auto;
+}
+
+.visa-page .visa-faq details {
+  padding:21px 0;
+  border-bottom:1px solid #E7CDBB;
+}
+
+.visa-page .visa-faq summary {
+  font-weight:700;
+  color:#A66A42;
+  cursor:pointer;
+  line-height:1.6;
+}
+
+.visa-page .visa-faq details p {
+  color:#897264;
+  line-height:1.85;
+  font-size:14px;
+  margin:13px 0 0;
+}
+
+.visa-page .visa-cta {
+  background:#A66A42;
+  color:#fff;
+  padding:44px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.visa-page .visa-cta h2 {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(25px,3vw,34px);
+  margin:0 0 12px;
+  color:#fff;
+}
+
+.visa-page .visa-cta p {
+  color:#FBEBDD;
+  line-height:1.85;
+  margin:0;
+  max-width:680px;
+}
+
+.visa-page .visa-cta .btn {
+  flex-shrink:0;
+}
+
+@media(max-width:950px) {
+  .visa-page .visa-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .visa-page .visa-process {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:760px) {
+  .visa-page .visa-hero {
+    min-height:470px;
+    background-position:58% center;
+  }
+
+  .visa-page .visa-hero-content {
+    padding:75px 0;
+  }
+
+  .visa-page .visa-hero p {
+    font-size:15px;
+  }
+
+  .visa-page .visa-intro {
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+
+  .visa-page .visa-intro img {
+    height:310px;
+  }
+
+  .visa-page .visa-checklist,
+  .visa-page .visa-grid,
+  .visa-page .visa-process {
+    grid-template-columns:1fr;
+  }
+
+  .visa-page .visa-cta {
+    padding:30px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+
+@media(max-width:430px) {
+  .visa-page .visa-actions {
+    flex-direction:column;
+    align-items:flex-start;
+  }
 }
 </style>
 </head>
 
-<body>
+<body class="visa-page">
 
+<!-- TOP CONTACT BAR -->
 <div class="topline">
-<div class="wrap top-inner">
-<span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-<span>
-<a href="tel:+254704261626">+254 704 261 626</a> ·
-<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-</span>
-</div>
+  <div class="wrap top-inner">
+    <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+    <span>
+      <a href="tel:+254704261626">+254 704 261 626</a> ·
+      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+    </span>
+  </div>
 </div>
 
+<!-- HEADER -->
 <header class="header">
-<div class="wrap nav">
-<a class="brand" href="index.html">
-<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-<span>FLEYPAT<small>ADVENTURES</small></span>
-</a>
+  <div class="wrap nav">
 
-<button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a class="brand" href="index.html">
+      <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+    </a>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="safaris.html">Safaris</a>
-<a href="marine-tours.html">Marine Tours</a>
-<a href="day-trips.html">Day Trips</a>
-<a href="beach-holidays.html">Beach Holidays</a>
-<a href="honeymoon.html">Honeymoons</a>
-<a href="destinations.html">Destinations</a>
-<a href="itineraries.html">Itineraries</a>
-<a href="services.html" class="active">Services</a>
-<a href="transfers.html">Transfers</a>
-<a href="blog.html">Blog</a>
-<a href="partnerships.html">Partnerships</a>
-<a href="contact.html">Contact</a>
-<a class="nav-book" href="contact.html">Book Now</a>
-</nav>
-</div>
+    <button class="nav-toggle" id="menuToggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="safaris.html">Safaris</a>
+      <a href="marine-tours.html">Marine Tours</a>
+      <a href="day-trips.html">Day Trips</a>
+      <a href="beach-holidays.html">Beach Holidays</a>
+      <a href="honeymoon.html">Honeymoons</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="itineraries.html">Itineraries</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="transfers.html">Transfers</a>
+      <a href="blog.html">Blog</a>
+      <a href="partnerships.html">Partnerships</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-book" href="contact.html">Book Now</a>
+    </nav>
+
+  </div>
 </header>
 
 <main>
 
+<!-- HERO -->
 <section class="visa-hero">
-<div class="wrap">
-<span class="eyebrow">Prepare with confidence</span>
-<h1>Visa Assistance &amp; Travel Documentation</h1>
-<p>Get practical guidance as you prepare for international travel. We help you understand common documentation requirements and organise your travel plans before departure.</p>
-<div class="visa-actions">
-<a class="btn btn-gold" href="contact.html?service=visa-assistance">Request Assistance</a>
-<a class="btn" href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20need%20visa%20and%20travel%20documentation%20assistance." target="_blank" rel="noopener">WhatsApp Us</a>
-</div>
-</div>
+  <div class="wrap visa-hero-content">
+
+    <span class="eyebrow">Prepare with confidence</span>
+
+    <h1>Visa Assistance &amp; Travel Documentation</h1>
+
+    <p>
+      Get practical guidance as you prepare for international travel.
+      We help you understand common documentation requirements and
+      organise your travel plans before departure.
+    </p>
+
+    <div class="visa-actions">
+      <a class="btn" href="contact.html?service=visa-assistance">
+        Request Assistance
+      </a>
+
+      <a class="btn btn-outline"
+         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20need%20visa%20and%20travel%20documentation%20assistance"
+         target="_blank" rel="noopener">
+        WhatsApp Us
+      </a>
+    </div>
+
+  </div>
 </section>
 
-<section class="visa-section">
-<div class="wrap visa-intro">
-
-<div class="visa-copy">
-<span class="kicker">Travel preparation support</span>
-<h2>Know what to prepare before you travel</h2>
-<p>International travel may require different documents depending on your nationality, destination, purpose of travel and length of stay.</p>
-<p>Fleypat Adventures provides general travel-document guidance to help travellers understand the preparation process. We can help you identify information to check, organise your travel details and plan your journey around the relevant requirements.</p>
-<ul>
-<li>General visa requirement guidance</li>
-<li>Travel document preparation checklists</li>
-<li>Passport validity reminders</li>
-<li>Travel itinerary and accommodation details</li>
-<li>Flight and travel arrangement coordination</li>
-</ul>
-</div>
-
-<div>
-<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1100&q=85" alt="Travel documents and paperwork being organised" loading="lazy">
-</div>
-
-</div>
-</section>
-
-<section class="visa-section alt">
-<div class="wrap">
-
-<div class="visa-heading">
-<span class="kicker">Our assistance</span>
-<h2>How we can help</h2>
-<p>We provide practical guidance to help you prepare for the documentation stages of your journey.</p>
-</div>
-
-<div class="visa-grid">
-
-<article class="visa-card">
-<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85" alt="Traveller preparing for an international journey" loading="lazy">
-<div class="visa-card-content">
-<span class="visa-number">01 · REQUIREMENTS</span>
-<h3>Visa Information Guidance</h3>
-<p>Guidance on where to check destination-specific visa requirements and the official information relevant to your trip.</p>
-</div>
-</article>
-
-<article class="visa-card">
-<img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=900&q=85" alt="Passport document ready for travel" loading="lazy">
-<div class="visa-card-content">
-<span class="visa-number">02 · DOCUMENTS</span>
-<h3>Travel Document Checklist</h3>
-<p>Help identifying commonly requested documents and organising your preparation checklist before making an application.</p>
-</div>
-</article>
-
-<article class="visa-card">
-<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=85" alt="Passenger aircraft preparing for a journey" loading="lazy">
-<div class="visa-card-content">
-<span class="visa-number">03 · TRAVEL PLANNING</span>
-<h3>Flight &amp; Itinerary Coordination</h3>
-<p>Assistance with flight enquiries and travel itinerary planning to help you coordinate your intended journey.</p>
-</div>
-</article>
-
-<article class="visa-card">
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Person reviewing information on a laptop" loading="lazy">
-<div class="visa-card-content">
-<span class="visa-number">04 · PREPARATION</span>
-<h3>Application Preparation Guidance</h3>
-<p>General guidance on reviewing the information and supporting documents required by the relevant official application process.</p>
-</div>
-</article>
-
-<article class="visa-card">
-<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85" alt="Travel team discussing arrangements" loading="lazy">
-<div class="visa-card-content">
-<span class="visa-number">05 · GROUP TRAVEL</span>
-<h3>Group Travel Documentation</h3>
-<p>Help coordinating travel information and preparation checklists for families, organisations and groups travelling together.</p>
-</div>
-</article>
-
-<article class="visa-card">
-<img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85" alt="Professional consultation in an office" loading="lazy">
-<div class="visa-card-content">
-<span class="visa-number">06 · TRAVEL SUPPORT</span>
-<h3>Pre-Departure Guidance</h3>
-<p>Reminders about checking entry conditions, travel dates, supporting documents and other preparations before departure.</p>
-</div>
-</article>
-
-</div>
-</div>
-</section>
-
-<section class="visa-section">
-<div class="wrap">
-
-<div class="visa-heading">
-<span class="kicker">Before making an application</span>
-<h2>Documents you may need to prepare</h2>
-<p>Requirements vary by destination and traveller. The relevant embassy, consulate or official immigration authority determines the exact documents needed.</p>
-</div>
-
-<div class="visa-checklist">
-
-<div class="visa-check">
-<h3>Passport</h3>
-<p>Check that your passport is valid for the period required by your destination and has sufficient available pages where applicable.</p>
-</div>
-
-<div class="visa-check">
-<h3>Application Information</h3>
-<p>Prepare accurate personal details and travel information as requested by the official application process.</p>
-</div>
-
-<div class="visa-check">
-<h3>Photographs</h3>
-<p>Some applications require recent photographs that meet specific size and format requirements.</p>
-</div>
-
-<div class="visa-check">
-<h3>Travel Itinerary</h3>
-<p>Depending on the destination, you may be asked for intended travel dates, flight details or a proposed itinerary.</p>
-</div>
-
-<div class="visa-check">
-<h3>Accommodation Details</h3>
-<p>Some applications request accommodation information or details about where you intend to stay.</p>
-</div>
-
-<div class="visa-check">
-<h3>Financial Supporting Documents</h3>
-<p>Some destinations may request evidence of sufficient funds or other supporting financial information.</p>
-</div>
-
-<div class="visa-check">
-<h3>Purpose of Travel</h3>
-<p>Be prepared to explain whether your visit is for tourism, business, study, family or another permitted purpose.</p>
-</div>
-
-<div class="visa-check">
-<h3>Additional Supporting Documents</h3>
-<p>Depending on your circumstances, additional documents, insurance or invitation details may be required.</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section class="visa-section alt">
-<div class="wrap">
-
-<div class="visa-heading">
-<span class="kicker">A simple process</span>
-<h2>How to get started</h2>
-<p>Share your travel plans so we can understand the type of guidance you need.</p>
-</div>
-
-<div class="visa-process">
-
-<div class="visa-step">
-<span>01</span>
-<h3>Tell Us Your Destination</h3>
-<p>Share the country you plan to visit, your nationality and your intended travel purpose.</p>
-</div>
-
-<div class="visa-step">
-<span>02</span>
-<h3>Discuss Your Travel Plans</h3>
-<p>Provide your expected dates, trip duration and any travel arrangements already made.</p>
-</div>
-
-<div class="visa-step">
-<span>03</span>
-<h3>Review What to Prepare</h3>
-<p>We help you identify relevant official information and commonly required preparation documents.</p>
-</div>
-
-<div class="visa-step">
-<span>04</span>
-<h3>Proceed Through Official Channels</h3>
-<p>Submit applications and required information through the relevant government or authorised channels.</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section class="visa-section">
-<div class="wrap">
-
-<div class="visa-heading">
-<span class="kicker">Important information</span>
-<h2>Visa decisions are made by authorities</h2>
-</div>
-
-<div class="visa-notice">
-<strong>Please note:</strong> Fleypat Adventures provides general travel-document guidance and travel planning assistance. Visa requirements, application procedures, fees, processing periods and eligibility rules are determined by the relevant government authorities and may change without notice. We do not issue visas, guarantee approval or make immigration decisions. Applicants are responsible for checking current requirements through official embassy, consulate or immigration websites and submitting accurate information.
-</div>
-
-</div>
-</section>
-
-<section class="visa-section alt">
-<div class="wrap">
-
-<div class="visa-heading">
-<span class="kicker">Frequently asked questions</span>
-<h2>Visa Assistance FAQs</h2>
-<p>Answers to common questions about preparing for international travel.</p>
-</div>
-
-<div class="visa-faq">
-
-<details>
-<summary>Can Fleypat Adventures guarantee visa approval?</summary>
-<p>No. Visa decisions are made solely by the relevant immigration authorities. We cannot guarantee approval or influence the outcome of an application.</p>
-</details>
-
-<details>
-<summary>Can you help me understand the documents I may need?</summary>
-<p>Yes. We can provide general guidance on common travel-document preparation and help you identify the official source to confirm the exact requirements for your destination.</p>
-</details>
-
-<details>
-<summary>Do visa requirements depend on nationality?</summary>
-<p>Yes. Requirements can vary according to your passport, destination, purpose of travel, length of stay and individual circumstances.</p>
-</details>
-
-<details>
-<summary>How long does visa processing take?</summary>
-<p>Processing periods vary by country, application type and individual circumstances. Always consult the relevant official authority for current processing information and apply well in advance where possible.</p>
-</details>
-
-<details>
-<summary>Can you assist families and groups?</summary>
-<p>We can help coordinate general travel information and preparation checklists for families and groups. Each traveller must still meet the applicable individual requirements.</p>
-</details>
-
-<details>
-<summary>Where should I submit my visa application?</summary>
-<p>Applications should be submitted through the official government, embassy, consulate or authorised application channel designated for your destination.</p>
-</details>
-
-</div>
-</div>
-</section>
-
+<!-- INTRODUCTION -->
 <section class="section">
-<div class="wrap">
-<div class="visa-cta">
-<div>
-<h2>Preparing for an international journey?</h2>
-<p>Tell us where you are travelling, your intended dates and the kind of travel-document guidance you need. We will help you explore the next steps.</p>
-</div>
-<a class="btn btn-gold" href="contact.html?service=visa-assistance">Make an Enquiry</a>
-</div>
-</div>
+  <div class="wrap visa-intro">
+
+    <div class="visa-copy">
+      <span class="eyebrow">Travel preparation support</span>
+
+      <h2>Know what to prepare before you travel</h2>
+
+      <p>
+        International travel may require different documents depending
+        on your nationality, destination, purpose of travel and
+        length of stay.
+      </p>
+
+      <p>
+        Fleypat Adventures provides general travel-document guidance
+        to help travellers understand the preparation process. We can
+        help you identify information to check, organise your travel
+        details and plan your journey around the relevant requirements.
+      </p>
+
+      <ul>
+        <li>General visa requirement guidance</li>
+        <li>Travel document preparation checklists</li>
+        <li>Passport validity reminders</li>
+        <li>Travel itinerary and accommodation details</li>
+        <li>Flight and travel arrangement coordination</li>
+      </ul>
+
+      <a class="btn" href="contact.html?service=visa-assistance">
+        Discuss Your Travel Plans
+      </a>
+    </div>
+
+    <div>
+      <img
+        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1100&q=85"
+        alt="Travel paperwork and documents being organised"
+        loading="lazy">
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section alt">
+  <div class="wrap">
+
+    <div class="visa-heading">
+      <span class="eyebrow">Our assistance</span>
+      <h2>How we can help</h2>
+      <p>
+        We provide practical guidance to help you prepare for
+        the documentation stages of your journey.
+      </p>
+    </div>
+
+    <div class="visa-grid">
+
+      <article class="visa-card">
+        <img
+          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85"
+          alt="Traveller preparing for an international journey"
+          loading="lazy">
+
+        <div class="visa-card-content">
+          <span class="visa-number">01 · REQUIREMENTS</span>
+          <h3>Visa Information Guidance</h3>
+          <p>
+            Guidance on where to check destination-specific visa
+            requirements and the official information relevant
+            to your trip.
+          </p>
+        </div>
+      </article>
+
+      <article class="visa-card">
+        <img
+          src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=900&q=85"
+          alt="Passport document prepared for travel"
+          loading="lazy">
+
+        <div class="visa-card-content">
+          <span class="visa-number">02 · DOCUMENTS</span>
+          <h3>Travel Document Checklist</h3>
+          <p>
+            Help identifying commonly requested documents and
+            organising your preparation checklist before making
+            an application.
+          </p>
+        </div>
+      </article>
+
+      <article class="visa-card">
+        <img
+          src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=900&q=85"
+          alt="Passenger aircraft at an airport"
+          loading="lazy">
+
+        <div class="visa-card-content">
+          <span class="visa-number">03 · TRAVEL PLANNING</span>
+          <h3>Flight &amp; Itinerary Coordination</h3>
+          <p>
+            Assistance with flight enquiries and travel itinerary
+            planning to help you coordinate your intended journey.
+          </p>
+        </div>
+      </article>
+
+      <article class="visa-card">
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
+          alt="Person reviewing travel information on a laptop"
+          loading="lazy">
+
+        <div class="visa-card-content">
+          <span class="visa-number">04 · PREPARATION</span>
+          <h3>Application Preparation Guidance</h3>
+          <p>
+            General guidance on reviewing the information and
+            supporting documents required by the relevant official
+            application process.
+          </p>
+        </div>
+      </article>
+
+      <article class="visa-card">
+        <img
+          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85"
+          alt="Travel team discussing arrangements together"
+          loading="lazy">
+
+        <div class="visa-card-content">
+          <span class="visa-number">05 · GROUP TRAVEL</span>
+          <h3>Group Travel Documentation</h3>
+          <p>
+            Help coordinating travel information and preparation
+            checklists for families, organisations and groups
+            travelling together.
+          </p>
+        </div>
+      </article>
+
+      <article class="visa-card">
+        <img
+          src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85"
+          alt="Professional consultation in a modern office"
+          loading="lazy">
+
+        <div class="visa-card-content">
+          <span class="visa-number">06 · TRAVEL SUPPORT</span>
+          <h3>Pre-Departure Guidance</h3>
+          <p>
+            Reminders about checking entry conditions, travel dates,
+            supporting documents and other preparations before
+            departure.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENT CHECKLIST -->
+<section class="section">
+  <div class="wrap">
+
+    <div class="visa-heading">
+      <span class="eyebrow">Before making an application</span>
+      <h2>Documents you may need to prepare</h2>
+      <p>
+        Requirements vary by destination and traveller. The relevant
+        embassy, consulate or official immigration authority determines
+        the exact documents needed.
+      </p>
+    </div>
+
+    <div class="visa-checklist">
+
+      <article class="visa-check">
+        <h3>Passport</h3>
+        <p>
+          Check that your passport is valid for the period required
+          by your destination and has sufficient available pages
+          where applicable.
+        </p>
+      </article>
+
+      <article class="visa-check">
+        <h3>Application Information</h3>
+        <p>
+          Prepare accurate personal details and travel information
+          as requested by the official application process.
+        </p>
+      </article>
+
+      <article class="visa-check">
+        <h3>Photographs</h3>
+        <p>
+          Some applications require recent photographs that meet
+          specific size and format requirements.
+        </p>
+      </article>
+
+      <article class="visa-check">
+        <h3>Travel Itinerary</h3>
+        <p>
+          Depending on the destination, you may be asked for intended
+          travel dates, flight details or a proposed itinerary.
+        </p>
+      </article>
+
+      <article class="visa-check">
+        <h3>Accommodation Details</h3>
+        <p>
+          Some applications request accommodation information or
+          details about where you intend to stay.
+        </p>
+      </article>
+
+      <article class="visa-check">
+        <h3>Financial Supporting Documents</h3>
+        <p>
+          Some destinations may request evidence of sufficient funds
+          or other supporting financial information.
+        </p>
+      </article>
+
+      <article class="visa-check">
+        <h3>Purpose of Travel</h3>
+        <p>
+          Be prepared to explain whether your visit is for tourism,
+          business, study, family or another permitted purpose.
+        </p>
+      </article>
+
+      <article class="visa-check">
+        <h3>Additional Supporting Documents</h3>
+        <p>
+          Depending on your circumstances, additional documents,
+          insurance or invitation details may be required.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section alt">
+  <div class="wrap">
+
+    <div class="visa-heading">
+      <span class="eyebrow">A simple process</span>
+      <h2>How to get started</h2>
+      <p>
+        Share your travel plans so we can understand the type
+        of guidance you need.
+      </p>
+    </div>
+
+    <div class="visa-process">
+
+      <article class="visa-step">
+        <span>01</span>
+        <h3>Tell Us Your Destination</h3>
+        <p>
+          Share the country you plan to visit, your nationality
+          and your intended travel purpose.
+        </p>
+      </article>
+
+      <article class="visa-step">
+        <span>02</span>
+        <h3>Discuss Your Travel Plans</h3>
+        <p>
+          Provide your expected dates, trip duration and any
+          travel arrangements already made.
+        </p>
+      </article>
+
+      <article class="visa-step">
+        <span>03</span>
+        <h3>Review What to Prepare</h3>
+        <p>
+          We help you identify relevant official information and
+          commonly required preparation documents.
+        </p>
+      </article>
+
+      <article class="visa-step">
+        <span>04</span>
+        <h3>Proceed Through Official Channels</h3>
+        <p>
+          Submit applications and required information through
+          the relevant government or authorised channels.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- IMPORTANT INFORMATION -->
+<section class="section">
+  <div class="wrap">
+
+    <div class="visa-heading">
+      <span class="eyebrow">Important information</span>
+      <h2>Visa decisions are made by authorities</h2>
+    </div>
+
+    <div class="visa-notice">
+      <strong>Please note:</strong>
+      Fleypat Adventures provides general travel-document guidance
+      and travel planning assistance. Visa requirements, application
+      procedures, fees, processing periods and eligibility rules are
+      determined by the relevant government authorities and may change
+      without notice. We do not issue visas, guarantee approval or make
+      immigration decisions. Applicants are responsible for checking
+      current requirements through official embassy, consulate or
+      immigration websites and submitting accurate information.
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section alt">
+  <div class="wrap">
+
+    <div class="visa-heading">
+      <span class="eyebrow">Frequently asked questions</span>
+      <h2>Visa Assistance FAQs</h2>
+      <p>
+        Answers to common questions about preparing for
+        international travel.
+      </p>
+    </div>
+
+    <div class="visa-faq">
+
+      <details>
+        <summary>Can Fleypat Adventures guarantee visa approval?</summary>
+        <p>
+          No. Visa decisions are made solely by the relevant
+          immigration authorities. We cannot guarantee approval
+          or influence the outcome of an application.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can you help me understand the documents I may need?</summary>
+        <p>
+          Yes. We can provide general guidance on common travel-document
+          preparation and help you identify the official source to
+          confirm the exact requirements for your destination.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do visa requirements depend on nationality?</summary>
+        <p>
+          Yes. Requirements can vary according to your passport,
+          destination, purpose of travel, length of stay and
+          individual circumstances.
+        </p>
+      </details>
+
+      <details>
+        <summary>How long does visa processing take?</summary>
+        <p>
+          Processing periods vary by country, application type
+          and individual circumstances. Always consult the relevant
+          official authority for current processing information
+          and apply well in advance where possible.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can you assist families and groups?</summary>
+        <p>
+          We can help coordinate general travel information and
+          preparation checklists for families and groups. Each
+          traveller must still meet the applicable individual
+          requirements.
+        </p>
+      </details>
+
+      <details>
+        <summary>Where should I submit my visa application?</summary>
+        <p>
+          Applications should be submitted through the official
+          government, embassy, consulate or authorised application
+          channel designated for your destination.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="wrap">
+
+    <div class="visa-cta">
+      <div>
+        <h2>Preparing for an international journey?</h2>
+        <p>
+          Tell us where you are travelling, your intended dates and
+          the kind of travel-document guidance you need. We will help
+          you explore the next steps.
+        </p>
+      </div>
+
+      <a class="btn btn-gold"
+         href="contact.html?service=visa-assistance">
+        Make an Enquiry
+      </a>
+    </div>
+
+  </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
-<div class="wrap footer-grid">
+  <div class="wrap footer-grid">
 
-<div>
-<a class="brand footer-brand" href="index.html">
-<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-<span>FLEYPAT<small>ADVENTURES</small></span>
-</a>
-<p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-<a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
-</div>
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+      </a>
 
-<div>
-<h3>Explore</h3>
-<a href="safaris.html">Wildlife Safaris</a>
-<a href="marine-tours.html">Marine Tours</a>
-<a href="day-trips.html">Day Trips</a>
-<a href="beach-holidays.html">Beach Holidays</a>
-<a href="destinations.html">Destinations</a>
-<a href="itineraries.html">Itineraries</a>
-</div>
+      <p>
+        Explore more. Experience more. Travel beyond expectations.
+        Your journey starts with us.
+      </p>
 
-<div>
-<h3>Company</h3>
-<a href="about.html">About Us</a>
-<a href="services.html">Our Services</a>
-<a href="transfers.html">Transfers</a>
-<a href="partnerships.html">Partnerships</a>
-<a href="blog.html">Travel Guides</a>
-</div>
+      <a href="https://www.instagram.com/fleypat_adventures/"
+         target="_blank" rel="noopener">
+        Instagram @fleypat_adventures
+      </a>
+    </div>
 
-<div>
-<h3>Contact</h3>
-<a href="tel:+254704261626">+254 704 261 626</a>
-<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-<a href="https://wa.me/254704261626">WhatsApp our team</a>
-<span>Mombasa, Kenya</span>
-</div>
+    <div>
+      <h3>Explore</h3>
+      <a href="safaris.html">Wildlife Safaris</a>
+      <a href="marine-tours.html">Marine Tours</a>
+      <a href="day-trips.html">Day Trips</a>
+      <a href="beach-holidays.html">Beach Holidays</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="itineraries.html">Itineraries</a>
+    </div>
 
-</div>
+    <div>
+      <h3>Company</h3>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Our Services</a>
+      <a href="transfers.html">Transfers</a>
+      <a href="partnerships.html">Partnerships</a>
+      <a href="blog.html">Travel Guides</a>
+    </div>
 
-<div class="wrap foot-bottom">
-© <span data-year></span> Fleypat Adventures. All rights reserved.
-<span>Explore More. Experience More. Travel Beyond Expectations.</span>
-</div>
+    <div>
+      <h3>Contact</h3>
+      <a href="tel:+254704261626">+254 704 261 626</a>
+      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+      <a href="https://wa.me/254704261626">WhatsApp our team</a>
+      <span>Mombasa, Kenya</span>
+    </div>
+
+  </div>
+
+  <div class="wrap foot-bottom">
+    <span>© <span data-year></span> Fleypat Adventures. All rights reserved.</span>
+    <span>Explore More. Experience More. Travel Beyond Expectations.</span>
+  </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20need%20visa%20and%20travel%20documentation%20assistance." target="_blank" rel="noopener">WhatsApp Us</a>
+<!-- FLOATING WHATSAPP -->
+<a class="float-wa"
+   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20need%20visa%20and%20travel%20documentation%20assistance."
+   target="_blank"
+   rel="noopener">
+  WhatsApp Us
+</a>
 
 <script src="script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('open');
+
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute(
+        'aria-label',
+        isOpen ? 'Close navigation menu' : 'Open navigation menu'
+      );
+
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open navigation menu');
+        toggle.textContent = '☰';
+      });
+    });
+  }
+
+  document.querySelectorAll('[data-year]').forEach(function (element) {
+    element.textContent = new Date().getFullYear();
+  });
+});
+</script>
+
 </body>
 </html>
