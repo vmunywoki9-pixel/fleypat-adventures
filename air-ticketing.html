@@ -5,159 +5,377 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Air Ticketing & Flight Booking Assistance | Fleypat Adventures</title>
+<title>Air Ticketing &amp; Flight Booking Assistance | Fleypat Adventures</title>
 <meta name="description" content="Get assistance with domestic and international flight searches, air ticketing and travel arrangements through Fleypat Adventures.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
-  --green:#243c28;
-  --lime:#a8d832;
-  --gold:#a97832;
-  --cream:#fbf7e9;
-  --muted:#687267;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:#263328;margin:0}
-h1,h2,h3{font-family:'Playfair Display',serif}
-a{text-decoration:none}
-img{display:block;width:100%;object-fit:cover}
-.wrap{width:min(1160px,92%);margin:auto}
-
-.topline{background:var(--green);color:#fff;font-size:12px}
-.top-inner{display:flex;justify-content:space-between;gap:15px;padding:10px 0}
-.topline a{color:#fff}
-
-.header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 5px 22px #0000000b}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:13px 0}
-.brand{display:flex;align-items:center;gap:10px;color:var(--green);font-weight:800;letter-spacing:2px;white-space:nowrap}
-.brand img{width:48px;height:48px;object-fit:contain}
-.brand span{font-size:19px;line-height:1.05}
-.brand small{display:block;font-size:10px;letter-spacing:4px;margin-top:5px}
-.nav nav{display:flex;align-items:center;justify-content:flex-end;gap:15px;flex-wrap:wrap}
-.nav nav a{font-size:12px;font-weight:700;color:#344238}
-.nav nav a:hover,.nav nav a.active{color:#719d20}
-.nav nav .nav-book{background:var(--lime);padding:12px 17px;border-radius:3px;color:#203321}
-.nav-toggle{display:none;border:0;background:var(--green);color:white;padding:9px 12px;border-radius:3px;font-size:20px;cursor:pointer}
-
-.hero{
-  position:relative;min-height:530px;display:flex;align-items:center;color:#fff;
+/* AIR TICKETING PAGE ONLY */
+.air-page .air-hero {
+  position:relative;
+  min-height:540px;
+  display:flex;
+  align-items:center;
+  color:#fff;
   background:
-  linear-gradient(90deg,rgba(10,25,16,.82),rgba(10,25,16,.18)),
-  url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=85') center 48%/cover no-repeat;
+    linear-gradient(90deg,rgba(42,27,18,.84),rgba(42,27,18,.22)),
+    url('https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=2000&q=85')
+    center 48%/cover no-repeat;
 }
-.hero-content{padding:100px 0;max-width:760px}
-.eyebrow{display:inline-block;color:var(--lime);font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:16px}
-.hero h1{font-size:clamp(44px,7vw,78px);line-height:1.05;margin:0 0 20px}
-.hero p{font-size:18px;line-height:1.8;max-width:660px;color:#f5f5ee}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;background:var(--lime);color:#203321;font-size:13px;font-weight:800;border-radius:3px;transition:.2s}
-.btn:hover{transform:translateY(-2px);filter:brightness(.96)}
-.btn-outline{background:transparent;border:1px solid #ffffffb8;color:#fff}
-.btn-gold{background:var(--gold);color:#fff}
 
-.section{padding:82px 0}
-.soft{background:var(--cream)}
-.dark{background:var(--green);color:#fff}
-.section-heading{max-width:760px;margin:0 auto 38px;text-align:center}
-.section-heading .eyebrow{color:#799f2d}
-.section-heading h2{font-size:clamp(30px,4vw,43px);line-height:1.2;color:var(--green);margin:0 0 15px}
-.section-heading p{color:var(--muted);line-height:1.8;margin:0}
-.dark .section-heading h2{color:#fff}
-.dark .section-heading p{color:#d7e1d4}
-
-.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
-.intro-image{height:440px;border-radius:5px;box-shadow:18px 18px 0 var(--lime)}
-.intro-copy h2{font-size:38px;color:var(--green);line-height:1.2;margin:0 0 18px}
-.intro-copy p{color:#647066;line-height:1.9;margin:0 0 16px}
-.tag-list{display:flex;flex-wrap:wrap;gap:9px;margin:23px 0}
-.tag-list span{background:#eef4df;color:#38512d;padding:8px 13px;border-radius:30px;font-size:12px;font-weight:700}
-
-.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.service-card{background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 28px #1e2c1d0c}
-.service-card img{height:215px}
-.card-copy{padding:23px}
-.card-copy h3{font-size:22px;color:var(--green);margin:0 0 10px}
-.card-copy p{font-size:14px;line-height:1.8;color:#667267;margin:0}
-.card-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#8aa72e;font-weight:800;margin-bottom:9px;display:block}
-
-.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.feature-grid img{height:390px;border-radius:5px}
-.feature-copy h2{font-size:36px;line-height:1.2;margin:0 0 16px;color:var(--green)}
-.feature-copy p{color:#657166;line-height:1.9}
-.feature-copy ul{padding-left:20px;color:#526052;line-height:2}
-
-.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.process-item{padding:25px;background:#fff;border:1px solid #e8eadf;border-radius:4px}
-.number{font-family:'Playfair Display',serif;font-size:30px;color:#a5c83b}
-.process-item h3{font-size:19px;color:var(--green);margin:8px 0}
-.process-item p{font-size:13px;line-height:1.8;color:#667267;margin:0}
-
-.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.info-item{background:#fff;padding:22px;border-left:3px solid var(--lime)}
-.info-item h3{font-size:19px;color:var(--green);margin:0 0 8px}
-.info-item p{font-size:13px;line-height:1.8;color:#667267;margin:0}
-
-.notice{background:#f0f4e5;border-left:4px solid var(--lime);padding:18px 22px;color:#4f5d4e;line-height:1.8;font-size:13px;margin-top:28px}
-.cta{margin:75px auto;background:var(--green);padding:48px;border-radius:5px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.cta h2{font-size:32px;margin:0 0 10px}
-.cta p{color:#e0e9dc;line-height:1.7;margin:0}
-
-.footer{background:#182b1d;color:#fff;padding:60px 0 20px}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:35px}
-.footer-brand{color:#fff;margin-bottom:20px}
-.footer-grid p{font-size:13px;line-height:1.8;color:#cbd5c9;max-width:300px}
-.footer-grid h3{font-family:'DM Sans',sans-serif;font-size:14px;margin:0 0 18px;color:var(--lime)}
-.footer-grid>div>a:not(.brand),.footer-grid>div>span{display:block;color:#d3ddd1;font-size:13px;margin:0 0 12px}
-.footer-grid a:hover{color:var(--lime)}
-.foot-bottom{border-top:1px solid #ffffff24;margin-top:38px;padding-top:20px;display:flex;justify-content:space-between;gap:15px;color:#b9c6b8;font-size:11px}
-.float-wa{position:fixed;right:20px;bottom:20px;z-index:99;background:#20b85a;color:white;padding:13px 19px;border-radius:40px;font-weight:700;font-size:13px;box-shadow:0 5px 20px #0003}
-
-@media(max-width:1000px){
- .nav nav{gap:10px}
- .nav nav a{font-size:11px}
- .service-grid{grid-template-columns:repeat(2,1fr)}
+.air-page .air-hero-content {
+  max-width:760px;
+  padding:100px 0;
 }
-@media(max-width:760px){
- .top-inner{flex-direction:column;gap:5px}
- .nav{flex-wrap:wrap}
- .nav-toggle{display:block}
- .nav nav{display:none;width:100%;flex-direction:column;align-items:stretch;padding:10px 0 15px}
- .nav nav.open{display:flex}
- .nav nav a{padding:10px 5px;font-size:13px}
- .nav nav .nav-book{text-align:center}
- .hero{min-height:440px;background-position:58% center}
- .hero-content{padding:75px 0}
- .hero p{font-size:16px}
- .section{padding:60px 0}
- .intro-grid,.feature-grid{grid-template-columns:1fr;gap:30px}
- .intro-image{height:300px}
- .service-grid{grid-template-columns:1fr}
- .service-card img{height:230px}
- .feature-grid img{height:290px}
- .process-grid,.info-grid{grid-template-columns:1fr}
- .cta{padding:30px;flex-direction:column;align-items:flex-start;margin:50px auto}
- .footer-grid{grid-template-columns:1fr 1fr}
- .foot-bottom{flex-direction:column}
+
+.air-page .air-hero h1 {
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.06;
+  margin:0 0 20px;
+  color:#fff;
 }
-@media(max-width:430px){
- .footer-grid{grid-template-columns:1fr}
- .hero-actions{flex-direction:column;align-items:flex-start}
+
+.air-page .air-hero p {
+  max-width:670px;
+  color:#fff7ef;
+  font-size:17px;
+  line-height:1.85;
+}
+
+.air-page .eyebrow {
+  display:inline-block;
+  color:#F09A58;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:2.3px;
+  text-transform:uppercase;
+  margin-bottom:15px;
+}
+
+.air-page .air-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.air-page .air-intro-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.air-page .air-intro-image {
+  width:100%;
+  height:440px;
+  object-fit:cover;
+  box-shadow:16px 16px 0 #E8752A;
+}
+
+.air-page .air-intro-copy h2,
+.air-page .air-feature-copy h2 {
+  color:#A66A42;
+  font-size:clamp(30px,4vw,40px);
+  line-height:1.2;
+  margin:0 0 18px;
+}
+
+.air-page .air-intro-copy p,
+.air-page .air-feature-copy p {
+  color:#897264;
+  line-height:1.9;
+  margin:0 0 15px;
+}
+
+.air-page .air-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin:23px 0;
+}
+
+.air-page .air-tags span {
+  display:inline-block;
+  padding:9px 13px;
+  background:#F5E5D8;
+  color:#805638;
+  font-size:12px;
+  font-weight:700;
+}
+
+.air-page .air-section-heading {
+  max-width:760px;
+  margin:0 auto 40px;
+  text-align:center;
+}
+
+.air-page .air-section-heading h2 {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(29px,4vw,43px);
+  line-height:1.2;
+  color:#A66A42;
+  margin:0 0 15px;
+}
+
+.air-page .air-section-heading p {
+  color:#897264;
+  line-height:1.8;
+  margin:0;
+}
+
+.air-page .air-service-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+
+.air-page .air-service-card {
+  background:#fff;
+  border:1px solid #EAD8C7;
+  overflow:hidden;
+}
+
+.air-page .air-service-card img {
+  width:100%;
+  height:225px;
+  object-fit:cover;
+}
+
+.air-page .air-card-copy {
+  padding:24px;
+}
+
+.air-page .air-card-label {
+  display:block;
+  color:#D96A25;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+.air-page .air-card-copy h3 {
+  color:#A66A42;
+  font-size:22px;
+  margin:0 0 12px;
+}
+
+.air-page .air-card-copy p {
+  color:#897264;
+  font-size:13px;
+  line-height:1.85;
+  margin:0 0 17px;
+}
+
+.air-page .air-card-copy a {
+  color:#C45D25;
+  font-size:12px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.6px;
+}
+
+.air-page .air-card-copy a:hover {
+  color:#8E451E;
+}
+
+.air-page .air-feature-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.air-page .air-feature-image {
+  width:100%;
+  height:410px;
+  object-fit:cover;
+}
+
+.air-page .air-feature-copy ul {
+  padding-left:20px;
+  color:#806D5E;
+  line-height:2.1;
+  margin:18px 0 25px;
+}
+
+.air-page .air-process-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+
+.air-page .air-process-item {
+  background:#fff;
+  border:1px solid #EAD8C7;
+  padding:26px;
+}
+
+.air-page .air-number {
+  color:#D96A25;
+  font-family:'Playfair Display',serif;
+  font-size:34px;
+  line-height:1;
+  margin-bottom:16px;
+}
+
+.air-page .air-process-item h3 {
+  color:#A66A42;
+  font-size:20px;
+  margin:0 0 10px;
+}
+
+.air-page .air-process-item p {
+  color:#897264;
+  font-size:13px;
+  line-height:1.85;
+  margin:0;
+}
+
+.air-page .air-info-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.air-page .air-info-item {
+  background:#FFFCF8;
+  border:1px solid #EAD8C7;
+  border-left:4px solid #E8752A;
+  padding:23px;
+}
+
+.air-page .air-info-item h3 {
+  color:#A66A42;
+  font-size:19px;
+  margin:0 0 9px;
+}
+
+.air-page .air-info-item p {
+  color:#897264;
+  font-size:13px;
+  line-height:1.85;
+  margin:0;
+}
+
+.air-page .air-notice {
+  margin-top:28px;
+  padding:20px 23px;
+  background:#F5E5D8;
+  border-left:4px solid #D96A25;
+  color:#74543E;
+  font-size:13px;
+  line-height:1.85;
+}
+
+.air-page .air-cta {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  padding:45px;
+  background:#A66A42;
+  color:#fff;
+}
+
+.air-page .air-cta h2 {
+  color:#fff;
+  font-size:clamp(25px,3vw,34px);
+  margin:0 0 10px;
+}
+
+.air-page .air-cta p {
+  color:#FBEBDD;
+  line-height:1.8;
+  margin:0;
+  max-width:650px;
+}
+
+.air-page .air-dark-section {
+  background:#704A34;
+}
+
+.air-page .air-dark-section .air-section-heading h2 {
+  color:#fff;
+}
+
+.air-page .air-dark-section .air-section-heading p {
+  color:#F1DFD0;
+}
+
+@media(max-width:950px) {
+  .air-page .air-service-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .air-page .air-process-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:760px) {
+  .air-page .air-hero {
+    min-height:460px;
+    background-position:58% center;
+  }
+
+  .air-page .air-hero-content {
+    padding:75px 0;
+  }
+
+  .air-page .air-hero p {
+    font-size:15px;
+  }
+
+  .air-page .air-intro-grid,
+  .air-page .air-feature-grid {
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+
+  .air-page .air-intro-image {
+    height:310px;
+  }
+
+  .air-page .air-feature-image {
+    height:300px;
+  }
+
+  .air-page .air-service-grid,
+  .air-page .air-process-grid,
+  .air-page .air-info-grid {
+    grid-template-columns:1fr;
+  }
+
+  .air-page .air-cta {
+    padding:30px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+
+@media(max-width:430px) {
+  .air-page .air-actions {
+    flex-direction:column;
+    align-items:flex-start;
+  }
 }
 </style>
 </head>
 
-<body>
+<body class="air-page">
 
 <div class="topline">
   <div class="wrap top-inner">
-    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+    <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
     <span>
       <a href="tel:+254704261626">+254 704 261 626</a> ·
       <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
@@ -167,14 +385,16 @@ img{display:block;width:100%;object-fit:cover}
 
 <header class="header">
   <div class="wrap nav">
+
     <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-      <span>FLEYPAT<small>ADVENTURES</small></span>
+      <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
     </a>
 
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <button class="nav-toggle" id="menuToggle"
+      type="button" aria-label="Open navigation menu"
+      aria-expanded="false" aria-controls="mainNav">☰</button>
 
-    <nav>
+    <nav id="mainNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="safaris.html">Safaris</a>
@@ -191,61 +411,74 @@ img{display:block;width:100%;object-fit:cover}
       <a href="contact.html">Contact</a>
       <a class="nav-book" href="contact.html">Book Now</a>
     </nav>
+
   </div>
 </header>
 
 <main>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-content">
+<section class="air-hero">
+  <div class="wrap air-hero-content">
     <span class="eyebrow">Your journey, connected</span>
-    <h1>Air Ticketing & Flight Assistance</h1>
+
+    <h1>Air Ticketing &amp; Flight Assistance</h1>
+
     <p>
       Planning a journey within Kenya, across Africa or beyond?
       Fleypat Adventures assists with flight searches, ticketing
       enquiries and travel coordination to help you plan your trip
       with greater confidence.
     </p>
-    <div class="hero-actions">
-      <a class="btn" href="contact.html?service=air-ticketing">Request Flight Assistance</a>
-      <a class="btn btn-outline" href="#services">Explore Our Services</a>
+
+    <div class="air-actions">
+      <a class="btn" href="contact.html?service=air-ticketing">
+        Request Flight Assistance
+      </a>
+      <a class="btn btn-outline" href="#services">
+        Explore Our Services
+      </a>
     </div>
   </div>
 </section>
 
-<!-- INTRO -->
+<!-- INTRODUCTION -->
 <section class="section">
-  <div class="wrap intro-grid">
+  <div class="wrap air-intro-grid">
+
     <div>
       <img
-        class="intro-image"
-        src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85"
-        alt="Passenger aircraft flying above the clouds"
+        class="air-intro-image"
+        src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=85"
+        alt="International airport terminal with passengers preparing for travel"
         loading="lazy">
     </div>
 
-    <div class="intro-copy">
+    <div class="air-intro-copy">
       <span class="eyebrow">Flight planning made easier</span>
+
       <h2>Get support with your flight arrangements</h2>
+
       <p>
         Finding a suitable flight involves more than choosing a
         destination. Travel dates, departure airports, connections,
         baggage allowances and fare conditions can all influence
         your decision.
       </p>
+
       <p>
         Fleypat Adventures provides assistance with flight enquiries
         for travellers planning holidays, safaris, business trips,
         family visits and international journeys.
       </p>
+
       <p>
         Share your travel details and preferences with our team.
         We can help you explore available flight options and
         understand the relevant booking information before you decide.
       </p>
 
-      <div class="tag-list">
+      <div class="air-tags">
         <span>Domestic Flights</span>
         <span>International Flights</span>
         <span>One-way Tickets</span>
@@ -253,15 +486,19 @@ img{display:block;width:100%;object-fit:cover}
         <span>Group Enquiries</span>
       </div>
 
-      <a class="btn" href="contact.html?service=flight-enquiry">Send a Flight Enquiry</a>
+      <a class="btn" href="contact.html?service=flight-enquiry">
+        Send a Flight Enquiry
+      </a>
     </div>
+
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="section soft" id="services">
+<!-- FLIGHT SERVICES -->
+<section class="section alt" id="services">
   <div class="wrap">
-    <div class="section-heading">
+
+    <div class="air-section-heading">
       <span class="eyebrow">Our flight assistance</span>
       <h2>Flight arrangements we can help you explore</h2>
       <p>
@@ -270,98 +507,110 @@ img{display:block;width:100%;object-fit:cover}
       </p>
     </div>
 
-    <div class="service-grid">
+    <div class="air-service-grid">
 
-      <article class="service-card">
+      <article class="air-service-card">
         <img
-          src="https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=1000&q=85"
-          alt="Aircraft at an airport terminal"
+          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=85"
+          alt="Passenger aircraft flying above the clouds"
           loading="lazy">
-        <div class="card-copy">
-          <span class="card-label">Within Kenya</span>
+
+        <div class="air-card-copy">
+          <span class="air-card-label">Within Kenya</span>
           <h3>Domestic Flights</h3>
           <p>
             Explore flight options connecting destinations such as
             Nairobi, Mombasa, Kisumu, Malindi, Ukunda and other
             available domestic routes.
           </p>
+          <a href="contact.html?service=domestic-flights">Enquire about domestic flights →</a>
         </div>
       </article>
 
-      <article class="service-card">
+      <article class="air-service-card">
         <img
-          src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1000&q=85"
-          alt="International airport departure hall"
+          src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1000&q=85"
+          alt="Aircraft positioned at an airport runway"
           loading="lazy">
-        <div class="card-copy">
-          <span class="card-label">Across borders</span>
+
+        <div class="air-card-copy">
+          <span class="air-card-label">Across borders</span>
           <h3>International Flights</h3>
           <p>
             Get assistance exploring international flight options
             for holidays, business travel, family visits and
             journeys to destinations around the world.
           </p>
+          <a href="contact.html?service=international-flights">Enquire about international flights →</a>
         </div>
       </article>
 
-      <article class="service-card">
+      <article class="air-service-card">
         <img
-          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=85"
-          alt="Passenger airplane in flight"
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=85"
+          alt="Mountain landscape viewed during a journey"
           loading="lazy">
-        <div class="card-copy">
-          <span class="card-label">Flexible travel</span>
-          <h3>One-way & Return Tickets</h3>
+
+        <div class="air-card-copy">
+          <span class="air-card-label">Flexible travel</span>
+          <h3>One-way &amp; Return Tickets</h3>
           <p>
             Enquire about one-way and return flight arrangements
             depending on your travel schedule and available fares.
           </p>
+          <a href="contact.html?service=one-way-return-tickets">Explore ticket options →</a>
         </div>
       </article>
 
-      <article class="service-card">
+      <article class="air-service-card">
         <img
-          src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1000&q=85"
-          alt="Aircraft wing and airport runway"
+          src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=85"
+          alt="Road winding through a forest landscape"
           loading="lazy">
-        <div class="card-copy">
-          <span class="card-label">Connecting journeys</span>
-          <h3>Multi-city & Connecting Flights</h3>
+
+        <div class="air-card-copy">
+          <span class="air-card-label">Connecting journeys</span>
+          <h3>Multi-city &amp; Connecting Flights</h3>
           <p>
             Explore flight combinations for journeys involving
             several destinations, stopovers or connecting airports.
           </p>
+          <a href="contact.html?service=connecting-flights">Plan a multi-city journey →</a>
         </div>
       </article>
 
-      <article class="service-card">
+      <article class="air-service-card">
         <img
           src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=85"
-          alt="Family travelling together"
+          alt="Family spending time together while travelling"
           loading="lazy">
-        <div class="card-copy">
-          <span class="card-label">Travelling together</span>
-          <h3>Family & Group Flight Enquiries</h3>
+
+        <div class="air-card-copy">
+          <span class="air-card-label">Travelling together</span>
+          <h3>Family &amp; Group Flight Enquiries</h3>
           <p>
             Request assistance with flight arrangements for families,
             friends, organisations and other groups travelling together.
           </p>
+          <a href="contact.html?service=group-flight-enquiry">Make a group enquiry →</a>
         </div>
       </article>
 
-      <article class="service-card">
+      <article class="air-service-card">
         <img
           src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=85"
-          alt="Travel planning with a map and travel documents"
+          alt="Travel map and planning materials on a table"
           loading="lazy">
-        <div class="card-copy">
-          <span class="card-label">Complete travel planning</span>
-          <h3>Flight & Holiday Coordination</h3>
+
+        <div class="air-card-copy">
+          <span class="air-card-label">Complete travel planning</span>
+          <h3>Flight &amp; Holiday Coordination</h3>
           <p>
             Coordinate your flight enquiry with accommodation,
             airport transfers, safari arrangements and other
             travel services where requested.
           </p>
+          <a href="services.html">Explore travel services →</a>
         </div>
       </article>
 
@@ -371,14 +620,18 @@ img{display:block;width:100%;object-fit:cover}
 
 <!-- WHAT TO PROVIDE -->
 <section class="section">
-  <div class="wrap feature-grid">
-    <div class="feature-copy">
+  <div class="wrap air-feature-grid">
+
+    <div class="air-feature-copy">
       <span class="eyebrow">Help us plan your flight</span>
+
       <h2>What information should you provide?</h2>
+
       <p>
         To help us understand your requirements, include as many
         travel details as possible when sending your enquiry.
       </p>
+
       <ul>
         <li>Departure city or airport.</li>
         <li>Destination city or airport.</li>
@@ -389,22 +642,28 @@ img{display:block;width:100%;object-fit:cover}
         <li>One-way, return or multi-city journey.</li>
         <li>Any important baggage or connection preferences.</li>
       </ul>
-      <a class="btn" href="contact.html?service=air-ticketing">Submit Your Flight Details</a>
+
+      <a class="btn" href="contact.html?service=air-ticketing">
+        Submit Your Flight Details
+      </a>
     </div>
 
     <div>
       <img
-        src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85"
-        alt="Aircraft travelling through the sky"
+        class="air-feature-image"
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+        alt="Scenic destination for a holiday journey"
         loading="lazy">
     </div>
+
   </div>
 </section>
 
 <!-- BOOKING PROCESS -->
-<section class="section soft">
+<section class="section alt">
   <div class="wrap">
-    <div class="section-heading">
+
+    <div class="air-section-heading">
       <span class="eyebrow">From enquiry to departure</span>
       <h2>How our flight enquiry process works</h2>
       <p>
@@ -413,34 +672,36 @@ img{display:block;width:100%;object-fit:cover}
       </p>
     </div>
 
-    <div class="process-grid">
-      <div class="process-item">
-        <div class="number">01</div>
+    <div class="air-process-grid">
+
+      <article class="air-process-item">
+        <div class="air-number">01</div>
         <h3>Share Your Travel Plans</h3>
         <p>
           Send your departure and arrival destinations, travel dates,
           passenger numbers and preferred flight arrangements.
         </p>
-      </div>
+      </article>
 
-      <div class="process-item">
-        <div class="number">02</div>
+      <article class="air-process-item">
+        <div class="air-number">02</div>
         <h3>Review Flight Options</h3>
         <p>
           We assist with exploring available options and understanding
           relevant fares, schedules, baggage allowances and conditions.
         </p>
-      </div>
+      </article>
 
-      <div class="process-item">
-        <div class="number">03</div>
+      <article class="air-process-item">
+        <div class="air-number">03</div>
         <h3>Confirm Your Ticket</h3>
         <p>
           Once you select an option, the applicable payment and
           ticketing arrangements are explained. Ticket issuance
           is subject to confirmation by the relevant provider.
         </p>
-      </div>
+      </article>
+
     </div>
   </div>
 </section>
@@ -448,7 +709,8 @@ img{display:block;width:100%;object-fit:cover}
 <!-- IMPORTANT INFORMATION -->
 <section class="section">
   <div class="wrap">
-    <div class="section-heading">
+
+    <div class="air-section-heading">
       <span class="eyebrow">Before you book</span>
       <h2>Important flight booking information</h2>
       <p>
@@ -457,62 +719,64 @@ img{display:block;width:100%;object-fit:cover}
       </p>
     </div>
 
-    <div class="info-grid">
-      <div class="info-item">
+    <div class="air-info-grid">
+
+      <article class="air-info-item">
         <h3>Flight Fares</h3>
         <p>
           Airfares may change depending on availability, travel dates,
           airline policies and booking conditions. A quoted fare is
           subject to confirmation at the time of booking.
         </p>
-      </div>
+      </article>
 
-      <div class="info-item">
+      <article class="air-info-item">
         <h3>Baggage Allowances</h3>
         <p>
           Checked and cabin baggage allowances differ by airline,
           route and fare type. Confirm your allowance before travel.
         </p>
-      </div>
+      </article>
 
-      <div class="info-item">
+      <article class="air-info-item">
         <h3>Passenger Details</h3>
         <p>
           Passenger names and travel document details must be
           accurate and consistent with the documents required
           by the airline and destination.
         </p>
-      </div>
+      </article>
 
-      <div class="info-item">
-        <h3>Changes & Cancellations</h3>
+      <article class="air-info-item">
+        <h3>Changes &amp; Cancellations</h3>
         <p>
           Changes, refunds and cancellations depend on the
           applicable airline and ticket fare rules. Some fares
           may have restrictions or additional charges.
         </p>
-      </div>
+      </article>
 
-      <div class="info-item">
+      <article class="air-info-item">
         <h3>Travel Documents</h3>
         <p>
           Travellers are responsible for checking passport validity,
           visa requirements, transit conditions and other entry
           requirements before departure.
         </p>
-      </div>
+      </article>
 
-      <div class="info-item">
-        <h3>Check-in & Departure</h3>
+      <article class="air-info-item">
+        <h3>Check-in &amp; Departure</h3>
         <p>
           Check your airline's recommended airport arrival time,
           check-in deadlines, terminal details and boarding
           requirements before your journey.
         </p>
-      </div>
+      </article>
+
     </div>
 
-    <div class="notice">
+    <div class="air-notice">
       <strong>Please note:</strong>
       Fleypat Adventures provides flight enquiry and ticketing
       assistance subject to the booking arrangements available
@@ -521,13 +785,15 @@ img{display:block;width:100%;object-fit:cover}
       until confirmed. Visa approvals and entry decisions remain
       the responsibility of the relevant authorities.
     </div>
+
   </div>
 </section>
 
-<!-- CTA -->
-<section class="section dark">
+<!-- FLIGHT ENQUIRY CTA -->
+<section class="section air-dark-section">
   <div class="wrap">
-    <div class="section-heading">
+
+    <div class="air-section-heading">
       <span class="eyebrow">Let's get you moving</span>
       <h2>Where would you like to fly?</h2>
       <p>
@@ -538,33 +804,52 @@ img{display:block;width:100%;object-fit:cover}
     </div>
 
     <div style="text-align:center">
-      <a class="btn" href="contact.html?service=air-ticketing">Enquire About Flights</a>
+      <a class="btn" href="contact.html?service=air-ticketing">
+        Enquire About Flights
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- OTHER SERVICES CTA -->
+<section class="section">
+  <div class="wrap">
+    <div class="air-cta">
+      <div>
+        <h2>Need more than a flight?</h2>
+        <p>
+          We can also help coordinate accommodation, airport transfers,
+          safaris and holiday arrangements.
+        </p>
+      </div>
+
+      <a class="btn btn-gold" href="services.html">
+        Explore Our Services
+      </a>
     </div>
   </div>
 </section>
 
-<section class="cta wrap">
-  <div>
-    <h2>Need more than a flight?</h2>
-    <p>
-      We can also help coordinate accommodation, airport transfers,
-      safaris and holiday arrangements.
-    </p>
-  </div>
-  <a class="btn btn-gold" href="services.html">Explore Our Services</a>
-</section>
-
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="wrap footer-grid">
+
     <div>
       <a class="brand footer-brand" href="index.html">
-        <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-        <span>FLEYPAT<small>ADVENTURES</small></span>
+        <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
       </a>
-      <p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-      <a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+
+      <p>
+        Explore more. Experience more. Travel beyond expectations.
+        Your journey starts with us.
+      </p>
+
+      <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">
+        Instagram @fleypat_adventures
+      </a>
     </div>
 
     <div>
@@ -593,6 +878,7 @@ img{display:block;width:100%;object-fit:cover}
       <a href="https://wa.me/254704261626">WhatsApp our team</a>
       <span>Mombasa, Kenya</span>
     </div>
+
   </div>
 
   <div class="wrap foot-bottom">
@@ -604,24 +890,42 @@ img{display:block;width:100%;object-fit:cover}
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20assistance%20with%20flight%20booking."
    target="_blank"
-   rel="noopener">WhatsApp Us</a>
+   rel="noopener">
+  WhatsApp Us
+</a>
 
 <script src="script.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  const toggle=document.querySelector('.nav-toggle');
-  const nav=document.querySelector('.nav nav');
 
-  if(toggle && nav){
-    toggle.addEventListener('click',function(){
-      const isOpen=nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded',String(isOpen));
-      toggle.textContent=isOpen?'✕':'☰';
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('open');
+
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute(
+        'aria-label',
+        isOpen ? 'Close navigation menu' : 'Open navigation menu'
+      );
+
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open navigation menu');
+        toggle.textContent = '☰';
+      });
     });
   }
 
-  document.querySelectorAll('[data-year]').forEach(function(el){
-    el.textContent=new Date().getFullYear();
+  document.querySelectorAll('[data-year]').forEach(function (element) {
+    element.textContent = new Date().getFullYear();
   });
 });
 </script>
