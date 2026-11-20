@@ -7,7 +7,7 @@
 
 <title>Airport Transfers &amp; Ground Transport | Fleypat Adventures</title>
 <meta name="description" content="Arrange reliable airport, hotel, SGR and private safari transfers in Kenya with Fleypat Adventures.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,496 +16,204 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
---fp-lime:#a8d832;
---fp-cream:#fbf7e9;
---fp-gold:#a97832;
---fp-green:#243c28;
---fp-ink:#202820;
-}
-
-body{
-font-family:"DM Sans",sans-serif;
-color:var(--fp-ink);
-}
-
-h1,h2,h3,.brand{
-font-family:"Playfair Display",serif;
-}
-
-.wrap{
-width:min(1160px,calc(100% - 40px));
-margin-inline:auto;
-}
-
-/* TOP BAR */
-
-.topline{
-background:var(--fp-green);
-color:#fff;
-font-size:.82rem;
-}
-
-.top-inner{
-min-height:38px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:16px;
-}
-
-.topline a{
-color:#fff;
-text-decoration:none;
-}
-
-/* HEADER */
-
-.header{
-position:relative;
-z-index:10;
-background:#fff;
-}
-
-.nav{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:24px;
-min-height:86px;
-}
-
-.brand{
-display:flex;
-align-items:center;
-gap:10px;
-text-decoration:none;
-color:var(--fp-green);
-font-size:1.25rem;
-font-weight:800;
-letter-spacing:.06em;
-line-height:1;
-}
-
-.brand img{
-width:52px;
-height:52px;
-object-fit:contain;
-}
-
-.brand small{
-display:block;
-font:700 .62rem "DM Sans",sans-serif;
-letter-spacing:.25em;
-margin-top:5px;
-}
-
-nav{
-display:flex;
-align-items:center;
-justify-content:flex-end;
-gap:15px;
-flex-wrap:wrap;
-}
-
-nav a{
-font-size:.78rem;
-font-weight:700;
-color:#29342a;
-text-decoration:none;
-}
-
-nav a:hover,
-nav a.active{
-color:#709c1d;
-}
-
-.nav-book{
-background:var(--fp-lime);
-padding:12px 17px;
-color:#1e2a1d;
-}
-
-.nav-toggle{
-display:none;
-}
-
-/* HERO */
-
-.transfer-hero{
-min-height:460px;
-display:flex;
-align-items:center;
-color:#fff;
-background:
-linear-gradient(90deg,rgba(17,34,21,.82),rgba(17,34,21,.2)),
-url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=85")
-center 48%/cover no-repeat;
-}
-
-.hero-copy{
-max-width:720px;
-padding:85px 0;
-}
-
-.eyebrow,
-.kicker{
-display:inline-block;
-text-transform:uppercase;
-letter-spacing:.18em;
-font-size:.72rem;
-font-weight:700;
-color:var(--fp-lime);
-}
-
-.transfer-hero h1{
-font-size:clamp(2.6rem,6vw,5rem);
-line-height:1.04;
-margin:18px 0;
-max-width:760px;
-}
-
-.transfer-hero p{
-font-size:1.08rem;
-line-height:1.8;
-max-width:620px;
-color:#f2f3ed;
-}
-
-/* TRANSFER OPTIONS */
-
-.section{
-padding:88px 0;
-}
-
-.section-head{
-text-align:center;
-max-width:700px;
-margin:0 auto 42px;
-}
-
-.section-head .kicker{
-color:#779e24;
-}
-
-.section-head h2{
-font-size:clamp(2rem,4vw,3.1rem);
-color:var(--fp-green);
-margin:12px 0;
-}
-
-.section-head p{
-color:#687168;
-line-height:1.75;
-margin:0;
-}
-
-.transfer-grid{
-display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:26px;
-}
-
-.transfer-card{
-background:#fff;
-border:1px solid #e8e9e1;
-display:flex;
-flex-direction:column;
-min-width:0;
-transition:transform .25s ease,box-shadow .25s ease;
-}
-
-.transfer-card:hover{
-transform:translateY(-5px);
-box-shadow:0 18px 38px rgba(31,48,31,.11);
-}
-
-.transfer-photo{
-height:265px;
-overflow:hidden;
-background:#e9ece3;
-}
-
-.transfer-photo img{
-width:100%;
-height:100%;
-display:block;
-object-fit:cover;
-transition:transform .5s ease;
-}
-
-.transfer-card:hover .transfer-photo img{
-transform:scale(1.04);
-}
-
-.transfer-content{
-padding:27px 29px 30px;
-display:flex;
-flex:1;
-flex-direction:column;
-align-items:flex-start;
-}
-
-.mini-tag{
-font-size:.68rem;
-text-transform:uppercase;
-letter-spacing:.16em;
-font-weight:700;
-color:#779e24;
-}
-
-.transfer-content h3{
-font-size:1.65rem;
-color:var(--fp-green);
-margin:10px 0;
-}
+/* PAGE-SPECIFIC STYLES */
 
-.transfer-content p{
-font-size:.95rem;
-line-height:1.75;
-color:#667066;
-margin:0 0 22px;
+.transfer-hero {
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background:
+        linear-gradient(90deg, rgba(55,35,24,.86), rgba(55,35,24,.22)),
+        url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=85")
+        center 48% / cover no-repeat;
 }
 
-.transfer-content .link{
-margin-top:auto;
-color:#587d1a;
-font-weight:700;
-text-decoration:none;
-border-bottom:1px solid var(--fp-lime);
-padding-bottom:5px;
+.transfer-hero .hero-copy {
+    max-width: 760px;
+    padding: 90px 0;
 }
 
-.transfer-content .link:hover{
-color:#243c28;
+.transfer-hero .eyebrow {
+    color: #F5B17D;
 }
 
-/* INFORMATION NOTE */
-
-.transfer-note{
-margin:45px auto 0;
-max-width:850px;
-padding:24px 28px;
-background:var(--fp-cream);
-border-left:4px solid var(--fp-lime);
-color:#596257;
-line-height:1.75;
-}
-
-.transfer-note strong{
-color:var(--fp-green);
-}
-
-/* CTA */
-
-.cta{
-margin:0 auto 86px;
-background:var(--fp-green);
-color:#fff;
-padding:42px 48px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:28px;
-}
-
-.cta h2{
-font-size:clamp(1.7rem,3vw,2.5rem);
-margin:0 0 8px;
-}
-
-.cta p{
-color:#e1e8dc;
-margin:0;
-line-height:1.7;
-}
-
-.btn-gold{
-display:inline-block;
-white-space:nowrap;
-background:var(--fp-lime);
-color:#1e2a1d;
-text-decoration:none;
-padding:15px 22px;
-font-weight:700;
-}
-
-/* FOOTER */
-
-.footer{
-background:#17291c;
-color:#e8eee4;
-padding:65px 0 20px;
+.transfer-hero h1 {
+    max-width: 750px;
+    font-size: clamp(2.6rem, 6vw, 5rem);
+    line-height: 1.06;
+    margin: 18px 0;
 }
 
-.footer-grid{
-display:grid;
-grid-template-columns:1.5fr 1fr 1fr 1.2fr;
-gap:35px;
+.transfer-hero p {
+    max-width: 630px;
+    color: #fff4e8;
+    font-size: 1.08rem;
+    line-height: 1.85;
 }
 
-.footer-brand{
-color:#fff;
-margin-bottom:20px;
+.transfer-hero .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
 }
 
-.footer p{
-color:#c3cec0;
-line-height:1.8;
-max-width:310px;
+.transfer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
 }
 
-.footer a,
-.footer span{
-display:block;
-color:#d7e0d3;
-text-decoration:none;
-font-size:.9rem;
-margin:10px 0;
+.transfer-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ead8c7;
+    transition: transform .25s ease, box-shadow .25s ease;
 }
 
-.footer a:hover{
-color:var(--fp-lime);
+.transfer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(76,48,30,.12);
 }
 
-.footer h3{
-color:#fff;
-font-size:1.2rem;
-margin:0 0 18px;
+.transfer-photo {
+    height: 280px;
+    overflow: hidden;
+    background: #f5e6d6;
 }
 
-.foot-bottom{
-border-top:1px solid rgba(255,255,255,.15);
-margin-top:45px;
-padding-top:20px;
-display:flex;
-justify-content:space-between;
-gap:15px;
-color:#b9c5b6;
-font-size:.8rem;
+.transfer-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
 }
-
-/* WHATSAPP */
 
-.float-wa{
-position:fixed;
-right:22px;
-bottom:22px;
-z-index:20;
-background:#25d366;
-color:#102416;
-text-decoration:none;
-font-weight:700;
-padding:14px 19px;
-box-shadow:0 8px 25px #0003;
+.transfer-card:hover .transfer-photo img {
+    transform: scale(1.04);
 }
 
-/* TABLET */
-
-@media(max-width:1050px){
-
-nav{
-gap:10px;
+.transfer-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 30px 32px;
 }
 
-nav a{
-font-size:.72rem;
+.transfer-content .mini-tag {
+    color: #B85B20;
 }
 
-.nav{
-align-items:flex-start;
-padding:18px 0;
+.transfer-content h3 {
+    color: #6B4935;
+    font-size: 1.7rem;
+    line-height: 1.25;
+    margin: 12px 0;
 }
 
-.footer-grid{
-grid-template-columns:repeat(2,1fr);
+.transfer-content p {
+    color: #897264;
+    font-size: .96rem;
+    line-height: 1.8;
+    margin: 0 0 25px;
 }
 
+.transfer-content .link {
+    margin-top: auto;
+    color: #B85B20;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #E8752A;
+    padding-bottom: 5px;
 }
-
-/* MOBILE */
 
-@media(max-width:760px){
-
-.top-inner{
-padding:9px 0;
-align-items:flex-start;
-flex-direction:column;
-gap:4px;
+.transfer-content .link:hover {
+    color: #6B4935;
 }
 
-.nav{
-min-height:75px;
-align-items:center;
-flex-wrap:wrap;
+.transfer-note {
+    max-width: 900px;
+    margin: 48px auto 0;
+    padding: 25px 30px;
+    background: #FFF4E8;
+    border-left: 4px solid #E8752A;
+    color: #897264;
+    line-height: 1.8;
 }
 
-.nav-toggle{
-display:block;
-border:0;
-background:var(--fp-lime);
-padding:10px 13px;
-font-size:1.2rem;
-cursor:pointer;
+.transfer-note strong {
+    color: #6B4935;
 }
 
-nav{
-display:none;
-width:100%;
-flex-direction:column;
-align-items:stretch;
-padding:10px 0 18px;
+.transfer-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 45px;
 }
 
-nav.open{
-display:flex;
+.transfer-benefit {
+    padding: 25px;
+    border: 1px solid #ead8c7;
+    background: #fff;
 }
 
-nav a{
-font-size:.9rem;
-padding:8px 0;
+.transfer-benefit h3 {
+    color: #6B4935;
+    font-size: 1.2rem;
+    margin: 12px 0 8px;
 }
 
-.transfer-hero{
-min-height:420px;
+.transfer-benefit p {
+    color: #897264;
+    line-height: 1.7;
+    font-size: .92rem;
+    margin: 0;
 }
 
-.hero-copy{
-padding:70px 0;
+.transfer-benefit .benefit-icon {
+    color: #E8752A;
+    font-size: 1.7rem;
 }
 
-.section{
-padding:65px 0;
+.transfer-cta {
+    margin-top: 20px;
+    margin-bottom: 85px;
 }
 
-.transfer-grid{
-grid-template-columns:1fr;
-}
+@media(max-width:760px) {
+    .transfer-hero {
+        min-height: 420px;
+    }
 
-.transfer-photo{
-height:235px;
-}
+    .transfer-hero .hero-copy {
+        padding: 70px 0;
+    }
 
-.cta{
-margin-bottom:60px;
-padding:32px 25px;
-align-items:flex-start;
-flex-direction:column;
-}
+    .transfer-grid {
+        grid-template-columns: 1fr;
+    }
 
-.footer-grid{
-grid-template-columns:1fr;
-gap:25px;
-}
+    .transfer-photo {
+        height: 245px;
+    }
 
-.foot-bottom{
-flex-direction:column;
-}
+    .transfer-content {
+        padding: 24px;
+    }
 
-.wrap{
-width:min(100% - 32px,1160px);
-}
+    .transfer-benefits {
+        grid-template-columns: 1fr;
+    }
 
+    .transfer-cta {
+        margin-bottom: 60px;
+    }
 }
 </style>
 </head>
@@ -513,341 +221,449 @@ width:min(100% - 32px,1160px);
 <body>
 
 <!-- TOP BAR -->
-
 <div class="topline">
-<div class="wrap top-inner">
-<span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-
-<span>
-<a href="tel:+254704261626">+254 704 261 626</a> ·
-<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-</span>
-</div>
+    <div class="wrap top-inner">
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+        <span>
+            <a href="tel:+254704261626">+254 704 261 626</a> ·
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+        </span>
+    </div>
 </div>
 
 <!-- HEADER -->
-
 <header class="header">
-<div class="wrap nav">
+    <div class="wrap nav">
 
-<a class="brand" href="index.html">
-<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-<span>FLEYPAT<small>ADVENTURES</small></span>
-</a>
+        <a class="brand" href="index.html">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+        </a>
 
-<button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button
+            class="nav-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mainNav">
+            ☰
+        </button>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="safaris.html">Safaris</a>
-<a href="marine-tours.html">Marine Tours</a>
-<a href="day-trips.html">Day Trips</a>
-<a href="beach-holidays.html">Beach Holidays</a>
-<a href="honeymoon.html">Honeymoons</a>
-<a href="destinations.html">Destinations</a>
-<a href="itineraries.html">Itineraries</a>
-<a href="services.html">Services</a>
-<a href="transfers.html" class="active">Transfers</a>
-<a href="blog.html">Blog</a>
-<a href="partnerships.html">Partnerships</a>
-<a href="contact.html">Contact</a>
-<a class="nav-book" href="contact.html">Book Now</a>
-</nav>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="honeymoon.html">Honeymoons</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+            <a href="services.html">Services</a>
+            <a href="transfers.html" class="active">Transfers</a>
+            <a href="blog.html">Blog</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-book" href="contact.html">Book Now</a>
+        </nav>
 
-</div>
+    </div>
 </header>
 
 <main>
 
 <!-- HERO -->
-
 <section class="transfer-hero">
-<div class="wrap">
-<div class="hero-copy">
+    <div class="wrap">
+        <div class="hero-copy">
 
-<span class="eyebrow">Explore with Fleypat</span>
+            <span class="eyebrow">Comfortable journeys · Convenient connections</span>
 
-<h1>Airport Transfers &amp; Ground Transport</h1>
+            <h1>Airport Transfers &amp; Ground Transport</h1>
 
-<p>
-Make every connection easier with arranged airport pickups,
-SGR station transfers and private ground transport for your
-Kenya journey.
-</p>
+            <p>
+                Make every connection easier with arranged airport pickups,
+                SGR station transfers and private ground transport for your
+                Kenya journey. From arrival to your final destination,
+                let us help you plan the journey.
+            </p>
 
-</div>
-</div>
+            <div class="actions">
+                <a class="btn btn-gold" href="contact.html?service=transfers">
+                    Arrange Your Transfer
+                </a>
+
+                <a class="btn btn-outline" href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20a%20transfer.">
+                    WhatsApp Us
+                </a>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <!-- TRANSFER OPTIONS -->
-
 <section class="section">
-<div class="wrap">
+    <div class="wrap">
 
-<div class="section-head">
-<span class="kicker">Travel with us</span>
-<h2>Choose Your Transfer</h2>
-<p>
-From airport arrivals to safari journeys, explore the transport
-arrangements available through Fleypat Adventures.
-</p>
-</div>
+        <div class="section-head">
+            <span class="kicker">Travel with Fleypat</span>
+            <h2>Choose Your Transfer</h2>
+            <p>
+                Whether you are arriving by air, travelling by rail or
+                heading out on safari, explore transport arrangements
+                available through Fleypat Adventures.
+            </p>
+        </div>
 
-<div class="transfer-grid">
+        <div class="transfer-grid">
 
-<!-- MOI AIRPORT -->
+            <!-- MOI AIRPORT -->
+            <article class="transfer-card">
 
-<article class="transfer-card">
+                <div class="transfer-photo">
+                    <img
+                        src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=85"
+                        alt="Aircraft at an international airport"
+                        loading="lazy">
+                </div>
 
-<div class="transfer-photo">
-<img
-src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85"
-alt="Passenger aircraft preparing for an airport journey"
-loading="lazy">
-</div>
+                <div class="transfer-content">
+                    <span class="mini-tag">Coastal arrivals</span>
 
-<div class="transfer-content">
-<span class="mini-tag">Coastal arrivals</span>
+                    <h3>Moi International Airport</h3>
 
-<h3>Moi International Airport</h3>
+                    <p>
+                        Arrange convenient pickups and drop-offs between
+                        Moi International Airport, hotels, resorts and
+                        other destinations around Mombasa and the Kenyan coast.
+                    </p>
 
-<p>
-Arrange convenient pickups and drop-offs between Moi
-International Airport, hotels, resorts and other destinations
-around Mombasa and the coast.
-</p>
+                    <a class="link" href="moi-airport-transfers.html">
+                        Discover Moi Airport Transfers →
+                    </a>
+                </div>
 
-<a class="link" href="moi-airport-transfers.html">Discover more →</a>
-</div>
+            </article>
 
-</article>
+            <!-- SGR -->
+            <article class="transfer-card">
 
-<!-- SGR -->
+                <div class="transfer-photo">
+                    <img
+                        src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=85"
+                        alt="Passenger train travelling through the countryside"
+                        loading="lazy">
+                </div>
 
-<article class="transfer-card">
+                <div class="transfer-content">
+                    <span class="mini-tag">Rail connections</span>
 
-<div class="transfer-photo">
-<img
-src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=85"
-alt="Passenger railway train travelling through the countryside"
-loading="lazy">
-</div>
+                    <h3>SGR Transfers</h3>
 
-<div class="transfer-content">
-<span class="mini-tag">Rail connections</span>
+                    <p>
+                        Connect with the Madaraka Express through arranged
+                        transfers to or from Mombasa Terminus and other
+                        agreed railway stations. Plan your road connection
+                        around your train schedule.
+                    </p>
 
-<h3>SGR Transfers</h3>
+                    <a class="link" href="sgr-transfers.html">
+                        Discover SGR Transfers →
+                    </a>
+                </div>
 
-<p>
-Connect with the Madaraka Express through arranged transfers
-to or from Mombasa Terminus and other agreed railway stations.
-</p>
+            </article>
 
-<a class="link" href="sgr-transfers.html">Discover more →</a>
-</div>
+            <!-- JKIA -->
+            <article class="transfer-card">
 
-</article>
+                <div class="transfer-photo">
+                    <img
+                        src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85"
+                        alt="Passenger aircraft flying above the clouds"
+                        loading="lazy">
+                </div>
 
-<!-- JKIA -->
+                <div class="transfer-content">
+                    <span class="mini-tag">Nairobi arrivals</span>
 
-<article class="transfer-card">
+                    <h3>JKIA Transfers</h3>
 
-<div class="transfer-photo">
-<img
-src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=85"
-alt="Modern international airport terminal and passenger aircraft"
-loading="lazy">
-</div>
+                    <p>
+                        Plan airport pickups and drop-offs at Jomo Kenyatta
+                        International Airport, including onward connections
+                        to Nairobi hotels, residences and other destinations.
+                    </p>
 
-<div class="transfer-content">
-<span class="mini-tag">Nairobi arrivals</span>
+                    <a class="link" href="jkia-transfers.html">
+                        Discover JKIA Transfers →
+                    </a>
+                </div>
 
-<h3>JKIA Transfers</h3>
+            </article>
 
-<p>
-Plan airport pickups and drop-offs at Jomo Kenyatta
-International Airport, including onward connections to Nairobi
-hotels and other destinations.
-</p>
+            <!-- PRIVATE SAFARI TRANSPORT -->
+            <article class="transfer-card">
 
-<a class="link" href="jkia-transfers.html">Discover more →</a>
-</div>
+                <div class="transfer-photo">
+                    <img
+                        src="https://leopardorchidsafaris.co.ke/__l5e/assets-v1/a9fab74e-68dd-409e-98e0-21e084a99610/branded-land-cruiser-savanna.jpeg"
+                        alt="Safari Land Cruiser on an East African savannah"
+                        loading="lazy">
+                </div>
 
-</article>
+                <div class="transfer-content">
+                    <span class="mini-tag">Private journeys</span>
 
-<!-- PRIVATE SAFARI TRANSPORT -->
+                    <h3>Private Safari Transport</h3>
 
-<article class="transfer-card">
+                    <p>
+                        Explore private 4x4 safari vehicle and tourist van
+                        options for transfers, game drives and tailor-made
+                        journeys across Kenya's wildlife destinations.
+                    </p>
 
-<div class="transfer-photo">
-<img
-src="https://leopardorchidsafaris.co.ke/__l5e/assets-v1/a9fab74e-68dd-409e-98e0-21e084a99610/branded-land-cruiser-savanna.jpeg"
-alt="Safari Land Cruiser with raised pop-up roof on an East African savannah"
-loading="lazy">
-</div>
+                    <a class="link" href="private-safari-transport.html">
+                        Discover Safari Transport →
+                    </a>
+                </div>
 
-<div class="transfer-content">
-<span class="mini-tag">Private journeys</span>
+            </article>
 
-<h3>Private Safari Transport</h3>
+        </div>
 
-<p>
-Explore private 4x4 safari vehicle and tourist van options
-for transfers, game drives and tailor-made journeys across Kenya.
-</p>
+        <div class="transfer-note">
+            <strong>Need a tailored transfer?</strong>
+            Share your arrival point, destination, travel date and group size.
+            Our team can help you discuss suitable vehicle options and
+            request a quotation for your journey.
+        </div>
 
-<a class="link" href="private-safari-transport.html">Discover more →</a>
-</div>
-
-</article>
-
-</div>
-
-<div class="transfer-note">
-<strong>Need a tailored transfer?</strong>
-Share your arrival point, destination, travel date and group size.
-Our team can help you discuss suitable vehicle options and a
-quotation for your journey.
-</div>
-
-</div>
+    </div>
 </section>
 
-<!-- CALL TO ACTION -->
+<!-- WHY ARRANGE WITH FLEYPAT -->
+<section class="section alt">
+    <div class="wrap">
 
-<section class="cta wrap">
+        <div class="section-head">
+            <span class="kicker">Plan your journey</span>
+            <h2>Ground Transport Made Easier</h2>
+            <p>
+                Good transport planning helps make your holiday,
+                business trip or safari more convenient from the beginning.
+            </p>
+        </div>
 
-<div>
-<h2>Ready to plan your next adventure?</h2>
+        <div class="transfer-benefits">
 
-<p>
-Tell us your route and travel plans, and we will help prepare
-a tailored transport proposal.
-</p>
-</div>
+            <article class="transfer-benefit">
+                <div class="benefit-icon">01</div>
+                <h3>Convenient Connections</h3>
+                <p>
+                    Coordinate your airport, railway station, hotel
+                    and destination transfers as part of your travel plans.
+                </p>
+            </article>
 
-<a class="btn-gold" href="contact.html">Make an Enquiry</a>
+            <article class="transfer-benefit">
+                <div class="benefit-icon">02</div>
+                <h3>Flexible Arrangements</h3>
+                <p>
+                    Discuss your preferred pickup location, destination,
+                    travel schedule and group requirements with our team.
+                </p>
+            </article>
+
+            <article class="transfer-benefit">
+                <div class="benefit-icon">03</div>
+                <h3>Safari Connections</h3>
+                <p>
+                    Include ground transport in your wider Kenya safari
+                    arrangements and discuss suitable vehicle options.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- HOW TO REQUEST -->
+<section class="section">
+    <div class="wrap">
+
+        <div class="section-head">
+            <span class="kicker">Getting started</span>
+            <h2>How to Arrange Your Transfer</h2>
+            <p>
+                Send us a few details about your journey so we can
+                understand your transport requirements.
+            </p>
+        </div>
+
+        <div class="transfer-benefits">
+
+            <article class="transfer-benefit">
+                <div class="benefit-icon">01</div>
+                <h3>Share Your Route</h3>
+                <p>
+                    Tell us where you will be picked up and where
+                    you would like to go.
+                </p>
+            </article>
+
+            <article class="transfer-benefit">
+                <div class="benefit-icon">02</div>
+                <h3>Provide Travel Details</h3>
+                <p>
+                    Share your travel date, arrival time, passenger
+                    numbers and any luggage requirements.
+                </p>
+            </article>
+
+            <article class="transfer-benefit">
+                <div class="benefit-icon">03</div>
+                <h3>Receive a Proposal</h3>
+                <p>
+                    Discuss available arrangements, suitable transport
+                    options and a quotation with our team.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta transfer-cta wrap">
+
+    <div>
+        <h2>Ready to plan your next journey?</h2>
+
+        <p>
+            Tell us your route and travel plans, and we will help
+            prepare a tailored transport proposal.
+        </p>
+    </div>
+
+    <a class="btn btn-gold" href="contact.html?service=transfers">
+        Make an Enquiry
+    </a>
 
 </section>
 
 </main>
 
 <!-- FOOTER -->
-
 <footer class="footer">
 
-<div class="wrap footer-grid">
+    <div class="wrap footer-grid">
 
-<div>
+        <div>
+            <a class="brand footer-brand" href="index.html">
+                <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+            </a>
 
-<a class="brand footer-brand" href="index.html">
-<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-<span>FLEYPAT<small>ADVENTURES</small></span>
-</a>
+            <p>
+                Explore more. Experience more. Travel beyond expectations.
+                Your journey starts with us.
+            </p>
 
-<p>
-Explore more. Experience more. Travel beyond expectations.
-Your journey starts with us.
-</p>
+            <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">
+                Instagram @fleypat_adventures
+            </a>
+        </div>
 
-<a href="https://www.instagram.com/fleypat_adventures/">
-Instagram @fleypat_adventures
-</a>
+        <div>
+            <h3>Explore</h3>
 
-</div>
+            <a href="safaris.html">Wildlife Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+        </div>
 
-<div>
+        <div>
+            <h3>Company</h3>
 
-<h3>Explore</h3>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="blog.html">Travel Guides</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
 
-<a href="safaris.html">Wildlife Safaris</a>
-<a href="marine-tours.html">Marine Tours</a>
-<a href="day-trips.html">Day Trips</a>
-<a href="beach-holidays.html">Beach Holidays</a>
-<a href="destinations.html">Destinations</a>
-<a href="itineraries.html">Itineraries</a>
+        <div>
+            <h3>Contact</h3>
 
-</div>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+            <a href="https://wa.me/254704261626">WhatsApp our team</a>
+            <span>Mombasa, Kenya</span>
+        </div>
 
-<div>
+    </div>
 
-<h3>Company</h3>
+    <div class="wrap foot-bottom">
+        <span>
+            © <span data-year></span> Fleypat Adventures. All rights reserved.
+        </span>
 
-<a href="about.html">About Us</a>
-<a href="services.html">Our Services</a>
-<a href="transfers.html">Transfers</a>
-<a href="partnerships.html">Partnerships</a>
-<a href="blog.html">Travel Guides</a>
-
-</div>
-
-<div>
-
-<h3>Contact</h3>
-
-<a href="tel:+254704261626">+254 704 261 626</a>
-<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-<a href="https://wa.me/254704261626">WhatsApp our team</a>
-<span>Mombasa, Kenya</span>
-
-</div>
-
-</div>
-
-<div class="wrap foot-bottom">
-
-<span>
-© <span data-year></span> Fleypat Adventures. All rights reserved.
-</span>
-
-<span>
-Explore More. Experience More. Travel Beyond Expectations.
-</span>
-
-</div>
+        <span>
+            Explore More. Experience More. Travel Beyond Expectations.
+        </span>
+    </div>
 
 </footer>
 
-<!-- WHATSAPP -->
-
+<!-- FLOATING WHATSAPP -->
 <a
-class="float-wa"
-href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
-target="_blank"
-rel="noopener">
-WhatsApp Us
+    class="float-wa"
+    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20transfer."
+    target="_blank"
+    rel="noopener"
+    aria-label="Contact Fleypat Adventures on WhatsApp">
+    WhatsApp Us
 </a>
 
 <script src="script.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("mainNav");
 
-const toggle=document.querySelector(".nav-toggle");
-const nav=document.querySelector(".header nav");
+    if (toggle && nav) {
+        toggle.addEventListener("click", function () {
+            const isOpen = nav.classList.toggle("open");
 
-if(toggle&&nav){
+            toggle.setAttribute("aria-expanded", String(isOpen));
+            toggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close menu" : "Open menu"
+            );
+            toggle.textContent = isOpen ? "✕" : "☰";
+        });
 
-toggle.addEventListener("click",function(){
+        nav.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                nav.classList.remove("open");
+                toggle.setAttribute("aria-expanded", "false");
+                toggle.setAttribute("aria-label", "Open menu");
+                toggle.textContent = "☰";
+            });
+        });
+    }
 
-const open=nav.classList.toggle("open");
-
-toggle.setAttribute("aria-expanded",String(open));
-
-toggle.setAttribute(
-"aria-label",
-open ? "Close menu" : "Open menu"
-);
-
-});
-
-}
-
-document.querySelectorAll("[data-year]").forEach(function(el){
-el.textContent=new Date().getFullYear();
-});
-
+    document.querySelectorAll("[data-year]").forEach(function (element) {
+        element.textContent = new Date().getFullYear();
+    });
 });
 </script>
 
