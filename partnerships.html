@@ -6,351 +6,150 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>Travel Partnerships & Trade Enquiries | Fleypat Adventures</title>
-<meta name="description" content="Partner with Fleypat Adventures. We welcome collaboration enquiries from hotels, lodges, tour operators, travel agents, guides, transport providers and corporate groups.">
-<meta name="theme-color" content="#a8d832">
+<meta name="description" content="Partner with Fleypat Adventures in Kenya. We welcome collaboration enquiries from hotels, lodges, tour operators, travel agents, guides, transport providers and corporate groups.">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root {
-    --lime: #a8d832;
-    --green: #243c28;
-    --deep-green: #172a1c;
-    --cream: #fbf7e9;
-    --gold: #a97832;
-    --text: #30372e;
-    --muted: #73786f;
-    --line: #e8e5da;
-    --white: #fff;
+/* PARTNERSHIPS PAGE */
+
+.partnership-page {
+    overflow: hidden;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    color: var(--text);
-    background: #fff;
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.7;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-
-.wrap {
-    width: min(1160px, 91%);
-    margin: auto;
-}
-
-/* TOP BAR */
-
-.topline {
-    background: var(--deep-green);
-    color: rgba(255,255,255,.85);
-    font-size: 11px;
-}
-
-.top-inner {
-    min-height: 36px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
-
-.topline a:hover {
-    color: var(--lime);
-}
-
-/* HEADER */
-
-.header {
-    position: relative;
-    z-index: 20;
-    background: #fff;
-    border-bottom: 1px solid var(--line);
-}
-
-.nav {
-    min-height: 88px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
-.brand img {
-    width: 72px;
-    height: 72px;
-    object-fit: contain;
-}
-
-.brand span {
-    color: var(--green);
-    font-size: 19px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    line-height: 1.1;
-}
-
-.brand small {
-    display: block;
-    margin-top: 5px;
-    color: var(--gold);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.header nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 14px;
-}
-
-.header nav a {
-    color: var(--green);
-    font-size: 11px;
-    font-weight: 700;
-    transition: color .2s ease;
-}
-
-.header nav a:hover,
-.header nav a.active {
-    color: var(--gold);
-}
-
-.header nav .nav-book {
-    padding: 11px 17px;
-    background: var(--lime);
-    color: var(--deep-green);
-}
-
-.nav-toggle {
-    display: none;
-    padding: 10px 14px;
-    border: 0;
-    background: var(--green);
-    color: #fff;
-    font: inherit;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-/* HERO */
-
-.page-hero {
+.partnership-hero {
     min-height: 550px;
     display: flex;
     align-items: center;
     position: relative;
-    overflow: hidden;
     background:
-        linear-gradient(90deg, rgba(15,31,20,.88), rgba(15,31,20,.56) 55%, rgba(15,31,20,.15)),
-        url("https://commons.wikimedia.org/wiki/Special:FilePath/Safari_vehicle_in_Kenya.jpg") center 48% / cover no-repeat;
+        linear-gradient(90deg, rgba(48,30,19,.88), rgba(48,30,19,.58) 58%, rgba(48,30,19,.16)),
+        url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=85") center 48% / cover no-repeat;
     color: #fff;
 }
 
-.hero-content {
+.partnership-hero-content {
     max-width: 760px;
     padding: 100px 0;
 }
 
-.eyebrow {
+.partnership-hero h1 {
+    max-width: 750px;
+    margin: 0 0 22px;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.08;
+    font-weight: 600;
+}
+
+.partnership-hero p {
+    max-width: 630px;
+    margin: 0 0 30px;
+    color: rgba(255,255,255,.9);
+    font-size: 15px;
+}
+
+.partnership-hero .eyebrow {
     display: inline-block;
     margin-bottom: 18px;
-    color: var(--lime);
+    color: #F09A58;
     font-size: 11px;
     font-weight: 800;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 
-.page-hero h1 {
-    max-width: 750px;
-    margin: 0 0 22px;
-    font-family: "Playfair Display", serif;
-    font-size: clamp(43px, 6vw, 70px);
-    font-weight: 600;
-    line-height: 1.08;
-}
-
-.page-hero p {
-    max-width: 620px;
-    margin: 0 0 30px;
-    color: rgba(255,255,255,.9);
-    font-size: 16px;
-}
-
-.hero-actions {
+.partnership-hero-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 13px;
 }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 48px;
-    padding: 13px 23px;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: .6px;
-    transition: .2s ease;
-}
-
-.btn-lime {
-    background: var(--lime);
-    color: var(--deep-green);
-}
-
-.btn-lime:hover {
-    background: #c0e967;
-}
-
-.btn-outline {
+.partnership-hero .btn-outline {
     border: 1px solid rgba(255,255,255,.8);
     color: #fff;
 }
 
-.btn-outline:hover {
+.partnership-hero .btn-outline:hover {
     background: #fff;
-    color: var(--green);
+    color: #A66A42;
 }
 
-.btn-dark {
-    background: var(--green);
-    color: #fff;
-}
-
-.btn-dark:hover {
-    background: var(--deep-green);
-}
-
-/* BREADCRUMB */
-
-.breadcrumb {
+.partnership-breadcrumb {
     padding: 14px 0;
     background: var(--cream);
     color: var(--muted);
     font-size: 11px;
 }
 
-.breadcrumb a {
-    color: var(--green);
+.partnership-breadcrumb a {
+    color: var(--brown);
     font-weight: 700;
 }
 
-/* GENERAL SECTIONS */
+/* INTRODUCTION */
 
-.section {
-    padding: 88px 0;
-}
-
-.section-head {
-    max-width: 740px;
-    margin: 0 auto 42px;
-    text-align: center;
-}
-
-.kicker {
-    display: block;
-    margin-bottom: 12px;
-    color: var(--gold);
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-}
-
-.section-head h2,
-.intro-copy h2,
-.approach-copy h2 {
-    margin: 0 0 18px;
-    color: var(--green);
-    font-family: "Playfair Display", serif;
-    font-size: clamp(32px, 4vw, 46px);
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-.section-head p,
-.intro-copy p,
-.approach-copy p {
-    color: var(--muted);
-    font-size: 14px;
-}
-
-/* INTRO */
-
-.intro-grid {
+.partnership-intro-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 65px;
+    gap: 60px;
 }
 
-.intro-copy p {
-    margin-bottom: 17px;
+.partnership-intro-copy h2,
+.partnership-approach-copy h2 {
+    margin: 0 0 18px;
+    color: var(--brown);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(32px, 4vw, 46px);
+    line-height: 1.2;
 }
 
-.intro-image {
-    height: 420px;
+.partnership-intro-copy p,
+.partnership-approach-copy p {
+    margin: 0 0 17px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.partnership-intro-image {
+    width: 100%;
+    height: 440px;
     object-fit: cover;
 }
 
-.intro-points {
+.partnership-intro-points {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 13px;
     margin-top: 28px;
 }
 
-.intro-point {
-    padding: 16px;
-    border-left: 3px solid var(--lime);
+.partnership-intro-point {
+    padding: 17px;
+    border-left: 3px solid var(--orange);
     background: var(--cream);
 }
 
-.intro-point strong {
+.partnership-intro-point strong {
     display: block;
-    color: var(--green);
+    margin-bottom: 4px;
+    color: var(--brown);
     font-size: 12px;
 }
 
-.intro-point span {
+.partnership-intro-point span {
     color: var(--muted);
     font-size: 11px;
 }
 
-/* PARTNERSHIP CARDS */
+/* PARTNER CARDS */
 
 .partnership-section {
     background: var(--cream);
@@ -359,228 +158,229 @@ img {
 .partnership-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 23px;
 }
 
 .partner-card {
+    overflow: hidden;
     background: #fff;
     border: 1px solid var(--line);
-    transition: transform .2s ease;
+    transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .partner-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(83,54,35,.09);
 }
 
-.partner-card .photo {
-    height: 230px;
+.partner-card-photo {
+    height: 235px;
     overflow: hidden;
+    background: var(--cream2);
 }
 
-.partner-card .photo img {
+.partner-card-photo img {
+    width: 100%;
     height: 100%;
-    transition: transform .4s ease;
+    object-fit: cover;
+    transition: transform .45s ease;
 }
 
-.partner-card:hover .photo img {
-    transform: scale(1.04);
+.partner-card:hover .partner-card-photo img {
+    transform: scale(1.045);
 }
 
-.card-content {
+.partner-card-content {
     padding: 25px;
 }
 
-.mini-tag {
+.partner-card-content .mini-tag {
     display: inline-block;
     margin-bottom: 10px;
-    color: var(--gold);
+    color: var(--orange);
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
-.card-content h3 {
+.partner-card-content h3 {
     margin: 0 0 11px;
-    color: var(--green);
+    color: var(--brown);
     font-family: "Playfair Display", serif;
     font-size: 22px;
     line-height: 1.25;
 }
 
-.card-content p {
+.partner-card-content p {
     margin: 0;
     color: var(--muted);
     font-size: 12px;
 }
 
-.card-content .link {
+.partner-card-content .link {
     display: inline-block;
     margin-top: 19px;
-    color: var(--gold);
+    color: var(--orange);
     font-size: 10px;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: .7px;
     text-transform: uppercase;
 }
 
-.card-content .link:hover {
-    color: var(--green);
+.partner-card-content .link:hover {
+    color: var(--brown);
 }
 
 /* APPROACH */
 
-.approach-section {
-    padding: 95px 0;
+.partnership-approach {
+    padding: 90px 0;
 }
 
-.approach-grid {
+.partnership-approach-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 65px;
+    gap: 60px;
 }
 
-.approach-copy p {
-    margin-bottom: 17px;
-}
-
-.approach-list {
+.partnership-approach-list {
     margin: 24px 0 30px;
     padding: 0;
     list-style: none;
 }
 
-.approach-list li {
+.partnership-approach-list li {
     position: relative;
-    margin-bottom: 12px;
-    padding-left: 27px;
-    color: var(--text);
+    margin-bottom: 13px;
+    padding-left: 28px;
+    color: var(--ink);
     font-size: 13px;
 }
 
-.approach-list li::before {
+.partnership-approach-list li::before {
     content: "✓";
     position: absolute;
     left: 0;
-    color: var(--gold);
+    color: var(--orange);
     font-weight: 800;
 }
 
-.approach-panel {
-    padding: 36px;
+.partnership-approach-panel {
+    padding: 38px;
     background: var(--cream);
-    border-left: 4px solid var(--lime);
+    border-left: 4px solid var(--orange);
 }
 
-.approach-panel h3 {
+.partnership-approach-panel h3 {
     margin: 0 0 15px;
-    color: var(--green);
+    color: var(--brown);
     font-family: "Playfair Display", serif;
-    font-size: 27px;
+    font-size: 28px;
 }
 
-.approach-panel p {
+.partnership-approach-panel p {
     color: var(--muted);
     font-size: 13px;
 }
 
-.approach-panel a {
+.partnership-approach-panel a:not(.btn) {
     display: inline-block;
     margin-top: 10px;
-    color: var(--gold);
+    color: var(--orange);
     font-size: 11px;
     font-weight: 800;
     text-transform: uppercase;
 }
 
-/* BENEFITS */
+/* VALUES */
 
-.benefits-section {
+.partnership-values {
     padding: 85px 0;
-    background: var(--green);
+    background: #80583F;
     color: #fff;
 }
 
-.benefits-section .section-head h2 {
+.partnership-values .section-head h2 {
     color: #fff;
 }
 
-.benefits-section .section-head p {
-    color: rgba(255,255,255,.72);
+.partnership-values .section-head p {
+    color: rgba(255,255,255,.78);
 }
 
-.benefits-section .kicker {
-    color: var(--lime);
+.partnership-values .kicker {
+    color: #FFD0A5;
 }
 
-.benefits-grid {
+.partnership-benefits-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
 }
 
-.benefit {
-    padding: 25px 20px;
-    border: 1px solid rgba(255,255,255,.2);
-    background: rgba(255,255,255,.045);
+.partnership-benefit {
+    padding: 26px 21px;
+    border: 1px solid rgba(255,255,255,.22);
+    background: rgba(255,255,255,.055);
 }
 
-.benefit-number {
+.partnership-benefit-number {
     display: block;
     margin-bottom: 16px;
-    color: var(--lime);
+    color: #FFD0A5;
     font-family: "Playfair Display", serif;
     font-size: 29px;
 }
 
-.benefit h3 {
+.partnership-benefit h3 {
     margin: 0 0 9px;
     color: #fff;
     font-family: "Playfair Display", serif;
     font-size: 19px;
 }
 
-.benefit p {
+.partnership-benefit p {
     margin: 0;
-    color: rgba(255,255,255,.72);
+    color: rgba(255,255,255,.78);
     font-size: 12px;
 }
 
 /* PROCESS */
 
-.process-grid {
+.partnership-process-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 23px;
 }
 
-.process-card {
-    padding: 28px;
+.partnership-process-card {
+    padding: 29px;
     border: 1px solid var(--line);
     background: #fff;
 }
 
-.process-number {
+.partnership-process-number {
     display: inline-flex;
     width: 42px;
     height: 42px;
     align-items: center;
     justify-content: center;
     margin-bottom: 17px;
-    background: var(--lime);
-    color: var(--green);
+    background: var(--orange);
+    color: #fff;
     font-weight: 800;
 }
 
-.process-card h3 {
+.partnership-process-card h3 {
     margin: 0 0 10px;
-    color: var(--green);
+    color: var(--brown);
     font-family: "Playfair Display", serif;
     font-size: 22px;
 }
 
-.process-card p {
+.partnership-process-card p {
     margin: 0;
     color: var(--muted);
     font-size: 12px;
@@ -588,30 +388,30 @@ img {
 
 /* FAQ */
 
-.faq-section {
+.partnership-faq-section {
     background: var(--cream);
 }
 
-.faq-list {
+.partnership-faq-list {
     max-width: 850px;
     margin: 35px auto 0;
 }
 
-.faq-list details {
+.partnership-faq-list details {
     margin-bottom: 12px;
     padding: 19px 22px;
     border: 1px solid var(--line);
     background: #fff;
 }
 
-.faq-list summary {
-    color: var(--green);
+.partnership-faq-list summary {
+    color: var(--brown);
     font-size: 13px;
     font-weight: 800;
     cursor: pointer;
 }
 
-.faq-list details p {
+.partnership-faq-list details p {
     margin: 13px 0 0;
     color: var(--muted);
     font-size: 12px;
@@ -619,7 +419,7 @@ img {
 
 /* CTA */
 
-.cta {
+.partnership-cta {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -627,225 +427,100 @@ img {
     margin-top: 85px;
     margin-bottom: 85px;
     padding: 55px;
-    background: var(--green);
+    background: #80583F;
     color: #fff;
 }
 
-.cta h2 {
+.partnership-cta h2 {
     margin: 0 0 12px;
+    color: #fff;
     font-family: "Playfair Display", serif;
     font-size: clamp(29px, 4vw, 42px);
     line-height: 1.2;
 }
 
-.cta p {
+.partnership-cta p {
     max-width: 650px;
     margin: 0;
-    color: rgba(255,255,255,.78);
+    color: rgba(255,255,255,.82);
     font-size: 13px;
 }
 
-.cta .btn {
+.partnership-cta .kicker {
+    color: #FFD0A5;
+}
+
+.partnership-cta .btn {
     flex-shrink: 0;
-}
-
-/* FOOTER */
-
-.footer {
-    padding: 60px 0 20px;
-    background: #14251a;
-    color: rgba(255,255,255,.76);
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr 1fr;
-    gap: 35px;
-    padding-bottom: 38px;
-}
-
-.footer-brand {
-    margin-bottom: 18px;
-}
-
-.footer-brand span {
-    color: #fff;
-}
-
-.footer-brand small {
-    color: var(--lime);
-}
-
-.footer-grid p {
-    max-width: 290px;
-    font-size: 12px;
-}
-
-.footer-grid h3 {
-    margin: 0 0 17px;
-    color: var(--lime);
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.footer-grid a:not(.brand) {
-    display: block;
-    margin-bottom: 10px;
-    color: rgba(255,255,255,.74);
-    font-size: 12px;
-}
-
-.footer-grid a:hover {
-    color: var(--lime);
-}
-
-.footer-grid span {
-    font-size: 12px;
-}
-
-.foot-bottom {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,.15);
-    font-size: 10px;
-}
-
-.float-wa {
-    position: fixed;
-    z-index: 30;
-    right: 20px;
-    bottom: 20px;
-    padding: 13px 19px;
-    background: var(--lime);
-    color: var(--deep-green);
-    font-size: 11px;
-    font-weight: 800;
-    box-shadow: 0 5px 20px rgba(0,0,0,.17);
 }
 
 /* RESPONSIVE */
 
 @media (max-width: 1050px) {
-    .header nav {
-        gap: 10px;
-    }
-
-    .header nav a {
-        font-size: 10px;
-    }
-
-    .benefits-grid {
+    .partnership-benefits-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 820px) {
-    .top-inner {
-        padding: 8px 0;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2px;
-    }
-
-    .nav {
-        min-height: 78px;
-    }
-
-    .brand img {
-        width: 62px;
-        height: 62px;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    .header nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        padding: 15px 5%;
-        background: #fff;
-        border-top: 1px solid var(--line);
-        box-shadow: 0 12px 20px rgba(0,0,0,.08);
-        align-items: stretch;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .header nav.open {
-        display: flex;
-    }
-
-    .header nav a {
-        padding: 11px 0;
-        border-bottom: 1px solid var(--line);
-        font-size: 13px;
-    }
-
-    .header nav .nav-book {
-        margin-top: 10px;
-        padding: 12px 15px;
-        text-align: center;
-    }
-
-    .intro-grid,
-    .approach-grid {
+    .partnership-intro-grid,
+    .partnership-approach-grid {
         grid-template-columns: 1fr;
         gap: 35px;
     }
 
-    .intro-image {
+    .partnership-intro-image {
         height: 350px;
     }
 
     .partnership-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 560px) {
-    .page-hero {
+    .partnership-hero {
         min-height: 510px;
         background-position: 58% center;
     }
 
-    .hero-content {
+    .partnership-hero-content {
         padding: 75px 0;
     }
 
-    .page-hero p {
+    .partnership-hero p {
         font-size: 14px;
     }
 
-    .section,
-    .approach-section,
-    .benefits-section {
-        padding: 65px 0;
+    .partnership-hero-actions {
+        flex-direction: column;
     }
 
-    .intro-points,
+    .partnership-hero-actions .btn {
+        width: 100%;
+    }
+
+    .partnership-intro-points,
     .partnership-grid,
-    .benefits-grid,
-    .process-grid,
-    .footer-grid {
+    .partnership-benefits-grid,
+    .partnership-process-grid {
         grid-template-columns: 1fr;
     }
 
-    .partner-card .photo {
+    .partner-card-photo {
         height: 225px;
     }
 
-    .cta {
+    .partnership-approach,
+    .partnership-values {
+        padding: 65px 0;
+    }
+
+    .partnership-approach-panel {
+        padding: 28px 23px;
+    }
+
+    .partnership-cta {
         margin-top: 60px;
         margin-bottom: 60px;
         padding: 32px 24px;
@@ -853,30 +528,18 @@ img {
         flex-direction: column;
     }
 
-    .cta .btn {
-        width: 100%;
-    }
-
-    .foot-bottom {
-        flex-direction: column;
-    }
-
-    .hero-actions {
-        flex-direction: column;
-    }
-
-    .hero-actions .btn {
+    .partnership-cta .btn {
         width: 100%;
     }
 }
 </style>
 </head>
 
-<body>
+<body class="partnership-page">
 
 <div class="topline">
     <div class="wrap top-inner">
-        <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
         <span>
             <a href="tel:+254704261626">+254 704 261 626</a>
             ·
@@ -893,11 +556,14 @@ img {
             <span>FLEYPAT<small>ADVENTURES</small></span>
         </a>
 
-        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <button class="nav-toggle" id="menuToggle" type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNav">
             ☰
         </button>
 
-        <nav>
+        <nav id="mainNav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="safaris.html">Safaris</a>
@@ -910,7 +576,7 @@ img {
             <a href="services.html">Services</a>
             <a href="transfers.html">Transfers</a>
             <a href="blog.html">Blog</a>
-            <a href="partnerships.html" class="active">Partnerships</a>
+            <a href="partnerships.html" class="active" aria-current="page">Partnerships</a>
             <a href="contact.html">Contact</a>
             <a class="nav-book" href="contact.html">Book Now</a>
         </nav>
@@ -922,11 +588,13 @@ img {
 
 <!-- HERO -->
 
-<section class="page-hero">
+<section class="partnership-hero">
     <div class="wrap">
-        <div class="hero-content">
+        <div class="partnership-hero-content">
             <span class="eyebrow">Grow Together · Travel Further</span>
+
             <h1>Building Partnerships That Create Better Journeys</h1>
+
             <p>
                 At Fleypat Adventures, we value meaningful relationships with
                 accommodation providers, tour operators, travel agents, guides,
@@ -934,15 +602,15 @@ img {
                 to work together and create memorable travel experiences.
             </p>
 
-            <div class="hero-actions">
-                <a class="btn btn-lime" href="#partnership-options">Explore Partnerships</a>
+            <div class="partnership-hero-actions">
+                <a class="btn btn-gold" href="#partnership-options">Explore Partnerships</a>
                 <a class="btn btn-outline" href="contact.html?service=Partnership%20Enquiry">Become a Partner</a>
             </div>
         </div>
     </div>
 </section>
 
-<div class="breadcrumb">
+<div class="partnership-breadcrumb">
     <div class="wrap">
         <a href="index.html">Home</a>
         &nbsp; / &nbsp;
@@ -953,10 +621,11 @@ img {
 <!-- INTRODUCTION -->
 
 <section class="section">
-    <div class="wrap intro-grid">
+    <div class="wrap partnership-intro-grid">
 
-        <div class="intro-copy">
-            <span class="kicker">Working together</span>
+        <div class="partnership-intro-copy">
+            <span class="kicker">Working Together</span>
+
             <h2>Creating Stronger Connections in Travel and Tourism</h2>
 
             <p>
@@ -978,23 +647,23 @@ img {
                 what you offer and discuss areas of mutual interest.
             </p>
 
-            <div class="intro-points">
-                <div class="intro-point">
+            <div class="partnership-intro-points">
+                <div class="partnership-intro-point">
                     <strong>Open Communication</strong>
                     <span>Clear discussions from the beginning.</span>
                 </div>
 
-                <div class="intro-point">
+                <div class="partnership-intro-point">
                     <strong>Shared Opportunities</strong>
                     <span>Explore areas of mutual benefit.</span>
                 </div>
 
-                <div class="intro-point">
+                <div class="partnership-intro-point">
                     <strong>Travel Focused</strong>
                     <span>Experiences centred on the traveller.</span>
                 </div>
 
-                <div class="intro-point">
+                <div class="partnership-intro-point">
                     <strong>Flexible Enquiries</strong>
                     <span>Discuss proposals suited to your business.</span>
                 </div>
@@ -1003,9 +672,10 @@ img {
 
         <div>
             <img
-                class="intro-image"
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/Sarova_Lion_Hill_Lodge.jpg"
-                alt="Accommodation at Sarova Lion Hill Lodge overlooking Lake Nakuru">
+                class="partnership-intro-image"
+                src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1100&q=85"
+                alt="Safari lodge accommodation surrounded by natural scenery"
+                loading="lazy">
         </div>
 
     </div>
@@ -1017,7 +687,7 @@ img {
     <div class="wrap">
 
         <div class="section-head">
-            <span class="kicker">Explore opportunities</span>
+            <span class="kicker">Explore Opportunities</span>
             <h2>Who We Welcome as Partners</h2>
             <p>
                 We are interested in connecting with people and businesses
@@ -1029,14 +699,14 @@ img {
         <div class="partnership-grid">
 
             <article class="partner-card">
-                <div class="photo">
+                <div class="partner-card-photo">
                     <img
-                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Sarova_Lion_Hill_Lodge.jpg"
-                        alt="Sarova Lion Hill Lodge accommodation in Lake Nakuru"
+                        src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=85"
+                        alt="Beautiful hotel and resort accommodation"
                         loading="lazy">
                 </div>
 
-                <div class="card-content">
+                <div class="partner-card-content">
                     <span class="mini-tag">Accommodation</span>
                     <h3>Hotels & Lodges</h3>
                     <p>
@@ -1051,14 +721,14 @@ img {
             </article>
 
             <article class="partner-card">
-                <div class="photo">
+                <div class="partner-card-photo">
                     <img
-                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Lady_tour_guide.jpg"
-                        alt="Tour guide working in the tourism industry"
+                        src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=85"
+                        alt="Travel professional helping visitors plan a journey"
                         loading="lazy">
                 </div>
 
-                <div class="card-content">
+                <div class="partner-card-content">
                     <span class="mini-tag">Travel Trade</span>
                     <h3>Tour Operators & Travel Agents</h3>
                     <p>
@@ -1073,14 +743,14 @@ img {
             </article>
 
             <article class="partner-card">
-                <div class="photo">
+                <div class="partner-card-photo">
                     <img
-                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Safari_vehicles_in_Samburu_National_Reserve,_Kenya.jpg"
-                        alt="Safari vehicles in Samburu National Reserve, Kenya"
+                        src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&w=900&q=85"
+                        alt="Tour vehicle ready for a road journey"
                         loading="lazy">
                 </div>
 
-                <div class="card-content">
+                <div class="partner-card-content">
                     <span class="mini-tag">Ground Transport</span>
                     <h3>Transport Providers</h3>
                     <p>
@@ -1095,14 +765,14 @@ img {
             </article>
 
             <article class="partner-card">
-                <div class="photo">
+                <div class="partner-card-photo">
                     <img
-                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Team-Building_Group_Photo_-_Wikimedia_Kenya_Usergroup.jpg"
-                        alt="Group photograph during a team-building activity"
+                        src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=85"
+                        alt="People enjoying a shared group dining experience"
                         loading="lazy">
                 </div>
 
-                <div class="card-content">
+                <div class="partner-card-content">
                     <span class="mini-tag">Group Experiences</span>
                     <h3>Corporate & Groups</h3>
                     <p>
@@ -1117,14 +787,14 @@ img {
             </article>
 
             <article class="partner-card">
-                <div class="photo">
+                <div class="partner-card-photo">
                     <img
-                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Ol_Kinyei.jpg"
-                        alt="Visitors enjoying a safari experience with Maasai guides in Ol Kinyei Conservancy"
+                        src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=85"
+                        alt="African wildlife and natural landscape"
                         loading="lazy">
                 </div>
 
-                <div class="card-content">
+                <div class="partner-card-content">
                     <span class="mini-tag">Local Experiences</span>
                     <h3>Local Guides & Experience Providers</h3>
                     <p>
@@ -1139,14 +809,14 @@ img {
             </article>
 
             <article class="partner-card">
-                <div class="photo">
+                <div class="partner-card-photo">
                     <img
-                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Tourists_on_boat_safari,_Lake_Naivasha,_Kenya.jpg"
-                        alt="Visitors enjoying a boat safari on Lake Naivasha"
+                        src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85"
+                        alt="Ocean water and coastal marine environment"
                         loading="lazy">
                 </div>
 
-                <div class="card-content">
+                <div class="partner-card-content">
                     <span class="mini-tag">Activities & Experiences</span>
                     <h3>Activity & Excursion Providers</h3>
                     <p>
@@ -1166,11 +836,12 @@ img {
 
 <!-- OUR APPROACH -->
 
-<section class="approach-section">
-    <div class="wrap approach-grid">
+<section class="partnership-approach">
+    <div class="wrap partnership-approach-grid">
 
-        <div class="approach-copy">
-            <span class="kicker">Our approach to collaboration</span>
+        <div class="partnership-approach-copy">
+            <span class="kicker">Our Approach to Collaboration</span>
+
             <h2>Partnerships Built Around Good Communication</h2>
 
             <p>
@@ -1186,30 +857,34 @@ img {
                 travellers need before and during their journeys.
             </p>
 
-            <ul class="approach-list">
+            <ul class="partnership-approach-list">
                 <li>Understand your business and the services you provide.</li>
                 <li>Discuss the type of collaboration you have in mind.</li>
                 <li>Explore how our services and capabilities may complement each other.</li>
                 <li>Agree on any practical next steps before proceeding.</li>
             </ul>
 
-            <a class="btn btn-dark" href="contact.html?service=Partnership%20Proposal">
+            <a class="btn btn-gold" href="contact.html?service=Partnership%20Proposal">
                 Submit a Partnership Proposal
             </a>
         </div>
 
-        <div class="approach-panel">
-            <span class="kicker">Let's start a conversation</span>
-            <h3>Have an idea for working together?</h3>
+        <div class="partnership-approach-panel">
+            <span class="kicker">Let's Start a Conversation</span>
+
+            <h3>Have an Idea for Working Together?</h3>
+
             <p>
                 Tell us about your organisation, the services you offer
                 and the kind of relationship you would like to explore.
                 We are happy to review relevant partnership enquiries.
             </p>
+
             <p>
                 You can contact us directly by email, telephone or
                 WhatsApp to introduce your business and proposal.
             </p>
+
             <a href="mailto:info@fleypatadventures.com?subject=Partnership%20Enquiry">
                 Email Our Team →
             </a>
@@ -1220,11 +895,11 @@ img {
 
 <!-- PARTNERSHIP VALUES -->
 
-<section class="benefits-section">
+<section class="partnership-values">
     <div class="wrap">
 
         <div class="section-head">
-            <span class="kicker">A shared direction</span>
+            <span class="kicker">A Shared Direction</span>
             <h2>What We Value in a Partnership</h2>
             <p>
                 We appreciate professional relationships built on
@@ -1233,10 +908,10 @@ img {
             </p>
         </div>
 
-        <div class="benefits-grid">
+        <div class="partnership-benefits-grid">
 
-            <article class="benefit">
-                <span class="benefit-number">01</span>
+            <article class="partnership-benefit">
+                <span class="partnership-benefit-number">01</span>
                 <h3>Professionalism</h3>
                 <p>
                     Respectful communication, clear expectations and
@@ -1244,8 +919,8 @@ img {
                 </p>
             </article>
 
-            <article class="benefit">
-                <span class="benefit-number">02</span>
+            <article class="partnership-benefit">
+                <span class="partnership-benefit-number">02</span>
                 <h3>Reliability</h3>
                 <p>
                     A commitment to clear coordination and dependable
@@ -1253,8 +928,8 @@ img {
                 </p>
             </article>
 
-            <article class="benefit">
-                <span class="benefit-number">03</span>
+            <article class="partnership-benefit">
+                <span class="partnership-benefit-number">03</span>
                 <h3>Guest Experience</h3>
                 <p>
                     A shared interest in helping travellers enjoy
@@ -1262,8 +937,8 @@ img {
                 </p>
             </article>
 
-            <article class="benefit">
-                <span class="benefit-number">04</span>
+            <article class="partnership-benefit">
+                <span class="partnership-benefit-number">04</span>
                 <h3>Mutual Growth</h3>
                 <p>
                     Opportunities to learn, develop connections and
@@ -1281,7 +956,7 @@ img {
     <div class="wrap">
 
         <div class="section-head">
-            <span class="kicker">Start here</span>
+            <span class="kicker">Start Here</span>
             <h2>How to Explore a Partnership with Us</h2>
             <p>
                 A straightforward introduction helps us understand
@@ -1289,10 +964,10 @@ img {
             </p>
         </div>
 
-        <div class="process-grid">
+        <div class="partnership-process-grid">
 
-            <article class="process-card">
-                <span class="process-number">01</span>
+            <article class="partnership-process-card">
+                <span class="partnership-process-number">01</span>
                 <h3>Introduce Your Business</h3>
                 <p>
                     Share your organisation's name, location, website
@@ -1301,8 +976,8 @@ img {
                 </p>
             </article>
 
-            <article class="process-card">
-                <span class="process-number">02</span>
+            <article class="partnership-process-card">
+                <span class="partnership-process-number">02</span>
                 <h3>Share Your Proposal</h3>
                 <p>
                     Explain the kind of collaboration you have in mind,
@@ -1311,8 +986,8 @@ img {
                 </p>
             </article>
 
-            <article class="process-card">
-                <span class="process-number">03</span>
+            <article class="partnership-process-card">
+                <span class="partnership-process-number">03</span>
                 <h3>Discuss Next Steps</h3>
                 <p>
                     Our team can review your enquiry and discuss
@@ -1327,11 +1002,11 @@ img {
 
 <!-- FAQ -->
 
-<section class="section faq-section">
+<section class="section partnership-faq-section">
     <div class="wrap">
 
         <div class="section-head">
-            <span class="kicker">Partnership enquiries</span>
+            <span class="kicker">Partnership Enquiries</span>
             <h2>Frequently Asked Questions</h2>
             <p>
                 A few helpful answers for businesses and professionals
@@ -1339,7 +1014,7 @@ img {
             </p>
         </div>
 
-        <div class="faq-list">
+        <div class="partnership-faq-list">
 
             <details>
                 <summary>Which businesses can approach Fleypat Adventures?</summary>
@@ -1404,9 +1079,9 @@ img {
 
 <!-- CTA -->
 
-<section class="cta wrap">
+<section class="partnership-cta wrap">
     <div>
-        <span class="kicker" style="color:var(--lime)">Let's work together</span>
+        <span class="kicker">Let's Work Together</span>
         <h2>Have a Partnership Opportunity in Mind?</h2>
         <p>
             Introduce your business to Fleypat Adventures and tell us
@@ -1415,7 +1090,7 @@ img {
         </p>
     </div>
 
-    <a class="btn btn-lime" href="contact.html?service=Partnership%20Enquiry">
+    <a class="btn btn-gold" href="contact.html?service=Partnership%20Enquiry">
         Make a Partnership Enquiry
     </a>
 </section>
@@ -1477,7 +1152,7 @@ img {
 
         </div>
 
-        <div class="wrap foot-bottom">
+        <div class="foot-bottom">
             <span>© <span data-year></span> Fleypat Adventures. All rights reserved.</span>
             <span>Explore More. Experience More. Travel Beyond Expectations.</span>
         </div>
@@ -1488,26 +1163,40 @@ img {
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20discuss%20a%20partnership."
    target="_blank"
-   rel="noopener">
+   rel="noopener"
+   aria-label="Contact Fleypat Adventures on WhatsApp">
     WhatsApp Us
 </a>
 
 <script src="script.js"></script>
 <script>
-document.querySelectorAll("[data-year]").forEach(function (element) {
-    element.textContent = new Date().getFullYear();
-});
-
-const navToggle = document.querySelector(".nav-toggle");
-const navigation = document.querySelector(".header nav");
-
-if (navToggle && navigation) {
-    navToggle.addEventListener("click", function () {
-        const opened = navigation.classList.toggle("open");
-        navToggle.setAttribute("aria-expanded", opened ? "true" : "false");
-        navToggle.textContent = opened ? "✕" : "☰";
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("[data-year]").forEach(function (element) {
+        element.textContent = new Date().getFullYear();
     });
-}
+
+    const navToggle = document.getElementById("menuToggle");
+    const navigation = document.getElementById("mainNav");
+
+    if (navToggle && navigation) {
+        navToggle.addEventListener("click", function () {
+            const opened = navigation.classList.toggle("open");
+
+            navToggle.setAttribute("aria-expanded", opened ? "true" : "false");
+            navToggle.setAttribute("aria-label", opened ? "Close navigation menu" : "Open navigation menu");
+            navToggle.textContent = opened ? "✕" : "☰";
+        });
+
+        navigation.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navigation.classList.remove("open");
+                navToggle.setAttribute("aria-expanded", "false");
+                navToggle.setAttribute("aria-label", "Open navigation menu");
+                navToggle.textContent = "☰";
+            });
+        });
+    }
+});
 </script>
 
 </body>
