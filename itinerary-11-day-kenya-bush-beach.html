@@ -7,7 +7,7 @@
 
 <title>11-Day Kenya Bush & Beach Safari | Fleypat Adventures</title>
 <meta name="description" content="Discover Kenya on an 11-day private bush and beach safari from Maasai Mara to Mombasa, visiting Lake Naivasha, Ol Pejeta, Aberdare, Amboseli and Tsavo.">
-<meta name="theme-color" content="#243C28">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,122 +15,93 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root {
-    --green: #243C28;
-    --deep-green: #17291d;
-    --lime: #A8D832;
-    --cream: #FBF7E9;
-    --gold: #A97832;
-    --text: #42483f;
-    --muted: #73786f;
-    --line: #e7e4d9;
-    --white: #ffffff;
-}
-
-* {
-    box-sizing: border-box;
-}
+/* =========================================
+   11-DAY BUSH & BEACH SAFARI
+   Shared theme: styles.css
+========================================= */
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: "DM Sans", sans-serif;
-    color: var(--text);
+[id] {
+    scroll-margin-top: 100px;
 }
 
 /* HERO */
 
-.safari-hero {
+.bush-beach-hero {
     min-height: 590px;
     display: flex;
     align-items: flex-end;
     position: relative;
     overflow: hidden;
+    color: var(--white);
     background:
-        linear-gradient(90deg, rgba(15,31,20,.82), rgba(15,31,20,.35) 70%, rgba(15,31,20,.12)),
-        linear-gradient(0deg, rgba(0,0,0,.52), transparent 70%),
+        linear-gradient(90deg, rgba(66,42,26,.88), rgba(66,42,26,.48) 62%, rgba(66,42,26,.12)),
+        linear-gradient(0deg, rgba(30,20,13,.48), transparent 70%),
         url("kenya-bush-beach-hero.jpg") center center / cover no-repeat;
-    color: #fff;
 }
 
-.safari-hero-content {
+.bush-beach-hero .hero-copy {
     max-width: 850px;
-    padding-top: 100px;
-    padding-bottom: 85px;
+    padding-top: 90px;
+    padding-bottom: 75px;
 }
 
-.safari-eyebrow {
-    display: inline-block;
-    color: var(--lime);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 17px;
+.bush-beach-hero .eyebrow {
+    color: #FFD0A5;
+    margin-bottom: 18px;
 }
 
-.safari-hero h1 {
+.bush-beach-hero h1 {
     color: #fff;
-    font-family: "Playfair Display", serif;
-    font-size: clamp(42px, 6vw, 70px);
+    font-size: clamp(40px, 6vw, 72px);
     line-height: 1.08;
+    max-width: 800px;
     margin: 0 0 22px;
-    max-width: 790px;
 }
 
-.safari-hero p {
-    max-width: 690px;
-    color: rgba(255,255,255,.91);
+.bush-beach-hero p {
+    max-width: 720px;
+    color: rgba(255,255,255,.92);
     font-size: 16px;
-    line-height: 1.85;
-    margin: 0;
+    line-height: 1.9;
 }
 
 .hero-facts {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin: 28px 0;
+    gap: 10px;
+    margin: 25px 0;
 }
 
 .hero-facts span {
-    border: 1px solid rgba(255,255,255,.4);
+    display: inline-flex;
+    padding: 11px 15px;
     background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.35);
     color: #fff;
-    padding: 11px 16px;
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: .3px;
 }
 
 .hero-price {
-    margin: 22px 0 25px;
+    margin: 23px 0;
 }
 
 .hero-price small {
     display: block;
-    color: rgba(255,255,255,.8);
+    color: rgba(255,255,255,.78);
     font-size: 12px;
     margin-bottom: 5px;
 }
 
 .hero-price strong {
     display: block;
-    color: var(--lime);
+    color: #FFD0A5;
     font-family: "Playfair Display", serif;
     font-size: 30px;
-}
-
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.hero-actions .btn {
-    text-decoration: none;
 }
 
 /* QUICK INFORMATION */
@@ -138,9 +109,8 @@ body {
 .quick-info {
     position: relative;
     z-index: 2;
-    margin-top: -1px;
-    background: var(--green);
-    color: #fff;
+    background: var(--brown-dark);
+    color: white;
 }
 
 .quick-info-grid {
@@ -149,8 +119,8 @@ body {
 }
 
 .quick-info-item {
-    padding: 23px 20px;
-    border-right: 1px solid rgba(255,255,255,.15);
+    padding: 24px 20px;
+    border-right: 1px solid rgba(255,255,255,.18);
 }
 
 .quick-info-item:last-child {
@@ -159,58 +129,65 @@ body {
 
 .quick-info-item small {
     display: block;
-    color: #c4d3b7;
+    color: #F5D2B5;
     font-size: 10px;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 
 .quick-info-item strong {
+    display: block;
     color: #fff;
     font-size: 14px;
+}
+
+/* ITINERARY NAVIGATION */
+
+.itinerary-nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: var(--white);
+    border-bottom: 1px solid var(--cream2);
+    box-shadow: 0 4px 12px rgba(80,48,27,.04);
+}
+
+.itinerary-nav .wrap {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.itinerary-nav a {
+    flex: 0 0 auto;
+    padding: 16px 0;
+    color: var(--brown-dark);
+    font-size: 12px;
     font-weight: 700;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
 }
 
-/* SECTION BASICS */
-
-.safari-section {
-    padding: 78px 0;
-    scroll-margin-top: 75px;
+.itinerary-nav a:hover {
+    color: var(--orange);
+    border-bottom-color: var(--orange);
 }
 
-.safari-section.alt {
-    background: var(--cream);
+/* INTRODUCTION */
+
+.safari-intro {
+    max-width: 900px;
 }
 
-.section-kicker {
-    display: block;
-    color: var(--gold);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.safari-section h2 {
-    color: var(--green);
-    font-family: "Playfair Display", serif;
-    font-size: clamp(30px, 4vw, 43px);
-    line-height: 1.2;
-    margin: 0 0 20px;
-}
-
-.section-intro {
-    max-width: 850px;
+.safari-intro p {
     color: var(--muted);
     line-height: 1.9;
     font-size: 15px;
-}
-
-.section-intro p {
-    margin: 0 0 15px;
+    margin-bottom: 16px;
 }
 
 /* HIGHLIGHTS */
@@ -220,26 +197,26 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     margin-top: 38px;
-    background: var(--line);
-    border: 1px solid var(--line);
+    border: 1px solid var(--cream2);
+    background: var(--cream2);
 }
 
 .highlight {
-    background: #fff;
-    padding: 27px;
-    min-height: 165px;
+    background: var(--white);
+    padding: 28px;
+    min-height: 175px;
 }
 
 .highlight-number {
     display: block;
-    color: var(--gold);
+    color: var(--orange);
     font-family: "Playfair Display", serif;
-    font-size: 24px;
+    font-size: 25px;
     margin-bottom: 12px;
 }
 
 .highlight h3 {
-    color: var(--green);
+    color: var(--brown-dark);
     font-size: 17px;
     margin: 0 0 10px;
 }
@@ -251,46 +228,13 @@ body {
     margin: 0;
 }
 
-/* STICKY SECTION NAV */
-
-.itinerary-nav {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: #fff;
-    border-bottom: 1px solid var(--line);
-    box-shadow: 0 5px 15px rgba(0,0,0,.04);
-}
-
-.itinerary-nav .wrap {
-    display: flex;
-    align-items: center;
-    gap: 27px;
-    overflow-x: auto;
-    scrollbar-width: thin;
-}
-
-.itinerary-nav a {
-    flex: 0 0 auto;
-    padding: 17px 0;
-    color: var(--green);
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-}
-
-.itinerary-nav a:hover {
-    color: var(--gold);
-    border-bottom-color: var(--lime);
-}
-
-/* DAY-BY-DAY TIMELINE */
+/* ITINERARY TIMELINE */
 
 .itinerary-intro-note {
-    max-width: 800px;
+    max-width: 850px;
     color: var(--muted);
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.9;
 }
 
 .days-timeline {
@@ -302,37 +246,37 @@ body {
 .days-timeline::before {
     content: "";
     position: absolute;
-    top: 12px;
-    bottom: 25px;
-    left: 38px;
+    top: 15px;
+    bottom: 30px;
+    left: 37px;
     width: 1px;
-    background: #d8ddcf;
+    background: #DECBBB;
 }
 
 .day-entry {
     position: relative;
     display: grid;
-    grid-template-columns: 78px minmax(0, 1fr);
+    grid-template-columns: 76px minmax(0, 1fr);
     gap: 25px;
-    padding-bottom: 34px;
+    padding-bottom: 32px;
 }
 
 .day-marker {
     position: relative;
     z-index: 1;
-    width: 77px;
-    height: 77px;
+    width: 76px;
+    height: 76px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--green);
-    color: #fff;
+    background: var(--brown-dark);
+    color: white;
     border: 5px solid var(--cream);
 }
 
 .day-marker small {
-    color: #cbd9bb;
+    color: #F5D2B5;
     font-size: 9px;
     font-weight: 800;
     letter-spacing: 1.5px;
@@ -340,42 +284,42 @@ body {
 }
 
 .day-marker strong {
-    color: var(--lime);
+    color: #FFD0A5;
     font-family: "Playfair Display", serif;
     font-size: 26px;
     line-height: 1.1;
 }
 
 .day-body {
-    background: #fff;
-    border: 1px solid var(--line);
-    padding: 27px 30px;
+    background: var(--white);
+    border: 1px solid var(--cream2);
+    padding: 28px 30px;
     min-width: 0;
 }
 
 .day-label {
     display: inline-block;
-    color: var(--gold);
+    color: var(--orange);
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 1.7px;
     text-transform: uppercase;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 }
 
 .day-body h3 {
-    color: var(--green);
+    color: var(--brown-dark);
     font-family: "Playfair Display", serif;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 1.3;
     margin: 0 0 15px;
 }
 
 .day-body p {
-    color: #62685f;
+    color: var(--muted);
     font-size: 14px;
     line-height: 1.9;
-    margin: 0 0 13px;
+    margin: 0 0 14px;
 }
 
 .day-body p:last-of-type {
@@ -386,29 +330,59 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 19px;
+    margin-top: 20px;
     padding-top: 17px;
-    border-top: 1px solid #eeece5;
+    border-top: 1px solid var(--cream2);
 }
 
 .day-details span {
     display: inline-block;
-    background: #f4f5ef;
-    color: #4c5b44;
+    background: var(--cream);
+    color: var(--brown-dark);
     padding: 8px 11px;
     font-size: 11px;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .day-note {
     margin-top: 18px;
-    padding: 17px 19px;
-    background: #fff8e9;
-    border-left: 3px solid var(--gold);
-    color: #665638;
+    padding: 18px 20px;
+    background: #FFF4E8;
+    border-left: 3px solid var(--orange);
+    color: var(--ink);
     font-size: 13px;
     line-height: 1.8;
+}
+
+/* ACTIVITIES */
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin-top: 35px;
+    background: var(--cream2);
+    border: 1px solid var(--cream2);
+}
+
+.activity-item {
+    padding: 27px;
+    background: var(--white);
+}
+
+.activity-item h3 {
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    margin: 0 0 10px;
+}
+
+.activity-item p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
 }
 
 /* ACCOMMODATION */
@@ -424,19 +398,19 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
+    background: var(--cream2);
+    border: 1px solid var(--cream2);
     margin-top: 35px;
 }
 
 .stay-card {
-    background: #fff;
-    padding: 25px;
+    background: var(--white);
+    padding: 27px;
 }
 
 .stay-card small {
     display: block;
-    color: var(--gold);
+    color: var(--orange);
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 1.5px;
@@ -445,25 +419,25 @@ body {
 }
 
 .stay-card h3 {
-    color: var(--green);
+    color: var(--brown-dark);
     font-family: "Playfair Display", serif;
     font-size: 20px;
-    margin: 0 0 9px;
+    margin: 0 0 10px;
 }
 
 .stay-card p {
     color: var(--muted);
     font-size: 13px;
-    line-height: 1.75;
+    line-height: 1.8;
     margin: 0;
 }
 
 .stay-note {
     margin-top: 23px;
     padding: 20px 23px;
-    background: #fff8e9;
-    border-left: 3px solid var(--gold);
-    color: #665638;
+    background: var(--cream);
+    border-left: 3px solid var(--orange);
+    color: var(--ink);
     font-size: 13px;
     line-height: 1.8;
 }
@@ -473,20 +447,20 @@ body {
 .pricing-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(280px, .8fr);
-    gap: 35px;
-    align-items: start;
+    gap: 30px;
+    align-items: stretch;
     margin-top: 30px;
 }
 
 .pricing-main {
-    padding: 34px;
-    background: #fff;
-    border: 1px solid var(--line);
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--cream2);
 }
 
 .pricing-main small {
     display: block;
-    color: var(--gold);
+    color: var(--orange);
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 2px;
@@ -495,7 +469,7 @@ body {
 
 .pricing-main strong {
     display: block;
-    color: var(--green);
+    color: var(--brown-dark);
     font-family: "Playfair Display", serif;
     font-size: 35px;
     margin: 12px 0;
@@ -509,22 +483,22 @@ body {
 }
 
 .pricing-side {
-    padding: 30px;
-    background: var(--green);
-    color: #fff;
+    padding: 32px;
+    background: var(--brown-dark);
+    color: white;
 }
 
 .pricing-side h3 {
-    color: var(--lime);
+    color: #FFD0A5;
     font-family: "Playfair Display", serif;
-    font-size: 23px;
+    font-size: 24px;
     margin: 0 0 15px;
 }
 
 .pricing-side p {
-    color: #e3e9df;
+    color: rgba(255,255,255,.88);
     font-size: 13px;
-    line-height: 1.8;
+    line-height: 1.9;
     margin: 0;
 }
 
@@ -539,12 +513,12 @@ body {
 
 .inclusion-box {
     padding: 28px;
-    background: #fff;
-    border: 1px solid var(--line);
+    background: var(--white);
+    border: 1px solid var(--cream2);
 }
 
 .inclusion-box h3 {
-    color: var(--green);
+    color: var(--brown-dark);
     font-family: "Playfair Display", serif;
     font-size: 22px;
     margin: 0 0 18px;
@@ -559,7 +533,7 @@ body {
 .inclusion-box li {
     position: relative;
     padding: 0 0 12px 23px;
-    color: #646a61;
+    color: var(--muted);
     font-size: 13px;
     line-height: 1.7;
 }
@@ -569,13 +543,13 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    color: var(--gold);
+    color: var(--orange);
     font-weight: 800;
 }
 
 .inclusion-box.exclusions li::before {
     content: "–";
-    color: #9a7650;
+    color: var(--brown);
 }
 
 /* PRACTICAL INFORMATION */
@@ -589,52 +563,22 @@ body {
 
 .practical-list li {
     padding: 18px 0;
-    border-bottom: 1px solid var(--line);
-    color: #646a61;
+    border-bottom: 1px solid var(--cream2);
+    color: var(--muted);
     font-size: 14px;
     line-height: 1.85;
 }
 
 .practical-list strong {
-    color: var(--green);
-}
-
-/* ACTIVITIES */
-
-.activities-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    margin-top: 35px;
-    background: var(--line);
-    border: 1px solid var(--line);
-}
-
-.activity-item {
-    padding: 25px;
-    background: #fff;
-}
-
-.activity-item h3 {
-    color: var(--green);
-    font-family: "Playfair Display", serif;
-    font-size: 19px;
-    margin: 0 0 10px;
-}
-
-.activity-item p {
-    color: var(--muted);
-    font-size: 13px;
-    line-height: 1.8;
-    margin: 0;
+    color: var(--brown-dark);
 }
 
 /* QUOTE CTA */
 
 .quote-section {
     padding: 75px 0;
-    background: var(--green);
-    color: #fff;
+    background: var(--brown-dark);
+    color: white;
 }
 
 .quote-layout {
@@ -648,20 +592,20 @@ body {
     max-width: 740px;
 }
 
-.quote-copy .section-kicker {
-    color: var(--lime);
+.quote-copy .eyebrow {
+    color: #FFD0A5;
 }
 
 .quote-copy h2 {
-    color: #fff;
+    color: white;
     font-family: "Playfair Display", serif;
-    font-size: clamp(30px, 4vw, 43px);
+    font-size: clamp(30px, 4vw, 44px);
     line-height: 1.2;
     margin: 0 0 15px;
 }
 
 .quote-copy p {
-    color: #e0e8dc;
+    color: rgba(255,255,255,.88);
     font-size: 14px;
     line-height: 1.9;
     margin: 0;
@@ -673,7 +617,7 @@ body {
 
 /* RESPONSIVE */
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     .quick-info-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -683,14 +627,11 @@ body {
     }
 
     .quick-info-item:nth-child(-n+2) {
-        border-bottom: 1px solid rgba(255,255,255,.15);
+        border-bottom: 1px solid rgba(255,255,255,.18);
     }
 
     .highlights-grid,
-    .activities-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+    .activities-grid,
     .stay-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -708,22 +649,22 @@ body {
     }
 }
 
-@media (max-width: 600px) {
-    .safari-hero {
+@media (max-width: 760px) {
+    .bush-beach-hero {
         min-height: 570px;
-        background-position: 60% center;
+        background-position: 62% center;
     }
 
-    .safari-hero-content {
-        padding-top: 75px;
-        padding-bottom: 65px;
+    .bush-beach-hero .hero-copy {
+        padding-top: 70px;
+        padding-bottom: 60px;
     }
 
-    .safari-hero h1 {
+    .bush-beach-hero h1 {
         font-size: 42px;
     }
 
-    .safari-hero p {
+    .bush-beach-hero p {
         font-size: 14px;
     }
 
@@ -734,6 +675,10 @@ body {
     .hero-facts span {
         padding: 9px 11px;
         font-size: 10px;
+    }
+
+    .hero-price strong {
+        font-size: 26px;
     }
 
     .hero-actions {
@@ -749,10 +694,6 @@ body {
         font-size: 12px;
     }
 
-    .safari-section {
-        padding: 57px 0;
-    }
-
     .highlights-grid,
     .activities-grid,
     .stay-grid,
@@ -765,18 +706,18 @@ body {
     }
 
     .days-timeline::before {
-        left: 28px;
+        left: 27px;
     }
 
     .day-entry {
-        grid-template-columns: 58px minmax(0, 1fr);
+        grid-template-columns: 56px minmax(0, 1fr);
         gap: 12px;
         padding-bottom: 24px;
     }
 
     .day-marker {
-        width: 58px;
-        height: 58px;
+        width: 56px;
+        height: 56px;
         border-width: 3px;
     }
 
@@ -827,7 +768,7 @@ body {
 
 <div class="topline">
     <div class="wrap top-inner">
-        <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy.</span>
         <span>
             <a href="tel:+254704261626">+254 704 261 626</a> ·
             <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
@@ -841,13 +782,17 @@ body {
     <div class="wrap nav">
 
         <a class="brand" href="index.html">
-            <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-            <span>FLEYPAT<small>ADVENTURES</small></span>
+            <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
         </a>
 
-        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button class="nav-toggle" id="menuToggle"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="mainNav">
+            ☰
+        </button>
 
-        <nav>
+        <nav id="mainNav" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="safaris.html">Safaris</a>
@@ -872,11 +817,11 @@ body {
 
 <!-- HERO -->
 
-<section class="safari-hero">
+<section class="bush-beach-hero">
     <div class="wrap">
-        <div class="safari-hero-content">
+        <div class="hero-copy">
 
-            <span class="safari-eyebrow">Kenya Bush & Beach Collection</span>
+            <span class="eyebrow">Kenya Bush & Beach Collection</span>
 
             <h1>11-Day Ultimate Kenya Bush & Beach Safari</h1>
 
@@ -899,7 +844,7 @@ body {
             </div>
 
             <div class="hero-actions">
-                <a class="btn" href="contact.html">Request a Quote</a>
+                <a class="btn btn-gold" href="contact.html">Request a Quote</a>
                 <a class="btn btn-outline" href="#itinerary">Explore the Itinerary</a>
             </div>
 
@@ -952,13 +897,16 @@ body {
 
 <!-- OVERVIEW -->
 
-<section class="safari-section" id="overview">
+<section class="section" id="overview">
     <div class="wrap">
 
-        <span class="section-kicker">Discover Kenya</span>
-        <h2>A Journey from the African Bush to the Indian Ocean</h2>
+        <div class="section-head">
+            <span class="eyebrow">Discover Kenya</span>
+            <h2>A Journey from the African Bush to the Indian Ocean</h2>
+        </div>
 
-        <div class="section-intro">
+        <div class="safari-intro">
+
             <p>
                 This 11-day journey combines some of Kenya's most celebrated
                 wildlife destinations with a relaxing finish at the Indian Ocean
@@ -979,9 +927,10 @@ body {
                 The journey concludes with a transfer to Kenya's coast, where
                 you can continue your holiday by the beach.
             </p>
+
         </div>
 
-        <div class="highlights-grid">
+        <div class="highlights-grid" id="highlights">
 
             <article class="highlight">
                 <span class="highlight-number">01</span>
@@ -1026,11 +975,13 @@ body {
 
 <!-- DETAILED ITINERARY -->
 
-<section class="safari-section alt" id="itinerary">
+<section class="section alt" id="itinerary">
     <div class="wrap">
 
-        <span class="section-kicker">Your journey, day by day</span>
-        <h2>The 11-Day Safari Itinerary</h2>
+        <div class="section-head">
+            <span class="eyebrow">Your journey, day by day</span>
+            <h2>The 11-Day Safari Itinerary</h2>
+        </div>
 
         <p class="itinerary-intro-note">
             Travel from Nairobi through Kenya's renowned safari destinations,
@@ -1483,16 +1434,19 @@ body {
             </article>
 
         </div>
+
     </div>
 </section>
 
 <!-- ACTIVITIES -->
 
-<section class="safari-section" id="activities">
+<section class="section" id="activities">
     <div class="wrap">
 
-        <span class="section-kicker">Experiences along the way</span>
-        <h2>Safari Highlights & Activities</h2>
+        <div class="section-head">
+            <span class="eyebrow">Experiences along the way</span>
+            <h2>Safari Highlights & Activities</h2>
+        </div>
 
         <div class="activities-grid">
 
@@ -1539,11 +1493,13 @@ body {
 
 <!-- ACCOMMODATION -->
 
-<section class="safari-section alt" id="accommodation">
+<section class="section alt" id="accommodation">
     <div class="wrap">
 
-        <span class="section-kicker">Rest & Recharge</span>
-        <h2>Accommodation Throughout the Journey</h2>
+        <div class="section-head">
+            <span class="eyebrow">Rest & Recharge</span>
+            <h2>Accommodation Throughout the Journey</h2>
+        </div>
 
         <p class="stay-intro">
             The itinerary is based on the accommodation properties specified
@@ -1620,13 +1576,15 @@ body {
 
 <!-- PRICING -->
 
-<section class="safari-section" id="pricing">
+<section class="section" id="pricing">
     <div class="wrap">
 
-        <span class="section-kicker">Your safari quotation</span>
-        <h2>Prices & Booking</h2>
+        <div class="section-head">
+            <span class="eyebrow">Your safari quotation</span>
+            <h2>Prices & Booking</h2>
+        </div>
 
-        <div class="section-intro">
+        <div class="safari-intro">
             <p>
                 This is a tailor-made private safari. The final quotation will
                 be prepared according to your travel dates, number of travellers,
@@ -1646,7 +1604,7 @@ body {
                     confirm the accommodation and arrangements for your journey.
                 </p>
 
-                <a class="btn" href="contact.html">Get My Safari Quote</a>
+                <a class="btn btn-gold" href="contact.html">Get My Safari Quote</a>
             </div>
 
             <aside class="pricing-side">
@@ -1672,7 +1630,8 @@ body {
                     <li>Meals according to the selected accommodation plan</li>
                     <li>Transfer arrangements to Mombasa</li>
                 </ul>
-                <p style="color:#777;font-size:12px;line-height:1.8;margin:12px 0 0;">
+
+                <p style="color:var(--muted);font-size:12px;line-height:1.8;margin:12px 0 0;">
                     These items will be confirmed individually in your final quotation.
                 </p>
             </div>
@@ -1696,11 +1655,13 @@ body {
 
 <!-- PRACTICAL INFORMATION -->
 
-<section class="safari-section alt" id="practical">
+<section class="section alt" id="practical">
     <div class="wrap">
 
-        <span class="section-kicker">Before you travel</span>
-        <h2>Practical Travel Information</h2>
+        <div class="section-head">
+            <span class="eyebrow">Before you travel</span>
+            <h2>Practical Travel Information</h2>
+        </div>
 
         <ul class="practical-list">
 
@@ -1772,7 +1733,7 @@ body {
     <div class="wrap quote-layout">
 
         <div class="quote-copy">
-            <span class="section-kicker">Start planning</span>
+            <span class="eyebrow">Start planning</span>
 
             <h2>Ready for Your Kenya Bush & Beach Safari?</h2>
 
@@ -1804,8 +1765,7 @@ body {
 
         <div>
             <a class="brand footer-brand" href="index.html">
-                <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-                <span>FLEYPAT<small>ADVENTURES</small></span>
+                <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
             </a>
 
             <p>
@@ -1813,7 +1773,9 @@ body {
                 Your journey starts with us.
             </p>
 
-            <a href="https://www.instagram.com/fleypat_adventures/">
+            <a href="https://www.instagram.com/fleypat_adventures/"
+               target="_blank"
+               rel="noopener">
                 Instagram @fleypat_adventures
             </a>
         </div>
@@ -1848,19 +1810,50 @@ body {
     </div>
 
     <div class="wrap foot-bottom">
-        © <span data-year></span> Fleypat Adventures. All rights reserved.
-        <span>Explore More. Experience More. Travel Beyond Expectations.</span>
+        <span>© <span data-year></span> Fleypat Adventures. All rights reserved.</span>
+        <span>Explore. Experience. Enjoy.</span>
     </div>
 </footer>
+
+<!-- FLOATING WHATSAPP -->
 
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
    target="_blank"
-   rel="noopener">
+   rel="noopener"
+   aria-label="Contact Fleypat Adventures on WhatsApp">
     WhatsApp Us
 </a>
 
-<script src="script.js"></script>
+<script>
+/* MOBILE NAVIGATION */
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+if (menuToggle && mainNav) {
+    menuToggle.addEventListener("click", function () {
+        const isOpen = mainNav.classList.toggle("open");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            mainNav.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open menu");
+            menuToggle.textContent = "☰";
+        });
+    });
+}
+
+/* AUTOMATIC COPYRIGHT YEAR */
+document.querySelectorAll("[data-year]").forEach(function (element) {
+    element.textContent = new Date().getFullYear();
+});
+</script>
 
 </body>
 </html>
