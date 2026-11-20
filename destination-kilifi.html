@@ -4,43 +4,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kilifi Destination Guide | Fleypat Adventures</title>
-<meta name="description" content="Discover Kilifi, Kenya: peaceful creek views, Bofa Beach, coastal escapes, dhow experiences and the historic Mnarani ruins.">
-<meta name="theme-color" content="#a8d832">
+<title>Kilifi Destination Guide | Creek, Bofa Beach & Coastal Experiences | Fleypat Adventures</title>
+<meta name="description" content="Discover Kilifi, Kenya with Fleypat Adventures. Explore Kilifi Creek, Bofa Beach, Mnarani ruins, dhow experiences and peaceful coastal escapes.">
+<meta name="theme-color" content="#E8752A">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
-  --kilifi-green:#243c28;
-  --kilifi-lime:#a8d832;
-  --kilifi-gold:#a97832;
-  --kilifi-cream:#fbf7e9;
-  --kilifi-ink:#263329;
-  --kilifi-muted:#69736a;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:var(--kilifi-ink)}
-h1,h2,h3,h4{font-family:'Playfair Display',serif}
-img{max-width:100%;display:block}
-a{text-decoration:none}
-.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}
-
-/* Hero */
+/* Kilifi page-specific styling */
 .kilifi-hero{
-  min-height:690px;
+  min-height:680px;
   display:flex;
   align-items:flex-end;
   position:relative;
   isolation:isolate;
   overflow:hidden;
-  background:#243c28;
   color:#fff;
+  background:#6B4935;
 }
-.kilifi-hero:before{
+.kilifi-hero::before{
   content:"";
   position:absolute;
   inset:0;
@@ -48,27 +33,36 @@ a{text-decoration:none}
   background:url("https://commons.wikimedia.org/wiki/Special:FilePath/Bofa%20Public%20Beach%20Kilifi.jpg?width=2200") center 50%/cover no-repeat;
   transform:scale(1.015);
 }
-.kilifi-hero:after{
+.kilifi-hero::after{
   content:"";
   position:absolute;
   inset:0;
   z-index:-1;
-  background:linear-gradient(90deg,rgba(12,28,19,.76),rgba(12,28,19,.24) 75%),linear-gradient(0deg,rgba(10,25,16,.72),transparent 72%);
+  background:linear-gradient(90deg,rgba(48,29,18,.76),rgba(48,29,18,.20) 78%),linear-gradient(0deg,rgba(35,22,15,.72),transparent 72%);
 }
-.kilifi-hero-content{padding:100px 0 88px;max-width:760px}
+.kilifi-hero-content{
+  padding:100px 0 85px;
+  max-width:780px;
+}
 .kilifi-eyebrow{
   display:inline-flex;
   align-items:center;
   gap:10px;
-  color:var(--kilifi-lime);
+  color:#F09A58;
   text-transform:uppercase;
   letter-spacing:2px;
   font-size:12px;
   font-weight:800;
   margin-bottom:18px;
 }
-.kilifi-eyebrow:before{content:"";width:34px;height:2px;background:var(--kilifi-lime)}
+.kilifi-eyebrow::before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:#F09A58;
+}
 .kilifi-hero h1{
+  font-family:'Playfair Display',serif;
   font-size:clamp(54px,8vw,100px);
   line-height:.98;
   margin:0 0 22px;
@@ -78,49 +72,77 @@ a{text-decoration:none}
   font-size:clamp(17px,2vw,21px);
   line-height:1.75;
   max-width:620px;
-  color:#f3f2e9;
+  color:#f7eee6;
   margin:0 0 30px;
 }
-.kilifi-actions{display:flex;flex-wrap:wrap;gap:13px}
-.kilifi-btn{
+.kilifi-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
+.kilifi-action{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   padding:15px 24px;
-  background:var(--kilifi-lime);
-  color:#203321;
+  background:#E8752A;
+  color:#fff;
   font-weight:800;
-  border-radius:3px;
   transition:.25s ease;
 }
-.kilifi-btn:hover{background:#c2ec5b;transform:translateY(-2px)}
-.kilifi-btn-outline{background:transparent;border:1px solid rgba(255,255,255,.7);color:#fff}
-.kilifi-btn-outline:hover{background:#fff;color:var(--kilifi-green)}
-
-/* Intro */
-.kilifi-intro{padding:100px 0;background:var(--kilifi-cream)}
-.kilifi-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.kilifi-intro-image{position:relative}
+.kilifi-action:hover{
+  background:#B85B20;
+  transform:translateY(-2px);
+}
+.kilifi-action-outline{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.75);
+  color:#fff;
+}
+.kilifi-action-outline:hover{
+  background:#fff;
+  color:#6B4935;
+}
+.kilifi-intro{
+  padding:95px 0;
+  background:#FFF4E8;
+}
+.kilifi-intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:65px;
+  align-items:center;
+}
+.kilifi-intro-image{
+  position:relative;
+}
 .kilifi-intro-image img{
   width:100%;
-  height:510px;
+  height:500px;
   object-fit:cover;
-  border-radius:3px;
 }
 .kilifi-image-note{
   position:absolute;
-  right:-18px;
-  bottom:25px;
-  background:var(--kilifi-green);
+  right:-15px;
+  bottom:24px;
+  background:#A66A42;
   color:#fff;
   padding:20px 24px;
-  max-width:220px;
-  box-shadow:0 12px 35px #0002;
+  max-width:230px;
 }
-.kilifi-image-note strong{display:block;font-family:'Playfair Display',serif;font-size:22px;margin-bottom:5px}
-.kilifi-image-note span{font-size:12px;color:#e2eadc;line-height:1.5}
-.kilifi-section-label{
-  color:var(--kilifi-gold);
+.kilifi-image-note strong{
+  display:block;
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  margin-bottom:5px;
+}
+.kilifi-image-note span{
+  font-size:12px;
+  color:#f8e9dc;
+  line-height:1.5;
+}
+.kilifi-label{
+  color:#B85B20;
   text-transform:uppercase;
   letter-spacing:2px;
   font-size:12px;
@@ -128,144 +150,348 @@ a{text-decoration:none}
   display:block;
   margin-bottom:14px;
 }
-.kilifi-intro h2,.kilifi-section-heading h2,.kilifi-planning h2{
-  color:var(--kilifi-green);
+.kilifi-intro h2,
+.kilifi-section-heading h2,
+.kilifi-planning h2{
+  font-family:'Playfair Display',serif;
+  color:#6B4935;
   font-size:clamp(34px,4vw,49px);
   line-height:1.15;
   margin:0 0 22px;
 }
-.kilifi-intro p{font-size:16px;line-height:1.9;color:#5d695f;margin:0 0 16px}
-.kilifi-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}
+.kilifi-intro p{
+  font-size:15px;
+  line-height:1.9;
+  color:#897264;
+  margin:0 0 16px;
+}
+.kilifi-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:25px;
+}
 .kilifi-tags span{
-  border:1px solid #d9dfcd;
-  color:var(--kilifi-green);
+  border:1px solid #E7CDBB;
+  color:#6B4935;
   background:#fff;
   padding:9px 13px;
   font-size:12px;
   font-weight:700;
 }
-
-/* Experience cards */
-.kilifi-experiences{padding:100px 0;background:#fff}
-.kilifi-section-heading{text-align:center;max-width:720px;margin:0 auto 48px}
-.kilifi-section-heading p{color:var(--kilifi-muted);line-height:1.8;margin:0}
-.kilifi-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.kilifi-card{background:var(--kilifi-cream);overflow:hidden}
-.kilifi-card img{height:245px;width:100%;object-fit:cover;transition:transform .5s ease}
-.kilifi-card:hover img{transform:scale(1.045)}
-.kilifi-card-body{padding:25px 25px 29px}
-.kilifi-card-body span{
-  color:var(--kilifi-gold);
+.kilifi-experiences{
+  padding:95px 0;
+  background:#fff;
+}
+.kilifi-section-heading{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 45px;
+}
+.kilifi-section-heading p{
+  color:#897264;
+  line-height:1.8;
+  margin:0;
+}
+.kilifi-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.kilifi-card{
+  background:#FFF4E8;
+  overflow:hidden;
+}
+.kilifi-card img{
+  height:245px;
+  width:100%;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+.kilifi-card:hover img{
+  transform:scale(1.04);
+}
+.kilifi-card-body{
+  padding:24px 24px 28px;
+}
+.kilifi-card-body>span{
+  color:#B85B20;
   text-transform:uppercase;
   letter-spacing:1.4px;
   font-size:10px;
   font-weight:800;
 }
-.kilifi-card h3{font-size:25px;color:var(--kilifi-green);margin:9px 0 12px}
-.kilifi-card p{font-size:14px;line-height:1.8;color:#657066;margin:0}
-
-/* Creek feature */
-.kilifi-creek{background:var(--kilifi-green);color:#fff;padding:100px 0}
-.kilifi-creek-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
-.kilifi-creek-image img{height:490px;width:100%;object-fit:cover}
-.kilifi-creek .kilifi-section-label{color:var(--kilifi-lime)}
-.kilifi-creek h2{font-size:clamp(34px,4vw,48px);line-height:1.15;margin:0 0 22px;color:#fff}
-.kilifi-creek p{color:#d9e2d8;line-height:1.9;font-size:15px;margin:0 0 17px}
-.kilifi-creek-list{display:grid;gap:13px;margin-top:27px}
-.kilifi-creek-list div{display:flex;gap:12px;align-items:flex-start;color:#edf2e9;font-size:14px;line-height:1.6}
-.kilifi-creek-list b{color:var(--kilifi-lime);font-size:17px}
-
-/* Heritage */
-.kilifi-heritage{padding:100px 0;background:var(--kilifi-cream)}
-.kilifi-heritage-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.kilifi-heritage-image img{height:470px;width:100%;object-fit:cover}
-.kilifi-heritage h2{font-size:clamp(34px,4vw,46px);color:var(--kilifi-green);line-height:1.15;margin:0 0 20px}
-.kilifi-heritage p{color:#657066;line-height:1.9;margin:0 0 17px}
+.kilifi-card h3{
+  font-family:'Playfair Display',serif;
+  font-size:24px;
+  color:#6B4935;
+  margin:9px 0 12px;
+}
+.kilifi-card p{
+  font-size:14px;
+  line-height:1.8;
+  color:#897264;
+  margin:0;
+}
+.kilifi-creek{
+  background:#6B4935;
+  color:#fff;
+  padding:95px 0;
+}
+.kilifi-creek-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.kilifi-creek-image img{
+  height:480px;
+  width:100%;
+  object-fit:cover;
+}
+.kilifi-creek .kilifi-label{
+  color:#F09A58;
+}
+.kilifi-creek h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(34px,4vw,48px);
+  line-height:1.15;
+  margin:0 0 22px;
+  color:#fff;
+}
+.kilifi-creek p{
+  color:#EAD8C7;
+  line-height:1.9;
+  font-size:15px;
+  margin:0 0 17px;
+}
+.kilifi-creek-list{
+  display:grid;
+  gap:13px;
+  margin-top:27px;
+}
+.kilifi-creek-list div{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  color:#f8eee5;
+  font-size:14px;
+  line-height:1.6;
+}
+.kilifi-creek-list b{
+  color:#F09A58;
+  font-size:17px;
+}
+.kilifi-heritage{
+  padding:95px 0;
+  background:#FFF4E8;
+}
+.kilifi-heritage-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.kilifi-heritage-image img{
+  height:470px;
+  width:100%;
+  object-fit:cover;
+}
+.kilifi-heritage h2,
+.kilifi-coast h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(34px,4vw,46px);
+  color:#6B4935;
+  line-height:1.15;
+  margin:0 0 20px;
+}
+.kilifi-heritage p,
+.kilifi-coast p{
+  color:#897264;
+  line-height:1.9;
+  margin:0 0 17px;
+}
 .kilifi-heritage-note{
   background:#fff;
-  border-left:3px solid var(--kilifi-lime);
+  border-left:3px solid #E8752A;
   padding:19px 20px;
-  color:#667166;
+  color:#897264;
   font-size:13px;
   line-height:1.8;
   margin-top:23px;
 }
-
-/* Coastal scenery */
-.kilifi-coast{padding:100px 0;background:#fff}
-.kilifi-coast-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.kilifi-coast-image img{height:470px;width:100%;object-fit:cover}
-.kilifi-coast h2{font-size:clamp(34px,4vw,46px);color:var(--kilifi-green);line-height:1.15;margin:0 0 20px}
-.kilifi-coast p{color:#657066;line-height:1.9;margin:0 0 17px}
-.kilifi-coast-points{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
-.kilifi-coast-point{border-left:3px solid var(--kilifi-lime);padding:4px 0 4px 14px}
-.kilifi-coast-point strong{display:block;color:var(--kilifi-green);font-size:14px;margin-bottom:5px}
-.kilifi-coast-point span{font-size:12px;line-height:1.6;color:#737d72}
-
-/* Travel styles */
-.kilifi-styles{padding:85px 0;background:var(--kilifi-cream)}
-.kilifi-styles-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.kilifi-style{padding:27px 22px;border:1px solid #e2e6d9;background:#fff}
-.kilifi-style .number{font-family:'Playfair Display',serif;color:var(--kilifi-gold);font-size:29px}
-.kilifi-style h3{font-size:20px;color:var(--kilifi-green);margin:11px 0 9px}
-.kilifi-style p{font-size:13px;line-height:1.75;color:#6b756b;margin:0}
-
-/* Planning */
-.kilifi-planning{padding:100px 0;background:#f2f3eb}
-.kilifi-planning-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:start}
-.kilifi-planning-intro p{line-height:1.9;color:#687268}
-.kilifi-info-list{display:grid;gap:0}
+.kilifi-coast{
+  padding:95px 0;
+  background:#fff;
+}
+.kilifi-coast-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.kilifi-coast-image img{
+  height:470px;
+  width:100%;
+  object-fit:cover;
+}
+.kilifi-coast-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:28px;
+}
+.kilifi-coast-point{
+  border-left:3px solid #E8752A;
+  padding:4px 0 4px 14px;
+}
+.kilifi-coast-point strong{
+  display:block;
+  color:#6B4935;
+  font-size:14px;
+  margin-bottom:5px;
+}
+.kilifi-coast-point span{
+  font-size:12px;
+  line-height:1.6;
+  color:#897264;
+}
+.kilifi-styles{
+  padding:85px 0;
+  background:#F5E6D6;
+}
+.kilifi-styles-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.kilifi-style{
+  padding:27px 22px;
+  border:1px solid #E7CDBB;
+  background:#fff;
+}
+.kilifi-style .number{
+  font-family:'Playfair Display',serif;
+  color:#B85B20;
+  font-size:29px;
+}
+.kilifi-style h3{
+  font-family:'Playfair Display',serif;
+  font-size:20px;
+  color:#6B4935;
+  margin:11px 0 9px;
+}
+.kilifi-style p{
+  font-size:13px;
+  line-height:1.75;
+  color:#897264;
+  margin:0;
+}
+.kilifi-planning{
+  padding:95px 0;
+  background:#FFFCF8;
+}
+.kilifi-planning-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:60px;
+  align-items:start;
+}
+.kilifi-planning-intro p{
+  line-height:1.9;
+  color:#897264;
+}
+.kilifi-info-list{
+  display:grid;
+}
 .kilifi-info{
   display:grid;
-  grid-template-columns:150px 1fr;
+  grid-template-columns:145px 1fr;
   gap:20px;
   padding:19px 0;
-  border-bottom:1px solid #dce1d5;
+  border-bottom:1px solid #EAD8C7;
 }
-.kilifi-info strong{font-size:13px;color:var(--kilifi-green)}
-.kilifi-info span{font-size:13px;line-height:1.75;color:#687268}
-
-/* CTA */
+.kilifi-info strong{
+  font-size:13px;
+  color:#6B4935;
+}
+.kilifi-info span{
+  font-size:13px;
+  line-height:1.75;
+  color:#897264;
+}
 .kilifi-cta{
-  background:var(--kilifi-green);
+  background:#6B4935;
   color:#fff;
-  padding:65px;
-  margin-top:90px;
-  margin-bottom:90px;
+  padding:55px;
+  margin-top:80px;
+  margin-bottom:80px;
   display:flex;
   justify-content:space-between;
   align-items:center;
   gap:30px;
 }
-.kilifi-cta h2{font-size:clamp(30px,4vw,42px);margin:0 0 12px;color:#fff}
-.kilifi-cta p{color:#dce6d8;line-height:1.7;margin:0;max-width:600px}
-.kilifi-cta .kilifi-btn{flex-shrink:0}
-
-/* Responsive */
+.kilifi-cta h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(30px,4vw,42px);
+  margin:0 0 12px;
+  color:#fff;
+}
+.kilifi-cta p{
+  color:#EAD8C7;
+  line-height:1.7;
+  margin:0;
+  max-width:600px;
+}
+.kilifi-cta .kilifi-action{
+  flex-shrink:0;
+}
 @media(max-width:900px){
   .kilifi-hero{min-height:600px}
-  .kilifi-intro-grid,.kilifi-creek-grid,.kilifi-heritage-grid,.kilifi-coast-grid,.kilifi-planning-grid{grid-template-columns:1fr;gap:38px}
+  .kilifi-intro-grid,
+  .kilifi-creek-grid,
+  .kilifi-heritage-grid,
+  .kilifi-coast-grid,
+  .kilifi-planning-grid{
+    grid-template-columns:1fr;
+    gap:38px;
+  }
   .kilifi-intro-image img{height:420px}
   .kilifi-image-note{right:12px}
   .kilifi-cards{grid-template-columns:repeat(2,1fr)}
   .kilifi-styles-grid{grid-template-columns:repeat(2,1fr)}
-  .kilifi-creek-image img,.kilifi-heritage-image img,.kilifi-coast-image img{height:400px}
+  .kilifi-creek-image img,
+  .kilifi-heritage-image img,
+  .kilifi-coast-image img{height:400px}
 }
 @media(max-width:600px){
-  .wrap{width:min(100% - 30px,1160px)}
   .kilifi-hero{min-height:560px}
   .kilifi-hero-content{padding:85px 0 65px}
   .kilifi-hero h1{font-size:58px}
-  .kilifi-intro,.kilifi-experiences,.kilifi-creek,.kilifi-heritage,.kilifi-coast,.kilifi-planning{padding:70px 0}
+  .kilifi-intro,
+  .kilifi-experiences,
+  .kilifi-creek,
+  .kilifi-heritage,
+  .kilifi-coast,
+  .kilifi-planning{padding:68px 0}
   .kilifi-intro-image img{height:340px}
   .kilifi-cards{grid-template-columns:1fr}
   .kilifi-card img{height:235px}
   .kilifi-styles{padding:65px 0}
   .kilifi-styles-grid{grid-template-columns:1fr 1fr;gap:10px}
   .kilifi-style{padding:20px 15px}
+  .kilifi-coast-points{gap:13px}
   .kilifi-info{grid-template-columns:1fr;gap:6px}
-  .kilifi-cta{padding:35px 25px;margin-top:65px;margin-bottom:65px;align-items:flex-start;flex-direction:column}
-  .kilifi-creek-image img,.kilifi-heritage-image img,.kilifi-coast-image img{height:330px}
+  .kilifi-cta{
+    padding:35px 25px;
+    margin-top:60px;
+    margin-bottom:60px;
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .kilifi-creek-image img,
+  .kilifi-heritage-image img,
+  .kilifi-coast-image img{height:330px}
 }
 </style>
 </head>
@@ -274,19 +500,24 @@ a{text-decoration:none}
 
 <div class="topline">
   <div class="wrap top-inner">
-    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-    <span><a href="tel:+254704261626">+254 704 261 626</a> · <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a></span>
+    <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+    <span>
+      <a href="tel:+254704261626">+254 704 261 626</a> ·
+      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+    </span>
   </div>
 </div>
 
 <header class="header">
   <div class="wrap nav">
     <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+      <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
       <span>FLEYPAT<small>ADVENTURES</small></span>
     </a>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav>
+
+    <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="safaris.html">Safaris</a>
@@ -315,8 +546,8 @@ a{text-decoration:none}
     <h1>Discover<br>Kilifi</h1>
     <p>Find your own pace along Kenya's north coast, where peaceful creek waters, palm-fringed shores and laid-back coastal living come together.</p>
     <div class="kilifi-actions">
-      <a class="kilifi-btn" href="contact.html?destination=kilifi">Plan Your Kilifi Escape</a>
-      <a class="kilifi-btn kilifi-btn-outline" href="#experiences">Explore Experiences</a>
+      <a class="kilifi-action" href="contact.html?destination=kilifi">Plan Your Kilifi Escape</a>
+      <a class="kilifi-action kilifi-action-outline" href="#experiences">Explore Experiences</a>
     </div>
   </div>
 </section>
@@ -327,7 +558,7 @@ a{text-decoration:none}
     <div class="kilifi-intro-image">
       <img
         src="https://commons.wikimedia.org/wiki/Special:FilePath/Kilifi%20Creek.jpg?width=1400"
-        alt="Kilifi Creek, where the Indian Ocean extends inland"
+        alt="Kilifi Creek and its surrounding coastal landscape"
         loading="lazy">
       <div class="kilifi-image-note">
         <strong>Life by the Creek</strong>
@@ -336,7 +567,7 @@ a{text-decoration:none}
     </div>
 
     <div>
-      <span class="kilifi-section-label">A quieter coastal escape</span>
+      <span class="kilifi-label">A quieter coastal escape</span>
       <h2>Discover the charm of Kilifi</h2>
       <p>Kilifi is a coastal town between Mombasa and Malindi, known for its creek, beaches and relaxed atmosphere. It offers a different kind of coastal holiday for travellers looking to enjoy the sea without the pace of larger resort centres.</p>
       <p>The town's waterfront setting is one of its defining features. Kilifi Creek reaches inland from the Indian Ocean, creating beautiful views and opportunities to enjoy the water and surrounding landscape.</p>
@@ -355,7 +586,7 @@ a{text-decoration:none}
 <section class="kilifi-experiences" id="experiences">
   <div class="wrap">
     <div class="kilifi-section-heading">
-      <span class="kilifi-section-label">Discover the coast</span>
+      <span class="kilifi-label">Discover the coast</span>
       <h2>Experiences to enjoy in Kilifi</h2>
       <p>From creek excursions to beach days and local discoveries, Kilifi offers plenty of ways to enjoy a slower coastal escape.</p>
     </div>
@@ -363,10 +594,9 @@ a{text-decoration:none}
     <div class="kilifi-cards">
 
       <article class="kilifi-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Kilifi%20bridge.jpg?width=1100"
-          alt="Kilifi Bridge crossing the creek"
-          loading="lazy">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kilifi%20bridge.jpg?width=1100"
+             alt="Kilifi Bridge crossing the creek"
+             loading="lazy">
         <div class="kilifi-card-body">
           <span>Iconic coastal scenery</span>
           <h3>Kilifi Bridge Views</h3>
@@ -375,10 +605,9 @@ a{text-decoration:none}
       </article>
 
       <article class="kilifi-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/A%20fisherman%20using%20a%20boat%20in%20Kilifi%2C%20Kenya.jpg?width=1100"
-          alt="A fisherman using a boat in Kilifi"
-          loading="lazy">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A%20fisherman%20using%20a%20boat%20in%20Kilifi%2C%20Kenya.jpg?width=1100"
+             alt="A fisherman using a boat in Kilifi"
+             loading="lazy">
         <div class="kilifi-card-body">
           <span>Life on the water</span>
           <h3>Creek Boat Experiences</h3>
@@ -387,10 +616,9 @@ a{text-decoration:none}
       </article>
 
       <article class="kilifi-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Cave%20in%20Bofa%20Beach%20Kilifi.jpg?width=1100"
-          alt="Rock formation and cave at Bofa Beach in Kilifi"
-          loading="lazy">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cave%20in%20Bofa%20Beach%20Kilifi.jpg?width=1100"
+             alt="Rock formation and cave at Bofa Beach in Kilifi"
+             loading="lazy">
         <div class="kilifi-card-body">
           <span>Coastal discovery</span>
           <h3>Bofa Beach Landscape</h3>
@@ -399,10 +627,9 @@ a{text-decoration:none}
       </article>
 
       <article class="kilifi-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Dhows%20in%20Kilifi%20Creek.JPG?width=1100"
-          alt="Traditional dhows on Kilifi Creek"
-          loading="lazy">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dhows%20in%20Kilifi%20Creek.JPG?width=1100"
+             alt="Traditional dhows on Kilifi Creek"
+             loading="lazy">
         <div class="kilifi-card-body">
           <span>Coastal tradition</span>
           <h3>Dhow and Sailing Culture</h3>
@@ -411,10 +638,9 @@ a{text-decoration:none}
       </article>
 
       <article class="kilifi-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Sea-side%20ambiance%20in%20Kilifi.jpg?width=1100"
-          alt="Seaside atmosphere in Kilifi"
-          loading="lazy">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sea-side%20ambiance%20in%20Kilifi.jpg?width=1100"
+             alt="Seaside atmosphere in Kilifi"
+             loading="lazy">
         <div class="kilifi-card-body">
           <span>Relaxed coastal living</span>
           <h3>Seaside Dining and Leisure</h3>
@@ -423,10 +649,9 @@ a{text-decoration:none}
       </article>
 
       <article class="kilifi-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Takaungu%20beach%2C%20Kenya.jpg?width=1100"
-          alt="Coastal beach scenery at Takaungu in Kilifi County"
-          loading="lazy">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takaungu%20beach%2C%20Kenya.jpg?width=1100"
+             alt="Coastal beach scenery at Takaungu in Kilifi County"
+             loading="lazy">
         <div class="kilifi-card-body">
           <span>Explore the county</span>
           <h3>Nearby Coastal Escapes</h3>
@@ -442,14 +667,13 @@ a{text-decoration:none}
 <section class="kilifi-creek">
   <div class="wrap kilifi-creek-grid">
     <div class="kilifi-creek-image">
-      <img
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Kilifi%20Bay.jpg?width=1400"
-        alt="Coastal waters around Kilifi Bay"
-        loading="lazy">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kilifi%20Bay.jpg?width=1400"
+           alt="Coastal waters around Kilifi Bay"
+           loading="lazy">
     </div>
 
     <div>
-      <span class="kilifi-section-label">The heart of the destination</span>
+      <span class="kilifi-label">The heart of the destination</span>
       <h2>Experience the beauty of Kilifi Creek</h2>
       <p>Kilifi Creek is one of the area's defining natural features. Its sheltered waters, green shoreline and connection to the Indian Ocean give the destination a distinctive character.</p>
       <p>It is a lovely setting for scenic moments, photography and selected water-based experiences. Depending on your plans, your stay can include time by the waterfront or an arranged excursion with a local operator.</p>
@@ -467,7 +691,7 @@ a{text-decoration:none}
 <section class="kilifi-heritage">
   <div class="wrap kilifi-heritage-grid">
     <div>
-      <span class="kilifi-section-label">History and culture</span>
+      <span class="kilifi-label">History and culture</span>
       <h2>Discover Kilifi's coastal heritage</h2>
       <p>Kilifi's story extends beyond its beaches and creek. The wider area has a rich history shaped by coastal communities, Indian Ocean trade and centuries of cultural exchange.</p>
       <p>The Mnarani archaeological site is one of the area's important heritage attractions. Its remains include historic settlement structures and the ruins of a mosque, offering a glimpse into the region's past.</p>
@@ -478,10 +702,9 @@ a{text-decoration:none}
     </div>
 
     <div class="kilifi-heritage-image">
-      <img
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Mosque%20at%20Mnarani%20ruins.jpg?width=1400"
-        alt="The Great Mosque at the historic Mnarani ruins"
-        loading="lazy">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Mosque%20at%20Mnarani%20ruins.jpg?width=1400"
+           alt="The Great Mosque at the historic Mnarani ruins"
+           loading="lazy">
     </div>
   </div>
 </section>
@@ -490,14 +713,13 @@ a{text-decoration:none}
 <section class="kilifi-coast">
   <div class="wrap kilifi-coast-grid">
     <div class="kilifi-coast-image">
-      <img
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Cliff%20alongside%20the%20Vidazini%20Beach%20in%20kilifi%20%2C%20Kenya.jpg?width=1400"
-        alt="Coastal cliff beside Vidazini Beach in Kilifi"
-        loading="lazy">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cliff%20alongside%20the%20Vidazini%20Beach%20in%20kilifi%20%2C%20Kenya.jpg?width=1400"
+           alt="Coastal cliff beside Vidazini Beach in Kilifi"
+           loading="lazy">
     </div>
 
     <div>
-      <span class="kilifi-section-label">Beyond the creek</span>
+      <span class="kilifi-label">Beyond the creek</span>
       <h2>Explore Kilifi's coastal landscapes</h2>
       <p>Kilifi County has a varied coastline, with beaches, rocky sections, creeks and small coastal settlements. Each area offers a different atmosphere and a chance to enjoy the natural character of the Kenyan coast.</p>
       <p>Depending on your itinerary, you can spend time at Bofa Beach, explore nearby coastal communities or include other destinations along the north coast.</p>
@@ -528,7 +750,7 @@ a{text-decoration:none}
 <section class="kilifi-styles">
   <div class="wrap">
     <div class="kilifi-section-heading">
-      <span class="kilifi-section-label">Choose your kind of escape</span>
+      <span class="kilifi-label">Choose your kind of escape</span>
       <h2>Ways to experience Kilifi</h2>
       <p>We can help shape your visit around your group, preferred accommodation and available time.</p>
     </div>
@@ -565,7 +787,7 @@ a{text-decoration:none}
 <section class="kilifi-planning">
   <div class="wrap kilifi-planning-grid">
     <div class="kilifi-planning-intro">
-      <span class="kilifi-section-label">Before you travel</span>
+      <span class="kilifi-label">Before you travel</span>
       <h2>Plan your Kilifi visit</h2>
       <p>A little preparation helps make your coastal stay more comfortable. We can help coordinate transport, accommodation and selected experiences according to your travel dates and preferences.</p>
       <p>Share your plans with us and we will prepare a proposal suited to your group and preferred travel style.</p>
@@ -603,21 +825,22 @@ a{text-decoration:none}
       <h2>Ready for a Kilifi coastal escape?</h2>
       <p>Tell us your preferred dates, group size, starting point and accommodation style. Fleypat Adventures will help you plan a relaxed coastal getaway tailored to your travel plans.</p>
     </div>
-    <a class="kilifi-btn" href="contact.html?destination=kilifi">Plan My Kilifi Trip</a>
+    <a class="kilifi-action" href="contact.html?destination=kilifi">Plan My Kilifi Trip</a>
   </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="wrap footer-grid">
     <div>
       <a class="brand footer-brand" href="index.html">
-        <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+        <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
         <span>FLEYPAT<small>ADVENTURES</small></span>
       </a>
       <p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-      <a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+      <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram @fleypat_adventures</a>
     </div>
 
     <div>
@@ -657,8 +880,38 @@ a{text-decoration:none}
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip%20to%20Kilifi."
    target="_blank"
-   rel="noopener">WhatsApp Us</a>
+   rel="noopener"
+   aria-label="Chat with Fleypat Adventures on WhatsApp">WhatsApp Us</a>
 
 <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  if(toggle && nav){
+    toggle.addEventListener("click", function(){
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      toggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    nav.querySelectorAll("a").forEach(function(link){
+      link.addEventListener("click", function(){
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Open menu");
+        toggle.textContent = "☰";
+      });
+    });
+  }
+
+  document.querySelectorAll("[data-year]").forEach(function(item){
+    item.textContent = new Date().getFullYear();
+  });
+});
+</script>
+
 </body>
 </html>
