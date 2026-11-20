@@ -4,9 +4,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Lake Nakuru National Park | Wildlife Safaris in Kenya | Fleypat Adventures</title>
 <meta name="description" content="Discover Lake Nakuru National Park in Kenya's Great Rift Valley. Explore rhinos, flamingos, diverse wildlife, scenic viewpoints and tailor-made safari experiences with Fleypat Adventures.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#FFF4E8">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,170 +15,644 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
+/* LAKE NAKURU — FLEYPAT WARM SAFARI THEME */
 :root{
-  --lime:#a8d832;
-  --green:#243c28;
-  --deep:#172b20;
-  --cream:#fbf7e9;
-  --gold:#a97832;
-  --muted:#6d756d;
-  --white:#fff;
+ --nakuru-orange:#E8752A;
+ --nakuru-orange-dark:#B85B20;
+ --nakuru-brown:#A66A42;
+ --nakuru-cream:#FFF4E8;
+ --nakuru-cream-light:#FFFCF8;
+ --nakuru-cream-deep:#F5E6D6;
+ --nakuru-text:#6B4935;
+ --nakuru-muted:#897264;
+ --nakuru-white:#FFFFFF;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:'DM Sans',sans-serif;color:#28352b;background:#fff;line-height:1.7}
-img{display:block;width:100%;object-fit:cover}
-a{text-decoration:none;color:inherit}
-.wrap{width:min(1160px,92%);margin:auto}
-h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.2;color:var(--green)}
-h2{font-size:clamp(2rem,4vw,2.8rem);margin:0 0 18px}
-p{margin:0 0 16px}
-.topline{background:var(--deep);color:#fff;font-size:12px}
-.top-inner{display:flex;justify-content:space-between;gap:15px;padding:9px 0}
-.topline a{color:#fff}
-.header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 4px 20px #172b2010}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:82px}
-.brand{display:flex;align-items:center;gap:10px;color:var(--green);font-weight:800;letter-spacing:2px;font-size:19px;flex-shrink:0}
-.brand img{width:54px;height:54px;object-fit:contain}
-.brand small{display:block;font-size:9px;letter-spacing:4px;color:var(--gold);line-height:1.2}
-.nav nav{display:flex;align-items:center;justify-content:flex-end;gap:15px;flex-wrap:wrap}
-.nav nav a{font-size:11px;font-weight:700;color:#354238}
-.nav nav a:hover,.nav nav a.active{color:#7a9f22}
-.nav-book{background:var(--lime);padding:11px 17px;border-radius:3px}
-.nav-toggle{display:none;background:var(--green);color:#fff;border:0;border-radius:3px;padding:9px 13px;font-size:20px}
+
+html{
+ scroll-behavior:smooth;
+}
+
+body{
+ font-family:'DM Sans',sans-serif;
+ color:var(--nakuru-text);
+}
+
+h1,h2,h3,h4{
+ font-family:'Playfair Display',serif;
+}
+
 .destination-hero{
- min-height:590px;display:flex;align-items:center;position:relative;
- background:linear-gradient(90deg,rgba(13,29,20,.78),rgba(13,29,20,.34) 55%,rgba(13,29,20,.12)),
- url('https://commons.wikimedia.org/wiki/Special:FilePath/Flamingoes_in_Lake_Nakuru_National_Park.jpg?width=2000') center 48%/cover;
+ min-height:590px;
+ display:flex;
+ align-items:center;
+ position:relative;
+ isolation:isolate;
+ background:
+ linear-gradient(90deg,rgba(48,29,18,.82),rgba(48,29,18,.34) 55%,rgba(48,29,18,.12)),
+ url('https://commons.wikimedia.org/wiki/Special:FilePath/Flamingoes_in_Lake_Nakuru_National_Park.jpg?width=2000')
+ center 48%/cover no-repeat;
  color:#fff;
 }
-.hero-content{max-width:760px;padding:100px 0}
-.eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:800;color:var(--lime);margin-bottom:18px}
-.destination-hero h1{font-size:clamp(2.8rem,6.5vw,5.5rem);color:#fff;margin:0 0 22px;max-width:780px}
-.destination-hero p{font-size:17px;max-width:650px;color:#f4f4ec;margin-bottom:30px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--lime);color:var(--deep);font-weight:800;padding:14px 22px;border-radius:3px;font-size:13px;transition:.2s}
-.btn:hover{transform:translateY(-2px);filter:brightness(.96)}
-.btn-outline{border:1px solid #fff;color:#fff;background:transparent}
-.btn-gold{background:var(--gold);color:#fff}
-.section{padding:86px 0}
-.section-soft{background:var(--cream)}
-.section-dark{background:var(--deep);color:#e8eee7}
-.section-dark h2,.section-dark h3{color:#fff}
-.section-kicker{color:var(--gold);font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:800;display:block;margin-bottom:13px}
-.intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
-.intro-photo{height:470px;border-radius:5px;overflow:hidden;position:relative}
-.intro-photo img{height:100%}
-.photo-note{position:absolute;bottom:18px;left:18px;background:#fff;padding:12px 16px;border-left:4px solid var(--lime);font-size:12px;font-weight:700}
-.intro-copy p{color:#687168}
-.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-.stat{border-top:2px solid var(--lime);padding-top:13px}
-.stat strong{display:block;font-family:'Playfair Display',serif;font-size:24px;color:var(--green)}
-.stat span{font-size:11px;color:var(--muted)}
-.section-heading{max-width:700px;margin-bottom:38px}
-.section-heading p{color:var(--muted)}
-.experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.experience-card{background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 10px 30px #172b2010}
-.experience-card img{height:245px;transition:transform .5s}
-.experience-card:hover img{transform:scale(1.04)}
-.experience-card .card-copy{padding:23px}
-.experience-card h3{font-size:21px;margin:0 0 10px}
-.experience-card p{font-size:13px;color:var(--muted);margin:0}
-.experience-card .number{font-size:11px;letter-spacing:2px;color:var(--gold);font-weight:800;margin-bottom:9px;display:block}
-.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.feature-photo{height:420px;border-radius:5px;overflow:hidden}
-.feature-photo img{height:100%}
-.feature-copy p{color:#d0d9d0}
-.feature-points{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px}
-.feature-point{border-left:2px solid var(--lime);padding-left:13px}
-.feature-point strong{display:block;color:#fff;font-size:13px}
-.feature-point span{font-size:11px;color:#c2cec2}
-.places-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.place-card{display:grid;grid-template-columns:180px 1fr;background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 24px #172b2010}
-.place-card img{height:100%;min-height:190px}
-.place-copy{padding:22px}
-.place-copy h3{margin:0 0 9px;font-size:20px}
-.place-copy p{font-size:13px;color:var(--muted);margin:0}
-.planning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.planning-item{border-top:2px solid var(--lime);padding-top:20px}
-.planning-item h3{font-size:20px;margin:0 0 10px}
-.planning-item p{font-size:13px;color:#cbd4cb}
-.travel-note{background:#fff;border-left:4px solid var(--gold);padding:22px 25px;margin-top:35px;color:#586258;font-size:13px}
-.safari-cta{background:var(--green);color:#fff;border-radius:6px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:30px;margin:0 auto 85px}
-.safari-cta h2{color:#fff;margin-bottom:10px}
-.safari-cta p{color:#d6dfd5;margin:0}
-.footer{background:#14251b;color:#dbe3da;padding:65px 0 20px}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:35px}
-.footer-brand{color:#fff;margin-bottom:17px}
-.footer p{font-size:13px;color:#c1ccc1;margin-top:15px}
-.footer h3{font-family:'DM Sans',sans-serif;color:#fff;font-size:13px;margin:0 0 17px}
-.footer-grid>div>a:not(.brand),.footer-grid>div>span{display:block;font-size:12px;margin:9px 0;color:#d0d9d0}
-.footer a:hover{color:var(--lime)}
-.foot-bottom{border-top:1px solid #ffffff22;margin-top:40px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;font-size:11px;color:#aab8aa}
-.float-wa{position:fixed;right:20px;bottom:20px;z-index:90;background:#25d366;color:#fff;font-size:13px;font-weight:800;padding:13px 19px;border-radius:30px;box-shadow:0 5px 20px #0003}
+
+.hero-content{
+ max-width:760px;
+ padding:100px 0;
+}
+
+.eyebrow{
+ display:inline-block;
+ text-transform:uppercase;
+ letter-spacing:3px;
+ font-size:11px;
+ font-weight:800;
+ color:#FFD0A5;
+ margin-bottom:18px;
+}
+
+.destination-hero h1{
+ font-size:clamp(2.8rem,6.5vw,5.5rem);
+ color:#fff;
+ margin:0 0 22px;
+ max-width:780px;
+ line-height:1.08;
+}
+
+.destination-hero p{
+ font-size:17px;
+ max-width:650px;
+ color:#f4eee8;
+ margin-bottom:30px;
+ line-height:1.8;
+}
+
+.hero-actions{
+ display:flex;
+ gap:12px;
+ flex-wrap:wrap;
+}
+
+.btn{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ background:var(--nakuru-orange);
+ color:#fff;
+ font-weight:800;
+ padding:14px 22px;
+ font-size:13px;
+ transition:.2s ease;
+ border:1px solid transparent;
+}
+
+.btn:hover{
+ transform:translateY(-2px);
+ background:var(--nakuru-orange-dark);
+}
+
+.btn-outline{
+ border:1px solid #fff;
+ color:#fff;
+ background:transparent;
+}
+
+.btn-outline:hover{
+ background:#fff;
+ color:var(--nakuru-brown);
+}
+
+.btn-gold{
+ background:var(--nakuru-brown);
+ color:#fff;
+}
+
+.btn-gold:hover{
+ background:var(--nakuru-orange-dark);
+}
+
+.section{
+ padding:86px 0;
+}
+
+.section-soft{
+ background:var(--nakuru-cream);
+}
+
+.section-dark{
+ background:var(--nakuru-brown);
+ color:#f8eee6;
+}
+
+.section-dark h2,
+.section-dark h3{
+ color:#fff;
+}
+
+.section-kicker{
+ color:var(--nakuru-orange-dark);
+ font-size:11px;
+ letter-spacing:3px;
+ text-transform:uppercase;
+ font-weight:800;
+ display:block;
+ margin-bottom:13px;
+}
+
+.intro-grid{
+ display:grid;
+ grid-template-columns:1.05fr .95fr;
+ gap:60px;
+ align-items:center;
+}
+
+.intro-photo{
+ height:470px;
+ overflow:hidden;
+ position:relative;
+}
+
+.intro-photo img{
+ height:100%;
+ width:100%;
+ object-fit:cover;
+ display:block;
+}
+
+.photo-note{
+ position:absolute;
+ bottom:18px;
+ left:18px;
+ background:#fff;
+ padding:12px 16px;
+ border-left:4px solid var(--nakuru-orange);
+ font-size:12px;
+ font-weight:700;
+ color:var(--nakuru-brown);
+}
+
+.intro-copy h2,
+.section-heading h2,
+.feature-copy h2{
+ font-size:clamp(2rem,4vw,2.8rem);
+ margin:0 0 18px;
+ line-height:1.2;
+ color:var(--nakuru-brown);
+}
+
+.intro-copy p{
+ color:var(--nakuru-muted);
+ line-height:1.85;
+}
+
+.stat-row{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:12px;
+ margin-top:28px;
+}
+
+.stat{
+ border-top:2px solid var(--nakuru-orange);
+ padding-top:13px;
+}
+
+.stat strong{
+ display:block;
+ font-family:'Playfair Display',serif;
+ font-size:24px;
+ color:var(--nakuru-brown);
+}
+
+.stat span{
+ font-size:11px;
+ color:var(--nakuru-muted);
+}
+
+.section-heading{
+ max-width:700px;
+ margin-bottom:38px;
+}
+
+.section-heading p{
+ color:var(--nakuru-muted);
+ line-height:1.8;
+}
+
+.section-dark .section-heading p{
+ color:#f0dfd2;
+}
+
+.experience-grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:22px;
+}
+
+.experience-card{
+ background:#fff;
+ overflow:hidden;
+ border:1px solid #EAD8C7;
+}
+
+.experience-card img{
+ width:100%;
+ height:245px;
+ object-fit:cover;
+ display:block;
+ transition:transform .5s;
+}
+
+.experience-card:hover img{
+ transform:scale(1.04);
+}
+
+.experience-card .card-copy{
+ padding:23px;
+}
+
+.experience-card h3{
+ font-size:21px;
+ margin:0 0 10px;
+ color:var(--nakuru-brown);
+}
+
+.experience-card p{
+ font-size:13px;
+ color:var(--nakuru-muted);
+ margin:0;
+ line-height:1.8;
+}
+
+.experience-card .number{
+ font-size:11px;
+ letter-spacing:2px;
+ color:var(--nakuru-orange-dark);
+ font-weight:800;
+ margin-bottom:9px;
+ display:block;
+}
+
+.feature-grid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:50px;
+ align-items:center;
+}
+
+.feature-photo{
+ height:420px;
+ overflow:hidden;
+}
+
+.feature-photo img{
+ height:100%;
+ width:100%;
+ object-fit:cover;
+ display:block;
+}
+
+.feature-copy p{
+ color:#f0dfd2;
+ line-height:1.85;
+}
+
+.section-dark .feature-copy h2{
+ color:#fff;
+}
+
+.feature-points{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:15px;
+ margin-top:25px;
+}
+
+.feature-point{
+ border-left:2px solid #FFD0A5;
+ padding-left:13px;
+}
+
+.feature-point strong{
+ display:block;
+ color:#fff;
+ font-size:13px;
+}
+
+.feature-point span{
+ font-size:11px;
+ color:#f0dfd2;
+}
+
+.places-grid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:25px;
+}
+
+.place-card{
+ display:grid;
+ grid-template-columns:180px 1fr;
+ background:#fff;
+ overflow:hidden;
+ border:1px solid #EAD8C7;
+}
+
+.place-card img{
+ height:100%;
+ min-height:190px;
+ width:100%;
+ object-fit:cover;
+ display:block;
+}
+
+.place-copy{
+ padding:22px;
+}
+
+.place-copy h3{
+ margin:0 0 9px;
+ font-size:20px;
+ color:var(--nakuru-brown);
+}
+
+.place-copy p{
+ font-size:13px;
+ color:var(--nakuru-muted);
+ margin:0;
+ line-height:1.8;
+}
+
+.planning-grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:25px;
+}
+
+.planning-item{
+ border-top:2px solid #FFD0A5;
+ padding-top:20px;
+}
+
+.planning-item h3{
+ font-size:20px;
+ margin:0 0 10px;
+ color:#fff;
+}
+
+.planning-item p{
+ font-size:13px;
+ color:#f0dfd2;
+ line-height:1.8;
+}
+
+.travel-note{
+ background:#fff;
+ border-left:4px solid var(--nakuru-orange);
+ padding:22px 25px;
+ margin-top:35px;
+ color:var(--nakuru-text);
+ font-size:13px;
+ line-height:1.8;
+}
+
+.safari-cta{
+ background:var(--nakuru-cream);
+ border:1px solid #EAD8C7;
+ padding:48px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:30px;
+ margin:0 auto 85px;
+}
+
+.safari-cta h2{
+ color:var(--nakuru-brown);
+ margin-bottom:10px;
+ font-size:clamp(1.8rem,3vw,2.5rem);
+}
+
+.safari-cta p{
+ color:var(--nakuru-muted);
+ margin:0;
+ line-height:1.8;
+ max-width:620px;
+}
+
+.safari-cta .section-kicker{
+ color:var(--nakuru-orange-dark);
+}
+
+.footer{
+ background:#6B4935;
+ color:#f8eee6;
+ padding:65px 0 20px;
+}
+
+.footer-brand{
+ color:#fff;
+}
+
+.footer p{
+ font-size:13px;
+ color:#f0dfd2;
+ margin-top:15px;
+}
+
+.footer h3{
+ font-family:'DM Sans',sans-serif;
+ color:#fff;
+ font-size:13px;
+ margin:0 0 17px;
+}
+
+.footer-grid>div>a:not(.brand),
+.footer-grid>div>span{
+ display:block;
+ font-size:12px;
+ margin:9px 0;
+ color:#f0dfd2;
+}
+
+.footer a:hover{
+ color:#FFD0A5;
+}
+
+.foot-bottom{
+ border-top:1px solid #ffffff33;
+ margin-top:40px;
+ padding-top:18px;
+ display:flex;
+ justify-content:space-between;
+ gap:20px;
+ font-size:11px;
+ color:#e4cbb9;
+}
+
+.float-wa{
+ position:fixed;
+ right:20px;
+ bottom:20px;
+ z-index:90;
+ background:#25d366;
+ color:#fff;
+ font-size:13px;
+ font-weight:800;
+ padding:13px 19px;
+ border-radius:30px;
+ box-shadow:0 5px 20px #0003;
+}
+
+.float-wa:hover{
+ background:#1eae54;
+ color:#fff;
+}
+
 @media(max-width:1050px){
- .nav nav{gap:10px}
- .nav nav a{font-size:10px}
+ .experience-grid{
+  grid-template-columns:repeat(2,1fr);
+ }
 }
+
 @media(max-width:850px){
- .nav{min-height:72px}
- .nav-toggle{display:block}
- .nav nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:20px 5%;box-shadow:0 12px 20px #0001;align-items:stretch;flex-direction:column;gap:0}
- .nav nav.open{display:flex}
- .nav nav a{padding:11px 0;border-bottom:1px solid #eee;font-size:13px}
- .nav nav .nav-book{padding:12px 16px;margin-top:10px;text-align:center}
- .intro-grid,.feature-grid{grid-template-columns:1fr;gap:30px}
- .intro-photo{height:380px}
- .experience-grid{grid-template-columns:repeat(2,1fr)}
- .places-grid{grid-template-columns:1fr}
- .planning-grid{grid-template-columns:1fr 1fr}
- .footer-grid{grid-template-columns:1fr 1fr}
- .safari-cta{padding:35px;align-items:flex-start;flex-direction:column}
+ .intro-grid,
+ .feature-grid{
+  grid-template-columns:1fr;
+  gap:30px;
+ }
+
+ .intro-photo{
+  height:380px;
+ }
+
+ .places-grid{
+  grid-template-columns:1fr;
+ }
+
+ .planning-grid{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .safari-cta{
+  padding:35px;
+  align-items:flex-start;
+  flex-direction:column;
+  margin-bottom:60px;
+ }
 }
-@media(max-width:560px){
- .top-inner{flex-direction:column;gap:3px;font-size:10px}
- .destination-hero{min-height:520px}
- .hero-content{padding:75px 0}
- .destination-hero p{font-size:14px}
- .section{padding:62px 0}
- .intro-photo{height:290px}
- .stat-row{gap:8px}
- .stat strong{font-size:19px}
- .stat span{font-size:10px}
- .experience-grid{grid-template-columns:1fr}
- .experience-card img{height:230px}
- .feature-photo{height:280px}
- .feature-points{grid-template-columns:1fr 1fr}
- .place-card{grid-template-columns:115px 1fr}
- .place-card img{min-height:180px}
- .place-copy{padding:15px}
- .place-copy h3{font-size:17px}
- .place-copy p{font-size:12px}
- .planning-grid{grid-template-columns:1fr}
- .safari-cta{padding:27px 22px}
- .footer-grid{grid-template-columns:1fr}
- .foot-bottom{flex-direction:column}
+
+@media(max-width:600px){
+ .destination-hero{
+  min-height:520px;
+ }
+
+ .hero-content{
+  padding:75px 0;
+ }
+
+ .destination-hero p{
+  font-size:14px;
+ }
+
+ .section{
+  padding:62px 0;
+ }
+
+ .intro-photo{
+  height:290px;
+ }
+
+ .stat-row{
+  gap:8px;
+ }
+
+ .stat strong{
+  font-size:19px;
+ }
+
+ .stat span{
+  font-size:10px;
+ }
+
+ .experience-grid{
+  grid-template-columns:1fr;
+ }
+
+ .experience-card img{
+  height:230px;
+ }
+
+ .feature-photo{
+  height:280px;
+ }
+
+ .feature-points{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .place-card{
+  grid-template-columns:115px 1fr;
+ }
+
+ .place-card img{
+  min-height:180px;
+ }
+
+ .place-copy{
+  padding:15px;
+ }
+
+ .place-copy h3{
+  font-size:17px;
+ }
+
+ .place-copy p{
+  font-size:12px;
+ }
+
+ .planning-grid{
+  grid-template-columns:1fr;
+ }
+
+ .safari-cta{
+  padding:27px 22px;
+ }
+
+ .footer-grid{
+  grid-template-columns:1fr;
+ }
+
+ .foot-bottom{
+  flex-direction:column;
+ }
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP CONTACT BAR -->
 <div class="topline">
  <div class="wrap top-inner">
-  <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-  <span><a href="tel:+254704261626">+254 704 261 626</a> · <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a></span>
+  <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+  <span>
+   <a href="tel:+254704261626">+254 704 261 626</a> ·
+   <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+  </span>
  </div>
 </div>
 
+<!-- HEADER -->
 <header class="header">
  <div class="wrap nav">
+
   <a class="brand" href="index.html">
    <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
    <span>FLEYPAT<small>ADVENTURES</small></span>
   </a>
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-  <nav>
+
+  <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+  <nav id="mainNav">
    <a href="index.html">Home</a>
    <a href="about.html">About</a>
    <a href="safaris.html">Safaris</a>
@@ -194,6 +669,7 @@ p{margin:0 0 16px}
    <a href="contact.html">Contact</a>
    <a class="nav-book" href="contact.html">Book Now</a>
   </nav>
+
  </div>
 </header>
 
@@ -205,6 +681,7 @@ p{margin:0 0 16px}
   <span class="eyebrow">Kenya · Great Rift Valley</span>
   <h1>Lake Nakuru National Park</h1>
   <p>Discover a remarkable Rift Valley sanctuary of rhinos, birdlife, open woodland and beautiful lakeside landscapes.</p>
+
   <div class="hero-actions">
    <a class="btn" href="contact.html?destination=lake-nakuru">Plan Your Safari</a>
    <a class="btn btn-outline" href="#experiences">Explore the Park</a>
@@ -215,28 +692,48 @@ p{margin:0 0 16px}
 <!-- INTRODUCTION -->
 <section class="section">
  <div class="wrap intro-grid">
+
   <div class="intro-copy">
    <span class="section-kicker">A Rift Valley wildlife destination</span>
    <h2>Discover the Beauty of Lake Nakuru</h2>
+
    <p>Set within Kenya's Great Rift Valley, Lake Nakuru National Park offers an exceptional combination of lake scenery, wooded hills, open grassland and wildlife habitats.</p>
+
    <p>The park is particularly well known for its white and black rhinos, diverse birdlife and opportunities to encounter some of Kenya's most recognisable wildlife. Its landscapes change with the seasons, creating a rewarding setting for photography and guided game drives.</p>
+
    <p>Whether you are planning a day trip or a longer safari, Lake Nakuru can be explored on its own or included in a wider Kenya itinerary.</p>
+
    <div class="stat-row">
-    <div class="stat"><strong>Wildlife</strong><span>Rhinos and other mammals</span></div>
-    <div class="stat"><strong>Birdlife</strong><span>Waterbirds and woodland species</span></div>
-    <div class="stat"><strong>Rift Valley</strong><span>Lake and escarpment scenery</span></div>
+    <div class="stat">
+     <strong>Wildlife</strong>
+     <span>Rhinos and other mammals</span>
+    </div>
+    <div class="stat">
+     <strong>Birdlife</strong>
+     <span>Waterbirds and woodland species</span>
+    </div>
+    <div class="stat">
+     <strong>Rift Valley</strong>
+     <span>Lake and escarpment scenery</span>
+    </div>
    </div>
   </div>
+
   <div class="intro-photo">
-   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_National_Park-Kenya.jpg?width=1400" alt="Landscape of Lake Nakuru National Park" loading="lazy">
+   <img
+    src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_National_Park-Kenya.jpg?width=1400"
+    alt="Landscape of Lake Nakuru National Park"
+    loading="lazy">
    <div class="photo-note">Explore Kenya's beautiful Rift Valley landscapes</div>
   </div>
+
  </div>
 </section>
 
 <!-- EXPERIENCES -->
 <section class="section section-soft" id="experiences">
  <div class="wrap">
+
   <div class="section-heading">
    <span class="section-kicker">Explore the wilderness</span>
    <h2>What to Experience in Lake Nakuru</h2>
@@ -244,8 +741,13 @@ p{margin:0 0 16px}
   </div>
 
   <div class="experience-grid">
+
    <article class="experience-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rhinos_on_the_move_in_Lake_Nakuru_National_Park%2C_Kenya.jpg?width=1000" alt="White rhinos moving through Lake Nakuru National Park" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Rhinos_on_the_move_in_Lake_Nakuru_National_Park%2C_Kenya.jpg?width=1000"
+     alt="White rhinos moving through Lake Nakuru National Park"
+     loading="lazy">
+
     <div class="card-copy">
      <span class="number">01 · WILDLIFE</span>
      <h3>Rhino Encounters</h3>
@@ -254,7 +756,11 @@ p{margin:0 0 16px}
    </article>
 
    <article class="experience-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flamingos_in_Lake_Nakuru.jpg?width=1000" alt="Flamingos gathered at Lake Nakuru" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Flamingos_in_Lake_Nakuru.jpg?width=1000"
+     alt="Flamingos gathered at Lake Nakuru"
+     loading="lazy">
+
     <div class="card-copy">
      <span class="number">02 · BIRDLIFE</span>
      <h3>Flamingos and Waterbirds</h3>
@@ -263,13 +769,18 @@ p{margin:0 0 16px}
    </article>
 
    <article class="experience-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Buffaloes_and_pelicans.Lake_Nakuru_National_Park.%D0%91%D1%83%D0%B9%D0%B2%D0%BE%D0%BB%D1%8B_%D0%B8_%D0%BF%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D0%BD%D1%8B_-_panoramio.jpg?width=1000" alt="Buffaloes and pelicans in Lake Nakuru National Park" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Buffaloes_and_pelicans.Lake_Nakuru_National_Park.%D0%91%D1%83%D0%B9%D0%B2%D0%BE%D0%BB%D1%8B_%D0%B8_%D0%BF%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D0%BD%D1%8B_-_panoramio.jpg?width=1000"
+     alt="Buffaloes and pelicans in Lake Nakuru National Park"
+     loading="lazy">
+
     <div class="card-copy">
      <span class="number">03 · NATURE</span>
      <h3>Wildlife and Wetlands</h3>
      <p>Look out for buffaloes, waterbirds and other wildlife around the lake and its surrounding habitats during a relaxed game drive.</p>
     </div>
    </article>
+
   </div>
  </div>
 </section>
@@ -277,27 +788,49 @@ p{margin:0 0 16px}
 <!-- SCENERY FEATURE -->
 <section class="section section-dark">
  <div class="wrap feature-grid">
+
   <div class="feature-photo">
-   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Baboon_Cliff_Panorama.jpg" alt="Panoramic view from Baboon Cliff overlooking Lake Nakuru" loading="lazy">
+   <img
+    src="https://commons.wikimedia.org/wiki/Special:FilePath/Baboon_Cliff_Panorama.jpg"
+    alt="Panoramic view from Baboon Cliff overlooking Lake Nakuru"
+    loading="lazy">
   </div>
+
   <div class="feature-copy">
    <span class="section-kicker">Views and landscapes</span>
    <h2>Take in the Views from Baboon Cliff</h2>
+
    <p>Lake Nakuru's viewpoints reveal the scale and beauty of the park. Baboon Cliff is known for its elevated views across the lake, surrounding vegetation and distant hills.</p>
+
    <p>It is a rewarding stop for landscape photography and a chance to appreciate the wider setting of this Rift Valley destination.</p>
+
    <div class="feature-points">
-    <div class="feature-point"><strong>Scenic viewpoints</strong><span>Panoramic lake views</span></div>
-    <div class="feature-point"><strong>Photography</strong><span>Landscape and wildlife subjects</span></div>
-    <div class="feature-point"><strong>Woodland</strong><span>Varied natural habitats</span></div>
-    <div class="feature-point"><strong>Game drives</strong><span>Explore with a safari guide</span></div>
+    <div class="feature-point">
+     <strong>Scenic viewpoints</strong>
+     <span>Panoramic lake views</span>
+    </div>
+    <div class="feature-point">
+     <strong>Photography</strong>
+     <span>Landscape and wildlife subjects</span>
+    </div>
+    <div class="feature-point">
+     <strong>Woodland</strong>
+     <span>Varied natural habitats</span>
+    </div>
+    <div class="feature-point">
+     <strong>Game drives</strong>
+     <span>Explore with a safari guide</span>
+    </div>
    </div>
   </div>
+
  </div>
 </section>
 
 <!-- MORE PLACES -->
 <section class="section">
  <div class="wrap">
+
   <div class="section-heading">
    <span class="section-kicker">Beyond the lakeshore</span>
    <h2>More Places to Explore</h2>
@@ -305,8 +838,13 @@ p{margin:0 0 16px}
   </div>
 
   <div class="places-grid">
+
    <article class="place-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Makalia_Falls_%2843678724945%29.jpg?width=700" alt="Makalia Falls in Lake Nakuru National Park" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Makalia_Falls_%2843678724945%29.jpg?width=700"
+     alt="Makalia Falls in Lake Nakuru National Park"
+     loading="lazy">
+
     <div class="place-copy">
      <h3>Makalia Falls</h3>
      <p>A scenic waterfall in the southern part of the park, offering a different perspective on the park's natural environment. Water flow and access conditions can vary.</p>
@@ -314,7 +852,11 @@ p{margin:0 0 16px}
    </article>
 
    <article class="place-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Acacia_%2844538451152%29.jpg?width=700" alt="Acacia trees in Lake Nakuru National Park" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Acacia_%2844538451152%29.jpg?width=700"
+     alt="Acacia trees in Lake Nakuru National Park"
+     loading="lazy">
+
     <div class="place-copy">
      <h3>Acacia Woodlands</h3>
      <p>Explore areas of woodland and open vegetation that provide habitats for different bird and mammal species.</p>
@@ -322,7 +864,11 @@ p{margin:0 0 16px}
    </article>
 
    <article class="place-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/White_rino_in_Lake_Nakuru_National_Park.JPG?width=700" alt="White rhinoceros in Lake Nakuru National Park" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/White_rino_in_Lake_Nakuru_National_Park.JPG?width=700"
+     alt="White rhinoceros in Lake Nakuru National Park"
+     loading="lazy">
+
     <div class="place-copy">
      <h3>Rhino Habitat</h3>
      <p>The park is recognised for its rhino conservation importance. Sightings depend on animal movements and the conditions on the day.</p>
@@ -330,70 +876,114 @@ p{margin:0 0 16px}
    </article>
 
    <article class="place-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_from_Sarova_Lion_Hill_Game_Lodge%2C_Kenya.jpg?width=700" alt="View across Lake Nakuru from the surrounding hills" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_from_Sarova_Lion_Hill_Game_Lodge%2C_Kenya.jpg?width=700"
+     alt="View across Lake Nakuru from the surrounding hills"
+     loading="lazy">
+
     <div class="place-copy">
      <h3>Lake and Rift Valley Scenery</h3>
      <p>Enjoy changing views across the lake, the surrounding hills and the varied landscapes that define this part of the Great Rift Valley.</p>
     </div>
    </article>
+
   </div>
  </div>
 </section>
 
-<!-- SAFARI EXPERIENCE -->
+<!-- GUIDED SAFARI -->
 <section class="section section-soft">
  <div class="wrap feature-grid">
+
   <div class="feature-copy">
    <span class="section-kicker">Explore at your own pace</span>
    <h2>Experience Lake Nakuru on a Guided Safari</h2>
+
    <p>A guided game drive is one of the best ways to explore the park. Travel through different habitats while your safari guide helps you look for wildlife and understand the area's natural environment.</p>
+
    <p>Depending on your schedule, your visit can be arranged as a full-day excursion or as part of a multi-day safari through Kenya's Rift Valley and other wildlife destinations.</p>
+
    <div class="feature-points">
-    <div class="feature-point"><strong>Private safaris</strong><span>Flexible travel arrangements</span></div>
-    <div class="feature-point"><strong>Day excursions</strong><span>Short wildlife experiences</span></div>
-    <div class="feature-point"><strong>Overnight trips</strong><span>More time to explore</span></div>
-    <div class="feature-point"><strong>Custom itineraries</strong><span>Combine multiple destinations</span></div>
+    <div class="feature-point">
+     <strong>Private safaris</strong>
+     <span>Flexible travel arrangements</span>
+    </div>
+    <div class="feature-point">
+     <strong>Day excursions</strong>
+     <span>Short wildlife experiences</span>
+    </div>
+    <div class="feature-point">
+     <strong>Overnight trips</strong>
+     <span>More time to explore</span>
+    </div>
+    <div class="feature-point">
+     <strong>Custom itineraries</strong>
+     <span>Combine multiple destinations</span>
+    </div>
    </div>
   </div>
+
   <div class="feature-photo">
-   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_National_Park_07_-_landscape.jpg?width=1200" alt="Open landscape within Lake Nakuru National Park" loading="lazy">
+   <img
+    src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_National_Park_07_-_landscape.jpg?width=1200"
+    alt="Open landscape within Lake Nakuru National Park"
+    loading="lazy">
   </div>
+
  </div>
 </section>
 
 <!-- COMBINE DESTINATIONS -->
 <section class="section">
  <div class="wrap">
+
   <div class="section-heading">
    <span class="section-kicker">Extend your Kenya journey</span>
    <h2>Combine Lake Nakuru with Other Destinations</h2>
    <p>Lake Nakuru can form part of a wider Kenya safari, allowing you to discover different landscapes and wildlife habitats in one journey.</p>
   </div>
+
   <div class="experience-grid">
+
    <article class="experience-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/On_the_way_to_the_Lake_Nakuru_National_Park%2C_Kenya.jpg?width=1000" alt="Scenic journey through Kenya's Rift Valley" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/On_the_way_to_the_Lake_Nakuru_National_Park%2C_Kenya.jpg?width=1000"
+     alt="Scenic journey through Kenya's Rift Valley"
+     loading="lazy">
+
     <div class="card-copy">
      <span class="number">RIFT VALLEY</span>
      <h3>Lake Naivasha</h3>
      <p>Combine your Nakuru visit with a trip to Lake Naivasha for lakeside scenery and optional nature experiences, subject to arrangements.</p>
     </div>
    </article>
+
    <article class="experience-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_National_Park_%2853331414097%29.jpg?width=1000" alt="Lake Nakuru National Park landscape" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_National_Park_%2853331414097%29.jpg?width=1000"
+     alt="Lake Nakuru National Park landscape"
+     loading="lazy">
+
     <div class="card-copy">
      <span class="number">WILDLIFE SAFARI</span>
      <h3>Maasai Mara</h3>
      <p>Plan a longer wildlife journey combining Lake Nakuru with the famous savannah landscapes of the Maasai Mara.</p>
     </div>
    </article>
+
    <article class="experience-card">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_National_Park_%28Kenya%29_25.jpg?width=1000" alt="Natural scenery in Lake Nakuru National Park" loading="lazy">
+    <img
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Nakuru_National_Park_%28Kenya%29_25.jpg?width=1000"
+     alt="Natural scenery in Lake Nakuru National Park"
+     loading="lazy">
+
     <div class="card-copy">
      <span class="number">KENYA ADVENTURE</span>
      <h3>Amboseli National Park</h3>
      <p>For a longer itinerary, explore the possibility of adding Amboseli and its iconic elephant country to your Kenya safari.</p>
     </div>
    </article>
+
   </div>
  </div>
 </section>
@@ -401,6 +991,7 @@ p{margin:0 0 16px}
 <!-- PLANNING -->
 <section class="section section-dark">
  <div class="wrap">
+
   <div class="section-heading">
    <span class="section-kicker">Before you travel</span>
    <h2>Planning Your Lake Nakuru Safari</h2>
@@ -408,63 +999,81 @@ p{margin:0 0 16px}
   </div>
 
   <div class="planning-grid">
+
    <div class="planning-item">
     <h3>Getting There</h3>
     <p>Lake Nakuru National Park is located near Nakuru town in Kenya's Rift Valley. Your trip can be arranged from Nakuru or as part of a longer journey from Nairobi, subject to your itinerary.</p>
    </div>
+
    <div class="planning-item">
     <h3>Best Time to Visit</h3>
     <p>The park can be visited throughout the year. Weather, road conditions, lake levels and wildlife movements influence the experience, so plans should remain flexible.</p>
    </div>
+
    <div class="planning-item">
     <h3>What to Bring</h3>
     <p>Consider comfortable clothing, a hat, sunscreen, drinking water, binoculars and a camera. A light jacket may be useful during cooler mornings.</p>
    </div>
+
    <div class="planning-item">
     <h3>Safari Duration</h3>
     <p>A day visit is possible, while an overnight stay gives you more time to explore and can be combined with other Rift Valley destinations.</p>
    </div>
+
    <div class="planning-item">
     <h3>Accommodation</h3>
     <p>Accommodation options can be discussed according to your preferred comfort level, budget, location and availability for your travel dates.</p>
    </div>
+
    <div class="planning-item">
     <h3>Park Entry and Fees</h3>
     <p>Applicable entry fees, access requirements and operating arrangements should be checked and confirmed for your travel date before departure.</p>
    </div>
+
   </div>
 
   <div class="travel-note">
    Wildlife sightings are never guaranteed. Flamingo numbers and distribution can change with lake conditions. Activities, park access, fees and accommodation are subject to confirmation at the time of booking.
   </div>
+
  </div>
 </section>
 
-<!-- CTA -->
+<!-- CALL TO ACTION -->
 <section class="wrap safari-cta">
  <div>
   <span class="section-kicker">Your next adventure starts here</span>
   <h2>Ready to Explore Lake Nakuru?</h2>
   <p>Share your preferred dates, group size and starting point. Fleypat Adventures will help you plan a safari that suits your travel style.</p>
  </div>
+
  <div class="hero-actions">
   <a class="btn" href="contact.html?destination=lake-nakuru">Enquire Now</a>
-  <a class="btn btn-gold" href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Lake%20Nakuru%20safari." target="_blank" rel="noopener">WhatsApp Us</a>
+  <a
+   class="btn btn-gold"
+   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Lake%20Nakuru%20safari."
+   target="_blank"
+   rel="noopener">WhatsApp Us</a>
  </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
  <div class="wrap footer-grid">
+
   <div>
    <a class="brand footer-brand" href="index.html">
     <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
     <span>FLEYPAT<small>ADVENTURES</small></span>
    </a>
+
    <p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-   <a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+
+   <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram @fleypat_adventures</a>
   </div>
+
   <div>
    <h3>Explore</h3>
    <a href="safaris.html">Wildlife Safaris</a>
@@ -474,6 +1083,7 @@ p{margin:0 0 16px}
    <a href="destinations.html">Destinations</a>
    <a href="itineraries.html">Itineraries</a>
   </div>
+
   <div>
    <h3>Company</h3>
    <a href="about.html">About Us</a>
@@ -482,6 +1092,7 @@ p{margin:0 0 16px}
    <a href="partnerships.html">Partnerships</a>
    <a href="blog.html">Travel Guides</a>
   </div>
+
   <div>
    <h3>Contact</h3>
    <a href="tel:+254704261626">+254 704 261 626</a>
@@ -489,29 +1100,53 @@ p{margin:0 0 16px}
    <a href="https://wa.me/254704261626">WhatsApp our team</a>
    <span>Mombasa, Kenya</span>
   </div>
+
  </div>
+
  <div class="wrap foot-bottom">
   <span>© <span data-year></span> Fleypat Adventures. All rights reserved.</span>
   <span>Explore More. Experience More. Travel Beyond Expectations.</span>
  </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip." target="_blank" rel="noopener">WhatsApp Us</a>
+<a
+ class="float-wa"
+ href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
+ target="_blank"
+ rel="noopener"
+ aria-label="Chat with Fleypat Adventures on WhatsApp">
+ WhatsApp Us
+</a>
 
 <script src="script.js"></script>
 <script>
-const menuButton=document.querySelector('.nav-toggle');
-const navigation=document.querySelector('.nav nav');
+/* Mobile navigation fallback */
+const menuButton=document.getElementById('menuToggle');
+const navigation=document.getElementById('mainNav');
+
 if(menuButton&&navigation){
  menuButton.addEventListener('click',()=>{
   const isOpen=navigation.classList.toggle('open');
   menuButton.setAttribute('aria-expanded',String(isOpen));
+  menuButton.setAttribute('aria-label',isOpen?'Close menu':'Open menu');
   menuButton.textContent=isOpen?'×':'☰';
  });
+
+ navigation.querySelectorAll('a').forEach(link=>{
+  link.addEventListener('click',()=>{
+   navigation.classList.remove('open');
+   menuButton.setAttribute('aria-expanded','false');
+   menuButton.setAttribute('aria-label','Open menu');
+   menuButton.textContent='☰';
+  });
+ });
 }
+
+/* Automatic copyright year */
 document.querySelectorAll('[data-year]').forEach(el=>{
  el.textContent=new Date().getFullYear();
 });
 </script>
+
 </body>
 </html>
