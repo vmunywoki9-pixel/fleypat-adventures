@@ -7,1042 +7,1116 @@
 
 <title>Zanzibar Spice &amp; Stone Town Tour | Fleypat Adventures</title>
 <meta name="description" content="Discover Zanzibar on a 3-day island escape featuring historic Stone Town, traditional spice farms, Swahili culture and beautiful island scenery with Fleypat Adventures.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#FFF4E8">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
-  --lime:#a8d832;
-  --green:#243c28;
-  --deep:#172b20;
-  --gold:#a97832;
-  --cream:#fbf7e9;
-  --sand:#eee5d2;
-  --text:#343b34;
-  --muted:#737b72;
-  --white:#fff;
-  --shadow:0 16px 45px rgba(27,48,31,.10);
+/* ZANZIBAR TOUR PAGE */
+.zanzibar-page {
+    color: #6B4935;
+    background: #FFFCF8;
 }
 
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
-body{
-  margin:0;
-  color:var(--text);
-  background:#fff;
-  font-family:'DM Sans',sans-serif;
-  line-height:1.75;
-}
-a{text-decoration:none;color:inherit}
-img{display:block;max-width:100%}
-.wrap{width:min(1160px,91%);margin:auto}
-
-/* TOP BAR */
-.topline{
-  background:var(--deep);
-  color:#fff;
-  font-size:12px;
-  padding:8px 0;
-}
-.top-inner{
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-}
-.topline a{color:#e2edcf}
-
-/* HEADER */
-.header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:#fff;
-  box-shadow:0 4px 20px rgba(0,0,0,.06);
-}
-.nav{
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  flex-shrink:0;
-  color:var(--green);
-  font-size:23px;
-  font-weight:800;
-  letter-spacing:1.2px;
-  line-height:1.05;
-}
-.brand img{width:54px;height:54px;object-fit:contain}
-.brand small{
-  display:block;
-  font-size:10px;
-  letter-spacing:4px;
-  color:var(--gold);
-  margin-top:5px;
-}
-.nav nav{
-  display:flex;
-  align-items:center;
-  justify-content:flex-end;
-  flex-wrap:wrap;
-  gap:14px;
-}
-.nav nav a{
-  font-size:11px;
-  font-weight:700;
-  color:#354337;
-  transition:.2s;
-}
-.nav nav a:hover,.nav nav a.active{color:#789f22}
-.nav nav .nav-book{
-  background:var(--lime);
-  color:var(--deep);
-  padding:11px 17px;
-  border-radius:3px;
-}
-.nav-toggle{
-  display:none;
-  border:0;
-  background:var(--green);
-  color:#fff;
-  padding:9px 13px;
-  font-size:21px;
-  border-radius:3px;
-  cursor:pointer;
+.zanzibar-page a {
+    text-decoration: none;
 }
 
-/* HERO */
-.hero{
-  min-height:590px;
-  position:relative;
-  display:flex;
-  align-items:center;
-  color:#fff;
-  background:
-    linear-gradient(90deg,rgba(12,29,22,.82),rgba(12,29,22,.30)),
-    url("https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Town_Zanzibar.png?width=2000") center/cover no-repeat;
-}
-.hero-content{
-  position:relative;
-  z-index:1;
-  max-width:760px;
-  padding:95px 0;
-}
-.eyebrow{
-  display:inline-block;
-  color:var(--lime);
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  margin-bottom:16px;
-}
-.hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(42px,6vw,76px);
-  line-height:1.08;
-  margin:0 0 22px;
-  color:#fff;
-}
-.hero p{
-  max-width:620px;
-  font-size:17px;
-  color:#f1f2e9;
-  margin:0 0 30px;
-}
-.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
-
-/* BUTTONS */
-.btn{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  padding:14px 23px;
-  background:var(--lime);
-  color:var(--deep);
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:.4px;
-  border-radius:3px;
-  transition:.2s;
-}
-.btn:hover{transform:translateY(-2px);filter:brightness(.96)}
-.btn-outline{
-  border:1px solid rgba(255,255,255,.8);
-  background:transparent;
-  color:#fff;
-}
-.btn-gold{background:var(--gold);color:#fff}
-
-/* QUICK FACTS */
-.quick-facts{
-  position:relative;
-  z-index:2;
-  margin-top:-42px;
-}
-.facts-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  background:#fff;
-  box-shadow:var(--shadow);
-}
-.fact{
-  padding:24px 20px;
-  border-right:1px solid #eee9dc;
-}
-.fact:last-child{border:0}
-.fact strong{
-  display:block;
-  color:var(--green);
-  font-size:15px;
-}
-.fact span{font-size:12px;color:var(--muted)}
-
-/* GENERAL SECTIONS */
-.section{padding:85px 0}
-.section-soft{background:var(--cream)}
-.section-heading{
-  max-width:720px;
-  margin-bottom:38px;
-}
-.section-heading.center{text-align:center;margin-left:auto;margin-right:auto}
-.kicker{
-  display:block;
-  color:var(--gold);
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:2.5px;
-  text-transform:uppercase;
-  margin-bottom:10px;
-}
-h2,h3{
-  color:var(--green);
-  font-family:'Playfair Display',serif;
-  line-height:1.2;
-}
-h2{font-size:clamp(30px,4vw,43px);margin:0 0 18px}
-h3{font-size:23px;margin:0 0 13px}
-.section-heading p{color:var(--muted);margin:0}
-
-/* INTRO */
-.intro-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  gap:55px;
-}
-.intro-image{
-  height:440px;
-  width:100%;
-  object-fit:cover;
-  border-radius:3px;
-  box-shadow:var(--shadow);
-}
-.intro-copy p{color:#687168}
-.intro-points{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-  margin-top:25px;
-}
-.intro-point{
-  padding:14px;
-  background:var(--cream);
-  color:var(--green);
-  font-size:13px;
-  font-weight:700;
-  border-left:3px solid var(--lime);
+.zanzibar-page img {
+    display: block;
+    max-width: 100%;
 }
 
-/* EXPERIENCE HIGHLIGHTS */
-.highlights{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-.highlight{
-  background:#fff;
-  padding:27px;
-  box-shadow:0 8px 30px rgba(0,0,0,.05);
-  border-bottom:3px solid var(--lime);
-}
-.highlight .number{
-  display:block;
-  color:var(--gold);
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:2px;
-  margin-bottom:13px;
-}
-.highlight p{font-size:14px;color:var(--muted);margin:0}
-
-/* ITINERARY */
-.itinerary-list{
-  display:grid;
-  gap:25px;
-}
-.day-card{
-  display:grid;
-  grid-template-columns:300px 1fr;
-  background:#fff;
-  box-shadow:0 8px 32px rgba(0,0,0,.06);
-  overflow:hidden;
-}
-.day-card img{
-  width:100%;
-  height:100%;
-  min-height:280px;
-  object-fit:cover;
-}
-.day-content{padding:30px 34px}
-.day-label{
-  display:inline-block;
-  color:#6f941e;
-  background:#f0f7df;
-  padding:5px 11px;
-  font-size:10px;
-  font-weight:800;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  margin-bottom:12px;
-}
-.day-content h3{font-size:25px}
-.day-content p{color:#687168;font-size:14px}
-.day-content ul{
-  padding-left:18px;
-  color:#687168;
-  font-size:13px;
-}
-.day-content li{margin:5px 0}
-
-/* EXPERIENCE DETAILS */
-.detail-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:22px;
-}
-.detail-card{
-  padding:27px;
-  background:#fff;
-  border:1px solid #eee9dc;
-}
-.detail-card p,.detail-card li{
-  color:#697168;
-  font-size:13px;
-}
-.detail-card ul{padding-left:19px}
-
-/* ACCOMMODATION */
-.accommodation-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:24px;
-}
-.accommodation-card{
-  background:#fff;
-  box-shadow:var(--shadow);
-}
-.accommodation-card img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-}
-.accommodation-card div{padding:25px}
-.accommodation-card p{color:var(--muted);font-size:14px}
-
-/* PRICE */
-.price-panel{
-  background:var(--green);
-  color:#fff;
-  padding:40px;
-  display:grid;
-  grid-template-columns:1fr auto;
-  align-items:center;
-  gap:25px;
-}
-.price-panel h2{color:#fff;font-size:32px}
-.price-panel p{color:#e0e9d9;margin-bottom:0}
-.price{
-  color:var(--lime);
-  font-family:'Playfair Display',serif;
-  font-size:30px;
-  font-weight:700;
-  white-space:nowrap;
+.zanzibar-hero {
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    background:
+        linear-gradient(90deg, rgba(45, 29, 20, .82), rgba(45, 29, 20, .25)),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Town_Zanzibar.png?width=2000") center/cover no-repeat;
 }
 
-/* IMPORTANT NOTES */
-.notes{
-  background:var(--cream);
-  padding:28px;
-  border-left:4px solid var(--gold);
-}
-.notes p{font-size:13px;color:#687168;margin-bottom:0}
-
-/* CTA */
-.cta{
-  padding:55px;
-  background:var(--deep);
-  color:#fff;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:25px;
-  margin-top:75px;
-  margin-bottom:75px;
-}
-.cta h2{color:#fff;margin-bottom:10px}
-.cta p{color:#d7dfd3;margin:0}
-
-/* FOOTER */
-.footer{
-  background:#172b20;
-  color:#e5e9df;
-  padding:65px 0 20px;
-}
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.5fr 1fr 1fr 1.2fr;
-  gap:35px;
-}
-.footer-brand{color:#fff;margin-bottom:18px}
-.footer p,.footer a,.footer span{
-  color:#c6d0c3;
-  font-size:12px;
-}
-.footer a{display:block;margin:9px 0}
-.footer a:hover{color:var(--lime)}
-.footer h3{color:var(--lime);font-family:'DM Sans',sans-serif;font-size:14px}
-.foot-bottom{
-  border-top:1px solid rgba(255,255,255,.14);
-  margin-top:40px;
-  padding-top:20px;
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-  font-size:11px;
-  color:#aeb9aa;
-}
-.float-wa{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:999;
-  background:#25d366;
-  color:#fff;
-  font-size:12px;
-  font-weight:800;
-  padding:14px 20px;
-  border-radius:30px;
-  box-shadow:0 5px 20px rgba(0,0,0,.2);
+.zanzibar-hero-content {
+    max-width: 760px;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
 }
 
-/* RESPONSIVE */
-@media(max-width:1050px){
-  .nav nav{gap:9px}
-  .nav nav a{font-size:10px}
-  .brand{font-size:19px}
-  .brand img{width:47px;height:47px}
+.zanzibar-eyebrow {
+    display: inline-block;
+    color: #F09A58;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }
-@media(max-width:850px){
-  .nav{min-height:72px}
-  .nav-toggle{display:block}
-  .nav nav{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    right:0;
-    padding:20px 5%;
-    background:#fff;
-    box-shadow:0 12px 20px rgba(0,0,0,.08);
-    align-items:stretch;
-    flex-direction:column;
-    gap:0;
-  }
-  .nav nav.open{display:flex}
-  .nav nav a{padding:11px 4px;font-size:13px}
-  .nav nav .nav-book{text-align:center;margin-top:8px}
-  .intro-grid{grid-template-columns:1fr;gap:30px}
-  .intro-image{height:350px}
-  .day-card{grid-template-columns:240px 1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
+
+.zanzibar-hero h1 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.08;
+    margin: 0 0 22px;
 }
-@media(max-width:600px){
-  .top-inner{justify-content:center;text-align:center}
-  .hero{min-height:520px}
-  .hero-content{padding:75px 0}
-  .hero p{font-size:15px}
-  .facts-grid{grid-template-columns:1fr 1fr}
-  .fact:nth-child(2){border-right:0}
-  .fact:nth-child(-n+2){border-bottom:1px solid #eee9dc}
-  .section{padding:65px 0}
-  .intro-points{grid-template-columns:1fr 1fr}
-  .highlights,.detail-grid,.accommodation-grid{grid-template-columns:1fr}
-  .day-card{grid-template-columns:1fr}
-  .day-card img{height:230px;min-height:0}
-  .day-content{padding:24px}
-  .price-panel{grid-template-columns:1fr;padding:28px}
-  .price{font-size:26px}
-  .cta{padding:30px;display:block}
-  .cta .btn{margin-top:20px}
-  .footer-grid{grid-template-columns:1fr 1fr;gap:25px}
+
+.zanzibar-hero p {
+    color: #FFF4E8;
+    max-width: 620px;
+    font-size: 17px;
+    margin: 0 0 30px;
 }
-@media(max-width:390px){
-  .footer-grid{grid-template-columns:1fr}
-  .intro-points{grid-template-columns:1fr}
+
+.zanzibar-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.zanzibar-page .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 23px;
+    background: #E8752A;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .4px;
+    border: 1px solid #E8752A;
+    transition: .2s ease;
+}
+
+.zanzibar-page .btn:hover {
+    background: #B85B20;
+    border-color: #B85B20;
+    transform: translateY(-2px);
+}
+
+.zanzibar-page .btn-outline {
+    background: transparent;
+    border-color: rgba(255,255,255,.8);
+    color: #fff;
+}
+
+.zanzibar-page .btn-outline:hover {
+    background: #fff;
+    color: #6B4935;
+    border-color: #fff;
+}
+
+.zanzibar-page .btn-gold {
+    background: #A66A42;
+    border-color: #A66A42;
+    color: #fff;
+}
+
+.zanzibar-page .btn-gold:hover {
+    background: #805034;
+    border-color: #805034;
+}
+
+.zanzibar-facts {
+    position: relative;
+    z-index: 2;
+    margin-top: -42px;
+}
+
+.zanzibar-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #fff;
+    box-shadow: 0 16px 45px rgba(75, 48, 30, .10);
+}
+
+.zanzibar-fact {
+    padding: 24px 20px;
+    border-right: 1px solid #EAD8C7;
+}
+
+.zanzibar-fact:last-child {
+    border-right: 0;
+}
+
+.zanzibar-fact strong {
+    display: block;
+    color: #A66A42;
+    font-size: 15px;
+}
+
+.zanzibar-fact span {
+    color: #897264;
+    font-size: 12px;
+}
+
+.zanzibar-section {
+    padding: 85px 0;
+}
+
+.zanzibar-section.soft {
+    background: #FFF4E8;
+}
+
+.zanzibar-section-heading {
+    max-width: 720px;
+    margin-bottom: 38px;
+}
+
+.zanzibar-section-heading.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zanzibar-kicker {
+    display: block;
+    color: #D96A25;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.zanzibar-section h2,
+.zanzibar-section h3,
+.zanzibar-cta h2 {
+    color: #6B4935;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+}
+
+.zanzibar-section h2 {
+    font-size: clamp(30px, 4vw, 43px);
+    margin: 0 0 18px;
+}
+
+.zanzibar-section h3 {
+    font-size: 23px;
+    margin: 0 0 13px;
+}
+
+.zanzibar-section-heading p {
+    color: #897264;
+    margin: 0;
+}
+
+.zanzibar-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.zanzibar-intro-image {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+.zanzibar-intro-copy p {
+    color: #897264;
+}
+
+.zanzibar-intro-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.zanzibar-intro-point {
+    padding: 14px;
+    background: #FFF4E8;
+    color: #805034;
+    font-size: 13px;
+    font-weight: 700;
+    border-left: 3px solid #E8752A;
+}
+
+.zanzibar-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.zanzibar-highlight {
+    background: #fff;
+    padding: 27px;
+    border-bottom: 3px solid #E8752A;
+    box-shadow: 0 8px 30px rgba(75, 48, 30, .05);
+}
+
+.zanzibar-highlight .number {
+    display: block;
+    color: #D96A25;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 13px;
+}
+
+.zanzibar-highlight p {
+    color: #897264;
+    font-size: 14px;
+    margin: 0;
+}
+
+.zanzibar-itinerary-list {
+    display: grid;
+    gap: 25px;
+}
+
+.zanzibar-day-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(75, 48, 30, .07);
+    overflow: hidden;
+}
+
+.zanzibar-day-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+}
+
+.zanzibar-day-content {
+    padding: 30px 34px;
+}
+
+.zanzibar-day-label {
+    display: inline-block;
+    color: #A66A42;
+    background: #F5E5D8;
+    padding: 5px 11px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.zanzibar-day-content h3 {
+    font-size: 25px;
+}
+
+.zanzibar-day-content p,
+.zanzibar-day-content li {
+    color: #897264;
+    font-size: 14px;
+}
+
+.zanzibar-day-content ul {
+    padding-left: 19px;
+}
+
+.zanzibar-day-content li {
+    margin: 6px 0;
+}
+
+.zanzibar-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.zanzibar-detail-card {
+    padding: 27px;
+    background: #fff;
+    border: 1px solid #EAD8C7;
+}
+
+.zanzibar-detail-card p,
+.zanzibar-detail-card li {
+    color: #897264;
+    font-size: 13px;
+}
+
+.zanzibar-detail-card ul {
+    padding-left: 19px;
+}
+
+.zanzibar-accommodation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.zanzibar-accommodation-card {
+    background: #fff;
+    box-shadow: 0 16px 45px rgba(75, 48, 30, .09);
+}
+
+.zanzibar-accommodation-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.zanzibar-accommodation-card-content {
+    padding: 25px;
+}
+
+.zanzibar-accommodation-card p {
+    color: #897264;
+    font-size: 14px;
+}
+
+.zanzibar-price-panel {
+    background: #A66A42;
+    color: #fff;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 25px;
+}
+
+.zanzibar-price-panel h2 {
+    color: #fff;
+    font-size: 32px;
+}
+
+.zanzibar-price-panel p {
+    color: #FBE8D8;
+    margin-bottom: 0;
+}
+
+.zanzibar-price {
+    color: #FFD0A5;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.zanzibar-notes {
+    background: #FFF4E8;
+    padding: 28px;
+    border-left: 4px solid #D96A25;
+}
+
+.zanzibar-notes strong {
+    color: #805034;
+}
+
+.zanzibar-notes p {
+    color: #897264;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.zanzibar-cta {
+    padding: 55px;
+    background: #6B4935;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.zanzibar-cta h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.zanzibar-cta p {
+    color: #F5E5D8;
+    margin: 0;
+}
+
+.zanzibar-cta .zanzibar-eyebrow {
+    color: #F09A58;
+}
+
+.zanzibar-page .footer {
+    background: #6B4935;
+    color: #FFF4E8;
+}
+
+.zanzibar-page .footer h3 {
+    color: #F09A58;
+}
+
+.zanzibar-page .footer p,
+.zanzibar-page .footer a,
+.zanzibar-page .footer span {
+    color: #F5E5D8;
+}
+
+.zanzibar-page .footer a:hover {
+    color: #F09A58;
+}
+
+.zanzibar-page .footer .brand {
+    color: #fff;
+}
+
+.zanzibar-page .footer .brand small {
+    color: #F09A58;
+}
+
+.zanzibar-page .foot-bottom {
+    border-top: 1px solid rgba(255,255,255,.17);
+}
+
+.zanzibar-page .float-wa {
+    background: #25D366;
+    color: #fff;
+}
+
+@media(max-width:850px) {
+    .zanzibar-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .zanzibar-intro-image {
+        height: 350px;
+    }
+
+    .zanzibar-day-card {
+        grid-template-columns: 240px 1fr;
+    }
+}
+
+@media(max-width:700px) {
+    .zanzibar-facts-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .zanzibar-fact:nth-child(2) {
+        border-right: 0;
+    }
+
+    .zanzibar-fact:nth-child(-n+2) {
+        border-bottom: 1px solid #EAD8C7;
+    }
+
+    .zanzibar-highlights,
+    .zanzibar-detail-grid,
+    .zanzibar-accommodation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .zanzibar-day-card {
+        grid-template-columns: 1fr;
+    }
+
+    .zanzibar-day-card img {
+        height: 230px;
+        min-height: 0;
+    }
+
+    .zanzibar-day-content {
+        padding: 24px;
+    }
+
+    .zanzibar-price-panel {
+        grid-template-columns: 1fr;
+        padding: 28px;
+    }
+
+    .zanzibar-price {
+        font-size: 26px;
+    }
+
+    .zanzibar-cta {
+        padding: 30px;
+        display: block;
+    }
+
+    .zanzibar-cta .btn {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:600px) {
+    .zanzibar-hero {
+        min-height: 520px;
+    }
+
+    .zanzibar-hero-content {
+        padding: 75px 0;
+    }
+
+    .zanzibar-hero p {
+        font-size: 15px;
+    }
+
+    .zanzibar-section {
+        padding: 65px 0;
+    }
+
+    .zanzibar-intro-points {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:390px) {
+    .zanzibar-intro-points {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 </head>
 
-<body>
+<body class="zanzibar-page">
 
 <div class="topline">
-  <div class="wrap top-inner">
-    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-    <span>
-      <a href="tel:+254704261626">+254 704 261 626</a>
-      ·
-      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-    </span>
-  </div>
+    <div class="wrap top-inner">
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+        <span>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            ·
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+        </span>
+    </div>
 </div>
 
 <header class="header">
-  <div class="wrap nav">
-    <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
-      <span>FLEYPAT<small>ADVENTURES</small></span>
-    </a>
+    <div class="wrap nav">
+        <a class="brand" href="index.html">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+            <span>FLEYPAT<small>ADVENTURES</small></span>
+        </a>
 
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+            ☰
+        </button>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="safaris.html">Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="honeymoon.html">Honeymoons</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html" class="active">Itineraries</a>
-      <a href="services.html">Services</a>
-      <a href="transfers.html">Transfers</a>
-      <a href="blog.html">Blog</a>
-      <a href="partnerships.html">Partnerships</a>
-      <a href="contact.html">Contact</a>
-      <a class="nav-book" href="contact.html">Book Now</a>
-    </nav>
-  </div>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="honeymoon.html">Honeymoons</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html" class="active">Itineraries</a>
+            <a href="services.html">Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="blog.html">Blog</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-book" href="contact.html">Book Now</a>
+        </nav>
+    </div>
 </header>
 
 <main>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-content">
-    <span class="eyebrow">Discover the Spice Island</span>
-    <h1>Zanzibar Spice &amp; Stone Town</h1>
-    <p>
-      Step into the island's rich heritage with a memorable escape through
-      historic Stone Town, fragrant spice plantations and the unique culture
-      of Zanzibar.
-    </p>
-    <div class="hero-actions">
-      <a class="btn" href="contact.html?tour=zanzibar-spice-stone-town">Plan This Experience</a>
-      <a class="btn btn-outline" href="#itinerary">Explore the Itinerary</a>
-    </div>
-  </div>
-</section>
-
-<!-- QUICK FACTS -->
-<div class="wrap quick-facts">
-  <div class="facts-grid">
-    <div class="fact">
-      <strong>3 Days / 2 Nights</strong>
-      <span>Short island escape</span>
-    </div>
-    <div class="fact">
-      <strong>Zanzibar, Tanzania</strong>
-      <span>Island destination</span>
-    </div>
-    <div class="fact">
-      <strong>From USD 380</strong>
-      <span>Indicative price per person</span>
-    </div>
-    <div class="fact">
-      <strong>Tailor-made</strong>
-      <span>Flexible travel arrangements</span>
-    </div>
-  </div>
-</div>
-
-<!-- INTRODUCTION -->
-<section class="section">
-  <div class="wrap intro-grid">
-    <div>
-      <img
-        class="intro-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Town,_Zanzibar_(10)_(29109157085).jpg?width=1400"
-        alt="Historic buildings and streets of Stone Town, Zanzibar"
-        loading="lazy"
-      >
-    </div>
-
-    <div class="intro-copy">
-      <span class="kicker">The Experience</span>
-      <h2>Discover the history and flavours of Zanzibar</h2>
-      <p>
-        Zanzibar is an island destination where African, Arab, Indian and
-        European influences come together. Its historic streets, traditional
-        architecture, lively markets and spice-growing heritage create a
-        distinctive cultural experience.
-      </p>
-      <p>
-        This three-day escape introduces you to the character of Stone Town
-        and the island's famous spices. Enjoy guided exploration, discover
-        local traditions and experience the relaxed atmosphere of the island.
-      </p>
-      <div class="intro-points">
-        <div class="intro-point">Historic Stone Town</div>
-        <div class="intro-point">Traditional spice farms</div>
-        <div class="intro-point">Swahili culture</div>
-        <div class="intro-point">Island exploration</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HIGHLIGHTS -->
-<section class="section section-soft">
-  <div class="wrap">
-    <div class="section-heading center">
-      <span class="kicker">What Makes It Special</span>
-      <h2>Highlights of Your Zanzibar Escape</h2>
-      <p>
-        A relaxed cultural journey combining history, local experiences
-        and the island's distinctive heritage.
-      </p>
-    </div>
-
-    <div class="highlights">
-      <article class="highlight">
-        <span class="number">01 / HERITAGE</span>
-        <h3>Stone Town Discovery</h3>
-        <p>
-          Explore historic streets, traditional Swahili architecture,
-          cultural landmarks and the atmosphere of Zanzibar's old town.
-        </p>
-      </article>
-
-      <article class="highlight">
-        <span class="number">02 / CULTURE</span>
-        <h3>Spice Farm Experience</h3>
-        <p>
-          Discover the island's spice-growing traditions and learn about
-          familiar spices such as cloves, cinnamon, nutmeg and vanilla.
-        </p>
-      </article>
-
-      <article class="highlight">
-        <span class="number">03 / ISLAND LIFE</span>
-        <h3>Local Island Exploration</h3>
-        <p>
-          Enjoy time to experience local markets, island scenery,
-          traditional food and the welcoming character of Zanzibar.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ITINERARY -->
-<section class="section" id="itinerary">
-  <div class="wrap">
-    <div class="section-heading">
-      <span class="kicker">Your Journey</span>
-      <h2>3-Day Suggested Itinerary</h2>
-      <p>
-        Your programme can be adjusted according to arrival and departure
-        times, accommodation location and preferred activities.
-      </p>
-    </div>
-
-    <div class="itinerary-list">
-
-      <article class="day-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Street_Scene_-_Kiponda_District_-_Stone_Town_-_Zanzibar_-_Tanzania_-_01_(8830535608).jpg?width=1200"
-          alt="Traditional street scene in the Kiponda district of Stone Town"
-          loading="lazy"
-        >
-        <div class="day-content">
-          <span class="day-label">Day 1 · Arrival and Heritage</span>
-          <h3>Arrival in Zanzibar &amp; Stone Town Orientation</h3>
-          <p>
-            Arrive in Zanzibar and meet your local transfer representative
-            for the journey to your accommodation. After check-in and some
-            time to settle in, begin discovering the historic atmosphere
-            of Stone Town.
-          </p>
-          <p>
-            Depending on your arrival time, enjoy an orientation walk
-            through the old streets, discover the distinctive architecture
-            and experience the local atmosphere around the town.
-          </p>
-          <ul>
-            <li>Arrival assistance and transfer to accommodation</li>
-            <li>Hotel check-in, subject to the property's check-in time</li>
-            <li>Optional guided Stone Town orientation</li>
-            <li>Free time to enjoy the evening at your own pace</li>
-          </ul>
-          <p><strong>Overnight:</strong> Zanzibar accommodation.</p>
+    <!-- HERO -->
+    <section class="zanzibar-hero">
+        <div class="wrap zanzibar-hero-content">
+            <span class="zanzibar-eyebrow">Discover the Spice Island</span>
+            <h1>Zanzibar Spice &amp; Stone Town</h1>
+            <p>
+                Step into the island's rich heritage with a memorable escape through
+                historic Stone Town, fragrant spice plantations and the unique culture
+                of Zanzibar.
+            </p>
+            <div class="zanzibar-hero-actions">
+                <a class="btn" href="contact.html?tour=zanzibar-spice-stone-town">Plan This Experience</a>
+                <a class="btn btn-outline" href="#itinerary">Explore the Itinerary</a>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <article class="day-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Guide_Displays_Cloves_-_Spice_Plantation_-_Outside_Stone_Town_-_Zanzibar_-_Tanzania_(8869279930).jpg?width=1200"
-          alt="A local guide presenting cloves during a Zanzibar spice plantation visit"
-          loading="lazy"
-        >
-        <div class="day-content">
-          <span class="day-label">Day 2 · Spice and Culture</span>
-          <h3>Spice Farm Experience &amp; Island Exploration</h3>
-          <p>
-            After breakfast, head out for a guided spice experience.
-            Visit a traditional spice-growing area and discover how
-            Zanzibar earned its reputation as the Spice Island.
-          </p>
-          <p>
-            Learn about the uses and origins of different spices,
-            experience their distinctive aromas and see how selected
-            crops are grown and harvested. Continue with additional
-            island exploration depending on your interests and available time.
-          </p>
-          <ul>
-            <li>Breakfast at the accommodation</li>
-            <li>Guided spice farm visit</li>
-            <li>Introduction to cloves, cinnamon, nutmeg and other spices</li>
-            <li>Optional local market or cultural stop</li>
-            <li>Return to accommodation</li>
-          </ul>
-          <p><strong>Overnight:</strong> Zanzibar accommodation.</p>
+    <!-- QUICK FACTS -->
+    <div class="wrap zanzibar-facts">
+        <div class="zanzibar-facts-grid">
+            <div class="zanzibar-fact">
+                <strong>3 Days / 2 Nights</strong>
+                <span>Short island escape</span>
+            </div>
+            <div class="zanzibar-fact">
+                <strong>Zanzibar, Tanzania</strong>
+                <span>Island destination</span>
+            </div>
+            <div class="zanzibar-fact">
+                <strong>From USD 380</strong>
+                <span>Indicative price per person</span>
+            </div>
+            <div class="zanzibar-fact">
+                <strong>Tailor-made</strong>
+                <span>Flexible travel arrangements</span>
+            </div>
         </div>
-      </article>
-
-      <article class="day-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Casa_delle_Meraviglie,_Stone_Town,_Zanzibar.jpg?width=1200"
-          alt="The historic House of Wonders building in Stone Town, Zanzibar"
-          loading="lazy"
-        >
-        <div class="day-content">
-          <span class="day-label">Day 3 · Departure</span>
-          <h3>Breakfast, Leisure &amp; Departure</h3>
-          <p>
-            Enjoy breakfast and some final leisure time depending on
-            your departure schedule. If time allows, you may enjoy a
-            final walk around Stone Town, browse for local souvenirs
-            or relax before your transfer.
-          </p>
-          <ul>
-            <li>Breakfast at the accommodation</li>
-            <li>Check-out according to hotel policy</li>
-            <li>Optional short town visit, subject to available time</li>
-            <li>Transfer to the airport or ferry terminal</li>
-          </ul>
-          <p>
-            Your Zanzibar escape concludes with onward travel arrangements
-            confirmed according to your booking.
-          </p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ACCOMMODATION -->
-<section class="section section-soft">
-  <div class="wrap">
-    <div class="section-heading">
-      <span class="kicker">Rest and Relaxation</span>
-      <h2>Accommodation Options</h2>
-      <p>
-        Choose an accommodation style that suits your budget and travel
-        preferences. The final property is confirmed in your quotation.
-      </p>
     </div>
 
-    <div class="accommodation-grid">
-      <article class="accommodation-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_from_Rooftop_Lounge_of_Hotel_Kiponda_-_Stone_Town_-_Zanzibar_-_Tanzania_(8830564454).jpg?width=1200"
-          alt="Rooftop views across Stone Town in Zanzibar"
-          loading="lazy"
-        >
+    <!-- INTRODUCTION -->
+    <section class="zanzibar-section">
+        <div class="wrap zanzibar-intro-grid">
+            <div>
+                <img
+                    class="zanzibar-intro-image"
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Town,_Zanzibar_(10)_(29109157085).jpg?width=1400"
+                    alt="Historic buildings and streets of Stone Town, Zanzibar"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="zanzibar-intro-copy">
+                <span class="zanzibar-kicker">The Experience</span>
+                <h2>Discover the History and Flavours of Zanzibar</h2>
+                <p>
+                    Zanzibar is an island destination where African, Arab, Indian and
+                    European influences come together. Its historic streets, traditional
+                    architecture, lively markets and spice-growing heritage create a
+                    distinctive cultural experience.
+                </p>
+                <p>
+                    This three-day escape introduces you to the character of Stone Town
+                    and the island's famous spices. Enjoy guided exploration, discover
+                    local traditions and experience the relaxed atmosphere of the island.
+                </p>
+
+                <div class="zanzibar-intro-points">
+                    <div class="zanzibar-intro-point">Historic Stone Town</div>
+                    <div class="zanzibar-intro-point">Traditional spice farms</div>
+                    <div class="zanzibar-intro-point">Swahili culture</div>
+                    <div class="zanzibar-intro-point">Island exploration</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="zanzibar-section soft">
+        <div class="wrap">
+            <div class="zanzibar-section-heading center">
+                <span class="zanzibar-kicker">What Makes It Special</span>
+                <h2>Highlights of Your Zanzibar Escape</h2>
+                <p>
+                    A relaxed cultural journey combining history, local experiences
+                    and the island's distinctive heritage.
+                </p>
+            </div>
+
+            <div class="zanzibar-highlights">
+                <article class="zanzibar-highlight">
+                    <span class="number">01 / HERITAGE</span>
+                    <h3>Stone Town Discovery</h3>
+                    <p>
+                        Explore historic streets, traditional Swahili architecture,
+                        cultural landmarks and the atmosphere of Zanzibar's old town.
+                    </p>
+                </article>
+
+                <article class="zanzibar-highlight">
+                    <span class="number">02 / CULTURE</span>
+                    <h3>Spice Farm Experience</h3>
+                    <p>
+                        Discover the island's spice-growing traditions and learn about
+                        familiar spices such as cloves, cinnamon, nutmeg and vanilla.
+                    </p>
+                </article>
+
+                <article class="zanzibar-highlight">
+                    <span class="number">03 / ISLAND LIFE</span>
+                    <h3>Local Island Exploration</h3>
+                    <p>
+                        Enjoy time to experience local markets, island scenery,
+                        traditional food and the welcoming character of Zanzibar.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ITINERARY -->
+    <section class="zanzibar-section" id="itinerary">
+        <div class="wrap">
+            <div class="zanzibar-section-heading">
+                <span class="zanzibar-kicker">Your Journey</span>
+                <h2>3-Day Suggested Itinerary</h2>
+                <p>
+                    Your programme can be adjusted according to arrival and departure
+                    times, accommodation location and preferred activities.
+                </p>
+            </div>
+
+            <div class="zanzibar-itinerary-list">
+
+                <article class="zanzibar-day-card">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Street_Scene_-_Kiponda_District_-_Stone_Town_-_Zanzibar_-_Tanzania_-_01_(8830535608).jpg?width=1200"
+                        alt="Traditional street scene in the Kiponda district of Stone Town"
+                        loading="lazy"
+                    >
+                    <div class="zanzibar-day-content">
+                        <span class="zanzibar-day-label">Day 1 · Arrival and Heritage</span>
+                        <h3>Arrival in Zanzibar &amp; Stone Town Orientation</h3>
+                        <p>
+                            Arrive in Zanzibar and meet your local transfer representative
+                            for the journey to your accommodation. After check-in and some
+                            time to settle in, begin discovering the historic atmosphere
+                            of Stone Town.
+                        </p>
+                        <p>
+                            Depending on your arrival time, enjoy an orientation walk
+                            through the old streets, discover the distinctive architecture
+                            and experience the local atmosphere around the town.
+                        </p>
+                        <ul>
+                            <li>Arrival assistance and transfer to accommodation</li>
+                            <li>Hotel check-in, subject to the property's check-in time</li>
+                            <li>Optional guided Stone Town orientation</li>
+                            <li>Free time to enjoy the evening at your own pace</li>
+                        </ul>
+                        <p><strong>Overnight:</strong> Zanzibar accommodation.</p>
+                    </div>
+                </article>
+
+                <article class="zanzibar-day-card">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Guide_Displays_Cloves_-_Spice_Plantation_-_Outside_Stone_Town_-_Zanzibar_-_Tanzania_(8869279930).jpg?width=1200"
+                        alt="A local guide presenting cloves during a Zanzibar spice plantation visit"
+                        loading="lazy"
+                    >
+                    <div class="zanzibar-day-content">
+                        <span class="zanzibar-day-label">Day 2 · Spice and Culture</span>
+                        <h3>Spice Farm Experience &amp; Island Exploration</h3>
+                        <p>
+                            After breakfast, head out for a guided spice experience.
+                            Visit a traditional spice-growing area and discover how
+                            Zanzibar earned its reputation as the Spice Island.
+                        </p>
+                        <p>
+                            Learn about the uses and origins of different spices,
+                            experience their distinctive aromas and see how selected
+                            crops are grown and harvested. Continue with additional
+                            island exploration depending on your interests and available time.
+                        </p>
+                        <ul>
+                            <li>Breakfast at the accommodation</li>
+                            <li>Guided spice farm visit</li>
+                            <li>Introduction to cloves, cinnamon, nutmeg and other spices</li>
+                            <li>Optional local market or cultural stop</li>
+                            <li>Return to accommodation</li>
+                        </ul>
+                        <p><strong>Overnight:</strong> Zanzibar accommodation.</p>
+                    </div>
+                </article>
+
+                <article class="zanzibar-day-card">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Casa_delle_Meraviglie,_Stone_Town,_Zanzibar.jpg?width=1200"
+                        alt="The historic House of Wonders building in Stone Town, Zanzibar"
+                        loading="lazy"
+                    >
+                    <div class="zanzibar-day-content">
+                        <span class="zanzibar-day-label">Day 3 · Departure</span>
+                        <h3>Breakfast, Leisure &amp; Departure</h3>
+                        <p>
+                            Enjoy breakfast and some final leisure time depending on
+                            your departure schedule. If time allows, you may enjoy a
+                            final walk around Stone Town, browse for local souvenirs
+                            or relax before your transfer.
+                        </p>
+                        <ul>
+                            <li>Breakfast at the accommodation</li>
+                            <li>Check-out according to hotel policy</li>
+                            <li>Optional short town visit, subject to available time</li>
+                            <li>Transfer to the airport or ferry terminal</li>
+                        </ul>
+                        <p>
+                            Your Zanzibar escape concludes with onward travel arrangements
+                            confirmed according to your booking.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCOMMODATION -->
+    <section class="zanzibar-section soft">
+        <div class="wrap">
+            <div class="zanzibar-section-heading">
+                <span class="zanzibar-kicker">Rest and Relaxation</span>
+                <h2>Accommodation Options</h2>
+                <p>
+                    Choose an accommodation style that suits your budget and travel
+                    preferences. The final property is confirmed in your quotation.
+                </p>
+            </div>
+
+            <div class="zanzibar-accommodation-grid">
+                <article class="zanzibar-accommodation-card">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_from_Rooftop_Lounge_of_Hotel_Kiponda_-_Stone_Town_-_Zanzibar_-_Tanzania_(8830564454).jpg?width=1200"
+                        alt="Rooftop views across Stone Town in Zanzibar"
+                        loading="lazy"
+                    >
+                    <div class="zanzibar-accommodation-card-content">
+                        <h3>Comfort &amp; Boutique Stays</h3>
+                        <p>
+                            A comfortable stay with convenient access to Stone Town,
+                            local restaurants and cultural attractions. Suitable for
+                            travellers looking for a practical island base.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="zanzibar-accommodation-card">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Town_of_Zanzibar-108863.jpg?width=1200"
+                        alt="Historic architecture in Zanzibar's Stone Town"
+                        loading="lazy"
+                    >
+                    <div class="zanzibar-accommodation-card-content">
+                        <h3>Premium Heritage Stays</h3>
+                        <p>
+                            A more distinctive accommodation experience, with selected
+                            properties offering traditional character, thoughtful
+                            hospitality and convenient access to the historic centre.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- INCLUSIONS -->
+    <section class="zanzibar-section">
+        <div class="wrap">
+            <div class="zanzibar-section-heading">
+                <span class="zanzibar-kicker">Plan With Confidence</span>
+                <h2>What's Included &amp; What's Not</h2>
+                <p>
+                    The final written quotation will confirm exactly what is covered
+                    for your selected travel dates and accommodation.
+                </p>
+            </div>
+
+            <div class="zanzibar-detail-grid">
+                <div class="zanzibar-detail-card">
+                    <h3>Possible Inclusions</h3>
+                    <ul>
+                        <li>Accommodation for two nights, if selected in the package</li>
+                        <li>Airport or ferry terminal transfers, if quoted</li>
+                        <li>Stone Town guided experience, if selected</li>
+                        <li>Spice farm visit, if selected</li>
+                        <li>Meals as specified in the final quotation</li>
+                        <li>Local transportation for confirmed activities</li>
+                    </ul>
+                </div>
+
+                <div class="zanzibar-detail-card">
+                    <h3>Possible Exclusions</h3>
+                    <ul>
+                        <li>International or domestic flights and ferry tickets unless quoted</li>
+                        <li>Travel insurance</li>
+                        <li>Personal expenses and shopping</li>
+                        <li>Optional activities not listed in the quotation</li>
+                        <li>Additional meals and drinks not specified</li>
+                        <li>Tips and gratuities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICE -->
+    <section class="zanzibar-section soft">
+        <div class="wrap">
+            <div class="zanzibar-price-panel">
+                <div>
+                    <span class="zanzibar-eyebrow">Your Island Escape</span>
+                    <h2>Make Zanzibar Your Next Adventure</h2>
+                    <p>
+                        The package can be tailored around your travel dates,
+                        group size, accommodation preferences and selected experiences.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="zanzibar-price">From USD 380</div>
+                    <p>Approx. KES 49,000 per person</p>
+                    <p>Indicative starting price</p>
+                    <a class="btn" href="contact.html?tour=zanzibar-spice-stone-town">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAVEL INFORMATION -->
+    <section class="zanzibar-section">
+        <div class="wrap">
+            <div class="zanzibar-section-heading">
+                <span class="zanzibar-kicker">Before You Travel</span>
+                <h2>Useful Travel Information</h2>
+            </div>
+
+            <div class="zanzibar-detail-grid">
+                <div class="zanzibar-detail-card">
+                    <h3>Getting to Zanzibar</h3>
+                    <p>
+                        Zanzibar can be reached by air or by ferry from mainland
+                        Tanzania. Your preferred arrival option, tickets and transfers
+                        should be confirmed before travel.
+                    </p>
+                </div>
+
+                <div class="zanzibar-detail-card">
+                    <h3>What to Pack</h3>
+                    <p>
+                        Pack comfortable walking shoes, lightweight clothing,
+                        sun protection and any personal essentials. Modest clothing
+                        is recommended when visiting religious and cultural sites.
+                    </p>
+                </div>
+
+                <div class="zanzibar-detail-card">
+                    <h3>Local Customs</h3>
+                    <p>
+                        Zanzibar has a rich Swahili and Islamic cultural heritage.
+                        Respect local customs, ask permission before photographing
+                        people and dress appropriately in town and religious areas.
+                    </p>
+                </div>
+
+                <div class="zanzibar-detail-card">
+                    <h3>Flexible Arrangements</h3>
+                    <p>
+                        The order of activities and timing may be adjusted according
+                        to arrival schedules, opening hours, local conditions and
+                        the availability of guides and service providers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="zanzibar-notes" style="margin-top:25px">
+                <strong>Important booking note</strong>
+                <p>
+                    Prices are indicative and subject to confirmation. Your final
+                    quotation will specify accommodation, transport, excursions,
+                    meals, taxes, applicable fees, payment arrangements and
+                    cancellation terms. Activities remain subject to availability
+                    and local operating conditions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="wrap zanzibar-cta">
         <div>
-          <h3>Comfort &amp; Boutique Stays</h3>
-          <p>
-            A comfortable stay with convenient access to Stone Town,
-            local restaurants and cultural attractions. Suitable for
-            travellers looking for a practical island base.
-          </p>
+            <span class="zanzibar-eyebrow">Your Adventure Begins Here</span>
+            <h2>Ready to Experience Zanzibar?</h2>
+            <p>
+                Contact Fleypat Adventures and let us plan a memorable island
+                escape around your travel preferences.
+            </p>
         </div>
-      </article>
-
-      <article class="accommodation-card">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Town_of_Zanzibar-108863.jpg?width=1200"
-          alt="Historic architecture in Zanzibar's Stone Town"
-          loading="lazy"
-        >
-        <div>
-          <h3>Premium Heritage Stays</h3>
-          <p>
-            A more distinctive accommodation experience, with selected
-            properties offering traditional character, thoughtful
-            hospitality and convenient access to the historic centre.
-          </p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- INCLUSIONS -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-heading">
-      <span class="kicker">Plan With Confidence</span>
-      <h2>What's Included &amp; What's Not</h2>
-      <p>
-        The final written quotation will confirm exactly what is covered
-        for your selected travel dates and accommodation.
-      </p>
-    </div>
-
-    <div class="detail-grid">
-      <div class="detail-card">
-        <h3>Possible Inclusions</h3>
-        <ul>
-          <li>Accommodation for two nights, if selected in the package</li>
-          <li>Airport or ferry terminal transfers, if quoted</li>
-          <li>Stone Town guided experience, if selected</li>
-          <li>Spice farm visit, if selected</li>
-          <li>Meals as specified in the final quotation</li>
-          <li>Local transportation for confirmed activities</li>
-        </ul>
-      </div>
-
-      <div class="detail-card">
-        <h3>Possible Exclusions</h3>
-        <ul>
-          <li>International or domestic flights and ferry tickets unless quoted</li>
-          <li>Travel insurance</li>
-          <li>Personal expenses and shopping</li>
-          <li>Optional activities not listed in the quotation</li>
-          <li>Additional meals and drinks not specified</li>
-          <li>Tips and gratuities</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICE -->
-<section class="section section-soft">
-  <div class="wrap">
-    <div class="price-panel">
-      <div>
-        <span class="eyebrow">Your Island Escape</span>
-        <h2>Make Zanzibar Your Next Adventure</h2>
-        <p>
-          The package can be tailored around your travel dates,
-          group size, accommodation preferences and selected experiences.
-        </p>
-      </div>
-      <div>
-        <div class="price">From USD 380</div>
-        <p>Approx. KES 49,000 per person</p>
-        <p>Indicative starting price</p>
-        <a class="btn" href="contact.html?tour=zanzibar-spice-stone-town">Request a Quote</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TRAVEL INFORMATION -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-heading">
-      <span class="kicker">Before You Travel</span>
-      <h2>Useful Travel Information</h2>
-    </div>
-
-    <div class="detail-grid">
-      <div class="detail-card">
-        <h3>Getting to Zanzibar</h3>
-        <p>
-          Zanzibar can be reached by air or by ferry from mainland
-          Tanzania. Your preferred arrival option, tickets and transfers
-          should be confirmed before travel.
-        </p>
-      </div>
-
-      <div class="detail-card">
-        <h3>What to Pack</h3>
-        <p>
-          Pack comfortable walking shoes, lightweight clothing,
-          sun protection and any personal essentials. Modest clothing
-          is recommended when visiting religious and cultural sites.
-        </p>
-      </div>
-
-      <div class="detail-card">
-        <h3>Local Customs</h3>
-        <p>
-          Zanzibar has a rich Swahili and Islamic cultural heritage.
-          Respect local customs, ask permission before photographing
-          people and dress appropriately in town and religious areas.
-        </p>
-      </div>
-
-      <div class="detail-card">
-        <h3>Flexible Arrangements</h3>
-        <p>
-          The order of activities and timing may be adjusted according
-          to arrival schedules, opening hours, local conditions and
-          the availability of guides and service providers.
-        </p>
-      </div>
-    </div>
-
-    <div class="notes" style="margin-top:25px">
-      <strong>Important booking note</strong>
-      <p>
-        Prices are indicative and subject to confirmation. Your final
-        quotation will specify accommodation, transport, excursions,
-        meals, taxes, applicable fees, payment arrangements and
-        cancellation terms. Activities remain subject to availability
-        and local operating conditions.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="wrap cta">
-  <div>
-    <span class="eyebrow">Your Adventure Begins Here</span>
-    <h2>Ready to Experience Zanzibar?</h2>
-    <p>
-      Contact Fleypat Adventures and let us plan a memorable island
-      escape around your travel preferences.
-    </p>
-  </div>
-  <a class="btn btn-gold" href="contact.html?tour=zanzibar-spice-stone-town">Enquire Now</a>
-</section>
+        <a class="btn btn-gold" href="contact.html?tour=zanzibar-spice-stone-town">Enquire Now</a>
+    </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
-  <div class="wrap footer-grid">
+    <div class="wrap footer-grid">
 
-    <div>
-      <a class="brand footer-brand" href="index.html">
-        <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
-        <span>FLEYPAT<small>ADVENTURES</small></span>
-      </a>
-      <p>
-        Explore more. Experience more. Travel beyond expectations.
-        Your journey starts with us.
-      </p>
-      <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">
-        Instagram @fleypat_adventures
-      </a>
+        <div>
+            <a class="brand footer-brand" href="index.html">
+                <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+                <span>FLEYPAT<small>ADVENTURES</small></span>
+            </a>
+            <p>
+                Explore more. Experience more. Travel beyond expectations.
+                Your journey starts with us.
+            </p>
+            <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">
+                Instagram @fleypat_adventures
+            </a>
+        </div>
+
+        <div>
+            <h3>Explore</h3>
+            <a href="safaris.html">Wildlife Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+        </div>
+
+        <div>
+            <h3>Company</h3>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="blog.html">Travel Guides</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+            <a href="https://wa.me/254704261626">WhatsApp our team</a>
+            <span>Mombasa, Kenya</span>
+        </div>
+
     </div>
 
-    <div>
-      <h3>Explore</h3>
-      <a href="safaris.html">Wildlife Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html">Itineraries</a>
+    <div class="wrap foot-bottom">
+        <span>© <span data-year></span> Fleypat Adventures. All rights reserved.</span>
+        <span>Explore More. Experience More. Travel Beyond Expectations.</span>
     </div>
-
-    <div>
-      <h3>Company</h3>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Our Services</a>
-      <a href="transfers.html">Transfers</a>
-      <a href="partnerships.html">Partnerships</a>
-      <a href="blog.html">Travel Guides</a>
-    </div>
-
-    <div>
-      <h3>Contact</h3>
-      <a href="tel:+254704261626">+254 704 261 626</a>
-      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-      <a href="https://wa.me/254704261626">WhatsApp our team</a>
-      <span>Mombasa, Kenya</span>
-    </div>
-
-  </div>
-
-  <div class="wrap foot-bottom">
-    <span>© <span data-year></span> Fleypat Adventures. All rights reserved.</span>
-    <span>Explore More. Experience More. Travel Beyond Expectations.</span>
-  </div>
 </footer>
 
 <a
-  class="float-wa"
-  href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Zanzibar%20trip."
-  target="_blank"
-  rel="noopener"
+    class="float-wa"
+    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Zanzibar%20trip."
+    target="_blank"
+    rel="noopener"
 >WhatsApp Us</a>
 
 <script src="script.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded',function(){
-  const toggle=document.querySelector('.nav-toggle');
-  const nav=document.querySelector('.nav nav');
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
 
-  if(toggle && nav){
-    toggle.addEventListener('click',function(){
-      const isOpen=nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded',String(isOpen));
-      toggle.setAttribute('aria-label',isOpen?'Close menu':'Open menu');
-      toggle.textContent=isOpen?'✕':'☰';
-    });
+    if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+            const isOpen = nav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+            toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+            toggle.textContent = isOpen ? '✕' : '☰';
+        });
 
-    nav.querySelectorAll('a').forEach(function(link){
-      link.addEventListener('click',function(){
-        nav.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.setAttribute('aria-label','Open menu');
-        toggle.textContent='☰';
-      });
-    });
-  }
+        nav.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                nav.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+                toggle.setAttribute('aria-label', 'Open menu');
+                toggle.textContent = '☰';
+            });
+        });
+    }
 
-  const year=document.querySelector('[data-year]');
-  if(year) year.textContent=new Date().getFullYear();
+    const year = document.querySelector('[data-year]');
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
 });
 </script>
 
