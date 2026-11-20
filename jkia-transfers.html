@@ -7,428 +7,324 @@
 
 <title>JKIA Airport Transfers Nairobi | Fleypat Adventures</title>
 <meta name="description" content="Arrange airport pickups and drop-offs at Jomo Kenyatta International Airport in Nairobi with Fleypat Adventures. Request a private transfer quotation.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 
 <style>
-.jkia-page {
-    --jkia-green: #243c28;
-    --jkia-lime: #a8d832;
-    --jkia-gold: #a97832;
-    --jkia-cream: #fbf7e9;
-    color: #30352f;
-}
-
-.jkia-page * {
-    box-sizing: border-box;
-}
-
-.jkia-page img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/* JKIA AIRPORT TRANSFERS */
 
 .jkia-hero {
-    min-height: 570px;
-    display: flex;
-    align-items: center;
-    color: #fff;
+    min-height:570px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    isolation:isolate;
+    color:#fff;
     background:
-        linear-gradient(90deg, rgba(15,30,20,.84), rgba(15,30,20,.28)),
-        url("https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_Kenyatta_International_Airport_terminal_building,_2025_(01).jpg")
-        center/cover no-repeat;
+        linear-gradient(90deg,rgba(45,27,17,.84),rgba(45,27,17,.45) 60%,rgba(45,27,17,.12)),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_Kenyatta_International_Airport_terminal_building,_2025_(01).jpg") center/cover no-repeat;
 }
 
-.jkia-hero-content {
-    max-width: 760px;
-    padding: 85px 0;
-}
-
-.jkia-eyebrow,
-.jkia-kicker {
-    display: inline-block;
-    color: var(--jkia-gold);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.jkia-hero .jkia-eyebrow {
-    color: var(--jkia-lime);
+.jkia-hero-copy {
+    max-width:760px;
+    padding:90px 0;
 }
 
 .jkia-hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(42px, 6vw, 68px);
-    line-height: 1.08;
-    margin: 20px 0;
-    color: #fff;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:clamp(42px,6vw,70px);
+    line-height:1.08;
+    margin:18px 0 22px;
 }
 
 .jkia-hero p {
-    max-width: 640px;
-    color: #f1f3ed;
-    font-size: 17px;
-    line-height: 1.85;
-}
-
-.jkia-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 30px;
-}
-
-.jkia-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: .25s ease;
-}
-
-.jkia-btn-primary {
-    background: var(--jkia-lime);
-    color: var(--jkia-green);
-}
-
-.jkia-btn-primary:hover {
-    background: #c0eb5b;
-    transform: translateY(-2px);
-}
-
-.jkia-btn-outline {
-    border: 1px solid rgba(255,255,255,.8);
-    color: #fff;
-}
-
-.jkia-btn-outline:hover {
-    background: #fff;
-    color: var(--jkia-green);
-}
-
-.jkia-intro {
-    padding: 85px 0;
-    background: var(--jkia-cream);
+    max-width:650px;
+    color:#F5E5D8;
+    font-size:16px;
+    margin:0 0 28px;
 }
 
 .jkia-intro-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
-    align-items: center;
-}
-
-.jkia-intro h2,
-.jkia-heading h2,
-.jkia-process h2,
-.jkia-destinations h2,
-.jkia-cta h2 {
-    font-family: 'Playfair Display', serif;
-    color: var(--jkia-green);
-    font-size: clamp(30px, 4vw, 43px);
-    line-height: 1.2;
-    margin: 15px 0 20px;
-}
-
-.jkia-intro p,
-.jkia-heading p,
-.jkia-process p,
-.jkia-destinations p {
-    color: #666d63;
-    line-height: 1.85;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
 }
 
 .jkia-main-photo {
-    height: 390px;
-    overflow: hidden;
+    height:420px;
+    overflow:hidden;
+}
+
+.jkia-main-photo img,
+.jkia-card-image img,
+.jkia-destination-photo img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 .jkia-credit {
-    display: block;
-    margin-top: 8px;
-    font-size: 10px;
-    line-height: 1.5;
-    color: #74796f;
+    display:block;
+    margin-top:9px;
+    font-size:10px;
+    color:var(--muted);
+    line-height:1.5;
 }
 
 .jkia-credit a {
-    color: inherit;
+    color:var(--brown-dark);
+    text-decoration:underline;
 }
 
 .jkia-check-list {
-    display: grid;
-    gap: 17px;
-    margin-top: 25px;
+    display:grid;
+    gap:17px;
+    margin-top:26px;
 }
 
 .jkia-check {
-    display: flex;
-    align-items: flex-start;
-    gap: 13px;
+    display:flex;
+    align-items:flex-start;
+    gap:13px;
 }
 
 .jkia-check-mark {
-    width: 27px;
-    height: 27px;
-    flex: 0 0 27px;
-    display: grid;
-    place-items: center;
-    background: var(--jkia-lime);
-    color: var(--jkia-green);
-    font-weight: 800;
+    width:27px;
+    height:27px;
+    flex:0 0 27px;
+    display:grid;
+    place-items:center;
+    background:#FBE1CE;
+    color:#B85B20;
+    font-weight:800;
 }
 
 .jkia-check strong {
-    display: block;
-    color: var(--jkia-green);
-    margin-bottom: 4px;
+    display:block;
+    color:var(--brown-dark);
+    margin-bottom:3px;
 }
 
 .jkia-check span {
-    color: #72776f;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.jkia-options {
-    padding: 85px 0;
-    background: #fff;
-}
-
-.jkia-heading {
-    max-width: 740px;
-    margin: 0 auto 45px;
-    text-align: center;
+    display:block;
+    font-size:13px;
+    color:var(--muted);
 }
 
 .jkia-options-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:23px;
 }
 
 .jkia-card {
-    border: 1px solid #e8e9e2;
-    background: #fff;
+    background:#fff;
+    border:1px solid #EAD8C7;
 }
 
 .jkia-card-image {
-    height: 235px;
-    overflow: hidden;
+    height:235px;
+    overflow:hidden;
 }
 
 .jkia-card-content {
-    padding: 25px;
+    padding:24px;
 }
 
 .jkia-card-content h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 23px;
-    color: var(--jkia-green);
-    margin: 0 0 12px;
+    font-family:'Playfair Display',serif;
+    color:var(--brown-dark);
+    font-size:22px;
+    margin:0 0 12px;
 }
 
 .jkia-card-content p {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #6b7168;
+    color:var(--muted);
+    font-size:13px;
+    margin:0 0 13px;
 }
 
-.jkia-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #55751c;
-    font-weight: 700;
-    text-decoration: none;
+.jkia-card-link {
+    display:inline-block;
+    color:var(--orange);
+    font-size:13px;
+    font-weight:800;
 }
 
-.jkia-link:hover {
-    text-decoration: underline;
-}
-
-.jkia-process {
-    padding: 85px 0;
-    background: var(--jkia-cream);
+.jkia-card-link:hover {
+    text-decoration:underline;
 }
 
 .jkia-process-grid {
-    display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    gap: 60px;
-    align-items: center;
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:60px;
+    align-items:center;
 }
 
 .jkia-process-list {
-    display: grid;
-    gap: 25px;
+    display:grid;
+    gap:26px;
 }
 
 .jkia-step {
-    display: grid;
-    grid-template-columns: 48px 1fr;
-    gap: 17px;
+    display:grid;
+    grid-template-columns:48px 1fr;
+    gap:17px;
 }
 
 .jkia-number {
-    width: 45px;
-    height: 45px;
-    display: grid;
-    place-items: center;
-    background: var(--jkia-green);
-    color: var(--jkia-lime);
-    font-weight: 800;
+    width:45px;
+    height:45px;
+    display:grid;
+    place-items:center;
+    background:#A66A42;
+    color:#fff;
+    font-weight:800;
 }
 
 .jkia-step h3 {
-    color: var(--jkia-green);
-    font-size: 18px;
-    margin: 0 0 7px;
+    font-family:'Playfair Display',serif;
+    font-size:19px;
+    color:var(--brown-dark);
+    margin:0 0 7px;
 }
 
 .jkia-step p {
-    margin: 0;
-    font-size: 14px;
+    font-size:13px;
+    color:var(--muted);
+    margin:0;
 }
 
 .jkia-note {
-    padding: 25px;
-    background: #fff;
-    border-left: 4px solid var(--jkia-lime);
-    margin-top: 28px;
+    padding:24px;
+    background:#FBE9D9;
+    border-left:4px solid var(--orange);
+    margin-top:28px;
 }
 
 .jkia-note strong {
-    color: var(--jkia-green);
+    color:var(--brown-dark);
 }
 
 .jkia-note p {
-    margin: 8px 0 0;
-    font-size: 14px;
-}
-
-.jkia-destinations {
-    padding: 85px 0;
-    background: #fff;
+    font-size:13px;
+    color:#75533E;
+    margin:8px 0 0;
 }
 
 .jkia-destinations-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
-    align-items: center;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
 }
 
 .jkia-destination-photo {
-    height: 390px;
-    overflow: hidden;
+    height:390px;
+    overflow:hidden;
 }
 
 .jkia-destination-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin: 25px 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin:24px 0;
 }
 
 .jkia-destination-item {
-    padding: 13px 15px;
-    background: var(--jkia-cream);
-    color: var(--jkia-green);
-    font-weight: 600;
-    font-size: 14px;
+    padding:13px 15px;
+    background:#FFF4E8;
+    color:var(--brown-dark);
+    font-size:13px;
+    font-weight:700;
 }
 
 .jkia-cta {
-    background: var(--jkia-green);
-    color: #fff;
-    padding: 60px 35px;
-    margin-top: 10px;
-    margin-bottom: 65px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+    background:#A66A42;
+    color:#fff;
+    padding:50px;
+    margin-top:10px;
+    margin-bottom:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
 }
 
 .jkia-cta h2 {
-    color: #fff;
-    margin-top: 0;
-    margin-bottom: 12px;
+    color:#fff;
+    margin:0 0 12px;
 }
 
 .jkia-cta p {
-    color: #e2e8dc;
-    line-height: 1.7;
-    margin: 0;
+    color:#F5E5D8;
+    margin:0;
+    max-width:650px;
 }
 
-.jkia-cta .jkia-btn {
-    flex-shrink: 0;
+.jkia-cta .btn {
+    flex-shrink:0;
 }
 
-@media(max-width: 850px) {
+@media(max-width:900px) {
     .jkia-intro-grid,
     .jkia-process-grid,
     .jkia-destinations-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
     }
 
     .jkia-options-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:repeat(2,1fr);
     }
 
     .jkia-cta {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction:column;
+        align-items:flex-start;
     }
 }
 
-@media(max-width: 560px) {
+@media(max-width:600px) {
     .jkia-hero {
-        min-height: 500px;
+        min-height:510px;
+    }
+
+    .jkia-hero-copy {
+        padding:70px 0;
+    }
+
+    .jkia-hero h1 {
+        font-size:43px;
+    }
+
+    .jkia-hero p {
+        font-size:14px;
     }
 
     .jkia-options-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .jkia-intro,
-    .jkia-options,
-    .jkia-process,
-    .jkia-destinations {
-        padding: 60px 0;
+        grid-template-columns:1fr;
     }
 
     .jkia-main-photo,
     .jkia-destination-photo {
-        height: 280px;
-    }
-
-    .jkia-actions {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .jkia-btn {
-        width: 100%;
+        height:290px;
     }
 
     .jkia-destination-list {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr 1fr;
     }
 
     .jkia-cta {
-        padding: 45px 24px;
+        padding:30px 24px;
+        margin-bottom:50px;
     }
 }
 </style>
@@ -436,416 +332,493 @@
 
 <body>
 
+<!-- TOP BAR -->
+
 <div class="topline">
-<div class="wrap top-inner">
-<span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-<span>
-<a href="tel:+254704261626">+254 704 261 626</a> ·
-<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-</span>
+    <div class="wrap top-inner">
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+        <span>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            ·
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+        </span>
+    </div>
 </div>
-</div>
+
+<!-- HEADER -->
 
 <header class="header">
-<div class="wrap nav">
+    <div class="wrap nav">
 
-<a class="brand" href="index.html">
-<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-<span>FLEYPAT<small>ADVENTURES</small></span>
-</a>
+        <a class="brand" href="index.html">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+            <span>FLEYPAT<small>ADVENTURES</small></span>
+        </a>
 
-<button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+            ☰
+        </button>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="safaris.html">Safaris</a>
-<a href="marine-tours.html">Marine Tours</a>
-<a href="day-trips.html">Day Trips</a>
-<a href="beach-holidays.html">Beach Holidays</a>
-<a href="honeymoon.html">Honeymoons</a>
-<a href="destinations.html">Destinations</a>
-<a href="itineraries.html">Itineraries</a>
-<a href="services.html">Services</a>
-<a href="transfers.html" class="active">Transfers</a>
-<a href="blog.html">Blog</a>
-<a href="partnerships.html">Partnerships</a>
-<a href="contact.html">Contact</a>
-<a class="nav-book" href="contact.html">Book Now</a>
-</nav>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="honeymoon.html">Honeymoons</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+            <a href="services.html">Services</a>
+            <a href="transfers.html" class="active">Transfers</a>
+            <a href="blog.html">Blog</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-book" href="contact.html">Book Now</a>
+        </nav>
 
-</div>
+    </div>
 </header>
 
-<main class="jkia-page">
+<main>
 
 <!-- HERO -->
+
 <section class="jkia-hero">
-<div class="wrap">
-<div class="jkia-hero-content">
+    <div class="wrap jkia-hero-copy">
 
-<span class="jkia-eyebrow">Welcome to Nairobi</span>
+        <span class="eyebrow">Welcome to Nairobi</span>
 
-<h1>JKIA Airport Transfers</h1>
+        <h1>JKIA Airport Transfers</h1>
 
-<p>
-Arriving at or departing from Jomo Kenyatta International Airport?
-Arrange convenient ground transport to your hotel, residence,
-business location or another agreed destination with Fleypat Adventures.
-</p>
+        <p>
+            Arriving at or departing from Jomo Kenyatta International Airport?
+            Arrange convenient ground transport to your hotel, residence,
+            business location or another agreed destination with Fleypat Adventures.
+        </p>
 
-<div class="jkia-actions">
-<a class="jkia-btn jkia-btn-primary"
-href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20JKIA%20airport%20transfers."
-target="_blank" rel="noopener">Enquire on WhatsApp</a>
+        <div class="actions">
+            <a class="btn btn-gold"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20JKIA%20airport%20transfers."
+               target="_blank" rel="noopener">
+                Enquire on WhatsApp
+            </a>
 
-<a class="jkia-btn jkia-btn-outline"
-href="contact.html?service=JKIA%20Airport%20Transfers">Request a Transfer</a>
-</div>
+            <a class="btn btn-outline" href="contact.html?service=JKIA%20Airport%20Transfers">
+                Request a Transfer
+            </a>
+        </div>
 
-</div>
-</div>
+    </div>
 </section>
 
 <!-- INTRODUCTION -->
-<section class="jkia-intro">
-<div class="wrap jkia-intro-grid">
 
-<div>
-<span class="jkia-kicker">Jomo Kenyatta International Airport</span>
+<section class="section alt">
+    <div class="wrap jkia-intro-grid">
 
-<h2>Make your Nairobi arrival easier</h2>
+        <div>
+            <span class="kicker">Jomo Kenyatta International Airport</span>
 
-<p>
-Jomo Kenyatta International Airport is Nairobi's main international
-airport and an important gateway for travellers arriving in Kenya.
-Whether you are visiting for business, a holiday, a safari or a
-family visit, arranging your onward transport can help simplify
-your travel plans.
-</p>
+            <h2>Make Your Nairobi Arrival Easier</h2>
 
-<p>
-Fleypat Adventures can help you organise an airport pickup or
-drop-off based on your flight schedule, passenger numbers and
-destination.
-</p>
+            <p class="lead">
+                Jomo Kenyatta International Airport is Nairobi's main international
+                airport and an important gateway for travellers arriving in Kenya.
+                Whether you are visiting for business, a holiday, a safari or a
+                family visit, arranging your onward transport can help simplify
+                your travel plans.
+            </p>
 
-<div class="jkia-check-list">
+            <p>
+                Fleypat Adventures can help you organise an airport pickup or
+                drop-off based on your flight schedule, passenger numbers and
+                destination.
+            </p>
 
-<div class="jkia-check">
-<div class="jkia-check-mark">✓</div>
-<div>
-<strong>Airport pickups</strong>
-<span>Request collection from JKIA after your arrival.</span>
-</div>
-</div>
+            <div class="jkia-check-list">
 
-<div class="jkia-check">
-<div class="jkia-check-mark">✓</div>
-<div>
-<strong>Airport drop-offs</strong>
-<span>Arrange transport from your hotel, residence or agreed location to JKIA.</span>
-</div>
-</div>
+                <div class="jkia-check">
+                    <div class="jkia-check-mark">✓</div>
+                    <div>
+                        <strong>Airport Pickups</strong>
+                        <span>Request collection from JKIA after your arrival.</span>
+                    </div>
+                </div>
 
-<div class="jkia-check">
-<div class="jkia-check-mark">✓</div>
-<div>
-<strong>Private transfer requests</strong>
-<span>Ask about suitable transport for individuals, families and groups.</span>
-</div>
-</div>
+                <div class="jkia-check">
+                    <div class="jkia-check-mark">✓</div>
+                    <div>
+                        <strong>Airport Drop-offs</strong>
+                        <span>Arrange transport from your hotel, residence or agreed location to JKIA.</span>
+                    </div>
+                </div>
 
-</div>
-</div>
+                <div class="jkia-check">
+                    <div class="jkia-check-mark">✓</div>
+                    <div>
+                        <strong>Private Transfer Requests</strong>
+                        <span>Ask about suitable transport for individuals, families and groups.</span>
+                    </div>
+                </div>
 
-<div>
-<div class="jkia-main-photo">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_Kenyatta_International_Airport_terminal_building,_2025_(02).jpg"
-alt="Jomo Kenyatta International Airport terminal building in Nairobi"
-loading="lazy">
-</div>
-<small class="jkia-credit">
-Photograph: Bahnfrend / Wikimedia Commons ·
-<a href="https://commons.wikimedia.org/wiki/File:Jomo_Kenyatta_International_Airport_terminal_building,_2025_(02).jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>
-</small>
-</div>
+            </div>
+        </div>
 
-</div>
+        <div>
+            <div class="jkia-main-photo">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_Kenyatta_International_Airport_terminal_building,_2025_(02).jpg"
+                    alt="Jomo Kenyatta International Airport terminal building in Nairobi"
+                    loading="lazy">
+            </div>
+
+            <small class="jkia-credit">
+                Photograph: Bahnfrend / Wikimedia Commons ·
+                <a href="https://commons.wikimedia.org/wiki/File:Jomo_Kenyatta_International_Airport_terminal_building,_2025_(02).jpg"
+                   target="_blank" rel="noopener">CC BY-SA 4.0</a>
+            </small>
+        </div>
+
+    </div>
 </section>
 
 <!-- TRANSFER OPTIONS -->
-<section class="jkia-options">
-<div class="wrap">
 
-<div class="jkia-heading">
-<span class="jkia-kicker">Travel arrangements</span>
-<h2>Explore JKIA transfer options</h2>
-<p>
-Tell us where you need to travel to or from. We will discuss
-your requirements and prepare a quotation for the requested journey.
-</p>
-</div>
+<section class="section">
+    <div class="wrap">
 
-<div class="jkia-options-grid">
+        <div class="section-head center">
+            <span class="kicker">Travel Arrangements</span>
+            <h2>Explore JKIA Transfer Options</h2>
 
-<article class="jkia-card">
-<div class="jkia-card-image">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_Kenyatta_International_Airport_terminal_building,_2025_(03).jpg"
-alt="Landside view of the JKIA passenger terminal"
-loading="lazy">
-</div>
+            <p>
+                Tell us where you need to travel to or from. We will discuss
+                your requirements and prepare a quotation for the requested journey.
+            </p>
+        </div>
 
-<div class="jkia-card-content">
-<h3>JKIA Airport Pickups</h3>
-<p>
-Arriving in Nairobi? Request a pickup from the airport
-to your hotel, residence or another agreed destination.
-</p>
-<a class="jkia-link" href="contact.html?service=JKIA%20Airport%20Pickup">Arrange a pickup →</a>
-</div>
-</article>
+        <div class="jkia-options-grid">
 
-<article class="jkia-card">
-<div class="jkia-card-image">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/KE.30.Nairobi_-_Nairobi_Intl_Airport_-_aug_2025_-_02.jpg"
-alt="Outside the arrival terminal at Jomo Kenyatta International Airport"
-loading="lazy">
-</div>
+            <article class="jkia-card">
+                <div class="jkia-card-image">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_Kenyatta_International_Airport_terminal_building,_2025_(03).jpg"
+                        alt="Landside view of the JKIA passenger terminal"
+                        loading="lazy">
+                </div>
 
-<div class="jkia-card-content">
-<h3>Airport Drop-offs</h3>
-<p>
-Need to catch a departing flight? Enquire about
-transport from your accommodation or agreed meeting point.
-</p>
-<a class="jkia-link" href="contact.html?service=JKIA%20Airport%20Dropoff">Arrange a drop-off →</a>
-</div>
-</article>
+                <div class="jkia-card-content">
+                    <h3>JKIA Airport Pickups</h3>
 
-<article class="jkia-card">
-<div class="jkia-card-image">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_kenyatta_international_airport.jpg"
-alt="Runway and aircraft view at Jomo Kenyatta International Airport"
-loading="lazy">
-</div>
+                    <p>
+                        Arriving in Nairobi? Request a pickup from the airport
+                        to your hotel, residence or another agreed destination.
+                    </p>
 
-<div class="jkia-card-content">
-<h3>Connecting Journeys</h3>
-<p>
-Planning onward travel after landing in Nairobi? Ask about
-transport to your next agreed destination.
-</p>
-<a class="jkia-link" href="contact.html?service=JKIA%20Connecting%20Transfer">Discuss your journey →</a>
-</div>
-</article>
+                    <a class="jkia-card-link" href="contact.html?service=JKIA%20Airport%20Pickup">
+                        Arrange a Pickup →
+                    </a>
+                </div>
+            </article>
 
-</div>
-</div>
+            <article class="jkia-card">
+                <div class="jkia-card-image">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/KE.30.Nairobi_-_Nairobi_Intl_Airport_-_aug_2025_-_02.jpg"
+                        alt="Outside the arrival terminal at Jomo Kenyatta International Airport"
+                        loading="lazy">
+                </div>
+
+                <div class="jkia-card-content">
+                    <h3>Airport Drop-offs</h3>
+
+                    <p>
+                        Need to catch a departing flight? Enquire about
+                        transport from your accommodation or agreed meeting point.
+                    </p>
+
+                    <a class="jkia-card-link" href="contact.html?service=JKIA%20Airport%20Dropoff">
+                        Arrange a Drop-off →
+                    </a>
+                </div>
+            </article>
+
+            <article class="jkia-card">
+                <div class="jkia-card-image">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_kenyatta_international_airport.jpg"
+                        alt="Runway and aircraft view at Jomo Kenyatta International Airport"
+                        loading="lazy">
+                </div>
+
+                <div class="jkia-card-content">
+                    <h3>Connecting Journeys</h3>
+
+                    <p>
+                        Planning onward travel after landing in Nairobi? Ask about
+                        transport to your next agreed destination.
+                    </p>
+
+                    <a class="jkia-card-link" href="contact.html?service=JKIA%20Connecting%20Transfer">
+                        Discuss Your Journey →
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
 </section>
 
 <!-- BOOKING PROCESS -->
-<section class="jkia-process">
-<div class="wrap jkia-process-grid">
 
-<div>
-<span class="jkia-kicker">Plan ahead</span>
-<h2>How to arrange your JKIA transfer</h2>
+<section class="section alt">
+    <div class="wrap jkia-process-grid">
 
-<p>
-Send us your travel details so that we can understand your
-requirements and discuss the appropriate ground transport arrangement.
-</p>
+        <div>
+            <span class="kicker">Plan Ahead</span>
 
-<div class="jkia-note">
-<strong>Information to share</strong>
-<p>
-Your flight number, arrival or departure date, expected time,
-number of passengers, luggage requirements and destination.
-</p>
-</div>
-</div>
+            <h2>How to Arrange Your JKIA Transfer</h2>
 
-<div class="jkia-process-list">
+            <p class="lead">
+                Send us your travel details so that we can understand your
+                requirements and discuss the appropriate ground transport arrangement.
+            </p>
 
-<div class="jkia-step">
-<div class="jkia-number">01</div>
-<div>
-<h3>Share your flight details</h3>
-<p>
-Tell us your airline, flight number, travel date and
-expected arrival or departure time.
-</p>
-</div>
-</div>
+            <div class="jkia-note">
+                <strong>Information to Share</strong>
 
-<div class="jkia-step">
-<div class="jkia-number">02</div>
-<div>
-<h3>Provide your destination</h3>
-<p>
-Let us know your hotel, residence, business location
-or other agreed pickup or drop-off point.
-</p>
-</div>
-</div>
+                <p>
+                    Your flight number, arrival or departure date, expected time,
+                    number of passengers, luggage requirements and destination.
+                </p>
+            </div>
+        </div>
 
-<div class="jkia-step">
-<div class="jkia-number">03</div>
-<div>
-<h3>Receive a quotation</h3>
-<p>
-We will review your request and discuss suitable
-transport arrangements and the applicable price.
-</p>
-</div>
-</div>
+        <div class="jkia-process-list">
 
-<div class="jkia-step">
-<div class="jkia-number">04</div>
-<div>
-<h3>Confirm your transfer</h3>
-<p>
-Once the quotation and arrangements are agreed,
-our team will communicate the next steps.
-</p>
-</div>
-</div>
+            <div class="jkia-step">
+                <div class="jkia-number">01</div>
+                <div>
+                    <h3>Share Your Flight Details</h3>
+                    <p>
+                        Tell us your airline, flight number, travel date and
+                        expected arrival or departure time.
+                    </p>
+                </div>
+            </div>
 
-</div>
-</div>
+            <div class="jkia-step">
+                <div class="jkia-number">02</div>
+                <div>
+                    <h3>Provide Your Destination</h3>
+                    <p>
+                        Let us know your hotel, residence, business location
+                        or other agreed pickup or drop-off point.
+                    </p>
+                </div>
+            </div>
+
+            <div class="jkia-step">
+                <div class="jkia-number">03</div>
+                <div>
+                    <h3>Receive a Quotation</h3>
+                    <p>
+                        We will review your request and discuss suitable
+                        transport arrangements and the applicable price.
+                    </p>
+                </div>
+            </div>
+
+            <div class="jkia-step">
+                <div class="jkia-number">04</div>
+                <div>
+                    <h3>Confirm Your Transfer</h3>
+                    <p>
+                        Once the quotation and arrangements are agreed,
+                        our team will communicate the next steps.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <!-- DESTINATIONS -->
-<section class="jkia-destinations">
-<div class="wrap jkia-destinations-grid">
 
-<div>
-<div class="jkia-destination-photo">
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_Kenyatta_International_Airport_terminal_building.jpg"
-alt="Jomo Kenyatta International Airport passenger terminal"
-loading="lazy">
-</div>
-<small class="jkia-credit">
-Photograph: Sdkb / Wikimedia Commons ·
-<a href="https://commons.wikimedia.org/wiki/File:Jomo_Kenyatta_International_Airport_terminal_building.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a>
-</small>
-</div>
+<section class="section">
+    <div class="wrap jkia-destinations-grid">
 
-<div>
-<span class="jkia-kicker">Explore Nairobi and beyond</span>
+        <div>
+            <div class="jkia-destination-photo">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Jomo_Kenyatta_International_Airport_terminal_building.jpg"
+                    alt="Jomo Kenyatta International Airport passenger terminal"
+                    loading="lazy">
+            </div>
 
-<h2>Where can your JKIA transfer take you?</h2>
+            <small class="jkia-credit">
+                Photograph: Sdkb / Wikimedia Commons ·
+                <a href="https://commons.wikimedia.org/wiki/File:Jomo_Kenyatta_International_Airport_terminal_building.jpg"
+                   target="_blank" rel="noopener">CC BY-SA 4.0</a>
+            </small>
+        </div>
 
-<p>
-Nairobi offers a range of accommodation, business and visitor
-destinations. Tell us where you need to go so we can discuss
-the appropriate transfer arrangement.
-</p>
+        <div>
+            <span class="kicker">Explore Nairobi and Beyond</span>
 
-<div class="jkia-destination-list">
-<div class="jkia-destination-item">Nairobi CBD</div>
-<div class="jkia-destination-item">Westlands</div>
-<div class="jkia-destination-item">Karen</div>
-<div class="jkia-destination-item">Kilimani</div>
-<div class="jkia-destination-item">Upper Hill</div>
-<div class="jkia-destination-item">Gigiri</div>
-</div>
+            <h2>Where Can Your JKIA Transfer Take You?</h2>
 
-<p>
-You can also enquire about longer journeys from Nairobi
-to other destinations in Kenya.
-</p>
+            <p class="lead">
+                Nairobi offers a range of accommodation, business and visitor
+                destinations. Tell us where you need to go so we can discuss
+                the appropriate transfer arrangement.
+            </p>
 
-<a class="jkia-btn jkia-btn-primary"
-href="contact.html?service=JKIA%20Destination%20Transfer">
-Enquire About Your Route
-</a>
-</div>
+            <div class="jkia-destination-list">
+                <div class="jkia-destination-item">Nairobi CBD</div>
+                <div class="jkia-destination-item">Westlands</div>
+                <div class="jkia-destination-item">Karen</div>
+                <div class="jkia-destination-item">Kilimani</div>
+                <div class="jkia-destination-item">Upper Hill</div>
+                <div class="jkia-destination-item">Gigiri</div>
+            </div>
 
-</div>
+            <p>
+                You can also enquire about longer journeys from Nairobi
+                to other destinations in Kenya.
+            </p>
+
+            <a class="btn btn-gold" href="contact.html?service=JKIA%20Destination%20Transfer">
+                Enquire About Your Route
+            </a>
+        </div>
+
+    </div>
 </section>
 
 <!-- FINAL CTA -->
+
 <section class="wrap">
-<div class="jkia-cta">
+    <div class="jkia-cta">
 
-<div>
-<h2>Flying into or out of JKIA?</h2>
-<p>
-Send Fleypat Adventures your flight details and destination
-to request a personalised airport transfer quotation.
-</p>
-</div>
+        <div>
+            <span class="kicker">Your Journey Starts Here</span>
 
-<a class="jkia-btn jkia-btn-primary"
-href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20need%20a%20JKIA%20airport%20transfer%20quotation."
-target="_blank" rel="noopener">
-Request a Transfer
-</a>
+            <h2>Flying Into or Out of JKIA?</h2>
 
-</div>
+            <p>
+                Send Fleypat Adventures your flight details and destination
+                to request a personalised airport transfer quotation.
+            </p>
+        </div>
+
+        <a class="btn btn-gold"
+           href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20need%20a%20JKIA%20airport%20transfer%20quotation."
+           target="_blank" rel="noopener">
+            Request a Transfer
+        </a>
+
+    </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
+
 <footer class="footer">
-<div class="wrap footer-grid">
+    <div class="wrap footer-grid">
 
-<div>
-<a class="brand footer-brand" href="index.html">
-<img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
-<span>FLEYPAT<small>ADVENTURES</small></span>
-</a>
-<p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-<a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
-</div>
+        <div>
+            <a class="brand" href="index.html">
+                <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+                <span>FLEYPAT<small>ADVENTURES</small></span>
+            </a>
 
-<div>
-<h3>Explore</h3>
-<a href="safaris.html">Wildlife Safaris</a>
-<a href="marine-tours.html">Marine Tours</a>
-<a href="day-trips.html">Day Trips</a>
-<a href="beach-holidays.html">Beach Holidays</a>
-<a href="destinations.html">Destinations</a>
-<a href="itineraries.html">Itineraries</a>
-</div>
+            <p>
+                Your Adventure Begins Here! Discover Kenya and beyond
+                with memorable safaris, beach holidays and travel experiences.
+            </p>
 
-<div>
-<h3>Company</h3>
-<a href="about.html">About Us</a>
-<a href="services.html">Our Services</a>
-<a href="transfers.html">Transfers</a>
-<a href="partnerships.html">Partnerships</a>
-<a href="blog.html">Travel Guides</a>
-</div>
+            <a href="https://www.instagram.com/fleypat_adventures/"
+               target="_blank" rel="noopener">
+                Instagram @fleypat_adventures
+            </a>
+        </div>
 
-<div>
-<h3>Contact</h3>
-<a href="tel:+254704261626">+254 704 261 626</a>
-<a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-<a href="https://wa.me/254704261626">WhatsApp our team</a>
-<span>Mombasa, Kenya</span>
-</div>
+        <div>
+            <h3>Explore</h3>
+            <a href="safaris.html">Wildlife Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+        </div>
 
-</div>
+        <div>
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="blog.html">Travel Guides</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-<div class="wrap foot-bottom">
-© <span data-year></span> Fleypat Adventures. All rights reserved.
-<span>Explore More. Experience More. Travel Beyond Expectations.</span>
-</div>
+        <div>
+            <h3>Get in Touch</h3>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+            <a href="https://wa.me/254704261626">WhatsApp our team</a>
+            <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram</a>
+            <span>Mombasa, Kenya</span>
+        </div>
+
+    </div>
+
+    <div class="wrap foot-bottom">
+        <span>© <span id="year"></span> Fleypat Adventures. All rights reserved.</span>
+        <span>Explore. Experience. Enjoy.</span>
+    </div>
 </footer>
 
-<a class="float-wa"
-href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
-target="_blank" rel="noopener">WhatsApp Us</a>
+<!-- FLOATING WHATSAPP -->
 
-<script src="script.js"></script>
+<a class="float-wa"
+   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
+   target="_blank" rel="noopener">
+    WhatsApp Us
+</a>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* MOBILE NAVIGATION */
+
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+
+if (menuToggle && mainNav) {
+    menuToggle.addEventListener('click', function() {
+        const isOpen = mainNav.classList.toggle('open');
+
+        menuToggle.setAttribute('aria-expanded', isOpen);
+        menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    mainNav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            mainNav.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', 'Open menu');
+            menuToggle.textContent = '☰';
+        });
+    });
+}
+</script>
 
 </body>
 </html>
