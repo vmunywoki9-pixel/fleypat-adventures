@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,885 +7,826 @@
 
 <title>Mambrui Sand Dunes Day Tour | Fleypat Adventures</title>
 <meta name="description" content="Explore the beautiful Mambrui Sand Dunes near Malindi on a coastal day trip featuring golden dunes, Indian Ocean scenery, photography and optional local adventure activities.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="styles.css">
+
 <style>
-:root{
-  --lime:#a8d832;
-  --cream:#fbf7e9;
-  --green:#243c28;
-  --gold:#a97832;
-  --ink:#263027;
-  --muted:#687268;
-  --line:#e9e6da;
-  --white:#fff;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:'DM Sans',sans-serif;
-  color:var(--ink);
-  background:#fff;
-  line-height:1.7;
-}
-a{color:inherit;text-decoration:none}
-img{display:block;width:100%;object-fit:cover}
-.container{width:min(1160px,92%);margin:auto}
-
-/* HEADER */
-header{
-  position:sticky;
-  top:0;
-  z-index:50;
-  background:rgba(255,255,255,.97);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line);
-}
-.nav{
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
-}
-.brand img{
-  width:180px;
-  height:62px;
-  object-fit:contain;
-}
-nav{
-  display:flex;
-  align-items:center;
-  gap:18px;
-  flex-wrap:wrap;
-  font-size:13px;
-  font-weight:700;
-}
-nav a:hover{color:#729b1d}
-nav .book{
-  background:var(--lime);
-  padding:11px 17px;
-  border-radius:3px;
-  color:var(--green);
-}
-.menu{
-  display:none;
-  background:none;
-  border:0;
-  font-size:26px;
-  color:var(--green);
-  cursor:pointer;
+/* PAGE-SPECIFIC STYLES */
+.mambrui-hero {
+    min-height: 600px;
+    background-image:
+        linear-gradient(90deg, rgba(55, 35, 23, .78), rgba(55, 35, 23, .16)),
+        url('https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes2.jpg');
+    background-position: center 48%;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
 }
 
-/* HERO */
-.hero{
-  min-height:600px;
-  position:relative;
-  display:flex;
-  align-items:end;
-  background:
-    linear-gradient(90deg,rgba(20,28,16,.75),rgba(20,28,16,.12)),
-    url('https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes2.jpg')
-    center 48%/cover;
-}
-.hero-content{
-  color:white;
-  padding:90px 0 80px;
-  max-width:760px;
-}
-.eyebrow{
-  color:var(--lime);
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-h1,h2,h3{
-  font-family:'Playfair Display',serif;
-  line-height:1.2;
-}
-h1{
-  font-size:clamp(42px,6vw,70px);
-  margin:15px 0;
-}
-.hero p{
-  font-size:17px;
-  max-width:650px;
-  color:#f2f3ec;
-}
-.actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:27px;
-}
-.btn{
-  display:inline-block;
-  padding:13px 21px;
-  border-radius:3px;
-  font-weight:800;
-  font-size:13px;
-}
-.btn.primary{background:var(--lime);color:var(--green)}
-.btn.outline{
-  border:1px solid rgba(255,255,255,.8);
-  color:white;
+.mambrui-hero-content {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    color: #fff;
+    max-width: 850px;
 }
 
-/* QUICK INFO */
-.quick{background:var(--green);color:white}
-.quick-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-  padding:22px 0;
-}
-.quick-item{
-  border-right:1px solid rgba(255,255,255,.2);
-  padding-left:18px;
-}
-.quick-item:first-child{padding-left:0}
-.quick-item:last-child{border:0}
-.quick small{
-  display:block;
-  color:#cbd6c5;
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-.quick strong{font-size:14px}
-
-/* GENERAL SECTIONS */
-section{padding:78px 0}
-.section-tag{
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  color:#789d27;
-  font-weight:800;
-}
-h2{
-  font-size:clamp(30px,4vw,43px);
-  color:var(--green);
-  margin:10px 0 18px;
-}
-.lead{
-  font-size:16px;
-  color:var(--muted);
-  max-width:780px;
-}
-.intro-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  align-items:center;
-}
-.intro-image{
-  height:430px;
-  border-radius:4px;
-}
-.note{
-  background:var(--cream);
-  padding:20px 22px;
-  border-left:4px solid var(--lime);
-  margin-top:22px;
-  font-size:14px;
+.mambrui-hero h1 {
+    color: #fff;
+    font-size: clamp(42px, 6vw, 70px);
+    margin: 15px 0;
 }
 
-/* HIGHLIGHTS */
-.highlights{background:var(--cream)}
-.cards{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-  margin-top:32px;
-}
-.card{
-  background:white;
-  padding:26px;
-  border:1px solid var(--line);
-}
-.card .number{
-  font-family:'Playfair Display',serif;
-  font-size:34px;
-  color:var(--gold);
-}
-.card h3{
-  font-size:21px;
-  color:var(--green);
-  margin:8px 0;
-}
-.card p{
-  font-size:14px;
-  color:var(--muted);
-  margin:0;
+.mambrui-hero p {
+    max-width: 650px;
+    color: #fff4e8;
+    font-size: 17px;
 }
 
-/* ITINERARY */
-.itinerary{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:32px;
-  align-items:center;
-  margin-top:38px;
-}
-.itinerary:nth-child(even) .day-image{order:2}
-.day-image{
-  height:330px;
-  border-radius:4px;
-}
-.day-copy{padding:10px 0}
-.day-label{
-  color:#789d27;
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-}
-.day-copy h3{
-  font-size:27px;
-  color:var(--green);
-  margin:9px 0;
-}
-.day-copy p,.day-copy li{
-  color:var(--muted);
-  font-size:14px;
-}
-.day-copy ul{padding-left:20px}
-
-/* DETAILS */
-.details{background:var(--cream)}
-.detail-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:24px;
-  margin-top:28px;
-}
-.detail-box{
-  background:white;
-  padding:28px;
-  border:1px solid var(--line);
-}
-.detail-box h3{
-  color:var(--green);
-  font-size:23px;
-  margin-top:0;
-}
-.detail-box li{
-  font-size:14px;
-  color:var(--muted);
-  margin:8px 0;
-}
-.price-panel{
-  background:var(--green);
-  color:white;
-  padding:42px;
-  border-radius:4px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
-  margin-top:35px;
-}
-.price-panel h2{color:white;margin:5px 0}
-.price-panel p{color:#d6dfd1;margin:0}
-
-/* CTA */
-.cta{
-  background:var(--lime);
-  text-align:center;
-}
-.cta h2{color:var(--green)}
-.cta p{
-  max-width:680px;
-  margin:0 auto 22px;
-  color:#3c4d2a;
-}
-.cta .btn{
-  background:var(--green);
-  color:white;
+.mambrui-hero .eyebrow {
+    color: #F09A58;
 }
 
-/* FOOTER */
-footer{
-  background:#17291c;
-  color:#dce4d9;
-  padding:55px 0 25px;
-}
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.3fr 1fr 1fr 1fr;
-  gap:30px;
-}
-footer h3{color:white;font-size:19px}
-footer p,footer a{
-  font-size:13px;
-  color:#c1cdbf;
-}
-footer a{display:block;margin:8px 0}
-.copyright{
-  border-top:1px solid #3c4c3e;
-  margin-top:35px;
-  padding-top:20px;
-  font-size:12px;
-  color:#aebbad;
-}
-.whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:60;
-  background:#1fa855;
-  color:white;
-  padding:13px 18px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:800;
-  box-shadow:0 5px 18px #0003;
+.mambrui-hero .btn-outline {
+    color: #fff;
+    border-color: rgba(255,255,255,.8);
 }
 
-/* RESPONSIVE */
-@media(max-width:900px){
-  nav{
-    display:none;
-    position:absolute;
-    top:82px;
-    left:0;
-    right:0;
-    background:white;
-    padding:20px 5%;
-    box-shadow:0 10px 20px #0001;
-    flex-direction:column;
-    align-items:flex-start;
-  }
-  nav.open{display:flex}
-  .menu{display:block}
-  .quick-grid{grid-template-columns:repeat(2,1fr)}
-  .intro-grid,.itinerary{grid-template-columns:1fr}
-  .itinerary:nth-child(even) .day-image{order:0}
-  .cards{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
+.mambrui-quick {
+    background: #A66A42;
+    color: #fff;
 }
-@media(max-width:560px){
-  .hero{min-height:520px}
-  .hero-content{padding:70px 0 55px}
-  .quick-grid{grid-template-columns:1fr 1fr}
-  .quick-item{padding-left:8px}
-  .detail-grid{grid-template-columns:1fr}
-  .price-panel{
-    display:block;
-    padding:28px;
-  }
-  .price-panel .btn{margin-top:20px}
-  .footer-grid{grid-template-columns:1fr}
+
+.mambrui-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 23px 0;
+}
+
+.mambrui-quick-item {
+    padding-left: 18px;
+    border-right: 1px solid rgba(255,255,255,.25);
+}
+
+.mambrui-quick-item:first-child {
+    padding-left: 0;
+}
+
+.mambrui-quick-item:last-child {
+    border-right: 0;
+}
+
+.mambrui-quick-item small {
+    display: block;
+    color: #FBE1CE;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.mambrui-quick-item strong {
+    font-size: 14px;
+    color: #fff;
+}
+
+.mambrui-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.mambrui-intro-image {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.mambrui-note {
+    background: #FFF4E8;
+    border-left: 4px solid #E8752A;
+    padding: 20px 22px;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.mambrui-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.mambrui-card {
+    background: #fff;
+    padding: 26px;
+    border: 1px solid #EAD8C7;
+}
+
+.mambrui-card-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #D96A25;
+}
+
+.mambrui-card h3 {
+    font-size: 21px;
+    color: #6B4935;
+    margin: 8px 0;
+}
+
+.mambrui-card p {
+    font-size: 14px;
+    color: #897264;
+    margin: 0;
+}
+
+.mambrui-itinerary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.mambrui-itinerary:nth-of-type(even) .mambrui-day-image {
+    order: 2;
+}
+
+.mambrui-day-image {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.mambrui-day-copy {
+    padding: 10px 0;
+}
+
+.mambrui-day-label {
+    color: #B85B20;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.mambrui-day-copy h3 {
+    font-size: 27px;
+    color: #6B4935;
+    margin: 9px 0;
+}
+
+.mambrui-day-copy p,
+.mambrui-day-copy li {
+    color: #897264;
+    font-size: 14px;
+}
+
+.mambrui-day-copy ul {
+    padding-left: 20px;
+}
+
+.mambrui-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.mambrui-detail-box {
+    background: #fff;
+    padding: 28px;
+    border: 1px solid #EAD8C7;
+}
+
+.mambrui-detail-box h3 {
+    color: #6B4935;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.mambrui-detail-box li {
+    font-size: 14px;
+    color: #897264;
+    margin: 8px 0;
+}
+
+.mambrui-price-panel {
+    background: #A66A42;
+    color: #fff;
+    padding: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.mambrui-price-panel h2 {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.mambrui-price-panel p {
+    color: #FBE1CE;
+    margin: 0;
+}
+
+.mambrui-price-panel .eyebrow {
+    color: #FFD0A5;
+}
+
+.mambrui-cta {
+    background: #F5E6D6;
+    text-align: center;
+}
+
+.mambrui-cta h2 {
+    color: #6B4935;
+}
+
+.mambrui-cta p {
+    max-width: 680px;
+    margin: 0 auto 22px;
+    color: #897264;
+}
+
+.mambrui-cta .btn {
+    background: #E8752A;
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+    .mambrui-intro,
+    .mambrui-itinerary {
+        grid-template-columns: 1fr;
+    }
+
+    .mambrui-itinerary:nth-of-type(even) .mambrui-day-image {
+        order: 0;
+    }
+
+    .mambrui-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .mambrui-hero {
+        min-height: 520px;
+    }
+
+    .mambrui-hero-content {
+        padding-top: 70px;
+        padding-bottom: 55px;
+    }
+
+    .mambrui-quick-grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+
+    .mambrui-quick-item {
+        padding-left: 8px;
+    }
+
+    .mambrui-cards,
+    .mambrui-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mambrui-intro-image {
+        height: 310px;
+    }
+
+    .mambrui-day-image {
+        height: 280px;
+    }
+
+    .mambrui-price-panel {
+        display: block;
+        padding: 28px;
+    }
+
+    .mambrui-price-panel .btn {
+        margin-top: 20px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="container nav">
+<header class="header">
+    <div class="wrap nav">
 
-    <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures">
-    </a>
+        <a class="brand" href="index.html">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures">
+        </a>
 
-    <button class="menu" aria-label="Open navigation"
-      onclick="document.querySelector('nav').classList.toggle('open')">
-      ☰
-    </button>
+        <button class="nav-toggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                onclick="const menu=document.querySelector('.nav nav'); menu.classList.toggle('open'); this.setAttribute('aria-expanded', menu.classList.contains('open'));">
+            ☰
+        </button>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="safaris.html">Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="contact.html">Contact</a>
-      <a class="book" href="contact.html">Book Now</a>
-    </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="contact.html">Contact</a>
+            <a class="btn btn-gold" href="contact.html">Book Now</a>
+        </nav>
 
-  </div>
+    </div>
 </header>
 
 <main>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="container hero-content">
+<section class="mambrui-hero">
+    <div class="wrap mambrui-hero-content">
 
-    <div class="eyebrow">Kenya Coastal Day Trips</div>
+        <div class="eyebrow">Kenya Coastal Day Trips</div>
 
-    <h1>Mambrui Sand Dunes Day Tour</h1>
+        <h1>Mambrui Sand Dunes Day Tour</h1>
 
-    <p>
-      Discover the striking coastal dunes of Mambrui, popularly known
-      as Dubai Ndogo. Enjoy a landscape of golden sand, ocean views,
-      photography opportunities and optional local adventure activities.
-    </p>
+        <p>
+            Discover the striking coastal dunes of Mambrui, popularly known
+            as Dubai Ndogo. Enjoy a landscape of golden sand, ocean views,
+            photography opportunities and optional local adventure activities.
+        </p>
 
-    <div class="actions">
-      <a class="btn primary"
-         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20the%20Mambrui%20Sand%20Dunes%20Day%20Tour.">
-        Enquire on WhatsApp
-      </a>
+        <div class="actions">
+            <a class="btn btn-gold"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20the%20Mambrui%20Sand%20Dunes%20Day%20Tour."
+               target="_blank" rel="noopener">
+                Enquire on WhatsApp
+            </a>
 
-      <a class="btn outline" href="#itinerary">View Itinerary</a>
+            <a class="btn btn-outline" href="#itinerary">View Itinerary</a>
+        </div>
+
     </div>
-
-  </div>
 </section>
 
 <!-- QUICK INFORMATION -->
-<div class="quick">
-  <div class="container quick-grid">
+<div class="mambrui-quick">
+    <div class="wrap mambrui-quick-grid">
 
-    <div class="quick-item">
-      <small>Duration</small>
-      <strong>Half or Full Day</strong>
+        <div class="mambrui-quick-item">
+            <small>Duration</small>
+            <strong>Half or Full Day</strong>
+        </div>
+
+        <div class="mambrui-quick-item">
+            <small>Destination</small>
+            <strong>Mambrui, Kilifi</strong>
+        </div>
+
+        <div class="mambrui-quick-item">
+            <small>Experience</small>
+            <strong>Coastal Adventure</strong>
+        </div>
+
+        <div class="mambrui-quick-item">
+            <small>Price</small>
+            <strong>Request a Quote</strong>
+        </div>
+
     </div>
-
-    <div class="quick-item">
-      <small>Destination</small>
-      <strong>Mambrui, Kilifi</strong>
-    </div>
-
-    <div class="quick-item">
-      <small>Experience</small>
-      <strong>Coastal Adventure</strong>
-    </div>
-
-    <div class="quick-item">
-      <small>Price</small>
-      <strong>Request a Quote</strong>
-    </div>
-
-  </div>
 </div>
 
 <!-- INTRODUCTION -->
-<section>
-  <div class="container intro-grid">
+<section class="section">
+    <div class="wrap mambrui-intro">
 
-    <div>
-      <div class="section-tag">Discover Mambrui</div>
+        <div>
+            <div class="eyebrow">Discover Mambrui</div>
 
-      <h2>Kenya's Beautiful Coastal Sand Dunes</h2>
+            <h2>Kenya's Beautiful Coastal Sand Dunes</h2>
 
-      <p class="lead">
-        Located near Malindi in Kilifi County, Mambrui is known for
-        its unusual landscape of rolling coastal sand dunes beside
-        the Indian Ocean.
-      </p>
+            <p class="lead">
+                Located near Malindi in Kilifi County, Mambrui is known for
+                its unusual landscape of rolling coastal sand dunes beside
+                the Indian Ocean.
+            </p>
 
-      <p>
-        Often called Dubai Ndogo, the dunes offer a distinctive
-        experience along Kenya's northern coast. Their changing
-        shapes, soft sandy ridges and coastal setting create a
-        beautiful environment for exploration and photography.
-      </p>
+            <p>
+                Often called Dubai Ndogo, the dunes offer a distinctive
+                experience along Kenya's northern coast. Their changing
+                shapes, soft sandy ridges and coastal setting create a
+                beautiful environment for exploration and photography.
+            </p>
 
-      <p>
-        The tour gives you time to appreciate the scenery, walk
-        through selected areas and enjoy the coastal atmosphere.
-        Optional activities may also be arranged through local
-        operators.
-      </p>
+            <p>
+                The tour gives you time to appreciate the scenery, walk
+                through selected areas and enjoy the coastal atmosphere.
+                Optional activities may also be arranged through local
+                operators.
+            </p>
 
-      <div class="note">
-        <strong>Travel responsibly:</strong>
-        Mambrui's dunes are a natural coastal environment. Follow
-        local guide instructions, respect marked areas and avoid
-        damaging vegetation or disturbing sensitive dune sections.
-      </div>
+            <div class="mambrui-note">
+                <strong>Travel responsibly:</strong>
+                Mambrui's dunes are a natural coastal environment. Follow
+                local guide instructions, respect marked areas and avoid
+                damaging vegetation or disturbing sensitive dune sections.
+            </div>
+        </div>
+
+        <img class="mambrui-intro-image"
+             src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes1.jpg"
+             alt="Rolling coastal sand dunes at Mambrui in Kilifi County"
+             loading="lazy">
+
     </div>
-
-    <img class="intro-image"
-      src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes1.jpg"
-      alt="Rolling coastal sand dunes at Mambrui in Kilifi County"
-      loading="lazy">
-
-  </div>
 </section>
 
 <!-- HIGHLIGHTS -->
-<section class="highlights">
-  <div class="container">
+<section class="section alt">
+    <div class="wrap">
 
-    <div class="section-tag">Tour Highlights</div>
+        <div class="eyebrow">Tour Highlights</div>
 
-    <h2>What to Look Forward To</h2>
+        <h2>What to Look Forward To</h2>
 
-    <p class="lead">
-      A relaxed coastal outing combining scenic landscapes,
-      outdoor exploration and optional locally arranged activities.
-    </p>
-
-    <div class="cards">
-
-      <article class="card">
-        <div class="number">01</div>
-        <h3>Explore the Sand Dunes</h3>
-        <p>
-          Walk through the beautiful rolling dunes and enjoy
-          the unusual landscape shaped by coastal winds and sand.
+        <p class="lead">
+            A relaxed coastal outing combining scenic landscapes,
+            outdoor exploration and optional locally arranged activities.
         </p>
-      </article>
 
-      <article class="card">
-        <div class="number">02</div>
-        <h3>Photography Opportunities</h3>
-        <p>
-          Capture the contrasting colours of the sandy landscape,
-          coastal vegetation and nearby Indian Ocean scenery.
-        </p>
-      </article>
+        <div class="mambrui-cards">
 
-      <article class="card">
-        <div class="number">03</div>
-        <h3>Optional Adventure Activities</h3>
-        <p>
-          Ask about locally operated experiences such as quad biking,
-          horse riding or other activities available on your travel date.
-        </p>
-      </article>
+            <article class="mambrui-card">
+                <div class="mambrui-card-number">01</div>
+                <h3>Explore the Sand Dunes</h3>
+                <p>
+                    Walk through the beautiful rolling dunes and enjoy
+                    the unusual landscape shaped by coastal winds and sand.
+                </p>
+            </article>
 
+            <article class="mambrui-card">
+                <div class="mambrui-card-number">02</div>
+                <h3>Photography Opportunities</h3>
+                <p>
+                    Capture the contrasting colours of the sandy landscape,
+                    coastal vegetation and nearby Indian Ocean scenery.
+                </p>
+            </article>
+
+            <article class="mambrui-card">
+                <div class="mambrui-card-number">03</div>
+                <h3>Optional Adventure Activities</h3>
+                <p>
+                    Ask about locally operated experiences such as quad biking,
+                    horse riding or other activities available on your travel date.
+                </p>
+            </article>
+
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ITINERARY -->
-<section id="itinerary">
-  <div class="container">
+<section class="section" id="itinerary">
+    <div class="wrap">
 
-    <div class="section-tag">Your Day Experience</div>
+        <div class="eyebrow">Your Day Experience</div>
 
-    <h2>Mambrui Sand Dunes Itinerary</h2>
+        <h2>Mambrui Sand Dunes Itinerary</h2>
 
-    <p class="lead">
-      The following is a suggested full-day programme. The exact
-      schedule can be adjusted depending on your pickup location,
-      selected activities and local operating arrangements.
-    </p>
-
-    <!-- STOP 1 -->
-    <div class="itinerary">
-
-      <img class="day-image"
-        src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes.jpg"
-        alt="Sand formations and dune landscape in Mambrui"
-        loading="lazy">
-
-      <div class="day-copy">
-
-        <div class="day-label">Morning · Departure</div>
-
-        <h3>Hotel Pickup and Journey to Mambrui</h3>
-
-        <p>
-          Begin your day with pickup from your agreed hotel or
-          meeting point in Malindi, Watamu or another confirmed
-          coastal location.
+        <p class="lead">
+            The following is a suggested full-day programme. The exact
+            schedule can be adjusted depending on your pickup location,
+            selected activities and local operating arrangements.
         </p>
 
-        <p>
-          Travel towards Mambrui, passing through the coastal
-          surroundings and nearby settlements before reaching
-          the sand dune area.
-        </p>
+        <!-- STOP 1 -->
+        <div class="mambrui-itinerary">
 
-        <ul>
-          <li>Pickup from your agreed location.</li>
-          <li>Scenic road transfer towards Mambrui.</li>
-          <li>Arrival and orientation with the local guide or operator.</li>
-        </ul>
+            <img class="mambrui-day-image"
+                 src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes.jpg"
+                 alt="Sand formations and dune landscape in Mambrui"
+                 loading="lazy">
 
-      </div>
+            <div class="mambrui-day-copy">
+
+                <div class="mambrui-day-label">Morning · Departure</div>
+
+                <h3>Hotel Pickup and Journey to Mambrui</h3>
+
+                <p>
+                    Begin your day with pickup from your agreed hotel or
+                    meeting point in Malindi, Watamu or another confirmed
+                    coastal location.
+                </p>
+
+                <p>
+                    Travel towards Mambrui, passing through the coastal
+                    surroundings and nearby settlements before reaching
+                    the sand dune area.
+                </p>
+
+                <ul>
+                    <li>Pickup from your agreed location.</li>
+                    <li>Scenic road transfer towards Mambrui.</li>
+                    <li>Arrival and orientation with the local guide or operator.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- STOP 2 -->
+        <div class="mambrui-itinerary">
+
+            <img class="mambrui-day-image"
+                 src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes3.jpg"
+                 alt="Coastal dune scenery in Mambrui"
+                 loading="lazy">
+
+            <div class="mambrui-day-copy">
+
+                <div class="mambrui-day-label">Morning · Main attraction</div>
+
+                <h3>Explore the Mambrui Sand Dunes</h3>
+
+                <p>
+                    Spend time exploring the dunes with a local guide.
+                    Walk along suitable sections, enjoy the changing
+                    sandy formations and take in the open coastal views.
+                </p>
+
+                <p>
+                    Your guide can help identify suitable photography
+                    locations and explain the natural landscape and
+                    the importance of respecting the surrounding environment.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- STOP 3 -->
+        <div class="mambrui-itinerary">
+
+            <img class="mambrui-day-image"
+                 src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes4.jpg"
+                 alt="Mambrui coastal sand landscape"
+                 loading="lazy">
+
+            <div class="mambrui-day-copy">
+
+                <div class="mambrui-day-label">Midday · Optional activities</div>
+
+                <h3>Adventure and Local Experiences</h3>
+
+                <p>
+                    If you wish to add more adventure to your visit, ask
+                    about activities offered by local operators. Depending
+                    on availability, these may include quad biking,
+                    horse riding or other experiences.
+                </p>
+
+                <p>
+                    Activities are optional and may require separate
+                    payment. Confirm the operator, price, duration,
+                    safety equipment and applicable restrictions before
+                    participating.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- STOP 4 -->
+        <div class="mambrui-itinerary">
+
+            <img class="mambrui-day-image"
+                 src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes2.jpg"
+                 alt="Mambrui dunes and coastal landscape"
+                 loading="lazy">
+
+            <div class="mambrui-day-copy">
+
+                <div class="mambrui-day-label">Afternoon · Relaxation and return</div>
+
+                <h3>Final Photography and Return Journey</h3>
+
+                <p>
+                    Enjoy some final time appreciating the landscape
+                    and taking photographs before leaving the dune area.
+                    Lunch or refreshments can be arranged according to
+                    your selected package.
+                </p>
+
+                <p>
+                    After the visit, meet your driver for the return
+                    transfer to your hotel or agreed drop-off point,
+                    bringing your Mambrui day tour to an end.
+                </p>
+
+            </div>
+        </div>
+
     </div>
-
-    <!-- STOP 2 -->
-    <div class="itinerary">
-
-      <img class="day-image"
-        src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes3.jpg"
-        alt="Coastal dune scenery in Mambrui"
-        loading="lazy">
-
-      <div class="day-copy">
-
-        <div class="day-label">Morning · Main attraction</div>
-
-        <h3>Explore the Mambrui Sand Dunes</h3>
-
-        <p>
-          Spend time exploring the dunes with a local guide.
-          Walk along suitable sections, enjoy the changing
-          sandy formations and take in the open coastal views.
-        </p>
-
-        <p>
-          Your guide can help identify suitable photography
-          locations and explain the natural landscape and
-          the importance of respecting the surrounding environment.
-        </p>
-
-      </div>
-    </div>
-
-    <!-- STOP 3 -->
-    <div class="itinerary">
-
-      <img class="day-image"
-        src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes4.jpg"
-        alt="Mambrui coastal sand landscape"
-        loading="lazy">
-
-      <div class="day-copy">
-
-        <div class="day-label">Midday · Optional activities</div>
-
-        <h3>Adventure and Local Experiences</h3>
-
-        <p>
-          If you wish to add more adventure to your visit, ask
-          about activities offered by local operators. Depending
-          on availability, these may include quad biking,
-          horse riding or other experiences.
-        </p>
-
-        <p>
-          Activities are optional and may require separate
-          payment. Confirm the operator, price, duration,
-          safety equipment and applicable restrictions before
-          participating.
-        </p>
-
-      </div>
-    </div>
-
-    <!-- STOP 4 -->
-    <div class="itinerary">
-
-      <img class="day-image"
-        src="https://abirikenya.com/wp-content/uploads/2024/07/mambrui-sand-dunes2.jpg"
-        alt="Mambrui dunes and coastal landscape"
-        loading="lazy">
-
-      <div class="day-copy">
-
-        <div class="day-label">Afternoon · Relaxation and return</div>
-
-        <h3>Final Photography and Return Journey</h3>
-
-        <p>
-          Enjoy some final time appreciating the landscape
-          and taking photographs before leaving the dune area.
-          Lunch or refreshments can be arranged according to
-          your selected package.
-        </p>
-
-        <p>
-          After the visit, meet your driver for the return
-          transfer to your hotel or agreed drop-off point,
-          bringing your Mambrui day tour to an end.
-        </p>
-
-      </div>
-    </div>
-
-  </div>
 </section>
 
 <!-- TOUR DETAILS -->
-<section class="details">
-  <div class="container">
+<section class="section alt">
+    <div class="wrap">
 
-    <div class="section-tag">Plan Your Visit</div>
+        <div class="eyebrow">Plan Your Visit</div>
 
-    <h2>What's Included in Your Quote?</h2>
+        <h2>What's Included in Your Quote?</h2>
 
-    <p class="lead">
-      Your quotation will depend on the number of guests,
-      pickup location and activities you choose.
-    </p>
-
-    <div class="detail-grid">
-
-      <div class="detail-box">
-        <h3>Possible Inclusions</h3>
-
-        <ul>
-          <li>Transport from the agreed pickup location.</li>
-          <li>Services of a local guide, where arranged.</li>
-          <li>Visit to the Mambrui Sand Dunes.</li>
-          <li>Local site or access charges, where applicable.</li>
-          <li>Lunch or refreshments, if selected.</li>
-          <li>Optional activities, only where specifically included.</li>
-        </ul>
-      </div>
-
-      <div class="detail-box">
-        <h3>Not Automatically Included</h3>
-
-        <ul>
-          <li>Optional quad biking or horse riding.</li>
-          <li>Personal expenses and gratuities.</li>
-          <li>Meals and drinks not stated in the quotation.</li>
-          <li>Additional transfers outside the agreed route.</li>
-          <li>Activities or services requested during the tour.</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="price-panel">
-
-      <div>
-        <div class="eyebrow">Your Coastal Adventure</div>
-
-        <h2>Request Your Mambrui Tour Quote</h2>
-
-        <p>
-          Share your preferred travel date, number of guests
-          and pickup location for a tailored quotation.
+        <p class="lead">
+            Your quotation will depend on the number of guests,
+            pickup location and activities you choose.
         </p>
-      </div>
 
-      <a class="btn primary"
-         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20please%20send%20me%20a%20quote%20for%20the%20Mambrui%20Sand%20Dunes%20Day%20Tour.">
-        Get a Quote
-      </a>
+        <div class="mambrui-detail-grid">
+
+            <div class="mambrui-detail-box">
+                <h3>Possible Inclusions</h3>
+
+                <ul>
+                    <li>Transport from the agreed pickup location.</li>
+                    <li>Services of a local guide, where arranged.</li>
+                    <li>Visit to the Mambrui Sand Dunes.</li>
+                    <li>Local site or access charges, where applicable.</li>
+                    <li>Lunch or refreshments, if selected.</li>
+                    <li>Optional activities, only where specifically included.</li>
+                </ul>
+            </div>
+
+            <div class="mambrui-detail-box">
+                <h3>Not Automatically Included</h3>
+
+                <ul>
+                    <li>Optional quad biking or horse riding.</li>
+                    <li>Personal expenses and gratuities.</li>
+                    <li>Meals and drinks not stated in the quotation.</li>
+                    <li>Additional transfers outside the agreed route.</li>
+                    <li>Activities or services requested during the tour.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="mambrui-price-panel">
+
+            <div>
+                <div class="eyebrow">Your Coastal Adventure</div>
+
+                <h2>Request Your Mambrui Tour Quote</h2>
+
+                <p>
+                    Share your preferred travel date, number of guests
+                    and pickup location for a tailored quotation.
+                </p>
+            </div>
+
+            <a class="btn btn-gold"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20please%20send%20me%20a%20quote%20for%20the%20Mambrui%20Sand%20Dunes%20Day%20Tour."
+               target="_blank" rel="noopener">
+                Get a Quote
+            </a>
+
+        </div>
 
     </div>
-
-  </div>
 </section>
 
 <!-- TRAVEL INFORMATION -->
-<section>
-  <div class="container">
+<section class="section">
+    <div class="wrap">
 
-    <div class="section-tag">Before You Travel</div>
+        <div class="eyebrow">Before You Travel</div>
 
-    <h2>Useful Tour Information</h2>
+        <h2>Useful Tour Information</h2>
 
-    <div class="detail-grid">
+        <div class="mambrui-detail-grid">
 
-      <div class="detail-box">
-        <h3>What to Bring</h3>
+            <div class="mambrui-detail-box">
+                <h3>What to Bring</h3>
 
-        <ul>
-          <li>Comfortable walking shoes or sandals.</li>
-          <li>Light and comfortable clothing.</li>
-          <li>Hat, sunglasses and sunscreen.</li>
-          <li>Drinking water.</li>
-          <li>Camera or phone for photography.</li>
-          <li>Some cash for optional local activities.</li>
-        </ul>
-      </div>
+                <ul>
+                    <li>Comfortable walking shoes or sandals.</li>
+                    <li>Light and comfortable clothing.</li>
+                    <li>Hat, sunglasses and sunscreen.</li>
+                    <li>Drinking water.</li>
+                    <li>Camera or phone for photography.</li>
+                    <li>Some cash for optional local activities.</li>
+                </ul>
+            </div>
 
-      <div class="detail-box">
-        <h3>Good to Know</h3>
+            <div class="mambrui-detail-box">
+                <h3>Good to Know</h3>
 
-        <ul>
-          <li>Walking on soft sand can be physically demanding.</li>
-          <li>Temperatures and wind conditions can vary.</li>
-          <li>Optional activities depend on local availability.</li>
-          <li>Follow local guide instructions around the dunes.</li>
-          <li>Confirm all charges and activity arrangements before travel.</li>
-          <li>Do not assume swimming is safe at the nearby shoreline.</li>
-        </ul>
-      </div>
+                <ul>
+                    <li>Walking on soft sand can be physically demanding.</li>
+                    <li>Temperatures and wind conditions can vary.</li>
+                    <li>Optional activities depend on local availability.</li>
+                    <li>Follow local guide instructions around the dunes.</li>
+                    <li>Confirm all charges and activity arrangements before travel.</li>
+                    <li>Do not assume swimming is safe at the nearby shoreline.</li>
+                </ul>
+            </div>
+
+        </div>
 
     </div>
-
-  </div>
 </section>
 
 <!-- CALL TO ACTION -->
-<section class="cta">
-  <div class="container">
+<section class="section mambrui-cta">
+    <div class="wrap">
 
-    <div class="section-tag">Explore. Experience. Enjoy.</div>
+        <div class="eyebrow">Explore. Experience. Enjoy.</div>
 
-    <h2>Discover Mambrui with Fleypat Adventures</h2>
+        <h2>Discover Mambrui with Fleypat Adventures</h2>
 
-    <p>
-      Experience one of Kenya's distinctive coastal landscapes.
-      Contact us to arrange your Mambrui Sand Dunes day tour.
-    </p>
+        <p>
+            Experience one of Kenya's distinctive coastal landscapes.
+            Contact us to arrange your Mambrui Sand Dunes day tour.
+        </p>
 
-    <a class="btn"
-       href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20visiting%20the%20Mambrui%20Sand%20Dunes.">
-      Plan My Tour
-    </a>
+        <a class="btn"
+           href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20visiting%20the%20Mambrui%20Sand%20Dunes."
+           target="_blank" rel="noopener">
+            Plan My Tour
+        </a>
 
-  </div>
+    </div>
 </section>
 
 </main>
 
 <!-- FOOTER -->
-<footer>
-  <div class="container">
+<footer class="footer">
+    <div class="wrap">
 
-    <div class="footer-grid">
+        <div class="footer-grid">
 
-      <div>
-        <h3>Fleypat Adventures</h3>
-        <p>
-          Your adventure begins here. Discover Kenya through
-          memorable safaris, coastal escapes and authentic
-          travel experiences.
-        </p>
-      </div>
+            <div>
+                <h3>Fleypat Adventures</h3>
+                <p>
+                    Your adventure begins here. Discover Kenya through
+                    memorable safaris, coastal escapes and authentic
+                    travel experiences.
+                </p>
+            </div>
 
-      <div>
-        <h3>Explore</h3>
-        <a href="safaris.html">Kenya Safaris</a>
-        <a href="day-trips.html">Day Trips</a>
-        <a href="marine-tours.html">Marine Tours</a>
-        <a href="beach-holidays.html">Beach Holidays</a>
-      </div>
+            <div>
+                <h3>Explore</h3>
+                <a href="safaris.html">Kenya Safaris</a>
+                <a href="day-trips.html">Day Trips</a>
+                <a href="marine-tours.html">Marine Tours</a>
+                <a href="beach-holidays.html">Beach Holidays</a>
+            </div>
 
-      <div>
-        <h3>Company</h3>
-        <a href="about.html">About Us</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="blog.html">Travel Blog</a>
-        <a href="contact.html">Contact</a>
-      </div>
+            <div>
+                <h3>Company</h3>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="blog.html">Travel Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-      <div>
-        <h3>Contact</h3>
-        <p>Mombasa, Kenya</p>
-        <a href="tel:+254704261626">+254 704 261 626</a>
-        <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-        <a href="https://instagram.com/fleypat_adventures">Instagram</a>
-      </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Mombasa, Kenya</p>
+                <a href="tel:+254704261626">+254 704 261 626</a>
+                <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+                <a href="https://instagram.com/fleypat_adventures" target="_blank" rel="noopener">Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="foot-bottom">
+            © 2026 Fleypat Adventures. All rights reserved.
+        </div>
 
     </div>
-
-    <div class="copyright">
-      © 2026 Fleypat Adventures. All rights reserved.
-    </div>
-
-  </div>
 </footer>
 
-<a class="whatsapp"
+<a class="float-wa"
    href="https://wa.me/254704261626"
    target="_blank"
-   rel="noopener">
-  WhatsApp Us
+   rel="noopener"
+   aria-label="Chat with Fleypat Adventures on WhatsApp">
+    WhatsApp Us
 </a>
 
 </body>
