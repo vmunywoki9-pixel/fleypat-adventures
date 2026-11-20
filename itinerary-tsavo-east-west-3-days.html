@@ -5,9 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>3-Day Tsavo East &amp; West Safari | Fleypat Adventures</title>
-<meta name="description" content="Experience a 3-day Tsavo East and Tsavo West safari from Mombasa. Discover red-earth landscapes, elephants, Mzima Springs and Kenya's diverse wildlife.">
-<meta name="theme-color" content="#a8d832">
+<title>3-Day Tsavo East &amp; West Safari from Mombasa | Fleypat Adventures</title>
+<meta name="description" content="Experience a 3-day Tsavo East and Tsavo West safari from Mombasa. Discover red-earth landscapes, elephants, Mzima Springs and Kenya's diverse wildlife with Fleypat Adventures.">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,134 +16,9 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
-  --green:#243c28;
-  --lime:#a8d832;
-  --cream:#fbf7e9;
-  --gold:#a97832;
-  --text:#30372e;
-  --muted:#73796f;
-  --line:#e9e6da;
-}
+/* PAGE-SPECIFIC STYLES */
 
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:'DM Sans',sans-serif;
-  color:var(--text);
-  background:#fff;
-  line-height:1.7;
-}
-
-a{text-decoration:none}
-.wrap{width:min(1160px,92%);margin:auto}
-
-/* TOP BAR */
-
-.topline{
-  background:var(--green);
-  color:#fff;
-  font-size:12px;
-  padding:9px 0;
-}
-
-.top-inner{
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-.topline a{color:#fff}
-
-/* HEADER */
-
-.header{
-  background:#fff;
-  position:sticky;
-  top:0;
-  z-index:100;
-  box-shadow:0 5px 22px rgba(0,0,0,.06);
-}
-
-.nav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  min-height:86px;
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  color:var(--green);
-  font-weight:800;
-  font-size:22px;
-  line-height:1.05;
-  letter-spacing:1px;
-  flex-shrink:0;
-}
-
-.brand img{
-  width:65px;
-  height:65px;
-  object-fit:contain;
-}
-
-.brand small{
-  display:block;
-  font-size:10px;
-  letter-spacing:4px;
-  font-weight:700;
-  margin-top:5px;
-}
-
-.nav nav{
-  display:flex;
-  align-items:center;
-  justify-content:flex-end;
-  flex-wrap:wrap;
-  gap:5px;
-}
-
-.nav nav a{
-  color:#354234;
-  font-size:11px;
-  font-weight:700;
-  padding:9px 8px;
-  border-radius:4px;
-}
-
-.nav nav a:hover,
-.nav nav a.active{
-  color:var(--green);
-  background:#f1f6e7;
-}
-
-.nav nav .nav-book{
-  background:var(--lime);
-  color:var(--green);
-  padding:11px 17px;
-  margin-left:5px;
-}
-
-.nav-toggle{
-  display:none;
-  border:0;
-  background:var(--green);
-  color:#fff;
-  border-radius:5px;
-  padding:9px 13px;
-  font-size:20px;
-  cursor:pointer;
-}
-
-/* HERO */
-
-.page-hero{
+.tsavo-hero{
   min-height:590px;
   display:flex;
   align-items:center;
@@ -151,18 +26,18 @@ a{text-decoration:none}
   isolation:isolate;
   color:#fff;
   background:
-    linear-gradient(90deg,rgba(12,29,18,.83),rgba(12,29,18,.48) 58%,rgba(12,29,18,.12)),
-    url('https://commons.wikimedia.org/wiki/Special:FilePath/Tsavo_east_panorama.jpg?width=2000') center/cover no-repeat;
+    linear-gradient(90deg,rgba(43,29,19,.84),rgba(43,29,19,.48) 58%,rgba(43,29,19,.12)),
+    url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat;
 }
 
-.hero-content{
+.tsavo-hero-content{
   max-width:780px;
   padding:90px 0;
 }
 
-.eyebrow{
+.tsavo-hero .eyebrow{
   display:inline-block;
-  color:var(--lime);
+  color:#F5B477;
   text-transform:uppercase;
   letter-spacing:3px;
   font-size:12px;
@@ -170,77 +45,58 @@ a{text-decoration:none}
   margin-bottom:17px;
 }
 
-.page-hero h1{
+.tsavo-hero h1{
   font-family:'Playfair Display',serif;
   font-size:clamp(42px,6vw,72px);
   line-height:1.08;
+  color:#fff;
   margin:0 0 22px;
 }
 
-.page-hero p{
+.tsavo-hero p{
   font-size:17px;
   max-width:650px;
-  color:#f3f3ed;
+  color:#fff7ef;
   margin:0 0 30px;
 }
 
-.hero-actions{
+.tsavo-hero-actions{
   display:flex;
   flex-wrap:wrap;
   gap:12px;
 }
 
-.btn{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  background:var(--lime);
-  color:var(--green);
-  padding:14px 23px;
-  border-radius:4px;
-  font-size:13px;
-  font-weight:800;
-  transition:.2s ease;
+.tsavo-hero .btn{
+  background:#E8752A;
+  color:#fff;
 }
 
-.btn:hover{
-  transform:translateY(-2px);
-  filter:brightness(.96);
-}
-
-.btn-outline{
+.tsavo-hero .btn-outline{
   background:transparent;
-  border:1px solid rgba(255,255,255,.75);
+  border:1px solid rgba(255,255,255,.8);
   color:#fff;
 }
 
-.btn-gold{
-  background:var(--gold);
+.tsavo-quick-strip{
+  background:#A66A42;
   color:#fff;
 }
 
-/* QUICK DETAILS */
-
-.quick-strip{
-  background:var(--green);
-  color:#fff;
-}
-
-.quick-grid{
+.tsavo-quick-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
 }
 
-.quick-item{
+.tsavo-quick-item{
   padding:22px 20px;
-  border-right:1px solid rgba(255,255,255,.15);
+  border-right:1px solid rgba(255,255,255,.2);
 }
 
-.quick-item:last-child{border-right:0}
+.tsavo-quick-item:last-child{border-right:0}
 
-.quick-item span{
+.tsavo-quick-item span{
   display:block;
-  color:#c9d6b7;
+  color:#F8D9C0;
   font-size:10px;
   text-transform:uppercase;
   letter-spacing:2px;
@@ -248,30 +104,29 @@ a{text-decoration:none}
   margin-bottom:5px;
 }
 
-.quick-item strong{
+.tsavo-quick-item strong{
   font-size:14px;
   font-weight:700;
 }
 
-/* GENERAL SECTIONS */
-
-.section{padding:85px 0}
-.section-soft{background:var(--cream)}
-
-.section-heading{
-  max-width:740px;
-  margin-bottom:42px;
+.tsavo-section{
+  padding:85px 0;
 }
 
-.section-heading.center{
-  text-align:center;
-  margin-left:auto;
-  margin-right:auto;
+.tsavo-section.soft{
+  background:#FFF4E8;
 }
 
-.section-kicker{
+.tsavo-intro-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:55px;
+  align-items:center;
+}
+
+.tsavo-kicker{
   display:block;
-  color:var(--gold);
+  color:#C66B35;
   text-transform:uppercase;
   letter-spacing:2.5px;
   font-size:11px;
@@ -279,101 +134,96 @@ a{text-decoration:none}
   margin-bottom:12px;
 }
 
-h2,h3{color:var(--green)}
+.tsavo-heading{
+  max-width:740px;
+  margin-bottom:42px;
+}
 
-h2{
+.tsavo-heading.center{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.tsavo-section h2{
   font-family:'Playfair Display',serif;
+  color:#754D35;
   font-size:clamp(29px,4vw,42px);
   line-height:1.2;
   margin:0 0 18px;
 }
 
-h3{
+.tsavo-section h3{
   font-family:'Playfair Display',serif;
+  color:#754D35;
   font-size:23px;
   margin:0 0 12px;
 }
 
-p{margin:0 0 17px}
-
-.lead{
+.tsavo-lead{
   font-size:16px;
-  color:#626b5f;
+  color:#806B5B;
 }
 
-/* INTRO */
-
-.intro-grid{
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:55px;
-  align-items:center;
-}
-
-.intro-image{
+.tsavo-intro-image{
   height:440px;
   overflow:hidden;
-  border-radius:5px;
-  box-shadow:0 18px 45px rgba(31,49,31,.10);
 }
 
-.intro-image img{
+.tsavo-intro-image img{
   width:100%;
   height:100%;
   object-fit:cover;
   display:block;
 }
 
-.feature-list{
+.tsavo-feature-list{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:15px;
   margin-top:25px;
 }
 
-.feature{
+.tsavo-feature{
   display:flex;
   align-items:flex-start;
   gap:10px;
   font-size:13px;
   font-weight:700;
+  color:#74533D;
 }
 
-.feature-mark{
+.tsavo-feature-mark{
   width:25px;
   height:25px;
   flex:0 0 25px;
   display:grid;
   place-items:center;
-  background:#edf4df;
-  color:var(--green);
-  border-radius:50%;
+  background:#FBE1CE;
+  color:#B85B20;
   font-size:13px;
 }
 
-/* PARK HIGHLIGHTS */
-
-.highlights{
+.tsavo-highlights{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:25px;
 }
 
-.highlight-card{
+.tsavo-highlight-card{
   background:#fff;
-  border:1px solid var(--line);
+  border:1px solid #EAD8C7;
   padding:30px;
-  border-radius:5px;
 }
 
-.highlight-card p{
-  color:#626b5f;
+.tsavo-highlight-card p{
+  color:#806B5B;
   font-size:14px;
   margin-bottom:0;
 }
 
-.highlight-number{
-  color:var(--gold);
+.tsavo-highlight-number{
+  color:#C66B35;
   font-size:11px;
   font-weight:800;
   letter-spacing:2px;
@@ -382,29 +232,25 @@ p{margin:0 0 17px}
   margin-bottom:10px;
 }
 
-/* ITINERARY */
-
-.itinerary-list{
+.tsavo-itinerary-list{
   display:grid;
   gap:26px;
 }
 
-.day-card{
+.tsavo-day-card{
   display:grid;
   grid-template-columns:300px 1fr;
   background:#fff;
-  border:1px solid var(--line);
-  border-radius:5px;
+  border:1px solid #EAD8C7;
   overflow:hidden;
-  box-shadow:0 10px 30px rgba(0,0,0,.045);
 }
 
-.day-image{
+.tsavo-day-image{
   min-height:300px;
   position:relative;
 }
 
-.day-image img{
+.tsavo-day-image img{
   width:100%;
   height:100%;
   position:absolute;
@@ -412,11 +258,13 @@ p{margin:0 0 17px}
   object-fit:cover;
 }
 
-.day-content{padding:30px 34px}
+.tsavo-day-content{
+  padding:30px 34px;
+}
 
-.day-label{
+.tsavo-day-label{
   display:inline-block;
-  color:var(--gold);
+  color:#C66B35;
   font-size:11px;
   font-weight:800;
   text-transform:uppercase;
@@ -424,278 +272,187 @@ p{margin:0 0 17px}
   margin-bottom:9px;
 }
 
-.day-content h3{
+.tsavo-day-content h3{
   font-size:25px;
   margin-bottom:12px;
 }
 
-.day-content p{
-  color:#626b5f;
+.tsavo-day-content p{
+  color:#806B5B;
   font-size:14px;
 }
 
-.day-details{
+.tsavo-day-details{
   display:flex;
   flex-wrap:wrap;
   gap:10px 20px;
   margin-top:18px;
-  color:var(--green);
+  color:#A66A42;
   font-size:12px;
   font-weight:700;
 }
 
-/* INFORMATION */
-
-.info-grid{
+.tsavo-info-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:25px;
 }
 
-.info-card{
+.tsavo-info-card{
   padding:30px;
   background:#fff;
-  border:1px solid var(--line);
-  border-radius:5px;
+  border:1px solid #EAD8C7;
 }
 
-.info-card ul{
+.tsavo-info-card h3{
+  margin-bottom:14px;
+}
+
+.tsavo-info-card ul{
   padding-left:20px;
   margin:10px 0 0;
 }
 
-.info-card li{
+.tsavo-info-card li{
   padding:5px 0;
   font-size:14px;
-  color:#626b5f;
+  color:#806B5B;
 }
 
-.note{
+.tsavo-note{
   margin-top:25px;
   padding:20px 23px;
-  background:#f1f5e9;
-  border-left:4px solid var(--lime);
+  background:#FBE8D9;
+  border-left:4px solid #E8752A;
   font-size:13px;
-  color:#53604c;
+  color:#74533D;
 }
 
-/* BOOKING */
-
-.detail-layout{
+.tsavo-detail-layout{
   display:grid;
   grid-template-columns:minmax(0,1fr) 340px;
   gap:45px;
   align-items:start;
 }
 
-.side-panel{
-  background:var(--cream);
-  border:1px solid #eee7d6;
+.tsavo-side-panel{
+  background:#FFF4E8;
+  border:1px solid #EAD8C7;
   padding:30px;
-  border-radius:5px;
   position:sticky;
   top:110px;
 }
 
-.side-panel h3{
+.tsavo-side-panel h3{
   font-size:25px;
   margin-bottom:23px;
 }
 
-.overview-row{
+.tsavo-overview-row{
   padding:14px 0;
-  border-bottom:1px solid #e5dfcf;
+  border-bottom:1px solid #EAD8C7;
 }
 
-.overview-row span{
+.tsavo-overview-row span{
   display:block;
   font-size:10px;
   text-transform:uppercase;
   letter-spacing:1.5px;
-  color:#7d806e;
+  color:#897264;
   font-weight:800;
 }
 
-.overview-row strong{
+.tsavo-overview-row strong{
   display:block;
-  color:var(--green);
+  color:#754D35;
   font-size:14px;
   margin-top:4px;
 }
 
-.side-panel .btn{
+.tsavo-side-panel .btn{
   width:100%;
   margin-top:22px;
 }
 
-.side-panel .muted{
+.tsavo-side-panel .muted{
   font-size:12px;
-  color:var(--muted);
+  color:#897264;
   margin:15px 0 0;
 }
 
-/* CTA */
-
-.cta{
+.tsavo-cta{
   margin-top:75px;
   margin-bottom:75px;
   padding:48px;
-  background:var(--green);
+  background:#A66A42;
   color:#fff;
   display:flex;
   justify-content:space-between;
   align-items:center;
   gap:25px;
-  border-radius:5px;
 }
 
-.cta h2{color:#fff;margin-bottom:10px}
-.cta p{color:#d6dfcf;margin:0}
-.cta .btn{flex-shrink:0}
-
-/* FOOTER */
-
-.footer{
-  background:#17291c;
-  color:#dce4d8;
-  padding:65px 0 20px;
-}
-
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.4fr 1fr 1fr 1.2fr;
-  gap:40px;
-}
-
-.footer-brand{color:#fff;margin-bottom:20px}
-
-.footer-brand img{
-  width:65px;
-  height:65px;
-}
-
-.footer p{
-  font-size:13px;
-  color:#bdc9ba;
-  max-width:300px;
-}
-
-.footer h3{
-  color:var(--lime);
-  font-family:'DM Sans',sans-serif;
-  font-size:13px;
-  text-transform:uppercase;
-  letter-spacing:1.5px;
-  margin-bottom:20px;
-}
-
-.footer-grid>div>a:not(.brand),
-.footer-grid>div>span{
-  display:block;
-  color:#dce4d8;
-  font-size:13px;
-  margin:10px 0;
-}
-
-.footer a:hover{color:var(--lime)}
-
-.foot-bottom{
-  border-top:1px solid rgba(255,255,255,.13);
-  margin-top:45px;
-  padding-top:20px;
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-  font-size:11px;
-  color:#aebbaa;
-}
-
-.float-wa{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:90;
-  background:#25d366;
+.tsavo-cta h2{
   color:#fff;
-  padding:13px 19px;
-  border-radius:40px;
-  font-weight:800;
-  font-size:13px;
-  box-shadow:0 8px 25px rgba(0,0,0,.2);
+  margin-bottom:10px;
 }
 
-/* RESPONSIVE */
+.tsavo-cta p{
+  color:#F8E5D6;
+  margin:0;
+}
+
+.tsavo-cta .btn{
+  flex-shrink:0;
+  background:#E8752A;
+  color:#fff;
+}
 
 @media(max-width:1050px){
-  .nav{min-height:76px}
-  .nav-toggle{display:block}
-
-  .nav nav{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    right:0;
-    background:#fff;
-    padding:15px 4%;
-    box-shadow:0 15px 25px rgba(0,0,0,.1);
-    max-height:75vh;
-    overflow:auto;
-    align-items:stretch;
-  }
-
-  .nav nav.open{display:flex}
-  .nav nav a{width:100%;padding:11px}
-  .nav nav .nav-book{margin:5px 0}
+  .tsavo-quick-grid{grid-template-columns:repeat(2,1fr)}
 }
 
 @media(max-width:800px){
-  .intro-grid,.detail-layout{grid-template-columns:1fr}
-  .intro-image{height:340px}
-  .day-card{grid-template-columns:230px 1fr}
-  .side-panel{position:static}
-  .footer-grid{grid-template-columns:1fr 1fr}
+  .tsavo-intro-grid,
+  .tsavo-detail-layout{
+    grid-template-columns:1fr;
+  }
+
+  .tsavo-intro-image{height:340px}
+  .tsavo-day-card{grid-template-columns:230px 1fr}
+  .tsavo-side-panel{position:static}
 }
 
 @media(max-width:580px){
-  .top-inner{justify-content:center;text-align:center}
-  .brand{font-size:19px}
-  .brand img{width:54px;height:54px}
+  .tsavo-hero{min-height:520px}
+  .tsavo-hero-content{padding:75px 0}
+  .tsavo-hero h1{font-size:43px}
+  .tsavo-hero p{font-size:15px}
 
-  .page-hero{min-height:520px}
-  .hero-content{padding:75px 0}
-  .page-hero h1{font-size:43px}
-  .page-hero p{font-size:15px}
-
-  .quick-grid{grid-template-columns:1fr 1fr}
-  .quick-item{
-    border-right:1px solid rgba(255,255,255,.15);
-    border-bottom:1px solid rgba(255,255,255,.15);
+  .tsavo-quick-item{
     padding:16px;
+    border-bottom:1px solid rgba(255,255,255,.2);
   }
 
-  .section{padding:65px 0}
-  .feature-list{grid-template-columns:1fr}
-  .highlights{grid-template-columns:1fr}
+  .tsavo-section{padding:65px 0}
+  .tsavo-feature-list,
+  .tsavo-highlights,
+  .tsavo-info-grid{
+    grid-template-columns:1fr;
+  }
 
-  .day-card{grid-template-columns:1fr}
-  .day-image{height:230px;min-height:230px}
-  .day-content{padding:24px}
+  .tsavo-day-card{grid-template-columns:1fr}
+  .tsavo-day-image{height:230px;min-height:230px}
+  .tsavo-day-content{padding:24px}
+  .tsavo-info-card{padding:23px}
 
-  .info-grid{grid-template-columns:1fr}
-  .info-card{padding:23px}
-
-  .cta{
+  .tsavo-cta{
     padding:30px 24px;
     margin-top:55px;
     margin-bottom:55px;
     align-items:flex-start;
     flex-direction:column;
   }
-
-  .footer-grid{grid-template-columns:1fr}
-  .foot-bottom{flex-direction:column}
 }
 </style>
 </head>
@@ -704,7 +461,7 @@ p{margin:0 0 17px}
 
 <div class="topline">
   <div class="wrap top-inner">
-    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+    <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
     <span>
       <a href="tel:+254704261626">+254 704 261 626</a>
       ·
@@ -721,18 +478,19 @@ p{margin:0 0 17px}
       <span>FLEYPAT<small>ADVENTURES</small></span>
     </a>
 
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <button class="nav-toggle" id="menuToggle" type="button"
+      aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
 
-    <nav>
+    <nav id="mainNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="safaris.html">Safaris</a>
+      <a href="safaris.html" class="active">Safaris</a>
       <a href="marine-tours.html">Marine Tours</a>
       <a href="day-trips.html">Day Trips</a>
       <a href="beach-holidays.html">Beach Holidays</a>
       <a href="honeymoon.html">Honeymoons</a>
       <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html" class="active">Itineraries</a>
+      <a href="itineraries.html">Itineraries</a>
       <a href="services.html">Services</a>
       <a href="transfers.html">Transfers</a>
       <a href="blog.html">Blog</a>
@@ -746,11 +504,8 @@ p{margin:0 0 17px}
 
 <main>
 
-<!-- HERO -->
-
-<section class="page-hero">
-  <div class="wrap hero-content">
-
+<section class="tsavo-hero">
+  <div class="wrap tsavo-hero-content">
     <span class="eyebrow">3 Days · 2 Nights · Kenya Safari</span>
 
     <h1>Tsavo East &amp; West Safari</h1>
@@ -762,7 +517,7 @@ p{margin:0 0 17px}
       scenery, springs and volcanic features of Tsavo West.
     </p>
 
-    <div class="hero-actions">
+    <div class="tsavo-hero-actions">
       <a class="btn" href="contact.html?tour=tsavo-east-west-3-days">
         Plan This Safari
       </a>
@@ -773,49 +528,38 @@ p{margin:0 0 17px}
         WhatsApp Us
       </a>
     </div>
-
   </div>
 </section>
 
-<!-- QUICK DETAILS -->
-
-<section class="quick-strip">
-  <div class="wrap quick-grid">
-
-    <div class="quick-item">
+<section class="tsavo-quick-strip">
+  <div class="wrap tsavo-quick-grid">
+    <div class="tsavo-quick-item">
       <span>Duration</span>
       <strong>3 Days / 2 Nights</strong>
     </div>
-
-    <div class="quick-item">
+    <div class="tsavo-quick-item">
       <span>Starting Point</span>
       <strong>Mombasa</strong>
     </div>
-
-    <div class="quick-item">
+    <div class="tsavo-quick-item">
       <span>Destinations</span>
       <strong>Tsavo East &amp; West</strong>
     </div>
-
-    <div class="quick-item">
+    <div class="tsavo-quick-item">
       <span>Indicative Price</span>
       <strong>From USD 420</strong>
     </div>
-
   </div>
 </section>
 
-<!-- INTRODUCTION -->
-
-<section class="section">
-  <div class="wrap intro-grid">
+<section class="tsavo-section">
+  <div class="wrap tsavo-intro-grid">
 
     <div>
-      <span class="section-kicker">Discover Tsavo</span>
-
+      <span class="tsavo-kicker">Discover Tsavo</span>
       <h2>Two Parks. One Remarkable Safari.</h2>
 
-      <p class="lead">
+      <p class="tsavo-lead">
         Tsavo East and Tsavo West together form one of Kenya's
         best-known wilderness regions, offering varied landscapes,
         wildlife encounters and memorable safari experiences.
@@ -841,42 +585,40 @@ p{margin:0 0 17px}
         search for wildlife with your driver-guide.
       </p>
 
-      <div class="feature-list">
-        <div class="feature"><span class="feature-mark">✓</span> Two national parks</div>
-        <div class="feature"><span class="feature-mark">✓</span> Wildlife game drives</div>
-        <div class="feature"><span class="feature-mark">✓</span> Tsavo's red elephants</div>
-        <div class="feature"><span class="feature-mark">✓</span> Mzima Springs visit option</div>
+      <div class="tsavo-feature-list">
+        <div class="tsavo-feature"><span class="tsavo-feature-mark">✓</span> Two national parks</div>
+        <div class="tsavo-feature"><span class="tsavo-feature-mark">✓</span> Wildlife game drives</div>
+        <div class="tsavo-feature"><span class="tsavo-feature-mark">✓</span> Tsavo's red elephants</div>
+        <div class="tsavo-feature"><span class="tsavo-feature-mark">✓</span> Mzima Springs visit option</div>
       </div>
     </div>
 
-    <div class="intro-image">
+    <div class="tsavo-intro-image">
       <img
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Red_roads_of_Tsavo_East.jpeg?width=1200"
-        alt="Red-earth landscape and open scenery in Tsavo East National Park"
+        src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85"
+        alt="African safari landscape with wildlife in a natural wilderness"
         loading="lazy">
     </div>
 
   </div>
 </section>
 
-<!-- DESTINATION HIGHLIGHTS -->
-
-<section class="section section-soft">
+<section class="tsavo-section soft">
   <div class="wrap">
 
-    <div class="section-heading center">
-      <span class="section-kicker">Two Distinct Wilderness Areas</span>
+    <div class="tsavo-heading center">
+      <span class="tsavo-kicker">Two Distinct Wilderness Areas</span>
       <h2>What Makes This Safari Special?</h2>
-      <p class="lead">
+      <p class="tsavo-lead">
         Experience the contrasting character of Tsavo East and
         Tsavo West during one carefully planned safari.
       </p>
     </div>
 
-    <div class="highlights">
+    <div class="tsavo-highlights">
 
-      <article class="highlight-card">
-        <span class="highlight-number">01 · Tsavo East</span>
+      <article class="tsavo-highlight-card">
+        <span class="tsavo-highlight-number">01 · Tsavo East</span>
         <h3>Red-Earth Landscapes and Elephant Country</h3>
         <p>
           Tsavo East is known for its broad open spaces, red soil,
@@ -886,8 +628,8 @@ p{margin:0 0 17px}
         </p>
       </article>
 
-      <article class="highlight-card">
-        <span class="highlight-number">02 · Tsavo West</span>
+      <article class="tsavo-highlight-card">
+        <span class="tsavo-highlight-number">02 · Tsavo West</span>
         <h3>Springs, Volcanic Scenery and Rugged Terrain</h3>
         <p>
           Tsavo West has a more varied landscape, including rocky
@@ -898,42 +640,34 @@ p{margin:0 0 17px}
       </article>
 
     </div>
-
   </div>
 </section>
 
-<!-- ITINERARY -->
-
-<section class="section">
+<section class="tsavo-section">
   <div class="wrap">
 
-    <div class="section-heading">
-      <span class="section-kicker">Your Safari Journey</span>
+    <div class="tsavo-heading">
+      <span class="tsavo-kicker">Your Safari Journey</span>
       <h2>Detailed 3-Day Safari Itinerary</h2>
-      <p class="lead">
+      <p class="tsavo-lead">
         The following programme is a suggested route from Mombasa.
         Actual departure times, accommodation and park activities
         will be confirmed according to your travel dates and booking.
       </p>
     </div>
 
-    <div class="itinerary-list">
+    <div class="tsavo-itinerary-list">
 
-      <!-- DAY 1 -->
-
-      <article class="day-card">
-
-        <div class="day-image">
+      <article class="tsavo-day-card">
+        <div class="tsavo-day-image">
           <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Elephants_and_birds.Tsavo_East_National_Park_-_panoramio.jpg?width=1200"
-            alt="Elephants in Tsavo East National Park"
+            src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1000&q=85"
+            alt="African elephants moving through their natural habitat"
             loading="lazy">
         </div>
 
-        <div class="day-content">
-
-          <span class="day-label">Day 1 · Mombasa to Tsavo East</span>
-
+        <div class="tsavo-day-content">
+          <span class="tsavo-day-label">Day 1 · Mombasa to Tsavo East</span>
           <h3>Journey into Tsavo East National Park</h3>
 
           <p>
@@ -963,30 +697,24 @@ p{margin:0 0 17px}
             for dinner and overnight accommodation.
           </p>
 
-          <div class="day-details">
+          <div class="tsavo-day-details">
             <span>✓ Mombasa pickup</span>
             <span>✓ Tsavo East game drive</span>
             <span>✓ Dinner and overnight stay</span>
           </div>
-
         </div>
       </article>
 
-      <!-- DAY 2 -->
-
-      <article class="day-card">
-
-        <div class="day-image">
+      <article class="tsavo-day-card">
+        <div class="tsavo-day-image">
           <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Mzima_Springs_in_Kenya_01.jpg?width=1200"
-            alt="Natural spring waters at Mzima Springs in Tsavo West"
+            src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1000&q=85"
+            alt="Lush natural spring vegetation and clear water"
             loading="lazy">
         </div>
 
-        <div class="day-content">
-
-          <span class="day-label">Day 2 · Tsavo East to Tsavo West</span>
-
+        <div class="tsavo-day-content">
+          <span class="tsavo-day-label">Day 2 · Tsavo East to Tsavo West</span>
           <h3>Explore Tsavo West and Discover Mzima Springs</h3>
 
           <p>
@@ -1016,31 +744,25 @@ p{margin:0 0 17px}
             and overnight accommodation.
           </p>
 
-          <div class="day-details">
+          <div class="tsavo-day-details">
             <span>✓ Morning game drive</span>
             <span>✓ Transfer to Tsavo West</span>
             <span>✓ Mzima Springs if included</span>
             <span>✓ Dinner and overnight stay</span>
           </div>
-
         </div>
       </article>
 
-      <!-- DAY 3 -->
-
-      <article class="day-card">
-
-        <div class="day-image">
+      <article class="tsavo-day-card">
+        <div class="tsavo-day-image">
           <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Shetani_Lava_Flow_in_Tsavo_West_National_Park_in_Kenya.jpg?width=1200"
-            alt="Shetani Lava Flow volcanic landscape in Tsavo West National Park"
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+            alt="Rugged volcanic mountain scenery in a dramatic natural landscape"
             loading="lazy">
         </div>
 
-        <div class="day-content">
-
-          <span class="day-label">Day 3 · Tsavo West to Mombasa</span>
-
+        <div class="tsavo-day-content">
+          <span class="tsavo-day-label">Day 3 · Tsavo West to Mombasa</span>
           <h3>Final Game Drive and Return to Mombasa</h3>
 
           <p>
@@ -1064,12 +786,11 @@ p{margin:0 0 17px}
             location.
           </p>
 
-          <div class="day-details">
+          <div class="tsavo-day-details">
             <span>✓ Breakfast</span>
             <span>✓ Final game drive</span>
             <span>✓ Return transfer to Mombasa</span>
           </div>
-
         </div>
       </article>
 
@@ -1077,24 +798,22 @@ p{margin:0 0 17px}
   </div>
 </section>
 
-<!-- INCLUSIONS -->
-
-<section class="section section-soft">
+<section class="tsavo-section soft">
   <div class="wrap">
 
-    <div class="section-heading">
-      <span class="section-kicker">Your Safari Arrangements</span>
+    <div class="tsavo-heading">
+      <span class="tsavo-kicker">Your Safari Arrangements</span>
       <h2>What's Included and Excluded?</h2>
-      <p class="lead">
+      <p class="tsavo-lead">
         Your final package will be tailored to the accommodation
         category, travel dates, group size and transport arrangements
         selected.
       </p>
     </div>
 
-    <div class="info-grid">
+    <div class="tsavo-info-grid">
 
-      <div class="info-card">
+      <div class="tsavo-info-card">
         <h3>Possible Inclusions</h3>
         <ul>
           <li>Safari transport in the selected safari vehicle</li>
@@ -1107,7 +826,7 @@ p{margin:0 0 17px}
         </ul>
       </div>
 
-      <div class="info-card">
+      <div class="tsavo-info-card">
         <h3>Possible Exclusions</h3>
         <ul>
           <li>Personal travel insurance</li>
@@ -1121,7 +840,7 @@ p{margin:0 0 17px}
 
     </div>
 
-    <div class="note">
+    <div class="tsavo-note">
       <strong>Important:</strong>
       These are planning guidelines, not a final package confirmation.
       Your written quotation will clearly state the accommodation,
@@ -1134,20 +853,18 @@ p{margin:0 0 17px}
   </div>
 </section>
 
-<!-- TRAVEL INFORMATION -->
-
-<section class="section">
+<section class="tsavo-section">
   <div class="wrap">
 
-    <div class="section-heading">
-      <span class="section-kicker">Before You Travel</span>
+    <div class="tsavo-heading">
+      <span class="tsavo-kicker">Before You Travel</span>
       <h2>Useful Safari Information</h2>
     </div>
 
-    <div class="highlights">
+    <div class="tsavo-highlights">
 
-      <article class="highlight-card">
-        <span class="highlight-number">What to Pack</span>
+      <article class="tsavo-highlight-card">
+        <span class="tsavo-highlight-number">What to Pack</span>
         <h3>Prepare for Your Safari</h3>
         <p>
           Bring comfortable clothing, walking shoes, a hat,
@@ -1157,8 +874,8 @@ p{margin:0 0 17px}
         </p>
       </article>
 
-      <article class="highlight-card">
-        <span class="highlight-number">Wildlife Viewing</span>
+      <article class="tsavo-highlight-card">
+        <span class="tsavo-highlight-number">Wildlife Viewing</span>
         <h3>Enjoy the Experience Responsibly</h3>
         <p>
           Wildlife sightings vary with season, weather and animal
@@ -1169,21 +886,17 @@ p{margin:0 0 17px}
       </article>
 
     </div>
-
   </div>
 </section>
 
-<!-- BOOKING -->
-
-<section class="section section-soft">
-  <div class="wrap detail-layout">
+<section class="tsavo-section soft">
+  <div class="wrap tsavo-detail-layout">
 
     <div>
-      <span class="section-kicker">Make This Safari Yours</span>
-
+      <span class="tsavo-kicker">Make This Safari Yours</span>
       <h2>Book Your 3-Day Tsavo Adventure</h2>
 
-      <p class="lead">
+      <p class="tsavo-lead">
         Experience the contrasting beauty of Tsavo East and Tsavo
         West with a safari planned around your travel preferences.
       </p>
@@ -1206,36 +919,35 @@ p{margin:0 0 17px}
         accommodation, park charges and travel arrangements.
       </p>
 
-      <a class="btn" href="contact.html?tour=tsavo-east-west-3-days">
+      <a class="btn btn-gold" href="contact.html?tour=tsavo-east-west-3-days">
         Enquire About This Safari
       </a>
     </div>
 
-    <aside class="side-panel">
-
+    <aside class="tsavo-side-panel">
       <h3>Safari Overview</h3>
 
-      <div class="overview-row">
+      <div class="tsavo-overview-row">
         <span>Duration</span>
         <strong>3 Days / 2 Nights</strong>
       </div>
 
-      <div class="overview-row">
+      <div class="tsavo-overview-row">
         <span>Destinations</span>
         <strong>Tsavo East and Tsavo West</strong>
       </div>
 
-      <div class="overview-row">
+      <div class="tsavo-overview-row">
         <span>Starting Point</span>
         <strong>Mombasa or agreed pickup point</strong>
       </div>
 
-      <div class="overview-row">
+      <div class="tsavo-overview-row">
         <span>Accommodation</span>
         <strong>Selected safari lodge or camp</strong>
       </div>
 
-      <div class="overview-row">
+      <div class="tsavo-overview-row">
         <span>Indicative Price</span>
         <strong>From USD 420 / KES 54,000 per person</strong>
       </div>
@@ -1248,15 +960,12 @@ p{margin:0 0 17px}
         Final pricing is confirmed after receiving your dates,
         group size and preferred accommodation category.
       </p>
-
     </aside>
 
   </div>
 </section>
 
-<!-- FINAL CTA -->
-
-<section class="wrap cta">
+<section class="wrap tsavo-cta">
   <div>
     <h2>Ready to Explore Tsavo?</h2>
     <p>
@@ -1265,7 +974,7 @@ p{margin:0 0 17px}
     </p>
   </div>
 
-  <a class="btn btn-gold"
+  <a class="btn"
      href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20a%20quotation%20for%20the%203-day%20Tsavo%20East%20and%20West%20safari."
      target="_blank" rel="noopener">
     Chat With Our Team
@@ -1273,8 +982,6 @@ p{margin:0 0 17px}
 </section>
 
 </main>
-
-<!-- FOOTER -->
 
 <footer class="footer">
   <div class="wrap footer-grid">
@@ -1326,7 +1033,7 @@ p{margin:0 0 17px}
   </div>
 
   <div class="wrap foot-bottom">
-    <span>© <span id="year"></span> Fleypat Adventures. All rights reserved.</span>
+    <span>© <span data-year></span> Fleypat Adventures. All rights reserved.</span>
     <span>Explore More. Experience More. Travel Beyond Expectations.</span>
   </div>
 </footer>
@@ -1334,26 +1041,40 @@ p{margin:0 0 17px}
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
    target="_blank"
-   rel="noopener">
+   rel="noopener"
+   aria-label="Chat with Fleypat Adventures on WhatsApp">
   WhatsApp Us
 </a>
 
 <script src="script.js"></script>
 
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-const navToggle = document.querySelector('.nav-toggle');
-const navigation = document.querySelector('.nav nav');
-
-if (navToggle && navigation) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = navigation.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', isOpen);
-    navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-    navToggle.textContent = isOpen ? '✕' : '☰';
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-year]').forEach(function (element) {
+    element.textContent = new Date().getFullYear();
   });
-}
+
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
+        toggle.textContent = '☰';
+      });
+    });
+  }
+});
 </script>
 
 </body>
