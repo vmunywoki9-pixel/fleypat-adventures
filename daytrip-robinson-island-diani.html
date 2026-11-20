@@ -7,178 +7,383 @@
 
 <title>Robinson Island Diani Sandbank Tour | Fleypat Adventures</title>
 <meta name="description" content="Enjoy a half-day Robinson Island sandbank excursion from Diani Beach. Experience a glass-bottom boat ride, optional snorkelling, swimming and beautiful Indian Ocean scenery with Fleypat Adventures.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="styles.css">
+
 <style>
-:root {
-    --lime:#a8d832;
-    --cream:#fbf7e9;
-    --green:#243c28;
-    --green2:#36543a;
-    --gold:#a97832;
-    --text:#263329;
-    --muted:#68736a;
-    --line:#e8e8dc;
-    --shadow:0 15px 45px rgba(30,45,31,.10);
+/* Robinson Island page-specific styles */
+
+.robinson-facts {
+    position: relative;
+    z-index: 3;
+    margin-top: -38px;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:'DM Sans',sans-serif;color:var(--text);line-height:1.7}
-img{display:block;width:100%;object-fit:cover}
-a{color:inherit;text-decoration:none}
-.container{width:min(1160px,calc(100% - 40px));margin:auto}
-.topbar{background:var(--green);color:#fff;padding:9px 0;font-size:12px}
-.topbar-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-.topbar a{color:var(--lime)}
-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.nav-wrap{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.brand img{width:180px;max-height:68px;object-fit:contain}
-nav{display:flex;align-items:center;gap:19px}
-nav a{font-size:12px;font-weight:700;color:var(--green);white-space:nowrap}
-nav a:hover{color:var(--gold)}
-nav .book-link{background:var(--lime);padding:12px 17px;border-radius:3px}
-.menu-toggle{display:none;border:0;background:var(--green);color:#fff;padding:10px 13px;border-radius:3px;cursor:pointer}
 
-.hero{
-    min-height:600px;
-    position:relative;
-    display:flex;
-    align-items:center;
-    color:#fff;
-    background:
-    linear-gradient(90deg,rgba(10,30,34,.78),rgba(10,30,34,.22)),
-    url("https://static.wixstatic.com/media/8f03c2_2d492628fc9e4f8ea94c98f3fb00336a~mv2.jpg/v1/fill/w_1600%2Ch_1050%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_auto/8f03c2_2d492628fc9e4f8ea94c98f3fb00336a~mv2.jpg") center/cover no-repeat;
+.robinson-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #fff;
+    border: 1px solid #EAD8C7;
+    box-shadow: 0 15px 40px rgba(80, 50, 30, .10);
 }
-.hero-content{max-width:760px;padding:95px 0}
-.eyebrow{color:var(--lime);font-size:11px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(42px,6vw,72px);line-height:1.08;margin:17px 0;font-weight:600}
-.hero p{font-size:17px;max-width:620px;color:rgba(255,255,255,.9);margin-bottom:30px}
-.btn{display:inline-flex;justify-content:center;align-items:center;padding:14px 22px;border-radius:3px;font-size:13px;font-weight:800;transition:.2s}
-.btn-primary{background:var(--lime);color:var(--green)}
-.btn-outline{border:1px solid rgba(255,255,255,.75);color:#fff;margin-left:8px}
-.btn:hover{transform:translateY(-2px)}
 
-.quick-info{position:relative;z-index:2;margin-top:-38px}
-.info-grid{background:#fff;box-shadow:var(--shadow);border-radius:5px;display:grid;grid-template-columns:repeat(4,1fr);padding:24px 15px}
-.info-item{padding:5px 20px;border-right:1px solid var(--line)}
-.info-item:last-child{border:0}
-.info-item small{display:block;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase}
-.info-item strong{display:block;color:var(--green);font-size:14px;margin-top:5px}
-
-section{padding:85px 0}
-.section-heading{max-width:720px;margin-bottom:35px}
-.section-heading.center{text-align:center;margin-left:auto;margin-right:auto}
-.section-heading h2{font-family:'Playfair Display',serif;color:var(--green);font-size:clamp(31px,4vw,46px);line-height:1.2;margin:10px 0 15px}
-.section-heading p{color:var(--muted)}
-
-.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
-.intro-image{height:440px;border-radius:5px;box-shadow:var(--shadow)}
-.intro-copy h2{font-family:'Playfair Display',serif;color:var(--green);font-size:40px;line-height:1.2;margin:12px 0 20px}
-.intro-copy p{color:var(--muted)}
-.check-list{padding:0;list-style:none;margin:22px 0}
-.check-list li{margin:10px 0;padding-left:27px;position:relative;font-size:14px}
-.check-list li:before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:900}
-
-.highlights{background:var(--cream)}
-.highlight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.highlight-card{background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 25px rgba(30,45,31,.06)}
-.highlight-card img{height:220px}
-.highlight-card div{padding:22px}
-.highlight-card h3{font-family:'Playfair Display',serif;color:var(--green);font-size:23px;margin:0 0 8px}
-.highlight-card p{color:var(--muted);font-size:13px;margin:0}
-
-.itinerary-list{display:grid;gap:25px}
-.day-card{display:grid;grid-template-columns:40% 1fr;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#fff}
-.day-card:nth-child(even){grid-template-columns:1fr 40%}
-.day-card:nth-child(even) .day-image{order:2}
-.day-image{min-height:300px;height:100%}
-.day-content{padding:30px}
-.day-number{display:inline-block;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
-.day-content h3{font-family:'Playfair Display',serif;color:var(--green);font-size:27px;margin:7px 0 12px}
-.day-content p{color:var(--muted);font-size:14px}
-.day-content ul{padding-left:19px;color:var(--muted);font-size:13px}
-.note{background:var(--cream);border-left:4px solid var(--gold);padding:18px 22px;margin-top:28px;color:var(--muted);font-size:13px}
-
-.details-section{background:var(--cream)}
-.details-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.detail-box{background:#fff;border-radius:5px;padding:30px}
-.detail-box h3{font-family:'Playfair Display',serif;color:var(--green);font-size:25px;margin:0 0 18px}
-.detail-box ul{padding-left:20px;color:var(--muted);font-size:14px}
-.travel-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
-.travel-note{border:1px solid var(--line);padding:22px;border-radius:4px;background:#fff}
-.travel-note h4{color:var(--green);margin:0 0 8px}
-.travel-note p{color:var(--muted);font-size:13px;margin:0}
-
-.price-panel{background:var(--green);color:#fff;border-radius:5px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:30px}
-.price-panel h2{font-family:'Playfair Display',serif;font-size:32px;margin:5px 0 10px}
-.price-panel p{color:rgba(255,255,255,.78);margin:0;max-width:650px;font-size:14px}
-.price-panel .btn{flex-shrink:0}
-
-.cta{background:linear-gradient(135deg,#1d3928,#31533c);color:#fff;text-align:center;padding:85px 20px}
-.cta h2{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,47px);margin:10px 0}
-.cta p{color:rgba(255,255,255,.82);max-width:650px;margin:0 auto 25px}
-
-footer{background:#17291b;color:#fff;padding:65px 0 20px}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:35px}
-.footer-logo{width:170px;max-height:75px;object-fit:contain;object-position:left;margin-bottom:15px}
-footer h4{color:var(--lime);margin:0 0 16px}
-footer p,footer a{color:rgba(255,255,255,.72);font-size:13px}
-footer a{display:block;margin:8px 0}
-footer a:hover{color:var(--lime)}
-.copyright{border-top:1px solid rgba(255,255,255,.13);margin-top:40px;padding-top:20px;text-align:center;color:rgba(255,255,255,.55);font-size:12px}
-.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:999;background:#20c66a;color:#fff;width:57px;height:57px;border-radius:50%;display:grid;place-items:center;font-size:25px;box-shadow:0 7px 22px rgba(0,0,0,.2)}
-
-@media(max-width:1050px){nav{gap:11px}nav a{font-size:11px}.brand img{width:145px}}
-@media(max-width:850px){
-.menu-toggle{display:block}
-nav{display:none;position:absolute;top:82px;left:0;right:0;background:#fff;padding:20px;flex-direction:column;align-items:stretch;box-shadow:var(--shadow);max-height:calc(100vh - 82px);overflow-y:auto}
-nav.open{display:flex}
-nav a{padding:9px 5px;font-size:13px}
-nav .book-link{text-align:center}
-.info-grid{grid-template-columns:repeat(2,1fr)}
-.info-item:nth-child(2){border-right:0}
-.info-item:nth-child(1),.info-item:nth-child(2){border-bottom:1px solid var(--line);padding-bottom:15px}
-.info-item:nth-child(3),.info-item:nth-child(4){padding-top:15px}
-.intro-grid{gap:30px}
-.footer-grid{grid-template-columns:repeat(2,1fr)}
+.robinson-fact {
+    padding: 23px 22px;
+    border-right: 1px solid #EAD8C7;
 }
-@media(max-width:650px){
-.container{width:min(100% - 30px,1160px)}
-.topbar-inner{justify-content:center;text-align:center}
-.hero{min-height:540px}
-.hero-content{padding:75px 0}
-.hero p{font-size:15px}
-.btn{padding:13px 16px}
-.btn-outline{margin:10px 0 0}
-section{padding:65px 0}
-.info-grid{padding:15px 8px}
-.info-item{padding-left:12px;padding-right:12px}
-.info-item strong{font-size:12px}
-.intro-grid,.highlight-grid,.details-grid,.travel-notes{grid-template-columns:1fr}
-.intro-image{height:300px}
-.intro-copy h2{font-size:33px}
-.highlight-card img{height:230px}
-.day-card,.day-card:nth-child(even){grid-template-columns:1fr}
-.day-card:nth-child(even) .day-image{order:0}
-.day-image{min-height:230px;height:230px}
-.day-content{padding:23px}
-.day-content h3{font-size:24px}
-.price-panel{display:block;padding:28px}
-.price-panel .btn{margin-top:22px}
-.footer-grid{grid-template-columns:1fr 1fr;gap:25px 18px}
+
+.robinson-fact:last-child {
+    border-right: 0;
 }
-@media(max-width:390px){.footer-grid{grid-template-columns:1fr}}
+
+.robinson-fact small {
+    display: block;
+    color: #897264;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.robinson-fact strong {
+    display: block;
+    color: #6B4935;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.robinson-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.robinson-intro-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.robinson-intro-copy h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6B4935;
+    font-size: clamp(32px, 4vw, 43px);
+    line-height: 1.2;
+    margin: 12px 0 20px;
+}
+
+.robinson-intro-copy p {
+    color: #897264;
+}
+
+.robinson-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 22px 0;
+}
+
+.robinson-check-list li {
+    position: relative;
+    padding: 8px 0 8px 28px;
+    font-size: 14px;
+    color: #6B4935;
+}
+
+.robinson-check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #E8752A;
+    font-weight: 900;
+}
+
+.robinson-highlight-card {
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #EAD8C7;
+}
+
+.robinson-highlight-card img {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+}
+
+.robinson-highlight-content {
+    padding: 24px;
+}
+
+.robinson-highlight-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B4935;
+    font-size: 23px;
+    margin: 0 0 10px;
+}
+
+.robinson-highlight-content p {
+    color: #897264;
+    font-size: 13px;
+    margin: 0;
+}
+
+.robinson-itinerary {
+    display: grid;
+    gap: 25px;
+}
+
+.robinson-day {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    background: #fff;
+    border: 1px solid #EAD8C7;
+    overflow: hidden;
+}
+
+.robinson-day:nth-child(even) {
+    grid-template-columns: 1fr 40%;
+}
+
+.robinson-day:nth-child(even) .robinson-day-image {
+    order: 2;
+}
+
+.robinson-day-image {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.robinson-day-content {
+    padding: 30px;
+}
+
+.robinson-day-number {
+    display: inline-block;
+    color: #D96A25;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.robinson-day-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B4935;
+    font-size: 27px;
+    line-height: 1.25;
+    margin: 8px 0 13px;
+}
+
+.robinson-day-content p,
+.robinson-day-content li {
+    color: #897264;
+    font-size: 13px;
+}
+
+.robinson-day-content ul {
+    padding-left: 20px;
+}
+
+.robinson-note {
+    background: #FFF4E8;
+    border-left: 4px solid #E8752A;
+    padding: 20px 23px;
+    margin-top: 28px;
+    color: #6B4935;
+    font-size: 13px;
+}
+
+.robinson-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.robinson-detail-box {
+    background: #fff;
+    border: 1px solid #EAD8C7;
+    padding: 30px;
+}
+
+.robinson-detail-box h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B4935;
+    font-size: 25px;
+    margin: 0 0 16px;
+}
+
+.robinson-detail-box ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.robinson-detail-box li {
+    color: #897264;
+    font-size: 13px;
+    margin: 9px 0;
+}
+
+.robinson-travel-notes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.robinson-travel-note {
+    padding: 23px;
+    border: 1px solid #EAD8C7;
+    background: #FFFCF8;
+}
+
+.robinson-travel-note h4 {
+    color: #6B4935;
+    margin: 0 0 9px;
+    font-size: 15px;
+}
+
+.robinson-travel-note p {
+    color: #897264;
+    font-size: 13px;
+    margin: 0;
+}
+
+.robinson-price-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 38px;
+    background: #A66A42;
+    color: #fff;
+}
+
+.robinson-price-panel h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 8px 0 13px;
+}
+
+.robinson-price-panel p {
+    max-width: 680px;
+    color: rgba(255,255,255,.85);
+    font-size: 14px;
+    margin: 0;
+}
+
+.robinson-price-panel .btn {
+    flex-shrink: 0;
+}
+
+.robinson-cta {
+    text-align: center;
+}
+
+.robinson-cta .eyebrow {
+    color: #F09A58;
+}
+
+.robinson-cta p {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 1000px) {
+    .robinson-facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .robinson-fact:nth-child(2) {
+        border-right: 0;
+    }
+
+    .robinson-fact:nth-child(1),
+    .robinson-fact:nth-child(2) {
+        border-bottom: 1px solid #EAD8C7;
+    }
+
+    .robinson-intro {
+        gap: 30px;
+    }
+}
+
+@media(max-width: 760px) {
+    .robinson-intro,
+    .robinson-details-grid,
+    .robinson-travel-notes {
+        grid-template-columns: 1fr;
+    }
+
+    .robinson-intro-image {
+        height: 320px;
+    }
+
+    .robinson-day,
+    .robinson-day:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .robinson-day:nth-child(even) .robinson-day-image {
+        order: 0;
+    }
+
+    .robinson-day-image {
+        height: 240px;
+        min-height: 240px;
+    }
+
+    .robinson-day-content {
+        padding: 24px;
+    }
+
+    .robinson-day-content h3 {
+        font-size: 24px;
+    }
+
+    .robinson-price-panel {
+        display: block;
+        padding: 28px;
+    }
+
+    .robinson-price-panel .btn {
+        margin-top: 22px;
+    }
+}
+
+@media(max-width: 480px) {
+    .robinson-facts-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .robinson-fact {
+        padding: 17px 13px;
+    }
+
+    .robinson-fact strong {
+        font-size: 12px;
+    }
+
+    .robinson-detail-box {
+        padding: 23px;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-    <div class="container topbar-inner">
+<div class="topline">
+    <div class="wrap top-inner">
         <span>Mombasa, Kenya · Explore. Experience. Enjoy.</span>
         <span>
             <a href="tel:+254704261626">+254 704 261 626</a>
@@ -188,19 +393,21 @@ section{padding:65px 0}
     </div>
 </div>
 
-<header>
-    <div class="container nav-wrap">
+<header class="header">
+    <div class="wrap nav">
         <a class="brand" href="index.html" aria-label="Fleypat Adventures home">
             <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
         </a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <button class="nav-toggle" id="menuToggle" type="button"
+                aria-label="Open navigation" aria-expanded="false"
+                aria-controls="mainNav">☰</button>
 
-        <nav id="mainNav">
+        <nav id="mainNav" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="safaris.html">Safaris</a>
-            <a href="marine-tours.html">Marine Tours</a>
+            <a href="marine-tours.html" class="active">Marine Tours</a>
             <a href="day-trips.html">Day Trips</a>
             <a href="beach-holidays.html">Beach Holidays</a>
             <a href="honeymoons.html">Honeymoons</a>
@@ -210,15 +417,16 @@ section{padding:65px 0}
             <a href="transfers.html">Transfers</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
-            <a class="book-link" href="contact.html">Book Now</a>
+            <a class="nav-book" href="contact.html">Book Now</a>
         </nav>
     </div>
 </header>
 
 <main>
 
-<section class="hero">
-    <div class="container hero-content">
+<!-- HERO -->
+<section class="page-hero" style="--hero-image:url('https://static.wixstatic.com/media/8f03c2_2d492628fc9e4f8ea94c98f3fb00336a~mv2.jpg/v1/fill/w_1600%2Ch_1050%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_auto/8f03c2_2d492628fc9e4f8ea94c98f3fb00336a~mv2.jpg');">
+    <div class="wrap">
         <span class="eyebrow">Diani Beach · Indian Ocean</span>
         <h1>Robinson Island<br>Sandbank Escape</h1>
         <p>
@@ -226,49 +434,56 @@ section{padding:65px 0}
             boat, discover the marine environment and enjoy time on the
             beautiful Robinson Island sandbank when the tide reveals it.
         </p>
-        <a class="btn btn-primary" href="#itinerary">Explore the Itinerary</a>
-        <a class="btn btn-outline"
-           href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20the%20Robinson%20Island%20Tour%20in%20Diani."
-           target="_blank" rel="noopener">Enquire on WhatsApp</a>
+        <div class="actions">
+            <a class="btn btn-gold" href="#itinerary">Explore the Itinerary</a>
+            <a class="btn btn-outline"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20enquire%20about%20the%20Robinson%20Island%20Tour%20in%20Diani."
+               target="_blank" rel="noopener">Enquire on WhatsApp</a>
+        </div>
     </div>
 </section>
 
-<div class="container quick-info">
-    <div class="info-grid">
-        <div class="info-item">
+<!-- QUICK FACTS -->
+<div class="wrap robinson-facts">
+    <div class="robinson-facts-grid">
+        <div class="robinson-fact">
             <small>Duration</small>
             <strong>Half-Day Experience</strong>
         </div>
-        <div class="info-item">
+        <div class="robinson-fact">
             <small>Starting Point</small>
             <strong>Diani Beach</strong>
         </div>
-        <div class="info-item">
+        <div class="robinson-fact">
             <small>Experience</small>
             <strong>Boat & Sandbank</strong>
         </div>
-        <div class="info-item">
+        <div class="robinson-fact">
             <small>Departure</small>
             <strong>Timed Around Low Tide</strong>
         </div>
     </div>
 </div>
 
-<section>
-    <div class="container intro-grid">
-        <img class="intro-image"
+<!-- INTRODUCTION -->
+<section class="section">
+    <div class="wrap robinson-intro">
+        <img class="robinson-intro-image"
              src="https://static.wixstatic.com/media/8f03c2_7f50fe47526f4ce5a84b48a847805fcc~mv2.jpg/v1/fill/w_1200%2Ch_790%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_auto/8f03c2_7f50fe47526f4ce5a84b48a847805fcc~mv2.jpg"
-             alt="Small boat cruising through the clear waters off Diani Beach">
+             alt="Small boat cruising through the clear waters off Diani Beach"
+             loading="lazy">
 
-        <div class="intro-copy">
+        <div class="robinson-intro-copy">
             <span class="eyebrow">A Unique Coastal Experience</span>
-            <h2>Discover the Robinson Island sandbank</h2>
+            <h2>Discover the Robinson Island Sandbank</h2>
+
             <p>
                 Just offshore from Diani Beach, the place commonly known
                 as Robinson Island is a tidal sandbank surrounded by
                 shallow Indian Ocean waters. It becomes exposed around
                 low tide and is covered again as the water rises.
             </p>
+
             <p>
                 The excursion combines a scenic boat ride with the
                 opportunity to view the underwater environment through
@@ -276,7 +491,8 @@ section{padding:65px 0}
                 package selected, guests can also enjoy swimming,
                 snorkelling and time on the sandbank.
             </p>
-            <ul class="check-list">
+
+            <ul class="robinson-check-list">
                 <li>Glass-bottom boat excursion from Diani</li>
                 <li>Views of the clear coastal waters and reef environment</li>
                 <li>Time on the exposed sandbank at low tide</li>
@@ -287,23 +503,26 @@ section{padding:65px 0}
     </div>
 </section>
 
-<section class="highlights">
-    <div class="container">
-        <div class="section-heading center">
+<!-- TOUR HIGHLIGHTS -->
+<section class="section alt">
+    <div class="wrap">
+        <div class="section-head">
             <span class="eyebrow">Tour Highlights</span>
-            <h2>Enjoy the best of Diani's coastal waters</h2>
+            <h2>Enjoy the Best of Diani's Coastal Waters</h2>
             <p>
                 A relaxed half-day escape combining a boat excursion,
                 marine viewing and time around the sandbank.
             </p>
         </div>
 
-        <div class="highlight-grid">
+        <div class="grid cols-3">
 
-            <article class="highlight-card">
-                <img src="https://images.myguide-cdn.com/kenya/companies/diani-beach-robinson-island-glass-boat-tour-with-snorkeling/large/diani-beach-robinson-island-glass-boat-tour-with-snorkeling-6577999.jpg"
-                     alt="Visitors enjoying a glass-bottom boat excursion at Diani">
-                <div>
+            <article class="robinson-highlight-card">
+                <img
+                    src="https://images.myguide-cdn.com/kenya/companies/diani-beach-robinson-island-glass-boat-tour-with-snorkeling/large/diani-beach-robinson-island-glass-boat-tour-with-snorkeling-6577999.jpg"
+                    alt="Visitors enjoying a glass-bottom boat excursion at Diani"
+                    loading="lazy">
+                <div class="robinson-highlight-content">
                     <h3>Glass-Bottom Boat Ride</h3>
                     <p>
                         Travel over the coastal waters in a glass-bottom
@@ -313,10 +532,12 @@ section{padding:65px 0}
                 </div>
             </article>
 
-            <article class="highlight-card">
-                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/c3/01/39/caption.jpg?h=-1&s=1&w=1200"
-                     alt="Visitors and boats at a shallow Diani sandbank">
-                <div>
+            <article class="robinson-highlight-card">
+                <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/c3/01/39/caption.jpg?h=-1&s=1&w=1200"
+                    alt="Visitors and boats at a shallow Diani sandbank"
+                    loading="lazy">
+                <div class="robinson-highlight-content">
                     <h3>Sandbank Escape</h3>
                     <p>
                         Step onto the exposed sandbank when the tide
@@ -326,10 +547,12 @@ section{padding:65px 0}
                 </div>
             </article>
 
-            <article class="highlight-card">
-                <img src="https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D450%2Cheight%3D450%2Cdpr%3D2/tour_img/28f824420ba804e22f58584fa34fe3b90801a5b202e1c4da2281da5c2ebb32f3.jpg"
-                     alt="Guest enjoying the shallow turquoise water during a Diani boat excursion">
-                <div>
+            <article class="robinson-highlight-card">
+                <img
+                    src="https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D450%2Cheight%3D450%2Cdpr%3D2/tour_img/28f824420ba804e22f58584fa34fe3b90801a5b202e1c4da2281da5c2ebb32f3.jpg"
+                    alt="Guest enjoying the shallow turquoise water during a Diani boat excursion"
+                    loading="lazy">
+                <div class="robinson-highlight-content">
                     <h3>Swimming & Relaxation</h3>
                     <p>
                         Enjoy time in the shallow coastal waters.
@@ -343,9 +566,11 @@ section{padding:65px 0}
     </div>
 </section>
 
-<section id="itinerary">
-    <div class="container">
-        <div class="section-heading">
+<!-- ITINERARY -->
+<section class="section" id="itinerary">
+    <div class="wrap">
+
+        <div class="section-head">
             <span class="eyebrow">Your Robinson Island Experience</span>
             <h2>Detailed Half-Day Itinerary</h2>
             <p>
@@ -355,15 +580,16 @@ section{padding:65px 0}
             </p>
         </div>
 
-        <div class="itinerary-list">
+        <div class="robinson-itinerary">
 
-            <article class="day-card">
-                <img class="day-image"
+            <article class="robinson-day">
+                <img class="robinson-day-image"
                      src="https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dcenter%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/cbeb092ea3f0a48094a52b6c4bc22212c96113c4e44cb98bf23a88a701cdc465.jpeg"
-                     alt="Glass-bottom boat in the shallow waters near Robinson Island">
+                     alt="Glass-bottom boat in the shallow waters near Robinson Island"
+                     loading="lazy">
 
-                <div class="day-content">
-                    <span class="day-number">Stage 01 · Departure</span>
+                <div class="robinson-day-content">
+                    <span class="robinson-day-number">Stage 01 · Departure</span>
                     <h3>Meet Your Boat Crew</h3>
                     <p>
                         Begin at the agreed departure point along Diani
@@ -379,13 +605,14 @@ section{padding:65px 0}
                 </div>
             </article>
 
-            <article class="day-card">
-                <img class="day-image"
+            <article class="robinson-day">
+                <img class="robinson-day-image"
                      src="https://cdn.getyourguide.com/image/%7Boptions%7D/tour_img/828b0085d7176d67d7927c6f48255190d6dd22abe68721d272c61cb10e6542f0.jpg"
-                     alt="Glass-bottom boat travelling through the clear waters off Diani">
+                     alt="Glass-bottom boat travelling through the clear waters off Diani"
+                     loading="lazy">
 
-                <div class="day-content">
-                    <span class="day-number">Stage 02 · Ocean Cruise</span>
+                <div class="robinson-day-content">
+                    <span class="robinson-day-number">Stage 02 · Ocean Cruise</span>
                     <h3>Glass-Bottom Boat Experience</h3>
                     <p>
                         Set out across the Indian Ocean in a glass-bottom
@@ -400,13 +627,14 @@ section{padding:65px 0}
                 </div>
             </article>
 
-            <article class="day-card">
-                <img class="day-image"
+            <article class="robinson-day">
+                <img class="robinson-day-image"
                      src="https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dcenter%2Cquality%3D60%2Cwidth%3D450%2Cheight%3D450%2Cdpr%3D2/tour_img/b6957381dfad237d8d08bd28d14d716e95ad233477acd8814d2aa79256a8fc03.jpg"
-                     alt="Fish visible through the glass viewing panels of a boat">
+                     alt="Fish visible through the glass viewing panels of a boat"
+                     loading="lazy">
 
-                <div class="day-content">
-                    <span class="day-number">Stage 03 · Marine Discovery</span>
+                <div class="robinson-day-content">
+                    <span class="robinson-day-number">Stage 03 · Marine Discovery</span>
                     <h3>Optional Snorkelling & Reef Viewing</h3>
                     <p>
                         Depending on the operator's route and sea
@@ -424,13 +652,14 @@ section{padding:65px 0}
                 </div>
             </article>
 
-            <article class="day-card">
-                <img class="day-image"
+            <article class="robinson-day">
+                <img class="robinson-day-image"
                      src="https://elkydianibeachtaxis.co.ke/images/glass/3.jpeg"
-                     alt="Visitors enjoying the exposed Diani sandbank during low tide">
+                     alt="Visitors enjoying the exposed Diani sandbank during low tide"
+                     loading="lazy">
 
-                <div class="day-content">
-                    <span class="day-number">Stage 04 · Sandbank Time</span>
+                <div class="robinson-day-content">
+                    <span class="robinson-day-number">Stage 04 · Sandbank Time</span>
                     <h3>Relax at Robinson Island</h3>
                     <p>
                         Arrive at the sandbank when the tide has exposed
@@ -450,13 +679,14 @@ section{padding:65px 0}
                 </div>
             </article>
 
-            <article class="day-card">
-                <img class="day-image"
+            <article class="robinson-day">
+                <img class="robinson-day-image"
                      src="https://kachumbaritraveltour.com/assets/img/tours/robinson%20island%20tour%20diani.bottomglass%20boat.png"
-                     alt="Guests returning to the glass-bottom boat after their sandbank visit">
+                     alt="Guests returning to the glass-bottom boat after their sandbank visit"
+                     loading="lazy">
 
-                <div class="day-content">
-                    <span class="day-number">Stage 05 · Return Journey</span>
+                <div class="robinson-day-content">
+                    <span class="robinson-day-number">Stage 05 · Return Journey</span>
                     <h3>Boat Ride Back to Diani Beach</h3>
                     <p>
                         After your sandbank visit, board the boat for
@@ -475,7 +705,7 @@ section{padding:65px 0}
 
         </div>
 
-        <div class="note">
+        <div class="robinson-note">
             <strong>Tide and itinerary note:</strong>
             Robinson Island in Diani is a tidal sandbank, not a
             permanent island. It becomes exposed around low tide
@@ -483,12 +713,15 @@ section{padding:65px 0}
             The boat departure and time spent there must be
             arranged around the tide table and sea conditions.
         </div>
+
     </div>
 </section>
 
-<section class="details-section">
-    <div class="container">
-        <div class="section-heading center">
+<!-- TOUR INFORMATION -->
+<section class="section alt">
+    <div class="wrap">
+
+        <div class="section-head">
             <span class="eyebrow">Prepare for Your Excursion</span>
             <h2>Tour Information</h2>
             <p>
@@ -497,8 +730,9 @@ section{padding:65px 0}
             </p>
         </div>
 
-        <div class="details-grid">
-            <div class="detail-box">
+        <div class="robinson-details-grid">
+
+            <div class="robinson-detail-box">
                 <h3>What to Bring</h3>
                 <ul>
                     <li>Swimwear and a change of clothes</li>
@@ -510,7 +744,7 @@ section{padding:65px 0}
                 </ul>
             </div>
 
-            <div class="detail-box">
+            <div class="robinson-detail-box">
                 <h3>Marine Safety & Conservation</h3>
                 <ul>
                     <li>Follow the boat crew's safety briefing</li>
@@ -521,10 +755,12 @@ section{padding:65px 0}
                     <li>Keep children under close adult supervision</li>
                 </ul>
             </div>
+
         </div>
 
-        <div class="travel-notes">
-            <div class="travel-note">
+        <div class="robinson-travel-notes">
+
+            <div class="robinson-travel-note">
                 <h4>Tide-Dependent Departure</h4>
                 <p>
                     The departure time changes according to the tide.
@@ -532,7 +768,8 @@ section{padding:65px 0}
                     conditions for your travel date.
                 </p>
             </div>
-            <div class="travel-note">
+
+            <div class="robinson-travel-note">
                 <h4>Swimming & Snorkelling</h4>
                 <p>
                     Both are optional activities. Non-swimmers can
@@ -540,7 +777,8 @@ section{padding:65px 0}
                     viewing experience.
                 </p>
             </div>
-            <div class="travel-note">
+
+            <div class="robinson-travel-note">
                 <h4>Pickup & Transfers</h4>
                 <p>
                     Hotel transfers are subject to the package
@@ -548,13 +786,16 @@ section{padding:65px 0}
                     pickup arrangements when booking.
                 </p>
             </div>
+
         </div>
+
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <div class="price-panel">
+<!-- PRICE / ENQUIRY PANEL -->
+<section class="section">
+    <div class="wrap">
+        <div class="robinson-price-panel">
             <div>
                 <span class="eyebrow">Plan Your Diani Excursion</span>
                 <h2>Request Your Robinson Island Quote</h2>
@@ -567,15 +808,17 @@ section{padding:65px 0}
                     and exclusions clearly explained.
                 </p>
             </div>
-            <a class="btn btn-primary"
+
+            <a class="btn btn-gold"
                href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20please%20send%20me%20a%20quotation%20for%20the%20Robinson%20Island%20Tour%20in%20Diani."
                target="_blank" rel="noopener">Request a Quote</a>
         </div>
     </div>
 </section>
 
-<section class="cta">
-    <div class="container">
+<!-- FINAL CTA -->
+<section class="cta robinson-cta">
+    <div class="wrap">
         <span class="eyebrow">Discover the South Coast</span>
         <h2>Your Diani Ocean Escape Awaits</h2>
         <p>
@@ -583,24 +826,37 @@ section{padding:65px 0}
             beautiful coastal waters around Diani Beach with
             Fleypat Adventures. Contact us to arrange your trip.
         </p>
-        <a class="btn btn-primary"
-           href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Robinson%20Island%20excursion."
-           target="_blank" rel="noopener">Plan My Tour</a>
+
+        <div class="actions" style="justify-content:center;">
+            <a class="btn btn-gold"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Robinson%20Island%20excursion."
+               target="_blank" rel="noopener">Plan My Tour</a>
+
+            <a class="btn btn-outline" href="contact.html">Contact Us</a>
+        </div>
     </div>
 </section>
 
 </main>
 
-<footer>
-    <div class="container">
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="wrap">
+
         <div class="footer-grid">
+
             <div>
-                <img class="footer-logo" src="fleypat-logo.png" alt="Fleypat Adventures">
+                <a href="index.html">
+                    <img src="fleypat-logo.png"
+                         alt="Fleypat Adventures"
+                         style="width:170px;height:auto;object-fit:contain;margin-bottom:15px;">
+                </a>
                 <p>
                     Your adventure begins here. Discover Kenya and
                     beyond through memorable safaris, coastal escapes,
                     cultural experiences and tailor-made journeys.
                 </p>
+                <p>Explore. Experience. Enjoy.</p>
             </div>
 
             <div>
@@ -626,41 +882,63 @@ section{padding:65px 0}
                 <p>Mombasa, Kenya</p>
                 <a href="tel:+254704261626">+254 704 261 626</a>
                 <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-                <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://wa.me/254704261626" target="_blank" rel="noopener">WhatsApp Us</a>
+                <a href="https://www.instagram.com/fleypat_adventures/"
+                   target="_blank" rel="noopener">Instagram</a>
+                <a href="https://wa.me/254704261626"
+                   target="_blank" rel="noopener">WhatsApp Us</a>
             </div>
+
         </div>
 
-        <div class="copyright">
-            © <span id="year"></span> Fleypat Adventures. All Rights Reserved.
+        <div class="foot-bottom">
+            <p>
+                © <span id="year"></span> Fleypat Adventures.
+                All Rights Reserved.
+            </p>
+            <p>Explore. Experience. Enjoy.</p>
         </div>
+
     </div>
 </footer>
 
-<a class="whatsapp-float"
+<!-- FLOATING WHATSAPP -->
+<a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures"
    target="_blank" rel="noopener"
    aria-label="Chat with Fleypat Adventures on WhatsApp">✆</a>
 
 <script>
-const menuToggle = document.getElementById('menuToggle');
-const mainNav = document.getElementById('mainNav');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
 
-menuToggle.addEventListener('click', function () {
-    const isOpen = mainNav.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    menuToggle.textContent = isOpen ? '✕' : '☰';
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", function () {
+            const isOpen = mainNav.classList.toggle("open");
+
+            menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation" : "Open navigation"
+            );
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        mainNav.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                mainNav.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Open navigation");
+                menuToggle.textContent = "☰";
+            });
+        });
+    }
+
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 });
-
-mainNav.querySelectorAll('a').forEach(function(link) {
-    link.addEventListener('click', function() {
-        mainNav.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.textContent = '☰';
-    });
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
