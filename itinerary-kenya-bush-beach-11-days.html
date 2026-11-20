@@ -1,0 +1,1859 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>11-Day Kenya Bush & Beach Safari | Fleypat Adventures</title>
+<meta name="description" content="Discover Kenya on an 11-day private bush and beach safari from Maasai Mara to Mombasa, visiting Lake Naivasha, Ol Pejeta, Aberdare, Amboseli and Tsavo.">
+<meta name="theme-color" content="#E8752A">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* =========================================
+   11-DAY BUSH & BEACH SAFARI
+   Shared theme: styles.css
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 100px;
+}
+
+/* HERO */
+
+.bush-beach-hero {
+    min-height: 590px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    color: var(--white);
+    background:
+        linear-gradient(90deg, rgba(66,42,26,.88), rgba(66,42,26,.48) 62%, rgba(66,42,26,.12)),
+        linear-gradient(0deg, rgba(30,20,13,.48), transparent 70%),
+        url("kenya-bush-beach-hero.jpg") center center / cover no-repeat;
+}
+
+.bush-beach-hero .hero-copy {
+    max-width: 850px;
+    padding-top: 90px;
+    padding-bottom: 75px;
+}
+
+.bush-beach-hero .eyebrow {
+    color: #FFD0A5;
+    margin-bottom: 18px;
+}
+
+.bush-beach-hero h1 {
+    color: #fff;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.08;
+    max-width: 800px;
+    margin: 0 0 22px;
+}
+
+.bush-beach-hero p {
+    max-width: 720px;
+    color: rgba(255,255,255,.92);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.hero-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.hero-facts span {
+    display: inline-flex;
+    padding: 11px 15px;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.35);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hero-price {
+    margin: 23px 0;
+}
+
+.hero-price small {
+    display: block;
+    color: rgba(255,255,255,.78);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.hero-price strong {
+    display: block;
+    color: #FFD0A5;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+}
+
+/* QUICK INFORMATION */
+
+.quick-info {
+    position: relative;
+    z-index: 2;
+    background: var(--brown-dark);
+    color: white;
+}
+
+.quick-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.quick-info-item {
+    padding: 24px 20px;
+    border-right: 1px solid rgba(255,255,255,.18);
+}
+
+.quick-info-item:last-child {
+    border-right: 0;
+}
+
+.quick-info-item small {
+    display: block;
+    color: #F5D2B5;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.quick-info-item strong {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* ITINERARY NAVIGATION */
+
+.itinerary-nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: var(--white);
+    border-bottom: 1px solid var(--cream2);
+    box-shadow: 0 4px 12px rgba(80,48,27,.04);
+}
+
+.itinerary-nav .wrap {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.itinerary-nav a {
+    flex: 0 0 auto;
+    padding: 16px 0;
+    color: var(--brown-dark);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.itinerary-nav a:hover {
+    color: var(--orange);
+    border-bottom-color: var(--orange);
+}
+
+/* INTRODUCTION */
+
+.safari-intro {
+    max-width: 900px;
+}
+
+.safari-intro p {
+    color: var(--muted);
+    line-height: 1.9;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+/* HIGHLIGHTS */
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin-top: 38px;
+    border: 1px solid var(--cream2);
+    background: var(--cream2);
+}
+
+.highlight {
+    background: var(--white);
+    padding: 28px;
+    min-height: 175px;
+}
+
+.highlight-number {
+    display: block;
+    color: var(--orange);
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.highlight h3 {
+    color: var(--brown-dark);
+    font-size: 17px;
+    margin: 0 0 10px;
+}
+
+.highlight p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ITINERARY TIMELINE */
+
+.itinerary-intro-note {
+    max-width: 850px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.days-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 42px auto 0;
+}
+
+.days-timeline::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    bottom: 30px;
+    left: 37px;
+    width: 1px;
+    background: #DECBBB;
+}
+
+.day-entry {
+    position: relative;
+    display: grid;
+    grid-template-columns: 76px minmax(0, 1fr);
+    gap: 25px;
+    padding-bottom: 32px;
+}
+
+.day-marker {
+    position: relative;
+    z-index: 1;
+    width: 76px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--brown-dark);
+    color: white;
+    border: 5px solid var(--cream);
+}
+
+.day-marker small {
+    color: #F5D2B5;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.day-marker strong {
+    color: #FFD0A5;
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+.day-body {
+    background: var(--white);
+    border: 1px solid var(--cream2);
+    padding: 28px 30px;
+    min-width: 0;
+}
+
+.day-label {
+    display: inline-block;
+    color: var(--orange);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.day-body h3 {
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    line-height: 1.3;
+    margin: 0 0 15px;
+}
+
+.day-body p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0 0 14px;
+}
+
+.day-body p:last-of-type {
+    margin-bottom: 0;
+}
+
+.day-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 17px;
+    border-top: 1px solid var(--cream2);
+}
+
+.day-details span {
+    display: inline-block;
+    background: var(--cream);
+    color: var(--brown-dark);
+    padding: 8px 11px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.day-note {
+    margin-top: 18px;
+    padding: 18px 20px;
+    background: #FFF4E8;
+    border-left: 3px solid var(--orange);
+    color: var(--ink);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* ACTIVITIES */
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin-top: 35px;
+    background: var(--cream2);
+    border: 1px solid var(--cream2);
+}
+
+.activity-item {
+    padding: 27px;
+    background: var(--white);
+}
+
+.activity-item h3 {
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    margin: 0 0 10px;
+}
+
+.activity-item p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ACCOMMODATION */
+
+.stay-intro {
+    max-width: 850px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.stay-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--cream2);
+    border: 1px solid var(--cream2);
+    margin-top: 35px;
+}
+
+.stay-card {
+    background: var(--white);
+    padding: 27px;
+}
+
+.stay-card small {
+    display: block;
+    color: var(--orange);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.stay-card h3 {
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.stay-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.stay-note {
+    margin-top: 23px;
+    padding: 20px 23px;
+    background: var(--cream);
+    border-left: 3px solid var(--orange);
+    color: var(--ink);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* PRICING */
+
+.pricing-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, .8fr);
+    gap: 30px;
+    align-items: stretch;
+    margin-top: 30px;
+}
+
+.pricing-main {
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--cream2);
+}
+
+.pricing-main small {
+    display: block;
+    color: var(--orange);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.pricing-main strong {
+    display: block;
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    margin: 12px 0;
+}
+
+.pricing-main p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.pricing-side {
+    padding: 32px;
+    background: var(--brown-dark);
+    color: white;
+}
+
+.pricing-side h3 {
+    color: #FFD0A5;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+
+.pricing-side p {
+    color: rgba(255,255,255,.88);
+    font-size: 13px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+/* INCLUSIONS */
+
+.inclusions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.inclusion-box {
+    padding: 28px;
+    background: var(--white);
+    border: 1px solid var(--cream2);
+}
+
+.inclusion-box h3 {
+    color: var(--brown-dark);
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin: 0 0 18px;
+}
+
+.inclusion-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inclusion-box li {
+    position: relative;
+    padding: 0 0 12px 23px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.inclusion-box li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--orange);
+    font-weight: 800;
+}
+
+.inclusion-box.exclusions li::before {
+    content: "–";
+    color: var(--brown);
+}
+
+/* PRACTICAL INFORMATION */
+
+.practical-list {
+    max-width: 900px;
+    margin: 32px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.practical-list li {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--cream2);
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.practical-list strong {
+    color: var(--brown-dark);
+}
+
+/* QUOTE CTA */
+
+.quote-section {
+    padding: 75px 0;
+    background: var(--brown-dark);
+    color: white;
+}
+
+.quote-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.quote-copy {
+    max-width: 740px;
+}
+
+.quote-copy .eyebrow {
+    color: #FFD0A5;
+}
+
+.quote-copy h2 {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+
+.quote-copy p {
+    color: rgba(255,255,255,.88);
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.quote-actions {
+    flex-shrink: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .quick-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-info-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .quick-info-item:nth-child(-n+2) {
+        border-bottom: 1px solid rgba(255,255,255,.18);
+    }
+
+    .highlights-grid,
+    .activities-grid,
+    .stay-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-layout {
+        display: block;
+    }
+
+    .quote-actions {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 760px) {
+    .bush-beach-hero {
+        min-height: 570px;
+        background-position: 62% center;
+    }
+
+    .bush-beach-hero .hero-copy {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    .bush-beach-hero h1 {
+        font-size: 42px;
+    }
+
+    .bush-beach-hero p {
+        font-size: 14px;
+    }
+
+    .hero-facts {
+        gap: 8px;
+    }
+
+    .hero-facts span {
+        padding: 9px 11px;
+        font-size: 10px;
+    }
+
+    .hero-price strong {
+        font-size: 26px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quick-info-item {
+        padding: 18px 13px;
+    }
+
+    .quick-info-item strong {
+        font-size: 12px;
+    }
+
+    .highlights-grid,
+    .activities-grid,
+    .stay-grid,
+    .inclusions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight {
+        min-height: auto;
+    }
+
+    .days-timeline::before {
+        left: 27px;
+    }
+
+    .day-entry {
+        grid-template-columns: 56px minmax(0, 1fr);
+        gap: 12px;
+        padding-bottom: 24px;
+    }
+
+    .day-marker {
+        width: 56px;
+        height: 56px;
+        border-width: 3px;
+    }
+
+    .day-marker strong {
+        font-size: 21px;
+    }
+
+    .day-body {
+        padding: 21px 17px;
+    }
+
+    .day-body h3 {
+        font-size: 20px;
+    }
+
+    .day-body p {
+        font-size: 13px;
+    }
+
+    .day-details span {
+        font-size: 10px;
+    }
+
+    .pricing-main,
+    .pricing-side,
+    .inclusion-box {
+        padding: 24px;
+    }
+
+    .pricing-main strong {
+        font-size: 30px;
+    }
+
+    .itinerary-nav .wrap {
+        gap: 21px;
+    }
+
+    .itinerary-nav a {
+        padding: 15px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP CONTACT BAR -->
+
+<div class="topline">
+    <div class="wrap top-inner">
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy.</span>
+        <span>
+            <a href="tel:+254704261626">+254 704 261 626</a> ·
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+        </span>
+    </div>
+</div>
+
+<!-- HEADER -->
+
+<header class="header">
+    <div class="wrap nav">
+
+        <a class="brand" href="index.html">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+        </a>
+
+        <button class="nav-toggle" id="menuToggle"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="mainNav">
+            ☰
+        </button>
+
+        <nav id="mainNav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="honeymoon.html">Honeymoons</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html" class="active">Itineraries</a>
+            <a href="services.html">Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="blog.html">Blog</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-book" href="contact.html">Book Now</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="bush-beach-hero">
+    <div class="wrap">
+        <div class="hero-copy">
+
+            <span class="eyebrow">Kenya Bush & Beach Collection</span>
+
+            <h1>11-Day Ultimate Kenya Bush & Beach Safari</h1>
+
+            <p>
+                From the wildlife-rich plains of the Maasai Mara to the beautiful
+                Kenyan coast, experience remarkable landscapes, conservation
+                areas, mountain scenery and the Indian Ocean on one memorable
+                journey through Kenya.
+            </p>
+
+            <div class="hero-facts">
+                <span>11 Days / 10 Nights</span>
+                <span>Private Safari</span>
+                <span>Maasai Mara to Mombasa</span>
+            </div>
+
+            <div class="hero-price">
+                <small>Package price</small>
+                <strong>Price on Request</strong>
+            </div>
+
+            <div class="hero-actions">
+                <a class="btn btn-gold" href="contact.html">Request a Quote</a>
+                <a class="btn btn-outline" href="#itinerary">Explore the Itinerary</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- QUICK FACTS -->
+
+<section class="quick-info">
+    <div class="wrap quick-info-grid">
+
+        <div class="quick-info-item">
+            <small>Duration</small>
+            <strong>11 Days / 10 Nights</strong>
+        </div>
+
+        <div class="quick-info-item">
+            <small>Travel Style</small>
+            <strong>Private Safari</strong>
+        </div>
+
+        <div class="quick-info-item">
+            <small>Destinations</small>
+            <strong>7 Safari Regions</strong>
+        </div>
+
+        <div class="quick-info-item">
+            <small>Final Destination</small>
+            <strong>Mombasa, Kenya</strong>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECTION NAVIGATION -->
+
+<div class="itinerary-nav">
+    <div class="wrap">
+        <a href="#overview">Overview</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#itinerary">Day by Day</a>
+        <a href="#activities">Activities</a>
+        <a href="#accommodation">Accommodation</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#practical">Travel Information</a>
+        <a href="#quote">Enquire</a>
+    </div>
+</div>
+
+<!-- OVERVIEW -->
+
+<section class="section" id="overview">
+    <div class="wrap">
+
+        <div class="section-head">
+            <span class="eyebrow">Discover Kenya</span>
+            <h2>A Journey from the African Bush to the Indian Ocean</h2>
+        </div>
+
+        <div class="safari-intro">
+
+            <p>
+                This 11-day journey combines some of Kenya's most celebrated
+                wildlife destinations with a relaxing finish at the Indian Ocean
+                coast. Starting in Nairobi, the safari travels through the Maasai
+                Mara, Lake Naivasha, Ol Pejeta Conservancy, Aberdare, Amboseli,
+                Tsavo West and Tsavo East before continuing to Mombasa.
+            </p>
+
+            <p>
+                Along the way, enjoy classic African game drives, scenic
+                landscapes, a Lake Naivasha boat excursion, a walking experience
+                at Crescent Island, rhino conservation experiences at Ol Pejeta,
+                the distinctive Aberdare tree-hotel setting and views of Mount
+                Kilimanjaro from Amboseli when weather conditions are clear.
+            </p>
+
+            <p>
+                The journey concludes with a transfer to Kenya's coast, where
+                you can continue your holiday by the beach.
+            </p>
+
+        </div>
+
+        <div class="highlights-grid" id="highlights">
+
+            <article class="highlight">
+                <span class="highlight-number">01</span>
+                <h3>Maasai Mara</h3>
+                <p>Explore open savannah landscapes and enjoy game drives in one of Kenya's best-known wildlife reserves.</p>
+            </article>
+
+            <article class="highlight">
+                <span class="highlight-number">02</span>
+                <h3>Lake Naivasha</h3>
+                <p>Enjoy a boat excursion and a guided walking experience at Crescent Island.</p>
+            </article>
+
+            <article class="highlight">
+                <span class="highlight-number">03</span>
+                <h3>Ol Pejeta</h3>
+                <p>Discover a conservation landscape known for rhino protection and its chimpanzee sanctuary.</p>
+            </article>
+
+            <article class="highlight">
+                <span class="highlight-number">04</span>
+                <h3>Aberdare</h3>
+                <p>Experience a distinctive tree-hotel stay with wildlife viewing around a floodlit waterhole.</p>
+            </article>
+
+            <article class="highlight">
+                <span class="highlight-number">05</span>
+                <h3>Amboseli</h3>
+                <p>Look for elephants and other wildlife across open plains and wetland habitats.</p>
+            </article>
+
+            <article class="highlight">
+                <span class="highlight-number">06</span>
+                <h3>Tsavo & The Coast</h3>
+                <p>Explore Tsavo's contrasting landscapes before continuing to Mombasa.</p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- DETAILED ITINERARY -->
+
+<section class="section alt" id="itinerary">
+    <div class="wrap">
+
+        <div class="section-head">
+            <span class="eyebrow">Your journey, day by day</span>
+            <h2>The 11-Day Safari Itinerary</h2>
+        </div>
+
+        <p class="itinerary-intro-note">
+            Travel from Nairobi through Kenya's renowned safari destinations,
+            discovering wildlife, conservation areas and beautiful landscapes
+            before arriving at the coast.
+        </p>
+
+        <div class="days-timeline">
+
+            <!-- DAY 1 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>01</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Arrival & Welcome</span>
+                    <h3>Arrival in Nairobi</h3>
+
+                    <p>
+                        Upon arrival at Jomo Kenyatta International Airport,
+                        you will be met by our representative and transferred
+                        to your Nairobi hotel. After check-in, take time to
+                        relax after your journey. Depending on your arrival
+                        time, the rest of the day can be spent at leisure.
+                    </p>
+
+                    <p>
+                        Your safari preparations and the following day's
+                        departure arrangements can be discussed with the team.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Destination: Nairobi</span>
+                        <span>Accommodation: Nairobi City Hotel</span>
+                        <span>Meal Plan: Bed & Breakfast</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 2 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>02</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Into the Wild</span>
+                    <h3>Nairobi to Maasai Mara National Reserve</h3>
+
+                    <p>
+                        After breakfast, depart Nairobi and travel towards
+                        the Maasai Mara, passing through the scenic Great
+                        Rift Valley. Stop at a viewpoint to appreciate the
+                        sweeping landscape before continuing through the
+                        countryside towards the reserve.
+                    </p>
+
+                    <p>
+                        Arrive in the Mara in time for lunch and check in at
+                        Mara Sopa Lodge. Later, head out for your first
+                        afternoon game drive in search of the wildlife that
+                        makes this region famous.
+                    </p>
+
+                    <p>
+                        Return to the lodge in the evening for dinner and
+                        overnight.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Route: Nairobi – Maasai Mara</span>
+                        <span>Activity: Afternoon Game Drive</span>
+                        <span>Accommodation: Mara Sopa Lodge</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 3 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>03</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Full-Day Safari</span>
+                    <h3>Full-Day Exploration of the Maasai Mara</h3>
+
+                    <p>
+                        Spend the day exploring the Maasai Mara on game drives.
+                        The reserve's open grasslands and varied habitats
+                        provide opportunities to search for elephants, lions,
+                        cheetahs, giraffes, zebras, buffaloes and other wildlife.
+                    </p>
+
+                    <p>
+                        Your guide will help you explore different areas of the
+                        reserve, following wildlife sightings and local
+                        conditions. Depending on the agreed arrangements,
+                        a picnic lunch may be enjoyed during the day's exploration.
+                    </p>
+
+                    <p>
+                        Optional activities include a Maasai village visit or
+                        a hot-air balloon safari. These are additional
+                        experiences and must be arranged separately.
+                    </p>
+
+                    <p>
+                        Return to Mara Sopa Lodge for dinner and overnight.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Activity: Full-Day Game Drives</span>
+                        <span>Optional: Balloon Safari</span>
+                        <span>Accommodation: Mara Sopa Lodge</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 4 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>04</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Lake Experience</span>
+                    <h3>Maasai Mara to Lake Naivasha</h3>
+
+                    <p>
+                        After breakfast, depart the Maasai Mara and travel
+                        towards Lake Naivasha. Enjoy the changing scenery as
+                        you leave the savannah behind and approach the Great
+                        Rift Valley lakes region.
+                    </p>
+
+                    <p>
+                        On arrival, enjoy a boat excursion on Lake Naivasha.
+                        Look out for hippos in the water and fish eagles around
+                        the lake. Continue to Crescent Island for a guided
+                        walking experience among the wildlife found in this area.
+                    </p>
+
+                    <p>
+                        Later, check in at Lake Naivasha Sopa Resort for dinner
+                        and overnight.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Route: Maasai Mara – Naivasha</span>
+                        <span>Activities: Boat Ride & Walking Safari</span>
+                        <span>Accommodation: Lake Naivasha Sopa Resort</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 5 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>05</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Wildlife Conservation</span>
+                    <h3>Lake Naivasha to Ol Pejeta Conservancy</h3>
+
+                    <p>
+                        After breakfast, depart Lake Naivasha and travel
+                        towards Nanyuki and the Ol Pejeta Conservancy area.
+                        The journey takes you through Kenya's central highlands
+                        towards the foothills of Mount Kenya.
+                    </p>
+
+                    <p>
+                        Depending on the day's schedule and arrival arrangements,
+                        make an equator stop near Nanyuki before proceeding
+                        to Ol Pejeta.
+                    </p>
+
+                    <p>
+                        Explore the conservancy's conservation attractions,
+                        including its rhino sanctuary and Sweetwaters
+                        Chimpanzee Sanctuary, subject to access arrangements
+                        and opening conditions.
+                    </p>
+
+                    <p>
+                        Check in at Sweetwaters Serena Camp for dinner and overnight.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Route: Naivasha – Nanyuki – Ol Pejeta</span>
+                        <span>Activities: Rhino & Chimpanzee Conservation</span>
+                        <span>Accommodation: Sweetwaters Serena Camp</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 6 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>06</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Forest Escape</span>
+                    <h3>Ol Pejeta to Aberdare National Park Area</h3>
+
+                    <p>
+                        After breakfast, leave Ol Pejeta and travel towards
+                        the Aberdare region. Arrive at Outspan Hotel for lunch
+                        and complete the transfer arrangements for your
+                        tree-hotel stay.
+                    </p>
+
+                    <p>
+                        Continue by the designated shuttle to the tree hotel.
+                        The accommodation offers a distinctive forest setting
+                        overlooking a waterhole and salt lick that attract wildlife.
+                    </p>
+
+                    <p>
+                        Spend the evening observing wildlife from the viewing
+                        areas. The waterhole may attract elephants, buffaloes
+                        and other animals, although sightings cannot be guaranteed.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Route: Ol Pejeta – Aberdare</span>
+                        <span>Activity: Tree-Hotel Wildlife Viewing</span>
+                        <span>Accommodation: Aberdare Tree Hotel</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 7 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>07</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Journey South</span>
+                    <h3>Aberdare to Amboseli National Park</h3>
+
+                    <p>
+                        After breakfast, take the designated transfer back
+                        to Outspan Hotel and reconnect with your safari vehicle.
+                        Continue towards Amboseli, with a journey through the
+                        Nairobi area and onward towards southern Kenya.
+                    </p>
+
+                    <p>
+                        A lunch stop will be arranged along the route. Continue
+                        towards Amboseli, arriving later in the day depending
+                        on traffic, road and transfer conditions.
+                    </p>
+
+                    <p>
+                        Check in at Amboseli Sopa Lodge and relax after the journey.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Route: Aberdare – Nairobi – Amboseli</span>
+                        <span>Activity: Scenic Transfer</span>
+                        <span>Accommodation: Amboseli Sopa Lodge</span>
+                    </div>
+
+                    <div class="day-note">
+                        <strong>Travel planning note:</strong> This is a
+                        particularly long transfer day. We recommend confirming
+                        the departure arrangements and considering an alternative
+                        overnight stop if a more relaxed pace is preferred.
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 8 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>08</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Elephant Country</span>
+                    <h3>Full-Day Safari in Amboseli National Park</h3>
+
+                    <p>
+                        Spend the day exploring Amboseli National Park,
+                        a landscape known for its elephant herds, open plains
+                        and wetlands. When weather conditions are clear,
+                        Mount Kilimanjaro provides a spectacular backdrop
+                        to the scenery.
+                    </p>
+
+                    <p>
+                        Game drives take you through different habitats,
+                        including the park's swamps and spring-fed areas,
+                        where wildlife gathers to feed and drink.
+                    </p>
+
+                    <p>
+                        Look out for elephants, zebras, giraffes, buffaloes
+                        and other wildlife as you explore with your guide.
+                    </p>
+
+                    <p>
+                        Return to Amboseli Sopa Lodge for dinner and overnight.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Activity: Full-Day Game Drives</span>
+                        <span>Highlights: Elephants & Kilimanjaro Views</span>
+                        <span>Accommodation: Amboseli Sopa Lodge</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 9 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>09</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Volcanic Landscapes</span>
+                    <h3>Amboseli to Tsavo West National Park</h3>
+
+                    <p>
+                        After breakfast, depart Amboseli and travel towards
+                        Tsavo West National Park. Enjoy game viewing as you
+                        enter this diverse landscape of rolling hills,
+                        volcanic features and natural springs.
+                    </p>
+
+                    <p>
+                        Visit the Shetani Lava Flows, an impressive landscape
+                        formed by ancient volcanic activity. Continue to
+                        Mzima Springs, a natural spring system known for its
+                        clear water and underwater viewing chamber.
+                    </p>
+
+                    <p>
+                        Look for hippos and other wildlife around the springs
+                        before proceeding to Ngulia Safari Lodge.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Route: Amboseli – Tsavo West</span>
+                        <span>Activities: Shetani Lava Flows & Mzima Springs</span>
+                        <span>Accommodation: Ngulia Safari Lodge</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 10 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>10</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">The Great Tsavo</span>
+                    <h3>Tsavo West to Tsavo East National Park</h3>
+
+                    <p>
+                        After breakfast, depart Tsavo West and travel towards
+                        Tsavo East. Continue enjoying game viewing along the
+                        route as the landscape changes into the expansive
+                        plains and open habitats of Tsavo East.
+                    </p>
+
+                    <p>
+                        Explore areas around the Galana River, an important
+                        watercourse in this vast ecosystem. Your guide will
+                        help you look for elephants, giraffes, zebras,
+                        antelopes and other wildlife.
+                    </p>
+
+                    <p>
+                        Later, proceed to Voi Safari Lodge for dinner and overnight.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Route: Tsavo West – Tsavo East</span>
+                        <span>Activity: En-route Game Viewing</span>
+                        <span>Accommodation: Voi Safari Lodge</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 11 -->
+
+            <article class="day-entry">
+                <div class="day-marker">
+                    <small>Day</small>
+                    <strong>11</strong>
+                </div>
+
+                <div class="day-body">
+                    <span class="day-label">Safari Finale</span>
+                    <h3>Tsavo East to Mombasa – Journey to the Coast</h3>
+
+                    <p>
+                        After breakfast, depart Tsavo East and begin your
+                        journey towards Mombasa. Enjoy the changing scenery
+                        as you leave the national park and travel towards
+                        Kenya's coastal region.
+                    </p>
+
+                    <p>
+                        On arrival in Mombasa, continue to your selected
+                        beach hotel or coastal accommodation. Depending
+                        on your arrival time and hotel arrangements,
+                        enjoy the remainder of the afternoon at leisure.
+                    </p>
+
+                    <p>
+                        Your safari concludes with the opportunity to extend
+                        your holiday along the Kenyan coast.
+                    </p>
+
+                    <div class="day-details">
+                        <span>Route: Tsavo East – Mombasa</span>
+                        <span>Activity: Coastal Transfer</span>
+                        <span>Accommodation: Beach Hotel – To Be Selected</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ACTIVITIES -->
+
+<section class="section" id="activities">
+    <div class="wrap">
+
+        <div class="section-head">
+            <span class="eyebrow">Experiences along the way</span>
+            <h2>Safari Highlights & Activities</h2>
+        </div>
+
+        <div class="activities-grid">
+
+            <article class="activity-item">
+                <h3>Wildlife Game Drives</h3>
+                <p>Explore the Maasai Mara, Amboseli, Tsavo West and Tsavo East with your safari guide.</p>
+            </article>
+
+            <article class="activity-item">
+                <h3>Lake Naivasha Boat Ride</h3>
+                <p>Look out for hippos and fish eagles during a boat excursion on the lake.</p>
+            </article>
+
+            <article class="activity-item">
+                <h3>Crescent Island Walk</h3>
+                <p>Enjoy a guided walking safari in a setting known for its free-roaming wildlife.</p>
+            </article>
+
+            <article class="activity-item">
+                <h3>Ol Pejeta Conservation</h3>
+                <p>Visit the rhino sanctuary and Sweetwaters Chimpanzee Sanctuary.</p>
+            </article>
+
+            <article class="activity-item">
+                <h3>Aberdare Waterhole Viewing</h3>
+                <p>Observe wildlife around the floodlit waterhole from the tree-hotel viewing areas.</p>
+            </article>
+
+            <article class="activity-item">
+                <h3>Mzima Springs</h3>
+                <p>Visit the clear spring waters and underwater viewing area in Tsavo West.</p>
+            </article>
+
+        </div>
+
+        <div class="day-note">
+            Optional experiences such as a Maasai village visit and a hot-air
+            balloon safari in the Maasai Mara can be arranged at an additional
+            cost, subject to availability and confirmation.
+        </div>
+
+    </div>
+</section>
+
+<!-- ACCOMMODATION -->
+
+<section class="section alt" id="accommodation">
+    <div class="wrap">
+
+        <div class="section-head">
+            <span class="eyebrow">Rest & Recharge</span>
+            <h2>Accommodation Throughout the Journey</h2>
+        </div>
+
+        <p class="stay-intro">
+            The itinerary is based on the accommodation properties specified
+            in the proposed programme. Accommodation availability, room
+            categories and meal plans must be reconfirmed for your travel dates.
+        </p>
+
+        <div class="stay-grid">
+
+            <article class="stay-card">
+                <small>Night 1</small>
+                <h3>Nairobi</h3>
+                <p>Nairobi city hotel – selected according to your preferred category and availability.</p>
+            </article>
+
+            <article class="stay-card">
+                <small>Nights 2 & 3</small>
+                <h3>Maasai Mara</h3>
+                <p>Mara Sopa Lodge.</p>
+            </article>
+
+            <article class="stay-card">
+                <small>Night 4</small>
+                <h3>Lake Naivasha</h3>
+                <p>Lake Naivasha Sopa Resort.</p>
+            </article>
+
+            <article class="stay-card">
+                <small>Night 5</small>
+                <h3>Ol Pejeta</h3>
+                <p>Sweetwaters Serena Camp.</p>
+            </article>
+
+            <article class="stay-card">
+                <small>Night 6</small>
+                <h3>Aberdare</h3>
+                <p>Tree-hotel accommodation arranged through the Outspan transfer.</p>
+            </article>
+
+            <article class="stay-card">
+                <small>Nights 7 & 8</small>
+                <h3>Amboseli</h3>
+                <p>Amboseli Sopa Lodge.</p>
+            </article>
+
+            <article class="stay-card">
+                <small>Night 9</small>
+                <h3>Tsavo West</h3>
+                <p>Ngulia Safari Lodge.</p>
+            </article>
+
+            <article class="stay-card">
+                <small>Night 10</small>
+                <h3>Tsavo East</h3>
+                <p>Voi Safari Lodge.</p>
+            </article>
+
+            <article class="stay-card">
+                <small>After the Safari</small>
+                <h3>Mombasa Coast</h3>
+                <p>Beach hotel or coastal accommodation selected according to your preferences.</p>
+            </article>
+
+        </div>
+
+        <div class="stay-note">
+            The proposed route includes 10 overnight stays before the safari
+            concludes in Mombasa. A beach-hotel overnight stay is not included
+            in the stated 10-night count unless added to the final package.
+        </div>
+
+    </div>
+</section>
+
+<!-- PRICING -->
+
+<section class="section" id="pricing">
+    <div class="wrap">
+
+        <div class="section-head">
+            <span class="eyebrow">Your safari quotation</span>
+            <h2>Prices & Booking</h2>
+        </div>
+
+        <div class="safari-intro">
+            <p>
+                This is a tailor-made private safari. The final quotation will
+                be prepared according to your travel dates, number of travellers,
+                accommodation preferences and confirmed inclusions.
+            </p>
+        </div>
+
+        <div class="pricing-layout">
+
+            <div class="pricing-main">
+                <small>11 Days / 10 Nights</small>
+                <strong>Price on Request</strong>
+
+                <p>
+                    Contact our team for a personalized quotation for your
+                    preferred travel dates and group size. We will help you
+                    confirm the accommodation and arrangements for your journey.
+                </p>
+
+                <a class="btn btn-gold" href="contact.html">Get My Safari Quote</a>
+            </div>
+
+            <aside class="pricing-side">
+                <h3>Plan Your Journey</h3>
+                <p>
+                    Share your preferred travel dates, number of guests,
+                    accommodation preferences and any special requests.
+                    Our team will prepare a quotation based on your requirements.
+                </p>
+            </aside>
+
+        </div>
+
+        <div class="inclusions-grid">
+
+            <div class="inclusion-box">
+                <h3>What Your Quote Can Cover</h3>
+                <ul>
+                    <li>Safari accommodation throughout the itinerary</li>
+                    <li>Safari transport and game-viewing arrangements</li>
+                    <li>Park and conservancy entry fees, where applicable</li>
+                    <li>Activities specified in the confirmed programme</li>
+                    <li>Meals according to the selected accommodation plan</li>
+                    <li>Transfer arrangements to Mombasa</li>
+                </ul>
+
+                <p style="color:var(--muted);font-size:12px;line-height:1.8;margin:12px 0 0;">
+                    These items will be confirmed individually in your final quotation.
+                </p>
+            </div>
+
+            <div class="inclusion-box exclusions">
+                <h3>Items to Confirm Separately</h3>
+                <ul>
+                    <li>International and domestic flights</li>
+                    <li>Optional Maasai village visit</li>
+                    <li>Optional hot-air balloon safari</li>
+                    <li>Personal expenses and gratuities</li>
+                    <li>Additional activities not listed in the final quote</li>
+                    <li>Any services not expressly included in your quotation</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- PRACTICAL INFORMATION -->
+
+<section class="section alt" id="practical">
+    <div class="wrap">
+
+        <div class="section-head">
+            <span class="eyebrow">Before you travel</span>
+            <h2>Practical Travel Information</h2>
+        </div>
+
+        <ul class="practical-list">
+
+            <li>
+                <strong>Travel documents:</strong>
+                Ensure that your passport and any required entry authorization
+                are valid for your journey. Check the current requirements
+                applicable to your nationality.
+            </li>
+
+            <li>
+                <strong>Clothing:</strong>
+                Pack comfortable safari clothing, a light jacket, walking shoes,
+                sun protection and suitable clothing for the different weather
+                conditions experienced across Kenya.
+            </li>
+
+            <li>
+                <strong>Photography:</strong>
+                Bring your camera, spare batteries and sufficient storage for
+                wildlife and landscape photography.
+            </li>
+
+            <li>
+                <strong>Health and personal preparation:</strong>
+                Seek appropriate travel health advice before departure and
+                carry any personal medication you require.
+            </li>
+
+            <li>
+                <strong>Wildlife viewing:</strong>
+                All wildlife sightings are natural and cannot be guaranteed.
+                Follow your guide's instructions and respect park regulations.
+            </li>
+
+            <li>
+                <strong>Optional activities:</strong>
+                Balloon safaris and cultural visits are optional and subject
+                to separate arrangements, availability and applicable charges.
+            </li>
+
+            <li>
+                <strong>Road travel:</strong>
+                Journey times can vary according to road conditions, traffic,
+                weather and wildlife viewing stops.
+            </li>
+
+            <li>
+                <strong>Itinerary flexibility:</strong>
+                The order of activities may be adjusted when necessary due to
+                operational conditions, access restrictions or weather.
+            </li>
+
+            <li>
+                <strong>Accommodation:</strong>
+                All named properties are subject to availability and confirmation
+                at the time of booking. Any alternative will be discussed before
+                confirmation.
+            </li>
+
+        </ul>
+
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+
+<section class="quote-section" id="quote">
+    <div class="wrap quote-layout">
+
+        <div class="quote-copy">
+            <span class="eyebrow">Start planning</span>
+
+            <h2>Ready for Your Kenya Bush & Beach Safari?</h2>
+
+            <p>
+                Contact Fleypat Adventures with your preferred travel dates,
+                number of travellers and accommodation preferences. Our team
+                will prepare a personalized quotation for your journey.
+            </p>
+        </div>
+
+        <div class="quote-actions">
+            <a class="btn btn-gold"
+               href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20the%2011-day%20Kenya%20Bush%20and%20Beach%20Safari.%20Please%20send%20me%20a%20quotation."
+               target="_blank"
+               rel="noopener">
+                Request a Quote
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <div class="wrap footer-grid">
+
+        <div>
+            <a class="brand footer-brand" href="index.html">
+                <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
+            </a>
+
+            <p>
+                Explore more. Experience more. Travel beyond expectations.
+                Your journey starts with us.
+            </p>
+
+            <a href="https://www.instagram.com/fleypat_adventures/"
+               target="_blank"
+               rel="noopener">
+                Instagram @fleypat_adventures
+            </a>
+        </div>
+
+        <div>
+            <h3>Explore</h3>
+            <a href="safaris.html">Wildlife Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Itineraries</a>
+        </div>
+
+        <div>
+            <h3>Company</h3>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="blog.html">Travel Guides</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+            <a href="https://wa.me/254704261626">WhatsApp our team</a>
+            <span>Mombasa, Kenya</span>
+        </div>
+
+    </div>
+
+    <div class="wrap foot-bottom">
+        <span>© <span data-year></span> Fleypat Adventures. All rights reserved.</span>
+        <span>Explore. Experience. Enjoy.</span>
+    </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="float-wa"
+   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip."
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact Fleypat Adventures on WhatsApp">
+    WhatsApp Us
+</a>
+
+<script>
+/* MOBILE NAVIGATION */
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+if (menuToggle && mainNav) {
+    menuToggle.addEventListener("click", function () {
+        const isOpen = mainNav.classList.toggle("open");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            mainNav.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open menu");
+            menuToggle.textContent = "☰";
+        });
+    });
+}
+
+/* AUTOMATIC COPYRIGHT YEAR */
+document.querySelectorAll("[data-year]").forEach(function (element) {
+    element.textContent = new Date().getFullYear();
+});
+</script>
+
+</body>
+</html>
