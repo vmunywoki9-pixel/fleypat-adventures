@@ -7,1264 +7,1357 @@
 
 <title>3-Day Maasai Mara Safari | Fleypat Adventures</title>
 <meta name="description" content="Experience a 3-day Maasai Mara safari from Nairobi. Discover Kenya's iconic wildlife, open savannah, big cats and unforgettable game drives with Fleypat Adventures.">
-<meta name="theme-color" content="#243c28">
+<meta name="theme-color" content="#E8752A">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="styles.css">
+
 <style>
-:root{
-  --green:#243c28;
-  --green2:#38563a;
-  --lime:#a8d832;
-  --cream:#fbf7e9;
-  --gold:#a97832;
-  --text:#30352e;
-  --muted:#74796f;
-  --border:#e9e6da;
-  --shadow:0 12px 35px rgba(27,43,29,.09);
+.maasai-page {
+    --m-orange: #E8752A;
+    --m-orange-dark: #B85B20;
+    --m-brown: #A66A42;
+    --m-cream: #FFF4E8;
+    --m-cream-light: #FFFCF8;
+    --m-ink: #6B4935;
+    --m-muted: #897264;
+    --m-border: #EAD8C7;
+    --m-shadow: 0 12px 35px rgba(107,73,53,.09);
+    color: var(--m-ink);
 }
 
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:100px}
-body{
-  font-family:'DM Sans',sans-serif;
-  color:var(--text);
-  background:#fff;
-  line-height:1.7;
-}
-a{text-decoration:none;color:inherit}
-img{display:block;width:100%;object-fit:cover}
-.container{width:min(1160px,91%);margin:auto}
-h1,h2,h3,h4{
-  font-family:'Playfair Display',serif;
-  line-height:1.2;
-}
-p{color:var(--muted)}
-
-/* HEADER */
-.topbar{
-  background:var(--green);
-  color:#fff;
-  padding:9px 0;
-  font-size:12px;
-}
-.topbar-inner{
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-}
-.topbar a{color:#fff}
-.main-header{
-  background:#fff;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 3px 15px rgba(0,0,0,.06);
-}
-.nav-wrap{
-  min-height:88px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
-}
-.brand{flex-shrink:0}
-.brand img{
-  width:155px;
-  height:66px;
-  object-fit:contain;
-}
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:15px;
-}
-.nav-links a{
-  font-size:12px;
-  font-weight:700;
-  color:var(--green);
-  transition:.2s;
-}
-.nav-links a:hover,
-.nav-links a.active{color:var(--gold)}
-.nav-links .book-link{
-  background:var(--lime);
-  padding:12px 17px;
-  border-radius:3px;
-}
-.menu-toggle{
-  display:none;
-  background:none;
-  border:0;
-  color:var(--green);
-  font-size:27px;
-  cursor:pointer;
+.maasai-page *,
+.maasai-page *::before,
+.maasai-page *::after {
+    box-sizing: border-box;
 }
 
-/* HERO */
-.hero{
-  min-height:590px;
-  position:relative;
-  display:flex;
-  align-items:center;
-  color:#fff;
-  background:
-    linear-gradient(90deg,rgba(10,24,13,.82),rgba(10,24,13,.25)),
-    url("mara-safari.jpg") center 48%/cover;
-}
-.hero-content{
-  position:relative;
-  z-index:2;
-  max-width:730px;
-  padding:95px 0;
-}
-.eyebrow{
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:12px;
-  font-weight:800;
-  color:var(--lime);
-  margin-bottom:17px;
-}
-.hero h1{
-  font-size:clamp(43px,6vw,72px);
-  margin-bottom:22px;
-}
-.hero p{
-  color:#f1f1e9;
-  max-width:620px;
-  font-size:17px;
-}
-.hero-actions{
-  display:flex;
-  gap:13px;
-  flex-wrap:wrap;
-  margin-top:32px;
-}
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:14px 23px;
-  font-size:13px;
-  font-weight:800;
-  border:1px solid transparent;
-  transition:.25s;
-  cursor:pointer;
-}
-.btn-primary{background:var(--lime);color:var(--green)}
-.btn-primary:hover{background:#c0ed5a}
-.btn-outline{border-color:#fff;color:#fff}
-.btn-outline:hover{background:#fff;color:var(--green)}
-
-/* QUICK DETAILS */
-.quick-details{
-  background:var(--cream);
-  border-bottom:1px solid var(--border);
-}
-.quick-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-}
-.quick-item{
-  padding:23px 20px;
-  border-right:1px solid #e3dece;
-}
-.quick-item:last-child{border:0}
-.quick-item span{
-  display:block;
-  color:var(--gold);
-  text-transform:uppercase;
-  font-size:10px;
-  letter-spacing:1.5px;
-  font-weight:800;
-}
-.quick-item strong{
-  display:block;
-  color:var(--green);
-  font-size:15px;
-  margin-top:5px;
+.maasai-page img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
-/* SECTIONS */
-section{padding:85px 0}
-.section-heading{
-  max-width:730px;
-  margin-bottom:38px;
-}
-.section-heading.center{
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
-}
-.section-heading .eyebrow{color:var(--gold)}
-.section-heading h2{
-  font-size:clamp(32px,4vw,46px);
-  color:var(--green);
-  margin-bottom:15px;
-}
-.section-heading p{font-size:15px}
-
-/* OVERVIEW */
-.two-col{
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:55px;
-  align-items:center;
-}
-.feature-image{
-  height:450px;
-  overflow:hidden;
-}
-.feature-image img{
-  height:100%;
-  transition:transform .6s;
-}
-.feature-image:hover img{transform:scale(1.04)}
-.intro-copy h2{
-  font-size:42px;
-  color:var(--green);
-  margin-bottom:20px;
-}
-.intro-copy p{margin-bottom:15px}
-.check-list{
-  list-style:none;
-  display:grid;
-  gap:11px;
-  margin-top:22px;
-}
-.check-list li{
-  position:relative;
-  padding-left:28px;
-  color:#50564c;
-  font-size:14px;
-}
-.check-list li:before{
-  content:"✓";
-  position:absolute;
-  left:0;
-  color:var(--gold);
-  font-weight:900;
+.maasai-page h1,
+.maasai-page h2,
+.maasai-page h3,
+.maasai-page h4 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
 }
 
-/* HIGHLIGHTS */
-.highlights{background:var(--cream)}
-.highlight-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-.highlight-card{
-  background:white;
-  padding:30px;
-  border:1px solid var(--border);
-}
-.highlight-number{
-  font-family:'Playfair Display',serif;
-  font-size:35px;
-  color:var(--gold);
-  margin-bottom:10px;
-}
-.highlight-card h3{
-  font-size:21px;
-  color:var(--green);
-  margin-bottom:10px;
-}
-.highlight-card p{font-size:13px}
-
-/* ITINERARY */
-.day-card{
-  display:grid;
-  grid-template-columns:310px 1fr;
-  border:1px solid var(--border);
-  margin-bottom:25px;
-  background:#fff;
-  box-shadow:var(--shadow);
-}
-.day-image{min-height:310px}
-.day-image img{height:100%}
-.day-content{padding:30px 35px}
-.day-label{
-  color:var(--gold);
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-.day-content h3{
-  color:var(--green);
-  font-size:27px;
-  margin:9px 0 15px;
-}
-.day-content p{font-size:14px;margin-bottom:13px}
-.day-content h4{
-  font-family:'DM Sans',sans-serif;
-  color:var(--green);
-  font-size:13px;
-  margin:18px 0 8px;
-}
-.day-meta{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:18px;
-}
-.day-meta span{
-  background:var(--cream);
-  color:var(--green);
-  padding:7px 11px;
-  font-size:11px;
-  font-weight:700;
+.maasai-page p {
+    color: var(--m-muted);
+    line-height: 1.8;
 }
 
-/* ACCOMMODATION */
-.accommodation{background:var(--cream)}
-.stay-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:25px;
-}
-.stay-card{
-  background:#fff;
-  border:1px solid var(--border);
-}
-.stay-card img{height:280px}
-.stay-copy{padding:25px}
-.stay-copy h3{
-  color:var(--green);
-  font-size:25px;
-  margin-bottom:10px;
-}
-.stay-copy p{font-size:13px}
-
-/* ACTIVITIES */
-.activity-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-.activity{
-  border:1px solid var(--border);
-  padding:25px;
-}
-.activity h3{
-  font-size:20px;
-  color:var(--green);
-  margin-bottom:9px;
-}
-.activity p{font-size:13px}
-
-/* INCLUSIONS */
-.include-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-}
-.include-box{
-  padding:32px;
-  border:1px solid var(--border);
-  background:#fff;
-}
-.include-box h3{
-  font-size:25px;
-  color:var(--green);
-  margin-bottom:18px;
-}
-.include-box ul{list-style:none}
-.include-box li{
-  padding:9px 0 9px 24px;
-  position:relative;
-  border-bottom:1px solid #f0eee7;
-  font-size:13px;
-  color:#62675e;
-}
-.include-box li:before{
-  position:absolute;
-  left:0;
-  font-weight:900;
-}
-.included li:before{content:"✓";color:#56813b}
-.excluded li:before{content:"×";color:#a65a43}
-
-/* INFORMATION */
-.info-section{background:var(--cream)}
-.info-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px;
-}
-.info-card{
-  background:white;
-  padding:25px;
-}
-.info-card h3{
-  color:var(--green);
-  font-size:21px;
-  margin-bottom:10px;
-}
-.info-card p{font-size:13px}
-
-/* BOOKING */
-.booking-section{
-  background:var(--green);
-  color:#fff;
-  text-align:center;
-}
-.booking-section h2{
-  font-size:clamp(34px,5vw,49px);
-  margin-bottom:17px;
-}
-.booking-section p{
-  color:#e0e7dc;
-  max-width:650px;
-  margin:0 auto 25px;
-}
-.booking-actions{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
+.maasai-page .wrap {
+    width: min(1160px, 91%);
+    margin-inline: auto;
 }
 
-/* FOOTER */
-footer{
-  background:#17291b;
-  color:#fff;
-  padding:55px 0 20px;
-}
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.4fr 1fr 1fr 1fr;
-  gap:35px;
-}
-footer h3{
-  font-size:20px;
-  margin-bottom:17px;
-}
-footer p,footer a,footer span{
-  color:#c5cec2;
-  font-size:12px;
-}
-footer a{display:block;margin-bottom:9px}
-footer a:hover{color:var(--lime)}
-.footer-logo{
-  width:165px;
-  height:70px;
-  object-fit:contain;
-  object-position:left;
-  margin-bottom:15px;
-}
-.footer-bottom{
-  border-top:1px solid rgba(255,255,255,.15);
-  margin-top:35px;
-  padding-top:20px;
-  text-align:center;
-  color:#aeb8aa;
-  font-size:11px;
+.maasai-page .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--m-orange);
+    margin-bottom: 14px;
 }
 
-/* WHATSAPP */
-.whatsapp{
-  position:fixed;
-  right:22px;
-  bottom:22px;
-  z-index:999;
-  background:#20b85a;
-  color:white;
-  padding:13px 19px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:800;
-  box-shadow:0 5px 20px rgba(0,0,0,.2);
+.maasai-page .section {
+    padding: 85px 0;
 }
 
-/* RESPONSIVE */
-@media(max-width:1100px){
-  .nav-links{gap:10px}
-  .nav-links a{font-size:11px}
-  .brand img{width:130px}
+.maasai-page .section.alt {
+    background: var(--m-cream);
 }
-@media(max-width:850px){
-  .menu-toggle{display:block}
-  .nav-links{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    right:0;
-    background:#fff;
-    padding:20px 5%;
-    box-shadow:0 10px 15px rgba(0,0,0,.08);
-    flex-direction:column;
-    align-items:stretch;
-    gap:0;
-    max-height:75vh;
-    overflow-y:auto;
-  }
-  .nav-links.open{display:flex}
-  .nav-links a{
-    padding:12px 0;
-    border-bottom:1px solid var(--border);
-    font-size:13px;
-  }
-  .nav-links .book-link{
-    text-align:center;
-    margin-top:12px;
-    padding:12px;
-  }
-  .two-col{grid-template-columns:1fr;gap:30px}
-  .feature-image{height:350px}
-  .day-card{grid-template-columns:240px 1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
+
+.maasai-page .section-heading {
+    max-width: 760px;
+    margin-bottom: 38px;
 }
-@media(max-width:600px){
-  section{padding:60px 0}
-  .topbar-inner{justify-content:center;text-align:center}
-  .nav-wrap{min-height:75px}
-  .brand img{width:125px;height:55px}
-  .hero{min-height:540px;background-position:58% center}
-  .hero-content{padding:75px 0}
-  .hero h1{font-size:43px}
-  .hero p{font-size:14px}
-  .quick-grid{grid-template-columns:1fr 1fr}
-  .quick-item{padding:17px 12px;border-bottom:1px solid #e3dece}
-  .quick-item:nth-child(2){border-right:0}
-  .quick-item strong{font-size:13px}
-  .highlight-grid,.stay-grid,.activity-grid,
-  .include-grid,.info-grid{grid-template-columns:1fr}
-  .day-card{grid-template-columns:1fr}
-  .day-image{height:230px;min-height:0}
-  .day-content{padding:24px}
-  .day-content h3{font-size:24px}
-  .intro-copy h2{font-size:34px}
-  .feature-image{height:280px}
-  .footer-grid{grid-template-columns:1fr;gap:28px}
-  .booking-section .btn{width:100%}
+
+.maasai-page .section-heading.center {
+    margin-inline: auto;
+    text-align: center;
+}
+
+.maasai-page .section-heading h2 {
+    color: var(--m-ink);
+    font-size: clamp(32px, 4vw, 46px);
+    margin-bottom: 15px;
+}
+
+.maasai-page .section-heading p {
+    font-size: 14px;
+}
+
+.maasai-page .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 23px;
+    font-size: 13px;
+    font-weight: 800;
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.maasai-page .btn-primary {
+    background: var(--m-orange);
+    color: #fff;
+}
+
+.maasai-page .btn-primary:hover {
+    background: var(--m-orange-dark);
+}
+
+.maasai-page .btn-outline {
+    border-color: #fff;
+    color: #fff;
+}
+
+.maasai-page .btn-outline:hover {
+    background: #fff;
+    color: var(--m-ink);
+}
+
+/* Hero */
+.maasai-hero {
+    min-height: 610px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background:
+        linear-gradient(90deg, rgba(35,23,15,.83), rgba(35,23,15,.28)),
+        url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=85")
+        center 48% / cover no-repeat;
+}
+
+.maasai-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+    padding: 100px 0;
+}
+
+.maasai-hero .eyebrow {
+    color: #FFD0A5;
+}
+
+.maasai-hero h1 {
+    font-size: clamp(43px, 6vw, 72px);
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.maasai-hero p {
+    max-width: 650px;
+    color: #fff5ed;
+    font-size: 16px;
+}
+
+.maasai-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 30px;
+}
+
+/* Quick details */
+.maasai-quick {
+    background: var(--m-cream);
+    border-bottom: 1px solid var(--m-border);
+}
+
+.maasai-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.maasai-quick-item {
+    padding: 23px 20px;
+    border-right: 1px solid var(--m-border);
+}
+
+.maasai-quick-item:last-child {
+    border-right: 0;
+}
+
+.maasai-quick-item span {
+    display: block;
+    color: var(--m-orange-dark);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+.maasai-quick-item strong {
+    display: block;
+    color: var(--m-ink);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Overview */
+.maasai-overview {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.maasai-feature-image {
+    height: 480px;
+    overflow: hidden;
+}
+
+.maasai-feature-image img {
+    height: 100%;
+    transition: transform .6s;
+}
+
+.maasai-feature-image:hover img {
+    transform: scale(1.04);
+}
+
+.maasai-intro h2 {
+    font-size: clamp(32px, 4vw, 43px);
+    color: var(--m-ink);
+    margin-bottom: 20px;
+}
+
+.maasai-intro p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.maasai-check-list {
+    list-style: none;
+    display: grid;
+    gap: 11px;
+    margin-top: 22px;
+    padding: 0;
+}
+
+.maasai-check-list li {
+    position: relative;
+    padding-left: 28px;
+    color: var(--m-ink);
+    font-size: 13px;
+}
+
+.maasai-check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--m-orange);
+    font-weight: 900;
+}
+
+/* Highlights */
+.maasai-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.maasai-highlight-card {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid var(--m-border);
+}
+
+.maasai-highlight-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: var(--m-orange);
+    margin-bottom: 10px;
+}
+
+.maasai-highlight-card h3 {
+    font-size: 22px;
+    color: var(--m-ink);
+    margin-bottom: 10px;
+}
+
+.maasai-highlight-card p {
+    font-size: 13px;
+}
+
+/* Itinerary */
+.maasai-day-card {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    border: 1px solid var(--m-border);
+    margin-bottom: 25px;
+    background: #fff;
+    box-shadow: var(--m-shadow);
+}
+
+.maasai-day-image {
+    min-height: 310px;
+}
+
+.maasai-day-image img {
+    height: 100%;
+}
+
+.maasai-day-content {
+    padding: 30px 35px;
+}
+
+.maasai-day-label {
+    color: var(--m-orange-dark);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.maasai-day-content h3 {
+    color: var(--m-ink);
+    font-size: 27px;
+    margin: 9px 0 15px;
+}
+
+.maasai-day-content p {
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+.maasai-day-content h4 {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--m-ink);
+    font-size: 13px;
+    margin: 18px 0 8px;
+}
+
+.maasai-day-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 18px;
+}
+
+.maasai-day-meta span {
+    background: var(--m-cream);
+    color: var(--m-ink);
+    padding: 7px 11px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Accommodation */
+.maasai-stay-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.maasai-stay-card {
+    background: #fff;
+    border: 1px solid var(--m-border);
+}
+
+.maasai-stay-card img {
+    height: 280px;
+}
+
+.maasai-stay-copy {
+    padding: 25px;
+}
+
+.maasai-stay-copy h3 {
+    color: var(--m-ink);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.maasai-stay-copy p {
+    font-size: 13px;
+}
+
+/* Activities */
+.maasai-activity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.maasai-activity {
+    border: 1px solid var(--m-border);
+    padding: 25px;
+    background: #fff;
+}
+
+.maasai-activity h3 {
+    font-size: 20px;
+    color: var(--m-ink);
+    margin-bottom: 9px;
+}
+
+.maasai-activity p {
+    font-size: 13px;
+}
+
+/* Inclusions */
+.maasai-include-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.maasai-include-box {
+    padding: 32px;
+    border: 1px solid var(--m-border);
+    background: #fff;
+}
+
+.maasai-include-box h3 {
+    font-size: 25px;
+    color: var(--m-ink);
+    margin-bottom: 18px;
+}
+
+.maasai-include-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.maasai-include-box li {
+    padding: 9px 0 9px 24px;
+    position: relative;
+    border-bottom: 1px solid #f0e6dc;
+    font-size: 13px;
+    color: var(--m-muted);
+}
+
+.maasai-include-box li::before {
+    position: absolute;
+    left: 0;
+    font-weight: 900;
+}
+
+.maasai-included li::before {
+    content: "✓";
+    color: var(--m-orange);
+}
+
+.maasai-excluded li::before {
+    content: "×";
+    color: #9B6652;
+}
+
+/* Information */
+.maasai-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.maasai-info-card {
+    background: #fff;
+    border: 1px solid var(--m-border);
+    padding: 25px;
+}
+
+.maasai-info-card h3 {
+    color: var(--m-ink);
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.maasai-info-card p {
+    font-size: 13px;
+}
+
+/* CTA */
+.maasai-booking {
+    background: #A66A42;
+    color: #fff;
+    text-align: center;
+}
+
+.maasai-booking h2 {
+    color: #fff;
+    font-size: clamp(34px, 5vw, 49px);
+    margin-bottom: 17px;
+}
+
+.maasai-booking .eyebrow {
+    color: #FFE0C5;
+}
+
+.maasai-booking p {
+    color: #fff3e8;
+    max-width: 680px;
+    margin: 0 auto 25px;
+}
+
+.maasai-booking-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.maasai-booking .btn-primary {
+    background: var(--m-orange);
+    color: #fff;
+}
+
+.maasai-booking .btn-outline {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .maasai-overview {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .maasai-day-card {
+        grid-template-columns: 240px 1fr;
+    }
+}
+
+@media(max-width: 650px) {
+    .maasai-page .section {
+        padding: 60px 0;
+    }
+
+    .maasai-hero {
+        min-height: 540px;
+        background-position: 58% center;
+    }
+
+    .maasai-hero-content {
+        padding: 75px 0;
+    }
+
+    .maasai-hero h1 {
+        font-size: 43px;
+    }
+
+    .maasai-hero p {
+        font-size: 14px;
+    }
+
+    .maasai-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .maasai-hero-actions .btn {
+        width: 100%;
+    }
+
+    .maasai-quick-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .maasai-quick-item {
+        padding: 17px 12px;
+        border-bottom: 1px solid var(--m-border);
+    }
+
+    .maasai-quick-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .maasai-quick-item strong {
+        font-size: 12px;
+    }
+
+    .maasai-highlight-grid,
+    .maasai-stay-grid,
+    .maasai-activity-grid,
+    .maasai-include-grid,
+    .maasai-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .maasai-day-card {
+        grid-template-columns: 1fr;
+    }
+
+    .maasai-day-image {
+        height: 235px;
+        min-height: 0;
+    }
+
+    .maasai-day-content {
+        padding: 24px;
+    }
+
+    .maasai-day-content h3 {
+        font-size: 24px;
+    }
+
+    .maasai-feature-image {
+        height: 290px;
+    }
+
+    .maasai-booking-actions {
+        flex-direction: column;
+    }
+
+    .maasai-booking-actions .btn {
+        width: 100%;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="container topbar-inner">
-    <span>Explore Kenya. Experience Africa.</span>
-    <span>
-      <a href="tel:+254704261626">+254 704 261 626</a>
-      &nbsp; | &nbsp;
-      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-    </span>
-  </div>
+<div class="topline">
+    <div class="wrap top-inner">
+        <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+        <span>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            &nbsp; | &nbsp;
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+        </span>
+    </div>
 </div>
 
-<!-- HEADER -->
-<header class="main-header">
-  <div class="container nav-wrap">
-    <a href="index.html" class="brand">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures">
-    </a>
+<header class="header">
+    <div class="wrap nav">
+        <a href="index.html" class="brand">
+            <img src="fleypat-logo.png" alt="Fleypat Adventures">
+        </a>
 
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <button class="nav-toggle" id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="mainNav">☰</button>
 
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="safaris.html">Safaris</a>
-      <a href="marine-tours.html">Marine Tours</a>
-      <a href="day-trips.html">Day Trips</a>
-      <a href="beach-holidays.html">Beach Holidays</a>
-      <a href="honeymoon.html">Honeymoons</a>
-      <a href="destinations.html">Destinations</a>
-      <a href="itineraries.html" class="active">Itineraries</a>
-      <a href="services.html">Services</a>
-      <a href="transfers.html">Transfers</a>
-      <a href="blog.html">Blog</a>
-      <a href="partnerships.html">Partnerships</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="book-link">Book Now</a>
-    </nav>
-  </div>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="marine-tours.html">Marine Tours</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="honeymoon.html">Honeymoons</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html" class="active">Itineraries</a>
+            <a href="services.html">Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="blog.html">Blog</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn btn-gold">Book Now</a>
+        </nav>
+    </div>
 </header>
 
-<main>
+<main class="maasai-page">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-content">
-    <div class="eyebrow">Kenya Wildlife Safari</div>
-    <h1>3-Day Maasai Mara Safari</h1>
-    <p>
-      Discover the legendary Maasai Mara, a remarkable wilderness of
-      sweeping savannah plains, abundant wildlife and unforgettable
-      African safari experiences. Enjoy exciting game drives in search
-      of lions, elephants, giraffes, zebras and other wildlife.
-    </p>
+    <!-- HERO -->
+    <section class="maasai-hero">
+        <div class="wrap maasai-hero-content">
+            <div class="eyebrow">Kenya Wildlife Safari</div>
+            <h1>3-Day Maasai Mara Safari</h1>
+            <p>
+                Discover the legendary Maasai Mara, a remarkable wilderness
+                of sweeping savannah plains, abundant wildlife and
+                unforgettable African safari experiences. Enjoy exciting
+                game drives in search of lions, elephants, giraffes,
+                zebras and other wildlife.
+            </p>
 
-    <div class="hero-actions">
-      <a href="#itinerary" class="btn btn-primary">Explore the Itinerary</a>
-      <a href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20the%203-Day%20Maasai%20Mara%20Safari." class="btn btn-outline">Enquire on WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<!-- QUICK DETAILS -->
-<div class="quick-details">
-  <div class="container quick-grid">
-    <div class="quick-item">
-      <span>Duration</span>
-      <strong>3 Days / 2 Nights</strong>
-    </div>
-    <div class="quick-item">
-      <span>Departure</span>
-      <strong>Nairobi, Kenya</strong>
-    </div>
-    <div class="quick-item">
-      <span>Destination</span>
-      <strong>Maasai Mara, Narok</strong>
-    </div>
-    <div class="quick-item">
-      <span>Tour Type</span>
-      <strong>Private / Customisable</strong>
-    </div>
-  </div>
-</div>
-
-<!-- OVERVIEW -->
-<section>
-  <div class="container two-col">
-    <div class="feature-image">
-      <img
-        src="https://media.audleytravel.com/-/media/images/home/africa/kenya/itineraries/masai-mara-shutterstock_2001943469-1000x3000.jpg?h=685&q=79&w=1920"
-        alt="Wildlife grazing at a waterhole in the Maasai Mara"
-        loading="lazy">
-    </div>
-
-    <div class="intro-copy">
-      <div class="eyebrow">Discover the Maasai Mara</div>
-      <h2>Experience the magic of the African savannah</h2>
-
-      <p>
-        The Maasai Mara National Reserve in south-western Kenya is one
-        of Africa's most celebrated safari destinations. Its sweeping
-        grasslands, seasonal rivers and rich wildlife populations create
-        an exceptional setting for an African safari.
-      </p>
-
-      <p>
-        The reserve is especially known for its big cats, including
-        lions, cheetahs and leopards, as well as elephants, buffaloes,
-        giraffes, zebras, wildebeest and numerous other species.
-      </p>
-
-      <p>
-        This three-day experience takes you from Nairobi to the Mara
-        for two nights of accommodation and exciting wildlife viewing.
-        The programme can be adjusted to suit your travel dates,
-        accommodation preference and budget.
-      </p>
-
-      <ul class="check-list">
-        <li>Explore the famous Maasai Mara ecosystem</li>
-        <li>Search for lions, cheetahs and other predators</li>
-        <li>Observe elephants, giraffes, zebras and antelopes</li>
-        <li>Enjoy morning and afternoon game drives</li>
-        <li>Experience the beautiful open savannah landscapes</li>
-        <li>Choose accommodation to suit your budget</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- HIGHLIGHTS -->
-<section class="highlights">
-  <div class="container">
-    <div class="section-heading center">
-      <div class="eyebrow">Safari Highlights</div>
-      <h2>What makes this journey special?</h2>
-      <p>
-        Discover the wildlife, scenery and experiences that make
-        the Maasai Mara one of Kenya's most memorable destinations.
-      </p>
-    </div>
-
-    <div class="highlight-grid">
-      <article class="highlight-card">
-        <div class="highlight-number">01</div>
-        <h3>Big Cat Country</h3>
-        <p>
-          Explore areas where lions and cheetahs are found, with
-          opportunities to search for the elusive leopard.
-          Wildlife sightings depend on natural conditions.
-        </p>
-      </article>
-
-      <article class="highlight-card">
-        <div class="highlight-number">02</div>
-        <h3>Open Savannah</h3>
-        <p>
-          Enjoy the sweeping grasslands, rolling landscapes and
-          classic acacia-dotted scenery that define the Mara.
-        </p>
-      </article>
-
-      <article class="highlight-card">
-        <div class="highlight-number">03</div>
-        <h3>Great Migration</h3>
-        <p>
-          During the seasonal migration period, the wider Mara
-          ecosystem can host vast herds of wildebeest and zebras.
-          River crossings are not guaranteed.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ITINERARY -->
-<section id="itinerary" class="itinerary-section">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Your Safari Journey</div>
-      <h2>Detailed 3-Day Itinerary</h2>
-      <p>
-        Enjoy a carefully planned journey from Nairobi to the Maasai Mara.
-        This is a suggested programme; exact departure times, game-drive
-        schedules and meal arrangements will be confirmed in your quotation.
-      </p>
-    </div>
-
-    <!-- DAY 1 -->
-    <article class="day-card">
-      <div class="day-image">
-        <img
-          src="https://www.zdf-studios.com/sites/default/files/styles/dd_catalog_hero_top/public/media/catalog/posterframe/brotherhoodoflions-ep03-keyvisual01.png?itok=GmMY5_v6"
-          alt="Lions resting in the Maasai Mara grasslands"
-          loading="lazy">
-      </div>
-
-      <div class="day-content">
-        <div class="day-label">Day 01 · Nairobi to Maasai Mara</div>
-        <h3>Journey to the African Wilderness</h3>
-
-        <p>
-          Your safari begins with an early morning pickup from your
-          agreed location in Nairobi. Meet your driver-guide and
-          begin the journey towards the Maasai Mara through Kenya's
-          scenic Great Rift Valley region.
-        </p>
-
-        <p>
-          Enjoy views of the countryside, local settlements and
-          changing landscapes along the route. There may be an
-          opportunity for a short stop along the way, depending on
-          the agreed travel arrangements.
-        </p>
-
-        <p>
-          Arrive in the Maasai Mara area around lunchtime, subject
-          to road and travel conditions. Proceed to your selected
-          lodge or tented camp for check-in and lunch according
-          to the property's meal schedule.
-        </p>
-
-        <p>
-          In the afternoon, head out for your first game drive.
-          Explore the open plains in search of the Mara's wildlife.
-          Your guide will help you look for elephants, giraffes,
-          zebras, wildebeest, buffaloes and predators that may be
-          active during the afternoon.
-        </p>
-
-        <p>
-          Return to your accommodation in the evening for dinner
-          and your first overnight stay in the Mara.
-        </p>
-
-        <h4>Overnight</h4>
-        <p>Selected Maasai Mara lodge or tented camp.</p>
-
-        <div class="day-meta">
-          <span>Road transfer</span>
-          <span>Afternoon game drive</span>
-          <span>Dinner</span>
-          <span>Overnight stay</span>
+            <div class="maasai-hero-actions">
+                <a href="#itinerary" class="btn btn-primary">Explore the Itinerary</a>
+                <a href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20am%20interested%20in%20the%203-Day%20Maasai%20Mara%20Safari."
+                   class="btn btn-outline" target="_blank" rel="noopener">
+                    Enquire on WhatsApp
+                </a>
+            </div>
         </div>
-      </div>
-    </article>
+    </section>
 
-    <!-- DAY 2 -->
-    <article class="day-card">
-      <div class="day-image">
-        <img
-          src="https://www.worldplacesexplained.com/r2/og/places/maasai-mara-preview.webp"
-          alt="Giraffes and wildlife across the Maasai Mara savannah at sunset"
-          loading="lazy">
-      </div>
-
-      <div class="day-content">
-        <div class="day-label">Day 02 · Full Day in the Maasai Mara</div>
-        <h3>Full-Day Wildlife Exploration</h3>
-
-        <p>
-          Wake up early and enjoy breakfast before setting out for
-          a morning game drive. The early hours offer an excellent
-          opportunity to explore the reserve while wildlife is
-          often active across the plains.
-        </p>
-
-        <p>
-          Travel through different habitats in search of the
-          animals that make the Mara famous. Your guide will help
-          you look for lions, cheetahs, elephants, giraffes,
-          buffaloes, zebras, wildebeest and a variety of antelopes.
-        </p>
-
-        <p>
-          Depending on the selected safari arrangement, you may
-          return to the lodge or camp for lunch and a short rest,
-          followed by an afternoon game drive.
-        </p>
-
-        <p>
-          Alternatively, a full-day game drive with a picnic lunch
-          can be arranged where suitable and permitted by the
-          reserve rules and your accommodation arrangements.
-        </p>
-
-        <p>
-          During the afternoon, continue exploring the savannah
-          and riverine areas. The Mara River and its surrounding
-          habitats are important wildlife areas, although the
-          location visited will depend on the day's route and
-          prevailing conditions.
-        </p>
-
-        <p>
-          Return to your lodge or camp in the evening for dinner
-          and your second overnight stay.
-        </p>
-
-        <h4>Overnight</h4>
-        <p>Selected Maasai Mara lodge or tented camp.</p>
-
-        <div class="day-meta">
-          <span>Morning game drive</span>
-          <span>Lunch</span>
-          <span>Afternoon game drive</span>
-          <span>Dinner</span>
+    <!-- QUICK DETAILS -->
+    <div class="maasai-quick">
+        <div class="wrap maasai-quick-grid">
+            <div class="maasai-quick-item">
+                <span>Duration</span>
+                <strong>3 Days / 2 Nights</strong>
+            </div>
+            <div class="maasai-quick-item">
+                <span>Departure</span>
+                <strong>Nairobi, Kenya</strong>
+            </div>
+            <div class="maasai-quick-item">
+                <span>Destination</span>
+                <strong>Maasai Mara, Narok</strong>
+            </div>
+            <div class="maasai-quick-item">
+                <span>Tour Type</span>
+                <strong>Private / Customisable</strong>
+            </div>
         </div>
-      </div>
-    </article>
+    </div>
 
-    <!-- DAY 3 -->
-    <article class="day-card">
-      <div class="day-image">
-        <img
-          src="https://media.audleytravel.com/-/media/images/home/africa/kenya/itineraries/masai-mara-shutterstock_2001943469-1000x3000.jpg?h=685&q=79&w=1920"
-          alt="Maasai Mara plains and wildlife near a waterhole"
-          loading="lazy">
-      </div>
+    <!-- OVERVIEW -->
+    <section class="section">
+        <div class="wrap maasai-overview">
+            <div class="maasai-feature-image">
+                <img
+                    src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85"
+                    alt="African wildlife in a natural savannah landscape"
+                    loading="lazy">
+            </div>
 
-      <div class="day-content">
-        <div class="day-label">Day 03 · Maasai Mara to Nairobi</div>
-        <h3>Final Game Drive and Return Journey</h3>
+            <div class="maasai-intro">
+                <div class="eyebrow">Discover the Maasai Mara</div>
+                <h2>Experience the magic of the African savannah</h2>
 
-        <p>
-          Enjoy an early breakfast at your lodge or camp. Depending
-          on your departure schedule and the accommodation's
-          arrangements, you may have an opportunity for a final
-          morning game drive.
-        </p>
+                <p>
+                    The Maasai Mara National Reserve in south-western Kenya
+                    is one of Africa's most celebrated safari destinations.
+                    Its sweeping grasslands, seasonal rivers and rich
+                    wildlife populations create an exceptional setting
+                    for an African safari.
+                </p>
 
-        <p>
-          Enjoy the last moments in the Mara, taking in the open
-          grasslands and looking out for wildlife before returning
-          to the lodge or camp to check out.
-        </p>
+                <p>
+                    The reserve is especially known for its big cats,
+                    including lions, cheetahs and leopards, as well as
+                    elephants, buffaloes, giraffes, zebras, wildebeest
+                    and numerous other species.
+                </p>
 
-        <p>
-          Begin your return journey to Nairobi. Travel through the
-          scenic countryside and enjoy the changing landscapes
-          along the way.
-        </p>
+                <p>
+                    This three-day experience takes you from Nairobi to
+                    the Mara for two nights of accommodation and exciting
+                    wildlife viewing. The programme can be adjusted to
+                    suit your travel dates, accommodation preference
+                    and budget.
+                </p>
 
-        <p>
-          On arrival in Nairobi, you will be dropped off at your
-          agreed location, marking the end of your three-day
-          Maasai Mara safari.
-        </p>
-
-        <h4>Meal arrangement</h4>
-        <p>Breakfast, subject to the selected accommodation package.</p>
-
-        <div class="day-meta">
-          <span>Breakfast</span>
-          <span>Optional morning game drive</span>
-          <span>Check-out</span>
-          <span>Return road transfer</span>
+                <ul class="maasai-check-list">
+                    <li>Explore the famous Maasai Mara ecosystem</li>
+                    <li>Search for lions, cheetahs and other predators</li>
+                    <li>Observe elephants, giraffes, zebras and antelopes</li>
+                    <li>Enjoy morning and afternoon game drives</li>
+                    <li>Experience beautiful open savannah landscapes</li>
+                    <li>Choose accommodation to suit your budget</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </article>
+    </section>
 
-  </div>
-</section>
+    <!-- HIGHLIGHTS -->
+    <section class="section alt">
+        <div class="wrap">
+            <div class="section-heading center">
+                <div class="eyebrow">Safari Highlights</div>
+                <h2>What makes this journey special?</h2>
+                <p>
+                    Discover the wildlife, scenery and experiences that
+                    make the Maasai Mara one of Kenya's most memorable
+                    destinations.
+                </p>
+            </div>
 
-<!-- ACCOMMODATION -->
-<section class="accommodation">
-  <div class="container">
-    <div class="section-heading center">
-      <div class="eyebrow">Where You Will Stay</div>
-      <h2>Accommodation Options</h2>
-      <p>
-        Select an accommodation category that matches your comfort
-        preferences and safari budget. The final property, meal plan
-        and availability will be confirmed in your quotation.
-      </p>
-    </div>
+            <div class="maasai-highlight-grid">
+                <article class="maasai-highlight-card">
+                    <div class="maasai-highlight-number">01</div>
+                    <h3>Big Cat Country</h3>
+                    <p>
+                        Explore areas where lions and cheetahs are found,
+                        with opportunities to search for the elusive
+                        leopard. Wildlife sightings depend on natural
+                        conditions.
+                    </p>
+                </article>
 
-    <div class="stay-grid">
+                <article class="maasai-highlight-card">
+                    <div class="maasai-highlight-number">02</div>
+                    <h3>Open Savannah</h3>
+                    <p>
+                        Enjoy sweeping grasslands, rolling landscapes
+                        and classic acacia-dotted scenery that define
+                        the Mara.
+                    </p>
+                </article>
 
-      <article class="stay-card">
-        <img
-          src="https://www.worldplacesexplained.com/r2/og/places/maasai-mara-preview.webp"
-          alt="Maasai Mara safari landscape"
-          loading="lazy">
-
-        <div class="stay-copy">
-          <h3>Standard / Tented Accommodation</h3>
-          <p>
-            A practical safari accommodation option for travellers
-            looking for a comfortable stay close to the Mara
-            experience. The specific camp or lodge will depend on
-            availability, location and the agreed package.
-          </p>
+                <article class="maasai-highlight-card">
+                    <div class="maasai-highlight-number">03</div>
+                    <h3>Great Migration</h3>
+                    <p>
+                        During the seasonal migration period, the wider
+                        Mara ecosystem can host vast herds of wildebeest
+                        and zebras. River crossings are not guaranteed.
+                    </p>
+                </article>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <article class="stay-card">
-        <img
-          src="https://media.audleytravel.com/-/media/images/home/africa/kenya/itineraries/masai-mara-shutterstock_2001943469-1000x3000.jpg?h=685&q=79&w=1920"
-          alt="Maasai Mara safari scenery"
-          loading="lazy">
+    <!-- ITINERARY -->
+    <section class="section" id="itinerary">
+        <div class="wrap">
+            <div class="section-heading">
+                <div class="eyebrow">Your Safari Journey</div>
+                <h2>Detailed 3-Day Itinerary</h2>
+                <p>
+                    Enjoy a carefully planned journey from Nairobi to
+                    the Maasai Mara. This is a suggested programme;
+                    exact departure times, game-drive schedules and
+                    meal arrangements will be confirmed in your quotation.
+                </p>
+            </div>
 
-        <div class="stay-copy">
-          <h3>Luxury Lodge / Tented Camp</h3>
-          <p>
-            Upgrade to a more luxurious safari stay with enhanced
-            comfort, facilities and dining arrangements. The
-            selected property will be confirmed according to
-            availability and your preferred budget.
-          </p>
+            <!-- DAY 1 -->
+            <article class="maasai-day-card">
+                <div class="maasai-day-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1000&q=85"
+                        alt="Lion resting in the African wilderness"
+                        loading="lazy">
+                </div>
+
+                <div class="maasai-day-content">
+                    <div class="maasai-day-label">Day 01 · Nairobi to Maasai Mara</div>
+                    <h3>Journey to the African Wilderness</h3>
+
+                    <p>
+                        Your safari begins with an early morning pickup
+                        from your agreed location in Nairobi. Meet your
+                        driver-guide and begin the journey towards the
+                        Maasai Mara through Kenya's scenic Great Rift
+                        Valley region.
+                    </p>
+
+                    <p>
+                        Enjoy views of the countryside, local settlements
+                        and changing landscapes along the route. There
+                        may be an opportunity for a short stop along
+                        the way, depending on the agreed travel arrangements.
+                    </p>
+
+                    <p>
+                        Arrive in the Maasai Mara area around lunchtime,
+                        subject to road and travel conditions. Proceed
+                        to your selected lodge or tented camp for check-in
+                        and lunch according to the property's meal schedule.
+                    </p>
+
+                    <p>
+                        In the afternoon, head out for your first game
+                        drive. Explore the open plains in search of the
+                        Mara's wildlife. Your guide will help you look
+                        for elephants, giraffes, zebras, wildebeest,
+                        buffaloes and predators that may be active.
+                    </p>
+
+                    <p>
+                        Return to your accommodation in the evening
+                        for dinner and your first overnight stay in the Mara.
+                    </p>
+
+                    <h4>Overnight</h4>
+                    <p>Selected Maasai Mara lodge or tented camp.</p>
+
+                    <div class="maasai-day-meta">
+                        <span>Road transfer</span>
+                        <span>Afternoon game drive</span>
+                        <span>Dinner</span>
+                        <span>Overnight stay</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 2 -->
+            <article class="maasai-day-card">
+                <div class="maasai-day-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=85"
+                        alt="Giraffes and wildlife in a wide African landscape"
+                        loading="lazy">
+                </div>
+
+                <div class="maasai-day-content">
+                    <div class="maasai-day-label">Day 02 · Full Day in the Maasai Mara</div>
+                    <h3>Full-Day Wildlife Exploration</h3>
+
+                    <p>
+                        Wake up early and enjoy breakfast before setting
+                        out for a morning game drive. The early hours
+                        offer an excellent opportunity to explore the
+                        reserve while wildlife is often active across
+                        the plains.
+                    </p>
+
+                    <p>
+                        Travel through different habitats in search
+                        of the animals that make the Mara famous.
+                        Your guide will help you look for lions,
+                        cheetahs, elephants, giraffes, buffaloes,
+                        zebras, wildebeest and a variety of antelopes.
+                    </p>
+
+                    <p>
+                        Depending on the selected safari arrangement,
+                        you may return to the lodge or camp for lunch
+                        and a short rest, followed by an afternoon
+                        game drive.
+                    </p>
+
+                    <p>
+                        Alternatively, a full-day game drive with a
+                        picnic lunch can be arranged where suitable
+                        and permitted by reserve rules and your
+                        accommodation arrangements.
+                    </p>
+
+                    <p>
+                        During the afternoon, continue exploring the
+                        savannah and riverine areas. The Mara River
+                        and its surrounding habitats are important
+                        wildlife areas, although the location visited
+                        will depend on the day's route and prevailing
+                        conditions.
+                    </p>
+
+                    <p>
+                        Return to your lodge or camp in the evening
+                        for dinner and your second overnight stay.
+                    </p>
+
+                    <h4>Overnight</h4>
+                    <p>Selected Maasai Mara lodge or tented camp.</p>
+
+                    <div class="maasai-day-meta">
+                        <span>Morning game drive</span>
+                        <span>Lunch</span>
+                        <span>Afternoon game drive</span>
+                        <span>Dinner</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DAY 3 -->
+            <article class="maasai-day-card">
+                <div class="maasai-day-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1000&q=85"
+                        alt="Golden morning light over an African landscape"
+                        loading="lazy">
+                </div>
+
+                <div class="maasai-day-content">
+                    <div class="maasai-day-label">Day 03 · Maasai Mara to Nairobi</div>
+                    <h3>Final Game Drive and Return Journey</h3>
+
+                    <p>
+                        Enjoy an early breakfast at your lodge or camp.
+                        Depending on your departure schedule and the
+                        accommodation's arrangements, you may have
+                        an opportunity for a final morning game drive.
+                    </p>
+
+                    <p>
+                        Enjoy the last moments in the Mara, taking
+                        in the open grasslands and looking out for
+                        wildlife before returning to the lodge or
+                        camp to check out.
+                    </p>
+
+                    <p>
+                        Begin your return journey to Nairobi. Travel
+                        through the scenic countryside and enjoy
+                        the changing landscapes along the way.
+                    </p>
+
+                    <p>
+                        On arrival in Nairobi, you will be dropped
+                        off at your agreed location, marking the end
+                        of your three-day Maasai Mara safari.
+                    </p>
+
+                    <h4>Meal arrangement</h4>
+                    <p>Breakfast, subject to the selected accommodation package.</p>
+
+                    <div class="maasai-day-meta">
+                        <span>Breakfast</span>
+                        <span>Optional morning game drive</span>
+                        <span>Check-out</span>
+                        <span>Return road transfer</span>
+                    </div>
+                </div>
+            </article>
         </div>
-      </article>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- ACCOMMODATION -->
+    <section class="section alt">
+        <div class="wrap">
+            <div class="section-heading center">
+                <div class="eyebrow">Where You Will Stay</div>
+                <h2>Accommodation Options</h2>
+                <p>
+                    Select an accommodation category that matches
+                    your comfort preferences and safari budget.
+                    The final property, meal plan and availability
+                    will be confirmed in your quotation.
+                </p>
+            </div>
 
-<!-- ACTIVITIES -->
-<section>
-  <div class="container">
-    <div class="section-heading center">
-      <div class="eyebrow">Experiences</div>
-      <h2>Activities During Your Safari</h2>
-      <p>
-        The Maasai Mara offers a range of wildlife and nature
-        experiences. Activities are subject to availability,
-        reserve regulations and the selected package.
-      </p>
-    </div>
+            <div class="maasai-stay-grid">
+                <article class="maasai-stay-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1100&q=85"
+                        alt="Comfortable lodge accommodation surrounded by nature"
+                        loading="lazy">
 
-    <div class="activity-grid">
+                    <div class="maasai-stay-copy">
+                        <h3>Standard / Tented Accommodation</h3>
+                        <p>
+                            A practical safari accommodation option
+                            for travellers looking for a comfortable
+                            stay close to the Mara experience. The
+                            specific camp or lodge will depend on
+                            availability, location and the agreed package.
+                        </p>
+                    </div>
+                </article>
 
-      <article class="activity">
-        <h3>Game Drives</h3>
-        <p>
-          Explore the savannah in a safari vehicle with a
-          professional driver-guide, searching for wildlife
-          across the reserve.
-        </p>
-      </article>
+                <article class="maasai-stay-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1100&q=85"
+                        alt="Luxury lodge interior and hospitality setting"
+                        loading="lazy">
 
-      <article class="activity">
-        <h3>Big Cat Tracking</h3>
-        <p>
-          Look out for lions, cheetahs and leopards in their
-          natural habitats. Sightings depend on wildlife
-          movement and daily conditions.
-        </p>
-      </article>
+                    <div class="maasai-stay-copy">
+                        <h3>Luxury Lodge / Tented Camp</h3>
+                        <p>
+                            Upgrade to a more luxurious safari stay
+                            with enhanced comfort, facilities and
+                            dining arrangements. The selected property
+                            will be confirmed according to availability
+                            and your preferred budget.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-      <article class="activity">
-        <h3>Bird Watching</h3>
-        <p>
-          Discover the Mara's diverse birdlife, including
-          raptors, vultures, secretary birds and other
-          savannah species.
-        </p>
-      </article>
+    <!-- ACTIVITIES -->
+    <section class="section">
+        <div class="wrap">
+            <div class="section-heading center">
+                <div class="eyebrow">Experiences</div>
+                <h2>Activities During Your Safari</h2>
+                <p>
+                    The Maasai Mara offers a range of wildlife and
+                    nature experiences. Activities are subject to
+                    availability, reserve regulations and the
+                    selected package.
+                </p>
+            </div>
 
-      <article class="activity">
-        <h3>Great Migration Viewing</h3>
-        <p>
-          During the migration season, look out for large
-          herds of wildebeest and zebras moving through
-          the wider Mara ecosystem.
-        </p>
-      </article>
+            <div class="maasai-activity-grid">
+                <article class="maasai-activity">
+                    <h3>Game Drives</h3>
+                    <p>
+                        Explore the savannah in a safari vehicle with
+                        a professional driver-guide, searching for
+                        wildlife across the reserve.
+                    </p>
+                </article>
 
-      <article class="activity">
-        <h3>Scenic Photography</h3>
-        <p>
-          Capture the open grasslands, wildlife, dramatic
-          skies and beautiful African sunsets.
-        </p>
-      </article>
+                <article class="maasai-activity">
+                    <h3>Big Cat Tracking</h3>
+                    <p>
+                        Look out for lions, cheetahs and leopards
+                        in their natural habitats. Sightings depend
+                        on wildlife movement and daily conditions.
+                    </p>
+                </article>
 
-      <article class="activity">
-        <h3>Hot Air Balloon Safari</h3>
-        <p>
-          A hot air balloon experience may be arranged as
-          an optional activity at additional cost, subject
-          to availability and operator confirmation.
-        </p>
-      </article>
+                <article class="maasai-activity">
+                    <h3>Bird Watching</h3>
+                    <p>
+                        Discover the Mara's diverse birdlife,
+                        including raptors, vultures, secretary
+                        birds and other savannah species.
+                    </p>
+                </article>
 
-    </div>
-  </div>
-</section>
+                <article class="maasai-activity">
+                    <h3>Great Migration Viewing</h3>
+                    <p>
+                        During the migration season, look out for
+                        large herds of wildebeest and zebras moving
+                        through the wider Mara ecosystem.
+                    </p>
+                </article>
 
-<!-- INCLUSIONS -->
-<section class="info-section">
-  <div class="container">
+                <article class="maasai-activity">
+                    <h3>Scenic Photography</h3>
+                    <p>
+                        Capture the open grasslands, wildlife,
+                        dramatic skies and beautiful African sunsets.
+                    </p>
+                </article>
 
-    <div class="section-heading">
-      <div class="eyebrow">Your Safari Package</div>
-      <h2>What's Included and Excluded?</h2>
-      <p>
-        The final package inclusions depend on your selected
-        accommodation, travel dates, group size and confirmed
-        quotation. Please check the written quotation before
-        making payment.
-      </p>
-    </div>
+                <article class="maasai-activity">
+                    <h3>Hot Air Balloon Safari</h3>
+                    <p>
+                        A hot air balloon experience may be arranged
+                        as an optional activity at additional cost,
+                        subject to availability and operator confirmation.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-    <div class="include-grid">
+    <!-- INCLUSIONS -->
+    <section class="section alt">
+        <div class="wrap">
+            <div class="section-heading">
+                <div class="eyebrow">Your Safari Package</div>
+                <h2>What's Included and Excluded?</h2>
+                <p>
+                    The final package inclusions depend on your
+                    selected accommodation, travel dates, group
+                    size and confirmed quotation. Please check
+                    the written quotation before making payment.
+                </p>
+            </div>
 
-      <div class="include-box included">
-        <h3>Package Inclusions</h3>
-        <ul>
-          <li>Transport from Nairobi and return, as quoted</li>
-          <li>Safari vehicle and professional driver-guide</li>
-          <li>Accommodation for two nights, as quoted</li>
-          <li>Meals according to the selected meal plan</li>
-          <li>Game drives outlined in the confirmed itinerary</li>
-          <li>Park entry fees, if expressly included in the quotation</li>
-          <li>Applicable taxes, where stated</li>
-        </ul>
-      </div>
+            <div class="maasai-include-grid">
+                <div class="maasai-include-box maasai-included">
+                    <h3>Package Inclusions</h3>
+                    <ul>
+                        <li>Transport from Nairobi and return, as quoted</li>
+                        <li>Safari vehicle and professional driver-guide</li>
+                        <li>Accommodation for two nights, as quoted</li>
+                        <li>Meals according to the selected meal plan</li>
+                        <li>Game drives outlined in the confirmed itinerary</li>
+                        <li>Park entry fees, if expressly included in the quotation</li>
+                        <li>Applicable taxes, where stated</li>
+                    </ul>
+                </div>
 
-      <div class="include-box excluded">
-        <h3>Package Exclusions</h3>
-        <ul>
-          <li>Personal expenses and souvenirs</li>
-          <li>Travel insurance</li>
-          <li>Tips and gratuities</li>
-          <li>Drinks and items outside the selected meal plan</li>
-          <li>Optional hot air balloon safari</li>
-          <li>Activities not listed in the quotation</li>
-          <li>Any additional services not expressly included</li>
-        </ul>
-      </div>
+                <div class="maasai-include-box maasai-excluded">
+                    <h3>Package Exclusions</h3>
+                    <ul>
+                        <li>Personal expenses and souvenirs</li>
+                        <li>Travel insurance</li>
+                        <li>Tips and gratuities</li>
+                        <li>Drinks and items outside the selected meal plan</li>
+                        <li>Optional hot air balloon safari</li>
+                        <li>Activities not listed in the quotation</li>
+                        <li>Any additional services not expressly included</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- TRAVEL INFORMATION -->
+    <section class="section">
+        <div class="wrap">
+            <div class="section-heading">
+                <div class="eyebrow">Before You Travel</div>
+                <h2>Important Safari Information</h2>
+                <p>
+                    A few useful details to help you prepare
+                    for your Maasai Mara experience.
+                </p>
+            </div>
 
-<!-- TRAVEL INFORMATION -->
-<section>
-  <div class="container">
+            <div class="maasai-info-grid">
+                <article class="maasai-info-card">
+                    <h3>Departure and Pickup</h3>
+                    <p>
+                        This itinerary is designed to start in Nairobi.
+                        Pickup arrangements, departure time and the
+                        exact meeting point will be agreed before travel.
+                    </p>
+                </article>
 
-    <div class="section-heading">
-      <div class="eyebrow">Before You Travel</div>
-      <h2>Important Safari Information</h2>
-      <p>
-        A few useful details to help you prepare for your
-        Maasai Mara experience.
-      </p>
-    </div>
+                <article class="maasai-info-card">
+                    <h3>What to Pack</h3>
+                    <p>
+                        Bring comfortable clothing, closed shoes,
+                        a hat, sunscreen, sunglasses, personal
+                        medication, a camera and binoculars if available.
+                    </p>
+                </article>
 
-    <div class="info-grid">
+                <article class="maasai-info-card">
+                    <h3>Best Time to Visit</h3>
+                    <p>
+                        The Mara offers wildlife viewing throughout
+                        the year. July to October is generally
+                        associated with the Great Migration in the
+                        Kenyan Mara, although timing and animal
+                        movements vary.
+                    </p>
+                </article>
 
-      <article class="info-card">
-        <h3>Departure and Pickup</h3>
-        <p>
-          This itinerary is designed to start in Nairobi.
-          Pickup arrangements, departure time and the exact
-          meeting point will be agreed before travel.
-        </p>
-      </article>
+                <article class="maasai-info-card">
+                    <h3>Wildlife Sightings</h3>
+                    <p>
+                        The Maasai Mara is rich in wildlife, but
+                        animals move freely in their natural habitat.
+                        Specific sightings, including big cats and
+                        river crossings, cannot be guaranteed.
+                    </p>
+                </article>
 
-      <article class="info-card">
-        <h3>What to Pack</h3>
-        <p>
-          Bring comfortable clothing, closed shoes, a hat,
-          sunscreen, sunglasses, personal medication,
-          a camera and binoculars if available.
-        </p>
-      </article>
+                <article class="maasai-info-card">
+                    <h3>Weather and Clothing</h3>
+                    <p>
+                        Weather conditions can vary. Pack light
+                        layers for early morning game drives and
+                        comfortable clothing for daytime activities.
+                    </p>
+                </article>
 
-      <article class="info-card">
-        <h3>Best Time to Visit</h3>
-        <p>
-          The Mara offers wildlife viewing throughout the year.
-          July to October is generally associated with the
-          Great Migration in the Kenyan Mara, although timing
-          and animal movements vary.
-        </p>
-      </article>
+                <article class="maasai-info-card">
+                    <h3>Park Rules and Safety</h3>
+                    <p>
+                        Follow your guide's instructions, remain
+                        inside the safari vehicle unless advised
+                        otherwise, and respect wildlife and reserve
+                        regulations.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-      <article class="info-card">
-        <h3>Wildlife Sightings</h3>
-        <p>
-          The Maasai Mara is rich in wildlife, but animals
-          move freely in their natural habitat. Specific
-          sightings, including big cats and river crossings,
-          cannot be guaranteed.
-        </p>
-      </article>
+    <!-- BOOKING CTA -->
+    <section class="section maasai-booking" id="enquire">
+        <div class="wrap">
+            <div class="eyebrow">Start Your Adventure</div>
+            <h2>Ready to Explore the Maasai Mara?</h2>
 
-      <article class="info-card">
-        <h3>Weather and Clothing</h3>
-        <p>
-          Weather conditions can vary. Pack light layers
-          for early morning game drives and comfortable
-          clothing for daytime activities.
-        </p>
-      </article>
+            <p>
+                Contact Fleypat Adventures for a personalised quotation.
+                Share your preferred travel dates, number of travellers
+                and accommodation category so we can prepare your
+                Maasai Mara safari package.
+            </p>
 
-      <article class="info-card">
-        <h3>Park Rules and Safety</h3>
-        <p>
-          Follow your guide's instructions, remain inside
-          the safari vehicle unless advised otherwise,
-          and respect wildlife and reserve regulations.
-        </p>
-      </article>
+            <div class="maasai-booking-actions">
+                <a class="btn btn-primary"
+                   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20please%20send%20me%20a%20quotation%20for%20the%203-Day%20Maasai%20Mara%20Safari."
+                   target="_blank" rel="noopener">
+                    Request a Quote on WhatsApp
+                </a>
 
-    </div>
-  </div>
-</section>
-
-<!-- BOOKING CTA -->
-<section class="booking-section" id="enquire">
-  <div class="container">
-    <div class="eyebrow">Start Your Adventure</div>
-    <h2>Ready to Explore the Maasai Mara?</h2>
-
-    <p>
-      Contact Fleypat Adventures for a personalised quotation.
-      Share your preferred travel dates, number of travellers
-      and accommodation category so we can prepare your
-      Maasai Mara safari package.
-    </p>
-
-    <div class="booking-actions">
-      <a class="btn btn-primary"
-         href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20please%20send%20me%20a%20quotation%20for%20the%203-Day%20Maasai%20Mara%20Safari.">
-        Request a Quote on WhatsApp
-      </a>
-
-      <a class="btn btn-outline"
-         href="mailto:info@fleypatadventures.com?subject=3-Day%20Maasai%20Mara%20Safari%20Enquiry">
-        Email Our Team
-      </a>
-    </div>
-  </div>
-</section>
+                <a class="btn btn-outline"
+                   href="mailto:info@fleypatadventures.com?subject=3-Day%20Maasai%20Mara%20Safari%20Enquiry">
+                    Email Our Team
+                </a>
+            </div>
+        </div>
+    </section>
 
 </main>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
+<footer class="footer">
+    <div class="wrap footer-grid">
+        <div>
+            <a href="index.html" class="brand">
+                <img src="fleypat-logo.png" alt="Fleypat Adventures">
+            </a>
+            <p>
+                Your Adventure Begins Here! Discover Kenya and beyond
+                with memorable safaris, beach holidays and travel experiences.
+            </p>
+        </div>
 
-      <div>
-        <img src="fleypat-logo.png" alt="Fleypat Adventures" class="footer-logo">
-        <p>
-          Your Adventure Begins Here! Discover Kenya and beyond
-          with memorable safaris, beach holidays and travel experiences.
-        </p>
-      </div>
+        <div>
+            <h3>Explore</h3>
+            <a href="safaris.html">Kenya Safaris</a>
+            <a href="day-trips.html">Day Trips</a>
+            <a href="beach-holidays.html">Beach Holidays</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="itineraries.html">Travel Itineraries</a>
+        </div>
 
-      <div>
-        <h3>Explore</h3>
-        <a href="safaris.html">Kenya Safaris</a>
-        <a href="day-trips.html">Day Trips</a>
-        <a href="beach-holidays.html">Beach Holidays</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="itineraries.html">Travel Itineraries</a>
-      </div>
+        <div>
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="transfers.html">Transfers</a>
+            <a href="blog.html">Travel Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
 
-      <div>
-        <h3>Quick Links</h3>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Our Services</a>
-        <a href="transfers.html">Transfers</a>
-        <a href="blog.html">Travel Blog</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-
-      <div>
-        <h3>Get in Touch</h3>
-        <a href="tel:+254704261626">+254 704 261 626</a>
-        <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
-        <a href="https://wa.me/254704261626">WhatsApp Us</a>
-        <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-
+        <div>
+            <h3>Get in Touch</h3>
+            <a href="tel:+254704261626">+254 704 261 626</a>
+            <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+            <a href="https://wa.me/254704261626" target="_blank" rel="noopener">WhatsApp Us</a>
+            <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram</a>
+        </div>
     </div>
 
-    <div class="footer-bottom">
-      © <span id="year"></span> Fleypat Adventures. All Rights Reserved.
-      Explore. Experience. Enjoy.
+    <div class="wrap foot-bottom">
+        © <span id="year"></span> Fleypat Adventures. All Rights Reserved.
+        Explore. Experience. Enjoy.
     </div>
-  </div>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a class="whatsapp"
+<a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Maasai%20Mara%20safari."
    target="_blank"
    rel="noopener"
    aria-label="Chat with Fleypat Adventures on WhatsApp">
-  WhatsApp Us
+    WhatsApp Us
 </a>
 
 <script>
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav-links');
+const menuButton = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
 
-menuButton.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', isOpen);
-  menuButton.textContent = isOpen ? '×' : '☰';
-});
+if (menuButton && nav) {
+    menuButton.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute(
+            'aria-label',
+            isOpen ? 'Close navigation' : 'Open navigation'
+        );
+        menuButton.textContent = isOpen ? '×' : '☰';
+    });
 
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuButton.setAttribute('aria-expanded', 'false');
-    menuButton.textContent = '☰';
-  });
-});
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Open navigation');
+            menuButton.textContent = '☰';
+        });
+    });
+}
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearElement = document.getElementById('year');
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
 </script>
 
 </body>
