@@ -7,7 +7,7 @@
 
 <title>Mombasa Destination Guide | Fleypat Adventures</title>
 <meta name="description" content="Discover Mombasa, Kenya. Explore Fort Jesus, Old Town, Swahili culture, Mama Ngina Waterfront, beaches, marine experiences and coastal adventures with Fleypat Adventures.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#FFF4E8">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +15,6 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
- --destination-green:#243c28;
- --destination-lime:#a8d832;
- --destination-gold:#a97832;
- --destination-cream:#fbf7e9;
- --destination-text:#344238;
-}
-body{color:var(--destination-text)}
 .destination-hero{
  min-height:590px;
  display:flex;
@@ -30,11 +22,17 @@ body{color:var(--destination-text)}
  position:relative;
  isolation:isolate;
  background:
- linear-gradient(90deg,rgba(15,32,23,.78),rgba(15,32,23,.2)),
+ linear-gradient(90deg,rgba(47,31,22,.80),rgba(47,31,22,.2)),
  url("https://commons.wikimedia.org/wiki/Special:FilePath/Mombasa%20fort%20view.jpg?width=2000") center/cover no-repeat;
 }
 .destination-hero .hero-content{max-width:780px;padding:100px 0;color:#fff}
-.destination-hero .eyebrow{color:#d8ef9c}
+.destination-hero .eyebrow{
+ color:#FFD0A5;
+ text-transform:uppercase;
+ letter-spacing:2px;
+ font-size:.78rem;
+ font-weight:700;
+}
 .destination-hero h1{
  color:#fff;
  font-family:"Playfair Display",serif;
@@ -42,116 +40,190 @@ body{color:var(--destination-text)}
  line-height:1.05;
  margin:16px 0;
 }
-.destination-hero p{font-size:1.12rem;max-width:650px;color:#f4f2e9;line-height:1.8}
+.destination-hero p{
+ font-size:1.12rem;
+ max-width:650px;
+ color:#FFF4E8;
+ line-height:1.8;
+}
 .hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
 .btn-outline-light{
- display:inline-flex;align-items:center;justify-content:center;
- padding:13px 22px;border:1px solid rgba(255,255,255,.8);
- color:#fff;border-radius:4px;font-weight:700;text-decoration:none;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ padding:13px 22px;
+ border:1px solid rgba(255,255,255,.8);
+ color:#fff;
+ font-weight:700;
+ text-decoration:none;
+ transition:.25s ease;
 }
-.btn-outline-light:hover{background:#fff;color:var(--destination-green)}
+.btn-outline-light:hover{background:#fff;color:#A66A42}
+
 .destination-intro{
- display:grid;grid-template-columns:1.05fr .95fr;gap:55px;
+ display:grid;
+ grid-template-columns:1.05fr .95fr;
+ gap:55px;
  align-items:center;
 }
-.destination-intro img,.experience-card img,.feature-image{
- width:100%;height:100%;object-fit:cover;display:block;
+.destination-intro img,
+.experience-card img,
+.feature-image{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ display:block;
 }
-.destination-intro .intro-photo{height:440px;overflow:hidden;border-radius:5px}
+.destination-intro .intro-photo{height:440px;overflow:hidden}
 .destination-intro p{line-height:1.9}
-.destination-intro h2,.section-heading h2{
- font-family:"Playfair Display",serif;color:var(--destination-green);
+.destination-intro h2,
+.section-heading h2{
+ font-family:"Playfair Display",serif;
+ color:#A66A42;
 }
-.destination-intro h2{font-size:clamp(2rem,4vw,3rem);margin:12px 0 20px}
+.destination-intro h2{
+ font-size:clamp(2rem,4vw,3rem);
+ margin:12px 0 20px;
+}
 .destination-kicker{
- color:#718b35;text-transform:uppercase;letter-spacing:2px;
- font-size:.76rem;font-weight:700;
+ color:#C36C32;
+ text-transform:uppercase;
+ letter-spacing:2px;
+ font-size:.76rem;
+ font-weight:700;
 }
 .destination-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
 .destination-tags span{
- background:#f0f4e4;color:#425b2b;padding:8px 13px;
- border-radius:30px;font-size:.83rem;font-weight:600;
+ background:#F5E5D8;
+ color:#80553A;
+ padding:8px 13px;
+ font-size:.83rem;
+ font-weight:600;
 }
 .section-heading{text-align:center;max-width:720px;margin:0 auto 42px}
 .section-heading h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0}
-.section-heading p{line-height:1.8;color:#69736a}
+.section-heading p{line-height:1.8;color:#897264}
+
 .experience-grid{
- display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:24px;
 }
 .experience-card{
- background:#fff;border:1px solid #ecece4;overflow:hidden;
- border-radius:5px;box-shadow:0 8px 28px rgba(30,45,30,.06);
+ background:#fff;
+ border:1px solid #EAD8C7;
+ overflow:hidden;
+ box-shadow:0 8px 28px rgba(75,48,30,.06);
 }
 .experience-card .image-wrap{height:235px;overflow:hidden}
 .experience-card img{transition:transform .5s}
 .experience-card:hover img{transform:scale(1.045)}
 .experience-card .card-copy{padding:23px}
 .experience-card h3{
- color:var(--destination-green);
- font-family:"Playfair Display",serif;font-size:1.35rem;margin:0 0 10px;
+ color:#A66A42;
+ font-family:"Playfair Display",serif;
+ font-size:1.35rem;
+ margin:0 0 10px;
 }
-.experience-card p{font-size:.94rem;line-height:1.8;margin:0;color:#687269}
+.experience-card p{font-size:.94rem;line-height:1.8;margin:0;color:#897264}
 .experience-card a{
- display:inline-block;margin-top:16px;color:#64852c;
- font-weight:700;text-decoration:none;
+ display:inline-block;
+ margin-top:16px;
+ color:#B85B20;
+ font-weight:700;
+ text-decoration:none;
 }
-.feature-section{
- background:var(--destination-cream);
-}
+.experience-card a:hover{color:#E8752A}
+
+.feature-section{background:#FFF4E8}
 .feature-row{
- display:grid;grid-template-columns:1fr 1fr;gap:50px;
- align-items:center;margin-bottom:65px;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:50px;
+ align-items:center;
+ margin-bottom:65px;
 }
 .feature-row:last-child{margin-bottom:0}
 .feature-row.reverse .feature-image-wrap{order:2}
-.feature-image-wrap{height:390px;overflow:hidden;border-radius:5px}
+.feature-image-wrap{height:390px;overflow:hidden}
 .feature-copy h3{
- font-family:"Playfair Display",serif;color:var(--destination-green);
- font-size:2rem;margin:10px 0 15px;
+ font-family:"Playfair Display",serif;
+ color:#A66A42;
+ font-size:2rem;
+ margin:10px 0 15px;
 }
-.feature-copy p{line-height:1.9;color:#657067}
-.feature-copy ul{padding-left:20px;line-height:2;color:#4f5d50}
+.feature-copy p{line-height:1.9;color:#897264}
+.feature-copy ul{padding-left:20px;line-height:2;color:#6B4935}
 .feature-label{
- color:#78933c;text-transform:uppercase;letter-spacing:1.8px;
- font-weight:700;font-size:.75rem;
+ color:#C36C32;
+ text-transform:uppercase;
+ letter-spacing:1.8px;
+ font-weight:700;
+ font-size:.75rem;
 }
-.visit-grid{
- display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
-}
+
+.visit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .visit-item{
- padding:25px;background:#fff;border:1px solid #e8eadd;
- border-radius:5px;
+ padding:25px;
+ background:#fff;
+ border:1px solid #EAD8C7;
 }
-.visit-item h3{font-family:"Playfair Display",serif;color:var(--destination-green);margin:0 0 10px}
-.visit-item p{font-size:.92rem;line-height:1.8;margin:0;color:#69736a}
+.visit-item h3{
+ font-family:"Playfair Display",serif;
+ color:#A66A42;
+ margin:0 0 10px;
+}
+.visit-item p{font-size:.92rem;line-height:1.8;margin:0;color:#897264}
+
 .travel-panel{
- display:grid;grid-template-columns:1fr 1fr;gap:35px;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:35px;
  align-items:start;
 }
 .travel-box{
- background:#fff;border:1px solid #e9e9df;border-radius:5px;
- padding:28px;height:100%;
+ background:#fff;
+ border:1px solid #EAD8C7;
+ padding:28px;
+ height:100%;
 }
-.travel-box h3{font-family:"Playfair Display",serif;color:var(--destination-green);font-size:1.5rem}
-.travel-box p,.travel-box li{line-height:1.85;color:#647066}
+.travel-box h3{
+ font-family:"Playfair Display",serif;
+ color:#A66A42;
+ font-size:1.5rem;
+}
+.travel-box p,.travel-box li{line-height:1.85;color:#897264}
 .travel-box ul{padding-left:20px}
+
 .destination-cta{
- background:var(--destination-green);color:#fff;
- padding:55px;border-radius:6px;
- display:flex;justify-content:space-between;align-items:center;gap:30px;
+ background:#A66A42;
+ color:#fff;
+ padding:55px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:30px;
 }
 .destination-cta h2{
- color:#fff;font-family:"Playfair Display",serif;
- font-size:clamp(1.8rem,4vw,2.7rem);margin:0 0 12px;
+ color:#fff;
+ font-family:"Playfair Display",serif;
+ font-size:clamp(1.8rem,4vw,2.7rem);
+ margin:0 0 12px;
 }
-.destination-cta p{color:#e2e9dc;line-height:1.7;margin:0;max-width:650px}
+.destination-cta p{color:#FFF4E8;line-height:1.7;margin:0;max-width:650px}
 .destination-cta .btn{white-space:nowrap}
 .destination-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
 .destination-links a{
- display:inline-block;text-decoration:none;color:var(--destination-green);
- background:#f0f4e4;padding:12px 16px;border-radius:4px;font-weight:700;
+ display:inline-block;
+ text-decoration:none;
+ color:#80553A;
+ background:#F5E5D8;
+ padding:12px 16px;
+ font-weight:700;
+ transition:.2s ease;
 }
-.destination-links a:hover{background:var(--destination-lime)}
+.destination-links a:hover{background:#E8752A;color:#fff}
+
 @media(max-width:900px){
  .experience-grid{grid-template-columns:repeat(2,1fr)}
  .destination-intro{gap:30px}
@@ -166,7 +238,11 @@ body{color:var(--destination-text)}
  .feature-row{gap:25px;margin-bottom:45px}
  .feature-row.reverse .feature-image-wrap{order:0}
  .feature-image-wrap{height:280px}
- .destination-cta{padding:32px 24px;align-items:flex-start;flex-direction:column}
+ .destination-cta{
+  padding:32px 24px;
+  align-items:flex-start;
+  flex-direction:column;
+ }
 }
 </style>
 </head>
@@ -175,7 +251,7 @@ body{color:var(--destination-text)}
 
 <div class="topline">
  <div class="wrap top-inner">
-  <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+  <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
   <span>
    <a href="tel:+254704261626">+254 704 261 626</a> ·
    <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
@@ -186,11 +262,13 @@ body{color:var(--destination-text)}
 <header class="header">
  <div class="wrap nav">
   <a class="brand" href="index.html">
-   <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+   <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
    <span>FLEYPAT<small>ADVENTURES</small></span>
   </a>
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-  <nav>
+
+  <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+  <nav id="mainNav">
    <a href="index.html">Home</a>
    <a href="about.html">About</a>
    <a href="safaris.html">Safaris</a>
@@ -259,9 +337,12 @@ body{color:var(--destination-text)}
     <span>Marine activities</span>
    </div>
   </div>
+
   <div class="intro-photo">
-   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/From%20Old%20Town%20(172892233).jpeg?width=1200"
-        alt="Historic Mombasa Old Town and its coastal setting" loading="lazy">
+   <img
+    src="https://commons.wikimedia.org/wiki/Special:FilePath/From%20Old%20Town%20(172892233).jpeg?width=1200"
+    alt="Historic Mombasa Old Town and its coastal setting"
+    loading="lazy">
   </div>
  </div>
 </section>
@@ -282,8 +363,10 @@ body{color:var(--destination-text)}
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fort%20Jesus%2C%20Mombasa%20Kenya.jpg?width=1000"
-          alt="Fort Jesus historic stone fortification in Mombasa" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Fort%20Jesus%2C%20Mombasa%20Kenya.jpg?width=1000"
+      alt="Fort Jesus historic stone fortification in Mombasa"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Fort Jesus</h3>
@@ -298,8 +381,10 @@ body{color:var(--destination-text)}
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Old%20Town%20Mombasa%205.jpg?width=1000"
-          alt="Traditional architecture in Mombasa Old Town" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Old%20Town%20Mombasa%205.jpg?width=1000"
+      alt="Traditional architecture in Mombasa Old Town"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Old Town</h3>
@@ -314,8 +399,10 @@ body{color:var(--destination-text)}
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mombasa%20tusks%2C%202025%20(01).jpg?width=1000"
-          alt="Mombasa elephant tusks monument along Moi Avenue" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Mombasa%20tusks%2C%202025%20(01).jpg?width=1000"
+      alt="Mombasa elephant tusks monument along Moi Avenue"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Mombasa Tusks</h3>
@@ -329,8 +416,10 @@ body{color:var(--destination-text)}
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mama%20Ngina%20Waterfront%2C%202025%20(01).jpg?width=1000"
-          alt="Mama Ngina Waterfront public promenade in Mombasa" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Mama%20Ngina%20Waterfront%2C%202025%20(01).jpg?width=1000"
+      alt="Mama Ngina Waterfront public promenade in Mombasa"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Mama Ngina Waterfront</h3>
@@ -344,8 +433,10 @@ body{color:var(--destination-text)}
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BAMBURI%20BEACH.MOMBASA%20-%20panoramio.jpg?width=1000"
-          alt="Bamburi Beach on the Mombasa coastline" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/BAMBURI%20BEACH.MOMBASA%20-%20panoramio.jpg?width=1000"
+      alt="Bamburi Beach on the Mombasa coastline"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>North Coast Beaches</h3>
@@ -359,8 +450,10 @@ body{color:var(--destination-text)}
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Boats%2C%20Tudor%20Creek%2C%202025%20(01).jpg?width=1000"
-          alt="Boats on Tudor Creek in Mombasa" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Boats%2C%20Tudor%20Creek%2C%202025%20(01).jpg?width=1000"
+      alt="Boats on Tudor Creek in Mombasa"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Creek and Ocean Experiences</h3>
@@ -382,13 +475,15 @@ body{color:var(--destination-text)}
 
   <div class="feature-row">
    <div class="feature-image-wrap">
-    <img class="feature-image"
-         src="https://commons.wikimedia.org/wiki/Special:FilePath/Mackinnon%20Market%2C%202025%20(15).jpg?width=1200"
-         alt="Mackinnon Market in central Mombasa" loading="lazy">
+    <img
+     class="feature-image"
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Mackinnon%20Market%2C%202025%20(15).jpg?width=1200"
+     alt="Mackinnon Market in central Mombasa"
+     loading="lazy">
    </div>
    <div class="feature-copy">
     <span class="feature-label">Culture and local life</span>
-    <h3>Experience Mombasa's Swahili heritage</h3>
+    <h3>Experience Mombasa's Swahili Heritage</h3>
     <p>
      Mombasa's culture is reflected in its architecture, language, food,
      markets and everyday life. A guided walk through Old Town offers
@@ -410,13 +505,15 @@ body{color:var(--destination-text)}
 
   <div class="feature-row reverse">
    <div class="feature-image-wrap">
-    <img class="feature-image"
-         src="https://commons.wikimedia.org/wiki/Special:FilePath/Mombasa%20Harbour.jpg?width=1200"
-         alt="Mombasa Harbour and the Indian Ocean" loading="lazy">
+    <img
+     class="feature-image"
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Mombasa%20Harbour.jpg?width=1200"
+     alt="Mombasa Harbour and the Indian Ocean"
+     loading="lazy">
    </div>
    <div class="feature-copy">
     <span class="feature-label">Coastal scenery</span>
-    <h3>Enjoy the Indian Ocean atmosphere</h3>
+    <h3>Enjoy the Indian Ocean Atmosphere</h3>
     <p>
      Mombasa's relationship with the ocean is part of its identity.
      From the harbour and Likoni Channel to the northern beaches,
@@ -451,6 +548,7 @@ body{color:var(--destination-text)}
   </div>
 
   <div class="visit-grid">
+
    <article class="visit-item">
     <h3>Haller Park</h3>
     <p>
@@ -500,6 +598,7 @@ body{color:var(--destination-text)}
      beach resorts and a wide range of ocean activities.
     </p>
    </article>
+
   </div>
  </div>
 </section>
@@ -516,6 +615,7 @@ body{color:var(--destination-text)}
   </div>
 
   <div class="travel-panel">
+
    <div class="travel-box">
     <h3>When to Visit</h3>
     <p>
@@ -567,6 +667,7 @@ body{color:var(--destination-text)}
      <li>A camera and a reusable water bottle</li>
     </ul>
    </div>
+
   </div>
  </div>
 </section>
@@ -599,7 +700,7 @@ body{color:var(--destination-text)}
  <div class="wrap">
   <div class="destination-cta">
    <div>
-    <span class="destination-kicker" style="color:#cce58d">Your coastal journey starts here</span>
+    <span class="destination-kicker" style="color:#FFD0A5">Your coastal journey starts here</span>
     <h2>Ready to Discover Mombasa?</h2>
     <p>
      Tell us your preferred travel dates, group size and the experiences
@@ -619,11 +720,11 @@ body{color:var(--destination-text)}
 
   <div>
    <a class="brand footer-brand" href="index.html">
-    <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+    <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
     <span>FLEYPAT<small>ADVENTURES</small></span>
    </a>
    <p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-   <a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+   <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram @fleypat_adventures</a>
   </div>
 
   <div>
@@ -662,8 +763,8 @@ body{color:var(--destination-text)}
 </footer>
 
 <a class="float-wa"
-   href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Mombasa%20trip."
-   target="_blank" rel="noopener">WhatsApp Us</a>
+ href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20Mombasa%20trip."
+ target="_blank" rel="noopener">WhatsApp Us</a>
 
 <script src="script.js"></script>
 </body>
