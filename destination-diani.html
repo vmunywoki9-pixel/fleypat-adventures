@@ -7,7 +7,7 @@
 
 <title>Diani Beach Destination Guide | Fleypat Adventures</title>
 <meta name="description" content="Discover Diani Beach, Kenya. Explore white sandy beaches, Indian Ocean activities, dhow cruises, marine excursions, Colobus Conservation, Kaya Kinondo and romantic coastal holidays.">
-<meta name="theme-color" content="#a8d832">
+<meta name="theme-color" content="#FFF4E8">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +15,6 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
- --destination-green:#243c28;
- --destination-lime:#a8d832;
- --destination-gold:#a97832;
- --destination-cream:#fbf7e9;
- --destination-text:#344238;
-}
-body{color:var(--destination-text)}
 .diani-hero{
  min-height:600px;
  display:flex;
@@ -30,114 +22,203 @@ body{color:var(--destination-text)}
  position:relative;
  isolation:isolate;
  background:
- linear-gradient(90deg,rgba(13,37,37,.76),rgba(13,37,37,.16)),
+ linear-gradient(90deg,rgba(47,31,22,.78),rgba(47,31,22,.18)),
  url("https://commons.wikimedia.org/wiki/Special:FilePath/Diani%20Beach%20Sunrise%20Kenya.jpg?width=2000") center/cover no-repeat;
 }
 .diani-hero .hero-content{max-width:790px;padding:100px 0;color:#fff}
-.diani-hero .eyebrow{color:#d8ef9c}
-.diani-hero h1{
- color:#fff;font-family:"Playfair Display",serif;
- font-size:clamp(3.2rem,7vw,6rem);line-height:1.05;margin:16px 0;
+.diani-hero .eyebrow{
+ color:#FFD0A5;
+ text-transform:uppercase;
+ letter-spacing:2px;
+ font-weight:700;
+ font-size:.78rem;
 }
-.diani-hero p{font-size:1.12rem;max-width:660px;color:#f4f2e9;line-height:1.8}
+.diani-hero h1{
+ color:#fff;
+ font-family:"Playfair Display",serif;
+ font-size:clamp(3.2rem,7vw,6rem);
+ line-height:1.05;
+ margin:16px 0;
+}
+.diani-hero p{
+ font-size:1.12rem;
+ max-width:660px;
+ color:#FFF4E8;
+ line-height:1.8;
+}
 .hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
 .btn-outline-light{
- display:inline-flex;align-items:center;justify-content:center;
- padding:13px 22px;border:1px solid rgba(255,255,255,.8);
- color:#fff;border-radius:4px;font-weight:700;text-decoration:none;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ padding:13px 22px;
+ border:1px solid rgba(255,255,255,.8);
+ color:#fff;
+ font-weight:700;
+ text-decoration:none;
+ transition:.25s ease;
 }
-.btn-outline-light:hover{background:#fff;color:var(--destination-green)}
+.btn-outline-light:hover{background:#fff;color:#A66A42}
+
 .destination-intro{
- display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;
+ display:grid;
+ grid-template-columns:1.05fr .95fr;
+ gap:55px;
+ align-items:center;
 }
-.destination-intro .intro-photo{height:440px;overflow:hidden;border-radius:5px}
-.destination-intro img,.experience-card img,.feature-image{
- width:100%;height:100%;object-fit:cover;display:block;
+.destination-intro .intro-photo{height:440px;overflow:hidden}
+.destination-intro img,
+.experience-card img,
+.feature-image{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ display:block;
 }
 .destination-intro p{line-height:1.9}
-.destination-intro h2,.section-heading h2{
- font-family:"Playfair Display",serif;color:var(--destination-green);
+.destination-intro h2,
+.section-heading h2{
+ font-family:"Playfair Display",serif;
+ color:#A66A42;
 }
-.destination-intro h2{font-size:clamp(2rem,4vw,3rem);margin:12px 0 20px}
+.destination-intro h2{
+ font-size:clamp(2rem,4vw,3rem);
+ margin:12px 0 20px;
+}
 .destination-kicker{
- color:#718b35;text-transform:uppercase;letter-spacing:2px;
- font-size:.76rem;font-weight:700;
+ color:#C36C32;
+ text-transform:uppercase;
+ letter-spacing:2px;
+ font-size:.76rem;
+ font-weight:700;
 }
 .destination-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
 .destination-tags span{
- background:#f0f4e4;color:#425b2b;padding:8px 13px;
- border-radius:30px;font-size:.83rem;font-weight:600;
+ background:#F5E5D8;
+ color:#80553A;
+ padding:8px 13px;
+ font-size:.83rem;
+ font-weight:600;
 }
 .section-heading{text-align:center;max-width:740px;margin:0 auto 42px}
 .section-heading h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0}
-.section-heading p{line-height:1.8;color:#69736a}
-.experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.section-heading p{line-height:1.8;color:#897264}
+
+.experience-grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:24px;
+}
 .experience-card{
- background:#fff;border:1px solid #ecece4;overflow:hidden;
- border-radius:5px;box-shadow:0 8px 28px rgba(30,45,30,.06);
+ background:#fff;
+ border:1px solid #EAD8C7;
+ overflow:hidden;
+ box-shadow:0 8px 28px rgba(75,48,30,.06);
 }
 .experience-card .image-wrap{height:235px;overflow:hidden}
 .experience-card img{transition:transform .5s}
 .experience-card:hover img{transform:scale(1.045)}
 .experience-card .card-copy{padding:23px}
 .experience-card h3{
- color:var(--destination-green);font-family:"Playfair Display",serif;
- font-size:1.35rem;margin:0 0 10px;
+ color:#A66A42;
+ font-family:"Playfair Display",serif;
+ font-size:1.35rem;
+ margin:0 0 10px;
 }
-.experience-card p{font-size:.94rem;line-height:1.8;margin:0;color:#687269}
+.experience-card p{font-size:.94rem;line-height:1.8;margin:0;color:#897264}
 .experience-card a{
- display:inline-block;margin-top:16px;color:#64852c;font-weight:700;text-decoration:none;
+ display:inline-block;
+ margin-top:16px;
+ color:#B85B20;
+ font-weight:700;
+ text-decoration:none;
 }
-.feature-section{background:var(--destination-cream)}
+.experience-card a:hover{color:#E8752A}
+
+.feature-section{background:#FFF4E8}
 .feature-row{
- display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-bottom:65px;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:50px;
+ align-items:center;
+ margin-bottom:65px;
 }
 .feature-row:last-child{margin-bottom:0}
 .feature-row.reverse .feature-image-wrap{order:2}
-.feature-image-wrap{height:390px;overflow:hidden;border-radius:5px}
+.feature-image-wrap{height:390px;overflow:hidden}
 .feature-copy h3{
- font-family:"Playfair Display",serif;color:var(--destination-green);
- font-size:2rem;margin:10px 0 15px;
+ font-family:"Playfair Display",serif;
+ color:#A66A42;
+ font-size:2rem;
+ margin:10px 0 15px;
 }
-.feature-copy p{line-height:1.9;color:#657067}
-.feature-copy ul{padding-left:20px;line-height:2;color:#4f5d50}
+.feature-copy p{line-height:1.9;color:#897264}
+.feature-copy ul{padding-left:20px;line-height:2;color:#6B4935}
 .feature-label{
- color:#78933c;text-transform:uppercase;letter-spacing:1.8px;
- font-weight:700;font-size:.75rem;
+ color:#C36C32;
+ text-transform:uppercase;
+ letter-spacing:1.8px;
+ font-weight:700;
+ font-size:.75rem;
 }
+
 .visit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .visit-item{
- padding:25px;background:#fff;border:1px solid #e8eadd;border-radius:5px;
+ padding:25px;
+ background:#fff;
+ border:1px solid #EAD8C7;
 }
 .visit-item h3{
- font-family:"Playfair Display",serif;color:var(--destination-green);margin:0 0 10px;
+ font-family:"Playfair Display",serif;
+ color:#A66A42;
+ margin:0 0 10px;
 }
-.visit-item p{font-size:.92rem;line-height:1.8;margin:0;color:#69736a}
+.visit-item p{font-size:.92rem;line-height:1.8;margin:0;color:#897264}
+
 .travel-panel{display:grid;grid-template-columns:1fr 1fr;gap:25px}
 .travel-box{
- background:#fff;border:1px solid #e9e9df;border-radius:5px;padding:28px;height:100%;
+ background:#fff;
+ border:1px solid #EAD8C7;
+ padding:28px;
+ height:100%;
 }
 .travel-box h3{
- font-family:"Playfair Display",serif;color:var(--destination-green);font-size:1.5rem;
+ font-family:"Playfair Display",serif;
+ color:#A66A42;
+ font-size:1.5rem;
 }
-.travel-box p,.travel-box li{line-height:1.85;color:#647066}
+.travel-box p,.travel-box li{line-height:1.85;color:#897264}
 .travel-box ul{padding-left:20px}
+
 .destination-cta{
- background:var(--destination-green);color:#fff;padding:55px;border-radius:6px;
- display:flex;justify-content:space-between;align-items:center;gap:30px;
+ background:#A66A42;
+ color:#fff;
+ padding:55px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:30px;
 }
 .destination-cta h2{
- color:#fff;font-family:"Playfair Display",serif;
- font-size:clamp(1.8rem,4vw,2.7rem);margin:0 0 12px;
+ color:#fff;
+ font-family:"Playfair Display",serif;
+ font-size:clamp(1.8rem,4vw,2.7rem);
+ margin:0 0 12px;
 }
-.destination-cta p{color:#e2e9dc;line-height:1.7;margin:0;max-width:650px}
+.destination-cta p{color:#FFF4E8;line-height:1.7;margin:0;max-width:650px}
 .destination-cta .btn{white-space:nowrap}
 .destination-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
 .destination-links a{
- display:inline-block;text-decoration:none;color:var(--destination-green);
- background:#f0f4e4;padding:12px 16px;border-radius:4px;font-weight:700;
+ display:inline-block;
+ text-decoration:none;
+ color:#80553A;
+ background:#F5E5D8;
+ padding:12px 16px;
+ font-weight:700;
+ transition:.2s ease;
 }
-.destination-links a:hover{background:var(--destination-lime)}
+.destination-links a:hover{background:#E8752A;color:#fff}
+
 @media(max-width:900px){
  .experience-grid{grid-template-columns:repeat(2,1fr)}
  .destination-intro{gap:30px}
@@ -152,7 +233,11 @@ body{color:var(--destination-text)}
  .feature-row{gap:25px;margin-bottom:45px}
  .feature-row.reverse .feature-image-wrap{order:0}
  .feature-image-wrap{height:280px}
- .destination-cta{padding:32px 24px;align-items:flex-start;flex-direction:column}
+ .destination-cta{
+  padding:32px 24px;
+  align-items:flex-start;
+  flex-direction:column;
+ }
 }
 </style>
 </head>
@@ -161,7 +246,7 @@ body{color:var(--destination-text)}
 
 <div class="topline">
  <div class="wrap top-inner">
-  <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
+  <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
   <span>
    <a href="tel:+254704261626">+254 704 261 626</a> ·
    <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
@@ -172,11 +257,13 @@ body{color:var(--destination-text)}
 <header class="header">
  <div class="wrap nav">
   <a class="brand" href="index.html">
-   <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+   <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
    <span>FLEYPAT<small>ADVENTURES</small></span>
   </a>
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-  <nav>
+
+  <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+  <nav id="mainNav">
    <a href="index.html">Home</a>
    <a href="about.html">About</a>
    <a href="safaris.html">Safaris</a>
@@ -246,8 +333,10 @@ body{color:var(--destination-text)}
   </div>
 
   <div class="intro-photo">
-   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani%20beaches.jpg?width=1200"
-        alt="Aerial coastal view of Diani Beach in Kenya" loading="lazy">
+   <img
+    src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani%20beaches.jpg?width=1200"
+    alt="Aerial coastal view of Diani Beach in Kenya"
+    loading="lazy">
   </div>
  </div>
 </section>
@@ -268,8 +357,10 @@ body{color:var(--destination-text)}
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani%20Beach%20Kenya.jpg?width=1000"
-          alt="White sandy shoreline at Diani Beach" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani%20Beach%20Kenya.jpg?width=1000"
+      alt="White sandy shoreline at Diani Beach"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Relax on Diani Beach</h3>
@@ -284,8 +375,10 @@ body{color:var(--destination-text)}
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Boat%20at%20Diani%20Beach%2C%20Kenya.jpg?width=1000"
-          alt="Traditional boat on the shoreline at Diani Beach" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Boat%20at%20Diani%20Beach%2C%20Kenya.jpg?width=1000"
+      alt="Traditional boat on the shoreline at Diani Beach"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Boat and Ocean Excursions</h3>
@@ -300,8 +393,10 @@ body{color:var(--destination-text)}
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Congo%20River%2C%20Kenya.jpg?width=1000"
-          alt="Kongo River estuary near Diani Beach" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Congo%20River%2C%20Kenya.jpg?width=1000"
+      alt="Kongo River estuary near Diani Beach"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Kongo River Sunset Cruise</h3>
@@ -310,14 +405,16 @@ body{color:var(--destination-text)}
       A late-afternoon dhow cruise offers a different perspective
       of the coast, mangroves and surrounding landscape.
      </p>
-     <a href="contact.html?destination=diani&experience=kongo-river">Enquire about a cruise →</a>
+     <a href="contact.html?destination=diani&amp;experience=kongo-river">Enquire about a cruise →</a>
     </div>
    </article>
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Camel%20Riding%2C%20Diani%20Beach.jpg?width=1000"
-          alt="Camel riding experience on Diani Beach" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Camel%20Riding%2C%20Diani%20Beach.jpg?width=1000"
+      alt="Camel riding experience on Diani Beach"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Beach Activities</h3>
@@ -326,14 +423,16 @@ body{color:var(--destination-text)}
       activities available along the coast. Confirm operators,
       safety arrangements and prices before participating.
      </p>
-     <a href="contact.html?destination=diani&experience=beach-activities">Ask about activities →</a>
+     <a href="contact.html?destination=diani&amp;experience=beach-activities">Ask about activities →</a>
     </div>
    </article>
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Colubus%20Monkey23D512Kenya.jpg?width=1000"
-          alt="Angolan colobus monkey found around Diani Beach" loading="lazy">
+     <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Colubus%20Monkey23D512Kenya.jpg?width=1000"
+      alt="Angolan colobus monkey found around Diani Beach"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Colobus Conservation</h3>
@@ -342,14 +441,16 @@ body{color:var(--destination-text)}
       monkey and other coastal primates through an educational visit
       arranged with the conservation centre.
      </p>
-     <a href="contact.html?destination=diani&experience=colobus-conservation">Plan a nature visit →</a>
+     <a href="contact.html?destination=diani&amp;experience=colobus-conservation">Plan a nature visit →</a>
     </div>
    </article>
 
    <article class="experience-card">
     <div class="image-wrap">
-     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Diani%20Beach%20Sunrise%20Kenya.jpg?width=1000"
-          alt="Sunrise over the Indian Ocean at Diani Beach" loading="lazy">
+     <img
+      src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+      alt="Warm tropical ocean scenery at sunset"
+      loading="lazy">
     </div>
     <div class="card-copy">
      <h3>Romantic Beach Escapes</h3>
@@ -372,9 +473,11 @@ body{color:var(--destination-text)}
 
   <div class="feature-row">
    <div class="feature-image-wrap">
-    <img class="feature-image"
-         src="https://commons.wikimedia.org/wiki/Special:FilePath/Kongo%20river%20diani%20Ras%20Mwachema.jpg?width=1200"
-         alt="Kongo River estuary and coastal landscape near Diani" loading="lazy">
+    <img
+     class="feature-image"
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Kongo%20river%20diani%20Ras%20Mwachema.jpg?width=1200"
+     alt="Kongo River estuary and coastal landscape near Diani"
+     loading="lazy">
    </div>
    <div class="feature-copy">
     <span class="feature-label">Coastal scenery and heritage</span>
@@ -399,13 +502,15 @@ body{color:var(--destination-text)}
 
   <div class="feature-row reverse">
    <div class="feature-image-wrap">
-    <img class="feature-image"
-         src="https://commons.wikimedia.org/wiki/Special:FilePath/Kongo%20River%2C%20Diani%20Beach%202013%20-%20panoramio%20(1).jpg?width=1200"
-         alt="Mangrove and river scenery in the Diani coastal area" loading="lazy">
+    <img
+     class="feature-image"
+     src="https://commons.wikimedia.org/wiki/Special:FilePath/Kongo%20River%2C%20Diani%20Beach%202013%20-%20panoramio%20(1).jpg?width=1200"
+     alt="Coastal vegetation and river scenery in the Diani area"
+     loading="lazy">
    </div>
    <div class="feature-copy">
     <span class="feature-label">Nature and conservation</span>
-    <h3>Explore Diani's natural environment</h3>
+    <h3>Explore Diani's Natural Environment</h3>
     <p>
      Beyond its beaches, Diani is surrounded by coastal forests,
      mangrove habitats and important conservation initiatives.
@@ -666,7 +771,7 @@ body{color:var(--destination-text)}
  <div class="wrap">
   <div class="destination-cta">
    <div>
-    <span class="destination-kicker" style="color:#cce58d">Your coastal escape starts here</span>
+    <span class="destination-kicker" style="color:#FFD0A5">Your coastal escape starts here</span>
     <h2>Ready for Diani Beach?</h2>
     <p>
      Tell us your travel dates, group size, preferred accommodation
@@ -687,11 +792,11 @@ body{color:var(--destination-text)}
 
   <div>
    <a class="brand footer-brand" href="index.html">
-    <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+    <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
     <span>FLEYPAT<small>ADVENTURES</small></span>
    </a>
    <p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-   <a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+   <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram @fleypat_adventures</a>
   </div>
 
   <div>
