@@ -4,32 +4,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nairobi Destination Guide | Fleypat Adventures</title>
-<meta name="description" content="Discover Nairobi, Kenya: city sightseeing, Nairobi National Park, wildlife experiences, cultural attractions and safari connections.">
-<meta name="theme-color" content="#a8d832">
+
+<title>Nairobi Destination Guide | Wildlife Safaris, City Tours & Attractions | Fleypat Adventures</title>
+<meta name="description" content="Discover Nairobi, Kenya with Fleypat Adventures. Explore Nairobi National Park, Giraffe Centre, cultural attractions, city sightseeing and safari connections.">
+<meta name="theme-color" content="#E8752A">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 <style>
-:root{
-  --nairobi-green:#243c28;
-  --nairobi-lime:#a8d832;
-  --nairobi-gold:#a97832;
-  --nairobi-cream:#fbf7e9;
-  --nairobi-ink:#263329;
-  --nairobi-muted:#69736a;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:var(--nairobi-ink)}
-h1,h2,h3,h4{font-family:'Playfair Display',serif}
-img{max-width:100%;display:block}
-a{text-decoration:none}
-.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}
-
-/* Hero */
+/* Nairobi destination page */
 .nairobi-hero{
   min-height:690px;
   display:flex;
@@ -37,7 +23,7 @@ a{text-decoration:none}
   position:relative;
   isolation:isolate;
   overflow:hidden;
-  background:#243c28;
+  background:#6B4935;
   color:#fff;
 }
 .nairobi-hero:before{
@@ -53,22 +39,31 @@ a{text-decoration:none}
   position:absolute;
   inset:0;
   z-index:-1;
-  background:linear-gradient(90deg,rgba(12,28,19,.78),rgba(12,28,19,.23) 75%),linear-gradient(0deg,rgba(10,25,16,.76),transparent 72%);
+  background:linear-gradient(90deg,rgba(48,29,18,.78),rgba(48,29,18,.22) 75%),linear-gradient(0deg,rgba(35,22,15,.76),transparent 72%);
 }
-.nairobi-hero-content{padding:100px 0 88px;max-width:770px}
+.nairobi-hero-content{
+  padding:100px 0 85px;
+  max-width:770px;
+}
 .nairobi-eyebrow{
   display:inline-flex;
   align-items:center;
   gap:10px;
-  color:var(--nairobi-lime);
+  color:#F09A58;
   text-transform:uppercase;
   letter-spacing:2px;
   font-size:12px;
   font-weight:800;
   margin-bottom:18px;
 }
-.nairobi-eyebrow:before{content:"";width:34px;height:2px;background:var(--nairobi-lime)}
+.nairobi-eyebrow:before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:#F09A58;
+}
 .nairobi-hero h1{
+  font-family:'Playfair Display',serif;
   font-size:clamp(54px,8vw,100px);
   line-height:.98;
   margin:0 0 22px;
@@ -78,49 +73,77 @@ a{text-decoration:none}
   font-size:clamp(17px,2vw,21px);
   line-height:1.75;
   max-width:650px;
-  color:#f3f2e9;
+  color:#f7eee6;
   margin:0 0 30px;
 }
-.nairobi-actions{display:flex;flex-wrap:wrap;gap:13px}
-.nairobi-btn{
+.nairobi-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
+.nairobi-action{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   padding:15px 24px;
-  background:var(--nairobi-lime);
-  color:#203321;
+  background:#E8752A;
+  color:#fff;
   font-weight:800;
-  border-radius:3px;
   transition:.25s ease;
 }
-.nairobi-btn:hover{background:#c2ec5b;transform:translateY(-2px)}
-.nairobi-btn-outline{background:transparent;border:1px solid rgba(255,255,255,.7);color:#fff}
-.nairobi-btn-outline:hover{background:#fff;color:var(--nairobi-green)}
-
-/* Intro */
-.nairobi-intro{padding:100px 0;background:var(--nairobi-cream)}
-.nairobi-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.nairobi-intro-image{position:relative}
+.nairobi-action:hover{
+  background:#B85B20;
+  transform:translateY(-2px);
+}
+.nairobi-action-outline{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.75);
+  color:#fff;
+}
+.nairobi-action-outline:hover{
+  background:#fff;
+  color:#6B4935;
+}
+.nairobi-intro{
+  padding:95px 0;
+  background:#FFF4E8;
+}
+.nairobi-intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:65px;
+  align-items:center;
+}
+.nairobi-intro-image{
+  position:relative;
+}
 .nairobi-intro-image img{
   width:100%;
-  height:510px;
+  height:500px;
   object-fit:cover;
-  border-radius:3px;
 }
 .nairobi-image-note{
   position:absolute;
-  right:-18px;
-  bottom:25px;
-  background:var(--nairobi-green);
+  right:-15px;
+  bottom:24px;
+  background:#A66A42;
   color:#fff;
   padding:20px 24px;
-  max-width:220px;
-  box-shadow:0 12px 35px #0002;
+  max-width:230px;
 }
-.nairobi-image-note strong{display:block;font-family:'Playfair Display',serif;font-size:22px;margin-bottom:5px}
-.nairobi-image-note span{font-size:12px;color:#e2eadc;line-height:1.5}
-.nairobi-section-label{
-  color:var(--nairobi-gold);
+.nairobi-image-note strong{
+  display:block;
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  margin-bottom:5px;
+}
+.nairobi-image-note span{
+  font-size:12px;
+  color:#f8e9dc;
+  line-height:1.5;
+}
+.nairobi-label{
+  color:#B85B20;
   text-transform:uppercase;
   letter-spacing:2px;
   font-size:12px;
@@ -128,138 +151,355 @@ a{text-decoration:none}
   display:block;
   margin-bottom:14px;
 }
-.nairobi-intro h2,.nairobi-section-heading h2,.nairobi-planning h2{
-  color:var(--nairobi-green);
+.nairobi-intro h2,
+.nairobi-section-heading h2,
+.nairobi-planning h2{
+  font-family:'Playfair Display',serif;
+  color:#6B4935;
   font-size:clamp(34px,4vw,49px);
   line-height:1.15;
   margin:0 0 22px;
 }
-.nairobi-intro p{font-size:16px;line-height:1.9;color:#5d695f;margin:0 0 16px}
-.nairobi-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}
+.nairobi-intro p{
+  font-size:15px;
+  line-height:1.9;
+  color:#897264;
+  margin:0 0 16px;
+}
+.nairobi-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:25px;
+}
 .nairobi-tags span{
-  border:1px solid #d9dfcd;
-  color:var(--nairobi-green);
+  border:1px solid #E7CDBB;
+  color:#6B4935;
   background:#fff;
   padding:9px 13px;
   font-size:12px;
   font-weight:700;
 }
-
-/* Experiences */
-.nairobi-experiences{padding:100px 0;background:#fff}
-.nairobi-section-heading{text-align:center;max-width:740px;margin:0 auto 48px}
-.nairobi-section-heading p{color:var(--nairobi-muted);line-height:1.8;margin:0}
-.nairobi-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.nairobi-card{background:var(--nairobi-cream);overflow:hidden}
-.nairobi-card img{height:245px;width:100%;object-fit:cover;transition:transform .5s ease}
-.nairobi-card:hover img{transform:scale(1.045)}
-.nairobi-card-body{padding:25px 25px 29px}
-.nairobi-card-body span{
-  color:var(--nairobi-gold);
+.nairobi-experiences{
+  padding:95px 0;
+  background:#fff;
+}
+.nairobi-section-heading{
+  text-align:center;
+  max-width:740px;
+  margin:0 auto 45px;
+}
+.nairobi-section-heading p{
+  color:#897264;
+  line-height:1.8;
+  margin:0;
+}
+.nairobi-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.nairobi-card{
+  background:#FFF4E8;
+  overflow:hidden;
+}
+.nairobi-card img{
+  height:245px;
+  width:100%;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+.nairobi-card:hover img{
+  transform:scale(1.04);
+}
+.nairobi-card-body{
+  padding:24px 24px 28px;
+}
+.nairobi-card-body>span{
+  color:#B85B20;
   text-transform:uppercase;
   letter-spacing:1.4px;
   font-size:10px;
   font-weight:800;
 }
-.nairobi-card h3{font-size:25px;color:var(--nairobi-green);margin:9px 0 12px}
-.nairobi-card p{font-size:14px;line-height:1.8;color:#657066;margin:0}
-
-/* Wildlife feature */
-.nairobi-wildlife{background:var(--nairobi-green);color:#fff;padding:100px 0}
-.nairobi-wildlife-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
-.nairobi-wildlife-image img{height:490px;width:100%;object-fit:cover}
-.nairobi-wildlife .nairobi-section-label{color:var(--nairobi-lime)}
-.nairobi-wildlife h2{font-size:clamp(34px,4vw,48px);line-height:1.15;margin:0 0 22px;color:#fff}
-.nairobi-wildlife p{color:#d9e2d8;line-height:1.9;font-size:15px;margin:0 0 17px}
-.nairobi-wildlife-list{display:grid;gap:13px;margin-top:27px}
-.nairobi-wildlife-list div{display:flex;gap:12px;align-items:flex-start;color:#edf2e9;font-size:14px;line-height:1.6}
-.nairobi-wildlife-list b{color:var(--nairobi-lime);font-size:17px}
-
-/* City feature */
-.nairobi-city{padding:100px 0;background:var(--nairobi-cream)}
-.nairobi-city-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.nairobi-city-image img{height:470px;width:100%;object-fit:cover}
-.nairobi-city h2{font-size:clamp(34px,4vw,46px);color:var(--nairobi-green);line-height:1.15;margin:0 0 20px}
-.nairobi-city p{color:#657066;line-height:1.9;margin:0 0 17px}
-.nairobi-city-points{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
-.nairobi-city-point{border-left:3px solid var(--nairobi-lime);padding:4px 0 4px 14px}
-.nairobi-city-point strong{display:block;color:var(--nairobi-green);font-size:14px;margin-bottom:5px}
-.nairobi-city-point span{font-size:12px;line-height:1.6;color:#737d72}
-
-/* Safari connections */
-.nairobi-safari{padding:100px 0;background:#fff}
-.nairobi-safari-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.nairobi-safari-image img{height:470px;width:100%;object-fit:cover}
-.nairobi-safari h2{font-size:clamp(34px,4vw,46px);color:var(--nairobi-green);line-height:1.15;margin:0 0 20px}
-.nairobi-safari p{color:#657066;line-height:1.9;margin:0 0 17px}
-.nairobi-safari-list{display:grid;gap:12px;margin-top:25px}
-.nairobi-safari-list div{display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.7;color:#657066}
-.nairobi-safari-list b{color:var(--nairobi-gold)}
-
-/* Travel styles */
-.nairobi-styles{padding:85px 0;background:var(--nairobi-cream)}
-.nairobi-styles-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.nairobi-style{padding:27px 22px;border:1px solid #e2e6d9;background:#fff}
-.nairobi-style .number{font-family:'Playfair Display',serif;color:var(--nairobi-gold);font-size:29px}
-.nairobi-style h3{font-size:20px;color:var(--nairobi-green);margin:11px 0 9px}
-.nairobi-style p{font-size:13px;line-height:1.75;color:#6b756b;margin:0}
-
-/* Planning */
-.nairobi-planning{padding:100px 0;background:#f2f3eb}
-.nairobi-planning-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:start}
-.nairobi-planning-intro p{line-height:1.9;color:#687268}
-.nairobi-info-list{display:grid;gap:0}
+.nairobi-card h3{
+  font-family:'Playfair Display',serif;
+  font-size:24px;
+  color:#6B4935;
+  margin:9px 0 12px;
+}
+.nairobi-card p{
+  font-size:14px;
+  line-height:1.8;
+  color:#897264;
+  margin:0;
+}
+.nairobi-wildlife{
+  background:#6B4935;
+  color:#fff;
+  padding:95px 0;
+}
+.nairobi-wildlife-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.nairobi-wildlife-image img{
+  height:480px;
+  width:100%;
+  object-fit:cover;
+}
+.nairobi-wildlife .nairobi-label{
+  color:#F09A58;
+}
+.nairobi-wildlife h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(34px,4vw,48px);
+  line-height:1.15;
+  margin:0 0 22px;
+  color:#fff;
+}
+.nairobi-wildlife p{
+  color:#EAD8C7;
+  line-height:1.9;
+  font-size:15px;
+  margin:0 0 17px;
+}
+.nairobi-wildlife-list{
+  display:grid;
+  gap:13px;
+  margin-top:27px;
+}
+.nairobi-wildlife-list div{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  color:#f8eee5;
+  font-size:14px;
+  line-height:1.6;
+}
+.nairobi-wildlife-list b{
+  color:#F09A58;
+  font-size:17px;
+}
+.nairobi-city{
+  padding:95px 0;
+  background:#FFF4E8;
+}
+.nairobi-city-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.nairobi-city-image img{
+  height:470px;
+  width:100%;
+  object-fit:cover;
+}
+.nairobi-city h2,
+.nairobi-safari h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(34px,4vw,46px);
+  color:#6B4935;
+  line-height:1.15;
+  margin:0 0 20px;
+}
+.nairobi-city p,
+.nairobi-safari p{
+  color:#897264;
+  line-height:1.9;
+  margin:0 0 17px;
+}
+.nairobi-city-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:28px;
+}
+.nairobi-city-point{
+  border-left:3px solid #E8752A;
+  padding:4px 0 4px 14px;
+}
+.nairobi-city-point strong{
+  display:block;
+  color:#6B4935;
+  font-size:14px;
+  margin-bottom:5px;
+}
+.nairobi-city-point span{
+  font-size:12px;
+  line-height:1.6;
+  color:#897264;
+}
+.nairobi-safari{
+  padding:95px 0;
+  background:#fff;
+}
+.nairobi-safari-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.nairobi-safari-image img{
+  height:470px;
+  width:100%;
+  object-fit:cover;
+}
+.nairobi-safari-list{
+  display:grid;
+  gap:12px;
+  margin-top:25px;
+}
+.nairobi-safari-list div{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  font-size:14px;
+  line-height:1.7;
+  color:#897264;
+}
+.nairobi-safari-list b{
+  color:#B85B20;
+}
+.nairobi-styles{
+  padding:85px 0;
+  background:#F5E6D6;
+}
+.nairobi-styles-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.nairobi-style{
+  padding:27px 22px;
+  border:1px solid #E7CDBB;
+  background:#fff;
+}
+.nairobi-style .number{
+  font-family:'Playfair Display',serif;
+  color:#B85B20;
+  font-size:29px;
+}
+.nairobi-style h3{
+  font-family:'Playfair Display',serif;
+  font-size:20px;
+  color:#6B4935;
+  margin:11px 0 9px;
+}
+.nairobi-style p{
+  font-size:13px;
+  line-height:1.75;
+  color:#897264;
+  margin:0;
+}
+.nairobi-planning{
+  padding:95px 0;
+  background:#FFFCF8;
+}
+.nairobi-planning-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:60px;
+  align-items:start;
+}
+.nairobi-planning-intro p{
+  line-height:1.9;
+  color:#897264;
+}
+.nairobi-info-list{
+  display:grid;
+}
 .nairobi-info{
   display:grid;
-  grid-template-columns:150px 1fr;
+  grid-template-columns:145px 1fr;
   gap:20px;
   padding:19px 0;
-  border-bottom:1px solid #dce1d5;
+  border-bottom:1px solid #EAD8C7;
 }
-.nairobi-info strong{font-size:13px;color:var(--nairobi-green)}
-.nairobi-info span{font-size:13px;line-height:1.75;color:#687268}
-
-/* CTA */
+.nairobi-info strong{
+  font-size:13px;
+  color:#6B4935;
+}
+.nairobi-info span{
+  font-size:13px;
+  line-height:1.75;
+  color:#897264;
+}
 .nairobi-cta{
-  background:var(--nairobi-green);
+  background:#6B4935;
   color:#fff;
-  padding:65px;
-  margin-top:90px;
-  margin-bottom:90px;
+  padding:55px;
+  margin-top:80px;
+  margin-bottom:80px;
   display:flex;
   justify-content:space-between;
   align-items:center;
   gap:30px;
 }
-.nairobi-cta h2{font-size:clamp(30px,4vw,42px);margin:0 0 12px;color:#fff}
-.nairobi-cta p{color:#dce6d8;line-height:1.7;margin:0;max-width:600px}
-.nairobi-cta .nairobi-btn{flex-shrink:0}
-
-/* Responsive */
+.nairobi-cta h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(30px,4vw,42px);
+  margin:0 0 12px;
+  color:#fff;
+}
+.nairobi-cta p{
+  color:#EAD8C7;
+  line-height:1.7;
+  margin:0;
+  max-width:600px;
+}
+.nairobi-cta .nairobi-action{
+  flex-shrink:0;
+}
 @media(max-width:900px){
   .nairobi-hero{min-height:600px}
-  .nairobi-intro-grid,.nairobi-wildlife-grid,.nairobi-city-grid,.nairobi-safari-grid,.nairobi-planning-grid{grid-template-columns:1fr;gap:38px}
+  .nairobi-intro-grid,
+  .nairobi-wildlife-grid,
+  .nairobi-city-grid,
+  .nairobi-safari-grid,
+  .nairobi-planning-grid{
+    grid-template-columns:1fr;
+    gap:38px;
+  }
   .nairobi-intro-image img{height:420px}
   .nairobi-image-note{right:12px}
   .nairobi-cards{grid-template-columns:repeat(2,1fr)}
   .nairobi-styles-grid{grid-template-columns:repeat(2,1fr)}
-  .nairobi-wildlife-image img,.nairobi-city-image img,.nairobi-safari-image img{height:400px}
+  .nairobi-wildlife-image img,
+  .nairobi-city-image img,
+  .nairobi-safari-image img{height:400px}
 }
 @media(max-width:600px){
-  .wrap{width:min(100% - 30px,1160px)}
   .nairobi-hero{min-height:560px}
   .nairobi-hero-content{padding:85px 0 65px}
   .nairobi-hero h1{font-size:58px}
-  .nairobi-intro,.nairobi-experiences,.nairobi-wildlife,.nairobi-city,.nairobi-safari,.nairobi-planning{padding:70px 0}
+  .nairobi-intro,
+  .nairobi-experiences,
+  .nairobi-wildlife,
+  .nairobi-city,
+  .nairobi-safari,
+  .nairobi-planning{padding:68px 0}
   .nairobi-intro-image img{height:340px}
   .nairobi-cards{grid-template-columns:1fr}
   .nairobi-card img{height:235px}
   .nairobi-styles{padding:65px 0}
   .nairobi-styles-grid{grid-template-columns:1fr 1fr;gap:10px}
   .nairobi-style{padding:20px 15px}
+  .nairobi-city-points{gap:13px}
   .nairobi-info{grid-template-columns:1fr;gap:6px}
-  .nairobi-cta{padding:35px 25px;margin-top:65px;margin-bottom:65px;align-items:flex-start;flex-direction:column}
-  .nairobi-wildlife-image img,.nairobi-city-image img,.nairobi-safari-image img{height:330px}
+  .nairobi-cta{
+    padding:35px 25px;
+    margin-top:60px;
+    margin-bottom:60px;
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .nairobi-wildlife-image img,
+  .nairobi-city-image img,
+  .nairobi-safari-image img{height:330px}
 }
 </style>
 </head>
@@ -268,19 +508,24 @@ a{text-decoration:none}
 
 <div class="topline">
   <div class="wrap top-inner">
-    <span>Mombasa, Kenya · Your Adventure Begins Here!</span>
-    <span><a href="tel:+254704261626">+254 704 261 626</a> · <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a></span>
+    <span>Mombasa, Kenya · Explore. Experience. Enjoy!</span>
+    <span>
+      <a href="tel:+254704261626">+254 704 261 626</a> ·
+      <a href="mailto:info@fleypatadventures.com">info@fleypatadventures.com</a>
+    </span>
   </div>
 </div>
 
 <header class="header">
   <div class="wrap nav">
     <a class="brand" href="index.html">
-      <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+      <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
       <span>FLEYPAT<small>ADVENTURES</small></span>
     </a>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav>
+
+    <button class="nav-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="safaris.html">Safaris</a>
@@ -309,8 +554,8 @@ a{text-decoration:none}
     <h1>Discover<br>Nairobi</h1>
     <p>Experience Kenya's vibrant capital, where modern city life meets remarkable wildlife, rich culture and unforgettable journeys into the country's wilderness.</p>
     <div class="nairobi-actions">
-      <a class="nairobi-btn" href="contact.html?destination=nairobi">Plan Your Nairobi Visit</a>
-      <a class="nairobi-btn nairobi-btn-outline" href="#experiences">Explore Experiences</a>
+      <a class="nairobi-action" href="contact.html?destination=nairobi">Plan Your Nairobi Visit</a>
+      <a class="nairobi-action nairobi-action-outline" href="#experiences">Explore Experiences</a>
     </div>
   </div>
 </section>
@@ -321,7 +566,7 @@ a{text-decoration:none}
     <div class="nairobi-intro-image">
       <img
         src="https://commons.wikimedia.org/wiki/Special:FilePath/Nairobi%20City%20Skyline.jpg?width=1400"
-        alt="Nairobi city skyline viewed from Uhuru Park"
+        alt="Nairobi city skyline"
         loading="lazy">
       <div class="nairobi-image-note">
         <strong>Kenya's Capital</strong>
@@ -330,7 +575,7 @@ a{text-decoration:none}
     </div>
 
     <div>
-      <span class="nairobi-section-label">The city and beyond</span>
+      <span class="nairobi-label">The city and beyond</span>
       <h2>Discover the many sides of Nairobi</h2>
       <p>Nairobi is Kenya's energetic capital and one of East Africa's most important urban centres. It combines modern business districts, lively neighbourhoods, cultural attractions and green spaces.</p>
       <p>One of its most remarkable features is the presence of Nairobi National Park, a wildlife reserve located close to the city. This creates an unusual opportunity to combine a city stay with a safari experience.</p>
@@ -349,7 +594,7 @@ a{text-decoration:none}
 <section class="nairobi-experiences" id="experiences">
   <div class="wrap">
     <div class="nairobi-section-heading">
-      <span class="nairobi-section-label">Explore the capital</span>
+      <span class="nairobi-label">Explore the capital</span>
       <h2>Experiences to enjoy in Nairobi</h2>
       <p>Discover the city's landmarks, wildlife attractions, cultural heritage and green spaces through experiences suited to your interests and schedule.</p>
     </div>
@@ -419,7 +664,7 @@ a{text-decoration:none}
       <article class="nairobi-card">
         <img
           src="https://commons.wikimedia.org/wiki/Special:FilePath/Gigiri%20Nairobi.jpg?width=1100"
-          alt="Nairobi skyline and Karura Forest viewed from the Gigiri area"
+          alt="Green surroundings in the Gigiri area of Nairobi"
           loading="lazy">
         <div class="nairobi-card-body">
           <span>Nature in the city</span>
@@ -443,7 +688,7 @@ a{text-decoration:none}
     </div>
 
     <div>
-      <span class="nairobi-section-label">A safari within the capital</span>
+      <span class="nairobi-label">A safari within the capital</span>
       <h2>Experience Nairobi's remarkable wildlife</h2>
       <p>Nairobi National Park offers an unusual safari setting close to the capital's urban landscape. Its open plains and natural habitats support a range of wildlife, making it a popular excursion for visitors with limited time in Nairobi.</p>
       <p>Wildlife experiences can be combined with other attractions around the city, depending on your available time and preferred pace.</p>
@@ -461,7 +706,7 @@ a{text-decoration:none}
 <section class="nairobi-city">
   <div class="wrap nairobi-city-grid">
     <div>
-      <span class="nairobi-section-label">Urban discoveries</span>
+      <span class="nairobi-label">Urban discoveries</span>
       <h2>Explore Nairobi's city life and culture</h2>
       <p>Nairobi is a city of contrasts, where modern architecture, historic buildings, lively markets and cultural spaces come together. A city tour can introduce visitors to its landmarks and everyday atmosphere.</p>
       <p>Depending on your interests, your visit can include central Nairobi, museums, local shopping areas and selected cultural attractions.</p>
@@ -506,7 +751,7 @@ a{text-decoration:none}
     </div>
 
     <div>
-      <span class="nairobi-section-label">Start your Kenyan adventure</span>
+      <span class="nairobi-label">Start your Kenyan adventure</span>
       <h2>Nairobi: Your gateway to Kenya's safaris</h2>
       <p>Nairobi is a major starting point for journeys to Kenya's national parks, reserves and coastal destinations. Travellers can begin with a city stay before continuing to the country's famous wildlife areas.</p>
       <p>Fleypat Adventures can help coordinate a journey from Nairobi, including transport planning, accommodation arrangements and safari experiences based on your travel dates.</p>
@@ -525,7 +770,7 @@ a{text-decoration:none}
 <section class="nairobi-styles">
   <div class="wrap">
     <div class="nairobi-section-heading">
-      <span class="nairobi-section-label">Choose your Nairobi experience</span>
+      <span class="nairobi-label">Choose your Nairobi experience</span>
       <h2>Ways to experience the capital</h2>
       <p>We can help shape your visit around your interests, available time and wider travel plans.</p>
     </div>
@@ -562,7 +807,7 @@ a{text-decoration:none}
 <section class="nairobi-planning">
   <div class="wrap nairobi-planning-grid">
     <div class="nairobi-planning-intro">
-      <span class="nairobi-section-label">Before you travel</span>
+      <span class="nairobi-label">Before you travel</span>
       <h2>Plan your Nairobi visit</h2>
       <p>Nairobi can be explored as a short city break, a wildlife-focused visit or the first stop on a longer Kenyan holiday.</p>
       <p>We can help coordinate your arrangements according to your arrival time, group size, interests and onward travel plans.</p>
@@ -604,21 +849,22 @@ a{text-decoration:none}
       <h2>Ready to explore Nairobi?</h2>
       <p>Tell us your preferred dates, group size, arrival details and the experiences you would like to include. Fleypat Adventures will help you plan a Nairobi visit or a wider Kenyan journey.</p>
     </div>
-    <a class="nairobi-btn" href="contact.html?destination=nairobi">Plan My Nairobi Trip</a>
+    <a class="nairobi-action" href="contact.html?destination=nairobi">Plan My Nairobi Trip</a>
   </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="wrap footer-grid">
     <div>
       <a class="brand footer-brand" href="index.html">
-        <img src="fleypat-logo.png" alt="Fleypat Adventures logo" onerror="this.style.display='none'">
+        <img src="fleypat-logo.png" alt="Fleypat Adventures logo">
         <span>FLEYPAT<small>ADVENTURES</small></span>
       </a>
       <p>Explore more. Experience more. Travel beyond expectations. Your journey starts with us.</p>
-      <a href="https://www.instagram.com/fleypat_adventures/">Instagram @fleypat_adventures</a>
+      <a href="https://www.instagram.com/fleypat_adventures/" target="_blank" rel="noopener">Instagram @fleypat_adventures</a>
     </div>
 
     <div>
@@ -658,8 +904,38 @@ a{text-decoration:none}
 <a class="float-wa"
    href="https://wa.me/254704261626?text=Hello%20Fleypat%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip%20to%20Nairobi."
    target="_blank"
-   rel="noopener">WhatsApp Us</a>
+   rel="noopener"
+   aria-label="Chat with Fleypat Adventures on WhatsApp">WhatsApp Us</a>
 
 <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  if(toggle && nav){
+    toggle.addEventListener("click", function(){
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      toggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    nav.querySelectorAll("a").forEach(function(link){
+      link.addEventListener("click", function(){
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Open menu");
+        toggle.textContent = "☰";
+      });
+    });
+  }
+
+  document.querySelectorAll("[data-year]").forEach(function(item){
+    item.textContent = new Date().getFullYear();
+  });
+});
+</script>
+
 </body>
 </html>
